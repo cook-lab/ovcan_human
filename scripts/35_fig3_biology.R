@@ -40,7 +40,7 @@ pA <- ggplot(scores, aes(PC1, PC2)) +
   labs(title = "RNA expression (31 models)", tag = "A",
        x = sprintf("PC1 (%.1f%%)", var_pct[1]), y = sprintf("PC2 (%.1f%%)", var_pct[2])) +
   fig_theme() + theme(legend.position = "bottom", legend.box = "vertical", legend.justification = "left",
-    legend.spacing.y = unit(1, "pt")) +
+    legend.key.spacing.y = unit(2, "pt"), legend.spacing.y = unit(10, "pt")) +
   guides(fill = guide_legend(order = 1, nrow = 2, byrow = TRUE, override.aes = list(shape = 21, size = 2.5)),
          shape = guide_legend(order = 2, nrow = 1, override.aes = list(fill = cook_grey, size = 2.5)))
 
@@ -163,7 +163,7 @@ grp_ctr <- tibble(grp = grp_run$values, y = top_pos - ctr_from_top + 1) %>%
          lab  = grp)
 EC_ROWS <- grp_ctr %>% filter(grp == "EC")
 
-# D/E: two complementary views share marker row order and boundaries.
+# D/E: two complementary views share marker row order.
 # Patient means for summary inference; all models for within-panel variation.
 zmax <- max(abs(mlong$z), na.rm = TRUE)
 patient_n <- rep_ann %>% count(subtype)
@@ -173,7 +173,6 @@ pD <- ggplot(mlong, aes(subtype, symbol, fill = z)) +
   geom_tile(data = expected_cell, aes(x = exp_sub, y = symbol, linetype = expect),
     inherit.aes = FALSE, fill = NA, colour = cook_ink, linewidth = 0.4, show.legend = FALSE) +
   scale_linetype_manual(values = c(`expected HIGH` = "solid", `expected LOW (loss)` = "22"), guide = "none") +
-  geom_hline(yintercept = sep_y, colour = cook_hair, linewidth = 0.6) +
   scale_fill_cook_div(midpoint = 0, limits = c(-zmax, zmax), name = "Mean z",
     guide = guide_colourbar(direction = "horizontal", title.position = "left", barwidth = unit(38, "mm"),
                            barheight = unit(2.7, "mm"))) +

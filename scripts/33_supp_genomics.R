@@ -74,7 +74,7 @@ draw_s5 <- function() draw(ht,heatmap_legend_side="bottom",annotation_legend_sid
  merge_legend=TRUE,heatmap_legend_list=list(missing_leg,ratio_leg),padding=unit(c(3,3,3,3),"mm"))
 for (out in list(c(file.path(MSFIG,"figs5.pdf"),"pdf"),c(file.path(MSFIG,"figs5.png"),"png"),
                 c(file.path(ASSET,"f_wes_cnv.png"),"png"))) {
- if(out[2]=="pdf") grDevices::cairo_pdf(out[1],width=W2,height=4.2)
+ if(out[2]=="pdf") figure_pdf(out[1],width=W2,height=4.2)
  else ragg::agg_png(out[1],width=W2,height=4.2,units="in",res=400)
  draw_s5();dev.off()
 }

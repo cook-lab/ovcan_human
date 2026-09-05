@@ -11,7 +11,7 @@
     },
     {
       "path": "docs/manuscript/figures/fig1.png",
-      "sha256": "c5d2b78af3b7e2b86eec9bdc8d09eceff382e907c40e9f806ce5b21cc2184a0f"
+      "sha256": "2bfcc88370ced0a51b8b2d033b57053512d5527983c26da00652f8b69eb464cb"
     },
     {
       "path": "docs/manuscript/figures/fig2.png",
@@ -19,7 +19,7 @@
     },
     {
       "path": "docs/manuscript/figures/fig3.png",
-      "sha256": "785a82bc5ad43b5d2a1b0f878197cf19ecb265b73b43d60a053bd014d3dac170"
+      "sha256": "07f2aec23fd6f68ea6a03588c678bef505080afd1a9636b2933c07ca0d475c0d"
     },
     {
       "path": "docs/manuscript/figures/fig4.png",
@@ -28,6 +28,6 @@
   ],
   "output": {
     "path": "OvCAN_Scientific_Data_draft_v7.docx",
-    "sha256": "447bdac4c90de5c4c4c6fb69d18dc730d5ac121d2d59068db9e60223d0a90ef4"
+    "sha256": "da411b8ea08a967e1f14c363137691d39c8e950e9d68746a8c283a655f35e1ee"
   }
 }

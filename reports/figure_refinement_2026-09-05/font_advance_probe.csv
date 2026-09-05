@@ -1,0 +1,37 @@
+device,label,glyph,font_size_pt,advance_pt
+grDevices::cairo_pdf,Per-gene Spearman r,P,8.0,4.999937504000002
+grDevices::cairo_pdf,Per-gene Spearman r,e,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r,r,8.0,3.000062495999998
+grDevices::cairo_pdf,Per-gene Spearman r,-,8.0,3.000062495999998
+grDevices::cairo_pdf,Per-gene Spearman r,g,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r,e,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r,n,8.0,3.993218752000004
+grDevices::cairo_pdf,Per-gene Spearman r,e,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r, ,8.0,1.998656247999996
+grDevices::cairo_pdf,Per-gene Spearman r,S,8.0,4.999937504000002
+grDevices::cairo_pdf,Per-gene Spearman r,p,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r,e,8.0,4.001218751999993
+grDevices::cairo_pdf,Per-gene Spearman r,a,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r,r,8.0,3.000062495999998
+grDevices::cairo_pdf,Per-gene Spearman r,m,8.0,7.000062495999998
+grDevices::cairo_pdf,Per-gene Spearman r,a,8.0,4.001218752000014
+grDevices::cairo_pdf,Per-gene Spearman r,n,8.0,4.001218752
+grDevices::cairo_pdf,Per-gene Spearman r, ,8.0,1.9986562480000032
+grDevices::quartz,Per-gene Spearman r,P,8.0,5.3359999999999985
+grDevices::quartz,Per-gene Spearman r,e,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r,r,8.0,2.6639999999999944
+grDevices::quartz,Per-gene Spearman r,-,8.0,2.6640000000000015
+grDevices::quartz,Per-gene Spearman r,g,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r,e,8.0,4.449599999999997
+grDevices::quartz,Per-gene Spearman r,n,8.0,4.449599999999997
+grDevices::quartz,Per-gene Spearman r,e,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r, ,8.0,2.2223999999999933
+grDevices::quartz,Per-gene Spearman r,S,8.0,5.3359999999999985
+grDevices::quartz,Per-gene Spearman r,p,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r,e,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r,a,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r,r,8.0,2.6640000000000015
+grDevices::quartz,Per-gene Spearman r,m,8.0,6.6640000000000015
+grDevices::quartz,Per-gene Spearman r,a,8.0,4.44959999999999
+grDevices::quartz,Per-gene Spearman r,n,8.0,4.449600000000004
+grDevices::quartz,Per-gene Spearman r, ,8.0,2.2224000000000217

@@ -1,0 +1,14 @@
+{
+  "individual_figures": 14,
+  "combined_pages": 14,
+  "bookmarks": 14,
+  "word_pages": 17,
+  "embedded_word_figures": 4,
+  "manuscript_text_unchanged": true,
+  "analysis_metadata_release_files_unchanged": 253,
+  "changed_runtime_records": [
+    "output/package_versions.csv",
+    "output/session_info.txt"
+  ],
+  "all_release_checksums_pass": true
+}

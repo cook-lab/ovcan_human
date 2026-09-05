@@ -262,10 +262,27 @@ ht_opt_cook <- function() {
 W1  <- 3.46   # single column  (~88 mm)
 W15 <- 5.51   # 1.5 column     (~140 mm)
 W2  <- 7.20   # double column  (~183 mm)
+# Keep fractional glyph advances in small journal text. On this workstation,
+# grDevices::cairo_pdf rounds 8 pt Arial advances to whole PDF points (e.g.
+# Arial 'e': 4.00 pt rather than 4.45 pt), visibly crowding axis titles.
+# Quartz preserves the requested font size/advances and embeds the font.
+# Cairo's package device is the portable fallback with fractional metrics;
+# its layout must be visually checked when rebuilding on another platform.
+figure_pdf <- function(filename, width, height, bg = "white", ...) {
+  if (isTRUE(capabilities("aqua"))) {
+    grDevices::quartz(type = "pdf", file = filename, width = width, height = height,
+                     family = FIG_FONT, bg = bg, ...)
+  } else {
+    if (!requireNamespace("Cairo", quietly = TRUE))
+      stop("PDF figures require Quartz on macOS or the Cairo R package elsewhere.")
+    Cairo::CairoPDF(file = filename, width = width, height = height,
+                    family = FIG_FONT, bg = bg, ...)
+  }
+}
 save_fig <- function(p, file, w, h, dpi = 400) {
   dir.create(dirname(file), showWarnings = FALSE, recursive = TRUE)
   if (grepl("\\.pdf$", file)) {
-    ggplot2::ggsave(file, p, width = w, height = h, device = grDevices::cairo_pdf)
+    ggplot2::ggsave(file, p, width = w, height = h, device = figure_pdf)
   } else {
     ggplot2::ggsave(file, p, width = w, height = h, dpi = dpi,
                     device = if (requireNamespace("ragg", quietly = TRUE)) ragg::agg_png else "png")
@@ -296,4 +313,5 @@ if (FIG_PLAIN) {
   }
 }
 message("00b_figure_theme.R loaded | font: ", FIG_FONT,
+        " | PDF device: ", if (isTRUE(capabilities("aqua"))) "Quartz" else "Cairo package",
         " | diverging palette: slate-white-rust | captions external")

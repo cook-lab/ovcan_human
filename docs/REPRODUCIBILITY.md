@@ -23,7 +23,7 @@ In an appropriate cluster software environment, after choosing a library locatio
 Rscript -e 'renv::restore(lockfile = "renv.lock", prompt = FALSE)'
 ```
 
-Do not perform package installation or computational analysis on a login node contrary to the cluster's policies. Exact scheduling/module commands depend on the cluster and are not guessed here. WES recovery additionally has a vendored `vcf2maf` utility; see `scripts/vendor/README.md`. Python builders use pandas/numpy for the browser and release packaging, python-docx for Word, and pypdf for the figure bundle. Scientific figure rendering uses the R packages in the scripts; the shared theme chooses Arial or an available standard sans serif fallback.
+Do not perform package installation or computational analysis on a login node contrary to the cluster's policies. Exact scheduling/module commands depend on the cluster and are not guessed here. WES recovery additionally has a vendored `vcf2maf` utility; see `scripts/vendor/README.md`. Python builders use pandas/numpy for the browser and release packaging, python-docx for Word, and pypdf for the figure bundle. Scientific figure rendering uses the R packages in the scripts; the shared theme chooses Arial or an available standard sans serif fallback. The shared PDF device uses Quartz on macOS and the Cairo R package elsewhere to retain fractional text positioning; current canonical PDFs were checked with Quartz. Check font embedding, glyphs and layout again if rebuilding with another platform/device. PNG export uses ragg.
 
 ## Paths and input restoration
 

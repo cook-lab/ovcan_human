@@ -173,7 +173,7 @@ ht_s3 <- Heatmap(cmat, name = "Spearman r", col = col_cor, right_annotation = ra
   width = ncol(cmat) * unit(3.3, "mm"), height = nrow(cmat) * unit(3.3, "mm"))
 draw_s3 <- function() draw(ht_s3, heatmap_legend_side = "bottom", annotation_legend_side = "right",
   merge_legends = FALSE, legend_grouping = "original", padding = unit(c(2, 2, 2, 2), "mm"))
-grDevices::cairo_pdf(file.path(MSFIG, "figs3.pdf"), width = W2, height = 5.65)
+figure_pdf(file.path(MSFIG, "figs3.pdf"), width = W2, height = 5.65)
 draw_s3(); dev.off()
 ragg::agg_png(file.path(MSFIG, "figs3.png"), width = W2, height = 5.65, units = "in", res = 400)
 draw_s3(); dev.off()
