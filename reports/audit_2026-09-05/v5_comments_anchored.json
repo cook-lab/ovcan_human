@@ -1,0 +1,822 @@
+{
+  "file": "docs/manuscript/v5/OvCAN_Scientific_Data_draft_v5.docx",
+  "comment_count": 34,
+  "comments": [
+    {
+      "id": "0",
+      "author": "David Cook",
+      "date": "2026-08-25T13:52:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "I'd like this to be reconciled. No reason to only have one analysis type for one of the models",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "mutation calls for 22 models and copy-number profiles for 23; "
+    },
+    {
+      "id": "1",
+      "author": "David Cook",
+      "date": "2026-08-25T14:52:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "It's not just re-processing. We *generated* the RNA-seq and proteomics fresh. Reprocessing was only the WES",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "processed "
+    },
+    {
+      "id": "4",
+      "author": "David Cook",
+      "date": "2026-08-25T14:52:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This term isn't intuitive to me. Patient? Donor sample?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "donor-family "
+    },
+    {
+      "id": "5",
+      "author": "David Cook",
+      "date": "2026-08-25T14:53:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Maybe vague, maybe fine. I'm luke warm about this statement",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "feature-level missingness and analysis-ready matrices"
+    },
+    {
+      "id": "6",
+      "author": "David Cook",
+      "date": "2026-08-25T14:54:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Tense is weird. Should we describe it as past tense?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "assesses "
+    },
+    {
+      "id": "7",
+      "author": "David Cook",
+      "date": "2026-08-25T14:54:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "I prefer oxford comma throughout",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancer comprises molecularly distinct histotypes, but the cell models used to study these diseases have been characterised unevenly across laboratories and assay platforms. Here we describe tr"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "concordance and consistency "
+    },
+    {
+      "id": "8",
+      "author": "David Cook",
+      "date": "2026-08-25T14:55:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Ensure all references are accurate. I will re-do them with a proper reference manager once drafting is complete",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Ovarian cancers are classified into histotypes with distinct cells of origin, genomic alterations and clinical behaviour. High-grade serous carcinoma is characterised by near-universal disruption of T"
+            },
+            {
+              "where": "end",
+              "text": "Ovarian cancers are classified into histotypes with distinct cells of origin, genomic alterations and clinical behaviour. High-grade serous carcinoma is characterised by near-universal disruption of T"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "1. "
+    },
+    {
+      "id": "9",
+      "author": "David Cook",
+      "date": "2026-08-25T14:57:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "What \"measurements\" is this referring to? Maybe we can generalize \"use\" or \"data\"?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Cell lines remain central to mechanistic studies and preclinical screening, but ovarian cancer models have often been used without adequate consideration of histotype or provenance. Genomic comparison"
+            },
+            {
+              "where": "end",
+              "text": "Cell lines remain central to mechanistic studies and preclinical screening, but ovarian cancer models have often been used without adequate consideration of histotype or provenance. Genomic comparison"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "and measurements are distributed across studies"
+    },
+    {
+      "id": "10",
+      "author": "David Cook",
+      "date": "2026-08-25T14:58:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "I see the point, but the use of \"measurement\" is kind of awkward to me. It could just be a me thing, but I feel like the more general \"finding\" \"data\" or something is clearer",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Cell lines remain central to mechanistic studies and preclinical screening, but ovarian cancer models have often been used without adequate consideration of histotype or provenance. Genomic comparison"
+            },
+            {
+              "where": "end",
+              "text": "Cell lines remain central to mechanistic studies and preclinical screening, but ovarian cancer models have often been used without adequate consideration of histotype or provenance. Genomic comparison"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "a transcript measurement from one study with a protein or genomic measurement "
+    },
+    {
+      "id": "11",
+      "author": "David Cook",
+      "date": "2026-08-25T14:59:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This is described clearly--great",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Here we describe a collection of 42 ovarian cancer cell models derived from 34 patients at three Canadian centres. The resource combines RNA sequencing, tandem mass tag proteomics and whole-exome sequ"
+            },
+            {
+              "where": "end",
+              "text": "Here we describe a collection of 42 ovarian cancer cell models derived from 34 patients at three Canadian centres. The resource combines RNA sequencing, tandem mass tag proteomics and whole-exome sequ"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "Thirteen models are sublines from five patients"
+    },
+    {
+      "id": "12",
+      "author": "David Cook",
+      "date": "2026-08-25T14:59:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Again, I don't really know what this means when I read it. Can it be more clear/explicit?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Here we describe a collection of 42 ovarian cancer cell models derived from 34 patients at three Canadian centres. The resource combines RNA sequencing, tandem mass tag proteomics and whole-exome sequ"
+            },
+            {
+              "where": "end",
+              "text": "Here we describe a collection of 42 ovarian cancer cell models derived from 34 patients at three Canadian centres. The resource combines RNA sequencing, tandem mass tag proteomics and whole-exome sequ"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "donor-family membership and a patient-representative flag are therefore included with the data"
+    },
+    {
+      "id": "13",
+      "author": "David Cook",
+      "date": "2026-08-25T15:00:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "CRITICAL - this must be fixed. I would rather just change the metadata table so that there's not an awkward reference to a file with a required filter to understand the cohort.",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The resource contains 42 models marked analysis_include = Y and provenance = generated in metadata/samples.csv (Table 1). Twenty-nine models originated from the Centre de recherche du Centre hospitali"
+            },
+            {
+              "where": "end",
+              "text": "The resource contains 42 models marked analysis_include = Y and provenance = generated in metadata/samples.csv (Table 1). Twenty-nine models originated from the Centre de recherche du Centre hospitali"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "marked analysis_include = Y and provenance = generated in metadata/samples.csv (Table 1)"
+    },
+    {
+      "id": "14",
+      "author": "David Cook",
+      "date": "2026-08-25T15:01:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Again, if they weren't included, let's remove them from the metadata and avoid the clunkiness of describing this altogether (eg. no justification for why it's excluded)",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The resource contains 42 models marked analysis_include = Y and provenance = generated in metadata/samples.csv (Table 1). Twenty-nine models originated from the Centre de recherche du Centre hospitali"
+            },
+            {
+              "where": "end",
+              "text": "The resource contains 42 models marked analysis_include = Y and provenance = generated in metadata/samples.csv (Table 1). Twenty-nine models originated from the Centre de recherche du Centre hospitali"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "Thirteen additional low-grade serous samples in the source metadata were generated in a separate study6 and were excluded from the present resource."
+    },
+    {
+      "id": "15",
+      "author": "David Cook",
+      "date": "2026-08-25T15:02:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "See previous flags--I dont' know what this means. Will stop flagging this phrase",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "To account for related sublines, we derived patient-family membership and selected one representative model per patient using a deterministic score based on assay coverage. The resulting resource cont"
+            },
+            {
+              "where": "end",
+              "text": "To account for related sublines, we derived patient-family membership and selected one representative model per patient using a deterministic score based on assay coverage. The resulting resource cont"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "derived patient-family membership "
+    },
+    {
+      "id": "16",
+      "author": "David Cook",
+      "date": "2026-08-25T15:03:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "TODO - you can identify the publications where these lines were generated and get the methods details to at least include a draft here for collaborators to confirm",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[TO ADD: model-specific derivation references and complete culture conditions for each contributing centre, including medium, serum, supplements, incubator conditions and passage at harvest.]"
+            },
+            {
+              "where": "end",
+              "text": "[TO ADD: model-specific derivation references and complete culture conditions for each contributing centre, including medium, serum, supplements, incubator conditions and passage at harvest.]"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "[TO ADD: model-specific derivation references and complete culture conditions for each contributing centre, including medium, serum, supplements, incubator conditions and passage at harvest.]"
+    },
+    {
+      "id": "17",
+      "author": "David Cook",
+      "date": "2026-08-25T15:06:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "RNA-Seq libraries were generated from 250\u2009ng of total RNA as follows: mRNA enrichment was performed using the NEBNext Poly(A) Magnetic Isolation Module (New England BioLabs). cDNA synthesis was achieved with the NEBNext RNA First Strand Synthesis and NEBNext Ultra Directional RNA Second Strand Synthesis Modules (New England BioLabs). The remaining steps of library preparation were done using and the NEBNext Ultra II DNA Library Prep Kit for Illumina (New England BioLabs). Adaptors and PCR primers were purchased from New England BioLabs.\nThe libraries were normalised and pooled and then denatured in 0.02\u2009N NaOH and neutralised using HT1 buffer. The pool was loaded at 200pM on an Illumina NovaSeq S4 lane using Xp protocol as per the manufacturer\u2019s recommendations. The run was performed for 2\u2009\u00d7\u2009100 cycles (paired-end mode). A phiX library was used as a control and mixed with libraries at a 1% level. Base calling was performed with RTA v3. Program bcl2fastq2 v2.20 was then used to demultiplex samples and generate fastq reads.",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[TO ADD: RNA extraction method, library-preparation kit, sequencing instrument and paired-end read length.] The libraries were sequenced in one run. We quantified transcripts with kallisto 0.46.0 agai"
+            },
+            {
+              "where": "end",
+              "text": "[TO ADD: RNA extraction method, library-preparation kit, sequencing instrument and paired-end read length.] The libraries were sequenced in one run. We quantified transcripts with kallisto 0.46.0 agai"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "[TO ADD: RNA extraction method, library-preparation kit, sequencing instrument and paired-end read length.] "
+    },
+    {
+      "id": "18",
+      "author": "David Cook",
+      "date": "2026-08-25T15:05:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Is deposited where?? As in ensembl made this available? Remove if not relevant",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[TO ADD: RNA extraction method, library-preparation kit, sequencing instrument and paired-end read length.] The libraries were sequenced in one run. We quantified transcripts with kallisto 0.46.0 agai"
+            },
+            {
+              "where": "end",
+              "text": "[TO ADD: RNA extraction method, library-preparation kit, sequencing instrument and paired-end read length.] The libraries were sequenced in one run. We quantified transcripts with kallisto 0.46.0 agai"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "and is deposited as tx2gene_ensembl_rel105.csv"
+    },
+    {
+      "id": "19",
+      "author": "David Cook",
+      "date": "2026-08-25T15:07:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Is this saying that our setup wasn't ideal, missed transcripts, and that it would be appropriate to re-analyze? If so, remove this. I don't want to raise an obvious (fixable) flag",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The kallisto index predates the deposited transcript map. Consequently, 3,529 index targets were absent from the map and were excluded during gene-level summarisation. These transcripts accounted for "
+            },
+            {
+              "where": "end",
+              "text": "The kallisto index predates the deposited transcript map. Consequently, 3,529 index targets were absent from the map and were excluded during gene-level summarisation. These transcripts accounted for "
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "The kallisto index predates the deposited transcript map. Consequently, 3,529 index targets were absent from the map and were excluded during gene-level summarisation. These transcripts accounted for a median of 2.22% of sample TPM. Their contribution varied with histotype and contributing centre, although these factors are correlated in the study design. We therefore deposit the exact map used to create the matrices and recommend it for reproduction. Re-quantification against an index built from the same annotation remains the appropriate sensitivity analysis."
+    },
+    {
+      "id": "20",
+      "author": "David Cook",
+      "date": "2026-08-25T15:08:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "See if you can pull appropriate methods from a publication by Gregg Morin and Gian Negri (UBC)",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "[TO ADD: sample preparation, digestion, tandem mass tag labelling, fractionation, liquid chromatography, mass spectrometer and acquisition mode, database-search software and version, sequence database"
+            },
+            {
+              "where": "end",
+              "text": "[TO ADD: sample preparation, digestion, tandem mass tag labelling, fractionation, liquid chromatography, mass spectrometer and acquisition mode, database-search software and version, sequence database"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "[TO ADD: "
+    },
+    {
+      "id": "21",
+      "author": "David Cook",
+      "date": "2026-08-25T15:11:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This info is on the cluster where the pipeline was run. Add it to a running to-do list and I can grab it",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Whole-exome data were processed against GRCh38 with nf-core/Sarek11, and small variants were called with GATK Mutect2 in tumour-only mode12. No matched normal was available. [TO ADD: nf-core/Sarek and"
+            },
+            {
+              "where": "end",
+              "text": "Whole-exome data were processed against GRCh38 with nf-core/Sarek11, and small variants were called with GATK Mutect2 in tumour-only mode12. No matched normal was available. [TO ADD: nf-core/Sarek and"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "[TO ADD: nf-core/Sarek and GATK versions, library-preparation and sequencing details, exome capture kit and target BED.]"
+    },
+    {
+      "id": "22",
+      "author": "David Cook",
+      "date": "2026-08-25T15:12:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Make sure this makes sense. I'm not very familiar with it and I'm not sure what it means from the text alone",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "We filtered variant records in three stages: Mutect2 FILTER == PASS; maximum population allele frequency no greater than 0.001 across available gnomAD and 1000 Genomes fields; and membership in the ma"
+            },
+            {
+              "where": "end",
+              "text": "We filtered variant records in three stages: Mutect2 FILTER == PASS; maximum population allele frequency no greater than 0.001 across available gnomAD and 1000 Genomes fields; and membership in the ma"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "Protein-change strings were reconstructed when the source field was empty and were flagged to distinguish canonical from non-canonical representations. "
+    },
+    {
+      "id": "23",
+      "author": "David Cook",
+      "date": "2026-08-25T15:12:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Sentence structure feels clunky?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "We filtered variant records in three stages: Mutect2 FILTER == PASS; maximum population allele frequency no greater than 0.001 across available gnomAD and 1000 Genomes fields; and membership in the ma"
+            },
+            {
+              "where": "end",
+              "text": "We filtered variant records in three stages: Mutect2 FILTER == PASS; maximum population allele frequency no greater than 0.001 across available gnomAD and 1000 Genomes fields; and membership in the ma"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "Retained variants remain candidate coding alterations "
+    },
+    {
+      "id": "24",
+      "author": "David Cook",
+      "date": "2026-08-25T15:15:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This paragraph hedges a lot. It says more what it's not than what it is.",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "We assigned candidate alterations in 14 ovarian cancer genes to three evidence tiers based on variant class and prior gene-level knowledge. The tiers prioritise calls for reuse but are not a validated"
+            },
+            {
+              "where": "end",
+              "text": "We assigned candidate alterations in 14 ovarian cancer genes to three evidence tiers based on variant class and prior gene-level knowledge. The tiers prioritise calls for reuse but are not a validated"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "We assigned candidate alterations in 14 ovarian cancer genes to three evidence tiers based on variant class and prior gene-level knowledge. The tiers prioritise calls for reuse but are not a validated somatic classifier. Tier 3 variants were deposited but were not used to support derived molecular calls or frequency statements."
+    },
+    {
+      "id": "25",
+      "author": "David Cook",
+      "date": "2026-08-25T15:17:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This should be flagged as a TODO, not as manuscript text. The manuscript should have no \"work in progress\" prose. If there are things we should do to finalize the analysis and draft, flag it explicitly as \"TODO\"",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Copy number was estimated with CNVkit 0.9.1013 using five public healthy exomes as a pooled reference. We centred each profile on its autosomal probe-weighted median and defined arm-level gain or loss"
+            },
+            {
+              "where": "end",
+              "text": "Copy number was estimated with CNVkit 0.9.1013 using five public healthy exomes as a pooled reference. We centred each profile on its autosomal probe-weighted median and defined arm-level gain or loss"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "Compatibility between the tumour and reference capture designs cannot be confirmed until the target BED is recovered"
+    },
+    {
+      "id": "26",
+      "author": "David Cook",
+      "date": "2026-09-05T12:03:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This reads weird to me. I think I like using language more about the biology/interpretation. Eg. here I would refer to transcriptional patterns across models",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "We used principal component analysis to evaluate the structure of the RNA matrix. We transposed the 2,000 most variable genes, centred them and did not scale them. We compared cross-model spread betwe"
+            },
+            {
+              "where": "end",
+              "text": "We used principal component analysis to evaluate the structure of the RNA matrix. We transposed the 2,000 most variable genes, centred them and did not scale them. We compared cross-model spread betwe"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": " structure of the RNA matrix. "
+    },
+    {
+      "id": "27",
+      "author": "David Cook",
+      "date": "2026-07-27T13:53:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Perhaps unnecessary unless this comes up later. The previous sentence delivers the message",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "This design does not fully distinguish histotype from centre. All high-grade serous RNA models originated from one centre, and the shared variance component on principal component 1 was 0.311. The ana"
+            },
+            {
+              "where": "end",
+              "text": "This design does not fully distinguish histotype from centre. All high-grade serous RNA models originated from one centre, and the shared variance component on principal component 1 was 0.311. The ana"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "We consequently interpret the observed structure as histotype-associated rather than histotype-specific."
+    },
+    {
+      "id": "28",
+      "author": "David Cook",
+      "date": "2026-07-27T13:56:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Could the meaning of this be clearer in the prose? ie. what are we doing filtering down? The next sentence reveals what filtering corrected, but the \"issue\" is not really clear",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "To evaluate the tumour-only variant record, we first examined the effect of sequential filtering. Across 22 models, 557,392 Mutect2 records were reduced to 15,692 PASS variants and 6,036 rare coding c"
+            },
+            {
+              "where": "end",
+              "text": "To evaluate the tumour-only variant record, we first examined the effect of sequential filtering. Across 22 models, 557,392 Mutect2 records were reduced to 15,692 PASS variants and 6,036 rare coding c"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "15,692 PASS variants "
+    },
+    {
+      "id": "29",
+      "author": "David Cook",
+      "date": "2026-07-27T13:57:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "All references could just be referred to with in text author citation + DOI for me to manually enter",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "To evaluate the tumour-only variant record, we first examined the effect of sequential filtering. Across 22 models, 557,392 Mutect2 records were reduced to 15,692 PASS variants and 6,036 rare coding c"
+            },
+            {
+              "where": "end",
+              "text": "To evaluate the tumour-only variant record, we first examined the effect of sequential filtering. Across 22 models, 557,392 Mutect2 records were reduced to 15,692 PASS variants and 6,036 rare coding c"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "1"
+    },
+    {
+      "id": "30",
+      "author": "David Cook",
+      "date": "2026-07-27T13:57:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Could a more general claim be made comparing HGSC to the other histotypes more broadly? They should all have relatively less aberrations",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "Copy-number profiles showed the expected contrast between copy-number-high high-grade serous models and the low-grade serous model. Median autosomal fraction of genome altered was 0.635 among 18 high-"
+            },
+            {
+              "where": "end",
+              "text": "Copy-number profiles showed the expected contrast between copy-number-high high-grade serous models and the low-grade serous model. Median autosomal fraction of genome altered was 0.635 among 18 high-"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "low-grade serous model"
+    },
+    {
+      "id": "31",
+      "author": "David Cook",
+      "date": "2026-07-27T13:59:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Is this true? The external normals were generated with the same kit",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "These genomic records are intended for candidate prioritisation and coarse copy-number comparison. Without matched normals, retained sequence variants cannot be assumed to be somatic. Likewise, the co"
+            },
+            {
+              "where": "end",
+              "text": "These genomic records are intended for candidate prioritisation and coarse copy-number comparison. Without matched normals, retained sequence variants cannot be assumed to be somatic. Likewise, the co"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "unconfirmed capture compatibility"
+    },
+    {
+      "id": "32",
+      "author": "David Cook",
+      "date": "2026-08-03T12:16:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "This is a little cliche. I think it's stronger to directly state the interpretation. ie. why might there be discordance between the two layers?",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The multi-omic profiles were also consistent with recognised SWI/SNF alterations. In BIN67, SMARCA4 transcript abundance was near the middle of the panel whereas protein abundance was second-lowest, i"
+            },
+            {
+              "where": "end",
+              "text": "The multi-omic profiles were also consistent with recognised SWI/SNF alterations. In BIN67, SMARCA4 transcript abundance was near the middle of the panel whereas protein abundance was second-lowest, i"
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "why the two expression layers should not be treated as interchangeable"
+    },
+    {
+      "id": "33",
+      "author": "David Cook",
+      "date": "2026-08-03T12:17:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "The contributing labs may very well have STR and mycoplasma testing. Do not anywhere state that it wasn't performed the study. Add a flag for me to confirm",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "No short-tandem-repeat or mycoplasma testing was performed on the stocks used for this study. Cellosaurus contains an external reference STR profile for 30 of the 42 model names, but these records do "
+            },
+            {
+              "where": "end",
+              "text": "No short-tandem-repeat or mycoplasma testing was performed on the stocks used for this study. Cellosaurus contains an external reference STR profile for 30 of the 42 model names, but these records do "
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "No short-tandem-repeat or mycoplasma testing was performed on the stocks used for this study. Cellosaurus contains an external reference STR profile for 30 of the 42 model names, but these records do not establish a match to the analysed stocks. The DepMap comparisons and molecular profiles therefore support the identities of a subset of models; they do not authenticate the full panel. We provide the external-reference status per model so that users can prioritise confirmatory testing."
+    },
+    {
+      "id": "34",
+      "author": "David Cook",
+      "date": "2026-08-03T12:18:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "I don't like the idea of reference to specific data files. That doesn't feel normal. Can't assume file naming is conserved/static.I think I would state this more along the lines of \"Metadata is available with the resource to provide context about each model's...\"",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The master per-model table, supplement_per_line.csv, is the recommended entry point for model selection. It combines histotype, contributing centre, assay coverage, patient-family membership, quality "
+            },
+            {
+              "where": "end",
+              "text": "The master per-model table, supplement_per_line.csv, is the recommended entry point for model selection. It combines histotype, contributing centre, assay coverage, patient-family membership, quality "
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "The master per-model table, supplement_per_line.csv, is the recommended entry point for model selection. "
+    },
+    {
+      "id": "35",
+      "author": "David Cook",
+      "date": "2026-08-03T12:19:00Z",
+      "initials": "DC",
+      "resolved": false,
+      "text": "Don't refer to the file. This is hosted at https://www.cooklab.ca/ovcan_viewer",
+      "anchors": [
+        {
+          "part": "word/document.xml",
+          "paragraphs": [
+            {
+              "where": "start",
+              "text": "The master per-model table, supplement_per_line.csv, is the recommended entry point for model selection. It combines histotype, contributing centre, assay coverage, patient-family membership, quality "
+            },
+            {
+              "where": "end",
+              "text": "The master per-model table, supplement_per_line.csv, is the recommended entry point for model selection. It combines histotype, contributing centre, assay coverage, patient-family membership, quality "
+            }
+          ]
+        }
+      ],
+      "exact_anchor": "ovcan_viewer_standalone.html, "
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+subtype,program,n_seeds,padj_min,padj_max,pval_min,pval_max,n_distinct_status,statuses,stable
+CC,oxidative/glutathione/detox,3,0.0043,0.00959,6.22e-5,1.94e-4,1,recovered (padj<0.05),TRUE
+HGS,DNA repair (HR/DSB),3,0.0454,0.0472,0.00162,0.00179,1,recovered (padj<0.05),TRUE
+MC,glycan/oligosaccharide,3,0.115,0.122,0.00923,0.00982,1,suggestive (nominal p<0.05),TRUE
+MMMT,EMT / migration / ECM,3,0.447,0.449,0.0978,0.0992,1,not recovered,TRUE
+SCCOHT,cell cycle / mitosis,3,3.51e-5,1.03e-4,7.74e-7,2.77e-6,1,recovered (padj<0.05),TRUE

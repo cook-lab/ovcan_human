@@ -1,0 +1,217 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning message:
+One or more parsing issues, call `problems()` on your data frame for details,
+e.g.:
+  dat <- vroom(...)
+  problems(dat) 
+
+== DepMap overlap: 5 of 42 lines ==
+  cell_line subtype depmap_ACH depmap_RRID           depmap_oncotree_subtype
+1      OV90     HGS ACH-000291   CVCL_3768             Serous Ovarian Cancer
+2    TOV21G      CC ACH-000885   CVCL_3613         Clear Cell Ovarian Cancer
+3   TOV112D      EC ACH-000048   CVCL_3612       Endometrioid Ovarian Cancer
+4     BIN67  SCCOHT ACH-001278   CVCL_S987 Small Cell Carcinoma of the Ovary
+5    COV434  SCCOHT ACH-000123   CVCL_2010 Small Cell Carcinoma of the Ovary
+'select()' returned 1:many mapping between keys and columns
+  shared Entrez genes: 19062 ; HVG used: 2000
+
+== Expression identity (self vs 67 DepMap ovarian) ==
+  cell_line depmap_name self_spearman_hvg self_rank_of67 runnerup_name
+1      OV90        OV90         0.8886915              1        OVCAR5
+2    TOV21G      TOV21G         0.8186974              1        OVTOKO
+3   TOV112D     TOV112D         0.8426045              1         A2780
+4     BIN67       BIN67         0.7392612              1        COV434
+5    COV434      COV434         0.8227536              1         BIN67
+  runnerup_spearman margin_self_vs_next reciprocal_best
+1         0.4499064          0.43878508            TRUE
+2         0.5847251          0.23397222            TRUE
+3         0.6336082          0.20899639            TRUE
+4         0.7035358          0.03572544            TRUE
+5         0.6817980          0.14095552            TRUE
+  wrote output/external_ccle_concordance.csv (155 rows)
+
+== SELF-MATCH MARGIN vs all 67 DepMap ovarian lines ==
+  cell_line depmap_name self_spearman self_rank_of67 best_nonself_name
+1      OV90        OV90         0.889              1            OVCAR5
+2    TOV21G      TOV21G         0.819              1            OVTOKO
+3   TOV112D     TOV112D         0.843              1             A2780
+4    COV434      COV434         0.823              1             BIN67
+5     BIN67       BIN67         0.739              1            COV434
+  best_nonself_spearman margin_self_minus_best_nonself self_z_vs_nonself
+1                 0.450                          0.439            11.496
+2                 0.585                          0.234             5.489
+3                 0.634                          0.209             4.270
+4                 0.682                          0.141             4.823
+5                 0.704                          0.036             4.051
+  reciprocal_best reciprocal_margin
+1            TRUE             0.254
+2            TRUE             0.255
+3            TRUE             0.267
+4            TRUE             0.119
+5            TRUE             0.057
+  wrote output/external_selfmatch_margin.csv (5 overlap lines)
+  wrote output/external_depmap_spearman_all.csv (2077 our-line x DepMap-line pairs)
+
+== DepMap mutation burden (damaging count per line; TOV21G expected high = MSI/hypermutation) ==
+  cell_line depmap_ACH depmap_total_damaging depmap_total_hotspot
+1      OV90 ACH-000291                    18                    4
+2    TOV21G ACH-000885                   568                    4
+3   TOV112D ACH-000048                     7                    4
+4     BIN67 ACH-001278                    17                    0
+5    COV434 ACH-000123                    17                    0
+
+== DepMap driver status (hotspot/damaging counts) for overlap lines ==
+      gene        OV90      TOV21G     TOV112D       BIN67      COV434
+1     TP53 hot=2/dam=2 hot=0/dam=0 hot=2/dam=2 hot=0/dam=0 hot=0/dam=0
+2  SMARCA4 hot=0/dam=0 hot=0/dam=1 hot=0/dam=2 hot=0/dam=1 hot=0/dam=2
+3  SMARCA2 hot=./dam=0 hot=./dam=0 hot=./dam=0 hot=./dam=0 hot=./dam=0
+4   ARID1A hot=0/dam=0 hot=0/dam=1 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+5   PIK3CA hot=0/dam=0 hot=1/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+6     KRAS hot=0/dam=0 hot=1/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+7   CTNNB1 hot=0/dam=0 hot=1/dam=0 hot=2/dam=0 hot=0/dam=0 hot=0/dam=0
+8     PTEN hot=0/dam=0 hot=0/dam=1 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+9    SMAD4 hot=2/dam=2 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+10    BRAF hot=0/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+11 PPP2R1A hot=0/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0 hot=0/dam=0
+
+== OUR WES driver calls (overlap lines with WES: OV90/TOV21G/TOV112D) ==
+   cell_line Hugo_Symbol    HGVSp_Short Variant_Classification   vaf is_driver
+1       OV90        TP53        p.S215R      Missense_Mutation 0.990      TRUE
+2       OV90       SMAD4        p.R445*      Nonsense_Mutation 0.977     FALSE
+3       OV90        BRAF p.N486_P490del           In_Frame_Del    NA      TRUE
+4    TOV112D        KRAS         p.A59T      Missense_Mutation 0.361      TRUE
+5    TOV112D        TP53        p.R175H      Missense_Mutation 0.948      TRUE
+6    TOV112D     SMARCA4       p.L639fs        Frame_Shift_Del    NA      TRUE
+7    TOV112D      CTNNB1         p.S37A      Missense_Mutation 0.906      TRUE
+8     TOV21G      ARID1A    p.548_549fs        Frame_Shift_Ins    NA      TRUE
+9     TOV21G      ARID1A       p.N756fs        Frame_Shift_Del    NA      TRUE
+10    TOV21G        PTEN       p.L265fs        Frame_Shift_Del    NA      TRUE
+11    TOV21G        KRAS         p.G13C      Missense_Mutation 0.518      TRUE
+12    TOV21G      CTNNB1          p.A5V      Missense_Mutation 0.139      TRUE
+13    TOV21G      PIK3CA       p.H1047Y      Missense_Mutation 0.393      TRUE
+14    TOV21G     SMARCA2      p.Q250del           In_Frame_Del    NA      TRUE
+
+== OUR WES PASS-variant burden (overlap lines) ==
+  cell_line our_PASS_variants
+1      OV90               240
+2   TOV112D               133
+3    TOV21G              1416
+
+== DepMap driver cross-check (written, no longer console-only) ==
+ cell_line    gene                                               our_variants
+      OV90    TP53                                p.S215R (Missense_Mutation)
+      OV90   SMAD4                                p.R445* (Nonsense_Mutation)
+      OV90    BRAF                              p.N486_P490del (In_Frame_Del)
+   TOV112D    TP53                                p.R175H (Missense_Mutation)
+   TOV112D SMARCA4                                 p.L639fs (Frame_Shift_Del)
+   TOV112D    KRAS                                 p.A59T (Missense_Mutation)
+   TOV112D  CTNNB1                                 p.S37A (Missense_Mutation)
+    TOV21G SMARCA4                                                       <NA>
+    TOV21G SMARCA2                                   p.Q250del (In_Frame_Del)
+    TOV21G  ARID1A p.548_549fs (Frame_Shift_Ins) ; p.N756fs (Frame_Shift_Del)
+    TOV21G  PIK3CA                               p.H1047Y (Missense_Mutation)
+    TOV21G    KRAS                                 p.G13C (Missense_Mutation)
+    TOV21G  CTNNB1                                  p.A5V (Missense_Mutation)
+    TOV21G    PTEN                                 p.L265fs (Frame_Shift_Del)
+ our_tier depmap_hotspot depmap_damaging                              agreement
+    Tier1              2               2                    corroborated (both)
+     <NA>              2               2                    corroborated (both)
+    Tier2              0               0 OURS ONLY — not corroborated by DepMap
+    Tier1              2               2                    corroborated (both)
+    Tier1              0               2                    corroborated (both)
+    Tier2              0               0 OURS ONLY — not corroborated by DepMap
+    Tier1              2               0                    corroborated (both)
+     <NA>              0               1        DEPMAP ONLY — we do not call it
+    Tier3             NA               0 OURS ONLY — not corroborated by DepMap
+    Tier1              0               1                    corroborated (both)
+    Tier1              1               0                    corroborated (both)
+    Tier1              1               0                    corroborated (both)
+    Tier3              1               0                    corroborated (both)
+    Tier1              0               1                    corroborated (both)
+  wrote output/external_depmap_driver_crosscheck.csv (55 line x gene rows)
+  wrote output/external_depmap_burden.csv (5 overlap lines)
+
+== ConsensusOV 1.30.0 — computing calls (concordant.tumors.only = TRUE; remove.using.cutoff = FALSE (package defaults)) ==
+Loading training data
+Training Random Forest...
+Loading training data
+Training Random Forest...
+
+=== ConsensusOV COMPUTED calls, probabilities and margins (HGSC RNA lines) ===
+ cell_line consensusov_call prob_top second_call prob_second
+    OV2085              IMR    0.318         PRO       0.296
+  TOV3041G              MES    0.368         DIF       0.324
+  TOV3291G              MES    0.346         IMR       0.282
+      OV90              IMR    0.384         MES       0.316
+ OV1369-R2              MES    0.372         DIF       0.284
+    OV4453              PRO    0.402         MES       0.312
+ OV2295-R2              IMR    0.368         DIF       0.250
+    OV2295              DIF    0.456         IMR       0.298
+  OV3133-R              DIF    0.540         IMR       0.372
+  TOV3133G              DIF    0.530         IMR       0.354
+    OV1946              MES    0.484         IMR       0.284
+   OV866-2              MES    0.550         IMR       0.208
+    OV4485              DIF    0.598         IMR       0.164
+   TOV1369              DIF    0.738         IMR       0.142
+    OV3331              PRO    0.812         DIF       0.110
+ margin_top_vs_second consensusov_call_inherited agrees_with_inherited
+                0.022                        IMR                  TRUE
+                0.044                        MES                  TRUE
+                0.064                        MES                  TRUE
+                0.068                        IMR                  TRUE
+                0.088                        DIF                 FALSE
+                0.090                        PRO                  TRUE
+                0.118                        IMR                  TRUE
+                0.158                        DIF                  TRUE
+                0.168                        DIF                  TRUE
+                0.176                        DIF                  TRUE
+                0.200                        MES                  TRUE
+                0.342                        MES                  TRUE
+                0.434                        DIF                  TRUE
+                0.596                        DIF                  TRUE
+                0.702                        PRO                  TRUE
+ call_all_set call_stable_across_input_sets
+          PRO                         FALSE
+          MES                          TRUE
+          MES                          TRUE
+          IMR                          TRUE
+          MES                          TRUE
+          PRO                          TRUE
+          IMR                          TRUE
+          DIF                          TRUE
+          DIF                          TRUE
+          DIF                          TRUE
+          MES                          TRUE
+          MES                          TRUE
+          DIF                          TRUE
+          DIF                          TRUE
+          PRO                          TRUE
+
+  computed:  DIF 5 / IMR 3 / MES 5 / PRO 2
+  inherited: DIF 6 / IMR 3 / MES 4 / PRO 2
+  agreement with the inherited labels: 14 of 15 lines
+  calls stable when the input set changes from 15 HGSC to all 31 RNA lines: 14 of 15
+  top-vs-second margin: median 0.158, min 0.022 (OV2085) — a small margin means the
+    label is a coin-flip between two classes, which is the paper's point.
+  wrote output/consensusov_calls.csv (42 lines, 15 with a computed call)
+
+== Cellosaurus / STR summary ==
+  in Cellosaurus: 30 / 42 ; absent: TOV3121D, VOA10816, VOA12539, VOA14993, VOA295, VOA4841, VOA6861, VOA4395, VOA8762, VOA8771, VOA5217, VOA5436
+  with documented STR profile: 30 / 42
+  flagged 'Problematic cell line':
+  cell_line cellosaurus_accession
+1    COV434             CVCL_2010
+                                                                                                                                                             problematic_flag
+1 Misclassified. Originally thought to be an ovarian granulosa cell tumor but seems to be a small cell carcinoma of the ovary, hypercalcemic type (SCCOHT) (PubMed=33328126).
+  RRID cross-check vs DepMap (should all be TRUE):
+  cell_line cellosaurus_accession rrid_matches_depmap
+1      OV90             CVCL_3768                TRUE
+2    TOV21G             CVCL_3613                TRUE
+3   TOV112D             CVCL_3612                TRUE
+4     BIN67             CVCL_S987                TRUE
+5    COV434             CVCL_2010                TRUE
+  saved figs/f_external_concordance.pdf  +  reports/assets/f_external_concordance.png
+
+DONE 18_external_benchmarking.R

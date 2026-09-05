@@ -1,0 +1,49 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+HGS lines: 15
+PROGENy: 15 lines x 14 pathways
+null device 
+          1 
+null device 
+          1 
+
+=== Within-HGS strata (Hallmark ward.D2, k=3; DESCRIPTIVE, n=15) ===
+[Cluster 1 = Hypoxic-glycolytic | n=3] OV1369-R2, OV1946, OV866-2
+[Cluster 2 = Low-signaling | n=10] OV2085, OV2295, OV2295-R2, OV3133-R, OV3331, OV4485, TOV1369, TOV3041G, TOV3133G, TOV3291G
+[Cluster 3 = Inflammatory/NF-kB-EMT | n=2] OV4453, OV90
+
+--- Top Hallmark sets per cluster (mean z) ---
+[C1] UV_RESPONSE_DN(1.24), EPITHELIAL_MESENCHYMAL_TRANSITION(1.24), MYC_TARGETS_V1(1.01), TNFA_SIGNALING_VIA_NFKB(1.01), APOPTOSIS(0.84)
+[C2] KRAS_SIGNALING_DN(0.46), ESTROGEN_RESPONSE_LATE(0.45), ESTROGEN_RESPONSE_EARLY(0.45), OXIDATIVE_PHOSPHORYLATION(0.30), APICAL_JUNCTION(0.29)
+[C3] XENOBIOTIC_METABOLISM(1.97), COAGULATION(1.84), PI3K_AKT_MTOR_SIGNALING(1.83), ALLOGRAFT_REJECTION(1.80), PROTEIN_SECRETION(1.64)
+
+--- Cluster theme means (Hallmark z) ---
+  cluster inflammatory hypoxic_glycolytic proliferation
+1       1         0.62               0.06          0.59
+2       2        -0.36              -0.11         -0.25
+3       3         0.85               0.44          0.37
+
+--- PROGENy mean pathway activity per cluster (z) ---
+  cluster Androgen  EGFR Estrogen Hypoxia JAK-STAT  MAPK  NFkB   p53  PI3K
+1       1     0.37  1.05     0.96    0.90    -0.07  1.33  1.36 -0.24  0.94
+2       2    -0.43 -0.24    -0.34   -0.44     0.05 -0.53 -0.52 -0.34 -0.37
+3       3     1.61 -0.36     0.24    0.85    -0.15  0.64  0.58  2.06  0.42
+   TGFb  TNFa Trail  VEGF   WNT
+1  0.13  1.29 -0.15  1.03 -0.19
+2 -0.12 -0.51 -0.05 -0.04 -0.18
+3  0.43  0.60  0.49 -1.32  1.17
+
+--- Robustness: Hallmark-k3 vs PROGENy-k3 clustering (contingency) ---
+        progeny
+hallmark 1 2 3
+       1 2 1 0
+       2 5 0 5
+       3 1 1 0
+
+All 15 HGS lines are Mes-Masson/CHUM -> no source-site confound in this analysis.
+Related sublines are not independent validation; patient-representative sensitivity is deposited.
+
+Outputs: output/hgs_heterogeneity.csv, output/hgs_hallmark_cluster_means.csv
+Figures: figs/14_hgs_hallmark_heatmap.pdf, 14_hgs_progeny_heatmap.pdf, 14_hgs_theme_scatter.pdf
+
+14_hgs_heterogeneity.R complete.

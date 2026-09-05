@@ -1,0 +1,174 @@
+[
+  {
+    "path": "scripts/00b_figure_theme.R",
+    "sha256": "c53a8835a3ce0fcd8813f95bb278d49e86c8d3c9c595457767d0cc80b8f631ce"
+  },
+  {
+    "path": "scripts/32_fig5_rare.R",
+    "sha256": "b5954cf607f10dff97687825c4c4ec906b41cefa9bc134e09737dbcfc0e3f4c1"
+  },
+  {
+    "path": "scripts/37_supp_rnaprot.R",
+    "sha256": "1f92a3d099d9d17d443d289faf8fcc52a1737f4dcbe363d9e22997c8845b31f5"
+  },
+  {
+    "path": "scripts/30_fig1_overview.R",
+    "sha256": "3dda0ab6af2ee0bbc6396bdad5f66c31679e8fae985f5993e8d981a550bd4861"
+  },
+  {
+    "path": "scripts/34_fig2_qc.R",
+    "sha256": "e9b61972b3dafc5b0e87bcd3b777f211797bf3ce5a43c37103a6fc14cc339e09"
+  },
+  {
+    "path": "scripts/36_fig6_adc.R",
+    "sha256": "050a4fa45f2f1c6e301625c8e134eb6023bd3a1b47300d04e388a35684bfb5f1"
+  },
+  {
+    "path": "scripts/33_supp_genomics.R",
+    "sha256": "16926f3e9cbf911a53966edffa73fe604ed4cdf70c2ae98fedf1001a4f214402"
+  },
+  {
+    "path": "scripts/35_fig3_biology.R",
+    "sha256": "927615c549d01d1137df6fbe229dfd2a1b65676142cc80d66530d28e80b5fdf7"
+  },
+  {
+    "path": "scripts/31_fig4_genomics.R",
+    "sha256": "e927ef8b06093f8de8981d694952b8f864793700a813d7df4fd6bbf5fc8affdb"
+  },
+  {
+    "path": "docs/manuscript/figures/fig4.pdf",
+    "sha256": "ab277b8430a0712131d516a394a607902925d9f0fe6c58cb810c17d50a97c06e"
+  },
+  {
+    "path": "docs/manuscript/figures/figs4.pdf",
+    "sha256": "1c5e886c18a4e8ca8da528a9e5c5bfd2154313b5452e4931aaaae30077b9a25d"
+  },
+  {
+    "path": "docs/manuscript/figures/figs6.png",
+    "sha256": "aa3115a61dd2a5dab606194c172cfc748f4bf898a72f185d1fc17e539a8cfb32"
+  },
+  {
+    "path": "docs/manuscript/figures/fig6.png",
+    "sha256": "29f17d3d42c26c2469d873e1636d1a718a570d017b0c7c1b69cd5c5cbc54d832"
+  },
+  {
+    "path": "docs/manuscript/figures/figs7.png",
+    "sha256": "e539d6e7c35ed3115795c6f8793e4a1c1dbb29e1ab149e9621142a3d8489e392"
+  },
+  {
+    "path": "docs/manuscript/figures/figs5.pdf",
+    "sha256": "4e25c8264d0c306739ff53f7fc087f7947816bcf60680f3ea95a875a372b4cc0"
+  },
+  {
+    "path": "docs/manuscript/figures/fig5.pdf",
+    "sha256": "8bb72cbb7a9e78600fcc1cf0203c0cdce7db7315d47f8123d9c047d67fdaf844"
+  },
+  {
+    "path": "docs/manuscript/figures/figs7.pdf",
+    "sha256": "20ed29053fc13fecfa0181672e3339302da8b5889d8b80af500eca8042c0e0eb"
+  },
+  {
+    "path": "docs/manuscript/figures/figs5.png",
+    "sha256": "3453fa9399d7e2457a976b51cd3646ee2a2d8fa06c024aa081ba17abe0f8ffd6"
+  },
+  {
+    "path": "docs/manuscript/figures/fig5.png",
+    "sha256": "965032c9c544371cf0b0acdb11e6fa666a32c1c9b511cbc2a12e89bb74d4a3ea"
+  },
+  {
+    "path": "docs/manuscript/figures/fig4.png",
+    "sha256": "09c12d337ea13738ddbbdaa42374c5461b1c685ac2fa440c6c8818f909d31fb3"
+  },
+  {
+    "path": "docs/manuscript/figures/figs4.png",
+    "sha256": "6aa1eba269fc0a378eb3ba64237c4f76e16d3108927390edfb4c0f61e25d69e4"
+  },
+  {
+    "path": "docs/manuscript/figures/figs6.pdf",
+    "sha256": "0c69e8a43b06f348fdf5fd363909f474a3cc77ecdd7e921dd3887d0a5a030078"
+  },
+  {
+    "path": "docs/manuscript/figures/fig6.pdf",
+    "sha256": "80b59e51da6a12561d44766ff81941183fe0684fffc5ff49f39c6e61abacc321"
+  },
+  {
+    "path": "docs/manuscript/figures/figs2.pdf",
+    "sha256": "9867a096aed4c065a4c240cd4e03539314846153f5ae914450cb2cf288f63145"
+  },
+  {
+    "path": "docs/manuscript/figures/fig2.pdf",
+    "sha256": "7e9154ed443681d9c60408ef39a94342e9ccc592054f056f47a8f9e7f33e21ad"
+  },
+  {
+    "path": "docs/manuscript/figures/figs1.png",
+    "sha256": "3bed4aadc446f928fe9e549224312955e64190b4a6b7ad266bc07222d0d881d1"
+  },
+  {
+    "path": "docs/manuscript/figures/fig1.png",
+    "sha256": "d2504f0c7278187147fb548250c0d0c832f7b49b2cf230c2f8a51d8a4b744d58"
+  },
+  {
+    "path": "docs/manuscript/figures/fig3.pdf",
+    "sha256": "a438e0ac94735492715b920c7c720f6b849cb0f8a2d61666ef82c58719a5303f"
+  },
+  {
+    "path": "docs/manuscript/figures/figs3.pdf",
+    "sha256": "a972fef8be8ba13ba16c87bf1d860329cf7105ee118398a50165511857fad807"
+  },
+  {
+    "path": "docs/manuscript/figures/figs1.pdf",
+    "sha256": "0af361b6058dd959f2cddb52e28f3150132bd9e510f4e0eab0c2ad6f388d8757"
+  },
+  {
+    "path": "docs/manuscript/figures/fig1.pdf",
+    "sha256": "71656aba2e101e8256b900875a495b211e6ce6c1bd69944c949fcb1082692a27"
+  },
+  {
+    "path": "docs/manuscript/figures/fig3.png",
+    "sha256": "76382fa670f54ef4e2c9c40e088133c6fb907a4dfa86f1523fff5a6303fe11a0"
+  },
+  {
+    "path": "docs/manuscript/figures/figs3.png",
+    "sha256": "768406d7b185cd431a86c64206722d5525867d2bca001d82ac71f72ffb1a2f93"
+  },
+  {
+    "path": "docs/manuscript/figures/figs2.png",
+    "sha256": "77b6de39043b4a6ac36170a65e47fd1b4677ca4133e11fec1ef865fcd2bda396"
+  },
+  {
+    "path": "docs/manuscript/figures/fig2.png",
+    "sha256": "461c3df49a86be70eb2aea2d9fa6d358ddc894c40b0dc5ae1927f17c20058438"
+  },
+  {
+    "path": "docs/manuscript/figures/figs8.png",
+    "sha256": "1ded6bbe173b5f02fb93a904177f7fe36e3a7604cce49f111e6c03451ad956d0"
+  },
+  {
+    "path": "docs/manuscript/figures/figs8.pdf",
+    "sha256": "d0d639fc7b9df52892b5e5f0958fe285225d0ded9a06cdc1136224c26905dd41"
+  },
+  {
+    "path": "docs/manuscript/v6/author_confirmation.md",
+    "sha256": "227e61240c2be331f40e48e5d09bde3ff9e3713682b7a11048696922476f5161"
+  },
+  {
+    "path": "docs/manuscript/v6/build_manifest.json",
+    "sha256": "ed896fd5a264032110a87ab7475b516c4ba20a117902c489e36a37e644ec1ece"
+  },
+  {
+    "path": "docs/manuscript/v6/wes_cluster_retrieval.md",
+    "sha256": "bfccb775632aa04563d1d56a1ba4a8c0efba3e3c1ff2608ba242853e41539acc"
+  },
+  {
+    "path": "docs/manuscript/v6/OvCAN_Scientific_Data_draft_v6.md",
+    "sha256": "610b6b55b9cd391e0114aaa91dc7e57a5a8df90d928dd1850602d0da4d03eecb"
+  },
+  {
+    "path": "docs/manuscript/v6/build_docx_v6.py",
+    "sha256": "14068a513dc0132c7ffe144536a224fc3fc110f8d794f1e4fc4f5dc70b181c15"
+  },
+  {
+    "path": "docs/manuscript/v6/OvCAN_Scientific_Data_draft_v6.docx",
+    "sha256": "dee5d807b88eb3d38210e88972f97acc896aa419395f7b4335a7a16c4b1cd221"
+  }
+]

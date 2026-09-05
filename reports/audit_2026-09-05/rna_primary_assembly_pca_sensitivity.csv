@@ -1,0 +1,4 @@
+PC,all_loci_var_pct,primary_loci_var_pct,absolute_score_correlation,scope
+PC1,20.6321688776533,21.5848093505321,0.999697997853939,sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification
+PC2,10.3888635208268,10.9861407934749,0.999025872117126,sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification
+PC3,7.94076947023873,8.26654827579388,0.997806801802967,sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification

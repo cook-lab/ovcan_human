@@ -1,0 +1,5 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | diverging palette: slate-white-rust | captions external
+Individual-model marker matrix agrees with the deposited subtype means.
+Figure3: PCA31 models; concordance8033 genes; markers26 rows; patient means28 patients.
+35_fig3_biology.R complete.

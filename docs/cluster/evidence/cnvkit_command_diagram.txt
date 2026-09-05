@@ -1,0 +1,17 @@
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV2085_P64/OV2085_P64.cnr -t 0.8 -o OV2085_P64/OV2085_P64-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV2295_P61/OV2295_P61.cnr -t 0.8 -o OV2295_P61/OV2295_P61-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV2295_R2_P70/OV2295_R2_P70.cnr -t 0.8 -o OV2295_R2_P70/OV2295_R2_P70-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV3133_R2_P58/OV3133_R2_P58.cnr -t 0.8 -o OV3133_R2_P58/OV3133_R2_P58-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV3133_R_P71/OV3133_R_P71.cnr -t 0.8 -o OV3133_R_P71/OV3133_R_P71-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV3291_P46/OV3291_P46.cnr -t 0.8 -o OV3291_P46/OV3291_P46-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV3331_P54/OV3331_P54.cnr -t 0.8 -o OV3331_P54/OV3331_P54-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram OV90_P63/OV90_P63.cnr -t 0.8 -o OV90_P63/OV90_P63-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV112D_P83/TOV112D_P83.cnr -t 0.8 -o TOV112D_P83/TOV112D_P83-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV1369_P65/TOV1369_P65.cnr -t 0.8 -o TOV1369_P65/TOV1369_P65-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV21G_P59/TOV21G_P59.cnr -t 0.8 -o TOV21G_P59/TOV21G_P59-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV2835EP_P64/TOV2835EP_P64.cnr -t 0.8 -o TOV2835EP_P64/TOV2835EP_P64-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV3121D_P68/TOV3121D_P68.cnr -t 0.8 -o TOV3121D_P68/TOV3121D_P68-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV3121EP_P68/TOV3121EP_P68.cnr -t 0.8 -o TOV3121EP_P68/TOV3121EP_P68-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV3133D_P66/TOV3133D_P66.cnr -t 0.8 -o TOV3133D_P66/TOV3133D_P66-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV3133G_P65/TOV3133G_P65.cnr -t 0.8 -o TOV3133G_P65/TOV3133G_P65-diagram1.pdf
+apptainer exec /scratch/asmab/nf-core/cnvkit-0.9.10--pyhdfd78af_0.img cnvkit.py diagram TOV3392D_P69/TOV3392D_P69.cnr -t 0.8 -o TOV3392D_P69/TOV3392D_P69-diagram1.pdf

@@ -1,0 +1,78 @@
+A                                                                                                                                                                              B
+                                          All 23 models                                   OV2295                                                                                                                      Best non-self                                    Self
+                                582,474
+                1,000,000                                                                                                                                                                     OV90
+
+
+
+
+Variant count
+                  100,000                                                                                                                                                            TOV21G
+                                   25,914
+                                                                                         16,081
+                                                                                                                                                     6,194                          TOV112D
+                   10,000
+                                                                                                                                                                                     COV434
+                    1,000                                                                     493
+                                                                                                                                                      170                                     BIN67
+                      100
+                                All calls                                                 PASS                                                 Coding                                                 0.00                                      0.25                              0.50                        0.75                    1.00
+                                                                                                                                             candidates
+                                                                                                                                                                                                                                                    Spearman correlation
+
+C
+                                                                                                                                                                                                                                                                                                        1,500
+                   Coding                                                                                                                                                                                                                                                                               500
+                candidates
+                                                                                                                                                                                                                                                                                                        100
+                   Patient        1369                        2295                            3121                                3133
+                                                                                                                                                                                                                                                                                                                    Patients
+                 Histotype                                                                                                        HGS                                                                                                                  CC               EC LGS MC                                    (T1-2)
+                     TP53                                                                                                                                                                                                                                                                                                             12
+                    KRAS                                                                                                                                                                                                                                                                                                              4
+                  ARID1B                                                                                                                                                                                                                                                                                                              2
+                   CDK12                                                                                                                                                                                                                                                                                                              2
+                  ARID1A                                                                                                                                                                                                                                                                                                              1
+                    BRAF                                                                                                                                                                                                                                                                                                              1
+                 CTNNB1                                                                                                                                                                                                                                                                                                               1
+                  PIK3CA                                                                                                                                                                                                                                                                                                              1
+                    PTEN                                                                                                                                                                                                                                                                                                              1
+                SMARCA4                                                                                                                                                                                                                                                                                                               1
+                   BRCA2                                                                                                                                                                                                                                                                                                              0
+                 CDKN2A                                                                                                                                                                                                                                                                                                               0
+                      NF1                                                                                                                                                                                                                                                                                                             0
+                SMARCA2                                                                                                                                                                                                                                                                                                               0
+                                                                                                                                                                                                                                                                                                              0                  16
+
+
+                                                                                                                                                                                                                                                 TOV21G
+                                                                                                                  OV3133-R                            TOV3133G
+                                                                                                                                                                                                                                                                                    TOV81D
+                                                                             TOV2295-R
+                                                                                                                                                                                                                                                                        TOV112D
+                                                                                          TOV3121D                                        TOV3133D                                                                                   TOV2929D               TOV3392D
+                                                     OV2295                                                                                                      OV3291    OV2085    OV3331
+                              OV1369-R2                        OV2295-R2                                                      OV3133-R2
+                                                                                                                                                                                               OV90
+                                           TOV1369                                                                                                                                                                                                                                            TOV2414
+                                                                                                     TOV3121EP                                                                                            TOV2835EP    TOV2881EP
+
+                                                                       Priority tier                             Tier 1                   Tier 2                   Tier 3
+                             Variant class                                 In-frame                      Missense                               Multiple classes                               Truncating
+
+D
+                                          Gain                Loss
+                      100
+
+
+
+HGSC patients
+                       50
+
+                        0
+
+  (% of 11)            50
+
+                      100
+                             1p           1q   2p    2q       3p     3q      4p          4q     5p     5q        6p          6q   7p      7q         8p   8q     9p       9q   10p   10q      11p   11q     12p       12q          13q   14q     15q      16p   16q     17p       17q   18p   18q       19p   19q   20p   20q   21q   22q
+

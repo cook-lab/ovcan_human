@@ -1,0 +1,8 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Panel C group maxima: MMR-d / MSI = SBS6 0.877; POLE proofreading = SBS10c 0.315; clock-like (age) = SBS5 0.651
+Panel D: TOV21G rel_mmr_d 0.733 | others 0.000-0.292 | SBS6 rel 0.428 (95% CI 0.116-0.454, sel 99.5%) | recon cos 0.9765 (best of 22: TOV21G)
+Panel E: z per gene across ALL 31 RNA / 31 protein lines — NOT across the 3 columns shown. Grey = not measured in that assay. Fill clamped at z = ±3 (observed max |z| 5.22).
+  VOA8762: intestinal signal rests on CDX2 (z +2.52, rank 30/31); its SATB2 is mid-panel (z -0.59, rank 15/31). TOV2414: SATB2 z +0.17, rank 19/31 — mid-panel and HIGHER than VOA8762; any "SATB2-negative" is literature IHC, not measured here.
+Panel F: 6 deficient lines; BIN67: SMARCA4 mRNA RETAINED (rank 23/31) but protein 2/31 — RNA-only authentication misses it. Protein sits 0.009 log2 above the panel minimum (VOA4841); the two lowest models are separated from the third (COV434) by 0.105 log2, so the SCCOHT protein calls are consistent with, not proof of, complete loss.
+Wrote /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig5.{pdf,png} + refreshed assets

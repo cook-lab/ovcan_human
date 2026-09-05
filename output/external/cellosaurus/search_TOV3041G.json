@@ -1,0 +1,306 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_9T24"
+          }
+        ],
+        "age": "61Y",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Mes-Masson, Anne-Marie"
+          }
+        ],
+        "created": "2016-02-23",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Ovary",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0000992",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0000992",
+                  "label": "ovary",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000992"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C105555",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C105555",
+            "label": "High grade ovarian serous adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C105555"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "1.33 +- 0.02 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=26622941"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "33",
+          "min": "31",
+          "unit": "hour"
+        },
+        "entry-version": "9",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "TOV-3041G"
+          },
+          {
+            "type": "synonym",
+            "value": "TOV3041G"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Genomics",
+            "value": "Whole exome sequencing."
+          },
+          {
+            "branch": "Variations",
+            "value": "SNP array analysis."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=26622941"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "29"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "6,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "15,16"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "161780",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161780"
+          },
+          {
+            "accession": "Q54972813",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54972813"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Hubert",
+            "last-name": "Fleury",
+            "name": "Fleury H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laudine",
+            "last-name": "Communal",
+            "name": "Communal L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Euridice",
+            "last-name": "Carmona",
+            "name": "Carmona E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lise",
+            "last-name": "Portelance",
+            "name": "Portelance L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suzanna L.",
+            "last-name": "Arcand",
+            "name": "Arcand S.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kurosh",
+            "last-name": "Rahimi",
+            "name": "Rahimi K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2015",
+        "first-page": "378",
+        "internal-id": "PubMed=26622941",
+        "journal-name": "Genes Cancer",
+        "last-page": "398",
+        "title": "Novel high-grade serous epithelial ovarian cancer cell lines that reflect the molecular diversity of both the sporadic and hereditary disease.",
+        "type": "article",
+        "volume": "6",
+        "xref-list": [
+          {
+            "accession": "PMC4633166",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4633166"
+          },
+          {
+            "accession": "10.18632/genesandcancer.76",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.18632/genesandcancer.76"
+          },
+          {
+            "accession": "26622941",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/26622941"
+          }
+        ]
+      }
+    ]
+  }
+}

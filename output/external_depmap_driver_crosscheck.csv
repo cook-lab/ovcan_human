@@ -1,0 +1,56 @@
+cell_line,depmap_name,depmap_ACH,gene,our_has_wes,our_variants,our_n_calls,our_tier,depmap_hotspot,depmap_damaging,agreement,depmap_release
+BIN67,BIN67,ACH-001278,TP53,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,SMARCA4,FALSE,NA,NA,NA,0,1,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,SMARCA2,FALSE,NA,NA,NA,NA,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,ARID1A,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,PIK3CA,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,KRAS,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,CTNNB1,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,PTEN,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,SMAD4,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,BRAF,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+BIN67,BIN67,ACH-001278,PPP2R1A,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,TP53,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,SMARCA4,FALSE,NA,NA,NA,0,2,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,SMARCA2,FALSE,NA,NA,NA,NA,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,ARID1A,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,PIK3CA,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,KRAS,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,CTNNB1,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,PTEN,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,SMAD4,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,BRAF,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+COV434,COV434,ACH-000123,PPP2R1A,FALSE,NA,NA,NA,0,0,no WES for this line (RNA/protein only),DepMap Public 24Q4
+OV90,OV90,ACH-000291,TP53,TRUE,p.S215R (Missense_Mutation),1,Tier1,2,2,corroborated (both),DepMap Public 24Q4
+OV90,OV90,ACH-000291,SMARCA4,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,SMARCA2,TRUE,NA,NA,NA,NA,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,ARID1A,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,PIK3CA,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,KRAS,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,CTNNB1,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,PTEN,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+OV90,OV90,ACH-000291,SMAD4,TRUE,p.R445* (Nonsense_Mutation),1,NA,2,2,corroborated (both),DepMap Public 24Q4
+OV90,OV90,ACH-000291,BRAF,TRUE,p.N486_P490del (In_Frame_Del),1,Tier2,0,0,OURS ONLY — not corroborated by DepMap,DepMap Public 24Q4
+OV90,OV90,ACH-000291,PPP2R1A,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,TP53,TRUE,p.R175H (Missense_Mutation),1,Tier1,2,2,corroborated (both),DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,SMARCA4,TRUE,p.L639fs (Frame_Shift_Del),1,Tier1,0,2,corroborated (both),DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,SMARCA2,TRUE,NA,NA,NA,NA,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,ARID1A,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,PIK3CA,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,KRAS,TRUE,p.A59T (Missense_Mutation),1,Tier2,0,0,OURS ONLY — not corroborated by DepMap,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,CTNNB1,TRUE,p.S37A (Missense_Mutation),1,Tier1,2,0,corroborated (both),DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,PTEN,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,SMAD4,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,BRAF,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV112D,TOV112D,ACH-000048,PPP2R1A,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,TP53,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,SMARCA4,TRUE,NA,NA,NA,0,1,DEPMAP ONLY — we do not call it,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,SMARCA2,TRUE,p.Q250del (In_Frame_Del),1,Tier3,NA,0,OURS ONLY — not corroborated by DepMap,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,ARID1A,TRUE,p.548_549fs (Frame_Shift_Ins) ; p.N756fs (Frame_Shift_Del),2,Tier1,0,1,corroborated (both),DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,PIK3CA,TRUE,p.H1047Y (Missense_Mutation),1,Tier1,1,0,corroborated (both),DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,KRAS,TRUE,p.G13C (Missense_Mutation),1,Tier1,1,0,corroborated (both),DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,CTNNB1,TRUE,p.A5V (Missense_Mutation),1,Tier3,1,0,corroborated (both),DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,PTEN,TRUE,p.L265fs (Frame_Shift_Del),1,Tier1,0,1,corroborated (both),DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,SMAD4,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,BRAF,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4
+TOV21G,TOV21G,ACH-000885,PPP2R1A,TRUE,NA,NA,NA,0,0,neither,DepMap Public 24Q4

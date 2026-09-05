@@ -1,0 +1,6 @@
+assay,model,term,median_pct,mean_pct,q25_pct,q75_pct,n_features,n_features_input,n_features_dropped,n_samples,design
+protein,published,subtype,8.530710901969488,16.6542295177135,0,29.023594541003938,6855,6855,0,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes"
+protein,published,source_site,6.093997640341766e-13,8.15351611884715,0,12.142603418116362,6855,6855,0,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes"
+protein,published,plex,0.8527435545994836,6.417480210215268,0,9.625884883524849,6855,6855,0,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes"
+protein,published,patient,19.798025384829582,27.435178902656844,0,49.7027592933718,6855,6855,0,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes"
+protein,published,Residuals,37.53355526737207,41.33959525056726,13.202726664183487,66.48132774119723,6855,6855,0,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes"

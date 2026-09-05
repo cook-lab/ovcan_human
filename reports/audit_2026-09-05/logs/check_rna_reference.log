@@ -1,0 +1,55 @@
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Loading required namespace: DESeq2
+                            metric        value
+                            <char>        <num>
+ 1:           TPM_gene_rows_before 3.956800e+04
+ 2:            TPM_gene_rows_after 3.973300e+04
+ 3:                shared_gene_ids 3.943300e+04
+ 4:                   new_gene_ids 3.000000e+02
+ 5:               retired_gene_ids 1.350000e+02
+ 6:             symbol_rows_before 2.890100e+04
+ 7:              symbol_rows_after 3.588200e+04
+ 8:                 shared_symbols 2.725900e+04
+ 9:                    new_symbols 8.623000e+03
+10:                removed_symbols 1.642000e+03
+11: median_sample_profile_Spearman 9.982193e-01
+12:    min_sample_profile_Spearman 9.979511e-01
+13:      abs_PC1_score_correlation 9.999647e-01
+            gene_id  symbol primary_assembly median_TPM_restored
+             <char>  <char>           <lgcl>               <num>
+ 1: ENSG00000177954   RPS27             TRUE            4496.610
+ 2: ENSG00000084207   GSTP1             TRUE            1892.550
+ 3: ENSG00000161970   RPL26             TRUE            1755.450
+ 4: ENSG00000124614   RPS10             TRUE            1691.810
+ 5: ENSG00000182774   RPS17             TRUE             910.305
+ 6: ENSG00000159335    PTMS             TRUE             604.156
+ 7: ENSG00000126267  COX6B1             TRUE             460.733
+ 8: ENSG00000135390 ATP5MC2             TRUE             338.294
+ 9: ENSG00000147677   EIF3H             TRUE             174.289
+10: ENSG00000187608   ISG15             TRUE             144.857
+    max_TPM_restored
+               <num>
+ 1:        15988.700
+ 2:         3807.180
+ 3:         3734.050
+ 4:         4189.890
+ 5:         3172.180
+ 6:         2116.460
+ 7:         1126.700
+ 8:          887.323
+ 9:          300.907
+10:         1705.690
+       PC all_loci_var_pct primary_loci_var_pct absolute_score_correlation
+   <char>            <num>                <num>                      <num>
+1:    PC1        20.632169            21.584809                  0.9996980
+2:    PC2        10.388864            10.986141                  0.9990259
+3:    PC3         7.940769             8.266548                  0.9978068
+                                                                                                              scope
+                                                                                                             <char>
+1: sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification
+2: sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification
+3: sensitivity using existing VST; reselect top2000 variable primary-assembly genes; not raw-read re-quantification
+   n_genes_checked max_rho_error  max_p_error
+             <int>         <num>        <num>
+1:             120  1.110223e-16 3.885781e-16

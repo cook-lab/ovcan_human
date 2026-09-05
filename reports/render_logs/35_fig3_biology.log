@@ -1,0 +1,11 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Panel F: per-line matrix validated against rna_markers_summary.csv.
+
+Fig3 written: /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig3.pdf
+A/B: n = 31 cell lines; PC1 20.7%, PC2 10.4%; sil overall 0.220, EC -0.014 (n=2)
+B  PC1 commonality raw/adj: unique subtype 42.4/39.3%, unique site 0.2/-2.5%, shared 31.1/28.9%, joint 73.7/65.7%
+C  n = 7894 genes (of 8212 shared symbols, >=10 lines); median 0.40; 10.3% negative
+D  n_features RNA 22542 (was hard-coded 22,544), protein 6855 (was 6,856); patient family-restricted median 0.76%
+E/F markers: 26 rows in 7 groups; lands_right = 16/25; EC lands_right = 0/3
+35_fig3_biology.R complete.

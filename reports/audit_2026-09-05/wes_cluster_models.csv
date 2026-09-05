@@ -1,0 +1,24 @@
+cell_line,histotype,patient_id,recorded_wes_passage,cnv_sample_id,historical_bam_path,qc_retrieval_status,alignment_availability
+OV1369-R2,HGS,1369,P66,OV1369_R2_P66,../work/a5/a947cdda816a6ac440c35f5a99d7c7/OV1369_R2_P66.recal.bam,pending cluster inventory,unverified
+OV2085,HGS,OV2085,P64,OV2085_P64,../work/9d/5053b19362a37673e25e6137ef2449/OV2085_P64.recal.bam,pending cluster inventory,unverified
+OV2295,HGS,2295,P61,OV2295_P61,../work/82/d4b4833ef8e3c2d4e18fb540d9357e/OV2295_P61.recal.bam,pending cluster inventory,unverified
+OV2295-R2,HGS,2295,P70,OV2295_R2_P70,../work/2a/25a0a6a1570955ea5a4fb75b685db4/OV2295_R2_P70.recal.bam,pending cluster inventory,unverified
+OV3133-R,HGS,3133,P71,OV3133_R_P71,../work/53/397412953e1df8497ab40f69c887f2/OV3133_R_P71.recal.bam,pending cluster inventory,unverified
+OV3133-R2,HGS,3133,P58,OV3133_R2_P58,../work/5d/8af0742f66349abbb6ec65e3e6b075/OV3133_R2_P58.recal.bam,pending cluster inventory,unverified
+OV3291,HGS,3291,P46,OV3291_P46,../work/67/391aefcedee5cff0359f87fc37879a/OV3291_P46.recal.bam,pending cluster inventory,unverified
+OV3331,HGS,OV3331,P54,OV3331_P54,../work/9f/bf3df6338ee821bd70926534d54dee/OV3331_P54.recal.bam,pending cluster inventory,unverified
+OV90,HGS,OV90,P63,OV90_P63,../work/5a/9c55f01b9d9f3b937491fab0ee693c/OV90_P63.recal.bam,pending cluster inventory,unverified
+TOV112D,EC,TOV112D,P83,TOV112D_P83,../work/42/00815049b9b01a26e84c3b4fb82f65/TOV112D_P83.recal.bam,pending cluster inventory,unverified
+TOV1369,HGS,1369,P65,TOV1369_P65,../work/53/1bf2853629a711f0eb15998b1fd9bd/TOV1369_P65.recal.bam,pending cluster inventory,unverified
+TOV21G,CC,TOV21G,P59,TOV21G_P59,../work/7f/1eda368f1e037f4afbbda4d6425c70/TOV21G_P59.recal.bam,pending cluster inventory,unverified
+TOV2295-R,HGS,2295,P57,TOV2295_R_P57,../work/b6/ecdb564b1632e569b8ba3584395884/TOV2295_R_P57.recal.bam,pending cluster inventory,unverified
+TOV2414,MC,TOV2414,P65,TOV2414_P65,../work/ad/34d92ef2d6e1ba0272c5fd188d3a96/TOV2414_P65.recal.bam,pending cluster inventory,unverified
+TOV2835EP,HGS,TOV2835EP,P64,TOV2835EP_P64,../work/36/d2b6b1fc50b36bdee99aeaaae32dcf/TOV2835EP_P64.recal.bam,pending cluster inventory,unverified
+TOV2881EP,HGS,TOV2881EP,P64,TOV2881EP_P64,../work/ec/03f6bb30a3faac68cadaac88840ace/TOV2881EP_P64.recal.bam,pending cluster inventory,unverified
+TOV2929D,HGS,TOV2929D,P57,TOV2929D_P57,../work/e4/cf2272b3a898107c8fd5d1b2d00216/TOV2929D_P57.recal.bam,pending cluster inventory,unverified
+TOV3121D,HGS,3121,P68,TOV3121D_P68,../work/96/ceaa2123d23bcdaae717012af0de56/TOV3121D_P68.recal.bam,pending cluster inventory,unverified
+TOV3121EP,HGS,3121,P68,TOV3121EP_P68,../work/16/fda4442888f0e2b4b65817a33a17d5/TOV3121EP_P68.recal.bam,pending cluster inventory,unverified
+TOV3133D,HGS,3133,P66,TOV3133D_P66,../work/3d/de394ce78ca6f4f7430349d2d49c90/TOV3133D_P66.recal.bam,pending cluster inventory,unverified
+TOV3133G,HGS,3133,P65,TOV3133G_P65,../work/88/4b018ca712993eb48e717c6f5af079/TOV3133G_P65.recal.bam,pending cluster inventory,unverified
+TOV3392D,CC,TOV3392D,P69,TOV3392D_P69,../work/a0/b412be85b4ae656bd8ffb7530b658f/TOV3392D_P69.recal.bam,pending cluster inventory,unverified
+TOV81D,LGS,TOV81D,P23,TOV81D_P23,../work/a5/c66150f956d90d786643f4b3d08453/TOV81D_P23.recal.bam,pending cluster inventory,unverified

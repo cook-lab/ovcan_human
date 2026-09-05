@@ -1,0 +1,162 @@
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+WARNING: No genotype column for TOV3121D_P68 in VCF!
+WARNING: No genotype column for NORMAL in VCF!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!
+WARNING: Unrecognized biotype "protein_coding_LoF". Assigning lowest priority!

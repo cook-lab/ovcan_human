@@ -1,0 +1,157 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+MutationalPatterns 3.18.0 | COSMIC COSMIC_v3.2 / GRCh38 | 200 bootstraps | max_delta 0.004
+SBS-96 matrix: 96 contexts x 23 lines | variants per spectrum: median 430 (range 303-2417)
+COSMIC reference: 60 signatures (SBS1, SBS2, SBS3, SBS4, SBS5, SBS6)
+Restricted reference: 22 signatures
+
+=== Reconstruction cosine (fitted vs observed spectrum) — the check the screen never made ===
+ cell_line n_snv_used recon_cos_full n_sigs_full recon_cos_restricted
+    TOV21G       2417          0.977           5                0.974
+  TOV2929D        883          0.960           6                0.949
+   TOV1369        686          0.931           7                0.914
+    TOV81D        608          0.936           4                0.915
+ OV1369-R2        594          0.954           9                0.932
+      OV90        583          0.954           9                0.927
+ OV2295-R2        572          0.946           7                0.905
+ TOV2881EP        559          0.955           8                0.923
+ TOV2835EP        514          0.948          10                0.905
+    OV2085        476          0.956           9                0.911
+  OV3133-R        437          0.949          10                0.882
+    OV3291        430          0.933           9                0.892
+  TOV3133G        430          0.953           8                0.906
+  TOV3392D        427          0.948          11                0.916
+ TOV2295-R        418          0.945          10                0.890
+  TOV3133D        411          0.940           9                0.860
+    OV2295        403          0.923           8                0.891
+ TOV3121EP        400          0.943           9                0.894
+ OV3133-R2        395          0.939           7                0.913
+   TOV2414        386          0.932           6                0.910
+   TOV112D        336          0.892           6                0.872
+  TOV3121D        316          0.948          12                0.901
+    OV3331        303          0.927           8                0.873
+ n_sigs_restricted
+                 5
+                 5
+                 5
+                 4
+                 5
+                 5
+                 4
+                 6
+                 7
+                 5
+                 5
+                 6
+                 4
+                 8
+                 6
+                 4
+                 5
+                 6
+                 6
+                 6
+                 4
+                 6
+                 5
+Reusing cached bootstrap summary: /Users/dpcook/Analysis/ovcan_human/output/wes_signature_refit_bootstrap.csv
+Wrote output/wes_signature_refit_exposures.csv (1320 rows)
+Wrote output/wes_signature_refit_summary.csv (23 lines)
+
+=== REFIT vs COSINE SCREEN — does the MMR-d component survive a fit? ===
+ cell_line subtype n_snv_used cos_mmr_d cos_margin_mmrd_vs_clock rel_mmr_d
+    TOV21G      CC       2417     0.877                    0.225     0.733
+ TOV2835EP     HGS        514     0.597                   -0.156     0.292
+      OV90     HGS        583     0.691                   -0.116     0.241
+    OV3331     HGS        303     0.661                   -0.054     0.236
+  TOV3121D     HGS        316     0.636                   -0.143     0.209
+ TOV3121EP     HGS        400     0.591                   -0.134     0.182
+  TOV3392D      CC        427     0.668                   -0.074     0.168
+   TOV2414      MC        386     0.666                   -0.099     0.143
+   TOV1369     HGS        686     0.602                   -0.151     0.136
+ TOV2881EP     HGS        559     0.580                   -0.184     0.130
+   TOV112D      EC        336     0.624                   -0.110     0.121
+    OV2085     HGS        476     0.658                   -0.127     0.117
+    OV2295     HGS        403     0.565                   -0.185     0.107
+ OV3133-R2     HGS        395     0.628                   -0.167     0.101
+    TOV81D     LGS        608     0.608                   -0.217     0.098
+    OV3291     HGS        430     0.591                   -0.174     0.097
+ TOV2295-R     HGS        418     0.535                   -0.234     0.096
+  TOV2929D     HGS        883     0.593                   -0.209     0.094
+ OV1369-R2     HGS        594     0.695                   -0.040     0.091
+  TOV3133D     HGS        411     0.534                   -0.202     0.070
+  OV3133-R     HGS        437     0.541                   -0.235     0.041
+ OV2295-R2     HGS        572     0.509                   -0.270     0.000
+  TOV3133G     HGS        430     0.584                   -0.209     0.000
+ mmr_d_top_signature mmr_d_top_boot_selected_frac rel_clock recon_cosine_full
+                SBS6                        1.000     0.000             0.977
+                SBS6                        0.630     0.000             0.948
+                SBS6                        0.730     0.242             0.954
+               SBS26                        0.865     0.097             0.927
+               SBS26                        0.535     0.000             0.948
+               SBS26                        0.545     0.000             0.943
+               SBS15                        0.805     0.216             0.948
+                SBS6                        0.605     0.453             0.932
+                SBS6                        0.730     0.000             0.931
+               SBS15                        0.890     0.000             0.955
+               SBS15                        0.920     0.407             0.892
+               SBS15                        0.735     0.225             0.956
+               SBS26                        0.660     0.117             0.923
+                SBS6                        0.710     0.393             0.940
+                SBS6                        0.740     0.554             0.936
+               SBS44                        0.330     0.093             0.933
+               SBS26                        0.690     0.095             0.946
+               SBS15                        0.635     0.398             0.960
+               SBS15                        0.405     0.050             0.954
+                SBS6                        0.385     0.109             0.940
+               SBS15                        0.200     0.381             0.949
+                SBS6                        0.040     0.346             0.946
+                SBS6                        0.400     0.483             0.953
+            sbs_call
+      MMR-d/MSI-like
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+ clock/indeterminate
+
+=> TOV21G: MMR-d relative exposure 0.733 (top SBS6, selected in 100.0% of 200 bootstraps);
+   the other 22 lines span 0.000-0.292. Reconstruction cosine 0.977 vs 0.892-0.960.
+   Interpretation: a refit estimates contributions conditional on a chosen reference set,
+   which a cosine to one reference cannot. Read the bootstrap interval and the
+   selection frequency, not the point exposure — n_snv_used is small.
+Warning message:
+`geom_errorbarh()` was deprecated in ggplot2 4.0.0.
+ℹ Please use the `orientation` argument of `geom_errorbar()` instead. 
+`height` was translated to `width`.
+Wrote figs/f_wes_signature_refit.pdf
+
+22_wes_signature_refit.R complete. Outputs: output/wes_signature_refit_exposures.csv, output/wes_signature_refit_summary.csv, figs/f_wes_signature_refit.pdf
+Target-opportunity sensitivity: 63465385bp; 23models; TOV21G:
+ cell_line                                                              mode
+    TOV21G                      target-restricted variants; genome reference
+    TOV21G target-restricted variants; target-opportunity-adjusted reference
+    TOV21G  target-restricted variants; target-adjusted restricted reference
+ n_snv_target n_snv_unrestricted mmr_relative_exposure reconstruction_cosine
+         2417               2417             0.7330273             0.9765327
+         2417               2417             0.4471904             0.9780698
+         2417               2417             0.4745501             0.9720294
+There were 50 or more warnings (use warnings() to see the first 50)

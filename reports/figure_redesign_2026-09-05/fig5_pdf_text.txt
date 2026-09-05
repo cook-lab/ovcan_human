@@ -1,0 +1,64 @@
+A                                                           B
+                                                                                                   TOV21G (2,417 SNVs)
+                                                                                                     C>A          C>G       C>T             T>A         T>C         T>G
+
+
+
+                                                              SNV fraction
+         TOV21G                                                                           0.10
+      TOV2929D
+        TOV1369                                                                           0.05
+     OV1369-R2
+     OV2295-R2
+         TOV81D                                                                           0.00
+    TOV2835EP                                                                                                            Trinucleotide context
+    TOV2881EP
+           OV90                                             C
+          OV3291                                                                SBS6 (MMR)                                                                         0.877
+          OV2085
+    TOV3121EP                                                                   SBS5 (clock)                                                        0.651
+      TOV3392D                                                                SBS10c (POLE)                              0.315
+     TOV3133G
+     TOV2295-R                                                                                0.0                                 0.5                                  1.0
+      TOV3133D                                                                                                             Cosine similarity
+       OV3133-R
+          OV2295
+     OV3133-R2                                              D
+      TOV3121D                                                                  Genome / full                                                           0.733
+          OV3331                                                                   Target / full                                  0.447
+        TOV2414
+       TOV112D                                                               Target / restricted                                    0.475
+               100                   500           1,500                                      0.0                                 0.5                                  1.0
+                        Coding candidates                                                                          MMR-associated fitted fraction
+                Indel fraction
+
+
+             0.04                     0.28
+
+E                                                                                F
+                     V2      A8      A8       V2      A8           A8
+                       41      76      77       41      76           77
+                         4       2       1        4       2            1
+                 TO       VO     VO          TO    VO       VO
+                         RNA                      Protein
+         KRT7                                                                                       SMARCA4         SMARCA2             ARID1A          WES tier
+         PAX8                                                                                       RNA    Prot    RNA     Prot    RNA       Prot
+                                                                                                                                                        ARID1A T1
+          WT1                                                                        TOV21G         25      9       29     15           7     7
+                                                                                                                                                        SMARCA2 T3
+        SATB2                                                                        VOA4841         1      1       24     25       22        12
+         CDX2                                                                        TOV112D         2      4       4       6       30        19        SMARCA4 T1
+        KRT20                                                                         OV2085        29     31       3       1       15        31
+        MUC2
+                                                                                        BIN67       23      2       1       9       27        17
+      MUC5AC
+                                                                                      COV434         3      3       2       5       31        15
+         TFF1
+         TFF3                                                                         OV2295         6     25       13     28       20        30        SMARCA2 T3*
+
+
+                Within-assay z score
+
+
+              ≤ -3           0         ≥3
+

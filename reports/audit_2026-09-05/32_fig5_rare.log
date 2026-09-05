@@ -1,0 +1,7 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Panel C group maxima: MMR-d / MSI = SBS6 0.877; POLE proofreading = SBS10c 0.315; clock-like (age) = SBS5 0.651
+Panel E: z per gene across ALL 31 RNA / 31 protein lines — NOT across the 3 columns shown. Grey = not measured in that assay. Fill clamped at z = ±3 (observed max |z| 5.22).
+  VOA8762: intestinal signal rests on CDX2 (z +2.52, rank 30/31); its SATB2 is mid-panel (z -0.59, rank 15/31). TOV2414: SATB2 z +0.17, rank 19/31 — mid-panel and HIGHER than VOA8762; any "SATB2-negative" is literature IHC, not measured here.
+Panel F: 6 deficient lines; BIN67: SMARCA4 RNA rank 23/31; protein rank 2/31. Relative protein abundance does not establish complete loss.
+Wrote /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig5.{pdf,png} + refreshed assets

@@ -1,0 +1,76 @@
+{
+  "figures": {
+    "fig4": {
+      "width_inches": 7.2,
+      "height_inches": 8.2,
+      "fonts": [
+        "TIWSTQ+ArialMT",
+        "TKLJMS+Arial-BoldMT",
+        "CJMHPJ+Arial-ItalicMT"
+      ],
+      "all_fonts_embedded": true,
+      "pdf_sha256": "f7f7b8d8c52d92cfab1f6ec3322f9e03a072c0fda73d7faac53ca273915d1508",
+      "pdf_render": "reports/figure_redesign_2026-09-05/fig4_pdf_review.png",
+      "longest_text_line": 330
+    },
+    "fig5": {
+      "width_inches": 7.2,
+      "height_inches": 6.9,
+      "fonts": [
+        "VVNFBS+ArialMT",
+        "YSINDW+Arial-BoldMT",
+        "PFVKSP+Arial-ItalicMT",
+        "IFKFHX+ArialMT"
+      ],
+      "all_fonts_embedded": true,
+      "pdf_sha256": "e04ba325447eb26855b7b01734ed6928e4b7a0b010de109b91e13f64bab88152",
+      "pdf_render": "reports/figure_redesign_2026-09-05/fig5_pdf_review.png",
+      "longest_text_line": 170
+    },
+    "figs5": {
+      "width_inches": 7.2,
+      "height_inches": 4.2,
+      "fonts": [
+        "CEHGQV+ArialMT",
+        "IFKFHX+ArialMT"
+      ],
+      "all_fonts_embedded": true,
+      "pdf_sha256": "6d54abf9b56dd9c33db758621ee5ed1f4d15748d9103b8349e99d87e355e2094",
+      "pdf_render": "reports/figure_redesign_2026-09-05/figs5_pdf_review.png",
+      "longest_text_line": 139
+    },
+    "figs6": {
+      "width_inches": 7.2,
+      "height_inches": 3.8,
+      "fonts": [
+        "APHEEI+ArialMT",
+        "AJWXSQ+Arial-BoldMT"
+      ],
+      "all_fonts_embedded": true,
+      "pdf_sha256": "691a2de4492f7c192522deaa40114a5032c1f0f648ebf0d586d146e817cb363c",
+      "pdf_render": "reports/figure_redesign_2026-09-05/figs6_pdf_review.png",
+      "longest_text_line": 117
+    }
+  },
+  "data_checks": {
+    "WES_models": 23,
+    "coding_candidates": 6194,
+    "driver_variant_rows": 51,
+    "occupied_gene_model_cells": 46,
+    "driver_genes": 14,
+    "driver_patients": 16
+  },
+  "source_sha256": {
+    "wes_filter_cascade.csv": "00cef6ce2bec5c6c8545871be06830f0e639a8c7518e7b46814925d691a78815",
+    "wes_driver_tiers.csv": "6c6bb12d685b058b6decc543fd7dd5f8b934c7a6edf84aae89b129a25fb0e415",
+    "wes_mutation_load.csv": "1a1b8c774598bfccd941b5aaf8ab843746c33e2b74a405fa8b6aa7609af47f29",
+    "wes_cnv_arm_freq_patient.csv": "71a58ab2135621156e567a1c874907ffe49df4f3e6c14cd2c987eb8685de3c5e",
+    "wes_cnv_segments.csv": "ce30e2decceeb35a019124495d60e47be1a2f9cfe23e61823395786f395c02a6",
+    "wes_cnv_fga.csv": "13d5fbf2574be85e20b46940e7519913f1952a0ee76530b13596fa62a4e64e40",
+    "wes_signature_target_sensitivity.csv": "8505069a3e2bb1e37fe71129cf297dfcf59ac960736b6fa7b17684184d362beb",
+    "auth_mucinous_marker_ranks.csv": "16fdf71b1d3080b2d03a96c1c65e1d9e43c058300c1723c006c11af49b7263d2",
+    "auth_swisnf_long.csv": "8dcdc4abb108538fce7af070ada6853990a81b9688775f19995f5f0479829f27",
+    "consensusov_calls.csv": "0b39de343a6b1fa3f0c8a07fbbda550ed0c10380b47e530282588ead7b25a259",
+    "hgs_heterogeneity.csv": "562af93a32a6c47c10e0c09f4cc7df97faa33983c9ed4a255993abcaa8dc7139"
+  }
+}

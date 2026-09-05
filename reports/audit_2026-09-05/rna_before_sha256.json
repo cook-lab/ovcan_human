@@ -1,0 +1,262 @@
+[
+  {
+    "file": "output/integ_rnaprot_cor_summary.csv",
+    "sha256": "b11093f2f469d233265e12963d807fd25d5a8e596282ee4e13a725b24fa8680f"
+  },
+  {
+    "file": "output/rna_de_CC.csv",
+    "sha256": "9edb7c4714cec2eb623680a96280ef3e93202f5335a488bd9000c9154f191b74"
+  },
+  {
+    "file": "output/sensitivity_patient_reps.csv",
+    "sha256": "7524ee7aa964db3e85a7dd80f1d6a6d65f7aa038c9ef3d6cb53531c8168649a8"
+  },
+  {
+    "file": "output/rna_de_SCCOHT.csv",
+    "sha256": "58f61374599287673cc689c27e9ac20fbc4e272994c81517cc30f881279bdbb9"
+  },
+  {
+    "file": "output/sensitivity_patient_reps_go_comparison.csv",
+    "sha256": "3ffb1b555a3e1c01e0bee377fd0875e5643f60ba682fdcc748606992cc9ceac9"
+  },
+  {
+    "file": "output/hgs_hallmark_cluster_means.csv",
+    "sha256": "14186181aa88e7ebb2a10a73cd7d62134789bd9fffc01f3e9053e39dd4aeb9ca"
+  },
+  {
+    "file": "output/rna_signatures_MC.csv",
+    "sha256": "227b502709d1e59d61394824b0946c43b3a6496a3c7961699f8e1916929ea425"
+  },
+  {
+    "file": "output/rna_vst.rds",
+    "sha256": "1da77880790d67e937862b33f8444df3ee411547a8cfbbc9d8b51d3d9ebf97cf"
+  },
+  {
+    "file": "output/rna_swisnf.csv",
+    "sha256": "05abf65320695d0418816ed321e73e2f98faa3c20a6370c34dee2f17c3aa2345"
+  },
+  {
+    "file": "output/rna_pc_confounder_joint.csv",
+    "sha256": "3edd136f2d24a7b0395f54861c0d763872d2319fb59ed51d14c43923846cf292"
+  },
+  {
+    "file": "output/rna_passage_check.csv",
+    "sha256": "8bed00ad92d2e74c5d7d01df9eee482b642fd578b6991c3ea26108def7979b84"
+  },
+  {
+    "file": "output/rna_reference_reconciliation.csv",
+    "sha256": "da608aa3fc6d8632944bb430d75aeba8b6101df104c63d6c4c0cd2bf6ea5cb4a"
+  },
+  {
+    "file": "output/rna_reference_sensitivity.csv",
+    "sha256": "c9dd60152827967b7614d77ca35ecac5470440ccb7b4dbf7d1b946098f2805ff"
+  },
+  {
+    "file": "output/integ_rnaprot_negative_genes.csv",
+    "sha256": "59be7f3f8801b59735404d8d2c90db7adcc81582354df7a95dce2da3d2622c18"
+  },
+  {
+    "file": "output/prot_dynamic_range.csv",
+    "sha256": "d87b7f7e0200c418e1f31ce1b1d493d43f4d9406ebaff13125952ac5d372e9f9"
+  },
+  {
+    "file": "output/rna_ec_markers.csv",
+    "sha256": "f4158ad468257df8f6b2a234dcfe9935e544c46ccff3a54e0ecda112f085d505"
+  },
+  {
+    "file": "output/hgs_heterogeneity.csv",
+    "sha256": "9ba558f80c78d56fec4f0aa1cd61c3d165a6204883feb665dcc8c6cf0f52ddd4"
+  },
+  {
+    "file": "output/rna_de_gsea_recovery.csv",
+    "sha256": "2f5690a14b60066a0c534191cacb3199da8a46c1538ba30020d27e13eabfe779"
+  },
+  {
+    "file": "output/rna_de_EC.csv",
+    "sha256": "2c92da361238f20e4298aeaaafabd039555a15802d06a2178b6905b26c52d00a"
+  },
+  {
+    "file": "output/rna_marker_effectsizes.csv",
+    "sha256": "d262d419407459d1a7aecdd6ef9de51c755d6eaca51d0cbc5eb1b1f155e0ecb9"
+  },
+  {
+    "file": "output/rna_tpm.csv",
+    "sha256": "f24cc6079f7da4f5a33eb48765ebcf1674df7a421a296dc0d34e24101a249be0"
+  },
+  {
+    "file": "output/rna_dds.rds",
+    "sha256": "3cc629693b78a7b9e85a58c0c6a6a6cc8517bd5a4b0cabe274bcde2396fe9a0d"
+  },
+  {
+    "file": "output/adc_subtype_summary.csv",
+    "sha256": "b91131742fd4161d0633dc2cefd6ad8714fad9d24dab229dd0394759af9ccca7"
+  },
+  {
+    "file": "output/rna_pc_confounder.csv",
+    "sha256": "740d2cf31435dd9580489592d089b4e71549444b4b6020ad5ce3542cc1d3ee19"
+  },
+  {
+    "file": "output/prot_cv_by_abundance.csv",
+    "sha256": "77c32f06dc32981e3622c0e7041e3b7422c5218e1740a42884ee96b816e4a451"
+  },
+  {
+    "file": "output/integ_rnaprot_n_thresholds.csv",
+    "sha256": "22d739c9a0ce921fdcf1a3cad0bfee13972354ba7960016dd8416f138a9c7288"
+  },
+  {
+    "file": "output/adc_expression.csv",
+    "sha256": "9dfdee51396a91a2499c1ffd75e42fa740cd91268c837ca0aa938715e98e4407"
+  },
+  {
+    "file": "output/rna_signatures_all.csv",
+    "sha256": "ba27c9c7dda685150961c6af7d4401e935b1d936e4e11b9b3f2afd310c078ab8"
+  },
+  {
+    "file": "output/rna_pca.rds",
+    "sha256": "3bd05eec1791bee5fb83234c5047a00513641b8cae81b24e912b90a322838d1e"
+  },
+  {
+    "file": "output/rna_de_gsea_recovery_seeds.csv",
+    "sha256": "d7d78bdea57142a1aa438bca6eb95f27af47d4fa735c9ad2a3a818bf85c910b3"
+  },
+  {
+    "file": "output/rna_qc_metrics.csv",
+    "sha256": "46032ebdc0fc6f42a299e4df0efbfc8d6920cb71f0e63c45a8cd60a1571ff0b9"
+  },
+  {
+    "file": "output/rna_counts.csv",
+    "sha256": "60f37c6dd01c3ecd9650b8df3ce6d89c57bf1568a86ca570a8a7c4fa2e1dbee1"
+  },
+  {
+    "file": "output/sensitivity_patient_reps_silhouette.csv",
+    "sha256": "0123f98dec16c2b29ab76d2f2e7301c7172c991ee6acbfaeaa8574115457b2f2"
+  },
+  {
+    "file": "output/rna_signatures_EC.csv",
+    "sha256": "ddfdd386c3b45fccbbb7f37eb70e5bcc636018ac172d566fbe1d1a3716e2e873"
+  },
+  {
+    "file": "output/rna_within_cc_site.csv",
+    "sha256": "cdfc8c40f4db808eaf7ba23de4970e8f77ca8d0f2d1428241e435f5d7df49b7d"
+  },
+  {
+    "file": "output/rna_variancepartition_dropped_genes.txt",
+    "sha256": "b11cdf0fa0e2fab53dcd81eea2b4ae5cbdd70db8e5f6ee067dabba69fb3c870a"
+  },
+  {
+    "file": "output/rna_qc_site_comparison.csv",
+    "sha256": "7c58ce29a4a87cfe3f864271e7c099e8de5fbe76841846c86cc5f72dc56362e0"
+  },
+  {
+    "file": "output/adc_modality_line_sets.csv",
+    "sha256": "47bd14adcae21035a8891afa62b0c0ba24a2db39bf60a57f967874759d8aeac3"
+  },
+  {
+    "file": "output/rna_variancepartition.csv",
+    "sha256": "e91df8342b27bfccdb45ec03268e67e5e2cf1de7d0958554076d983a715f3d8f"
+  },
+  {
+    "file": "output/rna_signatures_MMMT.csv",
+    "sha256": "8bd9e24d17a8345fe3d7d842668853af07bc09732082211f4b8ebaef42a88198"
+  },
+  {
+    "file": "output/sensitivity_patient_reps_de.csv",
+    "sha256": "a3691d5fe023856c8ac2e48e0744495f74eb997a5f6d7f7f98eb6202a4d7d5fd"
+  },
+  {
+    "file": "output/integ_rnaprot_cor.csv",
+    "sha256": "de743b6deda595ab3f2eb5fd83dc8f6affc9869d6f38b56e8713fa2a2549b1fa"
+  },
+  {
+    "file": "output/rna_markers_summary.csv",
+    "sha256": "c569296af5f9b4fa9a4789deacef5fb0d6425ee60247f70c02010a69448cc56f"
+  },
+  {
+    "file": "output/rna_signatures_HGS.csv",
+    "sha256": "515f0aaef7edc0b33c06b4744b0dce761c9e91b85ee4af24060788ca75e6fae2"
+  },
+  {
+    "file": "output/rna_txi.rds",
+    "sha256": "fb3043f58ef187969eb67758ae8e987bf54a125059a2de59949d9f71f5c23a5b"
+  },
+  {
+    "file": "output/rna_geneset_scores.csv",
+    "sha256": "1e9cf25d70fa15a8371905cebae1c7141c69c549e1021b99628a951b8a3720ea"
+  },
+  {
+    "file": "output/rna_de_gsea_go.csv",
+    "sha256": "fb321bf149baea96b7d81459a4cc13f42650902adfc74d54a0a01ce1e954205a"
+  },
+  {
+    "file": "output/rna_signatures_CC.csv",
+    "sha256": "4120821da5b136c623515dd5d67d67a2500337d69439d008e6a1f7ba1deb254e"
+  },
+  {
+    "file": "output/sensitivity_patient_reps_gsea_go.csv",
+    "sha256": "fcb9cc992fe4c2564a5c471929300088d2301a1cd65e42bd855226e5708ab2db"
+  },
+  {
+    "file": "output/rna_passage_discordance.csv",
+    "sha256": "7a4d49413c843a0d8e02d28b646299c4a50842f8deee05c0fc827e88799f7a1f"
+  },
+  {
+    "file": "output/variancepartition_sensitivity.csv",
+    "sha256": "afb014eda9e6304a24edd51558612d899178d4e94a6d2bd42bec8a1ad1599f7a"
+  },
+  {
+    "file": "output/rna_silhouette.csv",
+    "sha256": "4d99115c0e5fe05bf96f9bed5094bc812786851d24686ffc1acd31c8b98d783d"
+  },
+  {
+    "file": "output/rna_signatures_SCCOHT.csv",
+    "sha256": "8f32d91a0fdaab105fd7167bea9c25234df88b9009d6218a12cabcaec4e5a569"
+  },
+  {
+    "file": "output/rna_de_all.csv",
+    "sha256": "b3920ab7def91fae45321c422593bd50154a713b2c166bf06ab7460ba899e8ee"
+  },
+  {
+    "file": "output/sensitivity_patient_reps_pca.csv",
+    "sha256": "3c877beb259acacaaf759735762da4a0932c9bb3aa168d84ea9a8e436749676e"
+  },
+  {
+    "file": "output/rna_de_MC.csv",
+    "sha256": "0fadeee1ef8c0576fe42fb88af0284407caba152e4bd6ce01c502c411b2abee6"
+  },
+  {
+    "file": "output/rna_marker_recovery_permutation.csv",
+    "sha256": "53468f4b302a13f885a8f0c5e0c38c5f6bd8a473637e58ee26a3e86f9aeec38d"
+  },
+  {
+    "file": "output/adc_folr1_bimodality.csv",
+    "sha256": "77aad218bf37931de7c82f3f35b595f9dee610f2454b260df9b617bd8f93f307"
+  },
+  {
+    "file": "output/rna_sample_annotation.csv",
+    "sha256": "3e04a4fd04b65b0bd3e16ede0bfb0fcb8725870fe3eb6c37279909adb8868298"
+  },
+  {
+    "file": "output/integ_rnaprot_n_distribution.csv",
+    "sha256": "15f00ce82df0fda0e1033c17b87dd72c7a22859062f6452612acb64592b4d48f"
+  },
+  {
+    "file": "output/rna_de_gsea_recovery_stability.csv",
+    "sha256": "df468a490cf1a9c0f0c89eebb57b36972d55a083e2be1d1520e3a1f2d903cf19"
+  },
+  {
+    "file": "output/rna_de_MMMT.csv",
+    "sha256": "bd4f833eeed5034adeb686eba83fb077edfd3f99124a3ca80bff350158384698"
+  },
+  {
+    "file": "output/rna_de_HGS.csv",
+    "sha256": "ccdb03a06f3576188ca64fc03fb9765f1e95fc5e160fcb786a72674b04310c6b"
+  },
+  {
+    "file": "output/rna_pc_confounder_permutation.csv",
+    "sha256": "ccf4493c758542d6c2c2d06f267db93f589789fc5995cfa2bc12ab09b0dfe0d2"
+  },
+  {
+    "file": "output/integ_rnaprot_patientrep_sensitivity.csv",
+    "sha256": "3fc0e39b7ae667d4ad725ccff6cd387e59b51c8c15a046503f11cea45735fcdb"
+  }
+]

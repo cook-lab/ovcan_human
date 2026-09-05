@@ -1,0 +1,907 @@
+relative_path	bytes
+.DS_Store	6148
+Cell lines Subtypes.xlsx	18094
+Han_NatComm_2020_Signalling_Metagenes_Cleaned.csv	1745
+Multiomic samples summary .xlsx	21742
+annotation.csv	2788
+cnvkit wes - new/.DS_Store	10244
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57-diagram.pdf	4730532
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57-scatter.png	161783
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.antitargetcoverage.cnn	1745733
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.bintest.cns	519263
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.call.cns	4251268
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.cnr	17410511
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.cns	4256852
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/TOV2295_R_P57.targetcoverage.cnn	18501957
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/reference.cnn	26875054
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64-diagram.pdf	4437427
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64-scatter.png	172942
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.antitargetcoverage.cnn	1745733
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.bintest.cns	495772
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.call.cns	4251841
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.cnr	17433349
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.cns	4258768
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/TOV2881EP_P64.targetcoverage.cnn	18501912
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/20251208 - new samples/TOV2881EP_P64_new/reference.cnn	26875054
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57-diagram.pdf	4992085
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57-scatter.png	155723
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.antitargetcoverage.cnn	1745733
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.bintest.cns	626331
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.call.cns	4252772
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.cnr	17391672
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.cns	4260940
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/TOV2929D_P57.targetcoverage.cnn	18501824
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/20251208 - new samples/TOV2929D_P57_new/reference.cnn	26875054
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23-diagram.pdf	3682548
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23-scatter.png	167613
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.antitargetcoverage.cnn	1745733
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.bintest.cns	626672
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.call.cns	4249754
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.cnr	17433113
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.cns	4252611
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/TOV81D_P23.targetcoverage.cnn	18502272
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/20251208 - new samples/TOV81D_P23_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66-diagram.pdf	4930693
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66-scatter.png	179752
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.antitargetcoverage.cnn	1745733
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.bintest.cns	550719
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.call.cns	4253922
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.cnr	17414409
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.cns	4262448
+cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.targetcoverage.cnn	18501417
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV1369_R2_P66_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV1369_R2_P66_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV1369_R2_P66_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64-diagram.pdf	5363545
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64-scatter.png	158533
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.antitargetcoverage.cnn	1745730
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.bintest.cns	405547
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.call.cns	4258887
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.cnr	17415615
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.cns	4269170
+cnvkit wes - new/All samples/OV2085_P64_new/OV2085_P64.targetcoverage.cnn	18502083
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV2085_P64_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV2085_P64_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV2085_P64_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61-diagram.pdf	4887098
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61-scatter.png	168401
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.antitargetcoverage.cnn	1745733
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.bintest.cns	482363
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.call.cns	4252881
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.cnr	17424127
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.cns	4259845
+cnvkit wes - new/All samples/OV2295_P61_new/OV2295_P61.targetcoverage.cnn	18500031
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV2295_P61_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV2295_P61_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV2295_P61_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70-diagram.pdf	4491370
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70-scatter.png	136458
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.antitargetcoverage.cnn	1745733
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.bintest.cns	540527
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.call.cns	4253134
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.cnr	17424444
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.cns	4259846
+cnvkit wes - new/All samples/OV2295_R2_P70_new/OV2295_R2_P70.targetcoverage.cnn	18501177
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV2295_R2_P70_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV2295_R2_P70_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV2295_R2_P70_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71-diagram.pdf	4988867
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71-scatter.png	182267
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.antitargetcoverage.cnn	1745732
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.bintest.cns	580592
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.call.cns	4262244
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.cnr	17406761
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.cns	4277679
+cnvkit wes - new/All samples/OV3133_R_P71_new/OV3133_R_P71.targetcoverage.cnn	18502173
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV3133_R_P71_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV3133_R_P71_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV3133_R_P71_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54-diagram.pdf	5075633
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54-scatter.png	139989
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.antitargetcoverage.cnn	1745730
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.bintest.cns	505313
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.call.cns	4253183
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.cnr	17393770
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.cns	4260372
+cnvkit wes - new/All samples/OV3331_P54_new/OV3331_P54.targetcoverage.cnn	18501230
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV3331_P54_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV3331_P54_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV3331_P54_new/reference.cnn	26875054
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63-diagram.pdf	4548902
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63-scatter.png	153838
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.antitargetcoverage.cnn	1745731
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.bintest.cns	413134
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.call.cns	4251534
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.cnr	17436322
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.cns	4258119
+cnvkit wes - new/All samples/OV90_P63_new/OV90_P63.targetcoverage.cnn	18502159
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/OV90_P63_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/OV90_P63_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/OV90_P63_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV112D_P83_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83-diagram.pdf	3760523
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83-scatter.png	151748
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.antitargetcoverage.cnn	1745734
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.bintest.cns	599986
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.call.cns	4250520
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.cnr	17414476
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.cns	4254145
+cnvkit wes - new/All samples/TOV112D_P83_new/TOV112D_P83.targetcoverage.cnn	18502080
+cnvkit wes - new/All samples/TOV112D_P83_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV112D_P83_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV1369_P65_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65-diagram.pdf	4740869
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65-scatter.png	178410
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.antitargetcoverage.cnn	1745733
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.bintest.cns	524426
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.call.cns	4254568
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.cnr	17396750
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.cns	4266321
+cnvkit wes - new/All samples/TOV1369_P65_new/TOV1369_P65.targetcoverage.cnn	18499888
+cnvkit wes - new/All samples/TOV1369_P65_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV1369_P65_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV21G_P59_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59-diagram.pdf	3912509
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59-scatter.png	160831
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.antitargetcoverage.cnn	1745733
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.bintest.cns	602777
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.call.cns	4250315
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.cnr	17427072
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.cns	4253474
+cnvkit wes - new/All samples/TOV21G_P59_new/TOV21G_P59.targetcoverage.cnn	18502985
+cnvkit wes - new/All samples/TOV21G_P59_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV21G_P59_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV2414_P65_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65-diagram.pdf	3990567
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65-scatter.png	172222
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.antitargetcoverage.cnn	1745731
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.bintest.cns	392211
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.call.cns	4250342
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.cnr	17460673
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.cns	4253625
+cnvkit wes - new/All samples/TOV2414_P65_new/TOV2414_P65.targetcoverage.cnn	18501590
+cnvkit wes - new/All samples/TOV2414_P65_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV2414_P65_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV3133G_P65_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65-diagram.pdf	5196190
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65-scatter.png	182185
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.antitargetcoverage.cnn	1745731
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.bintest.cns	541004
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.call.cns	4262152
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.cnr	17402754
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.cns	4277472
+cnvkit wes - new/All samples/TOV3133G_P65_new/TOV3133G_P65.targetcoverage.cnn	18501949
+cnvkit wes - new/All samples/TOV3133G_P65_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV3133G_P65_new/reference.cnn	26875054
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/All samples/TOV3392D_P69_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69-diagram.pdf	4868275
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69-scatter.png	125801
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.antitargetcoverage.cnn	1745734
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.bintest.cns	366713
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.call.cns	4250698
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.cnr	17423707
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.cns	4257268
+cnvkit wes - new/All samples/TOV3392D_P69_new/TOV3392D_P69.targetcoverage.cnn	18502622
+cnvkit wes - new/All samples/TOV3392D_P69_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/All samples/TOV3392D_P69_new/reference.cnn	26875054
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/CC/TOV21G_P59_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59-diagram.pdf	3912509
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59-scatter.png	160831
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.antitargetcoverage.cnn	1745733
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.bintest.cns	602777
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.call.cns	4250315
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.cnr	17427072
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.cns	4253474
+cnvkit wes - new/CC/TOV21G_P59_new/TOV21G_P59.targetcoverage.cnn	18502985
+cnvkit wes - new/CC/TOV21G_P59_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/CC/TOV21G_P59_new/reference.cnn	26875054
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/CC/TOV3392D_P69_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69-diagram.pdf	4868275
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69-scatter.png	125801
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.antitargetcoverage.cnn	1745734
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.bintest.cns	366713
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.call.cns	4250698
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.cnr	17423707
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.cns	4257268
+cnvkit wes - new/CC/TOV3392D_P69_new/TOV3392D_P69.targetcoverage.cnn	18502622
+cnvkit wes - new/CC/TOV3392D_P69_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/CC/TOV3392D_P69_new/reference.cnn	26875054
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/EC/TOV112D_P83_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83-diagram.pdf	3760523
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83-scatter.png	151748
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.antitargetcoverage.cnn	1745734
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.bintest.cns	599986
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.call.cns	4250520
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.cnr	17414476
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.cns	4254145
+cnvkit wes - new/EC/TOV112D_P83_new/TOV112D_P83.targetcoverage.cnn	18502080
+cnvkit wes - new/EC/TOV112D_P83_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/EC/TOV112D_P83_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66-diagram.pdf	4930693
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66-scatter.png	179752
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.antitargetcoverage.cnn	1745733
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.bintest.cns	550719
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.call.cns	4253922
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.cnr	17414409
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.cns	4262448
+cnvkit wes - new/HGS/OV1369_R2_P66_new/OV1369_R2_P66.targetcoverage.cnn	18501417
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV1369_R2_P66_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV1369_R2_P66_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV1369_R2_P66_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64-diagram.pdf	5363545
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64-scatter.png	158533
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.antitargetcoverage.cnn	1745730
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.bintest.cns	405547
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.call.cns	4258887
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.cnr	17415615
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.cns	4269170
+cnvkit wes - new/HGS/OV2085_P64_new/OV2085_P64.targetcoverage.cnn	18502083
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV2085_P64_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV2085_P64_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV2085_P64_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61-diagram.pdf	4887098
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61-scatter.png	168401
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.antitargetcoverage.cnn	1745733
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.bintest.cns	482363
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.call.cns	4252881
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.cnr	17424127
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.cns	4259845
+cnvkit wes - new/HGS/OV2295_P61_new/OV2295_P61.targetcoverage.cnn	18500031
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV2295_P61_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV2295_P61_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV2295_P61_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70-diagram.pdf	4491370
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70-scatter.png	136458
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.antitargetcoverage.cnn	1745733
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.bintest.cns	540527
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.call.cns	4253134
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.cnr	17424444
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.cns	4259846
+cnvkit wes - new/HGS/OV2295_R2_P70_new/OV2295_R2_P70.targetcoverage.cnn	18501177
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV2295_R2_P70_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV2295_R2_P70_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV2295_R2_P70_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71-diagram.pdf	4988867
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71-scatter.png	182267
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.antitargetcoverage.cnn	1745732
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.bintest.cns	580592
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.call.cns	4262244
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.cnr	17406761
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.cns	4277679
+cnvkit wes - new/HGS/OV3133_R_P71_new/OV3133_R_P71.targetcoverage.cnn	18502173
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV3133_R_P71_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV3133_R_P71_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV3133_R_P71_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54-diagram.pdf	5075633
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54-scatter.png	139989
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.antitargetcoverage.cnn	1745730
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.bintest.cns	505313
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.call.cns	4253183
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.cnr	17393770
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.cns	4260372
+cnvkit wes - new/HGS/OV3331_P54_new/OV3331_P54.targetcoverage.cnn	18501230
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV3331_P54_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV3331_P54_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV3331_P54_new/reference.cnn	26875054
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63-diagram.pdf	4548902
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63-scatter.png	153838
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.antitargetcoverage.cnn	1745731
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.bintest.cns	413134
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.call.cns	4251534
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.cnr	17436322
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.cns	4258119
+cnvkit wes - new/HGS/OV90_P63_new/OV90_P63.targetcoverage.cnn	18502159
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/OV90_P63_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/OV90_P63_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/OV90_P63_new/reference.cnn	26875054
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/TOV1369_P65_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65-diagram.pdf	4740869
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65-scatter.png	178410
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.antitargetcoverage.cnn	1745733
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.bintest.cns	524426
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.call.cns	4254568
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.cnr	17396750
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.cns	4266321
+cnvkit wes - new/HGS/TOV1369_P65_new/TOV1369_P65.targetcoverage.cnn	18499888
+cnvkit wes - new/HGS/TOV1369_P65_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/TOV1369_P65_new/reference.cnn	26875054
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/HGS/TOV3133G_P65_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65-diagram.pdf	5196190
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65-scatter.png	182185
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.antitargetcoverage.cnn	1745731
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.bintest.cns	541004
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.call.cns	4262152
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.cnr	17402754
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.cns	4277472
+cnvkit wes - new/HGS/TOV3133G_P65_new/TOV3133G_P65.targetcoverage.cnn	18501949
+cnvkit wes - new/HGS/TOV3133G_P65_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/HGS/TOV3133G_P65_new/reference.cnn	26875054
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58-diagram.pdf	5492985
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58-scatter.png	184578
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.antitargetcoverage.cnn	1745731
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.bintest.cns	491469
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.call.cns	4264071
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.cnr	17404037
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.cns	4282401
+cnvkit wes - new/OV3133_R2_P58_new/OV3133_R2_P58.targetcoverage.cnn	18502858
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/OV3133_R2_P58_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/OV3133_R2_P58_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/OV3133_R2_P58_new/reference.cnn	26875054
+cnvkit wes - new/OV3291_P46_new/OV3291_P46-diagram.pdf	4879785
+cnvkit wes - new/OV3291_P46_new/OV3291_P46-scatter.png	167971
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.antitargetcoverage.cnn	1745735
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.bintest.cns	377267
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.call.cns	4262388
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.cnr	17406071
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.cns	4278825
+cnvkit wes - new/OV3291_P46_new/OV3291_P46.targetcoverage.cnn	18502725
+cnvkit wes - new/OV3291_P46_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/OV3291_P46_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/OV3291_P46_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/OV3291_P46_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/OV3291_P46_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/OV3291_P46_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/OV3291_P46_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/OV3291_P46_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/OV3291_P46_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/OV3291_P46_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/OV3291_P46_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/OV3291_P46_new/reference.cnn	26875054
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/TOV2835EP_P64_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64-diagram.pdf	4519342
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64-scatter.png	175328
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.antitargetcoverage.cnn	1745732
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.bintest.cns	648265
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.call.cns	4252052
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.cnr	17408274
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.cns	4259482
+cnvkit wes - new/TOV2835EP_P64_new/TOV2835EP_P64.targetcoverage.cnn	18500855
+cnvkit wes - new/TOV2835EP_P64_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/TOV2835EP_P64_new/reference.cnn	26875054
+cnvkit wes - new/TOV3121D_P68_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/TOV3121D_P68_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/TOV3121D_P68_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/TOV3121D_P68_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/TOV3121D_P68_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/TOV3121D_P68_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/TOV3121D_P68_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/TOV3121D_P68_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/TOV3121D_P68_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/TOV3121D_P68_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68-diagram.pdf	4919507
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68-scatter.png	126802
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.antitargetcoverage.cnn	1745733
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.bintest.cns	579819
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.call.cns	4249619
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.cnr	17397479
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.cns	4254873
+cnvkit wes - new/TOV3121D_P68_new/TOV3121D_P68.targetcoverage.cnn	18501065
+cnvkit wes - new/TOV3121D_P68_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/TOV3121D_P68_new/reference.cnn	26875054
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/TOV3121EP_P68_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68-diagram.pdf	4943093
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68-scatter.png	129403
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.antitargetcoverage.cnn	1745732
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.bintest.cns	556745
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.call.cns	4251176
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.cnr	17426607
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.cns	4255895
+cnvkit wes - new/TOV3121EP_P68_new/TOV3121EP_P68.targetcoverage.cnn	18501893
+cnvkit wes - new/TOV3121EP_P68_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/TOV3121EP_P68_new/reference.cnn	26875054
+cnvkit wes - new/TOV3133D_P66_new/SRR4039087.sorted.antitargetcoverage.cnn	2240395
+cnvkit wes - new/TOV3133D_P66_new/SRR4039087.sorted.targetcoverage.cnn	18164074
+cnvkit wes - new/TOV3133D_P66_new/SRR4039088.sorted.antitargetcoverage.cnn	2238125
+cnvkit wes - new/TOV3133D_P66_new/SRR4039088.sorted.targetcoverage.cnn	18104285
+cnvkit wes - new/TOV3133D_P66_new/SRR4039089.sorted.antitargetcoverage.cnn	2236552
+cnvkit wes - new/TOV3133D_P66_new/SRR4039089.sorted.targetcoverage.cnn	18234526
+cnvkit wes - new/TOV3133D_P66_new/SRR4039096.sorted.antitargetcoverage.cnn	2235992
+cnvkit wes - new/TOV3133D_P66_new/SRR4039096.sorted.targetcoverage.cnn	18160247
+cnvkit wes - new/TOV3133D_P66_new/SRR4039097.sorted.antitargetcoverage.cnn	2239403
+cnvkit wes - new/TOV3133D_P66_new/SRR4039097.sorted.targetcoverage.cnn	18114164
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66-diagram.pdf	4785104
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66-scatter.png	182940
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.antitargetcoverage.cnn	1745732
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.bintest.cns	531810
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.call.cns	4261873
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.cnr	17420254
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.cns	4274682
+cnvkit wes - new/TOV3133D_P66_new/TOV3133D_P66.targetcoverage.cnn	18501821
+cnvkit wes - new/TOV3133D_P66_new/intervals_sorted.target.bed	13941386
+cnvkit wes - new/TOV3133D_P66_new/reference.cnn	26875054
+cnvkit wes - new/command_diagram.txt	2791
+cnvkit wes - new/commands.txt	10749
+cnvkit wes - new/normal_samples/SRR4039087/SRR4039087.bam	461137920
+h.all.v7.4.symbols.gmt.txt	48243
+human_sample_annotation_cleaned.csv	2782
+human_sample_annotation_updated.csv	2788
+kallisto_qc.tsv	1092
+ovarian_cancer_HRD_peng_NatComm	1496
+proteomics/Readme.md	1
+proteomics/peptide_ratio.xlsx	68472128
+proteomics/protein_relative_abundance.xlsx	5036826
+proteomics/tmt.layout.xlsx	16142
+proteomics/~$protein_relative_abundance.xlsx	165
+rna_seq/.DS_Store	14340
+rna_seq/BIN67p51/abundance.h5	39559400
+rna_seq/BIN67p51/abundance.tsv	7605171
+rna_seq/BIN67p51/run_info.json	665
+rna_seq/COV434p46/abundance.h5	39768096
+rna_seq/COV434p46/abundance.tsv	7604505
+rna_seq/COV434p46/run_info.json	668
+rna_seq/LGSOC_P1/abundance.h5	45890397
+rna_seq/LGSOC_P1/abundance.tsv	7834267
+rna_seq/LGSOC_P1/run_info.json	4333
+rna_seq/LGSOC_P10/abundance.h5	44588944
+rna_seq/LGSOC_P10/abundance.tsv	7769084
+rna_seq/LGSOC_P10/run_info.json	3353
+rna_seq/LGSOC_P11/abundance.h5	44656732
+rna_seq/LGSOC_P11/abundance.tsv	7791891
+rna_seq/LGSOC_P11/run_info.json	3353
+rna_seq/LGSOC_P2/abundance.h5	45543224
+rna_seq/LGSOC_P2/abundance.tsv	7786843
+rna_seq/LGSOC_P2/run_info.json	3348
+rna_seq/LGSOC_P3/abundance.h5	45731995
+rna_seq/LGSOC_P3/abundance.tsv	7814074
+rna_seq/LGSOC_P3/run_info.json	3348
+rna_seq/LGSOC_P4/abundance.h5	46521444
+rna_seq/LGSOC_P4/abundance.tsv	7837576
+rna_seq/LGSOC_P4/run_info.json	3349
+rna_seq/LGSOC_P5/abundance.h5	45562677
+rna_seq/LGSOC_P5/abundance.tsv	7593090
+rna_seq/LGSOC_P5/run_info.json	3348
+rna_seq/LGSOC_P7/abundance.h5	48356873
+rna_seq/LGSOC_P7/abundance.tsv	7907571
+rna_seq/LGSOC_P7/run_info.json	3353
+rna_seq/OV1369R2p69/abundance.h5	38840828
+rna_seq/OV1369R2p69/abundance.tsv	7590213
+rna_seq/OV1369R2p69/run_info.json	924
+rna_seq/OV1946p64/abundance.h5	39579016
+rna_seq/OV1946p64/abundance.tsv	7597031
+rna_seq/OV1946p64/run_info.json	668
+rna_seq/OV2085p68/abundance.h5	40267506
+rna_seq/OV2085p68/abundance.tsv	7642733
+rna_seq/OV2085p68/run_info.json	668
+rna_seq/OV2295R2p67/abundance.h5	36424511
+rna_seq/OV2295R2p67/abundance.tsv	7480784
+rna_seq/OV2295R2p67/run_info.json	924
+rna_seq/OV2295p64/abundance.h5	37344876
+rna_seq/OV2295p64/abundance.tsv	7548329
+rna_seq/OV2295p64/run_info.json	668
+rna_seq/OV3133Rp64/abundance.h5	36139320
+rna_seq/OV3133Rp64/abundance.tsv	7435044
+rna_seq/OV3133Rp64/run_info.json	671
+rna_seq/OV3331p71/abundance.h5	39799243
+rna_seq/OV3331p71/abundance.tsv	7612520
+rna_seq/OV3331p71/run_info.json	668
+rna_seq/OV4453p60/abundance.h5	43776716
+rna_seq/OV4453p60/abundance.tsv	7743751
+rna_seq/OV4453p60/run_info.json	914
+rna_seq/OV4485p60/abundance.h5	36999209
+rna_seq/OV4485p60/abundance.tsv	7504096
+rna_seq/OV4485p60/run_info.json	667
+rna_seq/OV866-2p67/abundance.h5	35839336
+rna_seq/OV866-2p67/abundance.tsv	7484589
+rna_seq/OV866-2p67/run_info.json	918
+rna_seq/OV90p70/abundance.h5	38410902
+rna_seq/OV90p70/abundance.tsv	7496942
+rna_seq/OV90p70/run_info.json	658
+rna_seq/TOV112Dp63/abundance.h5	39368459
+rna_seq/TOV112Dp63/abundance.tsv	7592068
+rna_seq/TOV112Dp63/run_info.json	667
+rna_seq/TOV1369p65/abundance.h5	36547172
+rna_seq/TOV1369p65/abundance.tsv	7442597
+rna_seq/TOV1369p65/run_info.json	671
+rna_seq/TOV21Gp63/abundance.h5	41224982
+rna_seq/TOV21Gp63/abundance.tsv	7665606
+rna_seq/TOV21Gp63/run_info.json	664
+rna_seq/TOV2414p69/abundance.h5	38530606
+rna_seq/TOV2414p69/abundance.tsv	7358875
+rna_seq/TOV2414p69/run_info.json	671
+rna_seq/TOV3041Gp67/abundance.h5	40920041
+rna_seq/TOV3041Gp67/abundance.tsv	7651222
+rna_seq/TOV3041Gp67/run_info.json	674
+rna_seq/TOV3133Gp61/abundance.h5	38576074
+rna_seq/TOV3133Gp61/abundance.tsv	7583131
+rna_seq/TOV3133Gp61/run_info.json	674
+rna_seq/TOV3291Gp62/abundance.h5	36757921
+rna_seq/TOV3291Gp62/abundance.tsv	7521461
+rna_seq/TOV3291Gp62/run_info.json	673
+rna_seq/TOV3392Dp69/abundance.h5	35002697
+rna_seq/TOV3392Dp69/abundance.tsv	7462102
+rna_seq/TOV3392Dp69/run_info.json	674
+rna_seq/VOA10816p20/abundance.h5	41323146
+rna_seq/VOA10816p20/abundance.tsv	7665806
+rna_seq/VOA10816p20/run_info.json	674
+rna_seq/VOA12539p41/abundance.h5	42074093
+rna_seq/VOA12539p41/abundance.tsv	7693811
+rna_seq/VOA12539p41/run_info.json	674
+rna_seq/VOA295p31/abundance.h5	44370427
+rna_seq/VOA295p31/abundance.tsv	7769413
+rna_seq/VOA295p31/run_info.json	668
+rna_seq/VOA4395p39-40/abundance.h5	39165298
+rna_seq/VOA4395p39-40/abundance.tsv	7575839
+rna_seq/VOA4395p39-40/run_info.json	680
+rna_seq/VOA4841p43/abundance.h5	43255872
+rna_seq/VOA4841p43/abundance.tsv	7709604
+rna_seq/VOA4841p43/run_info.json	671
+rna_seq/VOA5217p36/abundance.h5	38168105
+rna_seq/VOA5217p36/abundance.tsv	7538297
+rna_seq/VOA5217p36/run_info.json	671
+rna_seq/VOA5436p35/abundance.h5	42300165
+rna_seq/VOA5436p35/abundance.tsv	7691971
+rna_seq/VOA5436p35/run_info.json	919
+rna_seq/VOA6861p17/abundance.h5	45260651
+rna_seq/VOA6861p17/abundance.tsv	7770569
+rna_seq/VOA6861p17/run_info.json	671
+rna_seq/VOA8762p27/abundance.h5	46698758
+rna_seq/VOA8762p27/abundance.tsv	7836439
+rna_seq/VOA8762p27/run_info.json	671
+rna_seq/VOA8771p28/abundance.h5	45226028
+rna_seq/VOA8771p28/abundance.tsv	7712577
+rna_seq/VOA8771p28/run_info.json	671
+wes - old/mutect2/OV1369_R2/OV1369_R2.maf	17108360
+wes - old/mutect2/OV1369_R2/OV1369_R2_P66.mutect2.filtered_VEP.ann.vcf	27437401
+wes - old/mutect2/OV1369_R2/OV1369_R2_P66.mutect2.filtered_VEP.ann.vcf.gz.tbi	146125
+wes - old/mutect2/OV2085/OV2085.maf	16586673
+wes - old/mutect2/OV2085/OV2085_P64.mutect2.filtered_VEP.ann.vcf	26938705
+wes - old/mutect2/OV2085/OV2085_P64.mutect2.filtered_VEP.ann.vcf.gz.tbi	138069
+wes - old/mutect2/OV2295/OV2295.maf	17058036
+wes - old/mutect2/OV2295/OV2295_P61.mutect2.filtered_VEP.ann.vcf	27472203
+wes - old/mutect2/OV2295/OV2295_P61.mutect2.filtered_VEP.ann.vcf.gz.tbi	142835
+wes - old/mutect2/OV2295_R2/OV2295_R2.maf	16727697
+wes - old/mutect2/OV2295_R2/OV2295_R2_P70.mutect2.filtered_VEP.ann.vcf	27118644
+wes - old/mutect2/OV2295_R2/OV2295_R2_P70.mutect2.filtered_VEP.ann.vcf.gz.tbi	141395
+wes - old/mutect2/OV3133_R/OV3133_R.maf	14545336
+wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf	24178121
+wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf.gz.tbi	135332
+wes - old/mutect2/OV3133_R2/OV3133_R2.maf	17729703
+wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf	28806403
+wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf.gz.tbi	148399
+wes - old/mutect2/OV3291/OV3291.maf	16725969
+wes - old/mutect2/OV3291/OV3291_P46.mutect2.filtered_VEP.ann.vcf	27378611
+wes - old/mutect2/OV3291/OV3291_P46.mutect2.filtered_VEP.ann.vcf.gz.tbi	140248
+wes - old/mutect2/OV3331/OV3331.maf	16615681
+wes - old/mutect2/OV3331/OV3331_P54.mutect2.filtered_VEP.ann.vcf	26884547
+wes - old/mutect2/OV3331/OV3331_P54.mutect2.filtered_VEP.ann.vcf.gz.tbi	147042
+wes - old/mutect2/OV90_P63/OV90_P63.maf	15605793
+wes - old/mutect2/OV90_P63/OV90_P63.mutect2.filtered_VEP.ann.vcf	25837304
+wes - old/mutect2/OV90_P63/OV90_P63.mutect2.filtered_VEP.ann.vcf.gz.tbi	134188
+wes - old/mutect2/TOV112D/TOV112D.maf	14513984
+wes - old/mutect2/TOV112D/TOV112D_P83.mutect2.filtered_VEP.ann.vcf	23708536
+wes - old/mutect2/TOV112D/TOV112D_P83.mutect2.filtered_VEP.ann.vcf.gz.tbi	134765
+wes - old/mutect2/TOV1369/TOV1369.maf	13839303
+wes - old/mutect2/TOV1369/TOV1369_P65.mutect2.filtered_VEP.ann.vcf	22731848
+wes - old/mutect2/TOV1369/TOV1369_P65.mutect2.filtered_VEP.ann.vcf.gz.tbi	130313
+wes - old/mutect2/TOV21G_P59/TOV21G_P59.maf	21393733
+wes - old/mutect2/TOV21G_P59/TOV21G_P59.mutect2.filtered_VEP.ann.vcf	34748731
+wes - old/mutect2/TOV21G_P59/TOV21G_P59.mutect2.filtered_VEP.ann.vcf.gz.tbi	181251
+wes - old/mutect2/TOV2295_R_P57/TOV2295_R_P57.maf	18475147
+wes - old/mutect2/TOV2295_R_P57/TOV2295_R_P57.mutect2.filtered_VEP.ann.vcf	29510330
+wes - old/mutect2/TOV2295_R_P57/TOV2295_R_P57.mutect2.filtered_VEP.ann.vcf.gz.tbi	148744
+wes - old/mutect2/TOV2414/TOV2414.maf	13943156
+wes - old/mutect2/TOV2414/TOV2414_P65.mutect2.filtered_VEP.ann.vcf	23235343
+wes - old/mutect2/TOV2414/TOV2414_P65.mutect2.filtered_VEP.ann.vcf.gz.tbi	130490
+wes - old/mutect2/TOV2835EP_P64/TOV2835EP_P64.maf	19277488
+wes - old/mutect2/TOV2835EP_P64/TOV2835EP_P64.mutect2.filtered_VEP.ann.vcf	30653809
+wes - old/mutect2/TOV2835EP_P64/TOV2835EP_P64.mutect2.filtered_VEP.ann.vcf.gz.tbi	154282
+wes - old/mutect2/TOV2881EP_P64/TOV2881EP_P64.maf	15124105
+wes - old/mutect2/TOV2881EP_P64/TOV2881EP_P64.mutect2.filtered_VEP.ann.vcf	24863423
+wes - old/mutect2/TOV2881EP_P64/TOV2881EP_P64.mutect2.filtered_VEP.ann.vcf.gz.tbi	136921
+wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.maf	15521228
+wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf	25158804
+wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf.gz.tbi	141541
+wes - old/mutect2/TOV3121D_P68/TOV3121D_P68.mutect2.filtered_VEP.ann.vcf.gz	5198507
+wes - old/mutect2/TOV3121D_P68/TOV3121D_P68.mutect2.filtered_VEP.ann.vcf.gz.tbi	140951
+wes - old/mutect2/TOV3121EP_P68/TOV3121EP_P68.maf	15900096
+wes - old/mutect2/TOV3121EP_P68/TOV3121EP_P68.mutect2.filtered_VEP.ann.vcf	25879992
+wes - old/mutect2/TOV3121EP_P68/TOV3121EP_P68.mutect2.filtered_VEP.ann.vcf.gz.tbi	140215
+wes - old/mutect2/TOV3133D/TOV3133D.maf	17329380
+wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf	28324456
+wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf.gz.tbi	147234
+wes - old/mutect2/TOV3133G/TOV3133G.maf	15723546
+wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf	25655971
+wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf.gz.tbi	140660
+wes - old/mutect2/TOV3392D/TOV3392D.maf	16486930
+wes - old/mutect2/TOV3392D/TOV3392D_P69.mutect2.filtered_VEP.ann.vcf	26936068
+wes - old/mutect2/TOV3392D/TOV3392D_P69.mutect2.filtered_VEP.ann.vcf.gz.tbi	141864
+wes - old/mutect2/TOV81D_P23/TOV81D_P23.maf	18712848
+wes - old/mutect2/TOV81D_P23/TOV81D_P23.mutect2.filtered_VEP.ann.vcf	30553349
+wes - old/mutect2/TOV81D_P23/TOV81D_P23.mutect2.filtered_VEP.ann.vcf.gz.tbi	157778
+wes - old/mutect2.zip	14449792

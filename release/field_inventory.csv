@@ -1,0 +1,491 @@
+file,column,rows,missing_values,description
+metadata/models.csv,cell_line,42,0,"Stable model identifier joining matrices, metadata, and annotations."
+metadata/models.csv,histotype_code,42,0,"Historical analysis group: HGS, LGS, CC, EC, MC, MMMT, or SCCOHT; see histotype_note."
+metadata/models.csv,histotype_label,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,histotype_note,42,0,Annotation qualification; TOV112D has a published dedifferentiated carcinoma reassignment.
+metadata/models.csv,contributing_centre,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,patient_id,42,0,"Patient-of-origin grouping, not an independently verified participant identifier."
+metadata/models.csv,models_from_same_patient,42,0,Number of resource models originating from this patient.
+metadata/models.csv,selected_patient_model,42,0,TRUE selects one model per patient by assay coverage and lexical tie-break; analysis-specific selections may differ.
+metadata/models.csv,rna_available,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,protein_available,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,copy_number_available,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,variants_available,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,rna_sample_id,42,11,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,rna_passage,42,11,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,wes_passage,42,19,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,tmt_plex,42,11,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,tmt_channel,42,11,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,stock_str_documentation,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,stock_mycoplasma_documentation,42,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+metadata/models.csv,rna_pseudoalign_pct,42,11,"Kallisto pseudoalignment percentage, 0–100."
+metadata/models.csv,rna_sequenced_fragments_M,42,11,Processed paired-end fragments in millions.
+metadata/models.csv,rna_assigned_gene_counts_M,42,11,"Sum of estimated gene counts after the global expression filter, in millions."
+metadata/models.csv,rna_genes_detected,42,11,Globally retained genes with estimated counts >=1 in this model.
+metadata/models.csv,prot_n_detected,42,11,Protein features with measured abundance in this model.
+metadata/models.csv,prot_pct_missing,42,11,"Percentage of the 8,427 protein features unmeasured in this model."
+metadata/models.csv,wes_n_coding,42,19,Number of retained tumour-only coding/splice candidates; not a mutation burden per megabase.
+metadata/models.csv,fga_autosome,42,19,Fraction of assessed autosomal segment length with absolute centred log2 ratio >0.20.
+metadata/models.csv,cellosaurus_accession,42,12,External Cellosaurus accession matched to the model name.
+metadata/models.csv,str_profile_documented,42,0,External STR reference profile exists in Cellosaurus; does not establish matching of study stocks.
+metadata/models.csv,problematic_flag,42,41,External Cellosaurus problematic/misidentification annotation; consult the source record.
+processed/rna_tpm.csv,gene_id,39733,0,Ensembl gene identifier from the matched transcript reference.
+processed/rna_tpm.csv,<cell_line>,39733,per-column; empty/NA denotes unmeasured,Gene TPM from the matched transcript-to-gene reference; unfiltered genes.
+processed/rna_counts.csv,gene_id,22678,0,Ensembl gene identifier from the matched transcript reference.
+processed/rna_counts.csv,<cell_line>,22678,per-column; empty/NA denotes unmeasured,Filtered tximport estimated counts; not raw sequenced-fragment counts.
+processed/rna_qc_metrics.csv,cell_line,31,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/rna_qc_metrics.csv,subtype,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/rna_qc_metrics.csv,site,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/rna_qc_metrics.csv,pseudoalign,31,0,"Kallisto pseudoalignment percentage, 0–100."
+processed/rna_qc_metrics.csv,assigned_gene_counts,31,0,"Sum of tximport estimated counts assigned to genes, after the global expression filter."
+processed/rna_qc_metrics.csv,detected,31,0,Number of globally retained genes with estimated counts >=1 in a model.
+processed/rna_qc_metrics.csv,n_processed_fragments,31,0,Kallisto fragments processed; paired reads count as one fragment.
+processed/prot_abundance_matrix.csv,protein,8427,0,Protein feature identifier; representative symbol or SYMBOL|UNIPROT for secondary rows.
+processed/prot_abundance_matrix.csv,<cell_line>,8427,per-column; empty/NA denotes unmeasured,Supplied log2 protein abundance normalised using the pooled TMT standard; missing measurements retained.
+processed/prot_qc.csv,row,8427,0,Protein feature identifier matching protein in the abundance matrix.
+processed/prot_qc.csv,symbol,8427,0,Source-table gene symbol; not all rows with the same symbol are interchangeable.
+processed/prot_qc.csv,uniprot,8427,0,Source-table UniProt accession(s).
+processed/prot_qc.csv,symbol_representative,8427,0,"Representative row chosen by completeness, peptide support, and q-value."
+processed/prot_qc.csv,n_peptides,8427,0,Number of identified peptides reported in the source protein table.
+processed/prot_qc.csv,n_unique_peptides,8427,0,Number of unique peptides reported in the source protein table.
+processed/prot_qc.csv,npeptides_quant,8427,0,Number of quantified peptides reported in the source protein table.
+processed/prot_qc.csv,qvalue,8427,0,Source protein-search q-value; upstream search configuration requires laboratory confirmation.
+processed/prot_qc.csv,cv_replicates,8427,487,Source-reported replicate CV in percent; exact upstream definition requires confirmation.
+processed/prot_qc.csv,isoDoping,8427,0,"Source-table isotope-doping annotation, preserved without reinterpretation."
+processed/prot_qc.csv,present_n_lines,8427,0,Number of resource models with measured protein abundance.
+processed/prot_qc.csv,present_n_plex,8427,0,"Number of TMT plexes with measured protein abundance, 0–5."
+processed/prot_qc.csv,pass_presence50,8427,0,TRUE for features measured in at least 16 of 31 models.
+processed/prot_qc.csv,complete_case,8427,0,TRUE for features measured in all 31 resource protein models.
+processed/prot_qc.csv,zero_plex,8427,0,TRUE for identified features with no quantified value in any resource plex.
+processed/prot_block_missingness.csv,protein,8427,0,Protein feature identifier; representative symbol or SYMBOL|UNIPROT for secondary rows.
+processed/prot_block_missingness.csv,present_n_lines,8427,0,Number of resource models with measured protein abundance.
+processed/prot_block_missingness.csv,present_n_plex,8427,0,"Number of TMT plexes with measured protein abundance, 0–5."
+processed/prot_block_missingness.csv,plexes_present,8427,70,TMT plexes in which this feature was measured.
+processed/prot_block_missingness.csv,plexes_absent,8427,6855,TMT plexes in which this feature was unmeasured.
+processed/prot_block_missingness.csv,absent_from_any_plex,8427,0,TRUE when feature is missing from at least one TMT plex.
+processed/prot_block_missingness.csv,pct_lines_missing,8427,0,Percentage of 31 protein models lacking this feature.
+processed/prot_block_missingness.csv,pass_presence50,8427,0,TRUE for features measured in at least 16 of 31 models.
+processed/prot_sample_qc.csv,cell_line,31,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/prot_sample_qc.csv,subtype,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_sample_qc.csv,site,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_sample_qc.csv,plex,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_sample_qc.csv,channel,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_sample_qc.csv,n_detected,31,0,Number of protein features with a measured abundance in a model.
+processed/prot_sample_qc.csv,pct_missing,31,0,"Percentage of the 8,427 protein features unmeasured in this model."
+processed/prot_feature_accounting.csv,level,14,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_feature_accounting.csv,n,14,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/prot_feature_accounting.csv,definition,14,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,cell_line,6194,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/wes_mutations_filtered.csv,subtype,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Hugo_Symbol,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Chromosome,6194,0,GRCh38 chromosome for a sequence variant.
+processed/wes_mutations_filtered.csv,Start_Position,6194,0,One-based MAF variant start coordinate.
+processed/wes_mutations_filtered.csv,End_Position,6194,0,One-based MAF variant end coordinate; see indel representation in generating script.
+processed/wes_mutations_filtered.csv,Reference_Allele,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Tumor_Seq_Allele2,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Variant_Classification,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Variant_Type,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,HGVSp_Short,6194,262,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,hgvsp_canonical,6194,262,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,hgvsp_reconstructed,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Transcript_ID,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Consequence,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,IMPACT,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,dbSNP_RS,6194,602,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,Existing_variation,6194,3006,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,CLIN_SIG,6194,5744,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,pop_af_max,6194,0,Maximum available population allele frequency; absent annotations are not evidence of confirmed rarity.
+processed/wes_mutations_filtered.csv,vaf,6194,899,Alternate allele fraction among supporting tumour reads; not a direct measure of LOH or somatic origin.
+processed/wes_mutations_filtered.csv,germline_like_vaf,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,is_driver,6194,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_mutations_filtered.csv,FILTER,6194,0,Archived Mutect2 filter value; released candidates passed upstream filtering.
+processed/wes_driver_tiers.csv,cell_line,51,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/wes_driver_tiers.csv,patient_id,51,0,"Patient-of-origin grouping, not an independently verified participant identifier."
+processed/wes_driver_tiers.csv,family,51,26,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,subtype,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,gene,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,protein_change,51,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,variant_classification,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,vaf,51,20,Alternate allele fraction among supporting tumour reads; not a direct measure of LOH or somatic origin.
+processed/wes_driver_tiers.csv,germline_like_vaf,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,clin_sig,51,26,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,tier,51,0,"Heuristic prioritisation tier, not a calibrated somatic probability or clinical classification."
+processed/wes_driver_tiers.csv,rationale,51,0,Rule used to assign the heuristic evidence tier.
+processed/wes_driver_tiers.csv,context,51,43,Source or interpretation context for a prioritised candidate.
+processed/wes_driver_tiers.csv,Chromosome,51,0,GRCh38 chromosome for a sequence variant.
+processed/wes_driver_tiers.csv,Start_Position,51,0,One-based MAF variant start coordinate.
+processed/wes_driver_tiers.csv,End_Position,51,0,One-based MAF variant end coordinate; see indel representation in generating script.
+processed/wes_driver_tiers.csv,Reference_Allele,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,Tumor_Seq_Allele2,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,hgvsp_canonical,51,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,hgvsp_reconstructed,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_driver_tiers.csv,interpretation,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_segments.csv,cell_line,5428,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/wes_cnv_segments.csv,subtype,5428,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_segments.csv,chromosome,5428,0,GRCh38 chromosome for a copy-number segment.
+processed/wes_cnv_segments.csv,start,5428,0,Zero-based inclusive segment start coordinate.
+processed/wes_cnv_segments.csv,end,5428,0,Zero-based exclusive segment end coordinate.
+processed/wes_cnv_segments.csv,probes,5428,0,Number of CNVkit bins supporting a segment.
+processed/wes_cnv_segments.csv,weight,5428,0,Archived CNVkit segment weight.
+processed/wes_cnv_segments.csv,log2_raw,5428,0,Archived CNVkit segment log2 ratio before project recentring.
+processed/wes_cnv_segments.csv,log2c,5428,0,Legacy all-chromosome probe-weighted median-centred log2 ratio.
+processed/wes_cnv_segments.csv,log2c_auto,5428,0,Preferred autosomal probe-weighted median-centred log2 ratio.
+processed/wes_cnv_fga.csv,cell_line,23,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/wes_cnv_fga.csv,subtype,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,n_segments,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,total_assessed_mb,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,fga_0.2,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,fga_0.3,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,frac_gain,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,frac_loss,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,n_segments_auto,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,total_assessed_autosome_mb,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,fga_auto_0.2,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,fga_auto_0.3,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,frac_gain_auto,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,frac_loss_auto,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,chrX_median_log2c,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,chrX_frac_altered,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,patient_id,23,0,"Patient-of-origin grouping, not an independently verified participant identifier."
+processed/wes_cnv_fga.csv,n_lines_in_family,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,patient_representative,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_fga.csv,high_fga_flag,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,arm,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_lines,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_lines_gain,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_lines_loss,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_patients,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_patients_gain,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,n_patients_loss,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,pct_lines_gain,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,pct_lines_loss,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,pct_patients_gain,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,pct_patients_loss,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,log2_threshold,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,arm_majority_frac,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,centring,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,pct_per_patient,39,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_arm_freq_patient.csv,arm_reference,39,0,Reference used to define chromosome-arm boundaries.
+processed/wes_cnv_arm_freq_patient.csv,fraction_denominator,39,0,Full annotated non-centromeric arm length used as the arm-majority denominator.
+processed/wes_cnv_arm_freq_patient.csv,patient_rule,39,0,Exact rule for aggregation of related models at patient level.
+reference/tx2gene_matched.csv,ensembl_transcript_id,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,ensembl_gene_id,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,external_gene_name,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,gene_biotype,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,transcript_id_versioned,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,gene_id_versioned,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,seq_region,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,primary_assembly,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/tx2gene_matched.csv,transcript_length,185299,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_gene_annotation.csv,ensembl_gene_id,39733,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_gene_annotation.csv,external_gene_name,39733,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_gene_annotation.csv,gene_biotype,39733,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_gene_annotation.csv,seq_region,39733,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_gene_annotation.csv,primary_assembly,39733,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,cell_line,31,0,"Stable model identifier joining matrices, metadata, and annotations."
+reference/rna_reference_reconciliation.csv,n_index_targets,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,n_unmapped,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,frac_targets_unmapped,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,frac_tpm_unmapped,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,frac_counts_unmapped,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,versioned_ids_match,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,lengths_match,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,n_alternative_locus_targets,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,frac_tpm_alternative_loci,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,frac_counts_alternative_loci,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,transcript_estimated_count_total,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,transcript_tpm_total,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,index_provenance,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,tx2gene_release,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,gene_estimated_count_total,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,gene_tpm_total,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,count_fraction_retained,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/rna_reference_reconciliation.csv,tpm_fraction_retained,31,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_input_manifest.csv,cell_line,23,0,"Stable model identifier joining matrices, metadata, and annotations."
+reference/wes_input_manifest.csv,source_maf,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_input_manifest.csv,source_kind,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_input_manifest.csv,source_vcf,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_input_manifest.csv,maf_sha256,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_input_manifest.csv,vcf_sha256,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_filter_cascade.csv,cell_line,23,0,"Stable model identifier joining matrices, metadata, and annotations."
+reference/wes_filter_cascade.csv,subtype,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_filter_cascade.csv,raw,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_filter_cascade.csv,pass,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_filter_cascade.csv,rare,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_filter_cascade.csv,coding,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cnv_arm_boundaries.csv,chromosome,44,0,GRCh38 chromosome for a copy-number segment.
+reference/wes_cnv_arm_boundaries.csv,arm,44,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cnv_arm_boundaries.csv,arm_start,44,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cnv_arm_boundaries.csv,arm_end,44,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cnv_arm_boundaries.csv,arm_bp,44,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cnv_arm_boundaries.csv,assessable,44,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,cell_line,23,0,"Stable model identifier joining matrices, metadata, and annotations."
+reference/wes_vcf_header_provenance.csv,source_vcf,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,mutect2_version,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,filtermutectcalls_version,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,vep_version,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,vep_assembly,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,gnomad_exomes,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,gnomad_genomes,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,clinvar_release,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_vcf_header_provenance.csv,dbsnp_release,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,trinucleotide,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,genome_opportunities,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,target_opportunities,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,genome_fraction,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,target_fraction,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,target_bed_sha256,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_target_trinucleotide_opportunities.csv,target_union_bp,32,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,context,96,0,Source or interpretation context for a prioritised candidate.
+reference/wes_cosmic_target_normalized.csv,SBS1,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS2,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS3,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS4,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS5,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS6,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS7a,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS7b,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS7c,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS7d,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS8,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS9,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS10a,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS10b,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS10c,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS10d,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS11,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS12,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS13,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS14,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS15,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS16,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS17a,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS17b,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS18,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS19,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS20,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS21,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS22,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS23,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS24,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS25,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS26,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS28,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS29,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS30,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS31,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS32,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS33,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS34,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS35,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS36,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS37,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS38,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS39,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS40,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS41,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS42,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS44,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS84,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS85,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS86,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS87,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS88,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS89,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS90,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS91,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS92,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS93,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/wes_cosmic_target_normalized.csv,SBS94,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,file,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,resource,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,kind,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,bytes,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,md5,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,sha256,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,declared_release,55,45,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,verified_release,55,51,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,verified_release_version,55,51,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,doi,55,45,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,source_url,55,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,source_file_id,55,51,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,source_md5,55,51,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,provenance_status,55,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,metadata_verified_date,55,45,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,documented_snapshot_date,55,7,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,date_evidence,55,7,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+reference/external_reference_provenance.csv,record_versions,55,11,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,status,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,n_models,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,n_targets,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,n_genes,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,max_frac_unmapped,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,reference_release,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_reference_sensitivity.csv,note,1,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,level,8063,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,id,8063,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,subtype,8063,8033,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,n,8063,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,spearman,8063,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,pearson,8063,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,p_value,8063,30,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,q_value,8063,30,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_cor.csv,inference_note,8063,30,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,gene,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,n_patients,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,spearman,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,pearson,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,t_stat,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,p_value,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,q_value,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,analysis_unit,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_cor.csv,interpretation,7969,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,statistic,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,all_models,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,patient_representatives,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,n_all,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,n_reps,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,shift,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/integ_rnaprot_patientrep_sensitivity.csv,note,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,marks_code,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,symbol,26,0,Source-table gene symbol; not all rows with the same symbol are interchangeable.
+validation/rna_marker_effectsizes.csv,direction,26,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,mean_intended,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,mean_rest,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,n_intended,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,n_rest,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,cohens_d,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,cohens_d_lo,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,cohens_d_hi,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,auc,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,auc_oriented,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,auc_oriented_lo,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,auc_oriented_hi,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,n_boot_valid,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,wilcox_p,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,wilcox_p_min_attainable,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,rank_in,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,top_subtype,26,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,lands_right,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,wilcox_p_bh,26,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,wilcox_p_floor_limited,26,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_effectsizes.csv,quantification,26,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,unit,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,n_samples,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,observed,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,n_markers,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,null_mean,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,null_median,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,null_p95,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,null_max,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,n_perm,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,permutation_p,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,binomial_p,3,3,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,null_model,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/rna_marker_recovery_permutation.csv,seed,3,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,set,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,PC,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,var_pct,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,r2_subtype,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,r2_site,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,r2_joint,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adjr2_joint,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adjr2_subtype,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adjr2_site,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adj_unique_subtype,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adj_unique_site,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,adj_shared,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,unique_subtype,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,unique_site,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pca.csv,shared,9,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,PC,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,tested_term,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,unit,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,n_patients,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,observed_F,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,df_numerator,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,df_denominator,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,permutation_p,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,p_bh_3_PCs,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,n_perm,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,seed,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/sensitivity_patient_reps_pc_permutation.csv,method,6,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,cell_line,4,0,"Stable model identifier joining matrices, metadata, and annotations."
+validation/prot_bridge_cor.csv,prim_plex,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,bridge_plex,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,n_proteins,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,pearson,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,spearman,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_cor.csv,external,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,cell_line,4,0,"Stable model identifier joining matrices, metadata, and annotations."
+validation/prot_bridge_agreement.csv,prim_plex,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,bridge_plex,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,external,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,n_proteins,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,bias,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,sd_diff,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,loa_lower,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,loa_upper,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,median_abs_diff,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,sd_single,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,cv_pct_per_measurement,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,sd_diff_cv_pct_legacy,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,ma_slope,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,ma_slope_p,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,pearson,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,spearman,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,loa_span,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,units_note,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/prot_bridge_agreement.csv,replicate_caveat,4,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,cell_line,897,0,"Stable model identifier joining matrices, metadata, and annotations."
+validation/wes_cnv_arm_calls.csv,subtype,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,arm,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,gain_frac,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,loss_frac,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,assessed_fraction,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,call,897,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/wes_cnv_arm_calls.csv,patient_id,897,0,"Patient-of-origin grouping, not an independently verified participant identifier."
+validation/external_ccle_concordance.csv,our_line,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,our_subtype,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,depmap_name,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,depmap_ACH,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,depmap_RRID,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,depmap_oncotree_subtype,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,spearman_hvg,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,pearson_hvg,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,is_selfpair,155,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,self_rank_of67,155,150,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+validation/external_ccle_concordance.csv,margin_self_vs_next,155,150,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,context,96,0,Source or interpretation context for a prioritised candidate.
+exploratory/wes_sbs_context_target_restricted.csv,OV1369-R2,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV2085,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV2295,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV2295-R2,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV3133-R,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV3133-R2,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV3291,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV1369,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV2295-R,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV2835EP,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV2881EP,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV2929D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV3121D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV3121EP,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV3133D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV3133G,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV3331,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,OV90,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV81D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV21G,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV3392D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV112D,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_sbs_context_target_restricted.csv,TOV2414,96,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,cell_line,69,0,"Stable model identifier joining matrices, metadata, and annotations."
+exploratory/wes_signature_target_sensitivity.csv,mode,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,n_snv_target,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,n_snv_unrestricted,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,mmr_relative_exposure,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,reconstruction_cosine,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,target_bed_sha256,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,target_union_bp,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+exploratory/wes_signature_target_sensitivity.csv,caveat,69,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.

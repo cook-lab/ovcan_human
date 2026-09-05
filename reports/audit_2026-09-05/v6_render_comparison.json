@@ -1,0 +1,23 @@
+{
+  "compared_with": "docx_render_v6_final",
+  "final_render": "docx_render_v6_verified",
+  "page_count": 16,
+  "identical_page_pixels": {
+    "1": true,
+    "2": true,
+    "3": true,
+    "4": true,
+    "5": true,
+    "6": true,
+    "7": true,
+    "8": true,
+    "9": true,
+    "10": true,
+    "11": true,
+    "12": true,
+    "13": false,
+    "14": true,
+    "15": true,
+    "16": false
+  }
+}

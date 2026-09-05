@@ -1,0 +1,45 @@
+file,source,unit,description
+metadata/models.csv,metadata/samples.csv; metadata/line_family_map.csv,model,The complete 42-model resource; no cohort filter is required.
+processed/rna_tpm.csv,output/rna_tpm.csv,gene by model,Gene TPM from the matched transcript-to-gene reference; unfiltered genes.
+processed/rna_counts.csv,output/rna_counts.csv,gene by model,Filtered tximport estimated counts; not raw sequenced-fragment counts.
+processed/rna_vst.rds,output/rna_vst.rds,gene by model,"DESeq2 variance-stabilised expression matrix, in R format."
+processed/rna_qc_metrics.csv,output/rna_qc_metrics.csv,RNA model,"Pseudoalignment, processed fragments, assigned gene counts, and gene detection."
+processed/prot_abundance_matrix.csv,output/prot_abundance_matrix.csv,protein feature by model,Supplied log2 protein abundance normalised using the pooled TMT standard; missing measurements retained.
+processed/prot_qc.csv,output/prot_qc.csv,protein feature,"Row-matched protein identity, search support, and measurement-presence annotations."
+processed/prot_block_missingness.csv,output/prot_block_missingness.csv,protein feature,Feature detection across models and TMT plexes.
+processed/prot_sample_qc.csv,output/prot_sample_qc.csv,protein model,Per-model protein detection and missingness.
+processed/prot_feature_accounting.csv,output/prot_feature_accounting.csv,feature-set definition,Counts and definitions of each protein feature set.
+processed/wes_mutations_filtered.csv,output/wes_mutations_filtered.csv,candidate variant by model,"PASS, rare, coding tumour-only candidates; somatic origin unconfirmed."
+processed/wes_driver_tiers.csv,output/wes_driver_tiers.csv,prioritised candidate by model,Heuristic evidence tiers for candidate alterations in selected genes.
+processed/wes_cnv_segments.csv,output/wes_cnv_segments.csv,copy-number segment by model,"Relative total-copy segments; genomic intervals are zero-based, half-open."
+processed/wes_cnv_fga.csv,output/wes_cnv_fga.csv,copy-number model,"Fraction of assessed segment length altered, with autosomal estimates preferred."
+processed/wes_cnv_arm_freq_patient.csv,output/wes_cnv_arm_freq_patient.csv,chromosome arm,HGSC arm-call frequencies; denominator and patient aggregation recorded per row.
+reference/tx2gene_matched.csv,output/tx2gene_matched.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/rna_gene_annotation.csv,output/rna_gene_annotation.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/rna_reference_reconciliation.csv,output/rna_reference_reconciliation.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_input_manifest.csv,output/wes_input_manifest.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_filter_cascade.csv,output/wes_filter_cascade.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_cnv_arm_boundaries.csv,output/wes_cnv_arm_boundaries.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_vcf_header_provenance.csv,output/wes_vcf_header_provenance.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_cnvkit_target_intervals.bed,output/wes_cnvkit_target_intervals.bed,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_target_trinucleotide_opportunities.csv,output/wes_target_trinucleotide_opportunities.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/wes_cosmic_target_normalized.csv,output/wes_cosmic_target_normalized.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/external_reference_provenance.csv,output/external_reference_provenance.csv,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/external_reference_provenance.json,output/external_reference_provenance.json,reference/provenance record,Exact reference or input-accounting record produced by the analysis.
+reference/depmap_24Q4_figshare_v1_metadata.json,data/reference/depmap_24Q4_figshare_v1_metadata.json,external reference metadata,Official Figshare version-1 metadata for DepMap 24Q4; source file MD5 and sizes match the pinned local inputs.
+validation/rna_reference_sensitivity.csv,output/rna_reference_sensitivity.csv,technical validation or sensitivity,Before/after reference and locus-selection sensitivity.
+validation/integ_rnaprot_cor.csv,output/integ_rnaprot_cor.csv,technical validation or sensitivity,Model-level descriptive RNA–protein concordance.
+validation/integ_rnaprot_patientrep_cor.csv,output/integ_rnaprot_patientrep_cor.csv,technical validation or sensitivity,Primary gene-wise associations using one paired model per patient.
+validation/integ_rnaprot_patientrep_sensitivity.csv,output/integ_rnaprot_patientrep_sensitivity.csv,technical validation or sensitivity,Patient-selection concordance sensitivity.
+validation/rna_marker_effectsizes.csv,output/rna_marker_effectsizes.csv,technical validation or sensitivity,Patient-based marker effects; exploratory and partly centre-confounded.
+validation/rna_marker_recovery_permutation.csv,output/rna_marker_recovery_permutation.csv,technical validation or sensitivity,Joint marker-ordering permutation checks; centre-restricted result is primary.
+validation/sensitivity_patient_reps_pca.csv,output/sensitivity_patient_reps_pca.csv,technical validation or sensitivity,Comparable model-level and patient-based PCA/commonality decompositions.
+validation/sensitivity_patient_reps_pc_permutation.csv,output/sensitivity_patient_reps_pc_permutation.csv,technical validation or sensitivity,Patient-based reduced-model PC permutation checks.
+validation/prot_bridge_cor.csv,output/prot_bridge_cor.csv,technical validation or sensitivity,Observed agreement for the four repeated cross-plex bridge lines.
+validation/prot_bridge_agreement.csv,output/prot_bridge_agreement.csv,technical validation or sensitivity,Bland–Altman agreement and conditional repeatability estimates.
+validation/wes_cnv_arm_calls.csv,output/wes_cnv_arm_calls.csv,technical validation or sensitivity,"Per-model arm calls, overlaps, and full-arm denominators."
+validation/external_ccle_concordance.csv,output/external_ccle_concordance.csv,technical validation or sensitivity,External expression-reference identity consistency checks.
+exploratory/wes_sbs_context_target_restricted.csv,output/wes_sbs_context_target_restricted.csv,exploratory mutational-signature sensitivity,Tumour-only candidate signatures and target-opportunity sensitivity; not an MSI diagnosis or clinical classifier.
+exploratory/wes_signature_target_sensitivity.csv,output/wes_signature_target_sensitivity.csv,exploratory mutational-signature sensitivity,Tumour-only candidate signatures and target-opportunity sensitivity; not an MSI diagnosis or clinical classifier.
+reference/rna_reference_provenance.json,data/reference/rna_reference_provenance.json,reference provenance,Official Ensembl reference URLs and hashes; target-set verification and mapping policy.
+viewer/index.html,app/ovcan_viewer_standalone.html,gene-symbol lookup,Local standalone viewer rebuilt against the same processed matrices; public deployment is separate.

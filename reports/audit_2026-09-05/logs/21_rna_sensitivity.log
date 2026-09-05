@@ -1,0 +1,102 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+
+=== Patient-representative set: 31 lines -> 28 patients ===
+Dropped sublines: OV2295-R2, TOV1369, TOV3133G
+Subtype n, 31 lines vs 28 reps:
+ subtype n_31_lines n_28_reps
+     HGS         15        12
+      CC          7         7
+      EC          2         2
+      MC          3         3
+    MMMT          2         2
+  SCCOHT          2         2
+
+=== A. PCA / commonality: 31 lines vs 28 patient representatives ===
+                         set  PC var_pct r2_subtype r2_site r2_joint
+                    31 lines PC1 20.6322     0.7338  0.3119   0.7357
+                    31 lines PC2 10.3889     0.6900  0.2092   0.6909
+                    31 lines PC3  7.9408     0.5769  0.0528   0.5786
+         28 reps (HVG refit) PC1 19.8582     0.7896  0.2722   0.7923
+         28 reps (HVG refit) PC2 10.5135     0.6362  0.2378   0.6364
+         28 reps (HVG refit) PC3  8.7616     0.5957  0.0324   0.5984
+ 28 reps (HVG fixed from 31) PC1 19.9099     0.7797  0.2718   0.7823
+ 28 reps (HVG fixed from 31) PC2 10.5070     0.6407  0.2310   0.6411
+ 28 reps (HVG fixed from 31) PC3  8.5681     0.5987  0.0315   0.6014
+ adjr2_joint adjr2_subtype adjr2_site adj_unique_subtype adj_unique_site
+      0.6553        0.6806     0.2627             0.3926         -0.0253
+      0.5968        0.6280     0.1528             0.4440         -0.0312
+      0.4504        0.4923    -0.0148             0.4652         -0.0420
+      0.7196        0.7418     0.2139             0.5057         -0.0222
+      0.5092        0.5535     0.1768             0.3323         -0.0443
+      0.4578        0.5038    -0.0451             0.5029         -0.0460
+      0.7062        0.7297     0.2136             0.4926         -0.0235
+      0.5155        0.5590     0.1695             0.3460         -0.0436
+      0.4619        0.5075    -0.0460             0.5078         -0.0456
+ adj_shared unique_subtype unique_site shared
+     0.2880         0.4239      0.0019 0.3100
+     0.1840         0.4816      0.0009 0.2084
+     0.0271         0.5258      0.0017 0.0512
+     0.2361         0.5201      0.0027 0.2695
+     0.2211         0.3986      0.0003 0.2375
+     0.0009         0.5660      0.0027 0.0297
+     0.2371         0.5105      0.0026 0.2692
+     0.2130         0.4101      0.0004 0.2306
+    -0.0003         0.5699      0.0027 0.0288
+
+Silhouette by subtype (Euclidean on PC1-10; ALL = overall mean):
+                         set subtype  n mean_sil
+                    31 lines      CC  7   0.1192
+                    31 lines      EC  2  -0.0100
+                    31 lines     HGS 15   0.1606
+                    31 lines      MC  3   0.1587
+                    31 lines    MMMT  2   0.7435
+                    31 lines  SCCOHT  2   0.8194
+                    31 lines     ALL 31   0.2202
+         28 reps (HVG refit)      CC  7   0.1013
+         28 reps (HVG refit)      EC  2  -0.0317
+         28 reps (HVG refit)     HGS 12   0.1401
+         28 reps (HVG refit)      MC  3   0.1443
+         28 reps (HVG refit)    MMMT  2   0.7260
+         28 reps (HVG refit)  SCCOHT  2   0.7974
+         28 reps (HVG refit)     ALL 28   0.2074
+ 28 reps (HVG fixed from 31)      CC  7   0.1083
+ 28 reps (HVG fixed from 31)      EC  2  -0.0112
+ 28 reps (HVG fixed from 31)     HGS 12   0.1360
+ 28 reps (HVG fixed from 31)      MC  3   0.1401
+ 28 reps (HVG fixed from 31)    MMMT  2   0.7317
+ 28 reps (HVG fixed from 31)  SCCOHT  2   0.8028
+ 28 reps (HVG fixed from 31)     ALL 28   0.2091
+using 'avgTxLength' from assays(dds), correcting for library size
+
+=== B. DE on 28 reps | subtype n: HGS=12, CC=7, EC=2, MC=3, MMMT=2, SCCOHT=2 | exploratory panel comparisons: HGS, CC, EC, MC, MMMT, SCCOHT ===
+Building GO-BP gene sets from pinned org.Hs.eg.db ...
+GO-BP sets used (size 10-500): 6369
+Error in `transmute()`:
+ℹ In argument: `NES_28 = NESroup`.
+Caused by error:
+! object 'NESroup' not found
+Backtrace:
+     ▆
+  1. ├─... %>% ...
+  2. ├─dplyr::mutate(...)
+  3. ├─dplyr::full_join(...)
+  4. ├─dplyr:::full_join.data.frame(...)
+  5. │ └─dplyr::auto_copy(x, y, copy = copy)
+  6. │   ├─dplyr::same_src(x, y)
+  7. │   └─dplyr:::same_src.data.frame(x, y)
+  8. │     └─base::is.data.frame(y)
+  9. ├─rec_rep %>% ...
+ 10. ├─dplyr::transmute(...)
+ 11. ├─dplyr:::transmute.data.frame(...)
+ 12. │ └─dplyr:::mutate_cols(.data, dots, by)
+ 13. │   ├─base::withCallingHandlers(...)
+ 14. │   └─dplyr:::mutate_col(dots[[i]], data, mask, new_columns)
+ 15. │     └─mask$eval_all_mutate(quo)
+ 16. │       └─dplyr (local) eval()
+ 17. └─base::.handleSimpleError(...)
+ 18.   └─dplyr (local) h(simpleError(msg, call))
+ 19.     └─rlang::abort(message, class = error_class, parent = parent, call = error_call)
+Execution halted

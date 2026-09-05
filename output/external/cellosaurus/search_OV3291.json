@@ -1,0 +1,398 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_A1SP"
+          }
+        ],
+        "age": "59Y",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Mes-Masson, Anne-Marie"
+          }
+        ],
+        "created": "2021-01-12",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "Metastatic",
+              "value": "Ascites",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0007795",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0007795",
+                  "label": "ascitic fluid",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0007795"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C105555",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C105555",
+            "label": "High grade ovarian serous adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C105555"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "4.4 +- 0.6 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=32784519"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "120",
+          "min": "91",
+          "unit": "hour"
+        },
+        "entry-version": "9",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "OV-3291"
+          },
+          {
+            "type": "synonym",
+            "value": "OV3291"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Genomics",
+            "value": "Whole exome sequencing."
+          },
+          {
+            "branch": "Transcriptomics",
+            "value": "Microarray."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=32784519"
+          }
+        ],
+        "same-origin-as": [
+          {
+            "accession": "CVCL_9T25",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "TOV-3291G",
+            "url": "https://www.cellosaurus.org/CVCL_9T25"
+          }
+        ],
+        "sequence-variation-list": [
+          {
+            "mutation-description": "c.3095+1G>A",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=32784519"
+                }
+              }
+            ],
+            "variation-note": "Splice donor mutation",
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:24224",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "CDK12",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:24224"
+              },
+              {
+                "accession": "rs2146575887",
+                "category": "Polymorphism and mutation databases",
+                "database": "dbSNP",
+                "url": "https://www.ncbi.nlm.nih.gov/snp/rs2146575887"
+              }
+            ],
+            "zygosity-type": "Unspecified"
+          },
+          {
+            "mutation-description": "p.Arg249Trp (c.745A>T)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=32784519"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11998",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "TP53",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+              },
+              {
+                "accession": "VCV000141881",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000141881"
+              }
+            ],
+            "zygosity-type": "Unspecified"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "28,30"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,10"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "CVCL_A1SP",
+            "category": "Cell line databases/resources",
+            "database": "cancercelllines",
+            "url": "https://cancercelllines.org/cellline/?id=cellosaurus:CVCL_A1SP"
+          },
+          {
+            "accession": "161900",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161900"
+          },
+          {
+            "accession": "Q105510513",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q105510513"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Alexandre",
+            "last-name": "Sauriol",
+            "name": "Sauriol A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kayla",
+            "last-name": "Simeone",
+            "name": "Simeone K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lise",
+            "last-name": "Portelance",
+            "name": "Portelance L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Liliane",
+            "last-name": "Meunier",
+            "name": "Meunier L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kim",
+            "last-name": "Leclerc-Desaulniers",
+            "name": "Leclerc-Desaulniers K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manon",
+            "last-name": "de Ladurantaye",
+            "name": "de Ladurantaye M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Meriem",
+            "last-name": "Chergui",
+            "name": "Chergui M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jennifer",
+            "last-name": "Kendall-Dupont",
+            "name": "Kendall-Dupont J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kurosh",
+            "last-name": "Rahimi",
+            "name": "Rahimi K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Euridice",
+            "last-name": "Carmona",
+            "name": "Carmona E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2020",
+        "first-page": "2222.1",
+        "internal-id": "PubMed=32784519",
+        "journal-name": "Cancers (Basel)",
+        "last-page": "2222.26",
+        "title": "Modeling the diversity of epithelial ovarian cancer through ten novel well characterized cell lines covering multiple subtypes of the disease.",
+        "type": "article",
+        "volume": "12",
+        "xref-list": [
+          {
+            "accession": "PMC7465288",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7465288"
+          },
+          {
+            "accession": "10.3390/cancers12082222",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.3390/cancers12082222"
+          },
+          {
+            "accession": "32784519",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/32784519"
+          }
+        ]
+      }
+    ]
+  }
+}

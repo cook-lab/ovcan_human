@@ -1,0 +1,838 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_9T15"
+          }
+        ],
+        "age": "52Y",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Mes-Masson, Anne-Marie"
+          }
+        ],
+        "created": "2016-02-23",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "Metastatic",
+              "value": "Ascites",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0007795",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0007795",
+                  "label": "ascitic fluid",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0007795"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C105555",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C105555",
+            "label": "High grade ovarian serous adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C105555"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "2.94 +- 0.07 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "73",
+          "min": "68",
+          "unit": "hour"
+        },
+        "entry-version": "15",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "OV-3133(R)"
+          },
+          {
+            "type": "synonym",
+            "value": "OV3133(R)"
+          },
+          {
+            "type": "synonym",
+            "value": "OV-3133"
+          },
+          {
+            "type": "synonym",
+            "value": "OV3133"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Transcriptomics",
+            "value": "RNAseq."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=22931248"
+          },
+          {
+            "resource-internal-ref": "PubMed=28273451"
+          }
+        ],
+        "same-origin-as": [
+          {
+            "accession": "CVCL_9T16",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "OV-3133(R2)",
+            "url": "https://www.cellosaurus.org/CVCL_9T16"
+          },
+          {
+            "accession": "CVCL_9T19",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "TOV-3133D",
+            "url": "https://www.cellosaurus.org/CVCL_9T19"
+          },
+          {
+            "accession": "CVCL_4064",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "TOV-3133G",
+            "url": "https://www.cellosaurus.org/CVCL_4064"
+          }
+        ],
+        "sequence-variation-list": [
+          {
+            "mutation-description": "p.Gln192Ter (c.574C>T)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=28273451"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11998",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "TP53",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+              },
+              {
+                "accession": "VCV000406579",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000406579"
+              }
+            ],
+            "zygosity-type": "Unspecified"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "30,32.2"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "7,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "CVCL_9T15",
+            "category": "Cell line databases/resources",
+            "database": "cancercelllines",
+            "url": "https://cancercelllines.org/cellline/?id=cellosaurus:CVCL_9T15"
+          },
+          {
+            "accession": "161782",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161782"
+          },
+          {
+            "accession": "GSM2474985",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM2474985"
+          },
+          {
+            "accession": "Q54936828",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54936828"
+          }
+        ]
+      },
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_9T16"
+          }
+        ],
+        "age": "52Y",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Mes-Masson, Anne-Marie"
+          }
+        ],
+        "created": "2016-02-23",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "Metastatic",
+              "value": "Ascites",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0007795",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0007795",
+                  "label": "ascitic fluid",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0007795"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C105555",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C105555",
+            "label": "High grade ovarian serous adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C105555"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "3.23 +- 0.12 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "81",
+          "min": "74",
+          "unit": "hour"
+        },
+        "entry-version": "15",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "OV-3133(R2)"
+          },
+          {
+            "type": "synonym",
+            "value": "OV3133(R2)"
+          },
+          {
+            "type": "synonym",
+            "value": "OV-3133(2)"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Transcriptomics",
+            "value": "RNAseq."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=22931248"
+          },
+          {
+            "resource-internal-ref": "PubMed=28273451"
+          }
+        ],
+        "same-origin-as": [
+          {
+            "accession": "CVCL_9T15",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "OV-3133(R)",
+            "url": "https://www.cellosaurus.org/CVCL_9T15"
+          },
+          {
+            "accession": "CVCL_9T19",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "TOV-3133D",
+            "url": "https://www.cellosaurus.org/CVCL_9T19"
+          },
+          {
+            "accession": "CVCL_4064",
+            "category": "Cell line databases/resources",
+            "database": "Cellosaurus",
+            "label": "TOV-3133G",
+            "url": "https://www.cellosaurus.org/CVCL_4064"
+          }
+        ],
+        "sequence-variation-list": [
+          {
+            "mutation-description": "p.Gln192Ter (c.574C>T)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=28273451"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11998",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "TP53",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+              },
+              {
+                "accession": "VCV000406579",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000406579"
+              }
+            ],
+            "zygosity-type": "Unspecified"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "30,32.2"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "7,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "CVCL_9T16",
+            "category": "Cell line databases/resources",
+            "database": "cancercelllines",
+            "url": "https://cancercelllines.org/cellline/?id=cellosaurus:CVCL_9T16"
+          },
+          {
+            "accession": "161783",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161783"
+          },
+          {
+            "accession": "GSM2474986",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM2474986"
+          },
+          {
+            "accession": "Q54936829",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54936829"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Isabelle J.",
+            "last-name": "Letourneau",
+            "name": "Letourneau I.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael C.J.",
+            "last-name": "Quinn",
+            "name": "Quinn M.C.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lu-Lin",
+            "last-name": "Wang",
+            "name": "Wang L.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lise",
+            "last-name": "Portelance",
+            "name": "Portelance L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Katia Y.",
+            "last-name": "Caceres",
+            "name": "Caceres K.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Louis",
+            "last-name": "Cyr",
+            "name": "Cyr L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nathalie",
+            "last-name": "Delvoye",
+            "name": "Delvoye N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Liliane",
+            "last-name": "Meunier",
+            "name": "Meunier L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manon",
+            "last-name": "de Ladurantaye",
+            "name": "de Ladurantaye M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhen",
+            "last-name": "Shen",
+            "name": "Shen Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suzanna L.",
+            "last-name": "Arcand",
+            "name": "Arcand S.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2012",
+        "first-page": "379.1",
+        "internal-id": "PubMed=22931248",
+        "journal-name": "BMC Cancer",
+        "last-page": "379.16",
+        "title": "Derivation and characterization of matched cell lines from primary and recurrent serous ovarian cancer.",
+        "type": "article",
+        "volume": "12",
+        "xref-list": [
+          {
+            "accession": "PMC3532154",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3532154"
+          },
+          {
+            "accession": "10.1186/1471-2407-12-379",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/1471-2407-12-379"
+          },
+          {
+            "accession": "22931248",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/22931248"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Mauricio",
+            "last-name": "Medrano",
+            "name": "Medrano M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laudine",
+            "last-name": "Communal",
+            "name": "Communal L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kevin R.",
+            "last-name": "Brown",
+            "name": "Brown K.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marcin",
+            "last-name": "Iwanicki",
+            "name": "Iwanicki M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Josee",
+            "last-name": "Normand",
+            "name": "Normand J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joshua",
+            "last-name": "Paterson",
+            "name": "Paterson J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Fabrice",
+            "last-name": "Sircoulomb",
+            "name": "Sircoulomb F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Paul M.",
+            "last-name": "Krzyzanowski",
+            "name": "Krzyzanowski P.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marian",
+            "last-name": "Novak",
+            "name": "Novak M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sasha A.",
+            "last-name": "Doodnauth",
+            "name": "Doodnauth S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Fernando Jose",
+            "last-name": "Suarez Saiz",
+            "name": "Suarez Saiz F.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jane",
+            "last-name": "Cullis",
+            "name": "Cullis J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rima",
+            "last-name": "Al-awar",
+            "name": "Al-awar R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Benjamin G.",
+            "last-name": "Neel",
+            "name": "Neel B.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "John",
+            "last-name": "McPherson",
+            "name": "McPherson J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ronny I.",
+            "last-name": "Drapkin",
+            "name": "Drapkin R.I.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laurie",
+            "last-name": "Ailles",
+            "name": "Ailles L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert",
+            "last-name": "Rottapel",
+            "name": "Rottapel R.",
+            "type": "person"
+          }
+        ],
+        "date": "2017",
+        "first-page": "2343",
+        "internal-id": "PubMed=28273451",
+        "journal-name": "Cell Rep.",
+        "last-page": "2358",
+        "title": "Interrogation of functional cell-surface markers identifies CD151 dependency in high-grade serous ovarian cancer.",
+        "type": "article",
+        "volume": "18",
+        "xref-list": [
+          {
+            "accession": "10.1016/j.celrep.2017.02.028",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.celrep.2017.02.028"
+          },
+          {
+            "accession": "28273451",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/28273451"
+          }
+        ]
+      }
+    ]
+  }
+}

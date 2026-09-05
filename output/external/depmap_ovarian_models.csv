@@ -1,0 +1,76 @@
+ModelID,StrippedCellLineName,RRID,OncotreeSubtype,OncotreePrimaryDisease
+ACH-000001,NIHOVCAR3,CVCL_0465,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000013,ONCODG1,CVCL_1882,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000048,TOV112D,CVCL_3612,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000091,OV56,CVCL_2673,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000103,CAOV4,CVCL_0202,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000116,OAW28,CVCL_1614,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000123,COV434,CVCL_2010,Small Cell Carcinoma of the Ovary,Ovarian Epithelial Tumor
+ACH-000132,JHOS2,CVCL_4647,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000237,JHOM1,CVCL_4644,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000256,COV318,CVCL_2419,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000278,COV362,CVCL_2420,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000280,SNU840,CVCL_5100,"Brenner Tumor, Malignant",Ovarian Epithelial Tumor
+ACH-000291,OV90,CVCL_3768,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000308,EFO21,CVCL_0029,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000324,JHOC5,CVCL_4640,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000333,JHOM2B,CVCL_4645,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000409,OVSAHO,CVCL_3114,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000430,TYKNU,CVCL_1776,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000443,OVKATE,CVCL_3110,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000460,SNU8,CVCL_5096,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000494,OELE,CVCL_IW56,Immortalized Ovarian Cells,Non-Cancerous
+ACH-000520,59M,CVCL_2291,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000524,KURAMOCHI,CVCL_1345,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000527,OVISE,CVCL_3116,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000542,HEYA8,CVCL_8878,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000574,FUOV1,CVCL_2047,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000584,JHOS4,CVCL_4649,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000608,COV644,CVCL_2425,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000617,OVCAR4,CVCL_1627,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000635,SNU119,CVCL_5014,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000646,OVMANA,CVCL_3111,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000657,A2780,CVCL_0134,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000663,OVTOKO,CVCL_3117,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000688,OV7,CVCL_2675,Mixed Ovarian Carcinoma,Ovarian Epithelial Tumor
+ACH-000696,OVCAR8,CVCL_1629,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000701,RMUGS,CVCL_3158,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000704,OAW42,CVCL_1615,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000713,CAOV3,CVCL_0201,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000719,RMGI,CVCL_1662,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000796,MCAS,CVCL_3020,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000811,SKOV3,CVCL_0532,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000885,TOV21G,CVCL_3613,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000906,ES2,CVCL_3509,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000936,EFO27,CVCL_1192,Mucinous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000947,OVK18,CVCL_3770,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000962,OC314,CVCL_1616,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-000966,IGROV1,CVCL_1304,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001048,COV504,CVCL_2424,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001063,DOV13,CVCL_6774,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001144,OC315,CVCL_1617,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001145,OC316,CVCL_1618,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001151,OVCAR5,CVCL_1628,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001278,BIN67,CVCL_S987,Small Cell Carcinoma of the Ovary,Ovarian Epithelial Tumor
+ACH-001279,SCCOHT1,CVCL_VU69,Small Cell Carcinoma of the Ovary,Ovarian Epithelial Tumor
+ACH-001340,COV413A,CVCL_2422,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001369,OCIC5X,CVCL_DH06,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001370,OCIP5X,CVCL_DH18,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001373,OV17R,CVCL_2672,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001374,PA1,CVCL_0479,Mixed Germ Cell Tumor,Ovarian Germ Cell Tumor
+ACH-001403,TO14,CVCL_2734,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001418,UWB1289,CVCL_B079,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001628,PEA1,CVCL_2682,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001630,PEO1,CVCL_2686,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001632,PEO4,CVCL_2690,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001719,OCIC4P,CVCL_DH05,Clear Cell Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-001991,NZOV9,CVCL_LJ73,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002038,HSKTC,CVCL_8234,"Ovarian Cancer, Other","Ovarian Cancer, Other"
+ACH-002140,HEY,CVCL_0297,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002146,JHOS3,CVCL_4648,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002149,KGN,CVCL_0375,Granulosa Cell Tumor,Sex Cord Stromal Tumor
+ACH-002181,OVCA420,CVCL_3935,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002182,OVCA433,CVCL_0475,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002183,OVMIU,CVCL_3112,High-Grade Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002486,MESOV,CVCL_CZ92,Serous Ovarian Cancer,Ovarian Epithelial Tumor
+ACH-002524,SNU251,CVCL_5040,Endometrioid Ovarian Cancer,Ovarian Epithelial Tumor

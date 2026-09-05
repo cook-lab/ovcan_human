@@ -1,0 +1,138 @@
+{
+  "retained_candidates_with_gnomADg_AF_gt_0_001": [
+    {
+      "cell_line": "OV1369-R2",
+      "gene": "NBPF1",
+      "position": "16583644",
+      "gnomADg_AF": 0.001499,
+      "gnomADe_AF": "8.721e-05",
+      "classification": "Missense_Mutation"
+    },
+    {
+      "cell_line": "OV1369-R2",
+      "gene": "CACNA1C",
+      "position": "2685755",
+      "gnomADg_AF": 0.002024,
+      "gnomADe_AF": "8.101e-05",
+      "classification": "Missense_Mutation"
+    },
+    {
+      "cell_line": "OV3291",
+      "gene": "ENST00000718364",
+      "position": "70488988",
+      "gnomADg_AF": 0.04927,
+      "gnomADe_AF": "",
+      "classification": "In_Frame_Del"
+    },
+    {
+      "cell_line": "TOV1369",
+      "gene": "NBPF1",
+      "position": "16583644",
+      "gnomADg_AF": 0.001499,
+      "gnomADe_AF": "8.721e-05",
+      "classification": "Missense_Mutation"
+    },
+    {
+      "cell_line": "TOV1369",
+      "gene": "PRG4",
+      "position": "186308145",
+      "gnomADg_AF": 0.00694,
+      "gnomADe_AF": "2.447e-05",
+      "classification": "Missense_Mutation"
+    }
+  ],
+  "VCF_FORMAT_fields": {
+    "OV1369-R2": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV2085": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV2295": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV2295-R2": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV3133-R": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV3133-R2": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV3291": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV1369": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV2295-R": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV2835EP": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV2881EP": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV2929D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV3121D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV3121EP": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV3133D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV3133G": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV3331": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "OV90": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV81D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV21G": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV3392D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV112D": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ],
+    "TOV2414": [
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:PGT:PID:PS:SB",
+      "GT:AD:AF:DP:F1R2:F2R1:FAD:SB"
+    ]
+  }
+}

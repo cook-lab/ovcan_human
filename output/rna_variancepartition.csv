@@ -1,0 +1,5 @@
+assay,model,term,median_pct,mean_pct,q25_pct,q75_pct,n_features,n_features_input,n_features_dropped,n_samples,design
+RNA,published,subtype,6.046026959371904,14.938227034208026,0,24.823383909125106,22674,22678,4,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19"
+RNA,published,source_site,3.4565088168829075,14.567826175174828,0,25.349293376458792,22674,22678,4,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19"
+RNA,published,patient,27.274948352651446,31.604797875041328,6.993147059767884e-13,53.438745444659055,22674,22678,4,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19"
+RNA,published,Residuals,32.657010606445105,38.88914891557593,13.08061450902302,60.218438457206446,22674,22678,4,31,"31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19"

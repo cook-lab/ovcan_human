@@ -1,0 +1,20 @@
+step,parameter,value,recoverable,evidence,action
+CNV calling (CNVkit),tool,cnvkit.py batch,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),version,0.9.10,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),container image,cnvkit-0.9.10--pyhdfd78af_0.img,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),reference genome FASTA,/scratch/asmab/ovcan/references/Homo_sapiens/GATK/GRCh38/Sequence/WholeGenomeFasta/Homo_sapiens_assembly38.fasta,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),target intervals,/scratch/asmab/ovcan/intervals_sorted.bed,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),antitarget intervals,/scratch/asmab/ovcan/intervals.antitarget.bed,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),flags,--diagram --drop-low-coverage --scatter,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV calling (CNVkit),n samples processed,23,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+WES capture,capture kit identity,NOT RECOVERABLE,FALSE,no capture-kit record in the archive; intervals_sorted.bed itself is not archived,REQUIRES PI: ask which exome capture kit was used
+WES capture,capture interval file,intervals_sorted.bed,TRUE,judy_archive/data/cnvkit wes - new/commands.txt,cite in Methods
+CNV reference (panel of normals),normals used,SRR4039087; SRR4039088; SRR4039089; SRR4039096; SRR4039097,TRUE,archived per-normal *.targetcoverage.cnn / *.antitargetcoverage.cnn filenames,cite in Methods
+CNV reference (panel of normals),kit-matched to tumours?,"SAME CAPTURE KIT (author-confirmed, v5 comment 31); kit name/design version pending",TRUE,author v5 comment 31 confirms the same capture kit; documentary kit name/design version pending,REQUIRES PI: supply the shared capture-kit name and design version
+SNV calling (Mutect2),matched normal,NONE (tumour-only; n_ref/n_alt columns empty in every MAF),TRUE,MAF n_depth/n_ref_count/n_alt_count empty for every variant,state as a limitation
+Genome build,build actually used,GRCh38/hg38 (MAF NCBI_Build field reads 'GRCh37' — a spurious vcf2maf default; see 16 header),TRUE,"Mutect2 PoN 1000g_pon.hg38.vcf.gz; VCF ##contig chr1 length 248,956,422; hotspot coordinates",state in Methods (and flag the MAF header as a deposition item)
+Proteomics search,search parameters,NOT RECOVERABLE,FALSE,judy_archive/data/proteomics/Readme.md is a 1-byte EMPTY file,"REQUIRES PI / Morin lab: instrument, MS2-vs-MS3, search engine + version, database, enzyme, modifications, tolerances, FDR, interference filter, peptide-to-protein rollup"
+CNV target footprint,derived target bins,wes_cnvkit_target_intervals.bed; 35 identical archived copies; sha256 2177970ffdbc933e488067f812e3ae4760310bd9a40fadf4e2fa5389480d955d,TRUE,judy_archive/data/cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/intervals_sorted.target.bed,deposit derived bins; recover original vendor BED and kit design/version separately
+SNV calling (Mutect2),Mutect2 version,4.5.0.0,TRUE,all primary VCF headers; wes_vcf_header_provenance.csv,cite in Methods
+Variant filtering,FilterMutectCalls version,4.5.0.0,TRUE,all primary VCF headers; wes_vcf_header_provenance.csv,cite in Methods
+Variant annotation,Ensembl VEP version,v113.0,TRUE,all primary VCF headers; wes_vcf_header_provenance.csv,cite in Methods

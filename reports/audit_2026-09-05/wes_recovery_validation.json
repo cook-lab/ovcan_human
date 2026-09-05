@@ -1,0 +1,33 @@
+{
+  "original_22_candidates_unchanged": true,
+  "original_rows": 6036,
+  "current_rows": 6194,
+  "recovered_TOV3121D_rows": 158,
+  "recovered_tp53": [
+    {
+      "cell_line": "TOV3121D",
+      "subtype": "HGS",
+      "Hugo_Symbol": "TP53",
+      "Chromosome": "chr17",
+      "Start_Position": "7674890",
+      "End_Position": "7674890",
+      "Reference_Allele": "T",
+      "Tumor_Seq_Allele2": "-",
+      "Variant_Classification": "Frame_Shift_Del",
+      "Variant_Type": "DEL",
+      "HGVSp_Short": "p.H214fs",
+      "hgvsp_canonical": "TRUE",
+      "hgvsp_reconstructed": "TRUE",
+      "Consequence": "frameshift_variant",
+      "IMPACT": "HIGH",
+      "dbSNP_RS": "NA",
+      "Existing_variation": "CM103210,COSV52670202,COSV52732998,COSV52834506,COSV52887765",
+      "CLIN_SIG": "NA",
+      "pop_af_max": "0",
+      "vaf": "NA",
+      "germline_like_vaf": "FALSE",
+      "is_driver": "TRUE",
+      "FILTER": "PASS"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "validation": "passed",
+  "rna_symbols": 35882,
+  "rna_display_values": 1112342,
+  "rna_max_relative_rounding_error": 0.0004997501249374761,
+  "protein_features": 8427,
+  "protein_display_values": 238259,
+  "protein_missing_values_preserved": 22978,
+  "source_hashes": "all match",
+  "display_precision": "RNA four significant figures; protein three decimal places"
+}

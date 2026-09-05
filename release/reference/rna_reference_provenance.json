@@ -1,0 +1,17 @@
+{
+  "reference": "Ensembl release 93, Homo sapiens GRCh38 cDNA all",
+  "original_source_url": "https://ftp.ensembl.org/pub/release-93/fasta/homo_sapiens/cdna/Homo_sapiens.GRCh38.cdna.all.fa.gz",
+  "recovered_on": "2026-09-05",
+  "source_verification": "Official Ensembl release-93 CHECKSUMS retrieved 2026-09-05: BSD sum 19566, 65198 blocks for Homo_sapiens.GRCh38.cdna.all.fa.gz; recovered FASTA matches both. All versioned target IDs and lengths independently match every archived library. Original binary index sequence checksum remains unavailable.",
+  "official_checksum_url": "https://ftp.ensembl.org/pub/release-93/fasta/homo_sapiens/cdna/CHECKSUMS",
+  "official_bsd_sum": "19566 65198",
+  "fasta_sha256": "682a8cb58aff6084ad9053476c6bfc45d3afa20b32930c37807c37919a840f0f",
+  "map_sha256": "57372b5a8933360f9fd89cfd394426cdb48250958f8908ce3092f0413ae2fb6b",
+  "map_md5": "da6b6edd4d01d8d462802b7fe060875b",
+  "map_builder": "scripts/build_matched_rna_reference.py",
+  "n_transcripts": 185299,
+  "n_primary_assembly_transcripts": 167691,
+  "n_genes": 39733,
+  "gene_policy": "Retain all primary and alternative reference loci as annotated Ensembl gene rows. Symbol analyses sum TPM over gene rows with identical symbols.",
+  "supersedes": "Ensembl release-105 transcript map, which excluded 3529 index targets and 1.60-3.41% of library TPM."
+}

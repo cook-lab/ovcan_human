@@ -1,0 +1,38 @@
+                                                                                10   11   12   13    14   15   16   17
+                                                                                                                         18
+                                                                                                                         19
+                                                                                                                         20
+                      1        2           3     4    5      6     7    8   9
+                                                                                                                                  FGA
+                                                                                                                         21
+                                                                                                                         22
+
+       OV1369-R2
+        TOV1369
+         OV2295
+       OV2295-R2
+      TOV2295-R
+       TOV3121D
+      TOV3121EP
+        OV3133-R
+       OV3133-R2
+HGS
+       TOV3133D
+       TOV3133G
+         OV3291
+         OV2085
+         OV3331
+           OV90
+      TOV2835EP
+      TOV2881EP
+       TOV2929D
+        TOV21G
+CC
+       TOV3392D
+ EC     TOV112D
+LGS      TOV81D
+MC      TOV2414
+                   Patient family                                                    No segment       Log2 copy ratio        0    0.4   0.8
+                      1369          2295       3121   3133       3291   Other
+                                                                                                    ≤ -1.5               0    ≥ 1.5
+

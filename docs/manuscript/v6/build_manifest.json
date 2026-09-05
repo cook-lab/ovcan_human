@@ -1,0 +1,33 @@
+{
+  "python": "3.12.14",
+  "inputs": [
+    {
+      "path": "docs/manuscript/v6/OvCAN_Scientific_Data_draft_v6.md",
+      "sha256": "610b6b55b9cd391e0114aaa91dc7e57a5a8df90d928dd1850602d0da4d03eecb"
+    },
+    {
+      "path": "docs/manuscript/v6/build_docx_v6.py",
+      "sha256": "14068a513dc0132c7ffe144536a224fc3fc110f8d794f1e4fc4f5dc70b181c15"
+    },
+    {
+      "path": "docs/manuscript/figures/fig1.png",
+      "sha256": "d2504f0c7278187147fb548250c0d0c832f7b49b2cf230c2f8a51d8a4b744d58"
+    },
+    {
+      "path": "docs/manuscript/figures/fig2.png",
+      "sha256": "461c3df49a86be70eb2aea2d9fa6d358ddc894c40b0dc5ae1927f17c20058438"
+    },
+    {
+      "path": "docs/manuscript/figures/fig3.png",
+      "sha256": "76382fa670f54ef4e2c9c40e088133c6fb907a4dfa86f1523fff5a6303fe11a0"
+    },
+    {
+      "path": "docs/manuscript/figures/fig4.png",
+      "sha256": "09c12d337ea13738ddbbdaa42374c5461b1c685ac2fa440c6c8818f909d31fb3"
+    }
+  ],
+  "output": {
+    "path": "OvCAN_Scientific_Data_draft_v6.docx",
+    "sha256": "dee5d807b88eb3d38210e88972f97acc896aa419395f7b4335a7a16c4b1cd221"
+  }
+}

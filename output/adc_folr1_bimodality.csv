@@ -1,0 +1,22 @@
+gene,assay,group,analysis_scope,statistic,value,interpretation
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,n_HGS_lines,15,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,min,0.057,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,max,9.479,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,range,9.422,range is NOT evidence of bimodality
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,sd,3.0925,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,bimodality_coefficient,0.4399,BC <= 0.555 -> bimodality NOT flagged
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_BIC_G1,-80.8189,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_BIC_G2,-81.8837,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_dBIC_G2_minus_G1,-1.0648,1 component preferred
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_G2_mean_low,0.6471,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_G2_mean_high,6.4926,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_G2_prop_low,0.2684,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_E_G2_n_low,4,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_BIC_G1,-80.8189,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_BIC_G2,-81.7668,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_dBIC_G2_minus_G1,-0.9479,1 component preferred
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_G2_mean_low,0.5322,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_G2_mean_high,6.4145,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_G2_prop_low,0.2535,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,mclust_V_G2_n_low,4,
+FOLR1,RNA,HGS,exploratory sensitivity of 15 models from 12 patients; a 2-component Gaussian mixture need not have a bimodal density,hartigan_dip_test,NA,NOT COMPUTED: the diptest package is not installed in this R build

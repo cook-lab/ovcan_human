@@ -1,0 +1,125 @@
+symbol,cell_line,log2_tpm,z_all31,subtype,in_hollis_ec_panel,scored_group
+ARID1A,OV1369-R2,3.556,-1.07,HGS,TRUE,EC (endometrioid)
+ARID1A,OV1946,4.427,0.023,HGS,TRUE,EC (endometrioid)
+ARID1A,OV2085,4.451,0.053,HGS,TRUE,EC (endometrioid)
+ARID1A,OV2295,4.617,0.261,HGS,TRUE,EC (endometrioid)
+ARID1A,OV2295-R2,3.633,-0.973,HGS,TRUE,EC (endometrioid)
+ARID1A,OV3133-R,2.944,-1.838,HGS,TRUE,EC (endometrioid)
+ARID1A,OV3331,4.957,0.688,HGS,TRUE,EC (endometrioid)
+ARID1A,OV4453,4.946,0.675,HGS,TRUE,EC (endometrioid)
+ARID1A,OV4485,4.556,0.185,HGS,TRUE,EC (endometrioid)
+ARID1A,OV866-2,4.521,0.141,HGS,TRUE,EC (endometrioid)
+ARID1A,OV90,4.647,0.3,HGS,TRUE,EC (endometrioid)
+ARID1A,TOV1369,3.858,-0.691,HGS,TRUE,EC (endometrioid)
+ARID1A,TOV3041G,4.115,-0.369,HGS,TRUE,EC (endometrioid)
+ARID1A,TOV3133G,4.031,-0.474,HGS,TRUE,EC (endometrioid)
+ARID1A,TOV3291G,4.011,-0.499,HGS,TRUE,EC (endometrioid)
+ARID1A,TOV21G,3.667,-0.931,CC,TRUE,EC (endometrioid)
+ARID1A,TOV3392D,3.091,-1.654,CC,TRUE,EC (endometrioid)
+ARID1A,VOA10816,3.808,-0.753,CC,TRUE,EC (endometrioid)
+ARID1A,VOA12539,5.661,1.572,CC,TRUE,EC (endometrioid)
+ARID1A,VOA295,4.567,0.199,CC,TRUE,EC (endometrioid)
+ARID1A,VOA4841,4.793,0.483,CC,TRUE,EC (endometrioid)
+ARID1A,VOA6861,5.469,1.331,CC,TRUE,EC (endometrioid)
+ARID1A,TOV112D,5.722,1.648,EC,TRUE,EC (endometrioid)
+ARID1A,VOA4395,4.613,0.256,EC,TRUE,EC (endometrioid)
+ARID1A,TOV2414,4.018,-0.49,MC,TRUE,EC (endometrioid)
+ARID1A,VOA8762,5.049,0.804,MC,TRUE,EC (endometrioid)
+ARID1A,VOA8771,4.833,0.533,MC,TRUE,EC (endometrioid)
+ARID1A,VOA5217,3.334,-1.349,MMMT,TRUE,EC (endometrioid)
+ARID1A,VOA5436,3.359,-1.317,MMMT,TRUE,EC (endometrioid)
+ARID1A,BIN67,5.201,0.995,SCCOHT,TRUE,EC (endometrioid)
+ARID1A,COV434,6.211,2.262,SCCOHT,TRUE,EC (endometrioid)
+ESR1,OV1369-R2,0.315,-0.555,HGS,TRUE,EC (endometrioid)
+ESR1,OV1946,0.046,-0.757,HGS,TRUE,EC (endometrioid)
+ESR1,OV2085,2.332,0.961,HGS,TRUE,EC (endometrioid)
+ESR1,OV2295,4.3,2.438,HGS,TRUE,EC (endometrioid)
+ESR1,OV2295-R2,2.437,1.039,HGS,TRUE,EC (endometrioid)
+ESR1,OV3133-R,2.497,1.084,HGS,TRUE,EC (endometrioid)
+ESR1,OV3331,1.819,0.575,HGS,TRUE,EC (endometrioid)
+ESR1,OV4453,0.859,-0.146,HGS,TRUE,EC (endometrioid)
+ESR1,OV4485,3.709,1.994,HGS,TRUE,EC (endometrioid)
+ESR1,OV866-2,0.014,-0.781,HGS,TRUE,EC (endometrioid)
+ESR1,OV90,0.093,-0.722,HGS,TRUE,EC (endometrioid)
+ESR1,TOV1369,2.255,0.902,HGS,TRUE,EC (endometrioid)
+ESR1,TOV3041G,2.224,0.879,HGS,TRUE,EC (endometrioid)
+ESR1,TOV3133G,3.579,1.897,HGS,TRUE,EC (endometrioid)
+ESR1,TOV3291G,1.175,0.091,HGS,TRUE,EC (endometrioid)
+ESR1,TOV21G,0.047,-0.756,CC,TRUE,EC (endometrioid)
+ESR1,TOV3392D,0,-0.791,CC,TRUE,EC (endometrioid)
+ESR1,VOA10816,0.111,-0.708,CC,TRUE,EC (endometrioid)
+ESR1,VOA12539,0.031,-0.768,CC,TRUE,EC (endometrioid)
+ESR1,VOA295,0.181,-0.655,CC,TRUE,EC (endometrioid)
+ESR1,VOA4841,0.571,-0.362,CC,TRUE,EC (endometrioid)
+ESR1,VOA6861,2.935,1.413,CC,TRUE,EC (endometrioid)
+ESR1,TOV112D,0.051,-0.753,EC,TRUE,EC (endometrioid)
+ESR1,VOA4395,0,-0.791,EC,TRUE,EC (endometrioid)
+ESR1,TOV2414,0,-0.791,MC,TRUE,EC (endometrioid)
+ESR1,VOA8762,0.469,-0.439,MC,TRUE,EC (endometrioid)
+ESR1,VOA8771,0.286,-0.576,MC,TRUE,EC (endometrioid)
+ESR1,VOA5217,0.009,-0.785,MMMT,TRUE,EC (endometrioid)
+ESR1,VOA5436,0.071,-0.738,MMMT,TRUE,EC (endometrioid)
+ESR1,BIN67,0.024,-0.773,SCCOHT,TRUE,EC (endometrioid)
+ESR1,COV434,0.221,-0.625,SCCOHT,TRUE,EC (endometrioid)
+PGR,OV1369-R2,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV1946,0.718,1.259,HGS,TRUE,EC (endometrioid)
+PGR,OV2085,0.007,-0.248,HGS,TRUE,EC (endometrioid)
+PGR,OV2295,2.54,5.123,HGS,TRUE,EC (endometrioid)
+PGR,OV2295-R2,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV3133-R,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV3331,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV4453,0.016,-0.229,HGS,TRUE,EC (endometrioid)
+PGR,OV4485,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV866-2,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,OV90,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,TOV1369,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,TOV3041G,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,TOV3133G,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,TOV3291G,0,-0.264,HGS,TRUE,EC (endometrioid)
+PGR,TOV21G,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,TOV3392D,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,VOA10816,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,VOA12539,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,VOA295,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,VOA4841,0,-0.264,CC,TRUE,EC (endometrioid)
+PGR,VOA6861,0.034,-0.192,CC,TRUE,EC (endometrioid)
+PGR,TOV112D,0.003,-0.257,EC,TRUE,EC (endometrioid)
+PGR,VOA4395,0,-0.264,EC,TRUE,EC (endometrioid)
+PGR,TOV2414,0,-0.264,MC,TRUE,EC (endometrioid)
+PGR,VOA8762,0.013,-0.238,MC,TRUE,EC (endometrioid)
+PGR,VOA8771,0.007,-0.249,MC,TRUE,EC (endometrioid)
+PGR,VOA5217,0,-0.264,MMMT,TRUE,EC (endometrioid)
+PGR,VOA5436,0,-0.264,MMMT,TRUE,EC (endometrioid)
+PGR,BIN67,0.11,-0.03,SCCOHT,TRUE,EC (endometrioid)
+PGR,COV434,0.411,0.607,SCCOHT,TRUE,EC (endometrioid)
+VIM,OV1369-R2,11.391,1.123,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV1946,11.816,1.244,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV2085,0.505,-1.976,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV2295,7.989,0.155,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV2295-R2,7.371,-0.022,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV3133-R,4.864,-0.735,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV3331,7.19,-0.073,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV4453,7.374,-0.021,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV4485,5.038,-0.686,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV866-2,10.967,1.003,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,OV90,1.288,-1.754,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV1369,7.301,-0.041,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV3041G,7.565,0.034,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV3133G,7.407,-0.011,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV3291G,8.928,0.422,HGS,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV21G,11.316,1.102,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV3392D,6.201,-0.355,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA10816,9.872,0.691,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA12539,9.655,0.629,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA295,6.398,-0.299,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA4841,3.963,-0.992,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA6861,8.246,0.228,CC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV112D,12.926,1.56,EC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA4395,12.595,1.466,EC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,TOV2414,8.12,0.192,MC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA8762,0.495,-1.979,MC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA8771,0.374,-2.014,MC,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA5217,10.48,0.864,MMMT,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,VOA5436,9.15,0.485,MMMT,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,BIN67,9.559,0.602,SCCOHT,TRUE,MMMT (EMT) - not double-counted for EC
+VIM,COV434,4.493,-0.841,SCCOHT,TRUE,MMMT (EMT) - not double-counted for EC

@@ -1,0 +1,1037 @@
+---
+title: "All inclusive final code Protein"
+output: html_notebook
+---
+
+# Dependencies
+```{r}
+library(tximport)
+library(tidyverse)
+library(Hmisc)
+library(factoextra)
+library(pheatmap)
+library(ggrepel)
+library(biomaRt)
+library(rhdf5)
+library(matrixStats)
+library(GO.db)
+library(Rtsne)     
+library(topGO)
+library(ComplexHeatmap)
+library(readxl)
+library(readr)
+library(cluster)
+library(dplyr)
+library(ggplot2)
+library(viridisLite)
+```
+
+# Load the data
+```{r}
+raw_data <- read_excel("../data/proteomics/protein_relative_abundance.xlsx")
+
+```
+ 
+# Subset for information we need 
+```{r}
+file_path <- "../data/proteomics/protein_relative_abundance.xlsx"  
+df <- read_excel(file_path, sheet = 1)  
+
+# columns i want
+columns_to_keep <- c("OV1369_R2", "OV3133_R", "OV866_2", "VOA10816", 
+                     "TOV3392D", "VOA4395", "COV434", "OV2085", "OV4485", 
+                     "TOV1369", "VOA295", "VOA12539", "TOV3291G", 
+                     "VOA10816.1", "OV2295_R2", "BIN67", "TOV3041G", 
+                     "VOA14993", "VOA4841", "TOV1369.1", 
+                     "OV4453", "OV3331", "TOV3133G", 
+                     "TOV112D", "VOA8762", "VOA5217", 
+                     "OV1946", "OV90", "OV2295", "TOV21G", "TOV2414", "VOA5436", 
+                     "VOA8771", "TOV3133G.1")
+
+# extract 2 wanted columns
+abundance_df <- df[, c("Symbol", columns_to_keep)]
+
+write.csv(abundance_df, "../output/filtered_abundance_table.csv", row.names = FALSE)
+
+```
+
+# Turn CSV -> Matrix
+```{r}
+abundance_df <- read.csv("../output/filtered_abundance_table.csv")
+abundance_df <- abundance_df[!is.na(abundance_df$Symbol), ]
+abundance_df$Symbol <- make.unique(as.character(abundance_df$Symbol))
+rownames(abundance_df) <- abundance_df$Symbol
+abundance_df$Symbol <- NULL
+
+
+abundance_matrix <- as.matrix(abundance_df)
+abundance_matrix <- na.omit(abundance_df)
+
+
+write.csv(abundance_matrix, "../output/abundance_matrix.csv", row.names = FALSE)
+
+```
+
+# Annotation table 
+```{r}
+protein_annotation_df_new <- data.frame(
+  CellLine = c(
+    "OV1369_R2", "OV2085", "TOV3291G", "OV2295_R2", "OV4453", 
+    "OV3133_R", "OV4485", "TOV3041G", "OV1946", "TOV3133G", 
+    "OV866_2", "TOV1369", "TOV1369.1", "OV2295", "TOV3133G.1", 
+    "VOA295", "VOA10816.1", "VOA10816", "VOA12539", 
+    "TOV21G", "TOV3392D", "VOA4841", "VOA14993", "VOA4395", "TOV112D", 
+    "COV434", "BIN67", "OV3331", "OV90", "TOV2414", 
+    "VOA8771", "VOA8762", "VOA5217", "VOA5436"
+  ),
+  Subtype = c(
+    "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", 
+    "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", 
+    "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", "High-grade serous", "Clear cell", "Clear cell", "Clear cell", "Clear cell", 
+    "Clear cell", "Clear cell", "Clear cell", "Clear cell", "Endometrioid", "Endometrioid", 
+    "SCCOHT", "SCCOHT", "High-grade serous", "High-grade serous", "Mucinous", 
+    "Mucinous", "Mucinous", "MMMT", "MMMT"
+  )
+)
+
+write.csv(protein_annotation_df_new, "../output/protein_annotation_df.csv", row.names = FALSE)
+```
+
+
+
+# RNA vs Protein plot
+
+```{r}
+
+protein_matrix <- read.csv("../output/abundance_matrix_best.csv", row.names = 1)
+rna_matrix <- read.csv("../output/tpm_matrix_human.csv", row.names = 1)
+rna_matrix <- log2(rna_matrix + 1)
+
+abundance_matrix <- protein_matrix
+
+# find the common gene symbols. use intersect tool
+common_genes <- intersect(rownames(rna_matrix), rownames(protein_matrix))
+# extract the rows corresponding to the gene symbols
+rna_common <- rna_matrix[common_genes, ]
+protein_common <- protein_matrix[common_genes, ]
+
+# find common cell lines
+common_lines <- intersect(colnames(rna_matrix), colnames(protein_matrix))
+
+#extract the columns corresponding to the cell lines
+rna_common <- rna_common[, common_lines]
+protein_common <- protein_common[, common_lines]
+
+```
+## Visualize 
+```{r}
+
+line <- "TOV21G"
+
+df <- data.frame(
+  RNA = as.numeric(rna_common[, line]),
+  Protein = as.numeric(protein_common[, line]))
+
+R <- cor(df$RNA, df$Protein, use = "complete.obs")
+
+p <- ggplot(df, aes(x = RNA, y = Protein)) +
+  geom_point(color = "blue", alpha = 0.7) +
+  geom_smooth(method = "lm", se = FALSE, color = "black") +
+  labs(
+    title = line,
+    x = "RNA Expression (log(TPM+1))",
+    y = "Relative Protein Abundance \n (log-normalized)"
+  ) +
+  annotate("text", x = 0, y = max(df$Protein, na.rm = TRUE),
+           label = paste0("R= ", round(R, 2)),
+           hjust = 0, vjust = 1, size = 7) +
+  theme_classic() +
+theme(
+    plot.title = element_text(size = 18, hjust = 0.5),
+    axis.title = element_text(size = 18),
+    axis.text  = element_text(size = 18)
+  )
+ggsave("../figs2/rna_vs_protein_TOV21G.pdf", p, width = 4.5, height = 4.5, dpi = 300)
+
+```
+
+
+#PCA prep
+```{r}
+abundance_matrix <- na.omit(abundance_df)
+
+# Explictly set matrix column order to match protein_annotation
+abundance_matrix <- abundance_matrix[,protein_annotation_df_new$CellLine]
+
+pca_result_protein <- prcomp(t(abundance_matrix), scale = FALSE, center=TRUE)
+
+# Base PCA visualization
+# test <- fviz_pca_ind(pca_result_protein, axes=c(1,2),
+#              repel = TRUE,
+#              habillage = protein_annotation_df_new$Subtype,
+#              max.overlaps=100)
+# test
+
+
+
+```
+
+# Subtype annotation
+```{r}
+subtypes <- unique(sub_anno$Subtype)
+subtype_colours <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+anno_colours <- list(Subtype = subtype_colours)
+```
+
+
+# PCA
+```{r}
+# Extract PCA coordinates
+plot_dat <- protein_annotation_df_new
+plot_dat$PC1 <- pca_result_protein$x[, 1]
+plot_dat$PC2 <- pca_result_protein$x[, 2]
+plot_dat$PC3 <- pca_result_protein$x[,3]
+plot_dat$PC4 <- pca_result_protein$x[,4]
+plot_dat$PC5 <- pca_result_protein$x[,5]
+plot_dat$PC6 <- pca_result_protein$x[,6]
+plot_dat$PC7 <- pca_result_protein$x[,7]
+plot_dat$PC8 <- pca_result_protein$x[,8]
+plot_dat$PC9 <- pca_result_protein$x[,9]
+plot_dat$PC10 <- pca_result_protein$x[,10]
+
+
+# Plot
+pca_plot_protein <- ggplot(plot_dat, aes(x = PC1, y = PC2, label = CellLine)) + 
+  geom_point(shape = 21, size = 2, color = "black", aes(fill = Subtype)) +
+  geom_text_repel(max.overlaps = 100, size = 1.75) +
+  scale_fill_manual(values = subtype_colours) +
+  theme_classic() +
+  theme(axis.text = element_text(size = 10, color = "black"),
+        axis.title = element_text(size = 12)) +
+  labs(x = "PC1 (14.2% Variance)", y = "PC2 (11% Variance)")
+ggsave("../figs2/pca_plot_protein.pdf", plot = pca_plot_protein, width = 4.5, height = 2.75, dpi = 300)
+
+```
+
+# TSNE
+```{r}
+ovcan_tsne_protein <- Rtsne::Rtsne(pca_result_protein$x[,1:5], perplexity=5) 
+
+plot_dat <- protein_annotation_df_new
+plot_dat$tSNE1 <- ovcan_tsne_protein$Y[,1]
+plot_dat$tSNE2 <- ovcan_tsne_protein$Y[,2]
+
+tsne_plot_protein <- ggplot(plot_dat, aes(x=tSNE1, y= tSNE2, label=CellLine)) + 
+  geom_point(shape=21, size=2, color="black", aes(fill=Subtype)) +
+  geom_text_repel(max.overlaps=100, size=1.75) +
+  scale_fill_manual(values = subtype_colours) +
+  theme_classic() +
+  theme(axis.text=element_text(size=10, color="black"),
+        axis.title=element_text(size=12))
+ggsave("../figs2/tsne_plot_protein.pdf", plot = tsne_plot_protein, width = 4.5, height = 2.75, dpi = 300)
+```
+
+
+
+# Silhouette Width PCA
+```{r}
+dists_protein <- dist(plot_dat[, c("PC1", "PC2", "PC3", "PC4", "PC5", "PC6", "PC7", "PC8", "PC9", "PC10")])
+
+# Cluster labels from subtypes
+cluster_labels_protein <- as.numeric(factor(plot_dat$Subtype))
+
+# Compute silhouette values
+sil_protein <- silhouette(cluster_labels_protein, dists_protein)
+sil_protein_df <- as.data.frame(sil_protein)
+sil_protein_df$Subtype <- plot_dat$Subtype
+sil_summary_protein <- sil_protein_df %>%
+  group_by(Subtype) %>%
+  summarise(mean_sil = mean(sil_width)) %>%
+  arrange(mean_sil)
+
+sil_lollipop_protein <- ggplot(sil_summary_protein, aes(x = mean_sil, y = reorder(Subtype, mean_sil))) +
+  geom_bar(stat = "identity", width = 0.01, color = "black") +
+  geom_point(fill = "#4A154B", shape = 21, size = 4, color = "black") +
+  geom_vline(xintercept = 0, linetype = 2) +
+  ggtitle("Silhouette Width by Subtype (Protein PCA)") +
+  xlab("Mean Silhouette Width") + ylab("") +
+  theme_classic() +
+  theme(
+    legend.position = "none",
+    axis.text = element_text(size = 20, color = "black"),
+    axis.title = element_text(size = 26),
+    plot.title = element_text(size = 26, face = "bold")
+  )
+ggsave("../figs2/silhouette_lollipop_protein_1-10.pdf", plot = sil_lollipop_protein, width = 7.5, height = 6)
+
+```
+
+# Signature heatmap 
+```{r}
+rownames(abundance_df) <- abundance_df$Symbol
+
+common_cell_lines <- intersect(colnames(tpm_mat_log), colnames(abundance_df))
+signature_genes <- unique(df_sig_hm$Gene)  
+shared_genes <- intersect(signature_genes, rownames(abundance_df))
+protein_sig_mat <- abundance_df[shared_genes, common_cell_lines]
+
+# col anno
+sample_anno <- read.csv("../output/annotation.csv") %>%
+  filter(cell_line %in% colnames(protein_sig_mat)) %>%
+  arrange(Subtype)  # Reorder by subtype
+
+# Reorder columns of the matrix
+protein_sig_mat <- protein_sig_mat[, sample_anno$cell_line]
+protein_sig_mat <- na.omit(protein_sig_mat)
+
+protein_scaled <- t(scale(t(protein_sig_mat)))
+protein_scaled[protein_scaled > 3] <- 3
+protein_scaled[protein_scaled < -3] <- -3
+
+subtype_vector_gene <- df_sig_hm$Subtype
+names(subtype_vector_gene) <- df_sig_hm$Gene # gene to subtype mapping for annotation
+
+# keeps only the genes that are plotted in the heatmap and puts them in the same order, so the annotation colours line up with the rows
+subtype_vector_gene <- subtype_vector_gene[rownames(protein_scaled)]
+
+row_anno <- rowAnnotation(
+  Subtype = subtype_vector_gene,
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE)
+
+bottom_anno <- HeatmapAnnotation(
+  Subtype = subtype_vector_gene,
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE)
+
+# Visualization
+sigs_protein_heatmap <- Heatmap(
+  protein_scaled,
+  name = "Expression\nZ-score",
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  column_names_gp = gpar(fontsize = 8),
+  row_names_gp = gpar(fontsize = 6),
+  heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+  border = TRUE,
+  left_annotation = row_anno,
+  bottom_annotation = bottom_anno)
+
+pdf(file = "../figs2/sigs_heatmap_protein_top100.pdf", width = 8, height = 8)
+draw(sigs_protein_heatmap)
+dev.off()
+```
+
+
+
+# ADC target heatmap
+```{r}
+adc_antigens <- c("FOLR1", "MSLN", "TACSTD2", "ERBB2", "TF", "DPEP3", "SLC34A2")
+adc_subset <- intersect(adc_antigens, rownames(abundance_matrix))
+adc_expr <- abundance_matrix[adc_subset, ]
+ordered_samples <- protein_annotation_df_new %>% arrange(Subtype) %>% pull(CellLine) 
+adc_expr <- adc_expr[, ordered_samples]
+adc_matrix <- as.matrix(adc_expr)
+
+adc_scaled <- t(base::scale(t(adc_matrix)))
+
+adc_scaled[adc_scaled > 2] <- 2
+adc_scaled[adc_scaled < -2] <- -2
+
+
+adc_scaled_t <- t(adc_scaled)  # transpose the matrix
+
+sub_anno <- data.frame(Subtype=protein_annotation_df_new$Subtype)
+rownames(sub_anno) <- protein_annotation_df_new$CellLine
+sub_anno <- sub_anno[ordered_samples, , drop = FALSE]
+
+subtypes <- unique(sub_anno$Subtype)
+subtype_colors <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+anno_colors <- list(Subtype = subtype_colors)
+
+ht <- Heatmap(
+  adc_scaled_t,
+  name = "Z-score",
+  right_annotation = HeatmapAnnotation(
+    Subtype = sub_anno$Subtype,
+    col = list(Subtype = subtype_colors),
+    show_annotation_name = TRUE,
+    which = "row"
+  ),
+  cluster_columns = FALSE,
+  cluster_rows = FALSE,
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  column_names_gp = gpar(fontsize = 11.5),
+  row_names_gp = gpar(fontsize = 8),
+  heatmap_legend_param = list(title = "Expression\nZ-score", title_gp = gpar(fontsize = 10)),
+  border = TRUE
+)
+ht
+
+
+pdf(file = "../figs2/protein_antigen_heatmap_paper.pdf", width = 4.5, height = 10)
+draw(ht, auto_adjust = FALSE)
+dev.off()
+
+```
+
+# ADC target dot plot z score + abundance 
+```{r}
+
+adc_antigens <- c("FAP", "EGFR", "MSLN", "AXL", "ERBB2", "CA9", "MUC1", "CEACAM6", "CDH17")
+adc_subset <- intersect(adc_antigens, rownames(abundance_matrix))
+
+ordered_samples <- protein_annotation_df_new %>%
+  arrange(Subtype) %>%
+  pull(CellLine)
+
+# IMPORTANT: make it a numeric matrix
+adc_expr <- abundance_matrix[adc_subset, ordered_samples, drop = FALSE]
+adc_expr <- as.matrix(adc_expr)
+storage.mode(adc_expr) <- "numeric"
+
+# Z-score per gene
+adc_scaled <- t(scale(t(adc_expr)))
+adc_scaled[adc_scaled > 2] <- 2
+adc_scaled[adc_scaled < -2] <- -2
+
+# Long df
+plot_df <- expand.grid(
+  Gene = rownames(adc_expr),
+  Sample = colnames(adc_expr),
+  KEEP.OUT.ATTRS = FALSE,
+  stringsAsFactors = FALSE
+)
+
+plot_df$Abundance <- as.vector(adc_expr)
+plot_df$Zscore <- as.vector(adc_scaled)
+
+plot_df <- plot_df %>%
+ dplyr::left_join(
+    protein_annotation_df_new %>% dplyr::select(CellLine, Subtype),
+    by = c("Sample" = "CellLine")
+  )
+
+plot_df$Gene <- factor(plot_df$Gene, levels = adc_subset)
+plot_df$Sample <- factor(plot_df$Sample, levels = ordered_samples)
+
+subtype_labs <- c(
+  "High-grade serous" = "HGS",
+  "Clear cell" = "CC",
+  "Endometrioid" = "EC",
+  "Mucinous" = "MC",
+  "Low-Grade Serous" = "LGS"
+)
+
+protein_dotplot <- ggplot(plot_df, aes(x = Gene, y = Sample)) +
+  geom_point(aes(size = Abundance, fill = Zscore), shape = 21, color = "black") +
+  scale_size("Protein abundance", range = c(0.5, 6)) +
+  scale_fill_gradientn(
+  colours = grDevices::colorRampPalette(c("navy","white","firebrick"))(100),
+  guide = guide_colorbar(ticks.colour = "black", frame.colour = "black"),
+  name = "Expression\nZ-score"
+) +
+  facet_grid(Subtype ~ ., scales = "free_y", space = "free_y",
+             labeller = labeller(Subtype = subtype_labs)) +
+  labs(title = "ADC Target protein abundance", x = "", y = "") +
+  theme_bw() +
+  theme(axis.text.x = element_text(size = 10, angle = 45, hjust = 1, color = "black"),
+        axis.text.y = element_text(size = 7, color = "black"),
+        plot.title = element_text(size = 14, hjust = 0.5))
+
+protein_dotplot
+pdf(file = "../figs2/adc_antigen_dotplot.pdf", width = 6, height = 10)
+print(protein_dotplot)
+dev.off()
+
+```
+
+# t test to identify molecular signatures 
+```{r}
+
+gene_abundance <- as.numeric(abundance_matrix[gene, ])
+
+cell_lines <- colnames(abundance_matrix)
+
+
+target_subtype <- "SCCOHT"
+
+abundance_clean <- na.omit(abundance_matrix)
+results <- data.frame( gene = character(),
+                       p_value = numeric(),
+                       log2fc = numeric(),
+                       stringsAsFactors = F)
+
+for (gene in rownames(abundance_clean)) {
+  gene_abundance <- as.numeric(abundance_clean[gene, ])
+  
+df <- data.frame(
+    gene = gene,
+    abundance = gene_abundance,
+    CellLine = cell_lines)
+  
+df <- merge(df, annotation_table, by = "CellLine")#, all.x = TRUE)
+
+group1 <- df[df$Subtype == target_subtype, "abundance"]
+group2 <- df[df$Subtype != target_subtype, "abundance"]
+
+#if (sum(!is.na(group1)) < 1 || sum(!is.na(group2)) < 1) next
+
+test <- t.test(group1, group2, var.equal = TRUE)
+
+log2fc <- mean(group1, na.rm = TRUE) - mean(group2, na.rm = TRUE)
+
+  results <- rbind(results, data.frame(
+    Gene = gene,
+    p_value = test$p.value,
+    log2FoldChange = log2fc))
+}
+
+results$padj <- p.adjust(results$p_value, method = "BH") #controls false discovery rate across all genes tested
+write.csv(results, paste0("ttest", gsub(" ", "_", target_subtype), "_vs_OTHERS.csv"), row.names = FALSE)
+
+```
+
+# Signature for Clear Cell with pajd/log2fc using t-test
+```{r}
+cc_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestClear_cell_vs_OTHERS.csv", row.names = 1)
+cc_signature_df_protein <- subset(cc_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+cc_signature_df_protein$Gene <- rownames(cc_signature_df_protein)
+cc_signature_df_protein <- cc_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(cc_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/ClearCell_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+# Signature for High-Grade with pajd/log2fc using t-test
+```{r}
+hgs_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestHigh-grade_serous_vs_OTHERS.csv", row.names = 1)
+hgs_signature_df_protein <- subset(hgs_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+hgs_signature_df_protein$Gene <- rownames(hgs_signature_df_protein)
+hgs_signature_df_protein <- hgs_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(hgs_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/HGS_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+# Signature for Mucinous with pajd/log2fc using t-test
+```{r}
+mc_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestMucinous_vs_OTHERS.csv", row.names = 1)
+mc_signature_df_protein <- subset(mc_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+mc_signature_df_protein$Gene <- rownames(mc_signature_df_protein)
+mc_signature_df_protein <- mc_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(mc_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/Mucinous_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+# Signature for Endometrioid with pajd/log2fc using t-test
+```{r}
+ec_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestEndometrioid_vs_OTHERS.csv", row.names = 1)
+ec_signature_df_protein <- subset(ec_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+ec_signature_df_protein$Gene <- rownames(ec_signature_df_protein)
+ec_signature_df_protein <- ec_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(ec_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/Endometrioid_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+
+# Signature for SCCOHT with pajd/log2fc using t-test
+```{r}
+SCCOHT_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestSCCOHT_vs_OTHERS.csv", row.names = 1)
+SCCOHT_signature_df_protein <- subset(SCCOHT_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+SCCOHT_signature_df_protein$Gene <- rownames(SCCOHT_signature_df_protein)
+SCCOHT_signature_df_protein <- SCCOHT_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(SCCOHT_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/SCCOHT_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+# Signature for MMMT with pajd/log2fc using t-test
+```{r}
+MMMT_protein <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/ttest/ttestMMMT_vs_OTHERS.csv", row.names = 1)
+MMMT_signature_df_protein <- subset(MMMT_protein, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+MMMT_signature_df_protein$Gene <- rownames(MMMT_signature_df_protein)
+MMMT_signature_df_protein <- MMMT_signature_df_protein[, c("Gene", "padj", "log2FoldChange")]
+write.csv(MMMT_signature_df_protein,
+          "../output/Protein signatures/ttest_sig/MMMT_signature_protein.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+
+# find common signature between protein and rna (HGS)
+```{r}
+hgs_sig_p <- read_csv("../output/Protein signatures/ttest_sig/HGS_signature_protein.csv")
+hgs_sig_r <- read_csv("../output/HGS_signature_detailed.csv")
+
+common_sig <- intersect(hgs_sig_p$Gene, hgs_sig_r$Gene)
+
+hgs_merged_sig <- merge(hgs_sig_p[hgs_sig_p$Gene %in% common_sig, ], hgs_sig_r[hgs_sig_r$Gene %in% common_sig, ], by = "Gene")
+
+write.csv(hgs_merged_sig, "../output/hgs_merged_sig.csv", row.names = FALSE)
+
+```
+
+
+# find common signature between protein and rna (Mucinous)
+```{r}
+mc_sig_p <- read_csv("../output/Protein signatures/ttest_sig/Mucinous_signature_protein.csv")
+mc_sig_r <- read_csv("../output/Mucinous_signature_detailed.csv")
+
+common_sig_mc <- intersect(mc_sig_p$Gene, mc_sig_r$Gene)
+
+mc_merged_sig <- merge(mc_sig_p[mc_sig_p$Gene %in% common_sig_mc, ], mc_sig_r[mc_sig_r$Gene %in% common_sig_mc, ], by = "Gene")
+
+write.csv(mc_merged_sig, "../output/mc_merged_sig.csv", row.names = FALSE)
+
+```
+# find common signature between protein and rna (Clear cell)
+```{r}
+cc_sig_p <- read_csv("../output/Protein signatures/ttest_sig/ClearCell_signature_protein.csv")
+cc_sig_r <- read_csv("../output/ClearCell_signature_detailed.csv")
+
+common_sig_cc <- intersect(cc_sig_p$Gene, cc_sig_r$Gene)
+
+cc_merged_sig <- merge(cc_sig_p[cc_sig_p$Gene %in% common_sig_cc, ], cc_sig_r[cc_sig_r$Gene %in% common_sig_cc, ], by = "Gene")
+
+write.csv(cc_merged_sig, "../output/cc_merged_sig.csv", row.names = FALSE)
+
+```
+
+# find common signature between protein and rna (Endometrioid)
+```{r}
+ec_sig_p <- read_csv("../output/Protein signatures/ttest_sig/Endometrioid_signature_protein.csv")
+ec_sig_r <- read_csv("../output/ec_signature_detailed.csv")
+
+common_sig_ec <- intersect(ec_sig_p$Gene, ec_sig_r$Gene)
+
+ec_merged_sig <- merge(ec_sig_p[ec_sig_p$Gene %in% common_sig_ec, ], ec_sig_r[ec_sig_r$Gene %in% common_sig_ec, ], by = "Gene")
+
+write.csv(ec_merged_sig, "../output/ec_merged_sig.csv", row.names = FALSE)
+
+```
+
+# find common signature between protein and rna (SCCOHT)
+```{r}
+sccoht_sig_p <- read_csv("../output/Protein signatures/ttest_sig/SCCOHT_signature_protein.csv")
+sccoht_sig_r <- read_csv("../output/sccoht_signature_detailed.csv")
+
+common_sig_sccoht <- intersect(sccoht_sig_p$Gene, sccoht_sig_r$Gene)
+
+sccoht_merged_sig <- merge(sccoht_sig_p[sccoht_sig_p$Gene %in% common_sig_sccoht, ], sccoht_sig_r[sccoht_sig_r$Gene %in% common_sig_sccoht, ], by = "Gene")
+
+write.csv(sccoht_merged_sig, "../output/sccoht_merged_sig.csv", row.names = FALSE)
+
+```
+
+# find common signature between protein and rna (MMMT)
+```{r}
+MMMT_sig_p <- read_csv("../output/Protein signatures/ttest_sig/MMMT_signature_protein.csv")
+MMMT_sig_r <- read_csv("../output/MMMT_signature_detailed.csv")
+
+common_sig_MMMT <- intersect(MMMT_sig_p$Gene, MMMT_sig_r$Gene)
+
+MMMT_merged_sig <- merge(MMMT_sig_p[MMMT_sig_p$Gene %in% common_sig_MMMT, ], MMMT_sig_r[MMMT_sig_r$Gene %in% common_sig_MMMT, ], by = "Gene")
+
+write.csv(MMMT_merged_sig, "../output/MMMT_merged_sig.csv", row.names = FALSE)
+
+```
+
+
+# final merged signature data frame 
+```{r}
+# call out each subtype and its signature files : 
+
+
+# cc
+cc_sig_p <- read_csv("../output/Protein signatures/ttest_sig/ClearCell_signature_protein.csv")
+cc_sig_r <- read_csv("../output/ClearCell_signature_detailed.csv")
+
+common_sig_cc <- intersect(cc_sig_p$Gene, cc_sig_r$Gene)
+
+cc_merged_sig <- merge(
+  cc_sig_p[cc_sig_p$Gene %in% common_sig_cc, ],
+  cc_sig_r[cc_sig_r$Gene %in% common_sig_cc, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+cc_merged_sig$Subtype <- "Clear cell"
+
+# ec 
+ec_sig_p <- read_csv("../output/Protein signatures/ttest_sig/Endometrioid_signature_protein.csv")
+ec_sig_r <- read_csv("../output/ec_signature_detailed.csv")
+
+common_sig_ec <- intersect(ec_sig_p$Gene, ec_sig_r$Gene)
+
+ec_merged_sig <- merge(
+  ec_sig_p[ec_sig_p$Gene %in% common_sig_ec, ],
+  ec_sig_r[ec_sig_r$Gene %in% common_sig_ec, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+ec_merged_sig$Subtype <- "Endometrioid"
+
+#hgsc
+hgs_sig_p <- read_csv("../output/Protein signatures/ttest_sig/HGS_signature_protein.csv")
+hgs_sig_r <- read_csv("../output/HGS_signature_detailed.csv")
+
+common_sig <- intersect(hgs_sig_p$Gene, hgs_sig_r$Gene)
+
+hgs_merged_sig <- merge(
+  hgs_sig_p[hgs_sig_p$Gene %in% common_sig, ],
+  hgs_sig_r[hgs_sig_r$Gene %in% common_sig, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+hgs_merged_sig$Subtype <- "High-grade serous"
+
+# mmmt
+MMMT_sig_p <- read_csv("../output/Protein signatures/ttest_sig/MMMT_signature_protein.csv")
+MMMT_sig_r <- read_csv("../output/MMMT_signature_detailed.csv")
+
+common_sig_MMMT <- intersect(MMMT_sig_p$Gene, MMMT_sig_r$Gene)
+
+MMMT_merged_sig <- merge(
+  MMMT_sig_p[MMMT_sig_p$Gene %in% common_sig_MMMT, ],
+  MMMT_sig_r[MMMT_sig_r$Gene %in% common_sig_MMMT, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+MMMT_merged_sig$Subtype <- "MMMT"
+
+# mc
+mc_sig_p <- read_csv("../output/Protein signatures/ttest_sig/Mucinous_signature_protein.csv")
+mc_sig_r <- read_csv("../output/Mucinous_signature_detailed.csv")
+
+common_sig_mc <- intersect(mc_sig_p$Gene, mc_sig_r$Gene)
+
+mc_merged_sig <- merge(
+  mc_sig_p[mc_sig_p$Gene %in% common_sig_mc, ],
+  mc_sig_r[mc_sig_r$Gene %in% common_sig_mc, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+mc_merged_sig$Subtype <- "Mucinous"
+
+
+# sccoht
+sccoht_sig_p <- read_csv("../output/Protein signatures/ttest_sig/SCCOHT_signature_protein.csv")
+sccoht_sig_r <- read_csv("../output/sccoht_signature_detailed.csv")
+
+common_sig_sccoht <- intersect(sccoht_sig_p$Gene, sccoht_sig_r$Gene)
+
+sccoht_merged_sig <- merge(
+  sccoht_sig_p[sccoht_sig_p$Gene %in% common_sig_sccoht, ],
+  sccoht_sig_r[sccoht_sig_r$Gene %in% common_sig_sccoht, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+sccoht_merged_sig$Subtype <- "SCCOHT"
+
+
+#merge all subtypes
+all_merged <- rbind(
+  cc_merged_sig,
+  ec_merged_sig,
+  hgs_merged_sig,
+  MMMT_merged_sig,
+  mc_merged_sig,
+  sccoht_merged_sig
+  )
+
+all_merged <- all_merged[, c("Subtype", setdiff(names(all_merged), "Subtype"))]
+write.csv(all_merged, "../output/protein_rna_signatures.csv", row.names = FALSE)
+
+```
+
+
+# Final Molecular signature heatmap using RNA 
+ 
+```{r}
+
+annotation <- read_csv("../output/annotation.csv")
+sig_merged <- read_csv("../output/protein_rna_signatures.csv")
+sig_genes <- unique(sig_merged$Gene)
+
+tpm_w_sig <- tpm_mat_log[sig_genes, , drop =FALSE]
+
+tpm_w_sig <- tpm_w_sig[rowVars(as.matrix(tpm_w_sig)) != 0, ]
+tpm_w_sig <- t(scale(t(tpm_w_sig)))  # Z-score per gene
+
+tpm_w_sig[tpm_w_sig > 2] <- 2
+tpm_w_sig[tpm_w_sig < -2] <- -2
+
+sample_anno <- read.csv("../output/annotation.csv") %>%
+  filter(cell_line %in% colnames(tpm_w_sig)) %>%
+  arrange(Subtype)
+
+tpm_w_sig <- tpm_w_sig[, sample_anno$cell_line]
+
+# Build row subtype vector from sig_merged
+subtype_vector_row <- sig_merged$Subtype
+names(subtype_vector_row) <- sig_merged$Gene
+
+# subtype annotation
+unique_subtypes <- sort(unique(subtype_vector_row))
+subtype_colours <- setNames( RColorBrewer::brewer.pal(length(subtype_levels), "Set2"), subtype_levels)
+
+# row annotation
+row_anno <- rowAnnotation(
+  Subtype = subtype_vector_row[rownames(tpm_w_sig)],
+  col = list(Subtype = subtype_colours),
+  show_annotation_name = TRUE,
+  show_legend = F)
+
+# column annotation
+col_anno <- HeatmapAnnotation(
+  Subtype = sample_anno$Subtype,
+  col = list(Subtype = subtype_colours),
+  show_annotation_name = F,
+  show_legend = F)
+
+col_fun <- circlize::colorRamp2(
+  seq(-2, 2, length.out = 50),
+  colorRampPalette(rev(RColorBrewer::brewer.pal(9, "RdBu")))(50))
+
+# visualize 
+rna_merged_sig_heatmap <- Heatmap(
+  tpm_w_sig,
+  name = "Expression\nZ-score",
+  col = col_fun,
+  bottom_annotation = col_anno,
+  left_annotation = row_anno,
+  show_row_names = F,
+  show_column_names = TRUE,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  column_names_gp = gpar(fontsize = 12),
+  row_names_gp = gpar(fontsize = 9),
+  heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+  width = ncol(tpm_w_sig)*unit(5, "mm"), 
+  height = nrow(tpm_w_sig)*unit(5, "mm"),
+  border = TRUE)
+
+pdf(file = "../figs2/rna_merged_sig_heatmap.pdf", width = 10, height = 8)
+draw(rna_merged_sig_heatmap)
+dev.off()
+
+
+```
+
+# Final Molecular signature heatmap using PROTEIN 
+```{r}
+
+annotation <- read_csv("../output/annotation.csv")
+sig_merged <- read_csv("../output/protein_rna_signatures.csv")
+sig_genes <- unique(sig_merged$Gene)
+
+abundance_w_sig <- abundance_matrix[sig_genes, , drop =FALSE]
+
+abundance_w_sig <- abundance_w_sig[rowVars(as.matrix(abundance_w_sig)) != 0, ]
+abundance_w_sig <- t(scale(t(abundance_w_sig)))  # Z-score per gene
+
+# z score
+abundance_w_sig[abundance_w_sig > 2] <- 2
+abundance_w_sig[abundance_w_sig < -2] <- -2
+
+sample_anno <- read.csv("../output/protein_annotation_df.csv") %>%
+  filter(CellLine %in% colnames(abundance_w_sig)) %>%
+  arrange(Subtype)
+
+abundance_w_sig <- abundance_w_sig[, sample_anno$CellLine]
+
+subtype_vector_row <- sig_merged$Subtype
+names(subtype_vector_row) <- sig_merged$Gene
+
+unique_subtypes <- sort(unique(subtype_vector_row))
+subtype_colors <- setNames( RColorBrewer::brewer.pal(length(unique_subtypes), "Set2"),unique_subtypes)
+
+row_anno <- rowAnnotation(
+  Subtype = subtype_vector_row[rownames(abundance_w_sig)],
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE)
+
+col_anno <- HeatmapAnnotation(
+  Subtype = sample_anno$Subtype,
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = F,
+  show_legend = F)
+
+col_fun <- circlize::colorRamp2(
+  seq(-2, 2, length.out = 50),
+  colorRampPalette(rev(RColorBrewer::brewer.pal(9, "RdBu")))(50))
+
+protein_merged_sig_heatmap <- Heatmap(
+  abundance_w_sig,
+  name = "Expression\nZ-score",
+  col = col_fun,
+  bottom_annotation = col_anno,
+  left_annotation = row_anno,
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  column_names_gp = gpar(fontsize = 12),
+  row_names_gp = gpar(fontsize = 11),
+  heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+  width = ncol(abundance_w_sig)*unit(5, "mm"), 
+  height = nrow(abundance_w_sig)*unit(5, "mm"),
+  border = TRUE
+)
+
+pdf(file = "../figs2/protein_merged_sig_heatmap1_paper.pdf", width = 10, height = 8)
+draw(protein_merged_sig_heatmap)
+dev.off()
+
+```
+# RNA and Protein all genes in one csv file
+```{r}
+
+# cc
+cc_p <- read_csv("../output/ttest/ttestClear_cell_vs_OTHERS.csv")
+cc_r <- read_csv("../output/differential_expression_Clear cell_vs_Other.csv")
+cc_r <- na.omit(cc_r)
+names(cc_r)[1] <- "Gene"
+
+
+common_cc <- intersect(cc_p$Gene, cc_r$Gene)
+
+cc_merged <- merge(
+  cc_p[cc_p$Gene %in% common_cc, ],
+  cc_r[cc_r$Gene %in% common_cc, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+cc_merged$Subtype <- "Clear cell"
+
+# ec 
+ec_p <- read_csv("../output/ttest/ttestEndometrioid_vs_OTHERS.csv")
+ec_r <- read_csv("../output/differential_expression_Endometrioid_vs_Other.csv")
+names(ec_r)[1] <- "Gene"
+common_ec <- intersect(ec_p$Gene, ec_r$Gene)
+
+ec_merged <- merge(
+  ec_p[ec_p$Gene %in% common_ec, ],
+  ec_r[ec_r$Gene %in% common_ec, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+ec_merged$Subtype <- "Endometrioid"
+
+#hgs
+hgs_p <- read_csv("../output/ttest/ttestHigh-grade_serous_vs_OTHERS.csv")
+hgs_r <- read_csv("../output/differential_expression_HGS_vs_Other.csv")
+names(hgs_r)[1] <- "Gene"
+common_hgs <- intersect(hgs_p$Gene, hgs_r$Gene)
+
+hgs_merged <- merge(
+  hgs_p[hgs_p$Gene %in% common_hgs, ],
+  hgs_r[hgs_r$Gene %in% common_hgs, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+hgs_merged$Subtype <- "High-grade serous"
+
+# mmmt
+MMMT_p <- read_csv("../output/ttest/ttestMMMT_vs_OTHERS.csv")
+MMMT_r <- read_csv("../output/differential_expression_MMMT_vs_Other.csv")
+names(MMMT_r)[1] <- "Gene"
+common_MMMT <- intersect(MMMT_p$Gene, MMMT_r$Gene)
+
+MMMT_merged <- merge(
+  MMMT_p[MMMT_p$Gene %in% common_MMMT, ],
+  MMMT_r[MMMT_r$Gene %in% common_MMMT, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+MMMT_merged$Subtype <- "MMMT"
+
+# mc
+mc_p <- read_csv("../output/ttest/ttestMucinous_vs_OTHERS.csv")
+mc_r <- read_csv("../output/differential_expression_Mucinous_vs_Other.csv")
+names(mc_r)[1] <- "Gene"
+common_mc <- intersect(mc_p$Gene, mc_r$Gene)
+
+mc_merged <- merge(
+  mc_p[mc_p$Gene %in% common_mc, ],
+  mc_r[mc_r$Gene %in% common_mc, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+mc_merged$Subtype <- "Mucinous"
+
+
+# sccoht
+sccoht_p <- read_csv("../output/ttest/ttestSCCOHT_vs_OTHERS.csv")
+sccoht_r <- read_csv("../output/differential_expression_SCCOHT_vs_Other.csv")
+names(sccoht_r)[1] <- "Gene"
+common_sccoht <- intersect(sccoht_p$Gene, sccoht_r$Gene)
+
+sccoht_merged <- merge(
+  sccoht_p[sccoht_p$Gene %in% common_sccoht, ],
+  sccoht_r[sccoht_r$Gene %in% common_sccoht, ],
+  by = "Gene",
+  suffixes = c("_Protein", "_RNA"))
+sccoht_merged$Subtype <- "SCCOHT"
+
+
+#merge
+all_merged <- rbind(
+  cc_merged,
+  ec_merged,
+  hgs_merged,
+  MMMT_merged,
+  mc_merged,
+  sccoht_merged
+  )
+
+all_merged <- all_merged[, c("Subtype", setdiff(names(all_merged), "Subtype"))]
+write.csv(all_merged, "../output/protein_rna_genes.csv", row.names = FALSE)
+
+```
+# LOG plots
+```{r}
+df_clearcell <- subset(all_merged, Subtype == "Clear cell")
+all_merged <- "../output/protein_rna_genes.csv"
+plot(df_clearcell$log2FoldChange_RNA, df_clearcell$log2FoldChange_Protein,
+     xlab = "log2FoldChange_RNA",
+     ylab = "log2FoldChange_Protein",
+     main = "Clear cell log2FoldChange",
+     pch = 19, col = "blue")
+```
+ 
+```{r}
+df_hgs <- subset(all_merged, Subtype == "High-grade serous")
+
+ggplot(subset(df_hgs, Subtype == "High-grade serous"), aes(x = log2FoldChange_RNA, y = log2FoldChange_Protein)) +
+  geom_point(color = "blue", size = 0.8) +  # smaller points
+  labs(title = "HGS Log2FC") +
+  theme_minimal()
+
+```
+```{r}
+df_cc <- subset(all_merged, Subtype == "Clear cell")
+
+ggplot(subset(df_cc, Subtype == "Clear cell"), aes(x = log2FoldChange_RNA, y = log2FoldChange_Protein)) +
+  geom_point(color = "blue", size = 0.8) +  # smaller points
+  labs(title = "CC Log2FC") +
+  theme_minimal()
+```
+```{r}
+
+ggplot(subset(all_merged, Subtype == "MMMT"), aes(x = log2FoldChange_RNA, y = log2FoldChange_Protein)) +
+  geom_point(color = "blue", size = 0.8) +  # smaller points
+  labs(title = "MMMT Log2FC") +
+  theme_minimal()
+```
+

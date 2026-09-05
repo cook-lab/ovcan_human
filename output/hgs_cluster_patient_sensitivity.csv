@@ -1,0 +1,4 @@
+k,n_models,n_patients,silhouette_models,silhouette_patient_representatives,adjusted_rand_on_shared_representatives,interpretation
+2,15,12,0.1534621885455438,0.1514122854501653,0.18331805682859767,illustrative partitions; k was not prespecified or externally validated; does not establish stable molecular subtypes
+3,15,12,0.14197378662812804,0.17961306421310763,0.18935516888433981,illustrative partitions; k was not prespecified or externally validated; does not establish stable molecular subtypes
+4,15,12,0.12850196752168178,0.17156530433306139,0.09465020576131687,illustrative partitions; k was not prespecified or externally validated; does not establish stable molecular subtypes

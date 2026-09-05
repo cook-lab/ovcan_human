@@ -1,0 +1,10 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | diverging palette: slate-white-rust | captions external
+Warning message:
+There were 2 warnings in `summarise()`.
+The first warning was:
+ℹ In argument: `lo = min(y) - 0.36`.
+Caused by warning in `min()`:
+! no non-missing arguments to min; returning Inf
+ℹ Run `dplyr::last_dplyr_warnings()` to see the 1 remaining warning. 
+Figure 1: 42 models, 34 patients; RNA/protein/exome = 31/31/23; all three = 13

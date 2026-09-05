@@ -1,0 +1,304 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Loading required namespace: DESeq2
+RNA set: 31 lines | 6 subtypes | site3 {Huntsman, Huntsman/Vanderhyden, Mes-Masson} | 28 patients (sublines collapsed)
+
+=== A. RNA PC confounder — joint / commonality decomposition ===
+Headline site variable: site3 (3 levels: Mes-Masson / Huntsman / Huntsman-Vanderhyden)
+  PC var_pct r2_subtype r2_site r2_site_2lvl r2_joint adjr2_joint
+ PC1    20.6     0.7338  0.3119       0.2259   0.7357      0.6553
+ PC2    10.4     0.6900  0.2092       0.1190   0.6909      0.5968
+ PC3     7.9     0.5769  0.0528       0.0528   0.5786      0.4504
+ PC4     7.2     0.2379  0.0629       0.0627   0.2521      0.0245
+ PC5     6.2     0.3675  0.0427       0.0045   0.3932      0.2086
+ unique_subtype unique_site shared
+         0.4239      0.0019 0.3100
+         0.4816      0.0009 0.2084
+         0.5258      0.0017 0.0512
+         0.1892      0.0143 0.0486
+         0.3505      0.0258 0.0170
+
+ADJUSTED commonality components (report these alongside the raw ones):
+  PC adjr2_subtype adjr2_site adj_unique_subtype adj_unique_site adj_shared
+ PC1        0.6806     0.2627             0.3926         -0.0253     0.2880
+ PC2        0.6280     0.1528             0.4440         -0.0312     0.1840
+ PC3        0.4923    -0.0148             0.4652         -0.0420     0.0271
+ PC4        0.0854    -0.0041             0.0286         -0.0609     0.0569
+ PC5        0.2410    -0.0256             0.2342         -0.0324     0.0068
+
+PASSAGE added to the joint model:
+  PC r2_passage r2_joint r2_joint3_with_passage
+ PC1     0.0773   0.7357                 0.7398
+ PC2     0.1540   0.6909                 0.7116
+ PC3     0.0310   0.5786                 0.5788
+ PC4     0.0829   0.2521                 0.2714
+ PC5     0.0000   0.3932                 0.3958
+ unique_passage_beyond_subtype_site
+                             0.0041
+                             0.0207
+                             0.0002
+                             0.0193
+                             0.0026
+
+PERMUTATION NULL for the commonality components (1000 draws each):
+  PC unique_subtype_obs unique_subtype_null_mean unique_subtype_null_p95
+ PC1              0.424                    0.114                   0.242
+ PC2              0.482                    0.149                   0.291
+ PC3              0.526                    0.208                   0.389
+ PC4              0.189                    0.158                   0.319
+ PC5              0.350                    0.203                   0.378
+ unique_subtype_perm_p unique_site_obs unique_site_null_mean
+                0.0020        0.001910               0.00385
+                0.0020        0.000881               0.00946
+                0.0020        0.001670               0.01400
+                0.3240        0.014300               0.02050
+                0.0729        0.025800               0.04890
+ unique_site_null_p95 unique_site_perm_p
+               0.0135              0.622
+               0.0303              0.796
+               0.0479              0.796
+               0.0594              0.453
+               0.1810              0.475
+
+!! CHECK the 'unique-site <=0.2% across PC1-PC3' claim against this table:
+   PC1 unique_site = 0.0019 (0.19%)
+   PC2 unique_site = 0.0009 (0.09%)
+   PC3 unique_site = 0.0017 (0.17%)
+
+=== A2. Within-clear-cell site control (2 CHUM vs 5 BC Cancer) ===
+                            approach  PC n n_CHUM n_BC var_pct site_r2
+ global_pc_subset (OLD - wrong axes) PC1 7      2    5    20.6  0.0558
+             within_cc_pca (CORRECT) PC1 7      2    5    28.7  0.1510
+ global_pc_subset (OLD - wrong axes) PC2 7      2    5    10.4  0.0622
+             within_cc_pca (CORRECT) PC2 7      2    5    19.3  0.1320
+ global_pc_subset (OLD - wrong axes) PC3 7      2    5     7.9  0.0553
+             within_cc_pca (CORRECT) PC3 7      2    5    15.9  0.2930
+ site_p_anova site_p_perm null_expected_r2
+        0.610       0.456            0.167
+        0.390       0.490            0.167
+        0.590       0.620            0.167
+        0.424       0.491            0.167
+        0.612       0.761            0.167
+        0.210       0.246            0.167
+Null expectation for a 1-df/5-df split: E[R2] = 1/6 = 0.167.
+The correct (within-CC) R2 values sit AT or near that null and no permutation p is
+significant -> the honest conclusion is UNDERPOWERED / indistinguishable from chance,
+NOT 'site explains only 4-6%'. Do not quote the global_pc_subset row.
+
+Wider mixed-site companion (also underpowered):
+                            set  n n_CHUM n_BC PC1_site_r2 PC2_site_r2
+ mixed-site subtypes (CC/EC/MC) 12      4    8       0.004       0.008
+           clear cell only (CC)  7      2    5       0.056       0.062
+
+=== B. Design / identifiability ===
+31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19 
+
+=== B. lmer variance decomposition (RNA): 22678 genes x 31 lines (4 cores) ===
+        term median_pct mean_pct q25_pct q75_pct n_features n_features_dropped
+     subtype       6.05    14.94    0.00   24.82      22674                  4
+ source_site       3.46    14.57    0.00   25.35      22674                  4
+     patient      27.27    31.60    0.00   53.44      22674                  4
+   Residuals      32.66    38.89   13.08   60.22      22674                  4
+!! 4 of 22678 genes were DROPPED (lmer fit failed) and are listed in
+   output/rna_variancepartition_dropped_genes.txt. n_features is the number to quote:
+   22674, NOT 22678.
+   Dropped:  ENSG00000090402, ENSG00000171201, ENSG00000244682, ENSG00000265417 
+
+--- RNA sensitivity: patient dropped / family(multi-line only) / + passage ---
+                        model        term median_pct mean_pct q25_pct q75_pct
+              patient_dropped     subtype       7.10    15.46    0.00   25.80
+              patient_dropped source_site       3.92    14.74    0.00   25.63
+              patient_dropped   Residuals      72.22    69.80   51.94   92.03
+ published_plus_passage_fixed     subtype       6.75    14.83    0.00   24.60
+ published_plus_passage_fixed source_site       0.00    10.20    0.00   12.41
+ published_plus_passage_fixed     patient      25.06    29.47    0.00   49.46
+ published_plus_passage_fixed     passage       4.62     9.16    0.93   13.61
+ published_plus_passage_fixed   Residuals      30.48    36.35   11.92   56.57
+
+=== B. lmer variance decomposition (protein): 6855 complete-case proteins (of 8427) x 31 lines ===
+   patients: 28 | TMT plexes: 5
+   31 lines, 28 patient levels, 3 replicated patients (1369/2295/3133); site levels Huntsman=11, Huntsman/Vanderhyden=1, Mes-Masson=19; 5 TMT plexes
+        term median_pct mean_pct q25_pct q75_pct n_features n_features_dropped
+     subtype       8.53    16.65     0.0   29.02       6855                  0
+ source_site       0.00     8.15     0.0   12.14       6855                  0
+        plex       0.85     6.42     0.0    9.63       6855                  0
+     patient      19.80    27.44     0.0   49.70       6855                  0
+   Residuals      37.53    41.34    13.2   66.48       6855                  0
+
+--- Protein sensitivity: patient dropped ---
+           model        term median_pct mean_pct q25_pct q75_pct
+ patient_dropped     subtype       9.69    17.34    0.00   30.01
+ patient_dropped source_site       0.00     8.33    0.00   12.60
+ patient_dropped        plex       0.48     5.94    0.00    8.68
+ patient_dropped   Residuals      70.93    68.39   51.91   87.34
+
+=== C. Passage check — passage is 83% explained by site (CHUM high-passage vs BC low-passage) ===
+  PC var_pct r2_passage p_passage r2_site partial_r2_passage_after_site
+ PC1    20.6   7.73e-02     0.130 0.22600                       0.14800
+ PC2    10.4   1.54e-01     0.029 0.11900                       0.03610
+ PC3     7.9   3.10e-02     0.343 0.05280                       0.00697
+ PC4     7.2   8.29e-02     0.116 0.06270                       0.02120
+ PC5     6.2   4.67e-05     0.971 0.00447                       0.02790
+
+Cross-assay RNA-vs-WES passage mismatch (13 lines with both):
+ cell_line subtype rna_passage wes_passage rna_p wes_p passage_diff abs_diff
+   TOV112D      EC         p63         P83    63    83           20       20
+    OV3331     HGS         p71         P54    71    54          -17       17
+  OV3133-R     HGS         p64         P71    64    71            7        7
+      OV90     HGS         p70         P63    70    63           -7        7
+    OV2085     HGS         p68         P64    68    64           -4        4
+  TOV3133G     HGS         p61         P65    61    65            4        4
+    TOV21G      CC         p63         P59    63    59           -4        4
+   TOV2414      MC         p69         P65    69    65           -4        4
+ OV1369-R2     HGS         p69         P66    69    66           -3        3
+    OV2295     HGS         p64         P61    64    61           -3        3
+ OV2295-R2     HGS         p67         P70    67    70            3        3
+   TOV1369     HGS         p65         P65    65    65            0        0
+  TOV3392D      CC         p69         P69    69    69            0        0
+  median |diff| = 4.0 passages; max = 20 (TOV112D)
+
+RNA-vs-WES passage discordance summary (output/rna_passage_discordance.csv):
+                   statistic   value
+           n_lines_with_both  13.000
+             median_abs_diff   4.000
+               mean_abs_diff   5.846
+                    min_diff -17.000
+                    max_diff  20.000
+                max_abs_diff  20.000
+      n_lines_abs_diff_ge_10   2.000
+      n_lines_abs_diff_ge_20   1.000
+ spearman_rna_vs_wes_passage  -0.251
+  QUOTABLE RANGE: RNA-vs-WES passage differs by -17 to +20 passages across 13 lines
+
+=== D. Marker effect sizes — collapsed to 28 patient representatives (dropped sublines: OV2295-R2, TOV1369, TOV3133G) ===
+
+Marker effect sizes (intended subtype vs rest, symbol-summed log2 TPM, 28 patient reps):
+ marks_code  symbol direction n_intended cohens_d cohens_d_lo cohens_d_hi
+        HGS    PAX8        up         12    0.408      -0.317       1.250
+        HGS     WT1        up         12    0.824       0.049       1.907
+        HGS   MUC16        up         12    0.562      -0.204       1.477
+        HGS   MECOM        up         12   -0.274      -1.003       0.459
+        HGS   SOX17        up         12    0.710      -0.059       1.699
+         CC   HNF1B        up          7    1.487       0.482       2.994
+         CC   NAPSA        up          7    0.914      -0.129       2.572
+         CC    SPP1        up          7    1.504       0.543       3.042
+         CC    GPX3        up          7    0.354      -0.484       1.277
+         CC    GCLC        up          7    0.023      -0.585       0.860
+         EC    ESR1        up          2   -0.725      -0.991      -0.527
+         EC     PGR        up          2   -0.292      -0.496      -0.203
+         EC  ARID1A      down          2    0.934      -0.031       2.125
+         MC    CDX2        up          3    3.075       0.957       9.548
+         MC    MUC2        up          3   -0.216      -0.534       0.479
+         MC    TFF1        up          3    0.291      -0.144       4.955
+         MC    TFF3        up          3    1.023      -0.223       4.310
+         MC   KRT20        up          3    2.842       1.718      18.966
+         MC  MUC5AC        up          3    1.917      -0.442      20.643
+       MMMT     VIM        up          2    0.685       0.267       1.161
+       MMMT    ZEB1        up          2    1.233       0.798       2.059
+       MMMT    CDH2        up          2    0.158      -1.365       1.814
+       MMMT   SNAI2        up          2    0.040      -0.352       0.610
+     SCCOHT SMARCA4      down          2   -0.556      -2.835       0.853
+     SCCOHT SMARCA2      down          2   -2.082      -3.359      -1.531
+       <NA>   MKI67        up         NA       NA          NA          NA
+ auc_oriented auc_oriented_lo auc_oriented_hi rank_in lands_right
+        0.609           0.385           0.818       3       FALSE
+        0.742           0.539           0.932       2        TRUE
+        0.625           0.391           0.844       2        TRUE
+        0.448           0.240           0.672       4       FALSE
+        0.701           0.490           0.886       1        TRUE
+        0.837           0.585           1.000       2        TRUE
+        0.667           0.367           0.912       2        TRUE
+        0.857           0.653           1.000       1        TRUE
+        0.619           0.347           0.864       2        TRUE
+        0.558           0.320           0.776       3       FALSE
+        0.173           0.000           0.423       6       FALSE
+        0.490           0.269           0.769       5       FALSE
+        0.231           0.000           0.539       2       FALSE
+        0.947           0.800           1.000       1        TRUE
+        0.707           0.480           0.920       4       FALSE
+        0.880           0.747           1.000       1        TRUE
+        0.853           0.667           0.987       1        TRUE
+        0.973           0.893           1.000       1        TRUE
+        0.667           0.160           1.000       1        TRUE
+        0.712           0.500           0.885       2        TRUE
+        0.788           0.615           0.923       3       FALSE
+        0.577           0.115           1.000       4       FALSE
+        0.635           0.461           0.808       3       FALSE
+        0.615           0.192           1.000       5        TRUE
+        1.000           1.000           1.000       6        TRUE
+           NA              NA              NA      NA          NA
+
+Tests: raw p, BH-adjusted p, and the smallest p attainable at that group size:
+  symbol n_intended wilcox_p wilcox_p_bh wilcox_p_min_attainable
+    PAX8         12  0.34700      0.5010                6.57e-08
+     WT1         12  0.03250      0.1160                6.57e-08
+   MUC16         12  0.27500      0.4580                6.57e-08
+   MECOM         12  0.66400      0.7370                6.57e-08
+   SOX17         12  0.07730      0.2150                6.57e-08
+   HNF1B          7  0.00700      0.0437                1.69e-06
+   NAPSA          7  0.20800      0.4580                1.69e-06
+    SPP1          7  0.00385      0.0437                1.69e-06
+    GPX3          7  0.37600      0.5010                1.69e-06
+    GCLC          7  0.67800      0.7370                1.69e-06
+    ESR1          2  0.14100      0.3520                5.29e-03
+     PGR          2  1.00000      1.0000                5.29e-03
+  ARID1A          2  0.25900      0.4580                5.29e-03
+    CDX2          3  0.01070      0.0534                6.11e-04
+    MUC2          3  0.26000      0.4580                6.11e-04
+    TFF1          3  0.02380      0.0992                6.11e-04
+    TFF3          3  0.04180      0.1310                6.11e-04
+   KRT20          3  0.00242      0.0437                6.11e-04
+  MUC5AC          3  0.36500      0.5010                6.11e-04
+     VIM          2  0.38100      0.5010                5.29e-03
+    ZEB1          2  0.22200      0.4580                5.29e-03
+    CDH2          2  0.75500      0.7860                5.29e-03
+   SNAI2          2  0.56100      0.7010                5.29e-03
+ SMARCA4          2  0.64000      0.7370                5.29e-03
+ SMARCA2          2  0.00529      0.0437                5.29e-03
+ wilcox_p_floor_limited
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                  FALSE
+                   TRUE
+
+Median |Cohen's d| = 0.71 | median oriented AUC = 0.67 (n=25 scored markers; MKI67 excluded)
+Markers with oriented AUC >= 0.80: 7/25 ; large effect |d|>=0.8: 11/25
+Significant after BH: 4/25 at 0.05. Floor-limited p-values (already at the exact
+  test's minimum for their group size): 1/25 - these cannot be ranked against each other.
+Bootstrap CIs (2000 stratified replicates) are in cohens_d_lo/hi and auc_oriented_lo/hi.
+  With n=2, percentile bootstrap intervals are poorly calibrated even when all resamples yield finite statistics; the
+  finite-resample count does not validate interval coverage or generalisability.
+  saved figs/f_variance_partition.pdf  +  reports/assets/f_variance_partition.png
+  saved figs/f_passage_check.pdf  +  reports/assets/f_passage_check.png
+  saved figs/f_passage_check_crossassay.pdf  +  reports/assets/f_passage_check_crossassay.png
+
+--- 17_variance_confounders.R complete ---
+Tables: output/{rna_pc_confounder_joint, rna_pc_confounder_permutation, rna_within_cc_site,
+        rna_variancepartition, prot_variancepartition, variancepartition_sensitivity,
+        rna_passage_check, rna_passage_discordance, rna_marker_effectsizes}.csv
+Figures: figs/f_variance_partition.pdf (+ f_passage_check*), reports/assets/*.png
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_17_variance_confounders.txt
+
+17_variance_confounders.R complete.

@@ -1,0 +1,133 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Protein matrix: 8427 proteins x 31 lines (8.8% NA) | 70 zero-plex rows retained (carry no measurement)
+
+=== ADC target availability ===
+  symbol     common in_rna in_prot
+   FOLR1    FRalpha   TRUE    TRUE
+ TACSTD2      TROP2   TRUE    TRUE
+   ERBB2       HER2   TRUE    TRUE
+    MSLN mesothelin   TRUE    TRUE
+ SLC34A2     NaPi2b   TRUE    TRUE
+   DPEP3      DPEP3   TRUE   FALSE
+    CDH6       CDH6   TRUE    TRUE
+   CD276      B7-H3   TRUE    TRUE
+   VTCN1      B7-H4   TRUE    TRUE
+Protein-detected targets: 8/9 (missing: DPEP3)
+
+=== Modality-specific lines (why RNA and protein subtype means differ in n) ===
+ cell_line subtype only_in
+   VOA6861      CC     RNA
+  VOA14993      CC protein
+
+Lines per subtype in each modality (the mean's denominator):
+ subtype RNA protein
+     HGS  15      15
+      CC   7       7
+      EC   2       2
+      MC   3       3
+    MMMT   2       2
+  SCCOHT   2       2
+
+=== Known subtype-association check ===
+top_mean = highest-MEAN subtype; max_line = subtype of the single highest-expressing line;
+exp_rank = rank (by mean, 1=highest) of the EXPECTED subtype. Model selection cares that the
+expected subtype CONTAINS high expressers (top_line_in_expected), not only that it tops the mean.
+ symbol     common   assay expected top_mean_subtype top_mean_matches
+  ERBB2       HER2     RNA    CC/MC               CC             TRUE
+  ERBB2       HER2 protein    CC/MC               MC             TRUE
+  FOLR1    FRalpha     RNA      HGS               MC            FALSE
+  FOLR1    FRalpha protein      HGS               MC            FALSE
+   MSLN mesothelin     RNA      HGS              HGS             TRUE
+   MSLN mesothelin protein      HGS              HGS             TRUE
+ max_line_subtype top_line_in_expected expected_mean_rank
+               CC                 TRUE                  1
+               CC                 TRUE                  1
+              HGS                 TRUE                  3
+               CC                FALSE                  3
+              HGS                 TRUE                  1
+              HGS                 TRUE                  1
+
+Expected subtype tops the MEAN: 4 / 6 target-assay tests
+Expected subtype CONTAINS the top individual expresser: 5 / 6
+
+=== FOLR1 within HGS (n=15): is it actually bimodal? ===
+RNA log2(TPM+1) range 0.06-9.48 (SD 3.09)
+                 statistic    value
+               n_HGS_lines  15.0000
+                       min   0.0570
+                       max   9.4790
+                     range   9.4220
+                        sd   3.0925
+    bimodality_coefficient   0.4399
+           mclust_E_BIC_G1 -80.8189
+           mclust_E_BIC_G2 -81.8837
+ mclust_E_dBIC_G2_minus_G1  -1.0648
+      mclust_E_G2_mean_low   0.6471
+     mclust_E_G2_mean_high   6.4926
+      mclust_E_G2_prop_low   0.2684
+         mclust_E_G2_n_low   4.0000
+           mclust_V_BIC_G1 -80.8189
+           mclust_V_BIC_G2 -81.7668
+ mclust_V_dBIC_G2_minus_G1  -0.9479
+      mclust_V_G2_mean_low   0.5322
+     mclust_V_G2_mean_high   6.4145
+      mclust_V_G2_prop_low   0.2535
+         mclust_V_G2_n_low   4.0000
+         hartigan_dip_test       NA
+                                                     interpretation
+                                                                   
+                                                                   
+                                                                   
+                                range is NOT evidence of bimodality
+                                                                   
+                              BC <= 0.555 -> bimodality NOT flagged
+                                                                   
+                                                                   
+                                              1 component preferred
+                                                                   
+                                                                   
+                                                                   
+                                                                   
+                                                                   
+                                                                   
+                                              1 component preferred
+                                                                   
+                                                                   
+                                                                   
+                                                                   
+ NOT COMPUTED: the diptest package is not installed in this R build
+  The 3 highest FOLR1-RNA lines panel-wide are HGS; many HGS lines are near-zero, so the HGS
+  MEAN is dragged below MC/CC even though FRalpha-high HGS models exist (e.g. TOV3133G, OV3133-R).
+  This mirrors the clinical picture and is a model-selection feature, not a failure to recapitulate.
+null device 
+          1 
+
+=== Top RNA- and protein-expressing line per target (model shortlist) ===
+  symbol     common   assay  top_line subtype log2_expr
+   CD276      B7-H3     RNA OV2295-R2     HGS     7.735
+   CD276      B7-H3 protein   VOA8762      MC    11.947
+    CDH6       CDH6     RNA    OV3331     HGS     9.183
+    CDH6       CDH6 protein    OV3331     HGS    14.717
+   DPEP3      DPEP3     RNA OV1369-R2     HGS     4.593
+   ERBB2       HER2     RNA  TOV3392D      CC     7.764
+   ERBB2       HER2 protein  TOV3392D      CC    13.904
+   FOLR1    FRalpha     RNA  TOV3133G     HGS     9.479
+   FOLR1    FRalpha protein  VOA14993      CC    13.597
+    MSLN mesothelin     RNA  TOV3133G     HGS     9.299
+    MSLN mesothelin protein    OV4485     HGS    13.081
+ SLC34A2     NaPi2b     RNA  VOA12539      CC     8.736
+ SLC34A2     NaPi2b protein  VOA12539      CC    13.575
+ TACSTD2      TROP2     RNA    OV4485     HGS     9.864
+ TACSTD2      TROP2 protein    OV4453     HGS    15.184
+   VTCN1      B7-H4     RNA    OV3331     HGS     6.657
+   VTCN1      B7-H4 protein OV2295-R2     HGS    12.947
+
+Outputs: output/adc_expression.csv, adc_subtype_summary.csv,
+         adc_modality_line_sets.csv, adc_folr1_bimodality.csv
+Figures: figs/13_adc_atlas_heatmap.pdf, figs/13_adc_subtype_bubble.pdf
+NOTE: subtype means are PER LINE (not per patient) and the RNA and protein line sets differ
+  by one line each (see adc_modality_line_sets.csv). Non-HGS groups are n=2-7.
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_13_adc_atlas.txt
+
+13_adc_atlas.R complete.

@@ -1,0 +1,74 @@
+# Workstation, credentials and local runtime state
+.DS_Store
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.Rhistory
+.RData
+.Ruserdata
+.Rproj.user/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+renv/library/
+renv/staging/
+renv/cache/
+.codex/
+.agents/
+
+# Original inputs stay on managed storage. Retain the historical source notebooks.
+/judy_archive/*
+!/judy_archive/notebooks/
+/judy_archive/notebooks/*
+!/judy_archive/notebooks/*.Rmd
+/data/cluster_wes_retrieval/
+/data/external/
+/data/reference/*.fa
+/data/reference/*.fa.gz
+/data/reference/tx2gene_ensembl_rel105.csv
+
+# Large reconstructed objects and downloadable source-reference matrices
+/output/rna_txi.rds
+/output/external/OmicsExpressionProteinCodingGenesTPMLogp1.csv
+/output/external/OmicsSomaticMutationsMatrixDamaging.csv
+
+# Preserve source/review reports; omit duplicate snapshots and render scratch work
+/reports/_*/
+/reports/integration_logs/
+/reports/audit_2026-09-05/before*/
+/reports/audit_2026-09-05/rna_before/
+/reports/audit_2026-09-05/docx_render*/
+/reports/figure_redesign_2026-09-05/before/
+/reports/figure_redesign_2026-09-05/before_pdf_render/
+/reports/figure_redesign_2026-09-05/final_pdf_render/
+/reports/figure_redesign_2026-09-05/docx_render*/
+/reports/figure_redesign_2026-09-05/qa_supp_expression/
+/reports/**/*.png
+/reports/**/*.pdf
+/reports/**/*.docx
+/reports/**/*.html
+/logs/
+/tmp/
+/figs/
+/Rplots.pdf
+
+# Superseded meeting/working artifacts; manuscript v5 onward is retained
+/docs/*.pptx
+/docs/*.docx
+/docs/*.pdf
+
+# Never add sequencing/alignment data or new run work directories by accident
+*.fastq
+*.fastq.gz
+*.fq
+*.fq.gz
+*.bam
+*.bai
+*.cram
+*.crai
+*.sra
+.nextflow/
+work/

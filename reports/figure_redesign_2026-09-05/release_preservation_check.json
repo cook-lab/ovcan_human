@@ -1,0 +1,135 @@
+{
+  "release_files_validated": 49,
+  "matched_outputs": [
+    {
+      "release": "release/validation/rna_reference_sensitivity.csv",
+      "current": "output/rna_reference_sensitivity.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/external_ccle_concordance.csv",
+      "current": "output/external_ccle_concordance.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/sensitivity_patient_reps_pc_permutation.csv",
+      "current": "output/sensitivity_patient_reps_pc_permutation.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/prot_bridge_agreement.csv",
+      "current": "output/prot_bridge_agreement.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/rna_marker_effectsizes.csv",
+      "current": "output/rna_marker_effectsizes.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/integ_rnaprot_patientrep_cor.csv",
+      "current": "output/integ_rnaprot_patientrep_cor.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/prot_bridge_cor.csv",
+      "current": "output/prot_bridge_cor.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/wes_cnv_arm_calls.csv",
+      "current": "output/wes_cnv_arm_calls.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/integ_rnaprot_cor.csv",
+      "current": "output/integ_rnaprot_cor.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/sensitivity_patient_reps_pca.csv",
+      "current": "output/sensitivity_patient_reps_pca.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/rna_marker_recovery_permutation.csv",
+      "current": "output/rna_marker_recovery_permutation.csv",
+      "identical": true
+    },
+    {
+      "release": "release/validation/integ_rnaprot_patientrep_sensitivity.csv",
+      "current": "output/integ_rnaprot_patientrep_sensitivity.csv",
+      "identical": true
+    },
+    {
+      "release": "release/exploratory/wes_sbs_context_target_restricted.csv",
+      "current": "output/wes_sbs_context_target_restricted.csv",
+      "identical": true
+    },
+    {
+      "release": "release/exploratory/wes_signature_target_sensitivity.csv",
+      "current": "output/wes_signature_target_sensitivity.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/rna_gene_annotation.csv",
+      "current": "output/rna_gene_annotation.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/rna_reference_reconciliation.csv",
+      "current": "output/rna_reference_reconciliation.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_cnvkit_target_intervals.bed",
+      "current": "output/wes_cnvkit_target_intervals.bed",
+      "identical": true
+    },
+    {
+      "release": "release/reference/external_reference_provenance.csv",
+      "current": "output/external_reference_provenance.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_input_manifest.csv",
+      "current": "output/wes_input_manifest.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_filter_cascade.csv",
+      "current": "output/wes_filter_cascade.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_cosmic_target_normalized.csv",
+      "current": "output/wes_cosmic_target_normalized.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_cnv_arm_boundaries.csv",
+      "current": "output/wes_cnv_arm_boundaries.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/external_reference_provenance.json",
+      "current": "output/external_reference_provenance.json",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_target_trinucleotide_opportunities.csv",
+      "current": "output/wes_target_trinucleotide_opportunities.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/tx2gene_matched.csv",
+      "current": "output/tx2gene_matched.csv",
+      "identical": true
+    },
+    {
+      "release": "release/reference/wes_vcf_header_provenance.csv",
+      "current": "output/wes_vcf_header_provenance.csv",
+      "identical": true
+    }
+  ]
+}

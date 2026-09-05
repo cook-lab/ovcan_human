@@ -1,0 +1,7 @@
+PC,tested_term,unit,n_patients,observed_F,df_numerator,df_denominator,permutation_p,p_bh_3_PCs,n_perm,seed,method
+PC1,subtype,28 patient representatives; HVGs and PCA refitted,28,10.01674010964398,5,20,0.0011,0.0033,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design
+PC2,subtype,28 patient representatives; HVGs and PCA refitted,28,4.385634149218359,5,20,0.0036,0.0042,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design
+PC3,subtype,28 patient representatives; HVGs and PCA refitted,28,5.6371903597649515,5,20,0.0042,0.0042,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design
+PC1,site,28 patient representatives; HVGs and PCA refitted,28,0.12945788127452545,2,20,0.5146,0.936,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design
+PC2,site,28 patient representatives; HVGs and PCA refitted,28,0.007584039904976816,2,20,0.936,0.936,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design
+PC3,site,28 patient representatives; HVGs and PCA refitted,28,0.06660846921538946,2,20,0.7279,0.936,9999,1234,reduced-model residual permutation within reduced-factor groups; fixed full design

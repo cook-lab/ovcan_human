@@ -1,0 +1,6 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Wrote reports/assets/f_wes_oncoplot.png
+Panel A | OV2295 25914->493->170 | all 22 lines 557392->15692->6036 | ATM 82%->9% | ATR 77%->5% | TP53 17/17 HGSC lines
+Panel D headline arms: 20q gain 91%; 3q gain 82%; 17p loss 82%; 8q gain 73%; 13q loss 64%; 19q gain 55% | n=11 patients
+Wrote /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig4.{pdf,png} + refreshed assets

@@ -1,0 +1,137 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Segment .cns found: 35 files -> 23 unique lines; redundant copies byte-identical: TRUE
+CNV patient collapse: 23 lines -> 16 patients (HGS: 18 lines -> 11 patients)
+Loaded 5428 main-chrom segments across 23 lines (median 192/line)
+Median-centre shift (all-chrom vs autosome-only): max 0.0830, median 0.0133 log2 across lines
+
+=== chrX diagnostic (log2c relative to AUTOSOME baseline) — systematic shift; origin unconfirmed ===
+ cell_line chrX_median_log2c chrX_frac_altered
+  TOV2929D           -1.2277             0.769
+ TOV2835EP           -0.7986             0.741
+   TOV2414           -0.3866             1.000
+ OV2295-R2           -0.3319             1.000
+    OV2085           -0.2862             0.963
+ TOV3121EP           -0.2645             1.000
+    OV2295           -0.2425             1.000
+  TOV3121D           -0.2323             0.316
+ TOV2881EP           -0.2311             0.315
+ TOV2295-R           -0.2138             0.684
+  TOV3133D            0.0927             0.312
+   TOV1369            0.1059             0.297
+ OV3133-R2            0.1203             0.298
+  OV3133-R            0.1334             0.315
+   TOV112D            0.1663             1.000
+  TOV3133G            0.4133             0.680
+ OV1369-R2            0.5147             1.000
+    OV3331            0.5901             0.998
+      OV90            0.6461             1.000
+    TOV21G            0.6476             1.000
+    TOV81D            0.6836             1.000
+    OV3291            0.7069             0.950
+  TOV3392D            0.8263             1.000
+chrX median-log2c across lines: median 0.11 (IQR -0.25 to 0.55); median chrX frac-altered 0.96
+  => a systematic shift of uncertain origin; sex-reference configuration and tumour CN cannot be separated here. EXCLUDED from FGA/heatmap.
+
+=== CN QC — AUTOSOME-restricted FGA (headline) vs legacy with-chrX ===
+ cell_line subtype patient_id fga_auto_0.2 fga_withX_0.2 chrX_med high_fga_flag
+  TOV3392D      CC   TOV3392D        0.671         0.688     0.83         FALSE
+    TOV21G      CC     TOV21G        0.071         0.121     0.65         FALSE
+   TOV112D      EC    TOV112D        0.226         0.265     0.17         FALSE
+  TOV3121D     HGS       3121        0.844         0.832    -0.23          TRUE
+  TOV2929D     HGS   TOV2929D        0.769         0.757    -1.23          TRUE
+    OV2085     HGS     OV2085        0.689         0.703    -0.29         FALSE
+ TOV3121EP     HGS       3121        0.679         0.696    -0.26         FALSE
+    OV3291     HGS       3291        0.679         0.685     0.71         FALSE
+ OV2295-R2     HGS       2295        0.673         0.706    -0.33         FALSE
+ OV3133-R2     HGS       3133        0.672         0.648     0.12         FALSE
+   TOV1369     HGS       1369        0.654         0.639     0.11         FALSE
+ OV1369-R2     HGS       1369        0.641         0.854     0.51         FALSE
+  OV3133-R     HGS       3133        0.628         0.615     0.13         FALSE
+ TOV2835EP     HGS  TOV2835EP        0.622         0.606    -0.80         FALSE
+  TOV3133D     HGS       3133        0.620         0.601     0.09         FALSE
+ TOV2295-R     HGS       2295        0.575         0.547    -0.21         FALSE
+  TOV3133G     HGS       3133        0.565         0.572     0.41         FALSE
+ TOV2881EP     HGS  TOV2881EP        0.558         0.538    -0.23         FALSE
+    OV3331     HGS     OV3331        0.495         0.522     0.59         FALSE
+    OV2295     HGS       2295        0.393         0.425    -0.24         FALSE
+      OV90     HGS       OV90        0.269         0.308     0.65         FALSE
+    TOV81D     LGS     TOV81D        0.021         0.073     0.68         FALSE
+   TOV2414      MC    TOV2414        0.321         0.356    -0.39         FALSE
+
+=== Autosome FGA by LABELLED subtype: line-level vs patient-level median ===
+ subtype n_lines fga_line_med n_patients fga_patient_med
+      CC       2        0.371          2           0.371
+      EC       1        0.226          1           0.226
+     HGS      18        0.635         11           0.622
+     LGS       1        0.021          1           0.021
+      MC       1        0.321          1           0.321
+                                                                    label_note
+ labelled subtype, n<=2 lines (TOV3392D, TOV21G) — see 10 for reclassification
+          labelled subtype, n<=2 lines (TOV112D) — see 10 for reclassification
+                                                                              
+           labelled subtype, n<=2 lines (TOV81D) — see 10 for reclassification
+          labelled subtype, n<=2 lines (TOV2414) — see 10 for reclassification
+
+=== chrX-exclusion effect on FGA — median, BY SCOPE (do not conflate) ===
+             scope  n withX autosome    delta
+ ALL WES-CNV lines 23 0.606    0.622  0.01422
+    HGS lines only 18 0.627    0.635 -0.00272
+  all 23 lines: with-chrX 0.606 -> autosome 0.622 | HGS only (n=18): 0.627 -> 0.635
+High-FGA lines (>0.70, median-centering caveat): TOV3121D, TOV2929D
+
+=== HGS arm-event frequency: LINE (n=18) vs PATIENT (n=11) — top arms ===
+    CALL RULE: |log2c_auto| > 0.20 over > 50% of arm length; each patient = 9.1% (n=11)
+ arm gain_lines gain_pat loss_lines loss_pat
+  3q         83       82          6        9
+  8q         67       73         11       18
+ 19q         44       55         17       18
+ 20q         78       91          0        0
+ 17p          0        0         83       82
+ 13q         17       27         50       64
+ 10q         17       27         28       36
+  5q         11       18         22       18
+  4q          0        0         72       82
+  8p          6        9         67       73
+ 22q          0        0         72       91
+  6q         17       27         28       45
+ 16q         11       18         56       45
+=> Patient frequencies count at least one derived model with the event; this does not establish a shared patient-trunk event.
+
+=== Arm-call SENSITIVITY: the six quoted frequencies vs the call parameters ===
+ log2_threshold 3q 20q 17p 8q 13q 19q
+           0.10 82 100  82 73  73  55
+           0.15 82 100  82 73  73  55
+           0.20 82  91  82 73  64  55
+           0.25 73  91  73 73  55  45
+           0.30 64  82  73 64  55  36
+           0.40 64  64  55 55  45  36
+  (rows = |log2| threshold at majority 50%; headline row = 0.20)
+ arm_majority_frac 3q 20q 17p 8q 13q 19q
+               0.3 82  91  73 82  73  73
+               0.4 82  91  82 82  82  55
+               0.5 82  91  82 73  64  55
+               0.6 82  91  64 64  45  36
+               0.7 82  73  55 64  45  18
+  (rows = arm-majority fraction at |log2| 0.20; headline row = 0.50)
+
+=== Canonical HGSC point-locus recovery: LINE (n=18) vs PATIENT (n=11) ===
+            label  dir pct_lines pct_patients n_lines n_patients
+ MECOM/PRKCI 3q26 gain        89           91      16         10
+        SOX2 3q26 gain        89           82      16          9
+         MYC 8q24 gain        78           73      14          8
+      CCNE1 19q12 gain        72           91      13         10
+              20q gain        72           82      13          9
+         TP53 17p loss        72           64      13          7
+          RB1 13q loss        56           73      10          8
+         PTEN 10q loss        33           45       6          5
+null device 
+          1 
+null device 
+          1 
+null device 
+          1 
+Wrote figs/f_wes_cnv.pdf + reports/assets/f_wes_cnv.png (and legacy figs/08_cnv_landscape.pdf)
+
+08_wes_cnv.R complete. Outputs: output/wes_cnv_segments.csv (adds log2c_auto), output/wes_cnv_fga.csv (augmented: autosome FGA + patient_id + chrX diagnostic), output/wes_cnv_arm_freq_patient.csv (now carries the call threshold), output/wes_cnv_arm_freq_sensitivity.csv (NEW: threshold sweep) ; figure figs/f_wes_cnv.pdf (+ reports/assets PNG).

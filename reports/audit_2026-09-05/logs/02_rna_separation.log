@@ -1,0 +1,35 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+null device 
+          1 
+
+=== PCA variance explained (PC1-5) ===
+[1] 20.6 10.4  7.9  7.2  6.2
+
+=== Silhouette by subtype (Euclidean, PC1-10; watch n=2 groups) ===
+  subtype  n    mean_sil
+1     HGS 15  0.16060676
+2      CC  7  0.11915168
+3      EC  2 -0.01002426
+4      MC  3  0.15871352
+5    MMMT  2  0.74350789
+6  SCCOHT  2  0.81944235
+7     ALL 31  0.22016631
+
+Overall mean silhouette: 0.220
+
+=== Confounder check: variance in each PC explained by subtype vs site ===
+   PC var_pct r2_subtype    r2_site
+1 PC1    20.6  0.7338061 0.31186748
+2 PC2    10.4  0.6899873 0.20923713
+3 PC3     7.9  0.5769399 0.05283554
+4 PC4     7.2  0.2378639 0.06286922
+5 PC5     6.2  0.3674637 0.04274380
+
+Note: HGS(15)=all Mes-Masson, MMMT(2)=all Huntsman -> subtype/site partly confounded.
+Note: every number here is PER LINE (n=31), not per patient. The patient-representative
+  sensitivity analysis (n=28) lives in scripts/21_rna_sensitivity.R; quote both.
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_02_rna_separation.txt
+
+02_rna_separation.R complete. Figures in figs/ ; tables in output/.

@@ -1,0 +1,386 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_A453"
+          }
+        ],
+        "age": "66Y",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Mes-Masson, Anne-Marie"
+          }
+        ],
+        "created": "2012-06-06",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Ovary",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0000992",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0000992",
+                  "label": "ovary",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000992"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C7550",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C7550",
+            "label": "Ovarian serous adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7550"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "4-6 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=10949993"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "144",
+          "min": "96",
+          "unit": "hour"
+        },
+        "entry-version": "13",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "TOV-81D"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Transcriptomics",
+            "value": "Microarray."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=10949993"
+          },
+          {
+            "resource-internal-ref": "PubMed=11641787"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "28,29"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12,13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "7,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17,19"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "161895",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161895"
+          },
+          {
+            "accession": "21095",
+            "category": "Polymorphism and mutation databases",
+            "database": "IARC_TP53"
+          },
+          {
+            "accession": "Q54972819",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54972819"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas James",
+            "last-name": "Hudson",
+            "name": "Hudson T.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francis",
+            "last-name": "Rodier",
+            "name": "Rodier F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michela",
+            "last-name": "Bossolasco",
+            "name": "Bossolasco M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter D.",
+            "last-name": "Lee",
+            "name": "Lee P.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jaroslav",
+            "last-name": "Novak",
+            "name": "Novak J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emily N.",
+            "last-name": "Manderson",
+            "name": "Manderson E.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2001",
+        "first-page": "6617",
+        "internal-id": "PubMed=11641787",
+        "journal-name": "Oncogene",
+        "last-page": "6626",
+        "title": "Microarray analysis of gene expression mirrors the biology of an ovarian cancer model.",
+        "type": "article",
+        "volume": "20",
+        "xref-list": [
+          {
+            "accession": "10.1038/sj.onc.1204804",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/sj.onc.1204804"
+          },
+          {
+            "accession": "11641787",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/11641787"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hafida",
+            "last-name": "Lounis",
+            "name": "Lounis H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Louise",
+            "last-name": "Champoux",
+            "name": "Champoux L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Melanie",
+            "last-name": "Tetrault",
+            "name": "Tetrault M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emily N.",
+            "last-name": "Manderson",
+            "name": "Manderson E.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jia-Chi",
+            "last-name": "Wang",
+            "name": "Wang J.-C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patrice",
+            "last-name": "Eydoux",
+            "name": "Eydoux P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rejean",
+            "last-name": "Savoie",
+            "name": "Savoie R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2000",
+        "first-page": "357",
+        "internal-id": "PubMed=10949993",
+        "journal-name": "In Vitro Cell. Dev. Biol. Anim.",
+        "last-page": "361",
+        "title": "Characterization of four novel epithelial ovarian cancer cell lines.",
+        "type": "article",
+        "volume": "36",
+        "xref-list": [
+          {
+            "accession": "10.1290/1071-2690(2000)036<0357:COFNEO>2.0.CO;2",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1290/1071-2690(2000)036<0357:COFNEO>2.0.CO;2"
+          },
+          {
+            "accession": "10949993",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10949993"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Fig1 counts: 42 lines / 34 patients | RNA 31, protein 31, CNV 23, SNV 22, all-three 13
+Wrote /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig1.{pdf,png}
+Fig1 | panel B: 42 rows (sum = 42), 34 patients; assay totals RNA 31 / protein 31 / WES-CNV 23 / WES-SNV 22; all three = 13
+        WES-CNV-only line (no MAF): TOV3121D
+Fig1 | panel C: lines 42, patients 34 across 7 subtypes

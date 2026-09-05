@@ -1,0 +1,27 @@
+marks,marks_code,symbol,direction,note,HGS_mean,CC_mean,EC_mean,MC_mean,MMMT_mean,SCCOHT_mean,mean_in,rank_in,top_subtype,lands_right
+HGS,HGS,PAX8,up,Mullerian/serous TF,6.39,7.85,0.03,3.66,6.4,0.85,6.39,3,CC,FALSE
+HGS,HGS,WT1,up,serous marker,2.93,0.69,1.12,0.51,1.59,3.94,2.93,2,SCCOHT,TRUE
+HGS,HGS,MUC16,up,CA125,2.5,1.22,0.01,3.25,0.06,0.02,2.5,2,MC,TRUE
+HGS,HGS,MECOM,up,3q26 HGSC amplicon TF,2.8,3.72,0.92,3.35,5.7,2.48,2.8,4,MMMT,FALSE
+HGS,HGS,SOX17,up,serous TF,5.43,3.47,0,2.13,4.86,4.48,5.43,1,HGS,TRUE
+CC (clear cell),CC,HNF1B,up,clear-cell master TF,1.17,5.4,0.02,2.94,5.81,0.03,5.4,2,MMMT,TRUE
+CC (clear cell),CC,NAPSA,up,napsin A,0.55,2.69,0.97,1.16,4.31,1.41,2.69,2,MMMT,TRUE
+CC (clear cell),CC,SPP1,up,osteopontin,3.07,9.06,4.34,6.25,1.14,3.93,9.06,1,CC,TRUE
+CC (clear cell),CC,GPX3,up,glutathione peroxidase,7,6.75,1.57,5.06,9.68,0.72,6.75,3,MMMT,FALSE
+CC (clear cell),CC,GCLC,up,glutathione synthesis,4.12,4.25,4.13,4.46,3.46,3.76,4.25,2,MC,TRUE
+EC (endometrioid),EC,ESR1,up,oestrogen receptor (Hollis 2020 EC panel),1.84,0.55,0.03,0.25,0.04,0.12,0.03,6,HGS,FALSE
+EC (endometrioid),EC,PGR,up,progesterone receptor (Hollis 2020 EC panel),0.22,0,0,0.01,0,0.26,0,5,SCCOHT,FALSE
+EC (endometrioid),EC,ARID1A,down,"SWI/SNF; WEAK RNA proxy - EC loss is mutational, not transcriptional",4.22,4.44,5.17,4.63,3.35,5.71,5.17,2,SCCOHT,FALSE
+MC (mucinous),MC,CDX2,up,intestinal TF,0.57,0.11,0.06,3.4,0,0,3.4,1,MC,TRUE
+MC (mucinous),MC,MUC2,up,intestinal mucin,0.05,0.06,0,0.03,0,0.06,0.03,4,SCCOHT,FALSE
+MC (mucinous),MC,TFF1,up,trefoil factor,1,0.62,0,1.42,0,0,1.42,1,MC,TRUE
+MC (mucinous),MC,TFF3,up,trefoil factor,1.76,0.51,0,2.82,0.01,0,2.82,1,MC,TRUE
+MC (mucinous),MC,KRT20,up,intestinal keratin,0.02,0.07,0.65,2.79,0,0,2.79,1,MC,TRUE
+MC (mucinous),MC,MUC5AC,up,gastric mucin,0.12,0.01,0,1.43,0,0,1.43,1,MC,TRUE
+MMMT (EMT),MMMT,VIM,up,vimentin (broad in culture),7.13,7.95,12.76,3,9.81,7.03,9.81,2,EC,TRUE
+MMMT (EMT),MMMT,ZEB1,up,EMT TF,1.19,1.8,3.72,0.46,3.36,3.83,3.36,3,SCCOHT,FALSE
+MMMT (EMT),MMMT,CDH2,up,N-cadherin,2.56,0.75,5.81,4.45,3.08,4.22,3.08,4,EC,FALSE
+MMMT (EMT),MMMT,SNAI2,up,SLUG,1.11,1.02,0.43,1.7,1.19,0.06,1.19,2,MC,TRUE
+SCCOHT (loss),SCCOHT,SMARCA4,down,SWI/SNF (loss; often protein-level),6.02,5.87,5.18,6.04,6.64,5.35,5.35,5,MMMT,TRUE
+SCCOHT (loss),SCCOHT,SMARCA2,down,SWI/SNF (epigenetically silenced),2.7,4.16,4.1,3.9,4.69,0.09,0.09,6,MMMT,TRUE
+proliferation,NA,MKI67,up,proliferation control,3.93,3.77,5.13,4.87,4.5,5.67,NA,NA,SCCOHT,NA

@@ -1,0 +1,8 @@
+# Preserve exact bytes: quantitative files carry archived SHA256 checksums.
+* -text
+*.pdf binary
+*.png binary
+*.docx binary
+*.xlsx binary
+*.rds binary
+*.zip binary

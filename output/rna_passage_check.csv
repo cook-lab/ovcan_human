@@ -1,0 +1,19 @@
+check,id,var_pct,r2_passage,p_passage,r2_site,partial_r2_passage_after_site,rna_passage,wes_passage,passage_diff
+PC~passage regression,PC1,20.6,0.07733423476790392,0.12982992067479035,0.2259123385491182,0.14785775576084834,NA,NA,NA
+PC~passage regression,PC2,10.4,0.1539822635864186,0.029001525891088665,0.11903769454407079,0.03605596054869348,NA,NA,NA
+PC~passage regression,PC3,7.9,0.03099783482661379,0.3434261547909935,0.05280161735814296,0.006965082556895631,NA,NA,NA
+PC~passage regression,PC4,7.2,0.08291766762737086,0.11621562088537453,0.06272490042091758,0.021165356959748916,NA,NA,NA
+PC~passage regression,PC5,6.2,4.669210305469938e-5,0.970897764154941,0.004465783232995346,0.027929683923011185,NA,NA,NA
+cross-assay passage mismatch,TOV112D,NA,NA,NA,NA,NA,63,83,20
+cross-assay passage mismatch,OV3331,NA,NA,NA,NA,NA,71,54,-17
+cross-assay passage mismatch,OV3133-R,NA,NA,NA,NA,NA,64,71,7
+cross-assay passage mismatch,OV90,NA,NA,NA,NA,NA,70,63,-7
+cross-assay passage mismatch,OV2085,NA,NA,NA,NA,NA,68,64,-4
+cross-assay passage mismatch,TOV3133G,NA,NA,NA,NA,NA,61,65,4
+cross-assay passage mismatch,TOV21G,NA,NA,NA,NA,NA,63,59,-4
+cross-assay passage mismatch,TOV2414,NA,NA,NA,NA,NA,69,65,-4
+cross-assay passage mismatch,OV1369-R2,NA,NA,NA,NA,NA,69,66,-3
+cross-assay passage mismatch,OV2295,NA,NA,NA,NA,NA,64,61,-3
+cross-assay passage mismatch,OV2295-R2,NA,NA,NA,NA,NA,67,70,3
+cross-assay passage mismatch,TOV1369,NA,NA,NA,NA,NA,65,65,0
+cross-assay passage mismatch,TOV3392D,NA,NA,NA,NA,NA,69,69,0

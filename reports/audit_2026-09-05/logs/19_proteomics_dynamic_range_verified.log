@@ -1,0 +1,236 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Protein matrix: 8427 proteins x 31 lines (8.8% NA) | 70 zero-plex rows retained (carry no measurement)
+Paired set: 8358 shared genes x 30 shared lines (RNA-only: VOA6861; protein-only: VOA14993)
+
+=== TASK 1: cross-line dynamic range (protein vs RNA) ===
+Genes with >= 10 paired lines: 8035 (of 8358 shared); fully n-matched at 30 lines: 6812
+
+Median per-gene cross-line spread (log2 units) [n-matched, complete-30 subset]:
+  IQR   : RNA 1.11  vs  protein 0.34   (protein/RNA median ratio = 0.30)  <- PRIMARY (less sensitive to isolated extremes)
+  SD    : RNA 0.85  vs  protein 0.27   (protein/RNA median ratio = 0.32)  <- COMPLEMENTARY SPREAD SUMMARY
+  RANGE : RNA 3.40  vs  protein 1.16   (protein/RNA median ratio = 0.34)  <- SECONDARY, FLOOR-SENSITIVE
+
+Full >=10-line set: median IQR ratio 0.30; 97.8% of genes have protein IQR < RNA IQR
+
+FLOOR CHECK - genes split by whether any paired line has RNA == 0 (log2(TPM+1) floor):
+ rna_has_zero n_genes median_range_ratio median_iqr_ratio median_sd_ratio
+        FALSE    7510               0.34            0.299           0.321
+         TRUE     525               0.37            0.274           0.303
+ median_rna_range median_rna_iqr
+            3.386          1.119
+            6.348          1.976
+  6.5% of genes have at least one zero-RNA model.
+  The two strata contain different genes; their spread differences do not isolate
+  a causal effect of the RNA floor. IQR, SD and range can depend on abundance,
+  feature selection and log(TPM+1). These are descriptive cross-assay spread ratios.
+
+Exemplars - the MSLN 'protein 1.8 vs RNA 9.3' comparison is the floor-sensitive one:
+    gene n_paired rna_n_zero_lines rna_range prot_range range_ratio rna_iqr
+   ERBB2       30                0     3.161      0.984       0.311   0.882
+   FOLR1       30                1     9.479      2.928       0.309   4.730
+    MSLN       30                3     9.299      1.756       0.189   6.672
+ TACSTD2       30                5     9.864      2.411       0.244   8.198
+ prot_iqr iqr_ratio rna_sd prot_sd sd_ratio
+    0.189     0.215  0.701   0.216    0.309
+    1.179     0.249  2.912   0.807    0.277
+    0.692     0.104  3.534   0.500    0.141
+    1.172     0.143  3.974   0.702    0.177
+
+Descriptive association — per-gene spread vs RNA-protein concordance (n=8033 genes):
+  Spearman(protein IQR, concordance) = 0.329 ; Spearman(RNA IQR, concordance) = 0.302
+  Concordance by protein-spread tercile:
+ prot_iqr_tercile    n median_concord
+              low 2678        0.30435
+              mid 2677        0.39820
+             high 2678        0.52640
+
+Consequence (b) — ADC-target cross-line dynamic range (protein vs RNA):
+    gene n_paired rna_range prot_range range_ratio concord_spearman
+    MSLN       30      9.30       1.76        0.19             0.85
+ TACSTD2       30      9.86       2.41        0.24             0.90
+    CDH6       30      9.12       2.34        0.26             0.72
+   CD276       30      3.61       1.00        0.28             0.69
+   FOLR1       30      9.48       2.93        0.31             0.89
+   ERBB2       30      3.16       0.98        0.31             0.59
+   VTCN1       30      6.64       2.48        0.37             0.81
+ SLC34A2       30      8.67       3.60        0.42             0.78
+
+=== TASK 3: structural block-missingness ===
+Proteins total: 8427 | present in all 5 plexes (complete): 6855 (81.3%) | absent from >=1 whole plex: 1572 (18.7%)
+
+Per-protein plex-coverage distribution (# plexes a protein is quantified in):
+ present_n_plex n_proteins
+              0         70
+              1        264
+              2        360
+              3        366
+              4        512
+              5       6855
+
+Per-plex summary (a protein absent from a plex is missing for ALL its lines):
+ plex n_lines n_proteins                 subtypes
+    1       7       7738 EC=1,SCCOHT=1,CC=2,HGS=3
+    2       6       7758               CC=2,HGS=4
+    3       5       7562      SCCOHT=1,CC=2,HGS=2
+    4       6       7694   EC=1,MC=1,MMMT=1,HGS=3
+    5       7       7653   CC=1,MMMT=1,MC=2,HGS=3
+
+Median lines lost per non-complete protein: 13 of 31
+
+=== TASK 2: inter-plex bridge design ===
+Bridge links (n=4): plex1<->2[VOA10816 r=0.991]  plex2<->3[TOV1369 r=0.994]  plex3<->4[VOA3993* r=0.992]  plex4<->5[TOV3133G r=0.993]
+Topology: CHAIN confirmed (each link connects CONSECUTIVE plexes -> daisy-CHAIN, not a common-reference hub)
+Per-link Pearson range: 0.9914-0.9943 (Spearman 0.9932-0.9950). Max separation plex1<->plex5 = 4 links.
+* = external Carey LGS line VOA3993 (the plex3<->4 link). COV434 occupies plex1 ch10 as a
+   unique biological sample (no prior plex to bridge from), not a replicate.
+
+Bridge-derived precision: approximate per-measurement SD ~ 0.171 log2 (per-link 0.190, 0.149, 0.179, 0.163)
+Median observed cross-line protein SD = 0.287 log2 -> observed:technical ~ 1.7x
+
+Bridge AGREEMENT (report these instead of, or alongside, Pearson r):
+ cell_line prim_plex bridge_plex external n_proteins    bias sd_diff loa_span
+  VOA10816         1           2    FALSE       7436 -0.0016  0.2683   1.0517
+   TOV1369         2           3    FALSE       7276 -0.0284  0.2106   0.8257
+   VOA3993         3           4     TRUE       7286  0.0095  0.2536   0.9941
+  TOV3133G         4           5    FALSE       7351 -0.0063  0.2304   0.9033
+ sd_single cv_pct_per_measurement sd_diff_cv_pct_legacy ma_slope_p pearson
+    0.1897                13.2072               20.4388     0.1340  0.9914
+    0.1489                10.3512               15.7193     0.2603  0.9943
+    0.1793                12.4771               19.2166     0.0023  0.9918
+    0.1629                11.3301               17.3184     0.0000  0.9933
+Per-link n proteins: 7276-7436. Bias -0.028 to +0.009 log2 (negligible, no systematic offset).
+  SD of paired differences 0.211-0.268 log2; 95% LoA span 0.826-1.052 log2.
+  Per-measurement SD 0.149-0.190 log2 (= 10.4-13.2% lognormal CV).
+  [DEPRECATED, for traceability only: 100*(2^sd_diff-1) = 15.7-20.4%]
+
+LIKE-FOR-LIKE technical vs observed cross-line spread (SD against SD, log2 units):
+                                                  stratum             bound
+                                         all paired genes          min link
+                                         all paired genes       median link
+                                         all paired genes          max link
+ ADC targets (direct bridge estimate, n = 32 differences) pooled over links
+ technical_sd_log2 observed_cross_line_sd_log2 observed_to_technical_sd_ratio
+             0.149                       0.287                          1.927
+             0.171                       0.287                          1.677
+             0.190                       0.287                          1.512
+             0.134                       0.600                          4.474
+ technical_variance_share_pct implied_biological_sd_log2
+                       26.944                      0.245
+                       35.569                      0.230
+                       43.718                      0.215
+                        4.996                      0.584
+ approx_reliability_ratio
+                    0.731
+                    0.644
+                    0.563
+                    0.950
+  All paired genes: observed cross-line SD is 1.5-1.9x the per-measurement technical SD.
+  Under a homoscedastic independent-error approximation, bridge variability corresponds to
+  27-44% of the variance of a typical protein's observed cross-line measurements.
+  ADC targets, own technical estimate (n = 32 differences): 5%.
+  This is a variance-ratio diagnostic, not an ICC. Section 4c drops the homoscedasticity
+  assumption by matching the technical estimate to the observed spread within abundance deciles.
+
+ABUNDANCE-MATCHED technical vs observed spread (both decile-local, log2 SD):
+ abundance_decile n_paired_genes_decile bridge_sd_single prot_sd_median_decile
+                1                   727            0.303                 0.370
+                2                   753            0.280                 0.356
+                3                   783            0.211                 0.317
+                4                   809            0.201                 0.294
+                5                   824            0.165                 0.273
+                6                   824            0.137                 0.261
+                7                   826            0.119                 0.257
+                8                   827            0.122                 0.252
+                9                   829            0.097                 0.264
+               10                   833            0.075                 0.272
+ observed_to_technical_sd_ratio technical_variance_share_pct
+                          1.218                       67.366
+                          1.269                       62.057
+                          1.504                       44.210
+                          1.461                       46.879
+                          1.654                       36.538
+                          1.904                       27.598
+                          2.165                       21.340
+                          2.058                       23.609
+                          2.725                       13.467
+                          3.650                        7.507
+ approx_reliability_ratio
+                    0.326
+                    0.379
+                    0.558
+                    0.531
+                    0.635
+                    0.724
+                    0.787
+                    0.764
+                    0.865
+                    0.925
+  Technical share of observed cross-line variance: 67% (decile 1) -> 8% (decile 10);
+  the global figure in 4b-ii is a homoscedastic approximation to this gradient.
+
+CV / bridge noise by mean-abundance decile (1 = lowest abundance):
+ abundance_decile n_proteins mean_abund_lo mean_abund_hi vendor_cv_median
+                1        836         4.082         8.681           11.027
+                2        836         8.682         9.492            9.557
+                3        835         9.493        10.176            8.178
+                4        836        10.177        10.865            7.189
+                5        836        10.866        11.519            5.980
+                6        835        11.519        12.133            5.072
+                7        836        12.133        12.729            4.632
+                8        835        12.730        13.371            4.063
+                9        836        13.372        14.237            3.633
+               10        836        14.239        19.111            3.025
+ vendor_cv_q25 vendor_cv_q75 n_bridge_diffs bridge_sd_diff
+         6.202        18.110           1652          0.429
+         5.895        15.167           2166          0.396
+         5.418        11.609           2696          0.298
+         4.653        10.454           3056          0.285
+         4.132         8.494           3220          0.233
+         3.500         7.429           3258          0.194
+         3.270         6.430           3306          0.168
+         2.719         5.744           3319          0.173
+         2.539         5.072           3328          0.137
+         2.028         4.254           3344          0.105
+ bridge_median_abs_diff bridge_sd_single bridge_cv_pct_per_measurement
+                  0.206            0.303                        21.269
+                  0.188            0.280                        19.609
+                  0.157            0.211                        14.701
+                  0.139            0.201                        14.026
+                  0.121            0.165                        11.469
+                  0.101            0.137                         9.526
+                  0.092            0.119                         8.230
+                  0.082            0.122                         8.503
+                  0.072            0.097                         6.716
+                  0.060            0.075                         5.170
+ n_paired_genes_decile prot_sd_median_decile observed_to_technical_sd_ratio
+                   727                 0.370                          1.218
+                   753                 0.356                          1.269
+                   783                 0.317                          1.504
+                   809                 0.294                          1.461
+                   824                 0.273                          1.654
+                   824                 0.261                          1.904
+                   826                 0.257                          2.165
+                   827                 0.252                          2.058
+                   829                 0.264                          2.725
+                   833                 0.272                          3.650
+ technical_variance_share_pct approx_reliability_ratio
+                       67.366                    0.326
+                       62.057                    0.379
+                       44.210                    0.558
+                       46.879                    0.531
+                       36.538                    0.635
+                       27.598                    0.724
+                       21.340                    0.787
+                       23.609                    0.764
+                       13.467                    0.865
+                        7.507                    0.925
+
+Outputs written:
+  output/prot_dynamic_range.csv     ( 8035 genes )
+  output/prot_block_missingness.csv ( 8427 proteins )
+  output/prot_compression_floor_check.csv, prot_bridge_agreement.csv, prot_cv_by_abundance.csv
+  figs/f_prot_compression.pdf + reports/assets/f_prot_compression.png
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_19_proteomics_dynamic_range.txt
+
+19_proteomics_dynamic_range.R complete.

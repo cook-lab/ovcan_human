@@ -1,0 +1,8 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | diverging palette: slate-white-rust | captions external
+Loading required namespace: DESeq2
+null device 
+          1 
+null device 
+          1 
+Expression supplements and external legends complete: S1-S4, S7-S8.

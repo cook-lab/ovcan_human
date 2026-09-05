@@ -1,0 +1,265 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+# Install required packages 
+```{r}
+R.version.string
+.libPaths()
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+packageVersion("BiocManager")
+BiocManager::version()
+BiocManager::valid()
+```
+
+```{r}
+BiocManager::install(
+  c("BiocGenerics","S4Vectors","IRanges","XVector",
+    "Biostrings","GenomeInfoDb","Biobase","AnnotationDbi",
+    "VariantAnnotation"),
+  update = TRUE, ask = FALSE
+)
+```
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+BiocManager::install("GenVisR")
+```
+
+
+```{r}
+  install.packages('remotes') # Uncomment if 'remotes' is not installed
+    remotes::install_github('CCICB/vcf2mafR')
+    
+
+```
+
+```{r}
+if (!require("BiocManager", quietly = TRUE))
+    install.packages("BiocManager")
+
+BiocManager::install("maftools")
+```
+
+# Dependencies
+
+```{r}
+library(vcf2mafR)
+library(maftools)
+library(data.table)
+library(dplyr)
+library(GenVisR)
+library(ggplot2)
+library(VariantAnnotation)
+```
+
+```{r}
+maf_path_ov90 <- "/Volumes/Eevee/projects/ovcan_human/data/wes/mutect2/OV90_P63/OV90.maf"
+
+# 2) Read it (no clinical file for now)
+ov90 <- read.maf(maf = maf_path_ov90, verbose = TRUE)
+
+plotmafSummary(maf = ov90, rmOutlier = TRUE, addStat = 'median', dashboard = TRUE, titvRaw = FALSE)
+
+```
+
+
+# final oncoplot for hgs
+```{r}
+base <- "/Volumes/Eevee/projects/ovcan_human/data/wes/mutect2"
+
+#hgs samples
+
+hgs_samples <- c(
+  "OV90_P63",
+  "OV1369_R2",
+  "OV2085",
+  "OV2295",
+  "OV2295_R2",
+  "OV3133_R",
+  "OV3331",
+  "TOV1369",
+  "TOV3133G"
+)
+
+hgs_maf_paths <- file.path(base, hgs_samples, paste0(hgs_samples, ".maf"))
+maf_list <- lapply(hgs_maf_paths, function(p) read.maf(maf = p, verbose = FALSE))
+hgs <- merge_mafs(maf_list)
+```
+```{r}
+oncoplot(
+  maf = hgs,            
+  top = 25,             
+  removeNonMutated = TRUE,
+  draw_titv = TRUE,
+  titleText = "High-grade serous cohort (12 lines)"
+)
+
+oncoplot(maf = hgs, draw_titv = TRUE)
+
+```
+# vizualization with target genes for hgs
+```{r}
+
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/HGSOC_oncoplot_paper_dec2.pdf",
+    width = 8, height = 8)
+
+
+hgsoc_genes <- c("TP53","BRCA1","BRCA2","NF1","RB1","PTEN","PIK3CA","KRAS","CDK12","ATM","ATR", "ARID1A", "SMARCA4", "NRAS", "BRAF")
+hgs_oncoplot <- oncoplot(
+  maf = hgs,
+  genes = hgsoc_genes,
+  removeNonMutated = TRUE,
+  draw_titv = TRUE,
+  titleText = "HGSC",
+  showTumorSampleBarcodes = TRUE,
+  SampleNamefontSize = 1.48,
+  barcode_mar = 10,
+  fontSize = 0.79
+)
+hgs_oncoplot
+
+dev.off()
+```
+
+
+# final oncoplot for non-hgs
+```{r}
+base <- "/Volumes/Eevee/projects/ovcan_human/data/wes/mutect2"
+
+
+nonhgs_samples <- c(
+  "TOV21G_P59",
+  "TOV3392D",
+  "TOV112D",
+  "TOV2414"
+)
+
+nonhgs_maf_paths <- file.path(base, nonhgs_samples, paste0(nonhgs_samples, ".maf"))
+maf_list <- lapply(nonhgs_maf_paths, function(p) read.maf(maf = p, verbose = FALSE))
+nonhgs <- merge_mafs(maf_list)
+```
+# viz for nonhgs
+```{r}
+
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/NONHGSOC_oncoplot_paper.pdf",
+    width = 5.3, height = 8)
+
+
+hgsoc_genes <- c("TP53","BRCA1","BRCA2","NF1","RB1","PTEN","PIK3CA","KRAS","CDK12","ATM","ATR", "ARID1A", "SMARCA4", "NRAS", "BRAF")
+nonhgs_oncoplot <- oncoplot(
+  maf = nonhgs,
+  genes = hgsoc_genes,
+  removeNonMutated = TRUE,
+  draw_titv = TRUE,
+  titleText = "Non-HGSC",
+  showTumorSampleBarcodes = TRUE,
+  SampleNamefontSize = 1.48,
+  barcode_mar = 10,
+  fontSize = 0.79
+)
+nonhgs_oncoplot
+
+dev.off()
+```
+
+
+# CNV kit
+```{r}
+
+cns_path <- "/Volumes/Eevee/projects/ovcan_human/data/cnvkit/All samples"
+
+files_all <- list.files(
+  path = cns_path,
+  pattern = "\\.cns$",
+  full.names = TRUE,
+  recursive = TRUE
+)
+
+files <- files_all[!grepl("call\\.cns$|bintest\\.cns$", files_all)]
+
+read_cns <- function(f) { # define a function that will read & clean one file
+  df <- read.delim(f, header = TRUE, sep = "\t",
+                   stringsAsFactors = FALSE, check.names = FALSE)
+  sample_name <- sub("\\.cns$", "", basename(f))
+  
+ df %>% 
+    transmute( # make a new data frame using only these columns, and rename 
+      chromosome = chromosome,
+      start      = start,
+      end        = end,
+      segmean    = log2,       
+      sample     = sample_name
+    )
+}
+
+cnData <- bind_rows(lapply(files, read_cns)) # tells the code to make "files" the f variable that runs through the pipe and output read_cns
+
+# center per sample so you get both gains & losses but optional
+cnData <- cnData %>%
+  group_by(sample) %>%
+  mutate(segmean = segmean - median(segmean, na.rm = TRUE)) %>%
+  ungroup()
+
+cnData <- cnData %>%
+  filter(!chromosome %in% "chrY")
+
+cnData_dt <- as.data.table(cnData)
+
+order <- c("TOV21G_P59", "TOV3392D_P69", "TOV112D_P83", "TOV2414_P65", "OV1369_R2_P66", "OV2085_P64", "OV2295_P61", "OV2295_R2_P70", "OV3133_R_P71", "OV3331_P54", "OV90_P63", "TOV1369_P65", "TOV3133G_P65")
+cnData_dt$sample <- factor(cnData_dt$sample, levels = order) #convert cnData to datatable
+# remove y chromosome column
+# cnSpec(cnData_dt, y = genomeBoundaries)
+# 
+# genomeBoundaries_noY <- genomeBoundaries %>%
+#   filter(!chromosome %in% "chrY")
+
+
+# visualization
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/cnvkit_heatmap_ALL_noY.pdf", width = 12, height = 4)
+
+
+cnSpec(
+  cnData_dt,
+  CNscale = "relative",
+plotLayer = ggplot2::scale_fill_gradient2(
+  limits = c(-2, 2),
+  low    = "blue",    # negative CNV = deletions
+  mid    = "white",
+  high   = "red",     # positive CNV = amplifications
+  midpoint = 0
+)
+)
+dev.off()
+
+```
+
+# Looking at a specific chromosome
+```{r}
+# only chrom17
+cnSpec(
+  cnData_dt[chromosome %in% c("chr17")],  # depending on how chr is stored
+  genome  = "hg38",
+  CNscale = "relative"
+)
+
+```
+
+# Looking at a specific chromosome and gene
+```{r}
+
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/cnSpec_heatmap_HGS_chr17_tp53.pdf", width = 14, height = 10)
+
+p <- cnFreq(
+  cnData_dt,
+  genome = "hg38",
+  plotChr = "chr17",
+  CN_low_cutoff = -0.3,   # everything <= -0.3 = loss
+  CN_high_cutoff=  0.3 
+)
+
+p + ggplot2::geom_vline(xintercept = 7668421, color = "red", linetype = "dashed", size = 1) 
+dev.off()
+```
+

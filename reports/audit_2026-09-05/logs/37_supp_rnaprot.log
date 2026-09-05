@@ -1,0 +1,14 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Loading required namespace: DESeq2
+
+Supplementary figures written: figs1, figs2, figs3, figs4, figs7, figs8
+S1 n = 31 lines; prot PCA PC1 12.7%, PC2 9.4%; protein sil ALL 0.135, CC -0.004, SCCOHT 0.028; PC2 extreme = VOA10816
+S2 passage on PC1: raw 7.7%, |site 14.8%, |subtype+site 0.4%; site median 3.46% -> 0.00% with passage
+S2 cross-assay: n = 13, Pearson r = -0.33 [-0.75, 0.27] p = 0.26; discordance -17..+20
+S3 off-diagonal Spearman: 0.758-0.969 (median 0.835) on 22678 genes x 31 lines; families: 1369, 2295, 3133, 3291
+S4 presence patterns: 32 (incl. the 70 zero-plex row); sum = 8427 = analysis rows
+S7 markers: 25 in 6 groups (EC now included); 4 survive BH 0.05 (HNF1B, SPP1, KRT20, SMARCA2); floor-limited: SMARCA2
+S8 HGS lines: 15 in 3 strata; PROGENy Hypoxia rho = 0.58 (p = 0.026); hypoxic 1/3 vs inflam 1/2 above z=+1
+37_supp_rnaprot.R complete.
+There were 50 or more warnings (use warnings() to see the first 50)

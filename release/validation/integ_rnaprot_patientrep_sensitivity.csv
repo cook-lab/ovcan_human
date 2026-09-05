@@ -1,0 +1,4 @@
+statistic,all_models,patient_representatives,n_all,n_reps,shift,note
+per-model Spearman (median),0.41304673849053153,0.42750177915987003,30,27,0.014455040669338504,"MIN_LINES rule held at 10 in both columns, so the representative gene set is smaller"
+per-gene Spearman (median),0.3997775305895439,0.41819291819291815,8033,7969,0.018415387603374245,"MIN_LINES rule held at 10 in both columns, so the representative gene set is smaller"
+fraction of per-gene estimates negative,0.10245238391634508,0.09687539214456017,8033,7969,-0.005576991771784903,"MIN_LINES rule held at 10 in both columns, so the representative gene set is smaller"

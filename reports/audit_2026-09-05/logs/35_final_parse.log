@@ -1,0 +1,275 @@
+expression(source("scripts/00_setup.R"), source("scripts/00b_figure_theme.R"), 
+    suppressPackageStartupMessages({
+        library(tidyverse)
+        library(patchwork)
+    }), select <- dplyr::select, filter <- dplyr::filter, rename <- dplyr::rename, 
+    count <- dplyr::count, slice <- dplyr::slice, set.seed(SEED), 
+    SUB_LVL <- c("HGS", "LGS", "CC", "EC", "MC", "MMMT", "SCCOHT"), 
+    ASSETS <- file.path(PROJ, "reports", "assets"), dir.create(ASSETS, 
+        showWarnings = FALSE, recursive = TRUE), SITE_LVL <- c("Mes-Masson", 
+        "Huntsman", "Huntsman/Vanderhyden"), SITE_DISP <- c(`Mes-Masson` = "CHUM", 
+        Huntsman = "BC Cancer", `Huntsman/Vanderhyden` = "OHRI"), 
+    check_palette_keys(SITE_LVL, site_colours, "source site"), 
+    check_palette_keys(SITE_LVL, site_shapes, "source site shape"), 
+    site_col_disp <- setNames(site_colours[SITE_LVL], SITE_DISP[SITE_LVL]), 
+    site_shp_disp <- setNames(site_shapes[SITE_LVL], SITE_DISP[SITE_LVL]), 
+    pca <- readRDS(file.path(OUT, "rna_pca.rds")), ann <- read_csv(file.path(OUT, 
+        "rna_sample_annotation.csv"), show_col_types = FALSE) %>% 
+        transmute(cell_line, subtype = factor(subtype, levels = SUB_LVL), 
+            site_f = factor(SITE_DISP[site], levels = SITE_DISP[SITE_LVL])), 
+    var_pct <- 100 * pca$sdev^2/sum(pca$sdev^2), scores <- as_tibble(pca$x[, 
+        1:2], rownames = "cell_line") %>% left_join(ann, by = "cell_line"), 
+    N_LINES_RNA <- nrow(scores), stopifnot(`PCA panels are the 31-line RNA set` = N_LINES_RNA == 
+        31L, `every line must have a mapped site` = !any(is.na(scores$site_f))), 
+    N_PCA_GENES <- 2000, joint <- read_csv(file.path(OUT, "rna_pc_confounder_joint.csv"), 
+        show_col_types = FALSE), j1 <- joint %>% filter(PC == 
+        "PC1"), stopifnot(`one PC1 row expected in rna_pc_confounder_joint.csv` = nrow(j1) == 
+        1), pc1_txt <- paste(sprintf("n = %d cell lines. PC1 commonality (R², site at 3 levels),", 
+        N_LINES_RNA), "raw / adjusted:", sprintf("  unique subtype %.1f%% / %.1f%%  (permutation p = %.3f)", 
+        100 * j1$unique_subtype, 100 * j1$adj_unique_subtype, 
+        j1$unique_subtype_perm_p), sprintf("  unique site      %.1f%% / %.1f%%  (permutation p = %.2f)", 
+        100 * j1$unique_site, 100 * j1$adj_unique_site, j1$unique_site_perm_p), 
+        sprintf("  SHARED         %.1f%% / %.1f%%  — subtype and site are", 
+            100 * j1$shared, 100 * j1$adj_shared), sprintf("  collinear; joint R² %.1f%% / %.1f%%.", 
+            100 * j1$r2_joint, 100 * j1$adjr2_joint), sep = "\n"), 
+    sil <- read_csv(file.path(OUT, "silhouette_by_modality.csv"), 
+        show_col_types = FALSE) %>% filter(modality == "RNA"), 
+    sil_of <- function(s) {
+        v <- sil$mean_sil[sil$subtype == s]
+        stopifnot(length(v) == 1)
+        v
+    }, sil_n <- function(s) {
+        v <- sil$n[sil$subtype == s]
+        stopifnot(length(v) == 1)
+        v
+    }, lab_pc <- function(i) sprintf("PC%d (%.1f%%)", i, var_pct[i]), 
+    pca_base <- function(df) {
+        ggplot(df, aes(PC1, PC2)) + geom_hline(yintercept = 0, 
+            colour = cook_hair, linewidth = 0.25) + geom_vline(xintercept = 0, 
+            colour = cook_hair, linewidth = 0.25) + scale_x_continuous(expand = expansion(mult = 0.1)) + 
+            scale_y_continuous(expand = expansion(mult = 0.1)) + 
+            labs(x = lab_pc(1), y = lab_pc(2)) + theme_ovcan(base_size = 8) + 
+            theme(plot.caption = element_text(size = 5.2, colour = cook_ink, 
+                hjust = 0, lineheight = 1.15, margin = margin(t = 3)))
+    }, ec_lines <- scores %>% filter(subtype == "EC"), stopifnot(`expected exactly 2 EC lines in the RNA set` = nrow(ec_lines) == 
+        2L), pA <- pca_base(scores) + geom_point(aes(fill = subtype), 
+        shape = 21, colour = cook_ink, size = 2, stroke = 0.25, 
+        alpha = 0.95) + ggrepel::geom_text_repel(data = ec_lines, 
+        aes(label = cell_line), size = 2, colour = subtype_colours[["EC"]], 
+        family = FIG_FONT, fontface = "bold", min.segment.length = 0, 
+        segment.size = 0.25, segment.colour = cook_ink_muted, 
+        box.padding = 0.5, seed = SEED) + scale_fill_subtype(name = NULL, 
+        drop = TRUE, guide = guide_legend(ncol = 3)) + labs(caption = paste(sprintf("n = %d cell lines (one point per LINE, not per patient", 
+        N_LINES_RNA), sprintf("representative). PCA of the top %s most variable VST", 
+        format(N_PCA_GENES, big.mark = ",")), "genes; centred, unscaled. Mean silhouette (Euclidean on", 
+        sprintf("PC1–10, groups = annotated subtype): overall %.3f;", 
+            sil_of("ALL")), sprintf("EC %.3f (n = %d) — the labelled EC lines do not", 
+            sil_of("EC"), sil_n("EC")), sprintf("form a group and TOV112D sits with the SCCOHT"), 
+        sprintf("pair (%.3f).", sil_of("SCCOHT")), sep = "\n")) + 
+        theme(legend.position = "bottom", legend.justification = "left", 
+            legend.key.size = unit(7, "pt"), legend.text = element_text(size = 5.6), 
+            legend.title = element_text(size = 6), legend.margin = margin(0, 
+                0, 0, 0), legend.background = element_rect(fill = "white", 
+                colour = NA)), pB <- pca_base(scores) + geom_point(aes(fill = site_f, 
+        shape = site_f), colour = cook_ink, size = 2, stroke = 0.25, 
+        alpha = 0.95) + scale_fill_manual(values = site_col_disp, 
+        name = NULL) + scale_shape_manual(values = site_shp_disp, 
+        name = NULL) + labs(caption = pc1_txt) + theme(legend.position = "bottom", 
+        legend.justification = "left", legend.key.size = unit(7, 
+            "pt"), legend.text = element_text(size = 5.4), legend.title = element_text(size = 6), 
+        legend.margin = margin(0, 0, 0, 0), legend.background = element_rect(fill = "white", 
+            colour = NA)), cor_tbl <- read_csv(file.path(OUT, 
+        "integ_rnaprot_cor.csv"), show_col_types = FALSE), pg <- cor_tbl %>% 
+        filter(level == "per_gene"), csum <- read_csv(file.path(OUT, 
+        "integ_rnaprot_cor_summary.csv"), show_col_types = FALSE), 
+    cs1 <- csum %>% filter(metric == "per_gene_spearman"), stopifnot(`one per_gene_spearman summary row expected` = nrow(cs1) == 
+        1), gw_med <- cs1$median, pl_med <- csum$median[csum$metric == 
+        "per_line_spearman"], N_PERGENE <- cs1$n_pergene_reported, 
+    N_SHARED <- cs1$n_shared_symbols, MIN_LINES <- cs1$min_lines_rule, 
+    FRAC_NEG <- cs1$frac_pergene_negative, N_LINES_PL <- csum$n[csum$metric == 
+        "per_line_spearman"], stopifnot(`panel C n must match the rows plotted` = nrow(pg) == 
+        N_PERGENE), pC <- ggplot(pg, aes(spearman)) + geom_histogram(aes(y = after_stat(density)), 
+        binwidth = 0.05, boundary = 0, fill = cook_hair, colour = "white", 
+        linewidth = 0.2) + geom_density(colour = cook_navy, linewidth = 0.6) + 
+        geom_vline(xintercept = 0, colour = cook_ink_muted, linewidth = 0.3, 
+            linetype = "dotted") + geom_vline(xintercept = gw_med, 
+        colour = cook_rust, linewidth = 0.7) + annotate("text", 
+        x = -0.48, y = Inf, vjust = 1.3, hjust = 0, size = 2.1, 
+        colour = cook_ink, label = sprintf("Median %.3f", gw_med)) + 
+        coord_cartesian(xlim = c(-1, 1)) + scale_y_continuous(expand = expansion(mult = c(0, 
+        0.12))) + labs(x = "Per-gene Spearman r", y = "Density") + 
+        theme_ovcan(base_size = 8), rep_pc <- read_csv(file.path(OUT, 
+        "sensitivity_patient_reps_pca.csv"), show_col_types = FALSE) %>% 
+        filter(PC == "PC1", set == "28 reps (HVG refit)"), stopifnot(`one patient-representative PC1 result expected` = nrow(rep_pc) == 
+        1L), cmp <- bind_rows(j1 %>% transmute(analysis = "All models\n(n = 31)", 
+        unique_subtype, unique_site, shared, unexplained = 1 - 
+            r2_joint), rep_pc %>% transmute(analysis = "One per patient\n(n = 28)", 
+        unique_subtype, unique_site, shared, unexplained = 1 - 
+            r2_joint)) %>% pivot_longer(-analysis, names_to = "component", 
+        values_to = "fraction") %>% mutate(component = factor(component, 
+        levels = c("unique_subtype", "unique_site", "shared", 
+            "unexplained")), analysis = factor(analysis, levels = c("All models\n(n = 31)", 
+        "One per patient\n(n = 28)"))), stopifnot(all(cmp$fraction >= 
+        0), all(abs(tapply(cmp$fraction, cmp$analysis, sum) - 
+        1) < 1e-08)), pD <- ggplot(cmp, aes(analysis, 100 * fraction, 
+        fill = component)) + geom_col(width = 0.62, colour = "white", 
+        linewidth = 0.25, position = position_stack(reverse = TRUE)) + 
+        geom_text(aes(label = ifelse(fraction >= 0.05, sprintf("%.1f", 
+            100 * fraction), "")), position = position_stack(vjust = 0.5, 
+            reverse = TRUE), size = 2, colour = "white") + scale_fill_manual(values = c(unique_subtype = cook_rust, 
+        unique_site = cook_navy, shared = "#64748B", unexplained = "#94A3B8"), 
+        breaks = c("unique_subtype", "unique_site", "shared", 
+            "unexplained"), labels = c("Unique histotype", "Unique centre", 
+            "Shared", "Unexplained"), name = NULL) + scale_y_continuous(limits = c(0, 
+        100), breaks = seq(0, 100, 25), expand = c(0, 0)) + labs(x = NULL, 
+        y = "PC1 variance (%)") + theme_ovcan(base_size = 8) + 
+        theme(legend.position = "bottom", legend.text = element_text(size = 6), 
+            legend.key.size = unit(7, "pt")) + guides(fill = guide_legend(ncol = 1)), 
+    ms <- read_csv(file.path(OUT, "rna_markers_summary.csv"), 
+        show_col_types = FALSE), SUB6 <- c("HGS", "CC", "EC", 
+        "MC", "MMMT", "SCCOHT"), sub_mean_cols <- paste0(SUB6, 
+        "_mean"), mmat <- as.matrix(ms[, sub_mean_cols]), rownames(mmat) <- ms$symbol, 
+    colnames(mmat) <- SUB6, model_mmat <- mmat, tpm_f <- read_csv(file.path(OUT, 
+        "rna_tpm.csv"), show_col_types = FALSE), t2g_f <- read_csv(file.path(OUT, 
+        "tx2gene_matched.csv"), show_col_types = FALSE) %>% distinct(ensembl_gene_id, 
+        external_gene_name) %>% filter(!is.na(external_gene_name), 
+        external_gene_name != ""), m_id <- as.matrix(tpm_f[, 
+        -1]), rownames(m_id) <- tpm_f[[1]], i2s <- setNames(t2g_f$external_gene_name, 
+        t2g_f$ensembl_gene_id), common <- intersect(rownames(m_id), 
+        names(i2s)), logtpm <- log2(rowsum(m_id[common, , drop = FALSE], 
+        group = i2s[common]) + 1), ann_sub <- ann %>% mutate(subtype = factor(subtype, 
+        levels = SUB6)), mk_mat <- logtpm[ms$symbol, ann_sub$cell_line, 
+        drop = FALSE], sm_chk <- t(vapply(ms$symbol, function(g) tapply(mk_mat[g, 
+        ], ann_sub$subtype, mean)[SUB6], numeric(length(SUB6)))), 
+    stopifnot(`recomputed subtype means must equal rna_markers_summary.csv (re-render, not recompute)` = max(abs(round(sm_chk, 
+        2) - model_mmat)) < 1e-08), message("Panel F: per-line matrix validated against rna_markers_summary.csv."), 
+    fmap <- read_csv(file.path(META, "line_family_map.csv"), 
+        show_col_types = FALSE), rep_ids <- fmap$cell_line[fmap$patient_representative & 
+        fmap$has_rna], rep_ann <- ann_sub %>% filter(cell_line %in% 
+        rep_ids), stopifnot(nrow(rep_ann) == 28L), mmat <- t(vapply(ms$symbol, 
+        function(g) tapply(mk_mat[g, rep_ann$cell_line], rep_ann$subtype, 
+            mean)[SUB6], numeric(length(SUB6)))), rownames(mmat) <- ms$symbol, 
+    colnames(mmat) <- SUB6, marker_effects <- read_csv(file.path(OUT, 
+        "rna_marker_effectsizes.csv"), show_col_types = FALSE) %>% 
+        filter(!is.na(marks_code)), expected_means <- mmat[cbind(match(marker_effects$symbol, 
+        rownames(mmat)), match(marker_effects$marks_code, colnames(mmat)))], 
+    stopifnot(`Patient marker means must agree with the effect-size analysis` = max(abs(expected_means - 
+        marker_effects$mean_intended)) < 0.00051), zmat <- t(scale(t(mmat))), 
+    N_MARK <- nrow(ms), grp <- ifelse(is.na(ms$marks_code) | 
+        ms$marks_code == "NA", "Control", ms$marks_code), sym_order <- ms$symbol, 
+    y_lvls <- rev(sym_order), dir_down <- ms$direction == "down", 
+    y_labels <- setNames(ifelse(dir_down, paste0(ms$symbol, " ↓"), 
+        ms$symbol), ms$symbol), y_labels[ms$symbol == "MKI67"] <- "MKI67 (control)", 
+    mlong <- as_tibble(zmat, rownames = "symbol") %>% pivot_longer(-symbol, 
+        names_to = "subtype", values_to = "z") %>% mutate(subtype = factor(subtype, 
+        levels = SUB6), symbol = factor(symbol, levels = y_lvls)), 
+    expected_cell <- tibble(symbol = ms$symbol, grp_code = grp, 
+        direction = ms$direction) %>% filter(grp_code != "Control") %>% 
+        mutate(exp_sub = factor(grp_code, levels = SUB6), symbol = factor(symbol, 
+            levels = y_lvls), expect = ifelse(direction == "down", 
+            "expected LOW (loss)", "expected HIGH")), stopifnot(`every non-control marker needs an expected cell` = nrow(expected_cell) == 
+        sum(grp != "Control")), grp_run <- rle(grp[match(sym_order, 
+        ms$symbol)]), top_pos <- length(sym_order), bounds <- head(cumsum(grp_run$lengths), 
+        -1), sep_y <- top_pos - bounds + 0.5, ctr_from_top <- cumsum(grp_run$lengths) - 
+        grp_run$lengths/2 + 0.5, grp_ctr <- tibble(grp = grp_run$values, 
+        y = top_pos - ctr_from_top + 1) %>% mutate(n_mk = grp_run$lengths, 
+        lab = grp), EC_ROWS <- grp_ctr %>% filter(grp == "EC"), 
+    ecm <- read_csv(file.path(OUT, "rna_ec_markers.csv"), show_col_types = FALSE), 
+    ec_mean <- ecm %>% filter(scored_group == "EC (endometrioid)", 
+        subtype == "EC") %>% group_by(symbol) %>% summarise(m = mean(log2_tpm), 
+        .groups = "drop"), ec_val <- function(s) {
+        v <- ec_mean$m[ec_mean$symbol == s]
+        stopifnot(length(v) == 1)
+        v
+    }, zmax <- max(abs(mlong$z), na.rm = TRUE), pE <- ggplot(mlong, 
+        aes(subtype, symbol, fill = z)) + geom_tile(colour = "white", 
+        linewidth = 0.4) + geom_tile(data = expected_cell, aes(x = exp_sub, 
+        y = symbol, linetype = expect), inherit.aes = FALSE, 
+        fill = NA, colour = cook_ink, linewidth = 0.55) + scale_linetype_manual(values = c(`expected HIGH` = "solid", 
+        `expected LOW (loss)` = "22"), name = NULL, guide = guide_legend(order = 2, 
+        override.aes = list(fill = NA))) + geom_hline(yintercept = sep_y, 
+        colour = cook_ink, linewidth = 0.35) + annotate("rect", 
+        xmin = 0.5, xmax = 6.5, ymin = min(EC_ROWS$y) - EC_ROWS$n_mk/2, 
+        ymax = min(EC_ROWS$y) + EC_ROWS$n_mk/2, fill = NA, colour = subtype_colours[["EC"]], 
+        linewidth = 0.5) + geom_text(data = grp_ctr, aes(x = 6.75, 
+        y = y, label = lab), inherit.aes = FALSE, hjust = 0, 
+        size = 1.9, lineheight = 0.8, colour = ifelse(grp_ctr$grp == 
+            "EC", subtype_colours[["EC"]], cook_ink)) + scale_fill_cook_div(midpoint = 0, 
+        limits = c(-zmax, zmax), name = "z across patient-based histotype means  ", 
+        guide = guide_colourbar(title.position = "top", title.hjust = 0, 
+            order = 1)) + scale_x_discrete(expand = c(0, 0)) + 
+        scale_y_discrete(expand = c(0, 0), labels = y_labels) + 
+        coord_cartesian(clip = "off") + labs(x = NULL, y = NULL, 
+        caption = paste(sprintf("%d markers; fill = z of the subtype MEAN log2(TPM+1),", 
+            N_MARK), "standardised across the 6 subtype means of THAT marker", 
+            "(reference set = those 6 values; not across lines or genes).", 
+            "↓ = loss marker, expected LOW. MKI67 is a proliferation", 
+            "control with no intended subtype, so it has NO box.", 
+            sprintf("EC block fails: ESR1 EC mean %.2f, PGR %.2f log2 TPM.", 
+                ec_val("ESR1"), ec_val("PGR")), "Means only — see panel F for per-line values.", 
+            sep = "\n")) + theme_ovcan(base_size = 8) + theme(axis.line = element_blank(), 
+        axis.ticks = element_blank(), axis.text.x = element_text(size = 6.4, 
+            angle = 45, hjust = 1), axis.text.y = element_text(size = 6), 
+        legend.position = "bottom", legend.box = "vertical", 
+        legend.key.height = unit(6, "pt"), legend.key.width = unit(18, 
+            "pt"), legend.text = element_text(size = 5.6), legend.title = element_text(size = 5.8), 
+        legend.spacing.y = unit(1, "pt"), legend.margin = margin(0, 
+            0, 0, 0), plot.caption = element_text(size = 5.2, 
+            colour = cook_ink, hjust = 0, lineheight = 1.15, 
+            margin = margin(t = 3)), plot.margin = margin(3, 
+            34, 3, 3)), EXPR_FLOOR <- 1, per_line <- as_tibble(mk_mat, 
+        rownames = "symbol") %>% pivot_longer(-symbol, names_to = "cell_line", 
+        values_to = "log2_tpm") %>% left_join(ann_sub %>% select(cell_line, 
+        subtype), by = "cell_line") %>% left_join(tibble(symbol = ms$symbol, 
+        intended = grp), by = "symbol") %>% mutate(is_intended = as.character(subtype) == 
+        intended, symbol = factor(symbol, levels = y_lvls)), 
+    sub_n <- ann_sub %>% count(subtype), n_lab <- paste(sprintf("%s %d", 
+        sub_n$subtype, sub_n$n), collapse = ", "), pF <- ggplot(per_line, 
+        aes(log2_tpm, symbol)) + geom_vline(xintercept = EXPR_FLOOR, 
+        colour = cook_hair, linewidth = 0.4, linetype = "dashed") + 
+        geom_hline(yintercept = sep_y, colour = cook_ink, linewidth = 0.35) + 
+        geom_point(data = ~filter(.x, !is_intended), colour = cook_hair, 
+            size = 0.5, alpha = 0.85) + geom_point(data = ~filter(.x, 
+        is_intended), aes(colour = subtype), size = 1.15, alpha = 0.95) + 
+        scale_colour_subtype(guide = "none", drop = TRUE) + scale_y_discrete(expand = c(0, 
+        0), labels = NULL, breaks = NULL) + scale_x_continuous(expand = expansion(mult = 0.04)) + 
+        coord_cartesian(clip = "off") + labs(x = expression(log[2] * 
+        "(TPM + 1)"), y = NULL, caption = paste(sprintf("All %d RNA lines,", 
+        N_LINES_RNA), "1 point per line;", "row order as E.", 
+        "Colour = lines of", "the marker's", "intended subtype", 
+        "(key in A); grey =", "all other lines.", sprintf("Dashed = log2 TPM %d,", 
+            EXPR_FLOOR), "the expression floor", "in the lands-in-", 
+        "expected rule.", "MKI67 has no", "intended subtype:", 
+        "all points grey.", sep = "\n")) + theme_ovcan(base_size = 8) + 
+        theme(axis.ticks.y = element_blank(), plot.caption = element_text(size = 5.2, 
+            colour = cook_ink, hjust = 0, lineheight = 1.15, 
+            margin = margin(t = 3))), row1 <- pA + pB + pC + 
+        plot_layout(widths = c(1, 1, 1)), row2 <- pD + pE + pF + 
+        plot_layout(widths = c(0.85, 1.22, 0.9)), fig <- row1/row2 + 
+        plot_layout(heights = c(1, 1.45)) + plot_annotation(tag_levels = "A") & 
+        theme(plot.tag = element_text(size = 11, face = "bold", 
+            family = FIG_FONT), plot.margin = margin(9, 3, 3, 
+            3)), FIG3_H <- 6.4, save_fig(fig, file.path(MSFIG, 
+        "fig3.pdf"), w = W2, h = FIG3_H), save_fig(fig, file.path(MSFIG, 
+        "fig3.png"), w = W2, h = FIG3_H), save_fig(pA, file.path(ASSETS, 
+        "f_rna_pca_subtype.png"), w = 3.4, h = 2.6), save_fig(pB, 
+        file.path(ASSETS, "f_rna_pca_site.png"), w = 3.4, h = 2.6), 
+    save_fig(pC, file.path(ASSETS, "f_concordance.png"), w = 3.6, 
+        h = 2.6), save_fig(pD, file.path(ASSETS, "f_pc1_commonality.png"), 
+        w = W15, h = 2.6), save_fig(pE + pF + plot_layout(widths = c(1, 
+        0.85)), file.path(ASSETS, "f_rna_markers.png"), w = W15, 
+        h = 5), cat(sprintf("\nFig3 written: %s\n", file.path(MSFIG, 
+        "fig3.pdf"))), cat(sprintf("A/B: n = %d cell lines; PC1 %.1f%%, PC2 %.1f%%; sil overall %.3f, EC %.3f (n=%d)\n", 
+        N_LINES_RNA, var_pct[1], var_pct[2], sil_of("ALL"), sil_of("EC"), 
+        sil_n("EC"))), cat(sprintf("B  PC1 commonality raw/adj: unique subtype %.1f/%.1f%%, unique site %.1f/%.1f%%, shared %.1f/%.1f%%, joint %.1f/%.1f%%\n", 
+        100 * j1$unique_subtype, 100 * j1$adj_unique_subtype, 
+        100 * j1$unique_site, 100 * j1$adj_unique_site, 100 * 
+            j1$shared, 100 * j1$adj_shared, 100 * j1$r2_joint, 
+        100 * j1$adjr2_joint)), cat(sprintf("C  n = %d genes (of %d shared symbols, >=%d lines); median %.2f; %.1f%% negative\n", 
+        N_PERGENE, N_SHARED, MIN_LINES, gw_med, 100 * FRAC_NEG)), 
+    message("D  PC1 raw commonality compares all models with one model per patient."), 
+    cat(sprintf("Model-level marker reference (E uses patient means): %d rows in %d groups; lands_right = %d/%d; EC lands_right = %d/%d\n", 
+        N_MARK, length(grp_run$values), sum(ms$lands_right, na.rm = TRUE), 
+        sum(!is.na(ms$lands_right)), sum(ms$lands_right[ms$marks_code == 
+            "EC"], na.rm = TRUE), sum(ms$marks_code == "EC", 
+            na.rm = TRUE))), message("35_fig3_biology.R complete."))

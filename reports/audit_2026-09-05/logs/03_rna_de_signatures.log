@@ -1,0 +1,38 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Subtype n (RNA analysis set): HGS=15, CC=7, EC=2, MC=3, MMMT=2, SCCOHT=2
+Descriptive panel contrasts: HGS, CC, EC, MC, MMMT, SCCOHT
+
+=== Up-signature sizes (padj<0.05 & log2FC>1; real symbols) ===
+  subtype n_sig n_lines
+1     HGS  1966      15
+2      CC   400       7
+3      EC   279       2
+4      MC   157       3
+5    MMMT   201       2
+6  SCCOHT   297       2
+Bug-fix check: CC & MC signatures non-empty with real symbols. Examples —
+  CC: MIOX, SLC14A2, GGT1, AC256309.3, SLC12A3, PADI3, VNN1, PCSK5 
+  MC: MPIG6B, C4BPB, RHOXF1P3, HHLA2, APOD, ART4, VRTN, COL2A1 
+Building GO-BP gene sets from pinned org.Hs.eg.db ...
+GO-BP sets used (size 10-500): 6369
+
+=== GO recovery of EXPECTED subtype biology (best positive-NES hit) ===
+[HGS n=15] DNA repair (HR/DSB)          -> recovered (padj<0.05)
+     best: regulation of double-strand break repair via h NES=+1.70 p=1.7e-03 padj=4.6e-02 (1 terms padj<0.05)
+[CC n=7] oxidative/glutathione/detox  -> recovered (padj<0.05)
+     best: sulfur amino acid metabolic process            NES=+2.13 p=6.2e-05 padj=4.3e-03 (3 terms padj<0.05)
+[MC n=3] glycan/oligosaccharide       -> suggestive (nominal p<0.05)
+     best: oligosaccharide catabolic process              NES=+1.77 p=9.8e-03 padj=1.2e-01 (0 terms padj<0.05)
+[MMMT n=2] EMT / migration / ECM        -> not recovered
+     best: negative regulation of vascular associated smo NES=+1.41 p=9.8e-02 padj=4.5e-01 (0 terms padj<0.05)
+[SCCOHT n=2] cell cycle / mitosis         -> recovered (padj<0.05)
+     best: replication fork processing                    NES=+2.37 p=7.7e-07 padj=3.5e-05 (28 terms padj<0.05)
+
+--- Recovery-grade stability across 3 fgsea seeds (nPermSimple=50000) ---
+Error: unexpected 'if' in:
+"                row.names = FALSE)
+if"
+Execution halted

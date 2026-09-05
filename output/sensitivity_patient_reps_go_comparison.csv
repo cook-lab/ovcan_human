@@ -1,0 +1,6 @@
+subtype,program,n_group_31,best_term_31,NES_31,pval_31,padj_31,status_31,n_group_28,best_term_28,NES_28,pval_28,padj_28,status_28,status_changed,same_best_term
+HGS,DNA repair (HR/DSB),15,regulation of double-strand break repair via homologous recombination,1.7,0.00168,0.0457,recovered (padj<0.05),12,positive regulation of double-strand break repair via homologous recombination,1.79,0.00237,0.0646,suggestive (nominal p<0.05),TRUE,FALSE
+CC,oxidative/glutathione/detox,7,sulfur amino acid metabolic process,2.13,6.22e-5,0.0043,recovered (padj<0.05),7,sulfur amino acid metabolic process,2.16,5.57e-5,0.0047,recovered (padj<0.05),FALSE,TRUE
+MC,glycan/oligosaccharide,3,oligosaccharide catabolic process,1.77,0.00978,0.119,suggestive (nominal p<0.05),3,oligosaccharide catabolic process,1.69,0.0174,0.15,suggestive (nominal p<0.05),FALSE,TRUE
+MMMT,EMT / migration / ECM,2,negative regulation of vascular associated smooth muscle cell migration,1.41,0.0978,0.447,not recovered,2,negative regulation of vascular associated smooth muscle cell migration,1.28,0.17,0.569,not recovered,FALSE,TRUE
+SCCOHT,cell cycle / mitosis,2,replication fork processing,2.37,7.74e-7,3.51e-5,recovered (padj<0.05),2,replication fork processing,2.37,1.03e-6,5.19e-5,recovered (padj<0.05),FALSE,TRUE

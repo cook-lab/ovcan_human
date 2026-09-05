@@ -1,0 +1,100 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Protein matrix: 8427 proteins x 31 lines (8.8% NA) | 70 zero-plex rows retained (carry no measurement)
+z reference sets: z per gene across all 31 RNA lines (log2 TPM+1) | z per gene across all 31 protein lines (log2 TMT relative abundance)  (NOT the 3 mucinous columns — the panel is not circular)
+
+=== Mucinous-origin WES variants (WES = TOV2414 only) ===
+ cell_line Hugo_Symbol                  variant   vaf is_driver
+   TOV2414        KRAS G12A (Missense_Mutation) 0.987      TRUE
+   TOV2414       SMAD4 H300fs (Frame_Shift_Del)    NA     FALSE
+
+=== Verdict-threshold SENSITIVITY: how many of the 60 threshold combinations give each verdict? ===
+ cell_line
+   TOV2414
+   VOA8762
+   VOA8771
+   VOA8771
+                                                             verdict_class  n
+ OVARIAN-COMPATIBLE expression (Mullerian-positive, not SATB2/CDX2-driven) 60
+                  GI-LEANING (Mullerian-low PAX8-/KRT7-, intestinal CDX2+) 60
+                  GI-LEANING (Mullerian-low PAX8-/KRT7-, intestinal CDX2+) 12
+                                      GI/COLORECTAL-LEANING (SATB2+/CDX2+) 48
+ pct_of_grid
+         100
+         100
+          20
+          80
+ cell_line n_distinct_verdicts
+   TOV2414                   1
+   VOA8762                   1
+   VOA8771                   2
+                                                                  headline
+ OVARIAN-COMPATIBLE expression (Mullerian-positive, not SATB2/CDX2-driven)
+                  GI-LEANING (Mullerian-low PAX8-/KRT7-, intestinal CDX2+)
+                                      GI/COLORECTAL-LEANING (SATB2+/CDX2+)
+  => a line with n_distinct_verdicts == 1 is a conclusion; > 1 means the verdict
+      depends on the (uncalibrated) threshold convention and must be stated as such.
+
+=== The 3 mucinous lines against the FULL panel distribution (not 3 columns) ===
+ symbol   assay VOA8771_z VOA8762_z TOV2414_z VOA8771_rank VOA8762_rank
+   CDX2     RNA      3.64      2.52      0.21        31/31        30/31
+  KRT20     RNA      0.17      0.75      5.19        28/31        29/31
+   KRT7     RNA     -1.16     -0.73      1.10         7/31         8/31
+   MUC2     RNA     -0.40     -0.05     -0.04        16/31        25/31
+ MUC5AC     RNA     -0.25     -0.22      5.22         1/31        25/31
+   PAX8     RNA     -1.23     -1.15      0.28         7/31         8/31
+  SATB2     RNA      0.80     -0.59      0.17        23/31        15/31
+   TFF1     RNA      0.02      0.56      0.35        25/31        29/31
+   TFF3     RNA      0.35      2.39     -0.39        25/31        30/31
+    WT1     RNA     -0.42     -0.84     -1.00        14/31         6/31
+  KRT20 protein      1.06     -0.04      4.17        30/31        21/31
+   KRT7 protein     -0.98     -1.55      2.58         4/31         1/31
+ MUC5AC protein     -0.14     -0.43      4.25        17/31         9/31
+   PAX8 protein      0.21     -1.95      0.07        19/31         1/31
+   TFF1 protein      0.79     -0.26      1.17        25/31        17/31
+    WT1 protein      0.02     -0.63      1.27        13/31        10/31
+ TOV2414_rank VOA8771_pctile VOA8762_pctile TOV2414_pctile
+        25/31           98.4           95.2           79.0
+        31/31           88.7           91.9           98.4
+        31/31           21.0           24.2           98.4
+        26/31           50.0           79.0           82.3
+        31/31            1.6           79.0           98.4
+        11/31           21.0           24.2           33.9
+        19/31           72.6           46.8           59.7
+        27/31           79.0           91.9           85.5
+        19/31           79.0           95.2           59.7
+         1/31           43.5           17.7            1.6
+        31/31           95.2           66.1           98.4
+        31/31           11.3            1.6           98.4
+        31/31           53.2           27.4           98.4
+        15/31           59.7            1.6           46.8
+        28/31           79.0           53.2           88.7
+        30/31           40.3           30.6           95.2
+Wrote output/auth_mucinous_marker_ranks.csv (496 marker x line x assay rows) and output/auth_mucinous_sensitivity.csv
+
+=== Mucinous authentication verdicts ===
+ cell_line KRT7_z PAX8_z SATB2_rna_z CDX2_rna_z MUC5AC_z ovarian_index KRAS
+   TOV2414   2.58   0.28        0.17       0.21     4.25          1.26 G12A
+   VOA8762  -1.55  -1.15       -0.59       2.52    -0.43         -0.76 <NA>
+   VOA8771  -0.98  -1.23        0.80       3.64    -0.14         -1.91 <NA>
+                   APC             SMAD4
+ no retained candidate candidate present
+                no WES            no WES
+                no WES            no WES
+
+TOV2414: OVARIAN-COMPATIBLE expression (Mullerian-positive, not SATB2/CDX2-driven) [measured: KRT7 z=+2.58, PAX8 z=+0.28, SATB2 z=+0.17, CDX2 z=+0.21, MUC5AC z=+4.25, ovarian_index=+1.26]. Published ovarian derivation (Cellosaurus CVCL_A1SR; Sauriol 2020) and a matching KRAS G12A candidate observed here, so the ovarian call does not rest on expression alone. Carries a tumour-only candidate SMAD4 frameshift + low SMAD4 mRNA — a co-occurring event (SMAD4 loss occurs in a subset of MOC), NOT evidence of pancreatic origin given the published derivation/reference STR record. NB its measured SATB2 is NOT low (see literature_vs_measured).
+   provenance: Cellosaurus CVCL_A1SR; primary paper Sauriol 2020 REPORTS (their IHC/sequencing, not measured here): KRAS G12A, SATB2-negative, focal PAX8+
+
+VOA8762: GI-LEANING (Mullerian-low PAX8-/KRT7-, intestinal CDX2+) [measured: KRT7 z=-1.55, PAX8 z=-1.15, SATB2 z=-0.59, CDX2 z=+2.52, MUC5AC z=-0.43, ovarian_index=-0.76]. NO external provenance (absent from Cellosaurus, no primary paper), so expression is the only in-house check and it can raise a flag but cannot call origin. STR + IHC required.
+   provenance: NONE (absent from Cellosaurus; no primary paper)
+
+VOA8771: GI/COLORECTAL-LEANING (SATB2+/CDX2+) [measured: KRT7 z=-0.98, PAX8 z=-1.23, SATB2 z=+0.80, CDX2 z=+3.64, MUC5AC z=-0.14, ovarian_index=-1.91]. NO external provenance (absent from Cellosaurus, no primary paper), so expression is the only in-house check and it can raise a flag but cannot call origin. STR + IHC required.
+   provenance: NONE (absent from Cellosaurus; no primary paper)
+Warning message:
+Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2. 
+
+Outputs: output/auth_mucinous.csv
+Figures: figs/11_mucinous_markers.pdf, figs/11_mucinous_scatter.pdf
+
+11_mucinous_authenticity.R complete.

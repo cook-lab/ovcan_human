@@ -1,0 +1,20 @@
+Wrote /Users/dpcook/Analysis/ovcan_human/metadata/line_family_map.csv
+Generated lines: 42  ->  independent patients: 34  (collapsed 8 lines)
+Multi-line families: 5  (1369, 2295, 3133, 3291, 3121)
+HGS with WES-MAF: 18 lines -> 11 patients
+
+Multi-line families:
+ cell_line patient_id subtype patient_representative has_wes_maf
+ OV1369-R2       1369     HGS                   TRUE        TRUE
+   TOV1369       1369     HGS                  FALSE        TRUE
+    OV2295       2295     HGS                   TRUE        TRUE
+ OV2295-R2       2295     HGS                  FALSE        TRUE
+ TOV2295-R       2295     HGS                  FALSE        TRUE
+  TOV3121D       3121     HGS                   TRUE        TRUE
+ TOV3121EP       3121     HGS                  FALSE        TRUE
+  OV3133-R       3133     HGS                   TRUE        TRUE
+ OV3133-R2       3133     HGS                  FALSE        TRUE
+  TOV3133D       3133     HGS                  FALSE        TRUE
+  TOV3133G       3133     HGS                  FALSE        TRUE
+    OV3291       3291     HGS                  FALSE        TRUE
+  TOV3291G       3291     HGS                   TRUE       FALSE

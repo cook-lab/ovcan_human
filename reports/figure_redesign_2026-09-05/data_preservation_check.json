@@ -1,0 +1,22 @@
+[
+  {
+    "path": "app/data.js",
+    "unchanged": true
+  },
+  {
+    "path": "app/index.html",
+    "unchanged": true
+  },
+  {
+    "path": "app/ovcan_viewer_standalone.html",
+    "unchanged": true
+  },
+  {
+    "path": "metadata/resource_models.csv",
+    "unchanged": true
+  },
+  {
+    "path": "release/SHA256SUMS",
+    "unchanged": true
+  }
+]

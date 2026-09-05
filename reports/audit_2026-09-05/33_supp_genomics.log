@@ -1,0 +1,19 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+There were 50 or more warnings (use warnings() to see the first 50)
+figs5: 23 lines; CNV-only (no MAF): 
+  Columns: consecutive 10 Mb autosome bins ordered p→q within each chromosome (300 bins); value = segment-length-weighted mean CNVkit log2 copy ratio in the bin (median 185 segments per line, range 88–481); per-sample autosome probe-weighted median centring. Ruler ticks every 50 Mb. Colour ramp is symmetric about 0 and CLAMPED at ±1.5. Grey = no segment overlap in the bin.  FGA = fraction of assessed autosome with |log2| > 0.20; the near-blank row is TOV81D (FGA 0.021, the panel minimum). All 23 models also have mutation candidates. Public normals used the same capture kit (author-confirmed). Relative ratios do not establish absolute ploidy or LOH.
+Wrote figs5.{pdf,png} + reports/assets/f_wes_cnv.png
+figs6: DIF 5 / PRO 2 / IMR 3 / MES 5 | consensusOV 1.30.0 | IMR+MES 8/15 | margins<0.10: 6 (0.022, 0.044, 0.064, 0.068, 0.088, 0.090), median 0.158 | 1 unstable (OV2085)
+Wrote figs6.{pdf,png}

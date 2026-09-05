@@ -1,0 +1,55 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+RNA analysis set: 31 lines | subtypes: HGS=15, CC=7, EC=2, MC=3, MMMT=2, SCCOHT=2
+[1] TRUE
+Note: importing `abundance.h5` is typically faster than `abundance.tsv`
+reading in files with read_tsv
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 31 
+summarizing abundance
+summarizing counts
+summarizing length
+summarizing inferential replicates
+Exact-reference gene matrix: 39733 genes x 31 models; 100% transcript estimates retained
+using counts and average transcript lengths from tximport
+Warning messages:
+1: In S4Vectors:::anyMissing(runValue(x_seqnames)) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+2: In S4Vectors:::anyMissing(runValue(strand(x))) :
+  'S4Vectors:::anyMissing()' is deprecated.
+Use 'anyNA()' instead.
+See help("Deprecated")
+using 'avgTxLength' from assays(dds), correcting for library size
+Gene filter: 39733 -> 22678 genes (>=10 counts in >=2 lines)
+
+=== RNA QC summary ===
+# A tibble: 1 × 8
+      n pseudo_med pseudo_min assignedM_med fragM_med fragM_min fragM_max
+  <int>      <dbl>      <dbl>         <dbl>     <dbl>     <dbl>     <dbl>
+1    31       91.1       85.8          57.5      64.3      45.1      97.0
+# ℹ 1 more variable: det_med <dbl>
+
+By site (batch check — medians, then tests):
+                 site  n pseudoalign_median detected_median
+           Mes-Masson 19               92.2           19962
+             Huntsman 11               88.1           20912
+ Huntsman/Vanderhyden  1               87.9           20270
+ assigned_gene_counts_median n_processed_fragments_median
+                    55283262                     60039237
+                    69471725                     77763503
+                    44435821                     50544636
+
+Wilcoxon Mes-Masson vs Huntsman: genes detected p=0.008189 (normal approx 0.009818) | fragments p=0.3721 | assigned counts p=0.767 | pseudoalign% p=1.122e-05
+Across all 31 lines: pseudoalign vs genes detected r=-0.639 (p=0.000108) -> the lower-alignment
+  site detects MORE genes, not fewer. Depth predicts detection line-by-line (r=0.500, p=0.00414),
+  but the SITE depth difference is not significant (p=0.37) - report depth as the mechanism for
+  the detection spread, NOT as an established site effect.
+Warning message:
+In grid.Call.graphics(C_text, as.graphicsAnnot(x$label), x$x, x$y,  :
+  for 'RNA-seq QC — genes detected per line' in 'mbcsToSbcs': - substituted for — (U+2014)
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_01_rna_load_qc.txt
+
+01_rna_load_qc.R complete. Outputs in output/ ; QC figure in figs/.

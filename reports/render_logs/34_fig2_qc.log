@@ -1,0 +1,14 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Bridge correlations validated against output/prot_bridge_cor.csv.
+
+Fig2 written: /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig2.pdf
+A/B RNA QC (n = 31 lines): median pseudoalign 91.1%, detected 18.8-21.6 k
+   per-site median genes detected: Mes-Masson 19817 (n=19) vs Huntsman 20765 (n=11) = +948 (+4.8%), Wilcoxon p = 0.0082
+   depth: 60.0 vs 77.8 M fragments (p = 0.37); assigned 54.4 vs 68.3 M (p = 0.77); r(depth, detected) = 0.50
+C compression: 97.8% of 7896 paired genes have protein IQR < RNA IQR; median ratio 0.30 (SD ratio 0.32)
+D accounting: bars sum to 8427 (= 8430 search − 3 no-symbol); 0-plex = 70; complete = 6855
+E CV: vendor 11.0% -> 3.0%; bridge 21.3% -> 5.2% across deciles 1..10
+F bridge (4 links, 4 different lines; VOA3993 external): bias -0.028..+0.009, SD(diff) 0.211-0.268, per-measurement CV 10.4-13.2%,
+  LoA span 0.83-1.05 = 0.52-0.66x the cross-model difference span 1.59 (like-for-like, both 95% difference intervals)
+34_fig2_qc.R complete.

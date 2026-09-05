@@ -1,0 +1,11 @@
+# Refresh only the GO plotting block after wording edits, using deposited statistics.
+source("scripts/00_setup.R")
+suppressPackageStartupMessages(library(tidyverse))
+gsea_all <- readr::read_csv(file.path(OUT, "rna_de_gsea_go.csv"), show_col_types = FALSE)
+subtypes <- c("HGS", "CC", "EC", "MC", "MMMT", "SCCOHT")
+lines <- readLines("scripts/03_rna_de_signatures.R")
+start <- which(grepl("^top_go <-", lines))
+end <- which(grepl('^ggsave.*03_rna_gsea_go_dotplot', lines))
+stopifnot(length(start) == 1L, length(end) == 1L, end > start)
+eval(parse(text = lines[start:end]))
+cat("GO plot wording refreshed from deposited statistics.\n")

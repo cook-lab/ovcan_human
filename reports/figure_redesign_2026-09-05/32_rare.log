@@ -1,0 +1,3 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | diverging palette: slate-white-rust | captions external
+Figure 5 complete: six panels; data unchanged; interpretive notes external.

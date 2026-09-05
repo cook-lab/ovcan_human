@@ -1,0 +1,80 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+
+=== HRD feasibility — data checks ===
+Allele-specific columns found in CNVkit .cnr/.cns/.call.cns: NONE 
+.call.cns columns: chromosome, start, end, gene, log2, cn, depth, p_ttest, probes, weight
+CNVkit batch calls: 23 total, 0 passed a SNP --vcf (BAF input)
+Tumor recal BAMs archived: 0 (any .bam: 1 -> SRR4039087.bam)
+[1] TRUE
+
+=== Recoverable WES pipeline parameters (-> wes_pipeline_parameters.csv) ===
+                             step                 parameter
+             CNV calling (CNVkit)                      tool
+             CNV calling (CNVkit)                   version
+             CNV calling (CNVkit)           container image
+             CNV calling (CNVkit)    reference genome FASTA
+             CNV calling (CNVkit)          target intervals
+             CNV calling (CNVkit)      antitarget intervals
+             CNV calling (CNVkit)                     flags
+             CNV calling (CNVkit)       n samples processed
+                      WES capture      capture kit identity
+                      WES capture     capture interval file
+ CNV reference (panel of normals)              normals used
+ CNV reference (panel of normals)   kit-matched to tumours?
+            SNV calling (Mutect2)            matched normal
+                     Genome build       build actually used
+                Proteomics search         search parameters
+             CNV target footprint       derived target bins
+            SNV calling (Mutect2)           Mutect2 version
+                Variant filtering FilterMutectCalls version
+               Variant annotation       Ensembl VEP version
+                                                                                                                                  value
+                                                                                                                        cnvkit.py batch
+                                                                                                                                 0.9.10
+                                                                                                        cnvkit-0.9.10--pyhdfd78af_0.img
+                       /scratch/asmab/ovcan/references/Homo_sapiens/GATK/GRCh38/Sequence/WholeGenomeFasta/Homo_sapiens_assembly38.fasta
+                                                                                              /scratch/asmab/ovcan/intervals_sorted.bed
+                                                                                          /scratch/asmab/ovcan/intervals.antitarget.bed
+                                                                                                --diagram --drop-low-coverage --scatter
+                                                                                                                                     23
+                                                                                                                        NOT RECOVERABLE
+                                                                                                                   intervals_sorted.bed
+                                                                             SRR4039087; SRR4039088; SRR4039089; SRR4039096; SRR4039097
+                                                    SAME CAPTURE KIT (author-confirmed, v5 comment 31); kit name/design version pending
+                                                                             NONE (tumour-only; n_ref/n_alt columns empty in every MAF)
+                                          GRCh38/hg38 (MAF NCBI_Build field reads 'GRCh37' — a spurious vcf2maf default; see 16 header)
+                                                                                                                        NOT RECOVERABLE
+ wes_cnvkit_target_intervals.bed; 35 identical archived copies; sha256 2177970ffdbc933e488067f812e3ae4760310bd9a40fadf4e2fa5389480d955d
+                                                                                                                                4.5.0.0
+                                                                                                                                4.5.0.0
+                                                                                                                                 v113.0
+ recoverable
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+       FALSE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+       FALSE
+        TRUE
+        TRUE
+        TRUE
+        TRUE
+
+17 of 19 parameters recoverable from the archive; 2 REQUIRE the PI: capture kit identity, search parameters
+
+=== GENOMIC HRD FEASIBILITY VERDICT: NOT FEASIBLE FROM ARCHIVED DATA ===
+Reason: no allele-specific copy number (no BAF split); scarHRD LOH/TAI/LST
+ cannot be computed from total-CN CNVkit output. No score is produced.
+
+09_wes_hrd.R complete. Wrote feasibility report -> /Users/dpcook/Analysis/ovcan_human/output/wes_hrd_feasibility.md
+  and machine-readable pipeline parameters -> /Users/dpcook/Analysis/ovcan_human/output/wes_pipeline_parameters.csv
+  Verdict: NOT FEASIBLE FROM ARCHIVED DATA (no HRD score fabricated).

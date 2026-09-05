@@ -1,0 +1,6 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | diverging palette: slate-white-rust | captions external
+Bridge correlations validated against output/prot_bridge_cor.csv.
+Figure2: 31 RNA models; 8035 paired-spread genes; 8427 protein features; 29349 bridge points.
+Bridge display clips 0.191% of points beyond +/-1.6 log2.
+34_fig2_qc.R complete.

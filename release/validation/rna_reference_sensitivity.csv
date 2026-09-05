@@ -1,0 +1,2 @@
+status,n_models,n_targets,n_genes,max_frac_unmapped,reference_release,note
+resolved by exact versioned transcript mapping,31,185299,39733,0,93,All target IDs and lengths verified; all estimated counts and TPM retained

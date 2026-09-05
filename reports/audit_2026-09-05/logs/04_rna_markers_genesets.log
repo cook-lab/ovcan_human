@@ -1,0 +1,129 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Warning message:
+package ‘S4Vectors’ was built under R version 4.5.3 
+Symbol-level matrix: 35882 symbols x 31 lines
+null device 
+          1 
+
+=== Canonical marker recovery (per-subtype mean log2 TPM) ===
+ marks_code  symbol direction HGS_mean CC_mean EC_mean MC_mean MMMT_mean
+        HGS    PAX8        up     6.39    7.85    0.03    3.66      6.40
+        HGS     WT1        up     2.93    0.69    1.12    0.51      1.59
+        HGS   MUC16        up     2.50    1.22    0.01    3.25      0.06
+        HGS   MECOM        up     2.80    3.72    0.92    3.35      5.70
+        HGS   SOX17        up     5.43    3.47    0.00    2.13      4.86
+         CC   HNF1B        up     1.17    5.40    0.02    2.94      5.81
+         CC   NAPSA        up     0.55    2.69    0.97    1.16      4.31
+         CC    SPP1        up     3.07    9.06    4.34    6.25      1.14
+         CC    GPX3        up     7.00    6.75    1.57    5.06      9.68
+         CC    GCLC        up     4.12    4.25    4.13    4.46      3.46
+         EC    ESR1        up     1.84    0.55    0.03    0.25      0.04
+         EC     PGR        up     0.22    0.00    0.00    0.01      0.00
+         EC  ARID1A      down     4.22    4.44    5.17    4.63      3.35
+         MC    CDX2        up     0.57    0.11    0.06    3.40      0.00
+         MC    MUC2        up     0.05    0.06    0.00    0.03      0.00
+         MC    TFF1        up     1.00    0.62    0.00    1.42      0.00
+         MC    TFF3        up     1.76    0.51    0.00    2.82      0.01
+         MC   KRT20        up     0.02    0.07    0.65    2.79      0.00
+         MC  MUC5AC        up     0.12    0.01    0.00    1.43      0.00
+       MMMT     VIM        up     7.13    7.95   12.76    3.00      9.81
+       MMMT    ZEB1        up     1.19    1.80    3.72    0.46      3.36
+       MMMT    CDH2        up     2.56    0.75    5.81    4.45      3.08
+       MMMT   SNAI2        up     1.11    1.02    0.43    1.70      1.19
+     SCCOHT SMARCA4      down     6.02    5.87    5.18    6.04      6.64
+     SCCOHT SMARCA2      down     2.70    4.16    4.10    3.90      4.69
+       <NA>   MKI67        up     3.93    3.77    5.13    4.87      4.50
+ SCCOHT_mean rank_in top_subtype lands_right
+        0.85       3          CC       FALSE
+        3.94       2      SCCOHT        TRUE
+        0.02       2          MC        TRUE
+        2.48       4        MMMT       FALSE
+        4.48       1         HGS        TRUE
+        0.03       2        MMMT        TRUE
+        1.41       2        MMMT        TRUE
+        3.93       1          CC        TRUE
+        0.72       3        MMMT       FALSE
+        3.76       2          MC        TRUE
+        0.12       6         HGS       FALSE
+        0.26       5      SCCOHT       FALSE
+        5.71       2      SCCOHT       FALSE
+        0.00       1          MC        TRUE
+        0.06       4      SCCOHT       FALSE
+        0.00       1          MC        TRUE
+        0.00       1          MC        TRUE
+        0.00       1          MC        TRUE
+        0.00       1          MC        TRUE
+        7.03       2          EC        TRUE
+        3.83       3      SCCOHT       FALSE
+        4.22       4          EC       FALSE
+        0.06       2          MC        TRUE
+        5.35       5        MMMT        TRUE
+        0.09       6        MMMT        TRUE
+        5.67      NA      SCCOHT          NA
+
+Markers landing in the expected subtype: 16 / 25 graded (top-2 & expressed for 'up'; bottom-2 for 'down'; MKI67 excluded as control)
+Not landing (worth noting): PAX8, MECOM, GPX3, ESR1, PGR, ARID1A, MUC2, ZEB1, CDH2 
+
+=== Marker recovery against a JOINT label-permutation null (correlation-preserving) ===
+                                                  unit n_samples observed
+                                        31 line models        31       16
+                            28 patient representatives        28       15
+ 28 patient representatives; within-centre permutation        28       15
+ n_markers null_mean null_p95 permutation_p binomial_p
+        25    6.7097       11        0.0015         NA
+        25    6.8223       12        0.0048         NA
+        25    8.4602       13        0.0100         NA
+The permutation p is the quotable one: the binomial p assumes marker independence,
+which the co-regulation of same-histotype markers violates.
+
+=== EC marker check (Hollis 2020 panel), reported at the n that exists ===
+EC group n=2 (TOV112D + VOA4395); the resource reclassifies TOV112D -> SCCOHT-like,
+so VOA4395 is the sole EC model. z is across all 31 lines.
+ symbol log2_tpm_TOV112D log2_tpm_VOA4395 z_all31_TOV112D z_all31_VOA4395
+ ARID1A            5.722            4.613           1.648           0.256
+   ESR1            0.051            0.000          -0.753          -0.791
+    PGR            0.003            0.000          -0.257          -0.264
+    VIM           12.926           12.595           1.560           1.466
+
+EC subtype means vs the best-scoring subtype for each EC marker:
+ symbol direction EC_mean mean_in rank_in top_subtype lands_right
+   ESR1        up    0.03    0.03       6         HGS       FALSE
+    PGR        up    0.00    0.00       5      SCCOHT       FALSE
+ ARID1A      down    5.17    5.17       2      SCCOHT       FALSE
+    VIM        up   12.76    9.81       2          EC        TRUE
+VIM is the 4th Hollis EC marker; it is scored under MMMT/EMT above and is NOT
+  double-counted for EC (broadly expressed in 2D culture -> poor discriminator).
+
+=== SWI/SNF: key lines (rank 1 = lowest of 31) ===
+ cell_line subtype SMARCA4_tpm SMARCA4_rank SMARCA2_tpm SMARCA2_rank ARID1A_tpm
+   TOV112D      EC       11.90            2        0.35            4      51.78
+    COV434  SCCOHT       16.46            3        0.11            2      73.08
+     BIN67  SCCOHT       94.71           23        0.03            1      35.80
+ SMARCB1_tpm
+      150.08
+      114.13
+       87.69
+
+SMARCA4 5 lowest: VOA4841, TOV112D, COV434, VOA10816, OV3133-R 
+SMARCA2 5 lowest: BIN67, COV434, OV2085, TOV112D, OV90 
+null device 
+          1 
+Hallmark sets: 50 (v7.4)
+null device 
+          1 
+
+=== Top Hallmark sets by mean z per subtype (validation read; n annotated) ===
+[HGS n=15] REACTIVE_OXYGEN_SPECIES_PATHWAY(0.58), MYC_TARGETS_V2(0.47), ESTROGEN_RESPONSE_EARLY(0.46)
+[CC n=7] P53_PATHWAY(0.83), PI3K_AKT_MTOR_SIGNALING(0.68), TGF_BETA_SIGNALING(0.66)
+[EC n=2] MYC_TARGETS_V1(1.26), G2M_CHECKPOINT(0.96), OXIDATIVE_PHOSPHORYLATION(0.91)
+[MC n=3] FATTY_ACID_METABOLISM(1.64), ANGIOGENESIS(1.41), BILE_ACID_METABOLISM(1.39)
+[MMMT n=2] PROTEIN_SECRETION(1.57), HEDGEHOG_SIGNALING(1.21), NOTCH_SIGNALING(1.05)
+[SCCOHT n=2] MYC_TARGETS_V1(1.70), E2F_TARGETS(1.31), G2M_CHECKPOINT(1.23)
+
+Outputs: output/rna_markers_summary.csv, rna_ec_markers.csv, rna_swisnf.csv, rna_geneset_scores.csv
+Figures: figs/04_rna_markers_heatmap.pdf, 04_rna_swisnf.pdf, 04_rna_hallmark_singscore_heatmap.pdf
+NOTE: Hallmark scoring here is PER LINE (n=31), not per patient.
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_04_rna_markers_genesets.txt
+
+04_rna_markers_genesets.R complete.

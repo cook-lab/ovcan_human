@@ -1,0 +1,4 @@
+unit,n_samples,observed,n_markers,null_mean,null_median,null_p95,null_max,n_perm,permutation_p,binomial_p,null_model,seed
+31 line models,31,16,25,6.70975,7,11,18,20000,0.0014999250037498126,NA,joint histotype-label permutation; marker correlation and group sizes preserved; source not conditioned,1234
+28 patient representatives,28,15,25,6.8223,7,12,18,20000,0.0047997600119994,NA,joint histotype-label permutation; marker correlation and group sizes preserved; source not conditioned,1234
+28 patient representatives; within-centre permutation,28,15,25,8.4602,8,13,18,20000,0.010049497525123744,NA,joint histotype-label permutation within contributing centre; patient representatives; source composition preserved,1234

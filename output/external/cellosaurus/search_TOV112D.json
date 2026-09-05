@@ -1,0 +1,5203 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_3612"
+          }
+        ],
+        "age": "42Y",
+        "category": "Cancer cell line",
+        "child-list": [
+          {
+            "accession": {
+              "type": "primary",
+              "value": "CVCL_IQ56"
+            },
+            "name": {
+              "type": "identifier",
+              "value": "TOV-112DR"
+            }
+          }
+        ],
+        "comment-list": [
+          {
+            "category": "Population",
+            "value": "Caucasian"
+          },
+          {
+            "category": "Part of",
+            "value": "OCCP ovarian cancer cell line panel"
+          },
+          {
+            "category": "Part of",
+            "value": "MD Anderson Cell Lines Project"
+          },
+          {
+            "category": "Part of",
+            "value": "KuDOS 95 cell line panel"
+          },
+          {
+            "category": "Part of",
+            "value": "COSMIC cell lines project"
+          },
+          {
+            "category": "Part of",
+            "value": "Cancer Dependency Map project (DepMap) (includes Cancer Cell Line Encyclopedia - CCLE)"
+          },
+          {
+            "category": "Group",
+            "value": "Patented cell line"
+          }
+        ],
+        "created": "2012-04-04",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "In situ",
+              "value": "Ovary",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0000992",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0000992",
+                  "label": "ovary",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0000992"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C7979",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C7979",
+            "label": "Ovarian endometrioid adenocarcinoma",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C7979"
+          },
+          {
+            "accession": "Orphanet_454723",
+            "category": "Medical resources",
+            "database": "ORDO",
+            "iri": "http://www.orpha.net/ORDO/Orphanet_454723",
+            "label": "Endometrioid carcinoma of ovary",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/ordo/classes/http%253A%252F%252Fwww.orpha.net%252FORDO%252FOrphanet_454723"
+          }
+        ],
+        "doubling-time-list": [
+          {
+            "doubling-time-value": "29.13 hours",
+            "source-list": [
+              {
+                "institution": "JWGray panel",
+                "value": "JWGray panel"
+              }
+            ]
+          },
+          {
+            "doubling-time-value": "1.49 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              }
+            ]
+          },
+          {
+            "doubling-time-value": "22 hours",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=25984343"
+                }
+              }
+            ]
+          },
+          {
+            "doubling-time-value": "1.0 +- 0.2 days",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=18507860"
+                }
+              }
+            ]
+          },
+          {
+            "doubling-time-value": "0.8 day",
+            "source-list": [
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=10949993"
+                }
+              }
+            ]
+          }
+        ],
+        "doubling-time-range": {
+          "max": "36",
+          "min": "19",
+          "unit": "hour"
+        },
+        "entry-version": "46",
+        "genome-ancestry": {
+          "population-list": [
+            {
+              "population-name": "African",
+              "population-percentage": "0"
+            },
+            {
+              "population-name": "Native American",
+              "population-percentage": "0.33"
+            },
+            {
+              "population-name": "East Asian, North",
+              "population-percentage": "2.98"
+            },
+            {
+              "population-name": "East Asian, South",
+              "population-percentage": "0"
+            },
+            {
+              "population-name": "South Asian",
+              "population-percentage": "0.16"
+            },
+            {
+              "population-name": "European, North",
+              "population-percentage": "53.45"
+            },
+            {
+              "population-name": "European, South",
+              "population-percentage": "43.09"
+            }
+          ],
+          "source": {
+            "reference": {
+              "resource-internal-ref": "PubMed=30894373"
+            }
+          }
+        },
+        "hla-typing-list": [
+          {
+            "hla-gene-alleles-list": [
+              {
+                "alleles": "03:01,03:01",
+                "gene": "HLA-A"
+              },
+              {
+                "alleles": "14:01,14:01",
+                "gene": "HLA-B"
+              },
+              {
+                "alleles": "08:02,08:02",
+                "gene": "HLA-C"
+              }
+            ],
+            "source": {
+              "reference": {
+                "resource-internal-ref": "PubMed=26589293"
+              }
+            }
+          }
+        ],
+        "last-updated": "2025-04-10",
+        "microsatellite-instability-list": [
+          {
+            "msi-value": "Stable (MSS)",
+            "source-list": [
+              {
+                "institution": "Sanger",
+                "value": "Sanger"
+              }
+            ]
+          }
+        ],
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "TOV-112D"
+          },
+          {
+            "type": "synonym",
+            "value": "TOV-112d"
+          },
+          {
+            "type": "synonym",
+            "value": "TOV112D"
+          },
+          {
+            "type": "synonym",
+            "value": "TOV-112"
+          },
+          {
+            "type": "synonym",
+            "value": "TOV112"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Genomics",
+            "value": "DNA methylation analysis."
+          },
+          {
+            "branch": "Genomics",
+            "value": "Whole exome sequencing."
+          },
+          {
+            "branch": "Genomics",
+            "value": "Whole genome sequencing."
+          },
+          {
+            "branch": "Phenotyping",
+            "value": "CRISPR screening."
+          },
+          {
+            "branch": "Phenotyping",
+            "value": "Drug screening."
+          },
+          {
+            "branch": "Phenotyping",
+            "value": "shRNA library screening."
+          },
+          {
+            "branch": "Proteomics"
+          },
+          {
+            "branch": "Proteomics",
+            "value": "Expression; Reverse-phase protein array."
+          },
+          {
+            "branch": "Proteomics",
+            "value": "Quantitative."
+          },
+          {
+            "branch": "Transcriptomics",
+            "value": "Microarray."
+          },
+          {
+            "branch": "Transcriptomics",
+            "value": "RNAseq."
+          },
+          {
+            "branch": "Variations",
+            "value": "Array-based CGH."
+          },
+          {
+            "branch": "Variations",
+            "value": "SNP array analysis."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "Patent=US5710038"
+          },
+          {
+            "resource-internal-ref": "PubMed=10949993"
+          },
+          {
+            "resource-internal-ref": "PubMed=11641787"
+          },
+          {
+            "resource-internal-ref": "PubMed=16380993"
+          },
+          {
+            "resource-internal-ref": "PubMed=18507860"
+          },
+          {
+            "resource-internal-ref": "PubMed=19058220"
+          },
+          {
+            "resource-internal-ref": "PubMed=19288585"
+          },
+          {
+            "resource-internal-ref": "PubMed=20204287"
+          },
+          {
+            "resource-internal-ref": "PubMed=22328975"
+          },
+          {
+            "resource-internal-ref": "PubMed=22460905"
+          },
+          {
+            "resource-internal-ref": "PubMed=22710073"
+          },
+          {
+            "resource-internal-ref": "PubMed=22931248"
+          },
+          {
+            "resource-internal-ref": "PubMed=24023729"
+          },
+          {
+            "resource-internal-ref": "PubMed=25230021"
+          },
+          {
+            "resource-internal-ref": "PubMed=25485619"
+          },
+          {
+            "resource-internal-ref": "PubMed=25877200"
+          },
+          {
+            "resource-internal-ref": "PubMed=25984343"
+          },
+          {
+            "resource-internal-ref": "PubMed=26589293"
+          },
+          {
+            "resource-internal-ref": "PubMed=27235858"
+          },
+          {
+            "resource-internal-ref": "PubMed=27397505"
+          },
+          {
+            "resource-internal-ref": "PubMed=27561551"
+          },
+          {
+            "resource-internal-ref": "PubMed=28196595"
+          },
+          {
+            "resource-internal-ref": "PubMed=30485824"
+          },
+          {
+            "resource-internal-ref": "PubMed=30894373"
+          },
+          {
+            "resource-internal-ref": "PubMed=30971826"
+          },
+          {
+            "resource-internal-ref": "PubMed=31068700"
+          },
+          {
+            "resource-internal-ref": "PubMed=33328126"
+          },
+          {
+            "resource-internal-ref": "PubMed=35839778"
+          }
+        ],
+        "registration-list": [
+          {
+            "registration-number": "CRL-11371",
+            "registry": "International Depositary Authority, American Type Culture Collection (ATCC)"
+          }
+        ],
+        "sequence-variation-list": [
+          {
+            "mutation-description": "p.Ser37Ala (c.109T>G)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACH-000048",
+                  "category": "Cell line databases/resources",
+                  "database": "DepMap",
+                  "url": "https://depmap.org/portal/cell_line/ACH-000048"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:2514",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "CTNNB1",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:2514"
+              },
+              {
+                "accession": "VCV000376235",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000376235"
+              }
+            ],
+            "zygosity-type": "Homozygous"
+          },
+          {
+            "mutation-description": "p.Leu639fs (c.1915delC)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACH-000048",
+                  "category": "Cell line databases/resources",
+                  "database": "DepMap",
+                  "url": "https://depmap.org/portal/cell_line/ACH-000048"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=33328126"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11100",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "SMARCA4",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11100"
+              }
+            ],
+            "zygosity-type": "Homozygous"
+          },
+          {
+            "mutation-description": "p.Arg175His (c.524G>A)",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACH-000048",
+                  "category": "Cell line databases/resources",
+                  "database": "DepMap",
+                  "url": "https://depmap.org/portal/cell_line/ACH-000048"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=33328126"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=25230021"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=24023729"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=22931248"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=20204287"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=18507860"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=10949993"
+                }
+              }
+            ],
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11998",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "TP53",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11998"
+              },
+              {
+                "accession": "VCV000012374",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000012374"
+              }
+            ],
+            "zygosity-type": "Unspecified"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8"
+                }
+              ]
+            },
+            {
+              "conflict": "true",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,12",
+                  "source-list": [
+                    {
+                      "xref": {
+                        "accession": "1299070",
+                        "category": "Cell line databases/resources",
+                        "database": "Cosmic-CLP",
+                        "url": "https://cancer.sanger.ac.uk/cell_lines/sample/overview?id=1299070"
+                      }
+                    },
+                    {
+                      "xref": {
+                        "accession": "CRL-3593",
+                        "category": "Cell line collections (Providers)",
+                        "database": "ATCC",
+                        "url": "https://www.atcc.org/products/CRL-3593"
+                      }
+                    },
+                    {
+                      "reference": {
+                        "resource-internal-ref": "PubMed=30485824"
+                      }
+                    },
+                    {
+                      "reference": {
+                        "resource-internal-ref": "PubMed=25877200"
+                      }
+                    },
+                    {
+                      "reference": {
+                        "resource-internal-ref": "PubMed=22710073"
+                      }
+                    },
+                    {
+                      "institution": "Direct_author_submission",
+                      "value": "Direct_author_submission"
+                    }
+                  ]
+                },
+                {
+                  "marker-alleles": "11,12",
+                  "source-list": [
+                    {
+                      "reference": {
+                        "resource-internal-ref": "PubMed=25230021"
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D18S51",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D19S433",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "14"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "31"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D2S1338",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "19,24"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D3S1358",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "15"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,10"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D8S1179",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9,13"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "FGA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "20"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Penta D",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "Penta E",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "6"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "8,11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "18"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            {
+              "xref": {
+                "accession": "1299070",
+                "category": "Cell line databases/resources",
+                "database": "Cosmic-CLP",
+                "url": "https://cancer.sanger.ac.uk/cell_lines/sample/overview?id=1299070"
+              }
+            },
+            {
+              "xref": {
+                "accession": "CRL-3593",
+                "category": "Cell line collections (Providers)",
+                "database": "ATCC",
+                "url": "https://www.atcc.org/products/CRL-3593"
+              }
+            },
+            {
+              "reference": {
+                "resource-internal-ref": "PubMed=30485824"
+              }
+            },
+            {
+              "reference": {
+                "resource-internal-ref": "PubMed=25877200"
+              }
+            },
+            {
+              "reference": {
+                "resource-internal-ref": "PubMed=25230021"
+              }
+            },
+            {
+              "reference": {
+                "resource-internal-ref": "PubMed=22710073"
+              }
+            },
+            {
+              "institution": "Direct_author_submission",
+              "value": "Direct_author_submission"
+            }
+          ]
+        },
+        "web-page-list": [
+          {
+            "category": "Info",
+            "institution": "MCLP",
+            "specifier": "-",
+            "url": "https://tcpaportal.org/mclp/"
+          }
+        ],
+        "xref-list": [
+          {
+            "accession": "BTO_0005182",
+            "category": "Anatomy/cell type resources",
+            "database": "BTO",
+            "iri": "http://purl.obolibrary.org/obo/BTO_0005182",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/bto/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBTO_0005182"
+          },
+          {
+            "accession": "CLO_0009384",
+            "category": "Cell line databases/resources",
+            "database": "CLO",
+            "iri": "http://purl.obolibrary.org/obo/CLO_0009384",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/clo/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FCLO_0009384"
+          },
+          {
+            "accession": "EFO_0005263",
+            "category": "Experimental variables resources",
+            "database": "EFO",
+            "url": "https://www.ebi.ac.uk/efo/EFO_0005263"
+          },
+          {
+            "accession": "E-MTAB-2706",
+            "category": "Gene expression databases",
+            "database": "ArrayExpress",
+            "url": "https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MTAB-2706"
+          },
+          {
+            "accession": "E-MTAB-2770",
+            "category": "Gene expression databases",
+            "database": "ArrayExpress",
+            "url": "https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MTAB-2770"
+          },
+          {
+            "accession": "E-MTAB-3610",
+            "category": "Gene expression databases",
+            "database": "ArrayExpress",
+            "url": "https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MTAB-3610"
+          },
+          {
+            "accession": "CRL-3593",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "url": "https://www.atcc.org/products/CRL-3593"
+          },
+          {
+            "accession": "CRL-11731",
+            "category": "Cell line collections (Providers)",
+            "database": "ATCC",
+            "discontinued": "true"
+          },
+          {
+            "accession": "60408",
+            "category": "Cell line collections (Providers)",
+            "database": "BCRC",
+            "url": "https://catalog.bcrc.firdi.org.tw/BcrcContent?bid=60408"
+          },
+          {
+            "accession": "201",
+            "category": "CRISP screens repositories",
+            "database": "BioGRID_ORCS_Cell_line",
+            "url": "https://orcs.thebiogrid.org/Search?searchType=10&search=201&organism=all"
+          },
+          {
+            "accession": "SAMN03471348",
+            "category": "Biological sample resources",
+            "database": "BioSample",
+            "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN03471348"
+          },
+          {
+            "accession": "SAMN10988342",
+            "category": "Biological sample resources",
+            "database": "BioSample",
+            "url": "https://www.ncbi.nlm.nih.gov/biosample/?term=SAMN10988342"
+          },
+          {
+            "accession": "CVCL_3612",
+            "category": "Cell line databases/resources",
+            "database": "cancercelllines",
+            "url": "https://cancercelllines.org/cellline/?id=cellosaurus:CVCL_3612"
+          },
+          {
+            "accession": "161766",
+            "category": "Cell line collections (Providers)",
+            "database": "CancerTools",
+            "url": "https://www.cancertools.org/cell-lines/161766"
+          },
+          {
+            "accession": "SIDM01170",
+            "category": "Cell line databases/resources",
+            "database": "Cell_Model_Passport",
+            "url": "https://cellmodelpassports.sanger.ac.uk/passports/SIDM01170"
+          },
+          {
+            "accession": "CHEMBL3707165",
+            "category": "Chemistry resources",
+            "database": "ChEMBL-Cells",
+            "url": "https://www.ebi.ac.uk/chembldb/cell/inspect/CHEMBL3707165"
+          },
+          {
+            "accession": "CHEMBL3707166",
+            "category": "Chemistry resources",
+            "database": "ChEMBL-Targets",
+            "url": "https://www.ebi.ac.uk/chembldb/target/inspect/CHEMBL3707166"
+          },
+          {
+            "accession": "875292",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=875292"
+          },
+          {
+            "accession": "1066219",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1066219"
+          },
+          {
+            "accession": "1102818",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1102818"
+          },
+          {
+            "accession": "1113278",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1113278"
+          },
+          {
+            "accession": "1139220",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1139220"
+          },
+          {
+            "accession": "1305335",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1305335"
+          },
+          {
+            "accession": "1709264",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1709264"
+          },
+          {
+            "accession": "2186587",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=2186587"
+          },
+          {
+            "accession": "1299070",
+            "category": "Cell line databases/resources",
+            "database": "Cosmic-CLP",
+            "url": "https://cancer.sanger.ac.uk/cell_lines/sample/overview?id=1299070"
+          },
+          {
+            "accession": "ACH-000048",
+            "category": "Cell line databases/resources",
+            "database": "DepMap",
+            "url": "https://depmap.org/portal/cell_line/ACH-000048"
+          },
+          {
+            "accession": "EGAS00001000610",
+            "category": "Sequence databases",
+            "database": "EGA",
+            "url": "https://ega-archive.org/studies/EGAS00001000610"
+          },
+          {
+            "accession": "EGAS00001000978",
+            "category": "Sequence databases",
+            "database": "EGA",
+            "url": "https://ega-archive.org/studies/EGAS00001000978"
+          },
+          {
+            "accession": "1299070",
+            "category": "Chemistry resources",
+            "database": "GDSC",
+            "url": "https://www.cancerrxgene.org/translation/CellLine/1299070"
+          },
+          {
+            "accession": "GSE35972",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE35972"
+          },
+          {
+            "accession": "GSM274697",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM274697"
+          },
+          {
+            "accession": "GSM289383",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM289383"
+          },
+          {
+            "accession": "GSM289384",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM289384"
+          },
+          {
+            "accession": "GSM289387",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM289387"
+          },
+          {
+            "accession": "GSM289388",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM289388"
+          },
+          {
+            "accession": "GSM313690",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM313690"
+          },
+          {
+            "accession": "GSM659407",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM659407"
+          },
+          {
+            "accession": "GSM711721",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM711721"
+          },
+          {
+            "accession": "GSM784575",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM784575"
+          },
+          {
+            "accession": "GSM851944",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM851944"
+          },
+          {
+            "accession": "GSM887710",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM887710"
+          },
+          {
+            "accession": "GSM888803",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM888803"
+          },
+          {
+            "accession": "GSM1001425",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1001425"
+          },
+          {
+            "accession": "GSM1001426",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1001426"
+          },
+          {
+            "accession": "GSM1001489",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1001489"
+          },
+          {
+            "accession": "GSM1291152",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1291152"
+          },
+          {
+            "accession": "GSM1340594",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1340594"
+          },
+          {
+            "accession": "GSM1341134",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1341134"
+          },
+          {
+            "accession": "GSM1374964",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1374964"
+          },
+          {
+            "accession": "GSM1670546",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1670546"
+          },
+          {
+            "accession": "20197",
+            "category": "Polymorphism and mutation databases",
+            "database": "IARC_TP53"
+          },
+          {
+            "accession": "CCLE_580",
+            "category": "Polymorphism and mutation databases",
+            "database": "LiGeA",
+            "url": "http://hpc-bioinformatics.cineca.it/fusion/cell_line/CCLE_580"
+          },
+          {
+            "accession": "LCL-1920",
+            "category": "Cell line databases/resources",
+            "database": "LINCS_LDP",
+            "url": "http://lincsportal.ccs.miami.edu/cells/#/view/LCL-1920"
+          },
+          {
+            "accession": "TOV112D_1604_2019",
+            "category": "Chemistry resources",
+            "database": "PharmacoDB",
+            "url": "https://pharmacodb.ca/cell_lines/TOV112D_1604_2019"
+          },
+          {
+            "accession": "PXD003668",
+            "category": "Proteomic databases",
+            "database": "PRIDE",
+            "url": "https://www.ebi.ac.uk/pride/archive/projects/PXD003668"
+          },
+          {
+            "accession": "PXD030304",
+            "category": "Proteomic databases",
+            "database": "PRIDE",
+            "url": "https://www.ebi.ac.uk/pride/archive/projects/PXD030304"
+          },
+          {
+            "accession": "CVCL_3612",
+            "category": "Polymorphism and mutation databases",
+            "database": "Progenetix",
+            "url": "https://progenetix.org/cellline/?id=cellosaurus:CVCL_3612"
+          },
+          {
+            "accession": "CVCL_3612",
+            "category": "Chemistry resources",
+            "database": "PubChem_Cell_line",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/cell/CVCL_3612"
+          },
+          {
+            "accession": "Q54972795",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54972795"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Christopher T.",
+            "last-name": "Korch",
+            "name": "Korch C.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Monique Ann",
+            "last-name": "Spillman",
+            "name": "Spillman M.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Twila A.",
+            "last-name": "Jackson",
+            "name": "Jackson T.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Britta M.",
+            "last-name": "Jacobsen",
+            "name": "Jacobsen B.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Susan K.",
+            "last-name": "Murphy",
+            "name": "Murphy S.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Bruce Arthur",
+            "last-name": "Lessey",
+            "name": "Lessey B.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Virgil Craig",
+            "last-name": "Jordan",
+            "name": "Jordan V.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Andrew Peter",
+            "last-name": "Bradford",
+            "name": "Bradford A.P.",
+            "type": "person"
+          }
+        ],
+        "date": "2012",
+        "first-page": "241",
+        "internal-id": "PubMed=22710073",
+        "journal-name": "Gynecol. Oncol.",
+        "last-page": "248",
+        "title": "DNA profiling analysis of endometrial and ovarian cell lines reveals misidentification, redundancy and contamination.",
+        "type": "article",
+        "volume": "127",
+        "xref-list": [
+          {
+            "accession": "PMC3432677",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3432677"
+          },
+          {
+            "accession": "10.1016/j.ygyno.2012.06.017",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.ygyno.2012.06.017"
+          },
+          {
+            "accession": "22710073",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/22710073"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Jun",
+            "last-name": "Li",
+            "name": "Li J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wei",
+            "last-name": "Zhao",
+            "name": "Zhao W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rehan",
+            "last-name": "Akbani",
+            "name": "Akbani R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wen-Bin",
+            "last-name": "Liu",
+            "name": "Liu W.-B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhen-Lin",
+            "last-name": "Ju",
+            "name": "Ju Z.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shi-Yun",
+            "last-name": "Ling",
+            "name": "Ling S.-Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christopher P.",
+            "last-name": "Vellano",
+            "name": "Vellano C.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Paul",
+            "last-name": "Roebuck",
+            "name": "Roebuck P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Qing-Hua",
+            "last-name": "Yu",
+            "name": "Yu Q.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Agda Karina",
+            "last-name": "Eterovic",
+            "name": "Eterovic A.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lauren Averett",
+            "last-name": "Byers",
+            "name": "Byers L.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael A.",
+            "last-name": "Davies",
+            "name": "Davies M.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wan-Leng",
+            "last-name": "Deng",
+            "name": "Deng W.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Y.N. Vashisht",
+            "last-name": "Gopal",
+            "name": "Gopal Y.N.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Guo",
+            "last-name": "Chen",
+            "name": "Chen G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Erika Maria",
+            "last-name": "von Euw",
+            "name": "von Euw E.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dennis Joseph",
+            "last-name": "Slamon",
+            "name": "Slamon D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dylan",
+            "last-name": "Conklin",
+            "name": "Conklin D.",
+            "type": "person"
+          },
+          {
+            "first-names": "John Victor",
+            "last-name": "Heymach",
+            "name": "Heymach J.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Adi F.",
+            "last-name": "Gazdar",
+            "name": "Gazdar A.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "John D.",
+            "last-name": "Minna",
+            "name": "Minna J.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeffrey N.",
+            "last-name": "Myers",
+            "name": "Myers J.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yi-Ling",
+            "last-name": "Lu",
+            "name": "Lu Y.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gordon B.",
+            "last-name": "Mills",
+            "name": "Mills G.B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Han",
+            "last-name": "Liang",
+            "name": "Liang H.",
+            "type": "person"
+          }
+        ],
+        "date": "2017",
+        "first-page": "225",
+        "internal-id": "PubMed=28196595",
+        "journal-name": "Cancer Cell",
+        "last-page": "239",
+        "title": "Characterization of human cancer cell lines by reverse-phase protein arrays.",
+        "type": "article",
+        "volume": "31",
+        "xref-list": [
+          {
+            "accession": "PMC5501076",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5501076"
+          },
+          {
+            "accession": "10.1016/j.ccell.2017.01.005",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.ccell.2017.01.005"
+          },
+          {
+            "accession": "28196595",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/28196595"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Eniko",
+            "last-name": "Papp",
+            "name": "Papp E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dorothy",
+            "last-name": "Hallberg",
+            "name": "Hallberg D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gottfried E.",
+            "last-name": "Konecny",
+            "name": "Konecny G.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Daniel C.",
+            "last-name": "Bruhm",
+            "name": "Bruhm D.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Vilmos",
+            "last-name": "Adleff",
+            "name": "Adleff V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Noe",
+            "name": "Noe M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ioannis",
+            "last-name": "Kagiampakis",
+            "name": "Kagiampakis I.",
+            "type": "person"
+          },
+          {
+            "first-names": "Doreen",
+            "last-name": "Palsgrove",
+            "name": "Palsgrove D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dylan",
+            "last-name": "Conklin",
+            "name": "Conklin D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yasuto",
+            "last-name": "Kinose",
+            "name": "Kinose Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "James R.",
+            "last-name": "White",
+            "name": "White J.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael Frederick",
+            "last-name": "Press",
+            "name": "Press M.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ronny I.",
+            "last-name": "Drapkin",
+            "name": "Drapkin R.I.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hariharan",
+            "last-name": "Easwaran",
+            "name": "Easwaran H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stephen Bruce",
+            "last-name": "Baylin",
+            "name": "Baylin S.B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dennis Joseph",
+            "last-name": "Slamon",
+            "name": "Slamon D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Victor E.",
+            "last-name": "Velculescu",
+            "name": "Velculescu V.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert B.",
+            "last-name": "Scharpf",
+            "name": "Scharpf R.B.",
+            "type": "person"
+          }
+        ],
+        "date": "2018",
+        "first-page": "2617",
+        "internal-id": "PubMed=30485824",
+        "journal-name": "Cell Rep.",
+        "last-page": "2633",
+        "title": "Integrated genomic, epigenomic, and expression analyses of ovarian cancer cell lines.",
+        "type": "article",
+        "volume": "25",
+        "xref-list": [
+          {
+            "accession": "PMC6481945",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6481945"
+          },
+          {
+            "accession": "10.1016/j.celrep.2018.10.096",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.celrep.2018.10.096"
+          },
+          {
+            "accession": "30485824",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/30485824"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Kuan-Chun",
+            "last-name": "Huang",
+            "name": "Huang K.-C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dong Choon",
+            "last-name": "Park",
+            "name": "Park D.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shu-Kay",
+            "last-name": "Ng",
+            "name": "Ng S.-K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ji Young",
+            "last-name": "Lee",
+            "name": "Lee J.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Xiao-Yan",
+            "last-name": "Ni",
+            "name": "Ni X.-Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wing-Chung",
+            "last-name": "Ng",
+            "name": "Ng W.-C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christina Ann",
+            "last-name": "Bandera",
+            "name": "Bandera C.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "William R.",
+            "last-name": "Welch",
+            "name": "Welch W.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ross Stuart",
+            "last-name": "Berkowitz",
+            "name": "Berkowitz R.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Samuel C.",
+            "last-name": "Mok",
+            "name": "Mok S.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shu-Wing",
+            "last-name": "Ng",
+            "name": "Ng S.-W.",
+            "type": "person"
+          }
+        ],
+        "date": "2006",
+        "first-page": "2433",
+        "internal-id": "PubMed=16380993",
+        "journal-name": "Int. J. Cancer",
+        "last-page": "2440",
+        "title": "Selenium binding protein 1 in ovarian cancer.",
+        "type": "article",
+        "volume": "118",
+        "xref-list": [
+          {
+            "accession": "10.1002/ijc.21671",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/ijc.21671"
+          },
+          {
+            "accession": "16380993",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/16380993"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Jelle",
+            "last-name": "Scholtalbers",
+            "name": "Scholtalbers J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sebastian",
+            "last-name": "Boegel",
+            "name": "Boegel S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas",
+            "last-name": "Bukur",
+            "name": "Bukur T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marius",
+            "last-name": "Byl",
+            "name": "Byl M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sebastian",
+            "last-name": "Goerges",
+            "name": "Goerges S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patrick",
+            "last-name": "Sorn",
+            "name": "Sorn P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Martin",
+            "last-name": "Loewer",
+            "name": "Loewer M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ugur",
+            "last-name": "Sahin",
+            "name": "Sahin U.",
+            "type": "person"
+          },
+          {
+            "first-names": "John C.",
+            "last-name": "Castle",
+            "name": "Castle J.C.",
+            "type": "person"
+          }
+        ],
+        "date": "2015",
+        "first-page": "118.1",
+        "internal-id": "PubMed=26589293",
+        "journal-name": "Genome Med.",
+        "last-page": "118.7",
+        "title": "TCLP: an online cancer cell line catalogue integrating HLA type, predicted neo-epitopes, virus and gene expression.",
+        "type": "article",
+        "volume": "7",
+        "xref-list": [
+          {
+            "accession": "PMC4653878",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4653878"
+          },
+          {
+            "accession": "10.1186/s13073-015-0240-5",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/s13073-015-0240-5"
+          },
+          {
+            "accession": "26589293",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/26589293"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Glenn S.",
+            "last-name": "Cowley",
+            "name": "Cowley G.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara A.",
+            "last-name": "Weir",
+            "name": "Weir B.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francisca",
+            "last-name": "Vazquez",
+            "name": "Vazquez F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Pablo",
+            "last-name": "Tamayo",
+            "name": "Tamayo P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Justine A.",
+            "last-name": "Scott",
+            "name": "Scott J.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Scott",
+            "last-name": "Rusin",
+            "name": "Rusin S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Alexandra",
+            "last-name": "East-Seletsky",
+            "name": "East-Seletsky A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Levi D.",
+            "last-name": "Ali",
+            "name": "Ali L.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "William F.J.",
+            "last-name": "Gerath",
+            "name": "Gerath W.F.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sarah E.",
+            "last-name": "Pantel",
+            "name": "Pantel S.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patrick Hall",
+            "last-name": "Lizotte",
+            "name": "Lizotte P.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Guo-Zhi",
+            "last-name": "Jiang",
+            "name": "Jiang G.-Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jessica",
+            "last-name": "Hsiao",
+            "name": "Hsiao J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Aviad",
+            "last-name": "Tsherniak",
+            "name": "Tsherniak A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Elizabeth",
+            "last-name": "Dwinell",
+            "name": "Dwinell E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Simon",
+            "last-name": "Aoyama",
+            "name": "Aoyama S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Okamoto",
+            "name": "Okamoto M.",
+            "type": "person"
+          },
+          {
+            "first-names": "William",
+            "last-name": "Harrington",
+            "name": "Harrington W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ellen T.",
+            "last-name": "Gelfand",
+            "name": "Gelfand E.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas M.",
+            "last-name": "Green",
+            "name": "Green T.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mark J.",
+            "last-name": "Tomko",
+            "name": "Tomko M.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shuba",
+            "last-name": "Gopal",
+            "name": "Gopal S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Terence C.",
+            "last-name": "Wong",
+            "name": "Wong T.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hu-Bo",
+            "last-name": "Li",
+            "name": "Li H.-B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sara",
+            "last-name": "Howell",
+            "name": "Howell S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nicolas",
+            "last-name": "Stransky",
+            "name": "Stransky N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ted",
+            "last-name": "Liefeld",
+            "name": "Liefeld T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dongkeun",
+            "last-name": "Jang",
+            "name": "Jang D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jonathan",
+            "last-name": "Bistline",
+            "name": "Bistline J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara Hill",
+            "last-name": "Meyers",
+            "name": "Meyers B.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Scott Allen",
+            "last-name": "Armstrong",
+            "name": "Armstrong S.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kenneth Carl",
+            "last-name": "Anderson",
+            "name": "Anderson K.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kimberly",
+            "last-name": "Stegmaier",
+            "name": "Stegmaier K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Reich",
+            "name": "Reich M.",
+            "type": "person"
+          },
+          {
+            "first-names": "David",
+            "last-name": "Pellman",
+            "name": "Pellman D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jesse S.",
+            "last-name": "Boehm",
+            "name": "Boehm J.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jill P.",
+            "last-name": "Mesirov",
+            "name": "Mesirov J.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Todd Robert",
+            "last-name": "Golub",
+            "name": "Golub T.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "David E.",
+            "last-name": "Root",
+            "name": "Root D.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "William Chun",
+            "last-name": "Hahn",
+            "name": "Hahn W.C.",
+            "type": "person"
+          }
+        ],
+        "date": "2014",
+        "first-page": "140035.1",
+        "internal-id": "PubMed=25984343",
+        "journal-name": "Sci. Data",
+        "last-page": "140035.12",
+        "title": "Parallel genome-scale loss of function screens in 216 cancer cell lines for the identification of context-specific genetic dependencies.",
+        "type": "article",
+        "volume": "1",
+        "xref-list": [
+          {
+            "accession": "PMC4432652",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4432652"
+          },
+          {
+            "accession": "10.1038/sdata.2014.35",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/sdata.2014.35"
+          },
+          {
+            "accession": "25984343",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/25984343"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Veronique",
+            "last-name": "Ouellet",
+            "name": "Ouellet V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Magdalena",
+            "last-name": "Zietarska",
+            "name": "Zietarska M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lise",
+            "last-name": "Portelance",
+            "name": "Portelance L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Julie",
+            "last-name": "Lafontaine",
+            "name": "Lafontaine J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jason",
+            "last-name": "Madore",
+            "name": "Madore J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marie-Line",
+            "last-name": "Puiffe",
+            "name": "Puiffe M.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suzanna L.",
+            "last-name": "Arcand",
+            "name": "Arcand S.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhen",
+            "last-name": "Shen",
+            "name": "Shen Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Josee",
+            "last-name": "Hebert",
+            "name": "Hebert J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2008",
+        "first-page": "152.1",
+        "internal-id": "PubMed=18507860",
+        "journal-name": "BMC Cancer",
+        "last-page": "152.18",
+        "title": "Characterization of three new serous epithelial ovarian cancer cell lines.",
+        "type": "article",
+        "volume": "8",
+        "xref-list": [
+          {
+            "accession": "PMC2467432",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2467432"
+          },
+          {
+            "accession": "10.1186/1471-2407-8-152",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/1471-2407-8-152"
+          },
+          {
+            "accession": "18507860",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/18507860"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Isabelle J.",
+            "last-name": "Letourneau",
+            "name": "Letourneau I.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael C.J.",
+            "last-name": "Quinn",
+            "name": "Quinn M.C.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lu-Lin",
+            "last-name": "Wang",
+            "name": "Wang L.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lise",
+            "last-name": "Portelance",
+            "name": "Portelance L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Katia Y.",
+            "last-name": "Caceres",
+            "name": "Caceres K.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Louis",
+            "last-name": "Cyr",
+            "name": "Cyr L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nathalie",
+            "last-name": "Delvoye",
+            "name": "Delvoye N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Liliane",
+            "last-name": "Meunier",
+            "name": "Meunier L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manon",
+            "last-name": "de Ladurantaye",
+            "name": "de Ladurantaye M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhen",
+            "last-name": "Shen",
+            "name": "Shen Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suzanna L.",
+            "last-name": "Arcand",
+            "name": "Arcand S.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2012",
+        "first-page": "379.1",
+        "internal-id": "PubMed=22931248",
+        "journal-name": "BMC Cancer",
+        "last-page": "379.16",
+        "title": "Derivation and characterization of matched cell lines from primary and recurrent serous ovarian cancer.",
+        "type": "article",
+        "volume": "12",
+        "xref-list": [
+          {
+            "accession": "PMC3532154",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3532154"
+          },
+          {
+            "accession": "10.1186/1471-2407-12-379",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/1471-2407-12-379"
+          },
+          {
+            "accession": "22931248",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/22931248"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Dimitra",
+            "last-name": "Dafou",
+            "name": "Dafou D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Susan J.",
+            "last-name": "Ramus",
+            "name": "Ramus S.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ken",
+            "last-name": "Choi",
+            "name": "Choi K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara",
+            "last-name": "Grun",
+            "name": "Grun B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Deborah A.",
+            "last-name": "Trott",
+            "name": "Trott D.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert F.",
+            "last-name": "Newbold",
+            "name": "Newbold R.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ian J.",
+            "last-name": "Jacobs",
+            "name": "Jacobs I.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christopher",
+            "last-name": "Jones",
+            "name": "Jones C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Simon Andrew",
+            "last-name": "Gayther",
+            "name": "Gayther S.A.",
+            "type": "person"
+          }
+        ],
+        "date": "2009",
+        "first-page": "1037",
+        "internal-id": "PubMed=19058220",
+        "journal-name": "Int. J. Cancer",
+        "last-page": "1044",
+        "title": "Chromosomes 6 and 18 induce neoplastic suppression in epithelial ovarian cancer cells.",
+        "type": "article",
+        "volume": "124",
+        "xref-list": [
+          {
+            "accession": "10.1002/ijc.24058",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/ijc.24058"
+          },
+          {
+            "accession": "19058220",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/19058220"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Gregory T.",
+            "last-name": "Langland",
+            "name": "Langland G.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steven M.",
+            "last-name": "Yannone",
+            "name": "Yannone S.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rachel A.",
+            "last-name": "Langland",
+            "name": "Langland R.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Aki",
+            "last-name": "Nakao",
+            "name": "Nakao A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ying-Hui",
+            "last-name": "Guan",
+            "name": "Guan Y.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sydney B.T.",
+            "last-name": "Long",
+            "name": "Long S.B.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lien",
+            "last-name": "Vonguyen",
+            "name": "Vonguyen L.",
+            "type": "person"
+          },
+          {
+            "first-names": "David J.",
+            "last-name": "Chen",
+            "name": "Chen D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joe W.",
+            "last-name": "Gray",
+            "name": "Gray J.W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Fan-Qing",
+            "last-name": "Chen",
+            "name": "Chen F.-Q.",
+            "type": "person"
+          }
+        ],
+        "date": "2010",
+        "first-page": "1021",
+        "internal-id": "PubMed=20204287",
+        "journal-name": "Oncol. Rep.",
+        "last-page": "1026",
+        "title": "Radiosensitivity profiles from a panel of ovarian cancer cell lines exhibiting genetic alterations in p53 and disparate DNA-dependent protein kinase activities.",
+        "type": "article",
+        "volume": "23",
+        "xref-list": [
+          {
+            "accession": "PMC2909445",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2909445"
+          },
+          {
+            "accession": "10.3892/or_00000728",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.3892/or_00000728"
+          },
+          {
+            "accession": "20204287",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/20204287"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Julie",
+            "last-name": "Dutil",
+            "name": "Dutil J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhi-Hua",
+            "last-name": "Chen",
+            "name": "Chen Z.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Alvaro N.A.",
+            "last-name": "Monteiro",
+            "name": "Monteiro A.N.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jamie K.",
+            "last-name": "Teer",
+            "name": "Teer J.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steven A.",
+            "last-name": "Eschrich",
+            "name": "Eschrich S.A.",
+            "type": "person"
+          }
+        ],
+        "date": "2019",
+        "first-page": "1263",
+        "internal-id": "PubMed=30894373",
+        "journal-name": "Cancer Res.",
+        "last-page": "1273",
+        "title": "An interactive resource to probe genetic diversity and estimated ancestry in cancer cell lines.",
+        "type": "article",
+        "volume": "79",
+        "xref-list": [
+          {
+            "accession": "PMC6445675",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6445675"
+          },
+          {
+            "accession": "10.1158/0008-5472.CAN-18-2747",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1158/0008-5472.CAN-18-2747"
+          },
+          {
+            "accession": "30894373",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/30894373"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Mahmoud",
+            "last-name": "Ghandi",
+            "name": "Ghandi M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Franklin W.",
+            "last-name": "Huang",
+            "name": "Huang F.W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Judit",
+            "last-name": "Jane-Valbuena",
+            "name": "Jane-Valbuena J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gregory V.",
+            "last-name": "Kryukov",
+            "name": "Kryukov G.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christopher C.",
+            "last-name": "Lo",
+            "name": "Lo C.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "E. Robert",
+            "last-name": "McDonald",
+            "name": "McDonald E.R. 3rd",
+            "name-suffix": "3rd",
+            "type": "person"
+          },
+          {
+            "first-names": "Jordi Ginesta",
+            "last-name": "Barretina",
+            "name": "Barretina J.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ellen T.",
+            "last-name": "Gelfand",
+            "name": "Gelfand E.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Craig M.",
+            "last-name": "Bielski",
+            "name": "Bielski C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hao-Xin",
+            "last-name": "Li",
+            "name": "Li H.-X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kevin",
+            "last-name": "Hu",
+            "name": "Hu K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Alexander Y.",
+            "last-name": "Andreev-Drakhlin",
+            "name": "Andreev-Drakhlin A.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jaegil",
+            "last-name": "Kim",
+            "name": "Kim J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Julian M.",
+            "last-name": "Hess",
+            "name": "Hess J.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Brian J.",
+            "last-name": "Haas",
+            "name": "Haas B.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francois",
+            "last-name": "Aguet",
+            "name": "Aguet F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara A.",
+            "last-name": "Weir",
+            "name": "Weir B.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael V.",
+            "last-name": "Rothberg",
+            "name": "Rothberg M.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Brenton R.",
+            "last-name": "Paolella",
+            "name": "Paolella B.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael Scott",
+            "last-name": "Lawrence",
+            "name": "Lawrence M.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rehan",
+            "last-name": "Akbani",
+            "name": "Akbani R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yi-Ling",
+            "last-name": "Lu",
+            "name": "Lu Y.-L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hong L.",
+            "last-name": "Tiv",
+            "name": "Tiv H.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Prafulla C.",
+            "last-name": "Gokhale",
+            "name": "Gokhale P.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Antoine",
+            "last-name": "de Weck",
+            "name": "de Weck A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ali Amin",
+            "last-name": "Mansour",
+            "name": "Mansour A.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Coyin",
+            "last-name": "Oh",
+            "name": "Oh C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Juliann",
+            "last-name": "Shih",
+            "name": "Shih J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kevin",
+            "last-name": "Hadi",
+            "name": "Hadi K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yanay",
+            "last-name": "Rosen",
+            "name": "Rosen Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jonathan",
+            "last-name": "Bistline",
+            "name": "Bistline J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kavitha",
+            "last-name": "Venkatesan",
+            "name": "Venkatesan K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anupama",
+            "last-name": "Reddy",
+            "name": "Reddy A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dmitriy",
+            "last-name": "Sonkin",
+            "name": "Sonkin D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manway",
+            "last-name": "Liu",
+            "name": "Liu M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joseph",
+            "last-name": "Lehar",
+            "name": "Lehar J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joshua M.",
+            "last-name": "Korn",
+            "name": "Korn J.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dale A.",
+            "last-name": "Porter",
+            "name": "Porter D.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael D.",
+            "last-name": "Jones",
+            "name": "Jones M.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Javad",
+            "last-name": "Golji",
+            "name": "Golji J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Giordano",
+            "last-name": "Caponigro",
+            "name": "Caponigro G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jordan E.",
+            "last-name": "Taylor",
+            "name": "Taylor J.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Caitlin M.",
+            "last-name": "Dunning",
+            "name": "Dunning C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Amanda L.",
+            "last-name": "Creech",
+            "name": "Creech A.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Allison C.",
+            "last-name": "Warren",
+            "name": "Warren A.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "James M.",
+            "last-name": "McFarland",
+            "name": "McFarland J.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mahdi",
+            "last-name": "Zamanighomi",
+            "name": "Zamanighomi M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Audrey",
+            "last-name": "Kauffmann",
+            "name": "Kauffmann A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nicolas",
+            "last-name": "Stransky",
+            "name": "Stransky N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marcin",
+            "last-name": "Imielinski",
+            "name": "Imielinski M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yosef E.",
+            "last-name": "Maruvka",
+            "name": "Maruvka Y.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Andrew D.",
+            "last-name": "Cherniack",
+            "name": "Cherniack A.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Aviad",
+            "last-name": "Tsherniak",
+            "name": "Tsherniak A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francisca",
+            "last-name": "Vazquez",
+            "name": "Vazquez F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jacob D.",
+            "last-name": "Jaffe",
+            "name": "Jaffe J.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Andrew Alan",
+            "last-name": "Lane",
+            "name": "Lane A.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "David M.",
+            "last-name": "Weinstock",
+            "name": "Weinstock D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Cory M.",
+            "last-name": "Johannessen",
+            "name": "Johannessen C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael P.",
+            "last-name": "Morrissey",
+            "name": "Morrissey M.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Frank",
+            "last-name": "Stegmeier",
+            "name": "Stegmeier F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert",
+            "last-name": "Schlegel",
+            "name": "Schlegel R.",
+            "type": "person"
+          },
+          {
+            "first-names": "William Chun",
+            "last-name": "Hahn",
+            "name": "Hahn W.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gad",
+            "last-name": "Getz",
+            "name": "Getz G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gordon B.",
+            "last-name": "Mills",
+            "name": "Mills G.B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jesse S.",
+            "last-name": "Boehm",
+            "name": "Boehm J.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Todd Robert",
+            "last-name": "Golub",
+            "name": "Golub T.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Levi Alexander",
+            "last-name": "Garraway",
+            "name": "Garraway L.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "William Raj",
+            "last-name": "Sellers",
+            "name": "Sellers W.R.",
+            "type": "person"
+          }
+        ],
+        "date": "2019",
+        "first-page": "503",
+        "internal-id": "PubMed=31068700",
+        "journal-name": "Nature",
+        "last-page": "508",
+        "title": "Next-generation characterization of the Cancer Cell Line Encyclopedia.",
+        "type": "article",
+        "volume": "569",
+        "xref-list": [
+          {
+            "accession": "PMC6697103",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6697103"
+          },
+          {
+            "accession": "10.1038/s41586-019-1186-3",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/s41586-019-1186-3"
+          },
+          {
+            "accession": "31068700",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/31068700"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          }
+        ],
+        "date": "20-Jan-1998",
+        "internal-id": "Patent=US5710038",
+        "title": "Primary cultures of normal and tumoral human ovarian epithelium.",
+        "type": "patent",
+        "xref-list": [
+          {
+            "accession": "US5710038",
+            "category": "Reference resources",
+            "database": "Patent",
+            "url": "https://patents.google.com/patent/US5710038"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Corine M.",
+            "last-name": "Beaufort",
+            "name": "Beaufort C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jean C.A.",
+            "last-name": "Helmijr",
+            "name": "Helmijr J.C.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anna M.",
+            "last-name": "Piskorz",
+            "name": "Piskorz A.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marlous",
+            "last-name": "Hoogstraat",
+            "name": "Hoogstraat M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kirsten",
+            "last-name": "Ruigrok-Ritstier",
+            "name": "Ruigrok-Ritstier K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nicolle",
+            "last-name": "Besselink",
+            "name": "Besselink N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Muhammed",
+            "last-name": "Murtaza",
+            "name": "Murtaza M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wilfred F.J.",
+            "last-name": "van IJcken",
+            "name": "van IJcken W.F.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anouk A.J.",
+            "last-name": "Heine",
+            "name": "Heine A.A.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marcel",
+            "last-name": "Smid",
+            "name": "Smid M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marco J.",
+            "last-name": "Koudijs",
+            "name": "Koudijs M.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "James D.",
+            "last-name": "Brenton",
+            "name": "Brenton J.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Els M.J.J.",
+            "last-name": "Berns",
+            "name": "Berns E.M.J.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jozien",
+            "last-name": "Helleman",
+            "name": "Helleman J.",
+            "type": "person"
+          }
+        ],
+        "date": "2014",
+        "first-page": "e103988.1",
+        "internal-id": "PubMed=25230021",
+        "journal-name": "PLoS ONE",
+        "last-page": "e103988.16",
+        "title": "Ovarian cancer cell line panel (OCCP): clinical importance of in vitro morphological subtypes.",
+        "type": "article",
+        "volume": "9",
+        "xref-list": [
+          {
+            "accession": "PMC4167545",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4167545"
+          },
+          {
+            "accession": "10.1371/journal.pone.0103988",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1371/journal.pone.0103988"
+          },
+          {
+            "accession": "25230021",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/25230021"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Emanuel",
+            "last-name": "Goncalves",
+            "name": "Goncalves E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rebecca C.",
+            "last-name": "Poulos",
+            "name": "Poulos R.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhao-Xiang",
+            "last-name": "Cai",
+            "name": "Cai Z.-X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Syd",
+            "last-name": "Barthorpe",
+            "name": "Barthorpe S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Srikanth S.",
+            "last-name": "Manda",
+            "name": "Manda S.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Natasha",
+            "last-name": "Lucas",
+            "name": "Lucas N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Alexandra",
+            "last-name": "Beck",
+            "name": "Beck A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Daniel",
+            "last-name": "Bucio-Noble",
+            "name": "Bucio-Noble D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Dausmann",
+            "name": "Dausmann M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Caitlin",
+            "last-name": "Hall",
+            "name": "Hall C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Hecker",
+            "name": "Hecker M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jennifer",
+            "last-name": "Koh",
+            "name": "Koh J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Howard",
+            "last-name": "Lightfoot",
+            "name": "Lightfoot H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sadia",
+            "last-name": "Mahboob",
+            "name": "Mahboob S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Iman",
+            "last-name": "Mali",
+            "name": "Mali I.",
+            "type": "person"
+          },
+          {
+            "first-names": "James",
+            "last-name": "Morris",
+            "name": "Morris J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laura",
+            "last-name": "Richardson",
+            "name": "Richardson L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Akila J.",
+            "last-name": "Seneviratne",
+            "name": "Seneviratne A.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rebecca",
+            "last-name": "Shepherd",
+            "name": "Shepherd R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Erin",
+            "last-name": "Sykes",
+            "name": "Sykes E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Frances",
+            "last-name": "Thomas",
+            "name": "Thomas F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sara",
+            "last-name": "Valentini",
+            "name": "Valentini S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steven G.",
+            "last-name": "Williams",
+            "name": "Williams S.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yang-Xiu",
+            "last-name": "Wu",
+            "name": "Wu Y.-X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dylan",
+            "last-name": "Xavier",
+            "name": "Xavier D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Karen L.",
+            "last-name": "MacKenzie",
+            "name": "MacKenzie K.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter G.",
+            "last-name": "Hains",
+            "name": "Hains P.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Brett",
+            "last-name": "Tully",
+            "name": "Tully B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Phillip James",
+            "last-name": "Robinson",
+            "name": "Robinson P.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Qing",
+            "last-name": "Zhong",
+            "name": "Zhong Q.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mathew J.",
+            "last-name": "Garnett",
+            "name": "Garnett M.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Roger Robert",
+            "last-name": "Reddel",
+            "name": "Reddel R.R.",
+            "type": "person"
+          }
+        ],
+        "date": "2022",
+        "first-page": "835",
+        "internal-id": "PubMed=35839778",
+        "journal-name": "Cancer Cell",
+        "last-page": "849.e8",
+        "title": "Pan-cancer proteomic map of 949 human cell lines.",
+        "type": "article",
+        "volume": "40",
+        "xref-list": [
+          {
+            "accession": "PMC9387775",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9387775"
+          },
+          {
+            "accession": "10.1016/j.ccell.2022.06.010",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.ccell.2022.06.010"
+          },
+          {
+            "accession": "35839778",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/35839778"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Anthony N.",
+            "last-name": "Karnezis",
+            "name": "Karnezis A.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Shary Yu-Ting",
+            "last-name": "Chen",
+            "name": "Chen S.Y.-T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christine",
+            "last-name": "Chow",
+            "name": "Chow C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Winnie",
+            "last-name": "Yang",
+            "name": "Yang W.",
+            "type": "person"
+          },
+          {
+            "first-names": "William P.D.",
+            "last-name": "Hendricks",
+            "name": "Hendricks W.P.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Pilar",
+            "last-name": "Ramos",
+            "name": "Ramos P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Natalia",
+            "last-name": "Briones",
+            "name": "Briones N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Tjalling",
+            "last-name": "Bosse",
+            "name": "Bosse T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Cyril Blake",
+            "last-name": "Gilks",
+            "name": "Gilks C.B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeffrey M.",
+            "last-name": "Trent",
+            "name": "Trent J.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Bernard E.",
+            "last-name": "Weissman",
+            "name": "Weissman B.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "David G.",
+            "last-name": "Huntsman",
+            "name": "Huntsman D.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ye-Min",
+            "last-name": "Wang",
+            "name": "Wang Y.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2021",
+        "first-page": "568",
+        "internal-id": "PubMed=33328126",
+        "journal-name": "Gynecol. Oncol.",
+        "last-page": "578",
+        "title": "Re-assigning the histologic identities of COV434 and TOV-112D ovarian cancer cell lines.",
+        "type": "article",
+        "volume": "160",
+        "xref-list": [
+          {
+            "accession": "PMC10039450",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10039450"
+          },
+          {
+            "accession": "10.1016/j.ygyno.2020.12.004",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.ygyno.2020.12.004"
+          },
+          {
+            "accession": "33328126",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/33328126"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Fiona M.",
+            "last-name": "Behan",
+            "name": "Behan F.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francesco",
+            "last-name": "Iorio",
+            "name": "Iorio F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gabriele",
+            "last-name": "Picco",
+            "name": "Picco G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emanuel",
+            "last-name": "Goncalves",
+            "name": "Goncalves E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Charlotte M.",
+            "last-name": "Beaver",
+            "name": "Beaver C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Giorgia",
+            "last-name": "Migliardi",
+            "name": "Migliardi G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rita",
+            "last-name": "Santos",
+            "name": "Santos R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yanhua",
+            "last-name": "Rao",
+            "name": "Rao Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francesco",
+            "last-name": "Sassi",
+            "name": "Sassi F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marika",
+            "last-name": "Pinnelli",
+            "name": "Pinnelli M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rizwan",
+            "last-name": "Ansari",
+            "name": "Ansari R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sarah",
+            "last-name": "Harper",
+            "name": "Harper S.",
+            "type": "person"
+          },
+          {
+            "first-names": "David Adam",
+            "last-name": "Jackson",
+            "name": "Jackson D.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rebecca",
+            "last-name": "McRae",
+            "name": "McRae R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rachel",
+            "last-name": "Pooley",
+            "name": "Pooley R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Piers",
+            "last-name": "Wilkinson",
+            "name": "Wilkinson P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dieudonne J.",
+            "last-name": "van der Meer",
+            "name": "van der Meer D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "David",
+            "last-name": "Dow",
+            "name": "Dow D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Carolyn A.",
+            "last-name": "Buser-Doepner",
+            "name": "Buser-Doepner C.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Andrea",
+            "last-name": "Bertotti",
+            "name": "Bertotti A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Livio",
+            "last-name": "Trusolino",
+            "name": "Trusolino L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Euan Alexander",
+            "last-name": "Stronach",
+            "name": "Stronach E.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Julio",
+            "last-name": "Saez-Rodriguez",
+            "name": "Saez-Rodriguez J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kosuke",
+            "last-name": "Yusa",
+            "name": "Yusa K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mathew J.",
+            "last-name": "Garnett",
+            "name": "Garnett M.J.",
+            "type": "person"
+          }
+        ],
+        "date": "2019",
+        "first-page": "511",
+        "internal-id": "PubMed=30971826",
+        "journal-name": "Nature",
+        "last-page": "516",
+        "title": "Prioritization of cancer therapeutic targets using CRISPR-Cas9 screens.",
+        "type": "article",
+        "volume": "568",
+        "xref-list": [
+          {
+            "accession": "10.1038/s41586-019-1103-9",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/s41586-019-1103-9"
+          },
+          {
+            "accession": "30971826",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/30971826"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Lidia",
+            "last-name": "Hernandez",
+            "name": "Hernandez L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marianne K.",
+            "last-name": "Kim",
+            "name": "Kim M.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "L. Tiffany",
+            "last-name": "Lyle",
+            "name": "Lyle L.T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kristen Paige",
+            "last-name": "Bunch",
+            "name": "Bunch K.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Carrie D.",
+            "last-name": "House",
+            "name": "House C.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Franklin",
+            "last-name": "Ning",
+            "name": "Ning F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne M.",
+            "last-name": "Noonan",
+            "name": "Noonan A.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christina Messineo",
+            "last-name": "Annunziata",
+            "name": "Annunziata C.M.",
+            "type": "person"
+          }
+        ],
+        "date": "2016",
+        "first-page": "332",
+        "internal-id": "PubMed=27235858",
+        "journal-name": "Gynecol. Oncol.",
+        "last-page": "340",
+        "title": "Characterization of ovarian cancer cell lines as in vivo models for preclinical studies.",
+        "type": "article",
+        "volume": "142",
+        "xref-list": [
+          {
+            "accession": "PMC4961516",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4961516"
+          },
+          {
+            "accession": "10.1016/j.ygyno.2016.05.028",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.ygyno.2016.05.028"
+          },
+          {
+            "accession": "27235858",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/27235858"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Jordi Ginesta",
+            "last-name": "Barretina",
+            "name": "Barretina J.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Giordano",
+            "last-name": "Caponigro",
+            "name": "Caponigro G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nicolas",
+            "last-name": "Stransky",
+            "name": "Stransky N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kavitha",
+            "last-name": "Venkatesan",
+            "name": "Venkatesan K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Adam A.",
+            "last-name": "Margolin",
+            "name": "Margolin A.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sungjoon",
+            "last-name": "Kim",
+            "name": "Kim S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christopher J.",
+            "last-name": "Wilson",
+            "name": "Wilson C.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joseph",
+            "last-name": "Lehar",
+            "name": "Lehar J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gregory V.",
+            "last-name": "Kryukov",
+            "name": "Kryukov G.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dmitriy",
+            "last-name": "Sonkin",
+            "name": "Sonkin D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anupama",
+            "last-name": "Reddy",
+            "name": "Reddy A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manway",
+            "last-name": "Liu",
+            "name": "Liu M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lauren",
+            "last-name": "Murray",
+            "name": "Murray L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael F.",
+            "last-name": "Berger",
+            "name": "Berger M.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "John E.",
+            "last-name": "Monahan",
+            "name": "Monahan J.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Paula",
+            "last-name": "Morais",
+            "name": "Morais P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jodi",
+            "last-name": "Meltzer",
+            "name": "Meltzer J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Adam",
+            "last-name": "Korejwa",
+            "name": "Korejwa A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Judit",
+            "last-name": "Jane-Valbuena",
+            "name": "Jane-Valbuena J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Felipa A.",
+            "last-name": "Mapa",
+            "name": "Mapa F.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joseph",
+            "last-name": "Thibault",
+            "name": "Thibault J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Eva",
+            "last-name": "Bric-Furlong",
+            "name": "Bric-Furlong E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Pichai",
+            "last-name": "Raman",
+            "name": "Raman P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Aaron",
+            "last-name": "Shipway",
+            "name": "Shipway A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ingo H.",
+            "last-name": "Engels",
+            "name": "Engels I.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jill",
+            "last-name": "Cheng",
+            "name": "Cheng J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Guo-Ying K.",
+            "last-name": "Yu",
+            "name": "Yu G.-Y.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jian-Jun",
+            "last-name": "Yu",
+            "name": "Yu J.-J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter",
+            "last-name": "Aspesi",
+            "name": "Aspesi P. Jr.",
+            "name-suffix": "Jr.",
+            "type": "person"
+          },
+          {
+            "first-names": "Melanie",
+            "last-name": "de Silva",
+            "name": "de Silva M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kalpana",
+            "last-name": "Jagtap",
+            "name": "Jagtap K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael D.",
+            "last-name": "Jones",
+            "name": "Jones M.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Li",
+            "last-name": "Wang",
+            "name": "Wang L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Charles",
+            "last-name": "Hatton",
+            "name": "Hatton C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emanuele",
+            "last-name": "Palescandolo",
+            "name": "Palescandolo E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Supriya",
+            "last-name": "Gupta",
+            "name": "Gupta S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Scott",
+            "last-name": "Mahan",
+            "name": "Mahan S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Carrie",
+            "last-name": "Sougnez",
+            "name": "Sougnez C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert C.",
+            "last-name": "Onofrio",
+            "name": "Onofrio R.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ted",
+            "last-name": "Liefeld",
+            "name": "Liefeld T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laura Eleanor",
+            "last-name": "MacConaill",
+            "name": "MacConaill L.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wendy",
+            "last-name": "Winckler",
+            "name": "Winckler W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Reich",
+            "name": "Reich M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nan-Xin",
+            "last-name": "Li",
+            "name": "Li N.-X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jill P.",
+            "last-name": "Mesirov",
+            "name": "Mesirov J.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stacey B.",
+            "last-name": "Gabriel",
+            "name": "Gabriel S.B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gad",
+            "last-name": "Getz",
+            "name": "Getz G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kristin",
+            "last-name": "Ardlie",
+            "name": "Ardlie K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Vivien",
+            "last-name": "Chan",
+            "name": "Chan V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Vic E.",
+            "last-name": "Myer",
+            "name": "Myer V.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara L.",
+            "last-name": "Weber",
+            "name": "Weber B.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeff",
+            "last-name": "Porter",
+            "name": "Porter J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Markus",
+            "last-name": "Warmuth",
+            "name": "Warmuth M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter",
+            "last-name": "Finan",
+            "name": "Finan P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jennifer L.",
+            "last-name": "Harris",
+            "name": "Harris J.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Matthew Langer",
+            "last-name": "Meyerson",
+            "name": "Meyerson M.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Todd Robert",
+            "last-name": "Golub",
+            "name": "Golub T.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael P.",
+            "last-name": "Morrissey",
+            "name": "Morrissey M.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "William Raj",
+            "last-name": "Sellers",
+            "name": "Sellers W.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert",
+            "last-name": "Schlegel",
+            "name": "Schlegel R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Levi Alexander",
+            "last-name": "Garraway",
+            "name": "Garraway L.A.",
+            "type": "person"
+          }
+        ],
+        "date": "2012",
+        "first-page": "603",
+        "internal-id": "PubMed=22460905",
+        "journal-name": "Nature",
+        "last-page": "607",
+        "title": "The Cancer Cell Line Encyclopedia enables predictive modelling of anticancer drug sensitivity.",
+        "type": "article",
+        "volume": "483",
+        "xref-list": [
+          {
+            "accession": "PMC3320027",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3320027"
+          },
+          {
+            "accession": "10.1038/nature11003",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/nature11003"
+          },
+          {
+            "accession": "22460905",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/22460905"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Fabian",
+            "last-name": "Coscia",
+            "name": "Coscia F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Karen M.",
+            "last-name": "Watters",
+            "name": "Watters K.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marion",
+            "last-name": "Curtis",
+            "name": "Curtis M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mark A.",
+            "last-name": "Eckert",
+            "name": "Eckert M.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Chun-Yi",
+            "last-name": "Chiang",
+            "name": "Chiang C.-Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stefka",
+            "last-name": "Tyanova",
+            "name": "Tyanova S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anthony",
+            "last-name": "Montag",
+            "name": "Montag A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ricardo R.",
+            "last-name": "Lastra",
+            "name": "Lastra R.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ernst Robert",
+            "last-name": "Lengyel",
+            "name": "Lengyel E.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Matthias",
+            "last-name": "Mann",
+            "name": "Mann M.",
+            "type": "person"
+          }
+        ],
+        "date": "2016",
+        "first-page": "12645.1",
+        "internal-id": "PubMed=27561551",
+        "journal-name": "Nat. Commun.",
+        "last-page": "12645.14",
+        "title": "Integrative proteomic profiling of ovarian cancer cell lines reveals precursor cell associated proteins and functional status.",
+        "type": "article",
+        "volume": "7",
+        "xref-list": [
+          {
+            "accession": "PMC5007461",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5007461"
+          },
+          {
+            "accession": "10.1038/ncomms12645",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/ncomms12645"
+          },
+          {
+            "accession": "27561551",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/27561551"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Aphrothiti J.",
+            "last-name": "Hanrahan",
+            "name": "Hanrahan A.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nikolaus",
+            "last-name": "Schultz",
+            "name": "Schultz N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Maggie L.",
+            "last-name": "Westfal",
+            "name": "Westfal M.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rita A.",
+            "last-name": "Sakr",
+            "name": "Sakr R.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dilip D.",
+            "last-name": "Giri",
+            "name": "Giri D.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stefano",
+            "last-name": "Scarperi",
+            "name": "Scarperi S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manickam",
+            "last-name": "Janakiraman",
+            "name": "Janakiraman M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Narciso",
+            "last-name": "Olvera",
+            "name": "Olvera N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ellen V.",
+            "last-name": "Stevens",
+            "name": "Stevens E.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Qing-Bai",
+            "last-name": "She",
+            "name": "She Q.-B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Carol",
+            "last-name": "Aghajanian",
+            "name": "Aghajanian C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Tari Ann",
+            "last-name": "King",
+            "name": "King T.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Elisa",
+            "last-name": "de Stanchina",
+            "name": "de Stanchina E.",
+            "type": "person"
+          },
+          {
+            "first-names": "David R.",
+            "last-name": "Spriggs",
+            "name": "Spriggs D.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Adriana",
+            "last-name": "Heguy",
+            "name": "Heguy A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barry Stephen",
+            "last-name": "Taylor",
+            "name": "Taylor B.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Chris",
+            "last-name": "Sander",
+            "name": "Sander C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Neal",
+            "last-name": "Rosen",
+            "name": "Rosen N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Douglas A.",
+            "last-name": "Levine",
+            "name": "Levine D.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "David B.",
+            "last-name": "Solit",
+            "name": "Solit D.B.",
+            "type": "person"
+          }
+        ],
+        "date": "2012",
+        "first-page": "56",
+        "internal-id": "PubMed=22328975",
+        "journal-name": "Cancer Discov.",
+        "last-page": "67",
+        "title": "Genomic complexity and AKT dependence in serous ovarian cancer.",
+        "type": "article",
+        "volume": "2",
+        "xref-list": [
+          {
+            "accession": "PMC3274821",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3274821"
+          },
+          {
+            "accession": "10.1158/2159-8290.CD-11-0170",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1158/2159-8290.CD-11-0170"
+          },
+          {
+            "accession": "22328975",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/22328975"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Lan",
+            "last-name": "Dai",
+            "name": "Dai L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Chen",
+            "last-name": "Li",
+            "name": "Li C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kerby Allan",
+            "last-name": "Shedden",
+            "name": "Shedden K.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "David E.",
+            "last-name": "Misek",
+            "name": "Misek D.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "David M.",
+            "last-name": "Lubman",
+            "name": "Lubman D.M.",
+            "type": "person"
+          }
+        ],
+        "date": "2009",
+        "first-page": "1119",
+        "internal-id": "PubMed=19288585",
+        "journal-name": "Electrophoresis",
+        "last-page": "1131",
+        "title": "Comparative proteomic study of two closely related ovarian endometrioid adenocarcinoma cell lines using cIEF fractionation and pathway analysis.",
+        "type": "article",
+        "volume": "30",
+        "xref-list": [
+          {
+            "accession": "PMC2674123",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2674123"
+          },
+          {
+            "accession": "10.1002/elps.200800505",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/elps.200800505"
+          },
+          {
+            "accession": "19288585",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/19288585"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Ma-Mie",
+            "last-name": "Yu",
+            "name": "Yu M.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suresh K.",
+            "last-name": "Selvaraj",
+            "name": "Selvaraj S.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "May M.Y.",
+            "last-name": "Liang-Chu",
+            "name": "Liang-Chu M.M.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sahar",
+            "last-name": "Aghajani",
+            "name": "Aghajani S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Matthew",
+            "last-name": "Busse",
+            "name": "Busse M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jean",
+            "last-name": "Yuan",
+            "name": "Yuan J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Genee",
+            "last-name": "Lee",
+            "name": "Lee G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Franklin V.",
+            "last-name": "Peale",
+            "name": "Peale F.V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christiaan",
+            "last-name": "Klijn",
+            "name": "Klijn C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Richard",
+            "last-name": "Bourgon",
+            "name": "Bourgon R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Joshua S.",
+            "last-name": "Kaminker",
+            "name": "Kaminker J.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Richard M.",
+            "last-name": "Neve",
+            "name": "Neve R.M.",
+            "type": "person"
+          }
+        ],
+        "date": "2015",
+        "first-page": "307",
+        "internal-id": "PubMed=25877200",
+        "journal-name": "Nature",
+        "last-page": "311",
+        "title": "A resource for cell line authentication, annotation and quality control.",
+        "type": "article",
+        "volume": "520",
+        "xref-list": [
+          {
+            "accession": "10.1038/nature14397",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/nature14397"
+          },
+          {
+            "accession": "25877200",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/25877200"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Francesco",
+            "last-name": "Iorio",
+            "name": "Iorio F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Theo A.",
+            "last-name": "Knijnenburg",
+            "name": "Knijnenburg T.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Daniel J.",
+            "last-name": "Vis",
+            "name": "Vis D.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Graham Robert",
+            "last-name": "Bignell",
+            "name": "Bignell G.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael Patrick",
+            "last-name": "Menden",
+            "name": "Menden M.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael",
+            "last-name": "Schubert",
+            "name": "Schubert M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nanne",
+            "last-name": "Aben",
+            "name": "Aben N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emanuel",
+            "last-name": "Goncalves",
+            "name": "Goncalves E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Syd",
+            "last-name": "Barthorpe",
+            "name": "Barthorpe S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Howard",
+            "last-name": "Lightfoot",
+            "name": "Lightfoot H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas",
+            "last-name": "Cokelaer",
+            "name": "Cokelaer T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia",
+            "last-name": "Greninger",
+            "name": "Greninger P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ewald",
+            "last-name": "van Dyk",
+            "name": "van Dyk E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Han",
+            "last-name": "Chang",
+            "name": "Chang H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Heshani",
+            "last-name": "de Silva",
+            "name": "de Silva H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Holger",
+            "last-name": "Heyn",
+            "name": "Heyn H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Xian-Ming",
+            "last-name": "Deng",
+            "name": "Deng X.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Regina K.",
+            "last-name": "Egan",
+            "name": "Egan R.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Qing-Song",
+            "last-name": "Liu",
+            "name": "Liu Q.-S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Tatiana",
+            "last-name": "Mironenko",
+            "name": "Mironenko T.",
+            "type": "person"
+          },
+          {
+            "first-names": "Xeni",
+            "last-name": "Mitropoulos",
+            "name": "Mitropoulos X.",
+            "type": "person"
+          },
+          {
+            "first-names": "Laura",
+            "last-name": "Richardson",
+            "name": "Richardson L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jin-Hua",
+            "last-name": "Wang",
+            "name": "Wang J.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ting-Hu",
+            "last-name": "Zhang",
+            "name": "Zhang T.-H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sebastian",
+            "last-name": "Moran",
+            "name": "Moran S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sergi",
+            "last-name": "Sayols",
+            "name": "Sayols S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Maryam",
+            "last-name": "Soleimani",
+            "name": "Soleimani M.",
+            "type": "person"
+          },
+          {
+            "first-names": "David",
+            "last-name": "Tamborero",
+            "name": "Tamborero D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nuria",
+            "last-name": "Lopez-Bigas",
+            "name": "Lopez-Bigas N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Petra",
+            "last-name": "Ross-Macdonald",
+            "name": "Ross-Macdonald P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Manel",
+            "last-name": "Esteller",
+            "name": "Esteller M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nathanael S.",
+            "last-name": "Gray",
+            "name": "Gray N.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Daniel Arie",
+            "last-name": "Haber",
+            "name": "Haber D.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michael Rudolf",
+            "last-name": "Stratton",
+            "name": "Stratton M.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Cyril Henri",
+            "last-name": "Benes",
+            "name": "Benes C.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lodewyk F.A.",
+            "last-name": "Wessels",
+            "name": "Wessels L.F.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Julio",
+            "last-name": "Saez-Rodriguez",
+            "name": "Saez-Rodriguez J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ultan",
+            "last-name": "McDermott",
+            "name": "McDermott U.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mathew J.",
+            "last-name": "Garnett",
+            "name": "Garnett M.J.",
+            "type": "person"
+          }
+        ],
+        "date": "2016",
+        "first-page": "740",
+        "internal-id": "PubMed=27397505",
+        "journal-name": "Cell",
+        "last-page": "754",
+        "title": "A landscape of pharmacogenomic interactions in cancer.",
+        "type": "article",
+        "volume": "166",
+        "xref-list": [
+          {
+            "accession": "PMC4967469",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4967469"
+          },
+          {
+            "accession": "10.1016/j.cell.2016.06.017",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1016/j.cell.2016.06.017"
+          },
+          {
+            "accession": "27397505",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/27397505"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Christiaan",
+            "last-name": "Klijn",
+            "name": "Klijn C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steffen",
+            "last-name": "Durinck",
+            "name": "Durinck S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Eric W.",
+            "last-name": "Stawiski",
+            "name": "Stawiski E.W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter M.",
+            "last-name": "Haverty",
+            "name": "Haverty P.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zhao-Shi",
+            "last-name": "Jiang",
+            "name": "Jiang Z.-S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Han-Bin",
+            "last-name": "Liu",
+            "name": "Liu H.-B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeremiah",
+            "last-name": "Degenhardt",
+            "name": "Degenhardt J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Oleg",
+            "last-name": "Mayba",
+            "name": "Mayba O.",
+            "type": "person"
+          },
+          {
+            "first-names": "Florian",
+            "last-name": "Gnad",
+            "name": "Gnad F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jin-Feng",
+            "last-name": "Liu",
+            "name": "Liu J.-F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gregoire",
+            "last-name": "Pau",
+            "name": "Pau G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jens",
+            "last-name": "Reeder",
+            "name": "Reeder J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yi",
+            "last-name": "Cao",
+            "name": "Cao Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kiran",
+            "last-name": "Mukhyala",
+            "name": "Mukhyala K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suresh K.",
+            "last-name": "Selvaraj",
+            "name": "Selvaraj S.K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ma-Mie",
+            "last-name": "Yu",
+            "name": "Yu M.-M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gregory J.",
+            "last-name": "Zynda",
+            "name": "Zynda G.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Matthew J.",
+            "last-name": "Brauer",
+            "name": "Brauer M.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas D.",
+            "last-name": "Wu",
+            "name": "Wu T.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert Clifford",
+            "last-name": "Gentleman",
+            "name": "Gentleman R.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Gerard",
+            "last-name": "Manning",
+            "name": "Manning G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert L.",
+            "last-name": "Yauch",
+            "name": "Yauch R.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Richard",
+            "last-name": "Bourgon",
+            "name": "Bourgon R.",
+            "type": "person"
+          },
+          {
+            "first-names": "David",
+            "last-name": "Stokoe",
+            "name": "Stokoe D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Zora",
+            "last-name": "Modrusan",
+            "name": "Modrusan Z.",
+            "type": "person"
+          },
+          {
+            "first-names": "Richard M.",
+            "last-name": "Neve",
+            "name": "Neve R.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Frederic J.",
+            "last-name": "de Sauvage",
+            "name": "de Sauvage F.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeffrey",
+            "last-name": "Settleman",
+            "name": "Settleman J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Somasekar",
+            "last-name": "Seshagiri",
+            "name": "Seshagiri S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ze-Min",
+            "last-name": "Zhang",
+            "name": "Zhang Z.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2015",
+        "first-page": "306",
+        "internal-id": "PubMed=25485619",
+        "journal-name": "Nat. Biotechnol.",
+        "last-page": "312",
+        "title": "A comprehensive transcriptional portrait of human cancer cell lines.",
+        "type": "article",
+        "volume": "33",
+        "xref-list": [
+          {
+            "accession": "10.1038/nbt.3080",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/nbt.3080"
+          },
+          {
+            "accession": "25485619",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/25485619"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Hafida",
+            "last-name": "Lounis",
+            "name": "Lounis H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Louise",
+            "last-name": "Champoux",
+            "name": "Champoux L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Melanie",
+            "last-name": "Tetrault",
+            "name": "Tetrault M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emily N.",
+            "last-name": "Manderson",
+            "name": "Manderson E.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jia-Chi",
+            "last-name": "Wang",
+            "name": "Wang J.-C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patrice",
+            "last-name": "Eydoux",
+            "name": "Eydoux P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rejean",
+            "last-name": "Savoie",
+            "name": "Savoie R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2000",
+        "first-page": "357",
+        "internal-id": "PubMed=10949993",
+        "journal-name": "In Vitro Cell. Dev. Biol. Anim.",
+        "last-page": "361",
+        "title": "Characterization of four novel epithelial ovarian cancer cell lines.",
+        "type": "article",
+        "volume": "36",
+        "xref-list": [
+          {
+            "accession": "10.1290/1071-2690(2000)036<0357:COFNEO>2.0.CO;2",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1290/1071-2690(2000)036<0357:COFNEO>2.0.CO;2"
+          },
+          {
+            "accession": "10949993",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/10949993"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Michael S.",
+            "last-name": "Anglesio",
+            "name": "Anglesio M.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kimberly C.",
+            "last-name": "Wiegand",
+            "name": "Wiegand K.C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nataliya",
+            "last-name": "Melnyk",
+            "name": "Melnyk N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christine",
+            "last-name": "Chow",
+            "name": "Chow C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Clara M.",
+            "last-name": "Salamanca",
+            "name": "Salamanca C.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Leah M.",
+            "last-name": "Prentice",
+            "name": "Prentice L.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Janine",
+            "last-name": "Senz",
+            "name": "Senz J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Winnie",
+            "last-name": "Yang",
+            "name": "Yang W.",
+            "type": "person"
+          },
+          {
+            "first-names": "Monique Ann",
+            "last-name": "Spillman",
+            "name": "Spillman M.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Dawn R.",
+            "last-name": "Cochrane",
+            "name": "Cochrane D.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Karey",
+            "last-name": "Shumansky",
+            "name": "Shumansky K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sohrab P.",
+            "last-name": "Shah",
+            "name": "Shah S.P.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steve E.",
+            "last-name": "Kalloger",
+            "name": "Kalloger S.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "David G.",
+            "last-name": "Huntsman",
+            "name": "Huntsman D.G.",
+            "type": "person"
+          }
+        ],
+        "date": "2013",
+        "first-page": "e72162.1",
+        "internal-id": "PubMed=24023729",
+        "journal-name": "PLoS ONE",
+        "last-page": "e72162.13",
+        "title": "Type-specific cell line models for type-specific ovarian cancer research.",
+        "type": "article",
+        "volume": "8",
+        "xref-list": [
+          {
+            "accession": "PMC3762837",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3762837"
+          },
+          {
+            "accession": "10.1371/journal.pone.0072162",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1371/journal.pone.0072162"
+          },
+          {
+            "accession": "24023729",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/24023729"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas James",
+            "last-name": "Hudson",
+            "name": "Hudson T.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francis",
+            "last-name": "Rodier",
+            "name": "Rodier F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michela",
+            "last-name": "Bossolasco",
+            "name": "Bossolasco M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Peter D.",
+            "last-name": "Lee",
+            "name": "Lee P.D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jaroslav",
+            "last-name": "Novak",
+            "name": "Novak J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emily N.",
+            "last-name": "Manderson",
+            "name": "Manderson E.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Diane Michele",
+            "last-name": "Provencher",
+            "name": "Provencher D.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anne-Marie",
+            "last-name": "Mes-Masson",
+            "name": "Mes-Masson A.-M.",
+            "type": "person"
+          }
+        ],
+        "date": "2001",
+        "first-page": "6617",
+        "internal-id": "PubMed=11641787",
+        "journal-name": "Oncogene",
+        "last-page": "6626",
+        "title": "Microarray analysis of gene expression mirrors the biology of an ovarian cancer model.",
+        "type": "article",
+        "volume": "20",
+        "xref-list": [
+          {
+            "accession": "10.1038/sj.onc.1204804",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/sj.onc.1204804"
+          },
+          {
+            "accession": "11641787",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/11641787"
+          }
+        ]
+      }
+    ]
+  }
+}

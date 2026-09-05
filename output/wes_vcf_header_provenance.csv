@@ -1,0 +1,24 @@
+cell_line,source_vcf,mutect2_version,filtermutectcalls_version,vep_version,vep_assembly,gnomad_exomes,gnomad_genomes,clinvar_release,dbsnp_release
+OV1369-R2,judy_archive/data/wes - old/mutect2/OV1369_R2/OV1369_R2_P66.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV2085,judy_archive/data/wes - old/mutect2/OV2085/OV2085_P64.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV2295,judy_archive/data/wes - old/mutect2/OV2295/OV2295_P61.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV2295-R2,judy_archive/data/wes - old/mutect2/OV2295_R2/OV2295_R2_P70.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV3133-R,judy_archive/data/wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV3133-R2,judy_archive/data/wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV3291,judy_archive/data/wes - old/mutect2/OV3291/OV3291_P46.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV1369,judy_archive/data/wes - old/mutect2/TOV1369/TOV1369_P65.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV2295-R,judy_archive/data/wes - old/mutect2/TOV2295_R_P57/TOV2295_R_P57.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV2835EP,judy_archive/data/wes - old/mutect2/TOV2835EP_P64/TOV2835EP_P64.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV2881EP,judy_archive/data/wes - old/mutect2/TOV2881EP_P64/TOV2881EP_P64.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV2929D,judy_archive/data/wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV3121D,judy_archive/data/wes - old/mutect2/TOV3121D_P68/TOV3121D_P68.mutect2.filtered_VEP.ann.vcf.gz,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV3121EP,judy_archive/data/wes - old/mutect2/TOV3121EP_P68/TOV3121EP_P68.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV3133D,judy_archive/data/wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV3133G,judy_archive/data/wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV3331,judy_archive/data/wes - old/mutect2/OV3331/OV3331_P54.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+OV90,judy_archive/data/wes - old/mutect2/OV90_P63/OV90_P63.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV81D,judy_archive/data/wes - old/mutect2/TOV81D_P23/TOV81D_P23.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV21G,judy_archive/data/wes - old/mutect2/TOV21G_P59/TOV21G_P59.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV3392D,judy_archive/data/wes - old/mutect2/TOV3392D/TOV3392D_P69.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV112D,judy_archive/data/wes - old/mutect2/TOV112D/TOV112D_P83.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156
+TOV2414,judy_archive/data/wes - old/mutect2/TOV2414/TOV2414_P65.mutect2.filtered_VEP.ann.vcf,4.5.0.0,4.5.0.0,v113.0,GRCh38.p14,v4.1,v4.1,202404,156

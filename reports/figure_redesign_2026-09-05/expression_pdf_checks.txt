@@ -1,0 +1,51 @@
+pdfinfo docs/manuscript/figures/fig2.pdf
+Producer:        cairo 1.17.6 (https://cairographics.org)
+CreationDate:    Sat Sep  5 13:00:14 2026 EDT
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           1
+Encrypted:       no
+Page size:       518 x 442 pts
+Page rot:        0
+File size:       970669 bytes
+Optimized:       no
+PDF version:     1.7
+
+pdffonts docs/manuscript/figures/fig2.pdf
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+AGYIWB+ArialMT                       TrueType          WinAnsi          yes yes yes      6  0
+YYTUJQ+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes      7  0
+
+pdfinfo docs/manuscript/figures/fig3.pdf
+Producer:        cairo 1.17.6 (https://cairographics.org)
+CreationDate:    Sat Sep  5 13:04:06 2026 EDT
+Custom Metadata: no
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           1
+Encrypted:       no
+Page size:       518 x 504 pts
+Page rot:        0
+File size:       90105 bytes
+Optimized:       no
+PDF version:     1.7
+
+pdffonts docs/manuscript/figures/fig3.pdf
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+YBTEDC+ArialMT                       TrueType          WinAnsi          yes yes yes      6  0
+IHLCAM+Arial-BoldMT                  TrueType          WinAnsi          yes yes yes      7  0
+NTTJVY+ArialMT                       CID TrueType      Identity-H       yes yes yes      8  0
+
+PASS scripts/34_fig2_qc.R 
+PASS scripts/35_fig3_biology.R 

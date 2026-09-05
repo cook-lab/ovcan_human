@@ -1,0 +1,528 @@
+cell_line,subtype,symbol,common,adc_example,expected_subtype,assay,log2_expr
+TOV21G,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.308
+TOV3392D,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.028
+VOA10816,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.523
+VOA12539,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,7.123
+VOA295,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.647
+VOA4841,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.903
+VOA6861,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.668
+TOV112D,EC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.555
+VOA4395,EC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.54
+OV1369-R2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,4.468
+OV1946,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.612
+OV2085,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.568
+OV2295,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.454
+OV2295-R2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,7.735
+OV3133-R,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,4.12
+OV3331,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.926
+OV4453,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.483
+OV4485,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.255
+OV866-2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.686
+OV90,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.471
+TOV1369,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.291
+TOV3041G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.161
+TOV3133G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,4.252
+TOV3291G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.447
+TOV2414,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.218
+VOA8762,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,7.274
+VOA8771,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,7.132
+VOA5217,MMMT,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.073
+VOA5436,MMMT,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,6.253
+BIN67,SCCOHT,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,7.01
+COV434,SCCOHT,CD276,B7-H3,ifinatamab deruxtecan,NA,RNA,5.66
+TOV21G,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.175
+TOV3392D,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.19
+VOA10816,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.414
+VOA12539,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.589
+VOA14993,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.659
+VOA295,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.232
+VOA4841,CC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.137
+TOV112D,EC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.092
+VOA4395,EC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.589
+OV1369-R2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.035
+OV1946,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,10.952
+OV2085,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.206
+OV2295,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.077
+OV2295-R2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.669
+OV3133-R,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.228
+OV3331,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.245
+OV4453,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.114
+OV4485,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.291
+OV866-2,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.367
+OV90,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.468
+TOV1369,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.079
+TOV3041G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.3
+TOV3133G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.017
+TOV3291G,HGS,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.251
+TOV2414,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.051
+VOA8762,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.947
+VOA8771,MC,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.898
+VOA5217,MMMT,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.235
+VOA5436,MMMT,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.246
+BIN67,SCCOHT,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.601
+COV434,SCCOHT,CD276,B7-H3,ifinatamab deruxtecan,NA,protein,11.132
+TOV21G,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,1.81
+TOV3392D,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.063
+VOA10816,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,3.487
+VOA12539,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.112
+VOA295,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.905
+VOA4841,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.212
+VOA6861,CC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,4.831
+TOV112D,EC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.157
+VOA4395,EC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,3.588
+OV1369-R2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.881
+OV1946,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.075
+OV2085,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.647
+OV2295,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,4.339
+OV2295-R2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,7.329
+OV3133-R,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,2.36
+OV3331,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,9.183
+OV4453,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.488
+OV4485,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.576
+OV866-2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.908
+OV90,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.781
+TOV1369,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,6.752
+TOV3041G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,6.935
+TOV3133G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,4.483
+TOV3291G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.27
+TOV2414,MC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.531
+VOA8762,MC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,5.408
+VOA8771,MC,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,4.555
+VOA5217,MMMT,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.266
+VOA5436,MMMT,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.705
+BIN67,SCCOHT,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,2.895
+COV434,SCCOHT,CDH6,CDH6,raludotatug deruxtecan,NA,RNA,0.263
+TOV21G,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.777
+TOV3392D,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.515
+VOA10816,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.989
+VOA12539,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.377
+VOA14993,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.866
+VOA295,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.425
+VOA4841,CC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.824
+TOV112D,EC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.796
+VOA4395,EC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.838
+OV1369-R2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.211
+OV1946,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.578
+OV2085,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.441
+OV2295,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.448
+OV2295-R2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.814
+OV3133-R,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,14.024
+OV3331,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,14.717
+OV4453,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.097
+OV4485,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.811
+OV866-2,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.859
+OV90,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.379
+TOV1369,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.993
+TOV3041G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.782
+TOV3133G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.806
+TOV3291G,HGS,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.609
+TOV2414,MC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.623
+VOA8762,MC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,13.371
+VOA8771,MC,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.7
+VOA5217,MMMT,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.941
+VOA5436,MMMT,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.516
+BIN67,SCCOHT,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.911
+COV434,SCCOHT,CDH6,CDH6,raludotatug deruxtecan,NA,protein,12.491
+TOV21G,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0.017
+TOV3392D,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA10816,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA12539,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA295,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0.013
+VOA4841,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA6861,CC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+TOV112D,EC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA4395,EC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV1369-R2,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,4.593
+OV1946,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV2085,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV2295,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV2295-R2,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0.577
+OV3133-R,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV3331,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV4453,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV4485,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV866-2,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+OV90,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0.097
+TOV1369,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,1.667
+TOV3041G,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+TOV3133G,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+TOV3291G,HGS,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+TOV2414,MC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA8762,MC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA8771,MC,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA5217,MMMT,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+VOA5436,MMMT,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+BIN67,SCCOHT,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+COV434,SCCOHT,DPEP3,DPEP3,tamrintamab pamozirine (SC-003),NA,RNA,0
+TOV21G,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.895
+TOV3392D,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,7.764
+VOA10816,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,7.212
+VOA12539,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.201
+VOA295,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.078
+VOA4841,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.51
+VOA6861,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.279
+TOV112D,EC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.547
+VOA4395,EC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.6
+OV1369-R2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,4.905
+OV1946,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,4.919
+OV2085,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.276
+OV2295,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.312
+OV2295-R2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,4.957
+OV3133-R,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.186
+OV3331,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.805
+OV4453,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.18
+OV4485,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.668
+OV866-2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.68
+OV90,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,4.603
+TOV1369,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.114
+TOV3041G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.167
+TOV3133G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.352
+TOV3291G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.082
+TOV2414,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.328
+VOA8762,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.31
+VOA8771,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.149
+VOA5217,MMMT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.19
+VOA5436,MMMT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.923
+BIN67,SCCOHT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,6.474
+COV434,SCCOHT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,RNA,5.92
+TOV21G,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.247
+TOV3392D,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.904
+VOA10816,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.376
+VOA12539,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.651
+VOA14993,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.535
+VOA295,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.494
+VOA4841,CC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.104
+TOV112D,EC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.193
+VOA4395,EC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.38
+OV1369-R2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.095
+OV1946,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,12.92
+OV2085,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.326
+OV2295,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.317
+OV2295-R2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.025
+OV3133-R,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.285
+OV3331,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.336
+OV4453,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.315
+OV4485,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.402
+OV866-2,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.354
+OV90,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13
+TOV1369,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.275
+TOV3041G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.208
+TOV3133G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.18
+TOV3291G,HGS,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.254
+TOV2414,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.279
+VOA8762,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.639
+VOA8771,MC,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.648
+VOA5217,MMMT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.581
+VOA5436,MMMT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.323
+BIN67,SCCOHT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.389
+COV434,SCCOHT,ERBB2,HER2,trastuzumab deruxtecan,CC/MC,protein,13.053
+TOV21G,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,6.311
+TOV3392D,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,7.686
+VOA10816,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,5.629
+VOA12539,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.169
+VOA295,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,6.91
+VOA4841,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,6.274
+VOA6861,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.038
+TOV112D,EC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.305
+VOA4395,EC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.848
+OV1369-R2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.344
+OV1946,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.057
+OV2085,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,7.028
+OV2295,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,8.12
+OV2295-R2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.998
+OV3133-R,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,8.562
+OV3331,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.489
+OV4453,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,5.023
+OV4485,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,7.597
+OV866-2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.104
+OV90,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,5.154
+TOV1369,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,5.428
+TOV3041G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,5.589
+TOV3133G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,9.479
+TOV3291G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,1.879
+TOV2414,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.135
+VOA8762,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,7.4
+VOA8771,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,7.542
+VOA5217,MMMT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,3.437
+VOA5436,MMMT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,4.523
+BIN67,SCCOHT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0.482
+COV434,SCCOHT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,RNA,0
+TOV21G,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.902
+TOV3392D,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.784
+VOA10816,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.946
+VOA12539,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.246
+VOA14993,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,13.597
+VOA295,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.348
+VOA4841,CC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.02
+TOV112D,EC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,10.589
+VOA4395,EC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,10.717
+OV1369-R2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.101
+OV1946,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.104
+OV2085,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.495
+OV2295,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,13.235
+OV2295-R2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.577
+OV3133-R,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.393
+OV3331,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.414
+OV4453,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.419
+OV4485,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,13.088
+OV866-2,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,10.89
+OV90,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.373
+TOV1369,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.937
+TOV3041G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,12.229
+TOV3133G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.589
+TOV3291G,HGS,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.589
+TOV2414,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.498
+VOA8762,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,13.087
+VOA8771,MC,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,13.395
+VOA5217,MMMT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.07
+VOA5436,MMMT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,11.483
+BIN67,SCCOHT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,10.934
+COV434,SCCOHT,FOLR1,FRalpha,mirvetuximab soravtansine,HGS,protein,10.467
+TOV21G,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,5.229
+TOV3392D,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,4.278
+VOA10816,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,7.55
+VOA12539,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,6.463
+VOA295,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,1.121
+VOA4841,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,8.479
+VOA6861,CC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.636
+TOV112D,EC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.157
+VOA4395,EC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.052
+OV1369-R2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,7.032
+OV1946,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0
+OV2085,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,6.722
+OV2295,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,6.736
+OV2295-R2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.456
+OV3133-R,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,8.791
+OV3331,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,8.748
+OV4453,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,6.875
+OV4485,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,8.595
+OV866-2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.942
+OV90,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0
+TOV1369,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,7.172
+TOV3041G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,7.316
+TOV3133G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,9.299
+TOV3291G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,6.656
+TOV2414,MC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,8.592
+VOA8762,MC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.575
+VOA8771,MC,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0
+VOA5217,MMMT,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.707
+VOA5436,MMMT,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,4.857
+BIN67,SCCOHT,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,1.621
+COV434,SCCOHT,MSLN,mesothelin,anetumab ravtansine,HGS,RNA,0.044
+TOV21G,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.642
+TOV3392D,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.954
+VOA10816,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.979
+VOA12539,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.076
+VOA14993,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.719
+VOA295,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.822
+VOA4841,CC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,13.044
+TOV112D,EC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.814
+VOA4395,EC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.978
+OV1369-R2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.07
+OV1946,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.812
+OV2085,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.058
+OV2295,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.475
+OV2295-R2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.826
+OV3133-R,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.705
+OV3331,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,13.014
+OV4453,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.54
+OV4485,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,13.081
+OV866-2,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.102
+OV90,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.605
+TOV1369,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.495
+TOV3041G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,13.066
+TOV3133G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.508
+TOV3291G,HGS,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.494
+TOV2414,MC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,12.688
+VOA8762,MC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.487
+VOA8771,MC,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.325
+VOA5217,MMMT,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.785
+VOA5436,MMMT,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.95
+BIN67,SCCOHT,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.686
+COV434,SCCOHT,MSLN,mesothelin,anetumab ravtansine,HGS,protein,11.751
+TOV21G,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,5.297
+TOV3392D,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,3.674
+VOA10816,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,8.382
+VOA12539,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,8.736
+VOA295,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,3.897
+VOA4841,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.608
+VOA6861,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,6.657
+TOV112D,EC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.09
+VOA4395,EC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.44
+OV1369-R2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,6.787
+OV1946,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.111
+OV2085,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,5.041
+OV2295,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,7.856
+OV2295-R2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,6.691
+OV3133-R,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,7.433
+OV3331,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,5.547
+OV4453,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,5.007
+OV4485,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,8.464
+OV866-2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,2.776
+OV90,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,2.091
+TOV1369,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,7.762
+TOV3041G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,7.647
+TOV3133G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,7.94
+TOV3291G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.861
+TOV2414,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.068
+VOA8762,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,2.648
+VOA8771,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,2.387
+VOA5217,MMMT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,6.182
+VOA5436,MMMT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,2.167
+BIN67,SCCOHT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.74
+COV434,SCCOHT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,RNA,0.317
+TOV21G,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.244
+TOV3392D,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.605
+VOA10816,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.242
+VOA12539,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,13.575
+VOA14993,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.563
+VOA295,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.856
+VOA4841,CC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.508
+TOV112D,EC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.673
+VOA4395,EC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.358
+OV1369-R2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.83
+OV1946,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.289
+OV2085,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.802
+OV2295,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.343
+OV2295-R2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.397
+OV3133-R,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.861
+OV3331,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.358
+OV4453,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.197
+OV4485,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.582
+OV866-2,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.594
+OV90,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.468
+TOV1369,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.37
+TOV3041G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.728
+TOV3133G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,12.431
+TOV3291G,HGS,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.771
+TOV2414,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,9.972
+VOA8762,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.211
+VOA8771,MC,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.101
+VOA5217,MMMT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.555
+VOA5436,MMMT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,10.401
+BIN67,SCCOHT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.643
+COV434,SCCOHT,SLC34A2,NaPi2b,upifitamab rilsodotin,NA,protein,11.289
+TOV21G,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.043
+TOV3392D,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,4.21
+VOA10816,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,6.913
+VOA12539,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.158
+VOA295,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.011
+VOA4841,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.713
+VOA6861,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.03
+TOV112D,EC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0
+VOA4395,EC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0
+OV1369-R2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,4.814
+OV1946,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,4.758
+OV2085,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.062
+OV2295,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.642
+OV2295-R2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,8.355
+OV3133-R,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,8.155
+OV3331,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,6.265
+OV4453,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.659
+OV4485,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.864
+OV866-2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,4.117
+OV90,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.021
+TOV1369,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,7.835
+TOV3041G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,8.248
+TOV3133G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,7.397
+TOV3291G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,7.664
+TOV2414,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,9.407
+VOA8762,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,8.488
+VOA8771,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,7.725
+VOA5217,MMMT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0
+VOA5436,MMMT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0.012
+BIN67,SCCOHT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0
+COV434,SCCOHT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,RNA,0
+TOV21G,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.016
+TOV3392D,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.889
+VOA10816,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.973
+VOA12539,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.819
+VOA14993,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.913
+VOA295,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.046
+VOA4841,CC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.064
+TOV112D,EC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.775
+VOA4395,EC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.811
+OV1369-R2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.411
+OV1946,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.068
+OV2085,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.815
+OV2295,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.445
+OV2295-R2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.036
+OV3133-R,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.153
+OV3331,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.095
+OV4453,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,15.184
+OV4485,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.974
+OV866-2,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.031
+OV90,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.799
+TOV1369,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.834
+TOV3041G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.089
+TOV3133G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.911
+TOV3291G,HGS,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.042
+TOV2414,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,14.134
+VOA8762,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.106
+VOA8771,MC,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,13.168
+VOA5217,MMMT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.897
+VOA5436,MMMT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.773
+BIN67,SCCOHT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.861
+COV434,SCCOHT,TACSTD2,TROP2,sacituzumab/datopotamab deruxtecan,NA,protein,12.776
+TOV21G,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.977
+TOV3392D,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,3.628
+VOA10816,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.511
+VOA12539,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,5.152
+VOA295,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,2.682
+VOA4841,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,2.862
+VOA6861,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,3.501
+TOV112D,EC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.022
+VOA4395,EC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.022
+OV1369-R2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.177
+OV1946,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.022
+OV2085,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.688
+OV2295,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,6.099
+OV2295-R2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,5.398
+OV3133-R,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,6.647
+OV3331,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,6.657
+OV4453,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,5.807
+OV4485,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,1.626
+OV866-2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.021
+OV90,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.98
+TOV1369,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.771
+TOV3041G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,2.021
+TOV3133G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.871
+TOV3291G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.083
+TOV2414,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.186
+VOA8762,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,5.722
+VOA8771,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,4.901
+VOA5217,MMMT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,1.387
+VOA5436,MMMT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.07
+BIN67,SCCOHT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.018
+COV434,SCCOHT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,RNA,0.036
+TOV21G,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.347
+TOV3392D,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.68
+VOA10816,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.489
+VOA12539,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.723
+VOA14993,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,12.943
+VOA295,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.063
+VOA4841,CC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.239
+TOV112D,EC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.26
+VOA4395,EC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.255
+OV1369-R2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.067
+OV1946,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.981
+OV2085,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.719
+OV2295,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,12.16
+OV2295-R2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,12.947
+OV3133-R,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,12.696
+OV3331,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,12.726
+OV4453,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.997
+OV4485,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.262
+OV866-2,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.038
+OV90,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.471
+TOV1369,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.703
+TOV3041G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.408
+TOV3133G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.925
+TOV3291G,HGS,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.909
+TOV2414,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.741
+VOA8762,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.259
+VOA8771,MC,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.494
+VOA5217,MMMT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.182
+VOA5436,MMMT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.746
+BIN67,SCCOHT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,11.001
+COV434,SCCOHT,VTCN1,B7-H4,puxitatug samrotecan / XMT-1660,NA,protein,10.767

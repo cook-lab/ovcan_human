@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gene Explorer: OvCAN Collection — Cook Lab</title>
+<style>
+/* ---- Cook Lab brand tokens (rust + navy). Fonts fall back to system-ui when
+       Inter/Manrope are not installed — no network fetch, so this stays
+       hostable anywhere and works offline / from file://. ---- */
+:root{
+  --rust:#C2410C; --rust-400:#EB6235; --rust-700:#7A2A09; --rust-50:#FEF3EE; --rust-100:#FDE2D1;
+  --navy:#0F172A; --slate:#334155; --slate-400:#64748B; --slate-300:#94A3B8; --slate-200:#CBD5E1;
+  --teal:#0D9488; --bg:#FFFFFF; --paper:#FFFFFF; --ink:#0F172A;
+  --line:rgba(15,23,42,.10); --line-strong:rgba(15,23,42,.16);
+  --font-display:'Manrope','Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-body:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  --font-mono:'JetBrains Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  /* locked subtype palette (matches scripts/00b_figure_theme.R) */
+  --HGS:#C2410C; --LGS:#F59065; --CC:#0D9488; --EC:#7C3AED; --MC:#A16207; --MMMT:#0369A1; --SCCOHT:#0F172A;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--font-body);
+  font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1060px;margin:0 auto;padding:0 28px 90px}
+
+/* ---- Masthead ---- */
+.masthead{padding:44px 0 22px;border-bottom:2px solid var(--rust);margin-bottom:8px}
+.eyebrow{font-family:var(--font-mono);font-size:11px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.15em;color:var(--rust);margin:0 0 14px}
+h1{font-family:var(--font-display);font-weight:300;letter-spacing:-.035em;line-height:1.08;
+  font-size:2.5rem;margin:0 0 12px;color:var(--navy)}
+h1 em{font-style:normal;color:var(--rust)}
+.lede{font-size:1.08rem;color:var(--slate);max-width:64ch;margin:0 0 18px}
+.meta{font-family:var(--font-mono);font-size:11px;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--slate-400);display:flex;gap:20px;flex-wrap:wrap}
+.meta b{color:var(--slate);font-weight:500}
+
+/* ---- Search ---- */
+.search-card{background:var(--paper);border:1px solid var(--line);border-radius:12px;
+  padding:20px 22px;margin:26px 0 8px;box-shadow:0 1px 3px rgba(15,23,42,.06);position:relative}
+.search-label{font-family:var(--font-mono);font-size:11px;font-weight:500;text-transform:uppercase;
+  letter-spacing:.12em;color:var(--rust);margin:0 0 10px}
+.search-row{display:flex;gap:10px;align-items:center}
+#q{flex:1;font-family:var(--font-mono);font-size:1.15rem;padding:12px 14px;border:1px solid var(--line-strong);
+  border-radius:8px;color:var(--navy);background:var(--paper);outline:none;letter-spacing:.02em}
+#q:focus{border-color:var(--rust);box-shadow:0 0 0 3px var(--rust-50)}
+.hint{font-family:var(--font-mono);font-size:11px;color:var(--slate-400);margin-top:9px}
+.chips{margin-top:11px;display:flex;gap:7px;flex-wrap:wrap;align-items:center}
+.chips .cl{font-family:var(--font-mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--slate-400);margin-right:2px}
+.chip{font-family:var(--font-mono);font-size:12px;padding:3px 10px;border-radius:999px;cursor:pointer;
+  background:var(--rust-50);color:var(--rust-700);border:1px solid var(--rust-100);transition:all .12s}
+.chip:hover{background:var(--rust);color:#fff;border-color:var(--rust)}
+/* typeahead */
+#suggest{position:absolute;left:22px;right:22px;top:calc(100% - 30px);z-index:20;background:var(--paper);
+  border:1px solid var(--line-strong);border-radius:8px;box-shadow:0 12px 32px rgba(15,23,42,.14);
+  overflow:hidden;display:none}
+#suggest.on{display:block}
+.sug{padding:8px 14px;font-family:var(--font-mono);font-size:13px;cursor:pointer;display:flex;
+  justify-content:space-between;gap:12px;border-bottom:1px solid var(--line)}
+.sug:last-child{border-bottom:none}
+.sug.active,.sug:hover{background:var(--rust-50)}
+.sug .in{color:var(--navy);font-weight:500}
+.sug .av{color:var(--slate-400);font-size:11px}
+
+/* ---- Result header ---- */
+#result{margin-top:26px;min-height:120px}
+.gene-head{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:4px}
+.gene-name{font-family:var(--font-display);font-weight:400;font-size:2rem;color:var(--navy);letter-spacing:-.02em}
+.gene-sub{font-family:var(--font-mono);font-size:12px;color:var(--slate-400)}
+.gene-sub a{color:var(--rust);text-decoration:none;border-bottom:1px solid var(--rust-100)}
+.detect{display:flex;gap:22px;flex-wrap:wrap;margin:10px 0 4px;font-size:13.5px;color:var(--slate)}
+.detect b{color:var(--navy);font-variant-numeric:tabular-nums}
+.flag{background:var(--rust-50);border:1px solid var(--rust-100);color:var(--rust-700);
+  font-size:12.5px;border-radius:8px;padding:8px 12px;margin:12px 0}
+
+/* ---- Controls ---- */
+.controls{display:flex;gap:18px;align-items:center;flex-wrap:wrap;margin:16px 0 6px;
+  padding-top:14px;border-top:1px solid var(--line)}
+.controls label{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;
+  color:var(--slate-400);margin-right:6px}
+.seg{display:inline-flex;border:1px solid var(--line-strong);border-radius:7px;overflow:hidden}
+.seg button{font-family:var(--font-body);font-size:12.5px;padding:5px 11px;border:none;background:var(--paper);
+  color:var(--slate);cursor:pointer;border-right:1px solid var(--line)}
+.seg button:last-child{border-right:none}
+.seg button.on{background:var(--navy);color:#fff}
+
+/* ---- Legend ---- */
+.legend{display:flex;gap:14px;flex-wrap:wrap;margin:14px 0 6px}
+.lg{display:flex;align-items:center;gap:6px;font-size:12px;color:var(--slate)}
+.sw{width:11px;height:11px;border-radius:3px;display:inline-block}
+
+/* ---- Chart table ---- */
+.panelhead{display:grid;grid-template-columns:150px 1fr 1fr;gap:14px;margin:16px 0 2px;
+  font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.07em;color:var(--slate-400)}
+.panelhead .u{font-size:9.5px;text-transform:none;letter-spacing:0;color:var(--slate-300)}
+.grp{font-family:var(--font-mono);font-size:10.5px;text-transform:uppercase;letter-spacing:.09em;
+  color:var(--rust);margin:14px 0 4px;padding-bottom:3px;border-bottom:1px dashed var(--rust-100)}
+.row{display:grid;grid-template-columns:150px 1fr 1fr;gap:14px;align-items:center;padding:3px 0}
+.row .ln{font-family:var(--font-mono);font-size:12.5px;color:var(--navy);text-align:right;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;display:flex;align-items:center;gap:6px;justify-content:flex-end}
+.dot{width:9px;height:9px;border-radius:50%;flex:none}
+.cf{display:flex;align-items:center;gap:8px}
+.track{flex:1;height:15px;background:var(--warm,#eef1f5);background:#EDEFF3;border-radius:3px;overflow:hidden;position:relative}
+.fill{height:100%;border-radius:3px 0 0 3px;min-width:1px}
+.val{font-family:var(--font-mono);font-size:11.5px;color:var(--slate);width:74px;text-align:right;
+  flex:none;font-variant-numeric:tabular-nums}
+.nd{font-family:var(--font-mono);font-size:10px;color:var(--slate-300);letter-spacing:.06em}
+.na-cell{color:var(--slate-300);font-family:var(--font-mono);font-size:11px}
+.conf{color:var(--rust);font-weight:700;cursor:help}
+
+/* ---- States ---- */
+.state{background:var(--paper);border:1px dashed var(--line-strong);border-radius:12px;padding:40px 24px;
+  text-align:center;color:var(--slate-400);font-size:15px}
+.state b{color:var(--navy)}
+
+/* ---- Footer / caveats ---- */
+.foot{margin-top:44px;border-top:1px solid var(--line);padding-top:18px;font-size:13px;color:var(--slate-400)}
+.foot h4{font-family:var(--font-display);font-weight:500;font-size:1.05rem;color:var(--navy);margin:0 0 8px}
+.foot ul{margin:0 0 10px;padding-left:18px}
+.foot li{margin-bottom:6px}
+.foot code{font-family:var(--font-mono);font-size:.85em;background:var(--rust-50);color:var(--rust-700);
+  padding:1px 5px;border-radius:4px}
+.foot b{color:var(--slate)}
+
+@media (max-width:720px){
+  h1{font-size:1.9rem}.meta{gap:12px}
+  .panelhead,.row{grid-template-columns:110px 1fr 1fr;gap:9px}
+  .row .ln{font-size:11px}.val{width:60px}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <p class="eyebrow">Cook Lab · Ovarian Cancer Canada</p>
+    <h1>Gene Explorer: <em>OvCAN Collection</em></h1>
+    <p class="lede">Type a gene symbol to see its per-cell-line <b>RNA</b> (bulk RNA-seq, TPM) and
+      <b>protein</b> (TMT, log2 abundance) across the <b>OvCAN Collection</b> (Ovarian Cancer Canada)
+      of patient-derived ovarian cancer cell lines, coloured by histotype.</p>
+    <div class="meta">
+      <span><b>RNA</b> <span id="m_rna">–</span> lines · <span id="m_rnag">–</span> genes</span>
+      <span><b>Protein</b> <span id="m_prot">–</span> lines · <span id="m_protg">–</span> proteins</span>
+      <span><b>Build</b> <span id="m_build">–</span></span>
+    </div>
+  </header>
+
+  <div class="search-card">
+    <p class="search-label">Gene lookup</p>
+    <div class="search-row">
+      <input id="q" type="text" autocomplete="off" spellcheck="false" placeholder="e.g. WT1, MSLN, PAX8 …" aria-label="Gene symbol">
+    </div>
+    <div id="suggest" role="listbox"></div>
+    <div class="hint" id="hint">Loading data…</div>
+    <div class="chips">
+      <span class="cl">Try</span>
+      <span class="chip" data-g="WT1">WT1</span>
+      <span class="chip" data-g="MSLN">MSLN</span>
+      <span class="chip" data-g="PAX8">PAX8</span>
+      <span class="chip" data-g="FOLR1">FOLR1</span>
+      <span class="chip" data-g="ERBB2">ERBB2</span>
+      <span class="chip" data-g="MUC16">MUC16</span>
+      <span class="chip" data-g="CLDN6">CLDN6</span>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="state">Enter a gene symbol above to begin.</div>
+  </div>
+
+  <div class="foot">
+    <h4>How to read this &amp; what to watch for</h4>
+    <ul>
+      <li><b>Bars are relative by default.</b> Length is scaled to the highest line for that gene
+        (RNA on a log<sub>10</sub> basis; protein on its linear log2 scale). Switch to <b>Shared axis</b>
+        to keep each assay's display range fixed across genes. Protein feature baselines are not calibrated
+        for comparisons of absolute abundance between proteins. Printed numbers retain the supplied units.</li>
+      <li><b>RNA vs protein are different assays and units</b> — TPM (within-sample-normalised transcript
+        abundance) vs TMT log2 protein abundance. Compare them by <b>rank/pattern</b>, not by
+        matching numbers. Protein differences can reflect both post-transcriptional biology and TMT measurement effects.</li>
+      <li><b>"n.d." = no quantified value in that assay.</b> Protein has structural
+        <b>block-missingness</b> (~9% of values): a protein absent from a whole TMT plex is missing for
+        every line in that plex, not necessarily biologically absent. Absence of protein is weaker evidence than presence.</li>
+      <li><b>Histotype, source site, and TMT plex are partly confounded.</b> Several histotype-by-centre
+        combinations are not represented. A difference that tracks subtype may partly reflect batch or
+        site. Models from the same patient are not independent biological replicates.</li>
+      <li><b>Gene identifiers:</b> RNA is keyed by Ensembl gene ID (release 93) and mapped to symbols;
+        where several Ensembl genes share a symbol their TPM values are summed (all contributing IDs are
+        listed under the gene name). Protein rows use a representative symbol or a symbol plus UniProt
+        identifier for secondary features. Unmatched features and unmeasured assays are labelled explicitly.</li>
+      <li><b>One library/replicate per line.</b> These are single measurements; a few lines carry subtype
+        <span class="conf">‡</span> label conflicts (flagged when shown). Values are rounded for display.</li>
+    </ul>
+    <p style="margin-top:10px">Cook Lab · Ottawa Hospital Research Institute / University of Ottawa ·
+      OvCAN human ovarian cancer cell-line multi-omic resource. Data embedded client-side
+      (<code>data.js</code>, gzipped); no server or network calls. Regenerate with
+      <code>python3 app/build_payload.py</code>.</p>
+  </div>
+
+</div>
+
+<script src="data.js"></script>
+<script>
+const SUB = {
+  HGS:  {c:"#C2410C", name:"High-grade serous"},
+  LGS:  {c:"#F59065", name:"Low-grade serous"},
+  CC:   {c:"#0D9488", name:"Clear cell"},
+  EC:   {c:"#7C3AED", name:"Endometrioid"},
+  MC:   {c:"#A16207", name:"Mucinous"},
+  MMMT: {c:"#0369A1", name:"Carcinosarcoma (MMMT)"},
+  SCCOHT:{c:"#0F172A", name:"Small-cell, hypercalcaemic"}
+};
+let DATA=null, SYMBOLS=[], UP={}, state={sort:"subtype", scale:"rel"};
+const $=id=>document.getElementById(id);
+
+function subColor(s){ return (SUB[s]&&SUB[s].c) || "#94A3B8"; }
+function fmtTPM(v){ if(v==null) return ""; if(v===0) return "0"; if(v>=100) return Math.round(v).toLocaleString();
+  if(v>=1) return v.toFixed(1); if(v>=0.01) return v.toFixed(2); return v.toFixed(3); }
+function fmtLog2(v){ return v==null? "" : v.toFixed(2); }
+
+/* ---------- boot: decode the embedded gzipped payload in-browser ---------- */
+async function boot(){
+  try{
+    if(typeof window.OVCAN_B64!=="string") throw new Error("data.js not loaded (window.OVCAN_B64 missing)");
+    if(typeof DecompressionStream==="undefined")
+      throw new Error("This browser lacks DecompressionStream. Use a current Chrome/Edge/Firefox/Safari.");
+    const bin = Uint8Array.from(atob(window.OVCAN_B64), c=>c.charCodeAt(0));
+    const txt = await new Response(new Blob([bin]).stream().pipeThrough(new DecompressionStream("gzip"))).text();
+    DATA = JSON.parse(txt);
+  }catch(e){
+    $("result").innerHTML = '<div class="state"><b>Could not load data.</b><br>'+e.message+'</div>';
+    $("hint").textContent = "Data failed to load.";
+    return;
+  }
+  SYMBOLS = Array.from(new Set([...Object.keys(DATA.rna), ...Object.keys(DATA.prot)])).sort();
+  for(const s of SYMBOLS) UP[s.toUpperCase()] = s;
+  $("m_rna").textContent=DATA.rna_lines.length; $("m_rnag").textContent=Object.keys(DATA.rna).length.toLocaleString();
+  $("m_prot").textContent=DATA.prot_lines.length; $("m_protg").textContent=Object.keys(DATA.prot).length.toLocaleString();
+  $("m_build").textContent=DATA.generated;
+  $("hint").innerHTML = SYMBOLS.length.toLocaleString()+" gene symbols · start typing, or pick a quick example.";
+  wire();
+  const urlGene=new URLSearchParams(location.search).get("gene");
+  show(urlGene || "WT1");   // ?gene=SYMBOL for shareable links; WT1 demo otherwise
+}
+
+/* ---------- typeahead ---------- */
+function wire(){
+  const q=$("q"), sug=$("suggest");
+  let items=[], active=-1;
+  const close=()=>{sug.classList.remove("on");active=-1;};
+  q.addEventListener("input", ()=>{
+    const v=q.value.trim().toUpperCase();
+    if(!v){close();return;}
+    const pre=[],inc=[];
+    for(const s of SYMBOLS){const u=s.toUpperCase();
+      if(u.startsWith(v)) pre.push(s); else if(u.includes(v)) inc.push(s);
+      if(pre.length>=12) break;}
+    items=pre.concat(inc).slice(0,12);
+    if(!items.length){sug.innerHTML='<div class="sug"><span class="av">no match</span></div>';sug.classList.add("on");return;}
+    sug.innerHTML=items.map((s,i)=>{
+      const inR=DATA.rna[s], inP=DATA.prot[s];
+      const av=[inR?"RNA":"", inP?"protein":""].filter(Boolean).join(" + ")||"—";
+      return `<div class="sug" data-i="${i}"><span class="in">${s}</span><span class="av">${av}</span></div>`;
+    }).join("");
+    active=-1; sug.classList.add("on");
+    [...sug.children].forEach(el=>el.onclick=()=>{q.value=items[+el.dataset.i];close();show(items[+el.dataset.i]);});
+  });
+  q.addEventListener("keydown",e=>{
+    if(!sug.classList.contains("on")){ if(e.key==="Enter"&&q.value.trim()) show(q.value.trim()); return; }
+    if(e.key==="ArrowDown"){active=Math.min(active+1,items.length-1);paint();e.preventDefault();}
+    else if(e.key==="ArrowUp"){active=Math.max(active-1,0);paint();e.preventDefault();}
+    else if(e.key==="Enter"){const g=active>=0?items[active]:q.value.trim();q.value=g;close();show(g);e.preventDefault();}
+    else if(e.key==="Escape") close();
+  });
+  function paint(){[...sug.children].forEach((el,i)=>el.classList.toggle("active",i===active));}
+  document.addEventListener("click",e=>{ if(!sug.contains(e.target) && e.target!==q) close(); });
+  document.querySelectorAll(".chip").forEach(c=>c.onclick=()=>{$("q").value=c.dataset.g;close();show(c.dataset.g);});
+}
+
+/* ---------- scaling ---------- */
+function rnaFrac(tpm,gmax){ if(tpm==null) return 0;
+  const denom = state.scale==="abs" ? Math.log10(DATA.scale.rna_max+1) : Math.log10(gmax+1);
+  return denom>0 ? Math.min(Math.log10(tpm+1)/denom,1) : 0; }
+function protFrac(v,gmin,gmax){ if(v==null) return 0;
+  let lo,hi; if(state.scale==="abs"){lo=DATA.scale.prot_lo;hi=DATA.scale.prot_hi;} else {lo=gmin;hi=gmax;}
+  return hi>lo ? Math.max(0,Math.min((v-lo)/(hi-lo),1)) : 1; }
+
+/* ---------- render one gene ---------- */
+function show(input){
+  const key=(input||"").trim().toUpperCase();
+  const gene=UP[key];
+  const R=$("result");
+  if(!gene){
+    R.innerHTML='<div class="state"><b>“'+ (input||"") +'”</b> is not a recognised gene symbol in this resource.<br>'
+      +'<span style="font-size:13px">Check spelling / use the official HGNC symbol (e.g. <code>ERBB2</code>, not HER2).</span></div>';
+    return;
+  }
+  $("q").value=gene;
+  try{ history.replaceState(null,"", "?gene="+encodeURIComponent(gene)); }catch(e){}
+  const rna=DATA.rna[gene]||null, prot=DATA.prot[gene]||null;
+  const ens=DATA.rna_gene_id[gene], bt=DATA.rna_biotype_nonpc[gene]||(rna?"protein_coding":null);
+
+  // per-gene extents
+  let gmaxR=0; if(rna) for(const v of rna) if(v>gmaxR) gmaxR=v;
+  let gminP=Infinity,gmaxP=-Infinity,nP=0; if(prot) for(const v of prot) if(v!=null){nP++; if(v<gminP)gminP=v; if(v>gmaxP)gmaxP=v;}
+  const nRdet = rna? rna.filter(v=>v>=1).length : 0;
+
+  // rows over the full panel (union of lines), each with both assays
+  const rows = DATA.all_lines.map(ln=>{
+    const m=DATA.lines[ln];
+    const ri=DATA.rna_lines.indexOf(ln), pi=DATA.prot_lines.indexOf(ln);
+    return {ln, sub:m.subtype, site:m.site, plex:m.plex, conflict:m.conflict,
+      rna: (rna&&ri>=0)? rna[ri] : (ri>=0?0:null),   // 0 if line has RNA assay; null if no RNA assay for line
+      hasRnaAssay: ri>=0,
+      prot:(prot&&pi>=0)? prot[pi] : null,
+      hasProtAssay: pi>=0};
+  });
+
+  // sorting / grouping
+  const order = DATA.subtype_order;
+  let grouped=false;
+  if(state.sort==="subtype"){ grouped=true;
+    rows.sort((a,b)=> (order.indexOf(a.sub)-order.indexOf(b.sub)) || (b.rna??-1)-(a.rna??-1) || a.ln.localeCompare(b.ln));
+  } else if(state.sort==="rna"){ rows.sort((a,b)=>(b.rna??-1)-(a.rna??-1)); }
+  else if(state.sort==="prot"){ rows.sort((a,b)=>(b.prot??-Infinity)-(a.prot??-Infinity)); }
+  else { rows.sort((a,b)=>a.ln.localeCompare(b.ln)); }
+
+  // build HTML
+  let h='';
+  h+='<div class="gene-head"><span class="gene-name">'+gene+'</span>'
+    + '<span class="gene-sub">'
+    + (ens? 'Ensembl '+ens.split(', ').map(id => '<a href="https://www.ensembl.org/Homo_sapiens/Gene/Summary?g='+encodeURIComponent(id)+'" target="_blank" rel="noopener">'+id+'</a>').join(', ') : 'no Ensembl/RNA record')
+    + (bt&&bt!=="protein_coding"? ' · '+bt.replace(/_/g," ") : '')
+    + '</span></div>';
+
+  h+='<div class="detect">'
+    + '<span>RNA: <b>'+(rna? nRdet+' / '+DATA.rna_lines.length : '—')+'</b> lines ≥1 TPM'+(rna?'':' (not in RNA data)')+'</span>'
+    + '<span>Protein: <b>'+(prot? nP+' / '+DATA.prot_lines.length : '—')+'</b> lines quantified'+(prot?'':' (not in protein data)')+'</span>'
+    + '</div>';
+
+  if(!rna) h+='<div class="flag">No RNA record for <b>'+gene+'</b> (symbol not matched to an Ensembl gene in release 93). Protein shown where available.</div>';
+  if(!prot) h+='<div class="flag">No protein record for <b>'+gene+'</b> in the TMT dataset (not quantified, or symbol-synonym mismatch). RNA shown where available.</div>';
+
+  // controls
+  h+='<div class="controls">'
+    + '<span><label>Sort</label><span class="seg" id="seg-sort">'
+    +   btn("subtype","Subtype","sort")+btn("rna","RNA ↓","sort")+btn("prot","Protein ↓","sort")+btn("name","A–Z","sort")
+    + '</span></span>'
+    + '<span><label>Bar scale</label><span class="seg" id="seg-scale">'
+    +   btn("rel","Per-gene","scale")+btn("abs","Shared axis","scale")
+    + '</span></span>'
+    + '</div>';
+
+  // legend (only subtypes present)
+  const present=[...new Set(rows.map(r=>r.sub))].filter(s=>SUB[s]).sort((a,b)=>order.indexOf(a)-order.indexOf(b));
+  h+='<div class="legend">'+present.map(s=>'<span class="lg"><span class="sw" style="background:'+SUB[s].c+'"></span>'+s+' · '+SUB[s].name+'</span>').join('')+'</div>';
+
+  // panel header
+  h+='<div class="panelhead"><div style="text-align:right">Cell line</div>'
+    + '<div>RNA <span class="u">value = TPM · bar = log₁₀ '+(state.scale==="abs"?"(shared axis)":"(per-gene)")+'</span></div>'
+    + '<div>Protein <span class="u">value = log₂ abundance · bar '+(state.scale==="abs"?"(shared axis)":"(per-gene)")+'</span></div></div>';
+
+  // rows
+  let curSub=null;
+  for(const r of rows){
+    if(grouped && r.sub!==curSub){ curSub=r.sub; h+='<div class="grp">'+(SUB[r.sub]?SUB[r.sub].name+' ('+r.sub+')':r.sub)+'</div>'; }
+    const dot='<span class="dot" style="background:'+subColor(r.sub)+'"></span>';
+    const conf=r.conflict?'<span class="conf" title="subtype label conflict — see resource notes">‡</span>':'';
+    // RNA cell
+    let rnaCell;
+    if(!rna) rnaCell='<span class="na-cell">–</span>';                 // gene absent from RNA dataset
+    else if(!r.hasRnaAssay) rnaCell='<span class="na-cell">no RNA</span>'; // this line has no RNA assay
+    else { const f=rnaFrac(r.rna,gmaxR);
+      rnaCell='<div class="cf"><div class="track"><div class="fill" style="width:'+(f*100).toFixed(1)+'%;background:'+subColor(r.sub)+'"></div></div>'
+        +'<span class="val">'+fmtTPM(r.rna)+'</span></div>'; }
+    // protein cell
+    let protCell;
+    if(!prot) protCell='<span class="na-cell">–</span>';               // gene absent from protein dataset
+    else if(!r.hasProtAssay) protCell='<span class="na-cell">no protein</span>'; // this line has no protein assay
+    else if(r.prot==null) protCell='<div class="cf"><div class="track"></div><span class="val nd">n.d.</span></div>';
+    else { const f=protFrac(r.prot,gminP,gmaxP);
+      protCell='<div class="cf"><div class="track"><div class="fill" style="width:'+(f*100).toFixed(1)+'%;background:'+subColor(r.sub)+'"></div></div>'
+        +'<span class="val">'+fmtLog2(r.prot)+'</span></div>'; }
+    h+='<div class="row"><div class="ln">'+conf+r.ln+' '+dot+'</div>'+rnaCell+protCell+'</div>';
+  }
+
+  R.innerHTML=h;
+  // wire controls
+  document.querySelectorAll('#seg-sort button').forEach(b=>b.onclick=()=>{state.sort=b.dataset.v;show(gene);});
+  document.querySelectorAll('#seg-scale button').forEach(b=>b.onclick=()=>{state.scale=b.dataset.v;show(gene);});
+}
+function btn(v,label,grp){ return '<button class="'+(state[grp]===v?'on':'')+'" data-v="'+v+'">'+label+'</button>'; }
+
+boot();
+</script>
+</body>
+</html>

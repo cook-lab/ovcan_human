@@ -1,0 +1,16 @@
+subtype,program,n_pos_sig,best_term,NES,pval,padj,status,n_group,seed
+HGS,DNA repair (HR/DSB),1,regulation of double-strand break repair via homologous recombination,1.7,0.00168,0.0457,recovered (padj<0.05),15,1234
+CC,oxidative/glutathione/detox,3,sulfur amino acid metabolic process,2.13,6.22e-5,0.0043,recovered (padj<0.05),7,1234
+MC,glycan/oligosaccharide,0,oligosaccharide catabolic process,1.77,0.00978,0.119,suggestive (nominal p<0.05),3,1234
+MMMT,EMT / migration / ECM,0,negative regulation of vascular associated smooth muscle cell migration,1.41,0.0978,0.447,not recovered,2,1234
+SCCOHT,cell cycle / mitosis,28,replication fork processing,2.37,7.74e-7,3.51e-5,recovered (padj<0.05),2,1234
+HGS,DNA repair (HR/DSB),1,regulation of double-strand break repair via homologous recombination,1.7,0.00162,0.0454,recovered (padj<0.05),15,1235
+CC,oxidative/glutathione/detox,2,sulfur amino acid metabolic process,2.13,1.94e-4,0.00959,recovered (padj<0.05),7,1235
+MC,glycan/oligosaccharide,0,oligosaccharide catabolic process,1.77,0.00982,0.122,suggestive (nominal p<0.05),3,1235
+MMMT,EMT / migration / ECM,0,negative regulation of vascular associated smooth muscle cell migration,1.4,0.0979,0.449,not recovered,2,1235
+SCCOHT,cell cycle / mitosis,29,replication fork processing,2.37,1.25e-6,5.19e-5,recovered (padj<0.05),2,1235
+HGS,DNA repair (HR/DSB),1,regulation of double-strand break repair via homologous recombination,1.7,0.00179,0.0472,recovered (padj<0.05),15,1236
+CC,oxidative/glutathione/detox,3,sulfur amino acid metabolic process,2.12,1.52e-4,0.00813,recovered (padj<0.05),7,1236
+MC,glycan/oligosaccharide,0,oligosaccharide catabolic process,1.76,0.00923,0.115,suggestive (nominal p<0.05),3,1236
+MMMT,EMT / migration / ECM,0,negative regulation of vascular associated smooth muscle cell migration,1.4,0.0992,0.449,not recovered,2,1236
+SCCOHT,cell cycle / mitosis,28,replication fork processing,2.36,2.77e-6,1.03e-4,recovered (padj<0.05),2,1236

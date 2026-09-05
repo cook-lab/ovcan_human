@@ -1,0 +1,10 @@
+{
+  "models": 42,
+  "patients": 34,
+  "rna_available": 31,
+  "protein_available": 31,
+  "copy_number_available": 23,
+  "variants_available": 23,
+  "protein_features": 8427,
+  "validation": "passed"
+}

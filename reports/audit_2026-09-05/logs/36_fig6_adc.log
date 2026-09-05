@@ -1,0 +1,25 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | figure font: Arial | locked palettes: subtype/site/tier/plex/family/stratum/consensusov/variant-class | ramps: diverging(navy<->rust)/sequential/categorical
+Fig6 drawn line set: 30 lines (both modalities) — HGS 15, CC 6, EC 2, MC 3, MMMT 2, SCCOHT 2
+Per-modality: RNA 31 lines, protein 31 lines; modality-specific: VOA6861 (CC, RNA only); VOA14993 (CC, protein only)
+Fig6 row scaling: z per feature across the 30 drawn lines; |z| max 4.94; not detected: DPEP3 (protein)
+Panel B: FOLR1 HGSC n=15, range 0.057-9.479, BC 0.440 (threshold 0.555), dBIC -1.06 -> ONE component preferred, 4 lines in the low mclust component
+Panel C: MSLN range 0.189 / IQR 0.104 / SD 0.141 (n=30 paired lines) | median protein IQR: whole panel 0.345, ADC targets 0.728
+
+Fig6 written: /Users/dpcook/Analysis/ovcan_human/docs/manuscript/figures/fig6.pdf  (9 targets x 30 lines; RNA + protein, row-scaled)
+Known-association recovery (from adc_subtype_summary.csv; note per-modality n):
+ symbol     common   assay expected top_mean_subtype top_n_measured
+  ERBB2       HER2     RNA    CC/MC               CC              7
+  ERBB2       HER2 protein    CC/MC               MC              3
+  FOLR1    FRalpha     RNA      HGS               MC              3
+  FOLR1    FRalpha protein      HGS               MC              3
+   MSLN mesothelin     RNA      HGS              HGS             15
+   MSLN mesothelin protein      HGS              HGS             15
+ top_n_lines_in_modality top_mean_matches top_line_in_expected
+                       7             TRUE                 TRUE
+                       3             TRUE                 TRUE
+                       3            FALSE                 TRUE
+                       3            FALSE                FALSE
+                      15             TRUE                 TRUE
+                      15             TRUE                 TRUE
+36_fig6_adc.R complete.

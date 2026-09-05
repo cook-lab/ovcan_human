@@ -1,0 +1,1941 @@
+---
+title: "All inclusive RNA code"
+output: html_notebook
+---
+
+# Dependencies
+```{r}
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("DESeq2")   # run once if not installed
+library(DESeq2)
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+# install pcaExplorer
+BiocManager::install("pcaExplorer")
+
+# load it
+library(pcaExplorer)
+
+if (!requireNamespace("BiocManager", quietly = TRUE))
+  install.packages("BiocManager")
+
+BiocManager::install("org.Hs.eg.db")
+library(org.Hs.eg.db)
+
+remove.packages("Hmisc")
+if (!requireNamespace("BiocManager", quietly = TRUE)) install.packages("BiocManager")
+BiocManager::install(ask = FALSE, update = TRUE)
+install.packages("Hmisc", dependencies = TRUE)
+```
+
+```{r}
+library(tximport)
+library(tidyverse)
+library(Hmisc)
+library(factoextra)
+library(pheatmap)
+library(ggrepel)
+library(rhdf5)
+library(matrixStats)
+library(RColorBrewer)
+library(GO.db)
+library(topGO)
+library(ComplexHeatmap)
+library(ggplot2)
+library(readr)
+library(dplyr)
+library(biomaRt)
+library(cluster)
+library(progeny)
+#library(nichenetr)
+library(singscore)
+library(pheatmap)
+library(tidyr)
+library(viridisLite)
+```
+
+# Get transcript-to-gene annotation
+```{r}
+mart <- biomaRt::useMart(biomart = "ENSEMBL_MART_ENSEMBL",
+  dataset = "hsapiens_gene_ensembl",
+  host = 'https://www.ensembl.org')
+t2g <- biomaRt::getBM(attributes = c("ensembl_transcript_id", "ensembl_gene_id",
+    "external_gene_name"), mart = mart)
+t2g <- dplyr::rename(t2g, target_id = ensembl_transcript_id,
+  ens_gene = ensembl_gene_id, ext_gene = external_gene_name)
+t2g <- unique(t2g[,c("target_id", "ext_gene")])
+```
+
+
+# Load the data
+```{r}
+sample_id <- dir("../data/rna_seq/")
+kal_dirs <- file.path("../data/rna_seq", sample_id)
+```
+# Setup Annotation
+```{r}
+annotation <- data.frame(path = kal_dirs,
+                         sample = sample_id,
+                         cell_line = stringr::word(sample_id, 1, 1, sep="p")) #remove passage number
+annotation$cell_line <- gsub("R", "-R", annotation$cell_line) #just adding dash before replicate info
+```
+# Change Adeno to HGSC
+```{r}
+subtype_dat <- read.csv("../data/human_sample_annotation_cleaned.csv", row.names=1)
+subtype_dat$Subtype[subtype_dat$cell_line %in% c("OV3331", "OV90")] <- "High-grade serous"
+write.csv(subtype_dat, "../output/annotation.csv")
+```
+
+```{r}
+annotation$Subtype <- subtype_dat$Subtype[match(annotation$sample, subtype_dat$sample)]
+```
+
+## Import with tximport
+
+```{r}
+files <- file.path(annotation$path, "abundance.h5")
+names(files) <- annotation$sample
+```
+
+```{r}
+txi.kallisto <- tximport(files, type = "kallisto", txOut = FALSE, tx2gene = t2g,
+                         ignoreTxVersion = T)
+```
+
+```{r}
+tpm_mat <- txi.kallisto$abundance[2:nrow(txi.kallisto$abundance),] #the first row seems to be the sum of the transcripts missing from tx2gene
+tpm_mat <- tpm_mat[rowSums(tpm_mat) != 0,] #remove genes with no detection in any sample'
+#colnames(tpm_mat) <- annotation$cell_line
+```
+
+---------------
+# Kallisto
+
+```{r}
+kallisto_output_dir <- "path/to/kallisto/output"
+```
+
+```{r}
+files <- file.path(kallisto_output_dir, "abundance.tsv")
+```
+
+## Save point
+```{r}
+saveRDS(txi.kallisto, file="../output/txi.rds")
+write.csv(tpm_mat, file="../output/tpm_matrix.csv", quote=F)
+```
+# Remove LGSC and set up sample annotation
+```{r}
+
+subtypes_to_exclude <- c("LGSOC_P1", "LGSOC_P10", "LGSOC_P11", 
+                         "LGSOC_P2", "LGSOC_P3", "LGSOC_P4", 
+                         "LGSOC_P5", "LGSOC_P7")
+annotation <- annotation[!annotation$sample %in% subtypes_to_exclude, ]
+
+# Filter TPM matrix columns (columns = cell line names)
+tpm_mat <- tpm_mat[, colnames(tpm_mat) %in% annotation$cell_line]
+
+# Update col_annotation to match
+col_annotation <- data.frame(Subtype = annotation$Subtype)
+rownames(col_annotation) <- annotation$cell_line
+
+write.table(annotation, file = "../output/annotation.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+write.csv(annotation, file="../output/annotation.csv", quote=F)
+```
+# Reorder annotation table
+```{r}
+annotation <- read.csv("../output/annotation.csv", stringsAsFactors = FALSE)
+
+subtype_order <- c("Clear cell", "Endometrioid", "High-grade serous", "MMMT", "Mucinous", "SCCOHT")
+
+annotation$Subtype <- factor(annotation$Subtype, levels = subtype_order)
+
+annotation <- annotation[order(annotation$Subtype), ]
+
+write.csv(annotation, "../output/annotation.csv", row.names = FALSE)
+write_tsv(annotation, "../output/annotation.tsv")
+
+```
+# High-level comparisons
+```{r}
+tpm_mat_log <- log1p(tpm_mat)
+```
+
+## Spearman correlation
+```{r}
+dat_cor <- cor(tpm_mat_log, method="spearman")
+
+pdf("../figs2/spearman_cor_heatmap.pdf", width=6, height=5, units="in", res=300)
+
+
+subtypes <- unique(annotation$Subtype)
+subtype_colours <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+annotation_colours <- list(Subtype = subtype_colours)
+
+pheatmap::pheatmap(dat_cor,
+                   color = viridisLite::mako(100),
+                   annotation_col = col_annotation,
+                   annotation_colors = annotation_colours,
+                   border_color = "black",
+                   breaks = seq(0.825, 1, length.out=101),
+                   show_colnames = FALSE,
+                   clustering_method = "ward.D2",
+                   fontsize = 9, 
+                   filename = "../figs2/spearman_cor_heatmap.pdf", 
+  width = 8, height = 6  
+)
+
+dev.off()
+```
+
+# QC Box plots
+```{r}
+qc_data <- read_tsv("../data/kallisto_qc.tsv")
+annot <- read_tsv("../output/annotation.tsv")
+annot <- read_csv("../output/annotation.csv")
+annot_subset <- dplyr::select(annot, sample, Subtype)
+
+qc_annot <- dplyr::left_join(qc_data, annot_subset, by = "sample")
+
+subtypes <- unique(annot$Subtype)   
+subtype_colours <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+
+# Visualize number of processed reads
+read_count_plot <- ggplot(qc_annot, aes(x = "n Processed Reads", y = n_processed)) +
+  geom_boxplot(outlier.shape = NA, fill = "grey90", width = 0.2) +
+  geom_jitter(aes(color = Subtype), width = 0.1, size = 1.5, alpha = 0.9) +
+  scale_color_manual(values = subtype_colours) +
+  labs(x = "Number of Processed Reads", y = NULL , title = "Read count distribution across samples") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle=45, hjust=1),
+    plot.title = element_text(size = 10.5, hjust = 0.5),
+    legend.title = element_text(size = 10),
+    legend.position = "right"
+  )
+ggsave("../figs2/readcount_plot.pdf", read_count_plot, width = 2.79, height = 3, dpi = 300)
+
+
+# Visualize number of unique counts
+unique_count_plot <- ggplot(qc_annot, aes(x = "n_unique", y = n_unique)) +
+  geom_boxplot(outlier.shape = NA, fill = "grey90", width = 0.2) +
+  geom_jitter(aes(color = Subtype), width = 0.1, size = 2, alpha = 0.9) +
+  labs(x = "n_unique", y = NULL , title = "Unique values distribution across samples") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_blank(),
+    plot.title = element_text(size = 10.5, hjust = 0.5),
+    legend.title = element_text(size = 10),
+    legend.position = "right"
+  )
+ggsave("../figs2/uniquevalues_plot.pdf", unique_count_plot, width = 5, height = 4, dpi = 300)
+
+# Visualize pseudoalignement rate
+pseudoaligned_plot <- ggplot(qc_annot, aes(x = "Pseudoaligment rate (%)", y = p_pseudoaligned)) +
+  geom_boxplot(outlier.shape = NA, fill = "grey90", width = 0.2) +
+  geom_jitter(aes(color = Subtype), width = 0.1, size = 1.5, alpha = 0.9) +
+  scale_color_manual(values = subtype_colours) +
+  labs(x = "Pseudoalignment rate (%)", y = NULL , title = "Pseudoaligned values distribution across samples") +
+  theme_classic() +
+  theme(
+    axis.text.x = element_text(angle=45, hjust=1),
+    plot.title = element_text(size = 10.5, hjust = 0.5),
+    legend.title = element_text(size = 10),
+    legend.position = "right"
+  )
+ggsave("../figs2/pseudoalignedvalues_plot.pdf", pseudoaligned_plot, width = 2.78, height = 3.5, dpi = 300)
+```
+
+# tSNE
+```{r}
+ovcan_tsne <- Rtsne::Rtsne(pca_res$x[,1:5], perplexity=5) #keep 3*perp < nrow(x)
+```
+
+### Plotting
+```{r}
+plot_dat <- annotation
+plot_dat$tSNE1 <- ovcan_tsne$Y[,1]
+plot_dat$tSNE2 <- ovcan_tsne$Y[,2]
+plot_dat$PC1 <- pca_res$x[,1]
+plot_dat$PC2 <- pca_res$x[,2]
+plot_dat$PC3 <- pca_res$x[,3]
+plot_dat$PC4 <- pca_res$x[,4]
+plot_dat$PC5 <- pca_res$x[,5]
+plot_dat$PC6 <- pca_res$x[,6]
+plot_dat$PC7 <- pca_res$x[,7]
+plot_dat$PC8 <- pca_res$x[,8]
+plot_dat$PC9 <- pca_res$x[,9]
+plot_dat$PC10 <- pca_res$x[,10]
+
+```
+## Visualization
+```{r}
+subtypes <- unique(sub_anno$Subtype)
+subtype_colours <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+anno_colours <- list(Subtype = subtype_colours)
+
+tsne_plot <- ggplot(plot_dat, aes(x=tSNE1, y= tSNE2, label=cell_line)) + 
+  geom_point(shape=21, size=2, color="black", aes(fill=Subtype)) +
+  geom_text_repel(max.overlaps=100, size=1.75) +
+  scale_fill_manual(values = subtype_colours) +
+  theme_classic() +
+  theme(axis.text=element_text(size=10, color="black"),
+        axis.title=element_text(size=12))
+ggsave("../figs2/tsne_plot_rna.pdf", plot = tsne_plot, width = 4.5, height = 2.75, dpi = 300)
+```
+
+# PCA prep
+```{r}
+subtypes <- unique(sub_anno$Subtype)
+subtype_colours <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+anno_colours <- list(Subtype = subtype_colours)
+
+tpm_mat_log_filtered <- tpm_mat_log[rowVars(as.matrix(tpm_mat_log)) > 0, ] #Remove genes with zero variance
+pca_res <- prcomp(t(tpm_mat_log_filtered), scale. = TRUE)#Transpose for PCA (samples as rows, genes as columns)
+
+# rownames(pca_res$x) <- colnames(tpm_mat_log_filtered) 
+
+
+
+```
+# PCA
+```{r}
+var_genes <- rownames(tpm_mat_log_filtered)[order(rowVars(tpm_mat_log_filtered),
+                                        decreasing=T)[1:2000]]
+
+tpm_mat_log_filtered <- tpm_mat_log_filtered[,annotation$cell_line]
+
+pca_res <- prcomp(t(tpm_mat_log_filtered[var_genes,]), scale=F, center=T) 
+
+# Base PCA plot
+#fviz_pca_ind(pca_res, axes=c(1,2),
+#              repel = TRUE,
+#              habillage = annotation$Subtype,
+#              max.overlaps=100)
+```
+## Visualization
+```{r}
+pca_plot <- ggplot(plot_dat, aes(x = PC1, y = PC2, label=cell_line)) + 
+  geom_point(shape=21, size=2, color="black", aes(fill=Subtype)) +
+  geom_text_repel(max.overlaps=100, size=1.75) +
+  scale_fill_manual(values = subtype_colours) +
+  theme_classic() +
+  theme(axis.text=element_text(size=10, color="black"),
+        axis.title=element_text(size=12)) + labs(x = "PC1 (20.1% Variance)", y = "PC2 (12.6% Variance)", fill = "Subtype")
+ggsave("../figs2/pca_plot_rna.pdf", plot = pca_plot, width = 4.5, height = 2.75, dpi = 300)
+```
+
+
+#Sihouette Width PCA
+```{r}
+dists <- dist(plot_dat[, c("PC1", "PC2", "PC3", "PC4", "PC5", "PC6", "PC7", "PC8", "PC9", "PC10")]) 
+
+cluster_labels <- as.numeric(factor(plot_dat$Subtype))
+sil <- silhouette(cluster_labels, dists) # basically subtype,distances
+sil_df <- as.data.frame(sil)  # so i can use ggplot and dplyr
+sil_df$Subtype <- plot_dat$Subtype # make subtype labels characters again
+
+# average silhouette width per subtype
+sil_summary <- sil_df %>%
+  group_by(Subtype) %>%
+  summarise(mean_sil = mean(sil_width)) %>%
+  arrange(mean_sil)
+
+# Visualization
+sil_lollipop <- ggplot(sil_summary, aes(x = mean_sil, y = reorder(Subtype, mean_sil))) +
+  geom_bar(stat = "identity", width = 0.01, color = "black") +
+  geom_point(fill = "#4A154B", shape = 21, size = 4, color = "black") +
+  geom_vline(xintercept = 0, linetype = 2) +
+  ggtitle("Silhouette Width by Subtype (PCA)") +
+  xlab("Mean Silhouette Width") + ylab("") +
+  theme_classic() +
+  theme(
+    legend.position = "none",
+    axis.text = element_text(size = 20, color = "black"),
+    axis.title = element_text(size = 26),
+    plot.title = element_text(size = 26, face = "bold")
+  )
+
+ggsave("../figs2/silhouette_lollipop_1-10.pdf", plot = sil_lollipop, width = 7.5, height = 6)
+```
+# Euchlidean Distance Heatmap
+```{r}
+
+all_pcs <- (plot_dat[, c("PC1", "PC2", "PC3", "PC4", "PC5", "PC6", "PC7", "PC3", "PC4", "PC5", "PC6", "PC7", "PC8", "PC9", "PC10")]) 
+rownames(all_pcs) <- plot_dat$cell_line  
+dist_all <- dist(all_pcs, method = "euclidean")
+invisible(dist_mat_all <- as.matrix(dist_all))
+
+# Subtype annotation colouring
+subtype_anno <- data.frame(Subtype = annotation$Subtype)
+rownames(subtype_anno) <- annotation$cell_line
+subtype_anno <- subtype_anno[rownames(dist_mat_all), , drop = FALSE]
+subtypes <- unique(subtype_anno$Subtype)
+subtype_colors <- setNames(
+  RColorBrewer::brewer.pal(length(subtypes), "Set2"),
+  subtypes)
+
+# Visualization
+euclidean_all_subtypes <- pheatmap::pheatmap(
+  dist_mat_all,
+  main = "Euclidean Distances (PC1 to PC10)",
+  annotation_col = subtype_anno,
+  annotation_colors = anno_colors,
+  clustering_method = "complete",
+  show_rownames = TRUE,
+  show_colnames = TRUE,
+  fontsize_row = 10,
+  fontsize_col = 10,
+  border_color = NA
+)
+ggsave("../figs2/euclidean_all_subtypes_annotation.pdf", plot = euclidean_all_subtypes, width = 10, height = 10)
+```
+
+
+# PCA on Clear cell lines only + Euclidean Distance Heatmap
+```{r}
+
+cc_samples <- plot_dat$cell_line[plot_dat$Subtype == "Clear cell"]
+
+cc_expr <- tpm_mat_log_filtered[, cc_samples]
+cc_expr_filtered <- cc_expr[rowVars(as.matrix(cc_expr)) > 0, ]
+
+var_genes <- rownames(cc_expr_filtered)[order(rowVars(cc_expr_filtered),decreasing=T)[1:2000]]
+
+cc_pca <- prcomp(t(cc_expr_filtered[var_genes,]), scale=T, center=T) 
+cc_pcs <- cc_pca$x[, 1:4]
+cc_dist <- dist(cc_pcs, method = "euclidean")
+cc_mat <- as.matrix(cc_dist)
+
+
+cc_heatmap <- pheatmap::pheatmap(cc_mat, main = "Clear Cell Euclidean Distances (PC1-4)")
+
+ggsave("../figs2/clear_cell_euclidean_heatmap.pdf", plot = cc_heatmap)
+```
+
+# PCA on Mucinous lines only + Euclidean Distance Heatmap
+```{r}
+
+mc_samples <- plot_dat$cell_line[plot_dat$Subtype == "Mucinous"]
+
+mc_expr <- tpm_mat_log_filtered[, mc_samples]
+mc_expr_filtered <- mc_expr[rowVars(as.matrix(mc_expr)) > 0, ]
+var_genes <- rownames(mc_expr_filtered)[order(rowVars(mc_expr_filtered),decreasing=T)[1:2000]]
+
+mc_pca <- prcomp(t(mc_expr_filtered[var_genes,]), scale=T, center=T) 
+mc_pcs <- mc_pca$x[, 1:2]
+mc_dist <- dist(mc_pcs, method = "euclidean")
+mc_mat <- as.matrix(mc_dist)
+
+mc_heatmap <- pheatmap::pheatmap(mc_mat, main = "Mucinous Euclidean Distances (PC1-2)")
+
+ggsave("../figs2/mucinous_euclidean_heatmap.pdf", plot = mc_heatmap)
+```
+# PCA on HGSC lines only + Euclidean Distance Heatmap
+```{r}
+
+hgs_samples <- plot_dat$cell_line[plot_dat$Subtype == "High-grade serous"]
+
+hgs_expr <- tpm_mat_log_filtered[, hgs_samples]
+hgs_expr_filtered <- hgs_expr[rowVars(as.matrix(hgs_expr)) > 0, ]
+var_genes <- rownames(hgs_expr_filtered)[order(rowVars(hgs_expr_filtered),decreasing=T)[1:2000]]
+
+hgs_pca <- prcomp(t(hgs_expr_filtered[var_genes,]), scale=T, center=T) 
+hgs_pcs <- hgs_pca$x[, 1:8]
+hgs_dist <- dist(hgs_pcs, method = "euclidean")
+hgs_mat <- as.matrix(hgs_dist)
+
+hgs_heatmap <- pheatmap::pheatmap(hgs_mat, main = "High-grade Euclidean Distances (PC1-8)")
+
+ggsave("../figs2/hgs_euclidean_heatmap.pdf", plot = hgs_heatmap, height = 7)
+```
+
+# DESeq setup  
+```{r}
+
+# At this point, LGSC samples are already excluded from annotation and tpm_mat
+# Ensure annotation is a clean factor
+annotation$Subtype <- factor(annotation$Subtype)
+
+# Filter txi.kallisto to include only the remaining (non-LGS) samples
+txi_filtered <- list(
+  counts = txi.kallisto$counts[, annotation$sample],
+  abundance = txi.kallisto$abundance[, annotation$sample],
+  length = txi.kallisto$length[, annotation$sample],
+  countsFromAbundance = txi.kallisto$countsFromAbundance
+)
+```
+
+```{r}
+# countData = counts, colData = colData (your objects)
+
+# 1) sanity check: same set of sample names?
+stopifnot(setequal(colnames(counts), rownames(colData)))
+
+# 2) reorder colData to match counts columns
+colData <- colData[colnames(counts), , drop = FALSE]
+
+# 3) now create the DESeq2 object
+dds <- DESeqDataSetFromMatrix(
+  countData = counts,
+  colData   = colData,
+  design    = ~ Subtype
+)
+
+dds <- DESeqDataSetFromTximport(txi_filtered, colData = annotations_filtered, design = ~ Subtype)
+```
+# Run DESeq and getting output files
+```{r}
+results_list <- list()
+for (subtype in unique(annotation$Subtype)) {
+    # above is the subtype loop for each unique subtype
+  #makes a true vs false loop. if true itll be the subtype if false itll be the group
+    annotation$Group <- factor(ifelse(annotation$Subtype == subtype, subtype, "Other"))
+    # run the deseq for 
+    dds <- DESeqDataSetFromTximport(txi_filtered, colData = annotation, design = ~ Group)
+    dds <- DESeq(dds)
+    # get results subtype vs all others
+    res <- results(dds, contrast = c("Group", subtype, "Other"))
+    results_list[[subtype]] <- res
+    output_filename <- paste0("differential_expression_", subtype, "_vs_Other.csv")
+    write.csv(as.data.frame(res), file = output_filename)}
+```
+
+# Signature for HGSC with pajd/log2fc
+```{r}
+hgs <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_HGS_vs_Other.csv", row.names = 1)
+hgs_signature_df <- subset(hgs, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+hgs_signature_df$Gene <- rownames(hgs_signature_df)
+hgs_signature_df <- hgs_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(hgs_signature_df,
+          "../output/HGS_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+```
+## Go terms HGSC
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_hgs <- pcaExplorer::topGOtable(hgs_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_hgs
+```
+### Visualize 
+```{r}
+up_labels_hgs <- c(
+  "cellular response to hypoxia",
+  "telomere organization",
+  "nucleosome assembly",
+  "double-strand break repair",
+  "proton motive force-driven mitochondrial ATP synthesis"
+)
+
+df_up_hgs <- go_up_hgs %>%
+  filter(Term %in% up_labels_hgs)
+df_up_hgs$Term <- Hmisc::capitalize(df_up_hgs$Term)
+df_up_hgs$Term <- factor(df_up_hgs$Term, levels = rev(df_up_hgs$Term))
+
+# Visualize top GO terms
+goterms_hgs <- ggplot(df_up_hgs, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("HGS GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+  theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+ggsave("../figs2/HGS_goterms.pdf", plot = goterms_hgs, width = 10, height = 2.5)
+
+# all go terms in a csv file
+#write.csv(go_up_hgs, "../output/HGS_goterms_all.csv", row.names = FALSE)
+
+```
+
+#### Volcano Plot
+```{r}
+# Categorize genes based on fold change and p-value
+hgs$diffexpressed <- "NO"
+hgs$diffexpressed[hgs$log2FoldChange > 0.6 & hgs$pvalue < 0.05] <- "UP"
+hgs$diffexpressed[hgs$log2FoldChange < -0.6 & hgs$pvalue < 0.05] <- "DOWN"
+
+# Label only the top 30 most significant UP-regulated genes (based on padj)
+up_genes <- hgs %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+
+top_up <- head(up_genes, 20)
+hgs$delabel <- ifelse(hgs$X %in% top_up, hgs$X, NA) # Add a new column 'delabel' that keeps the gene name only for the top 20 upregulated genes; others are NA (unlabeled)
+
+# Create the volcano plot
+hgs_volcano <- ggplot(data = hgs, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("HGS Significant Genes") +
+  scale_color_manual(values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+                     labels = c("Downregulated", "Not significant", "Upregulated")) +
+  coord_cartesian(ylim = c(0, 20), xlim = c(-10, 10)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+  theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  )
+
+# Save to PDF
+pdf(file = "../figs2/hgs_volcano_rna.pdf", width = 8, height = 8)
+hgs_volcano
+dev.off() 
+```
+
+
+# Signature for Mucinous with pajd/log2fc
+```{r}
+mc <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_Mucinous_vs_Other.csv") #, row.names = 1)
+mc_signature_df <- subset(mc, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+mc_signature_df$Gene <- rownames(mc_signature_df)
+mc_signature_df <- mc_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(mc_signature_df,
+          "../output/Mucinous_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+
+
+```
+##Go terms Mucinous
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_mc <- pcaExplorer::topGOtable(mc_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_mc
+```
+###Visualize 
+```{r}
+up_labels_mc <- c(
+  "complement activation, classical pathway",
+  "oligosaccharide biosynthetic process",
+  "cellular lipid metabolic process",
+  "regulation of stress-activated MAPK cascade",
+  "extracellular matrix organization"
+)
+
+df_up_mc <- go_up_mc %>%
+  filter(Term %in% up_labels_mc)
+df_up_mc$Term <- Hmisc::capitalize(df_up_mc$Term)
+df_up_mc$Term <- factor(df_up_mc$Term, levels = rev(df_up_mc$Term))
+
+# Visualize top GO terms
+goterms_mc <- ggplot(df_up_mc, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("Mucinous GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+    theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+
+ggsave("../figs2/MC_goterms.pdf", plot = goterms_mc, width = 10, height = 2.5)
+#write.csv(go_up_mc, "../output/MC_goterms_all.csv", row.names = FALSE)
+```
+#### Volcano Plot
+```{r}
+mc$diffexpressed <- "NO"
+mc$diffexpressed[mc$log2FoldChange > 0.6 & mc$pvalue < 0.05] <- "UP"
+mc$diffexpressed[mc$log2FoldChange < -0.6 & mc$pvalue < 0.05] <- "DOWN"
+
+mc_up <- mc %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+mc_top_up <- head(mc_up, 20)
+mc$delabel <- ifelse(mc$X %in% mc_top_up, mc$X, NA)
+
+mc_volcano <- ggplot(mc, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("Mucinous Significant Genes") +
+  scale_color_manual(
+  values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+  labels = c("DOWN" = "Downregulated", "NO" = "Not Significant", "UP" = "Upregulated")
+) + coord_cartesian(ylim = c(0, 13), xlim = c(-10, 10)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+   theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  
+  )
+# Save
+pdf(file = "../figs2/RNA_volcano_plots/mc_volcano.pdf", width = 8, height = 8)
+mc_volcano
+dev.off()
+```
+# Signature for Clear Cell with pajd/log2fc
+```{r}
+cc <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_Clear cell_vs_Other.csv") #, row.names = 1)
+cc_signature_df <- subset(cc, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+cc_signature_df$Gene <- rownames(cc_signature_df)
+cc_signature_df <- cc_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(cc_signature_df,
+          "../output/ClearCell_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+##Go terms Clear Cell
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_cc <- pcaExplorer::topGOtable(cc_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_cc
+```
+###Visualize 
+```{r}
+up_labels_cc <- c(
+  "response to oxidative stress",
+  "basement membrane organization",
+  "positive regulation of receptor signaling pathway via JAK-STAT",
+  "negative regulation of stress-activated MAPK cascade",
+  "glutathione catabolic process"
+)
+
+# Filter and Visualize top GO terms
+df_up_cc <- go_up_cc %>%
+  filter(Term %in% up_labels_cc)
+df_up_cc$Term <- Hmisc::capitalize(df_up_cc$Term)
+df_up_cc$Term <- factor(df_up_cc$Term, levels = rev(df_up_cc$Term))
+goterms_cc <- ggplot(df_up_cc, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("Clear Cell GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+   theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+ggsave("../figs2/CC_goterms.pdf", plot = goterms_cc, width = 12, height = 2.5)
+#write.csv(go_up_cc, "../output/CC_goterms_all.csv", row.names = FALSE)
+```
+#### Volcano Plot
+```{r}
+# Categorize expression
+cc$diffexpressed <- "NO"
+cc$diffexpressed[cc$log2FoldChange > 0.6 & cc$pvalue < 0.05] <- "UP"
+cc$diffexpressed[cc$log2FoldChange < -0.6 & cc$pvalue < 0.05] <- "DOWN"
+
+# Label top 30 UP-regulated genes only
+cc_up <- cc %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+cc_top_up <- head(cc_up, 20)
+cc$delabel <- ifelse(cc$X %in% cc_top_up, cc$X, NA)
+
+# Volcano plot
+cc_volcano <- ggplot(cc, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("CC Significant Genes") +
+   scale_color_manual(values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+                     labels = c("Downregulated", "Not significant", "Upregulated")) +
+  coord_cartesian(ylim = c(0, 20), xlim = c(-10, 10)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+   theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  )
+
+
+# Save
+pdf(file = "../figs2/RNA_volcano_plots/cc_volcano.pdf", width = 8, height = 8)
+cc_volcano
+dev.off()
+
+```
+# Signature for Endometrioid with pajd/log2fc
+```{r}
+ec <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_Endometrioid_vs_Other.csv", row.names = 1)
+ec_signature_df <- subset(ec, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+ec_signature_df$Gene <- rownames(ec_signature_df)
+ec_signature_df <- ec_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(ec_signature_df,
+          "../output/ec_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+##Go terms Endometrioid
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_ec <- pcaExplorer::topGOtable(ec_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_ec
+```
+###Visualize 
+```{r}
+up_labels_ec <- c(
+  "positive regulation of canonical Wnt signaling pathway",
+  "regulation of epithelial cell proliferation",
+  "collagen fibril organization",
+  "extracellular matrix assembly",
+  "negative regulation of transcription by RNA polymerase II"
+)
+
+# Filter and prep
+df_up_ec <- go_up_ec %>%
+  filter(Term %in% up_labels_ec)
+df_up_ec$Term <- Hmisc::capitalize(df_up_ec$Term)
+df_up_ec$Term <- factor(df_up_ec$Term, levels = rev(df_up_ec$Term))
+# Visualize top GO terms
+goterms_ec <- ggplot(df_up_ec, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("Endometrioid GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+   theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+ggsave("../figs2/ec_goterms.pdf", plot = goterms_ec, width = 12, height = 2.5)
+
+# save just csv file with everything
+#write.csv(go_up_ec, "../output/EC_goterms_all.csv", row.names = FALSE)
+```
+#### Volcano Plot
+```{r}
+ec$diffexpressed <- "NO"
+ec$diffexpressed[ec$log2FoldChange > 0.6 & ec$pvalue < 0.05] <- "UP"
+ec$diffexpressed[ec$log2FoldChange < -0.6 & ec$pvalue < 0.05] <- "DOWN"
+
+ec_up <- ec %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+ec_top_up <- head(ec_up, 20)
+ec$delabel <- ifelse(ec$X %in% ec_top_up, ec$X, NA)
+
+ec_volcano <- ggplot(ec, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("Endometrioid Significant Genes") +
+  scale_color_manual(
+  values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+  labels = c("DOWN" = "Downregulated", "NO" = "Not Significant", "UP" = "Upregulated")
+) +
+  coord_cartesian(ylim = c(0, 20), xlim = c(-15, 15)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+   theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  )
+
+pdf(file = "../figs2/RNA_volcano_plots/ec_volcano.pdf", width = 8, height = 8)
+ec_volcano
+dev.off()
+
+```
+
+# Signature for SCCOHT with pajd/log2fc
+```{r}
+sccoht <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_SCCOHT_vs_Other.csv", row.names = 1)
+sccoht_signature_df <- subset(sccoht, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+sccoht_signature_df$Gene <- rownames(sccoht_signature_df)
+sccoht_signature_df <- sccoht_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(sccoht_signature_df,
+          "../output/sccoht_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+##Go terms SCCOHT
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_sccoht <- pcaExplorer::topGOtable(sccoht_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_sccoht
+
+```
+###Visualize 
+```{r}
+up_labels_sccoht <- go_up_sccoht$Term[1:5]
+df_up_sccoht <- go_up_sccoht %>%
+  filter(Term %in% up_labels_sccoht)
+df_up_sccoht$Term <- Hmisc::capitalize(df_up_sccoht$Term)
+df_up_sccoht$Term <- factor(df_up_sccoht$Term, levels=rev(df_up_sccoht$Term))
+bluered <- rev(RColorBrewer::brewer.pal(9, "RdBu"))
+
+# Visualize top GO terms
+goterms_sccoht <- ggplot(df_up_sccoht, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("SCCOHT GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+ theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+ggsave("../figs2/sccoht_goterms.pdf", plot = goterms_sccoht, width = 12, height = 2.5)
+
+# save just csv file with everything
+#write.csv(go_up_sccoht, "../output/Go_terms/SCCOHT_goterms_all.csv", row.names = FALSE)
+```
+#### Volcano Plot
+```{r}
+# Categorize expression status
+sccoht$diffexpressed <- "NO"
+sccoht$diffexpressed[sccoht$log2FoldChange > 0.6 & sccoht$pvalue < 0.05] <- "UP"
+sccoht$diffexpressed[sccoht$log2FoldChange < -0.6 & sccoht$pvalue < 0.05] <- "DOWN"
+
+# Top 30 most significant UP genes by adjusted p-value
+sccoht_up <- sccoht %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+
+sccoht_top_up <- head(sccoht_up, 20)
+sccoht$delabel <- ifelse(sccoht$X %in% sccoht_top_up, sccoht$X, NA)
+
+# Plot
+sccoht_volcano <- ggplot(sccoht, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("SCCOHT Significant Genes") +
+  scale_color_manual(
+    values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+    labels = c("DOWN" = "Downregulated", "NO" = "Not Significant", "UP" = "Upregulated")
+  ) +
+  coord_cartesian(ylim = c(0, 20), xlim = c(-12, 12)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+   theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  )
+
+# Save
+pdf(file = "../figs2/RNA_volcano_plots/sccoht_volcano.pdf", width = 8, height = 8)
+sccoht_volcano
+dev.off()
+
+```
+
+
+# Signature for MMMT with pajd/log2fc
+```{r}
+mmmt <- read.csv("/Volumes/Eevee/projects/ovcan_human/output/differential_expression_MMMT_vs_Other.csv", row.names = 1)
+mmmt_signature_df <- subset(mmmt, padj < 0.05 & log2FoldChange > 1) %>%
+  arrange(padj)
+mmmt_signature_df$Gene <- rownames(mmmt_signature_df)
+mmmt_signature_df <- mmmt_signature_df[, c("Gene", "padj", "log2FoldChange")]
+write.csv(mmmt_signature_df,
+          "../output/MMMT_signature_detailed.csv",
+          row.names = FALSE,
+          quote = FALSE)
+
+```
+##Go terms MMMT
+```{r}
+gene_list <- na.omit(gene_list)
+go_up_mmmt <- pcaExplorer::topGOtable(mmmt_signature_df %>%  
+                                   filter(padj < 0.05 & log2FoldChange > 1) %>%
+                                   pull(Gene),
+                                rownames(dds),
+                                ontology="BP",
+                                mapping="org.Hs.eg.db")
+
+```
+```{r}
+go_up_mmmt
+```
+###Visualize 
+```{r}
+up_labels_mmmt <- go_up_mmmt$Term[1:5]
+df_up_mmmt <- go_up_mmmt %>%
+  filter(Term %in% up_labels_mmmt)
+df_up_mmmt$Term <- Hmisc::capitalize(df_up_mmmt$Term)
+df_up_mmmt$Term <- factor(df_up_mmmt$Term, levels=rev(df_up_mmmt$Term))
+bluered <- rev(RColorBrewer::brewer.pal(9, "RdBu"))
+# Visualize top GO terms
+goterms_mmmt <- ggplot(df_up_mmmt, aes(x=-log10(p.value_elim), y=Term)) +
+  geom_bar(stat="identity", width = 0.01, color="black") +
+  geom_point(fill="#4A154B", shape=21, size=4, color="black") +
+  geom_vline(xintercept = -log10(0.05), linetype=2) +
+  ggtitle("MMMT GO Terms") +
+  xlab("-log10(padj)") + ylab("") +
+  theme_classic() +
+  theme(legend.position="none",
+        axis.text=element_text(size=20, color="black"),
+        axis.title=element_text(size=20),
+        plot.title = element_text(size = 26, face = "bold"))
+ggsave("../figs2/MMMT_goterms_2026.pdf", plot = goterms_mmmt, width = 12, height = 2.5)
+
+# save just csv file with everything
+write.csv(go_up_mmmt, "../output/MMMT_goterms_all.csv", row.names = FALSE)
+```
+#### Volcano plot
+```{r}
+mmmt$diffexpressed <- "NO"
+mmmt$diffexpressed[mmmt$log2FoldChange > 0.6 & mmmt$pvalue < 0.05] <- "UP"
+mmmt$diffexpressed[mmmt$log2FoldChange < -0.6 & mmmt$pvalue < 0.05] <- "DOWN"
+
+mmmt_up <- mmmt %>%
+  filter(diffexpressed == "UP" & !is.na(padj)) %>%
+  arrange(padj) %>%
+  pull(X)
+mmmt_top_up <- head(mmmt_up, 20)
+mmmt$delabel <- ifelse(mmmt$X %in% mmmt_top_up, mmmt$X, NA)
+
+mmmt_volcano <- ggplot(mmmt, aes(x = log2FoldChange, y = -log10(pvalue), col = diffexpressed, label = delabel)) +
+  geom_point() +
+  ggtitle("MMMT Significant Genes") +
+  scale_color_manual(
+    values = c("DOWN" = "#00AFBB", "NO" = "grey", "UP" = "red"),
+    labels = c("DOWN" = "Downregulated", "NO" = "Not Significant", "UP" = "Upregulated")
+  ) +
+  coord_cartesian(ylim = c(0, 20), xlim = c(-15, 15)) +
+  geom_text_repel(max.overlaps = Inf, na.rm = TRUE, size = 5) + theme_classic() +
+  theme(
+    axis.title = element_text(size = 29),
+    axis.text = element_text(size = 29),
+    plot.title = element_text(size = 29, face = "bold"),
+    legend.title = element_text(size = 23),
+    legend.text = element_text(size = 20)
+  )
+
+pdf(file = "../figs2/RNA_volcano_plots/mmmt_volcano.pdf", width = 8, height = 8)
+mmmt_volcano
+dev.off()
+```
+
+
+# Signature Heatmap top 10
+
+```{r}
+tpm_mat_log <- tpm_mat_log[rowVars(as.matrix(tpm_mat_log)) != 0, ]
+tpm_mat_log <- t(scale(t(tpm_mat_log))) 
+
+# load and identify all complete gene signatures for each subtype
+hgs_sig <- read.csv("../output/HGS_signature_detailed.csv")
+hgs_sig$Subtype <- "High-grade serous"
+
+mc_sig <- read.csv("../output/Mucinous_signature_detailed.csv")
+mc_sig$Subtype <- "Mucinous"
+
+ec_sig <- read.csv("../output/ec_signature_detailed.csv")
+ec_sig$Subtype <- "Endometrioid"
+
+cc_sig <- read.csv("../output/ClearCell_signature_detailed.csv")
+cc_sig$Subtype <- "Clear cell"
+
+mmmt_sig <- read.csv("../output/MMMT_signature_detailed.csv")
+mmmt_sig$Subtype <- "MMMT"
+
+sccoht_sig <- read.csv("../output/SCCOHT_signature_detailed.csv")
+sccoht_sig$Subtype <- "SCCOHT"
+
+# join together into one big table with top 10 genes for each subtype
+df_sig_hm <- bind_rows(hgs_sig, mc_sig, ec_sig, cc_sig, mmmt_sig, sccoht_sig) %>%
+  group_by(Subtype) %>%
+  slice_min(order_by = padj, n = 10, with_ties = FALSE)
+
+# Filter genes present in matrix and order by subtype
+df_sig_hm <- df_sig_hm %>%
+  filter(Gene %in% rownames(tpm_mat_log)) %>%
+  arrange(Subtype, padj)
+
+ordered_genes <- df_sig_hm$Gene
+
+tpm_subset <- tpm_mat_log[ordered_genes, ]
+tpm_subset[tpm_subset > 2] <- 2
+tpm_subset[tpm_subset < -2] <- -2
+
+sample_anno <- read.csv("../output/annotation.csv") %>%
+  filter(cell_line %in% colnames(tpm_subset)) %>%
+  arrange(Subtype)
+
+# columns in matrix to match subtype order
+tpm_subset <- tpm_subset[, sample_anno$cell_line]
+
+# Build row subtype vector
+subtype_vector_row <- df_sig_hm$Subtype
+names(subtype_vector_row) <- df_sig_hm$Gene  
+
+# subtype color palette
+unique_subtypes <- sort(unique(subtype_vector_row))
+subtype_colors <- setNames(
+  RColorBrewer::brewer.pal(length(unique_subtypes), "Set2"),
+  unique_subtypes)
+
+# row annotation
+row_anno <- rowAnnotation(
+  Subtype = subtype_vector_row[rownames(tpm_subset)],
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE)
+
+# bottom annotation
+bottom_anno <- HeatmapAnnotation(
+  Subtype = sample_anno$Subtype,
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE
+)
+
+sigs_heatmap <- Heatmap(
+  tpm_subset,
+  name = "Expression\nZ-score",
+  show_row_names = F,
+  show_column_names = TRUE,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  column_names_gp = gpar(fontsize = 8),
+  row_names_gp = gpar(fontsize = 6),
+  heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+  border = TRUE,
+  left_annotation = row_anno,
+  bottom_annotation = bottom_anno)
+
+ pdf(file = "../figs2/sigs_heatmap_rna_top10.pdf", width = 8, height = 8)
+draw(sigs_heatmap)
+dev.off()
+
+```
+
+# Signature Heatmap top 100 
+(same as above, just top 100 now)
+```{r}
+tpm_mat_log <- tpm_mat_log[rowVars(as.matrix(tpm_mat_log)) != 0, ]
+tpm_mat_log <- t(scale(t(tpm_mat_log)))  # Z-score per gene
+
+# Load signature files and assign subtypes
+hgs_sig <- read.csv("../output/HGS_signature_detailed.csv")
+hgs_sig$Subtype <- "High-grade serous"
+
+mc_sig <- read.csv("../output/Mucinous_signature_detailed.csv")
+mc_sig$Subtype <- "Mucinous"
+
+ec_sig <- read.csv("../output/ec_signature_detailed.csv")
+ec_sig$Subtype <- "Endometrioid"
+
+cc_sig <- read.csv("../output/ClearCell_signature_detailed.csv")
+cc_sig$Subtype <- "Clear cell"
+
+mmmt_sig <- read.csv("../output/MMMT_signature_detailed.csv")
+mmmt_sig$Subtype <- "MMMT"
+
+sccoht_sig <- read.csv("../output/SCCOHT_signature_detailed.csv")
+sccoht_sig$Subtype <- "SCCOHT"
+
+# Combine and select top 100 DEGs per subtype
+df_sig_hm <- bind_rows(hgs_sig, mc_sig, ec_sig, cc_sig, mmmt_sig, sccoht_sig) %>%
+  group_by(Subtype) %>%
+  slice_min(order_by = padj, n = 100, with_ties = FALSE)
+
+# Filter genes present in matrix and order by subtype
+df_sig_hm <- df_sig_hm %>%
+  filter(Gene %in% rownames(tpm_mat_log)) %>%
+  arrange(Subtype, padj)
+
+# Get ordered gene list
+ordered_genes <- df_sig_hm$Gene
+
+# Subset and scale TPM matrix
+tpm_subset <- tpm_mat_log[ordered_genes, ]
+tpm_subset[tpm_subset > 2] <- 2
+tpm_subset[tpm_subset < -2] <- -2
+
+sample_anno <- read.csv("../output/annotation.csv") %>%
+  filter(cell_line %in% colnames(tpm_subset)) %>%
+  arrange(Subtype)
+
+# Reorder columns in matrix to match subtype order
+tpm_subset <- tpm_subset[, sample_anno$cell_line]
+
+# Build row subtype vector
+subtype_vector_row <- df_sig_hm$Subtype
+names(subtype_vector_row) <- df_sig_hm$Gene  # ensure names match rownames(tpm_subset)
+
+# Create subtype color palette
+unique_subtypes <- sort(unique(subtype_vector_row))
+subtype_colors <- setNames(
+  RColorBrewer::brewer.pal(length(unique_subtypes), "Set2"),
+  unique_subtypes
+)
+
+# Build row annotation
+row_anno <- rowAnnotation(
+  Subtype = subtype_vector_row[rownames(tpm_subset)],
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE
+)
+
+bottom_anno <- HeatmapAnnotation(
+  Subtype = sample_anno$Subtype,
+  col = list(Subtype = subtype_colors),
+  show_annotation_name = TRUE
+)
+# Draw heatmap with row annotation
+sigs_heatmap <- Heatmap(
+  tpm_subset,
+  name = "Expression\nZ-score",
+  show_row_names = F,
+  show_column_names = TRUE,
+  cluster_rows = FALSE,
+  cluster_columns = FALSE,
+  column_names_gp = gpar(fontsize = 10),
+  row_names_gp = gpar(fontsize = 6),
+  heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+  border = TRUE,
+  left_annotation = row_anno,
+  bottom_annotation = bottom_anno
+)
+
+pdf(file = "../figs2/RNAsigs_heatmap_top100.pdf", width = 8, height = 8)
+draw(sigs_heatmap)
+dev.off()
+```
+# Gene expression plots
+```{r}
+# Function to plot specific gene expression across subtypes
+plot_gene_expression <- function(gene) {
+  if (!(gene %in% rownames(tpm_mat_log))) {
+    stop("The specified gene is not present in the expression matrix.")
+  }
+
+  gene_expression <- tpm_mat_log[gene, ] # find the row of the gene I called for and take all the columns for that gene
+
+  plot_data <- data.frame(
+    Subtype = annotation$Subtype,
+    Expression = gene_expression
+  )
+
+  p <- ggplot(plot_data, aes(x = Subtype, y = Expression)) +
+    geom_jitter(width = 0.2, color = "#0072B2", size = 1.5, alpha = 0.7) +
+    theme_minimal() +
+    labs(
+      title = paste("Gene Expression for", gene),
+      x = "Subtype",
+      y = "Log(TPM + 1)"
+    ) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1)) + theme_classic()
+
+  return(p)
+}
+
+# Plot gene
+gene_to_plot <- "A1BG"
+gene_plot <- plot_gene_expression(gene_to_plot)
+
+# Display and save
+print(gene_plot)
+ggsave(filename = paste0("../figs2/Gene Expression/", gene_to_plot, "_rnaexp.pdf"),
+       plot = gene_plot, width = 8, height = 4.5)
+
+```
+
+# PROGENy Heatmap all subtypes
+## Gene sets
+```{r}
+#Hallmark EMT
+hallmarks <- fgsea::gmtPathways("../data/h.all.v7.4.symbols.gmt.txt")
+emt_hallmark <- hallmarks[["HALLMARK_EPITHELIAL_MESENCHYMAL_TRANSITION"]]
+```
+##Some more hallmarks
+```{r}
+angiogenesis <- hallmarks[["HALLMARK_ANGIOGENESIS"]]
+
+cholesterol <- hallmarks[["HALLMARK_CHOLESTEROL_HOMEOSTASIS"]]
+
+glycolysis <- hallmarks[["HALLMARK_GLYCOLYSIS"]]
+
+mtorc <- hallmarks[["HALLMARK_MTORC1_SIGNALING"]]
+
+myc <- hallmarks[["HALLMARK_MYC_TARGETS_V2"]]
+
+oxphos <- hallmarks[["HALLMARK_OXIDATIVE_PHOSPHORYLATION"]]
+
+kras <- hallmarks[["HALLMARK_KRAS_SIGNALING_UP"]]
+
+ros <- hallmarks[["HALLMARK_REACTIVE_OXYGEN_SPECIES_PATHWAY"]]
+
+e2f <- hallmarks[["HALLMARK_E2F_TARGETS"]]
+
+hallmarks <- list("EMT" = emt_hallmark,
+                  "Angiogenesis" = angiogenesis,
+                  "Cholesterol Metabolism" = cholesterol,
+                  "Glycolysis" = glycolysis,
+                  "MTORC1 Signalling" = mtorc,
+                  "Myc Signalling" = myc,
+                  "Oxidative Phosphorylation" = oxphos,
+                  "KRAS Signalling" = kras,
+                  "ROS Signalling" = ros,
+                  "E2F Targets" = e2f)
+pdl1 <- "CD274"
+mhc1a <- c("HLA-A", "HLA-B", "HLA-C")
+```
+### YAP
+```{r}
+# YAP Targets from Wang et al., Cell Reports, 2018 ("Comprehensive molecular characterization of the hippo signaling pathway in cancer")
+yap_targets <- c("AMOTL2", "ANKRD1", "IGFBP3", "F3", "FJX1",
+                 "NUAK2", "LATS2", "CRIM1", "GADD45A", "TGFB2", "PTPN14", "NT5E",
+                 "FOXF2", "AXL", "DOCK5", "ASAP1", "RBMS3", "MYOF", "ARHGEF17",
+                 "CCDC80")
+#yap_targets <- convert_human_to_mouse_symbols(yap_targets) %>% na.omit() %>% as.character()
+yap_targets <- c(yap_targets, "CCN1", "CCN2") #Ctgf and Cyr61 oddly not in the nichenet converter???
+
+#Chemoresistance in ovarian cancer
+# From Sun et al, Cell Death and Disease, 2019
+chemoresistance <- c("EDIL3", "GNG12", "MBOAT2", "MTMR6", "NBR1", "NEK7", 
+                     "NET1", "PPP3CA", "RAD17", "WDR41")
+
+chemosensitive <- c("FZD4", "MUTYH", "PCK2", "PEX10", "SRPK1", "UCP2")
+
+#HRD
+hrd <- read.table("../data/ovarian_cancer_HRD_peng_NatComm",
+                  header=T)
+hrd <- colnames(hrd)
+```
+
+
+```{r}
+# Han et al metagenes
+genesets <- read.csv("../data/Han_NatComm_2020_Signalling_Metagenes_Cleaned.csv")
+
+han <- list()
+for(i in 1:ncol(genesets)){
+  genes <- genesets[,i]
+  genes <- na.omit(convert_mouse_to_human_symbols(genes))
+  han[[i]] <- genes[genes != ""]
+}
+names(han) <- colnames(genesets)
+
+#Subset to only keep targets
+han_targets <- han[grep("Targets", names(han), value=T)]
+han_ligands <- han[grep("Ligands", names(han), value=T)]
+#han_ligands <- convert_mouse_to_human_symbols(han_targets)
+```
+
+##Combine
+```{r}
+
+genesets <- list("PD-L1" = pdl1, 
+              "MHC-Ia" = mhc1a, 
+              "YAP Targets" = yap_targets,
+              "Chemoresistance" = chemoresistance,
+              "Chemosensitivity" = chemosensitive,
+              "HRD" = hrd)
+genesets <- c(genesets, hallmarks, han_targets)
+names(genesets) <- gsub("_", " ", names(genesets))
+```
+## Gene Set Scoring
+
+```{r}
+tpm_ranked <- rankGenes(tpm_mat)
+
+score_res <- list()
+
+for(i in 1:length(genesets)){
+  print(paste0("Scoring: ", names(genesets)[i]))
+  
+  res <- simpleScore(tpm_ranked, upSet=unique(genesets[[i]]))
+  score_res[[i]] <- data.frame(SampleID = annotation$cell_line,
+                               GeneSet = names(genesets)[i],
+                               Score = res$TotalScore)
+}
+
+score_res <- do.call("rbind", score_res)
+```
+
+```{r}
+score_res$Subtype <- annotation$Subtype[match(score_res$SampleID, annotation$cell_line)]
+```
+```{r}
+
+score_summary <- score_res %>%
+  group_by(GeneSet) %>%
+  mutate(Score_Z = (Score - mean(Score)) / sd(Score))
+
+```
+##progeny 
+```{r}
+mat <- log1p(as.matrix(tpm_mat))
+
+pathways <- progeny(mat, organism = "Human", top = 500)
+
+pathway_summary_new <- pathways %>%
+  as.data.frame() %>%
+  rownames_to_column(var = "SampleID") %>%
+  mutate(subtype = annotation$Subtype) %>%
+  pivot_longer(-c(SampleID, subtype), names_to = "pathways", values_to = "Score") %>%
+  group_by(pathways) %>%
+  mutate(Activity_Z = (Score - mean(Score)) / sd(Score))
+  
+```
+
+```{r}
+score_matrix <- score_summary %>%
+  dplyr::select(GeneSet, Score_Z, SampleID) %>%
+  pivot_wider(names_from = GeneSet, values_from = Score_Z) %>%
+  column_to_rownames(var = "SampleID") %>%
+  as.matrix()
+
+pathway_matrix <- pathway_summary_new %>%
+  dplyr::select(pathways, Activity_Z, SampleID) %>%
+  pivot_wider(names_from = pathways, values_from = Activity_Z) %>%
+  column_to_rownames(var = "SampleID") %>%
+  as.matrix()
+```
+
+# Visualization
+```{r}
+
+line_order <- annotation %>%
+  arrange(Subtype) %>%
+  pull(cell_line)
+annotation_ordered <- annotation[annotation$cell_line %in% rownames(score_matrix), ]
+
+# order the samples based on subtype
+ordered_samples <- annotation_ordered$cell_line[order(annotation_ordered$Subtype)]
+
+score_matrix <- score_matrix[ordered_samples, ]
+
+subtype_anno <- rowAnnotation(
+  Subtype = annotation_ordered$Subtype[match(rownames(score_matrix), annotation_ordered$cell_line)],
+
+  col = list(Subtype = c(
+    "Clear cell" = "#5EB5A6",
+    "Endometrioid" = "#FF6F61",
+    "High-grade serous" = "#8A9EC2",
+    "MMMT" = "#CC79A7",
+    "Mucinous" = "#A3D55F",
+    "SCCOHT" = "#F0E442"
+  )),
+  annotation_name_gp = gpar(fontsize = 10),
+  annotation_legend_param = list(title_gp = gpar(fontsize = 10)),
+  gap = unit(2, "mm") 
+)
+
+
+h1 <- Heatmap(pathway_matrix,
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = T,
+              cluster_rows = F,
+              show_column_dend = T,
+              clustering_method_rows = "ward.D2",
+              show_row_names = T,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(pathway_matrix) * unit(5, "mm"), 
+              height = nrow(pathway_matrix) * unit(5, "mm"))
+
+h2 <- Heatmap(score_matrix[, meta_pathway],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = T,
+              cluster_rows = F,
+              show_column_dend = T,
+              clustering_method_rows = "ward.D2",
+              show_row_names = T,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(score_matrix[, meta_pathway]) * unit(5, "mm"), 
+              height = nrow(score_matrix[, meta_pathway]) * unit(5, "mm"))
+
+h3 <- Heatmap(score_matrix[, functions],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = T,
+              cluster_rows = F,
+              show_column_dend = T,
+              clustering_method_rows = "ward.D2",
+              show_row_names = T,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(score_matrix[, functions]) * unit(5, "mm"), 
+              height = nrow(score_matrix[, functions]) * unit(5, "mm"))
+
+h4 <- Heatmap(score_matrix[, metabolism],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = T,
+              cluster_rows = F,
+              show_column_dend = T,
+              clustering_method_rows = "ward.D2",
+              show_row_names = T,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(score_matrix[, metabolism]) * unit(5, "mm"), 
+              height = nrow(score_matrix[, metabolism]) * unit(5, "mm"))
+ht_list <- subtype_anno + h1 + h2 + h3 + h4 
+pdf(file = "../figs2/heatmap_allsubtypes.pdf", width = 15, height = 15)
+draw(ht_list)
+dev.off()
+```
+
+
+# PROGENy Heatmap HGS
+## Scaling after subsetting by subtype  HGS
+```{r}
+hgsc_lines <- annotation$cell_line[annotation$Subtype == "High-grade serous"]
+
+#scaling
+#Subset score_res to HGS
+score_res_hgs <- score_res %>%
+  filter(SampleID %in% hgsc_lines)
+
+#scale matrix
+filtered_score_summary_hgs <- score_res_hgs %>%
+  group_by(GeneSet) %>%
+  mutate(Score_Z = scale(Score))%>%
+  ungroup()
+
+
+#score matrix
+filtered_score_matrix_hgs <- filtered_score_summary_hgs %>%
+  dplyr::select(GeneSet, Score_Z, SampleID) %>%
+  pivot_wider(names_from = GeneSet, values_from = Score_Z) %>%
+  column_to_rownames("SampleID") %>%
+  as.matrix()
+
+
+#scale pathway
+#fix pathway rownames
+rownames(pathways) <- gsub("\\.", "-", rownames(pathways))
+hgsc_lines <- hgsc_lines[hgsc_lines %in% rownames(pathways)]
+pathways_hgs <- pathways[hgsc_lines, ]
+#score pathways
+filtered_pathway_summary_hgs <- pathways_hgs %>%
+  as.data.frame() %>%
+  rownames_to_column("SampleID") %>%
+  pivot_longer(cols = -SampleID, names_to = "Pathway", values_to = "Score") %>%
+  group_by(Pathway) %>%
+  mutate(Score_Z = as.numeric(scale(Score))) %>%
+  ungroup()
+
+filtered_pathway_matrix_hgs <- filtered_pathway_summary_hgs %>%
+  dplyr::select(SampleID, Pathway, Score_Z) %>%
+  pivot_wider(names_from = Pathway, values_from = Score_Z) %>%
+  column_to_rownames("SampleID") %>%
+  as.matrix()
+```
+#### (hgs 1)
+```{r}
+#filtered_pathway_summary_hgsc <- filtered_pathway_summary_hgs[hgsc_lines, ]
+
+h1 <- Heatmap(filtered_pathway_matrix_hgs,
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = TRUE,
+              cluster_rows = TRUE,
+              show_column_dend = TRUE,
+              clustering_method_rows = "ward.D2",
+              show_row_names = TRUE,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(filtered_pathway_matrix_hgs) * unit(5, "mm"), 
+              height = nrow(filtered_pathway_matrix_hgs) * unit(5, "mm"))
+
+pdf(file = "../figs2/progeny_heatmap_RNA_h1_hgs.pdf", width = 15, height = 15)
+draw(h1, auto_adjust = FALSE)
+dev.off()
+```
+#### (hgs 2)
+```{r}
+h2 <- Heatmap(filtered_score_matrix_hgs[hgsc_lines, meta_pathway],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = TRUE,
+              cluster_rows = TRUE,
+              show_column_dend = TRUE,
+              clustering_method_rows = "ward.D2",
+              show_row_names = TRUE,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(filtered_score_matrix_hgs[hgsc_lines, meta_pathway]) * unit(5, "mm"), 
+              height = nrow(filtered_score_matrix_hgs[hgsc_lines, meta_pathway]) * unit(5, "mm"))
+
+pdf(file = "../figs2/progeny_heatmap_RNA_h2_hgs.pdf", width = 15, height = 15)
+draw(h2, auto_adjust = FALSE)
+dev.off()
+
+```
+#### (hgs 3)
+
+```{r}
+h3 <- Heatmap(filtered_score_matrix_hgs[hgsc_lines, functions],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = TRUE,
+              cluster_rows = TRUE,
+              show_column_dend = TRUE,
+              clustering_method_rows = "ward.D2",
+              show_row_names = TRUE,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(filtered_score_matrix_hgs[hgsc_lines, functions]) * unit(5, "mm"), 
+              height = nrow(filtered_score_matrix_hgs[hgsc_lines, functions]) * unit(5, "mm"))
+
+pdf(file = "../figs2/progeny_heatmap_RNA_h3_hgs.pdf", width = 15, height = 15)
+draw(h3, auto_adjust = FALSE)
+dev.off()
+
+```
+####(hgs 4)
+```{r}
+h4 <- Heatmap(filtered_score_matrix_hgs[hgsc_lines, metabolism],
+              name = "Relative\nactivity",
+              col = col_fun,
+              heatmap_legend_param = list(title_gp = gpar(fontsize = 10)),
+              cluster_columns = TRUE,
+              cluster_rows = FALSE,
+              show_column_dend = TRUE,
+              clustering_method_rows = "ward.D2",
+              show_row_names = TRUE,
+              column_names_rot = 45,
+              column_names_gp = gpar(fontsize = 10),
+              border = TRUE,
+              rect_gp = gpar(col = "white", lwd = 1),
+              width = ncol(filtered_score_matrix_hgs[hgsc_lines, metabolism]) * unit(5, "mm"), 
+              height = nrow(filtered_score_matrix_hgs[hgsc_lines, metabolism]) * unit(5, "mm"))
+
+pdf(file = "../figs2/progeny_heatmap_RNA_h4_hgs.pdf", width = 15, height = 15)
+draw(h4, auto_adjust = FALSE)
+dev.off()
+
+```
+# ADC targets expression heatmap
+```{r}
+adc_antigens <- c("FOLR1", "MSLN", "TACSTD2", "ERBB2", "TF", "DPEP3", "SLC34A2")
+adc_subset <- intersect(adc_antigens, rownames(tpm_mat_log))
+adc_expr <- tpm_mat_log[adc_subset, ]
+ordered_samples <- annotation %>% arrange(Subtype) %>% pull(cell_line) 
+adc_expr <- adc_expr[, ordered_samples]
+adc_scaled <- t(scale(t(adc_expr)))
+adc_scaled[adc_scaled > 2] <- 2
+adc_scaled[adc_scaled < -2] <- -2
+
+sub_anno <- data.frame(Subtype=annotation$Subtype)
+rownames(sub_anno) <- annotation$cell_line
+sub_anno <- sub_anno[ordered_samples, , drop = FALSE]
+
+subtypes <- unique(sub_anno$Subtype)
+subtype_colors <- setNames(brewer.pal(length(subtypes), "Set2"), subtypes)
+anno_colors <- list(Subtype = subtype_colors)
+
+ht <- Heatmap(
+  adc_scaled,
+  name = "Z-score",
+  bottom_annotation = HeatmapAnnotation(
+    Subtype = sub_anno$Subtype,
+    col = list(Subtype = subtype_colors),
+    show_annotation_name = TRUE
+  ),
+  cluster_columns = FALSE,
+  cluster_rows = FALSE,
+  show_row_names = TRUE,
+  show_column_names = TRUE,
+  column_names_gp = gpar(fontsize = 6),
+  row_names_gp = gpar(fontsize = 8),
+  heatmap_legend_param = list(title = "Expression\nZ-score", title_gp = gpar(fontsize = 10)),
+  border = TRUE
+)
+ht
+
+# 
+pdf(file = "../figs2/rna_antigen_heatmap_NRC_CAR.pdf", width = 6, height = 4)
+draw(ht, auto_adjust = FALSE)
+dev.off()
+
+
+```
+# ADC targets expression tpm + z score dot plot
+```{r}
+# ADC antigen genes
+adc_antigens <- c("FAP", "EGFR", "MSLN", "AXL", "ERBB2", "CA9", "MUC1", "CEACAM6", "CDH17")
+adc_subset <- intersect(adc_antigens, rownames(tpm_mat_log))
+
+# Subset TPM matrix
+adc_expr <- tpm_mat_log[adc_subset, ]
+ordered_samples <- annotation %>% arrange(Subtype) %>% pull(cell_line)
+adc_expr <- adc_expr[, ordered_samples]
+
+# Z-score per gene (for color)
+adc_scaled <- t(scale(t(adc_expr)))
+adc_scaled[adc_scaled > 2] <- 2
+adc_scaled[adc_scaled < -2] <- -2
+
+# Make long-format dataframe for plotting
+plot_df <- expand.grid(
+  Gene = rownames(adc_expr),
+  Sample = colnames(adc_expr)
+)
+plot_df$TPM <- as.vector(adc_expr)
+plot_df$Zscore <- as.vector(adc_scaled)
+
+# Add subtype info
+plot_df <- plot_df %>%
+  left_join(annotation, by = c("Sample" = "cell_line"))
+
+# Factor levels for consistent ordering
+plot_df$Gene <- factor(plot_df$Gene, levels = adc_subset)
+plot_df$Sample <- factor(plot_df$Sample, levels = ordered_samples)
+
+# Dot plot visualization
+dot_plot <- ggplot(plot_df, aes(x = Gene, y = Sample)) +
+  geom_point(aes(size = TPM, fill = Zscore), shape = 21, color = "black") +
+  scale_size("TPM", range = c(0.5, 6)) +
+ scale_fill_gradientn(
+  colours = grDevices::colorRampPalette(c("navy","white","firebrick"))(100),
+  guide = guide_colorbar(ticks.colour = "black", frame.colour = "black"),
+  name = "Expression\nZ-score"
+) +
+  ylab("") + xlab("") + ggtitle("ADC Target Expression") +
+  theme_bw() +
+  theme(axis.text.x = element_text(size = 10, angle = 45, hjust = 1, color = "black"),
+        axis.text.y = element_text(size = 7, color = "black"),
+        plot.title = element_text(size = 14, hjust = 0.5))
+
+#facet by Subtype
+
+subtype_labs <- c(
+  "High-grade serous" = "HGS",
+  "Clear cell" = "CC",
+  "Endometrioid" = "EC",
+  "Mucinous" = "MC",
+  "MMMT" = "MMMT",
+  "SCCOHT" = "SCCOHT"
+)
+dot_plot <- dot_plot +
+  facet_grid(
+    Subtype ~ .,
+    scales = "free_y",
+    space = "free_y",
+    labeller = labeller(Subtype = subtype_labs)
+  )
+dot_plot
+pdf(file = "../figs2/adc_antigen_dotplot_NRC_CAR_RNA.pdf", width = 6, height = 10)
+print(dot_plot)
+dev.off()
+```
+
+# hgs only ov concensus
+```{r}
+
+library(consensusOV)
+library(org.Hs.eg.db) 
+
+# subset for HGSC samples only 
+hgsc_samples <- c(
+  "OV1369-R2",
+  "OV1946",
+  "OV2085",
+  "OV2295",
+  "OV2295-R2",
+  "OV3133-R",
+  "OV3331",
+  "OV4453",
+  "OV4485",
+  "OV866-2",
+  "OV90",
+  "TOV1369",
+  "TOV3041G",
+  "TOV3133G",
+  "TOV3291G"
+)
+tpm_mat_log <- as.matrix(tpm_mat_log)
+
+# Map gene symbols to Entrez IDs
+symbols <- rownames(tpm_mat_log)
+entrez <- mapIds(
+  org.Hs.eg.db,
+  keys    = symbols,
+  keytype = "SYMBOL",
+  column  = "ENTREZID"
+)
+
+# Keep only mapped genes
+keep <- !is.na(entrez)
+expr_mat   <- tpm_mat_log[keep, , drop = FALSE]
+entrez_ids <- as.character(entrez[keep])
+
+#HGSC samples only
+expr_mat_hgsc <- expr_mat[, colnames(expr_mat) %in% hgsc_samples, drop = FALSE]
+
+# consensusOV subtyping
+subtypes_hgsc <- get.subtypes(
+  expression.dataset = expr_mat_hgsc,
+  entrez.ids         = entrez_ids,
+  method             = "consensusOV"
+)
+
+#   table
+subtype_assignments_hgsc <- data.frame(
+  sample  = colnames(expr_mat_hgsc),
+  subtype = subtypes_hgsc$consensusOV.subtypes,
+  row.names = NULL
+)
+
+
+write.csv( subtype_assignments_hgsc, file = "/Volumes/Eevee/projects/ovcan_human/output/subtype_assignments_HGSC.csv",row.names = FALSE)
+
+```
+
+
+# Check for known marker genes for each molecular HGSC subtype
+```{r}
+marker_genes <- c("CXCL11","CXCL10","CXCR3","HMGA2",
+                  "SOX11","MCM2","PCNA","MUC16",
+                  "MUC1","SLPI","HOXA9","HOXA10", "HOXA11", "FAP", "ANGPTL2","ANGPTL1")
+
+m <- expr_mat_hgsc[rownames(expr_mat_hgsc) %in% marker_genes, , drop = FALSE]
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/HGSC_CONSOV_markers.pdf", width = 7, height = 9)
+pheatmap::pheatmap(m)
+dev.off()
+
+```
+
+
+#final heatmap for consensus marker expression with annotation bar
+```{r}
+library(pheatmap)
+
+marker_genes <- c("CXCL11","CXCL10","CXCR3","HMGA2",
+                  "SOX11","MCM2","PCNA","MUC16",
+                  "MUC1","SLPI","HOXA9","HOXA10","HOXA11",
+                  "FAP","ANGPTL2","ANGPTL1")
+
+m <- expr_mat_hgsc[rownames(expr_mat_hgsc) %in% marker_genes, , drop = FALSE]
+
+subtype_map <- c(
+  "OV1369-R2" = "Differentiated",
+  "OV1946"    = "Mesenchymal",
+  "OV2085"    = "Immunoreactive",
+  "OV2295"    = "Differentiated",
+  "OV2295-R2" = "Immunoreactive",
+  "OV3133-R"  = "Differentiated",
+  "OV3331"    = "Proliferative",
+  "OV4453"    = "Proliferative",
+  "OV4485"    = "Differentiated",
+  "OV866-2"   = "Mesenchymal",
+  "OV90"      = "Immunoreactive",
+  "TOV1369"   = "Differentiated",
+  "TOV3041G"  = "Mesenchymal",
+  "TOV3133G"  = "Differentiated",
+  "TOV3291G"  = "Mesenchymal"
+)
+
+ann_col <- data.frame(
+  Subtype = factor(subtype_map[colnames(m)],
+                   levels = c("Differentiated","Immunoreactive","Mesenchymal","Proliferative")),
+  row.names = colnames(m),
+  check.names = FALSE
+)
+
+ann_colors <- list(
+  Subtype = c(
+    Differentiated  = "#1b9e77",
+    Immunoreactive  = "#7570b3",
+    Mesenchymal     = "#d95f02",
+    Proliferative   = "#e7298a"
+  )
+)
+
+pdf("/Volumes/Eevee/projects/ovcan_human/figs2/HGSC_CONS_OV_marker_heatmap.pdf",
+    width = 7, height = 7)
+
+ph <- pheatmap::pheatmap(
+  m,                        # raw TPM
+  annotation_col = ann_col, # shows at TOP
+  annotation_colors = ann_colors,
+  annotation_names_col = TRUE,
+  silent = TRUE
+)
+grid::grid.newpage()
+grid::grid.draw(ph$gtable)
+
+dev.off()
+```
+

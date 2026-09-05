@@ -1,0 +1,15 @@
+level,n,definition
+search output rows,8430,rows in protein_relative_abundance.xlsx
+dropped: no gene symbol,3,"Uniprot accession present, Symbol missing; cannot enter a symbol-keyed analysis"
+analysis rows (matrix),8427,rows of prot_abundance_matrix.csv / prot_matrix.rds
+distinct gene symbols,8396,unique symbols among the analysis rows
+non-representative duplicate rows,31,"second+ accession for a symbol; row named SYMBOL|UNIPROT, symbol_representative=FALSE"
+quantified in >=1 line,8357,present_n_lines >= 1
+quantified in 0 lines (zero-plex),70,"present_n_plex == 0; retained in the matrix, flagged zero_plex=TRUE"
+complete case (all 5 plexes),6855,present in all 31 lines; == the archived na.omit set; PCA/variance-partition input
+absent from >=1 whole plex,1572,present_n_plex < 5; INCLUDES the zero-plex proteins
+"absent from >=1 plex, excl. zero-plex",1502,present_n_plex in 1..4
+presence filter >=50% of lines,7733,present_n_lines >= 16; the recommended reuse filter
+peptide-table accessions,8617,filled in section 5 below
+peptide accessions absent from the analysis matrix,190,in peptide_ratio.xlsx but not in the abundance table (incl. the dropped no-symbol rows)
+peptides quantified,146830,rows in peptide_ratio.xlsx

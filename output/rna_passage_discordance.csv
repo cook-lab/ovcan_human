@@ -1,0 +1,23 @@
+block,cell_line,subtype,rna_passage_label,wes_passage_label,rna_passage,wes_passage,passage_diff,abs_diff,wes_is_later
+per line,TOV112D,EC,p63,P83,63,83,20,20,TRUE
+per line,OV3331,HGS,p71,P54,71,54,-17,17,FALSE
+per line,OV3133-R,HGS,p64,P71,64,71,7,7,TRUE
+per line,OV90,HGS,p70,P63,70,63,-7,7,FALSE
+per line,OV2085,HGS,p68,P64,68,64,-4,4,FALSE
+per line,TOV3133G,HGS,p61,P65,61,65,4,4,TRUE
+per line,TOV21G,CC,p63,P59,63,59,-4,4,FALSE
+per line,TOV2414,MC,p69,P65,69,65,-4,4,FALSE
+per line,OV1369-R2,HGS,p69,P66,69,66,-3,3,FALSE
+per line,OV2295,HGS,p64,P61,64,61,-3,3,FALSE
+per line,OV2295-R2,HGS,p67,P70,67,70,3,3,TRUE
+per line,TOV1369,HGS,p65,P65,65,65,0,0,FALSE
+per line,TOV3392D,CC,p69,P69,69,69,0,0,FALSE
+summary,n_lines_with_both,NA,NA,NA,NA,NA,13,NA,NA
+summary,median_abs_diff,NA,NA,NA,NA,NA,4,NA,NA
+summary,mean_abs_diff,NA,NA,NA,NA,NA,5.846153846153846,NA,NA
+summary,min_diff,NA,NA,NA,NA,NA,-17,NA,NA
+summary,max_diff,NA,NA,NA,NA,NA,20,NA,NA
+summary,max_abs_diff,NA,NA,NA,NA,NA,20,NA,NA
+summary,n_lines_abs_diff_ge_10,NA,NA,NA,NA,NA,2,NA,NA
+summary,n_lines_abs_diff_ge_20,NA,NA,NA,NA,NA,1,NA,NA
+summary,spearman_rna_vs_wes_passage,NA,NA,NA,NA,NA,-0.25069735142432836,NA,NA

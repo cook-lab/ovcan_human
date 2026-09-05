@@ -1,0 +1,12 @@
+block,statistic,estimate,p_value,site,n,pseudoalign_median,detected_median,assigned_gene_counts_median,n_processed_fragments_median
+per-site medians,NA,NA,NA,Mes-Masson,19,92.2,19962,55283262,60039237
+per-site medians,NA,NA,NA,Huntsman,11,88.1,20912,69471725,77763503
+per-site medians,NA,NA,NA,Huntsman/Vanderhyden,1,87.9,20270,44435821,50544636
+site test (Wilcoxon rank-sum),genes detected (exact),NA,0.008189494996091697,Mes-Masson vs Huntsman,30,NA,NA,NA,NA
+site test (Wilcoxon rank-sum),"genes detected (normal approx, continuity-corrected)",NA,0.009817604551185424,Mes-Masson vs Huntsman,30,NA,NA,NA,NA
+site test (Wilcoxon rank-sum),n_processed_fragments,NA,0.3720909508615655,Mes-Masson vs Huntsman,30,NA,NA,NA,NA
+site test (Wilcoxon rank-sum),pseudoalignment %,NA,1.122283328055138e-5,Mes-Masson vs Huntsman,30,NA,NA,NA,NA
+site test (Wilcoxon rank-sum),assigned_gene_counts,NA,0.7669611714289376,Mes-Masson vs Huntsman,30,NA,NA,NA,NA
+correlation across all 31 lines,"pearson(pseudoalign, detected)",-0.63939578046308,1.0781368903700251e-4,all,31,NA,NA,NA,NA
+correlation across all 31 lines,"pearson(pseudoalign, n_processed_fragments)",-0.29314426697646223,0.10949378267810178,all,31,NA,NA,NA,NA
+correlation across all 31 lines,"pearson(n_processed_fragments, detected)",0.5004357592259207,0.004142596230425437,all,31,NA,NA,NA,NA

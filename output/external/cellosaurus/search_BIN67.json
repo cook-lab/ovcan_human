@@ -1,0 +1,929 @@
+{
+  "Cellosaurus": {
+    "cell-line-list": [
+      {
+        "accession-list": [
+          {
+            "type": "primary",
+            "value": "CVCL_S987"
+          }
+        ],
+        "age": "Age unspecified",
+        "category": "Cancer cell line",
+        "child-list": [],
+        "comment-list": [
+          {
+            "category": "Miscellaneous",
+            "value": "STR profile from personal communication of Garson, Kenneth"
+          },
+          {
+            "category": "Part of",
+            "value": "Cancer Dependency Map project (DepMap) (includes Cancer Cell Line Encyclopedia - CCLE)"
+          }
+        ],
+        "created": "2014-02-03",
+        "derived-from-site-list": [
+          {
+            "site": {
+              "site-type": "Metastatic",
+              "value": "Pelvis",
+              "xref-list": [
+                {
+                  "accession": "UBERON_0002355",
+                  "category": "Anatomy/cell type resources",
+                  "database": "UBERON",
+                  "iri": "http://purl.obolibrary.org/obo/UBERON_0002355",
+                  "label": "pelvic region of trunk",
+                  "url": "https://www.ebi.ac.uk/ols4/ontologies/uberon/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FUBERON_0002355"
+                }
+              ]
+            }
+          }
+        ],
+        "disease-list": [
+          {
+            "accession": "C40439",
+            "category": "Medical resources",
+            "database": "NCIt",
+            "iri": "http://purl.obolibrary.org/obo/NCIT_C40439",
+            "label": "Ovarian small cell carcinoma, hypercalcemic type",
+            "url": "https://evsexplore.semantics.cancer.gov/evsexplore/concept/ncit/C40439"
+          },
+          {
+            "accession": "Orphanet_370396",
+            "category": "Medical resources",
+            "database": "ORDO",
+            "iri": "http://www.orpha.net/ORDO/Orphanet_370396",
+            "label": "Small cell carcinoma of the ovary",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/ordo/classes/http%253A%252F%252Fwww.orpha.net%252FORDO%252FOrphanet_370396"
+          }
+        ],
+        "entry-version": "22",
+        "last-updated": "2025-04-10",
+        "name-list": [
+          {
+            "type": "identifier",
+            "value": "BIN-67"
+          },
+          {
+            "type": "synonym",
+            "value": "Bin-67"
+          },
+          {
+            "type": "synonym",
+            "value": "BIN67"
+          }
+        ],
+        "omics-list": [
+          {
+            "branch": "Genomics",
+            "value": "Whole exome sequencing."
+          },
+          {
+            "branch": "Transcriptomics",
+            "value": "Microarray."
+          },
+          {
+            "branch": "Variations",
+            "value": "SNP array analysis."
+          }
+        ],
+        "reference-list": [
+          {
+            "resource-internal-ref": "PubMed=1331173"
+          },
+          {
+            "resource-internal-ref": "PubMed=2845729"
+          },
+          {
+            "resource-internal-ref": "PubMed=23433318"
+          },
+          {
+            "resource-internal-ref": "PubMed=24658002"
+          }
+        ],
+        "sequence-variation-list": [
+          {
+            "mutation-description": "c.2438+1G>A",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACH-001278",
+                  "category": "Cell line databases/resources",
+                  "database": "DepMap",
+                  "url": "https://depmap.org/portal/cell_line/ACH-001278"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=24658002"
+                }
+              }
+            ],
+            "variation-note": "Splice donor mutation",
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11100",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "SMARCA4",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11100"
+              },
+              {
+                "accession": "VCV000537781",
+                "category": "Polymorphism and mutation databases",
+                "database": "ClinVar",
+                "url": "https://www.ncbi.nlm.nih.gov/clinvar/variation/VCV000537781"
+              }
+            ],
+            "zygosity-type": "Heterozygous"
+          },
+          {
+            "mutation-description": "c.2439-2A>T",
+            "mutation-type": "Simple",
+            "source-list": [
+              {
+                "xref": {
+                  "accession": "ACH-001278",
+                  "category": "Cell line databases/resources",
+                  "database": "DepMap",
+                  "url": "https://depmap.org/portal/cell_line/ACH-001278"
+                }
+              },
+              {
+                "reference": {
+                  "resource-internal-ref": "PubMed=24658002"
+                }
+              }
+            ],
+            "variation-note": "Splice acceptor mutation",
+            "variation-type": "Mutation",
+            "xref-list": [
+              {
+                "accession": "HGNC:11100",
+                "category": "Organism-specific databases",
+                "database": "HGNC",
+                "label": "SMARCA4",
+                "url": "https://www.genenames.org/data/gene-symbol-report/#!/hgnc_id/HGNC:11100"
+              }
+            ],
+            "zygosity-type": "Heterozygous"
+          }
+        ],
+        "sex": "Female",
+        "species-list": [
+          {
+            "accession": "9606",
+            "category": "Taxonomy",
+            "database": "NCBI_TaxID",
+            "iri": "http://purl.obolibrary.org/obo/NCBITaxon_9606",
+            "label": "Homo sapiens (Human)",
+            "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?mode=Info&id=9606&lvl=3"
+          }
+        ],
+        "str-list": {
+          "marker-list": [
+            {
+              "conflict": "false",
+              "id": "Amelogenin",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "X"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "CSF1PO",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D13S317",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "10,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D16S539",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D18S51",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "13,19"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D19S433",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "14,15.2"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D21S11",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "30"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D2S1338",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "17,25"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D3S1358",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "15,19"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D5S818",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11,12"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D7S820",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "9"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "D8S1179",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "14"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "FGA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "22,23"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TH01",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "6,9.3"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "TPOX",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "11"
+                }
+              ]
+            },
+            {
+              "conflict": "false",
+              "id": "vWA",
+              "marker-data-list": [
+                {
+                  "marker-alleles": "14,18"
+                }
+              ]
+            }
+          ],
+          "source-list": [
+            "Direct_author_submission"
+          ]
+        },
+        "xref-list": [
+          {
+            "accession": "BTO_0005818",
+            "category": "Anatomy/cell type resources",
+            "database": "BTO",
+            "iri": "http://purl.obolibrary.org/obo/BTO_0005818",
+            "url": "https://www.ebi.ac.uk/ols4/ontologies/bto/classes/http%253A%252F%252Fpurl.obolibrary.org%252Fobo%252FBTO_0005818"
+          },
+          {
+            "accession": "E-MEXP-3872",
+            "category": "Gene expression databases",
+            "database": "ArrayExpress",
+            "url": "https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MEXP-3872"
+          },
+          {
+            "accession": "E-MTAB-1584",
+            "category": "Gene expression databases",
+            "database": "ArrayExpress",
+            "url": "https://www.ebi.ac.uk/biostudies/ArrayExpress/studies/E-MTAB-1584"
+          },
+          {
+            "accession": "CVCL_S987",
+            "category": "Cell line databases/resources",
+            "database": "cancercelllines",
+            "url": "https://cancercelllines.org/cellline/?id=cellosaurus:CVCL_S987"
+          },
+          {
+            "accession": "SIDM01516",
+            "category": "Cell line databases/resources",
+            "database": "Cell_Model_Passport",
+            "url": "https://cellmodelpassports.sanger.ac.uk/passports/SIDM01516"
+          },
+          {
+            "accession": "1948264",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=1948264"
+          },
+          {
+            "accession": "2141841",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=2141841"
+          },
+          {
+            "accession": "2161693",
+            "category": "Polymorphism and mutation databases",
+            "database": "Cosmic",
+            "url": "https://cancer.sanger.ac.uk/cosmic/sample/overview?id=2161693"
+          },
+          {
+            "accession": "ACH-001278",
+            "category": "Cell line databases/resources",
+            "database": "DepMap",
+            "url": "https://depmap.org/portal/cell_line/ACH-001278"
+          },
+          {
+            "accession": "GSM1622407",
+            "category": "Gene expression databases",
+            "database": "GEO",
+            "url": "https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSM1622407"
+          },
+          {
+            "accession": "Q54796702",
+            "category": "Encyclopedic resources",
+            "database": "Wikidata",
+            "url": "https://www.wikidata.org/wiki/Q54796702"
+          }
+        ]
+      }
+    ],
+    "publication-list": [
+      {
+        "author-list": [
+          {
+            "first-names": "Alan H.",
+            "last-name": "Gorn",
+            "name": "Gorn A.H.",
+            "type": "person"
+          },
+          {
+            "first-names": "Herbert Y.",
+            "last-name": "Lin",
+            "name": "Lin H.Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Moshe",
+            "last-name": "Yamin",
+            "name": "Yamin M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Philip E.",
+            "last-name": "Auron",
+            "name": "Auron P.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Merrilee R.",
+            "last-name": "Flannery",
+            "name": "Flannery M.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "David R.",
+            "last-name": "Tapp",
+            "name": "Tapp D.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Catherine A.",
+            "last-name": "Manning",
+            "name": "Manning C.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Harvey Franklin",
+            "last-name": "Lodish",
+            "name": "Lodish H.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stephen Martin",
+            "last-name": "Krane",
+            "name": "Krane S.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steven R.",
+            "last-name": "Goldring",
+            "name": "Goldring S.R.",
+            "type": "person"
+          }
+        ],
+        "date": "1992",
+        "first-page": "1726",
+        "internal-id": "PubMed=1331173",
+        "journal-name": "J. Clin. Invest.",
+        "last-page": "1735",
+        "title": "Cloning, characterization, and expression of a human calcitonin receptor from an ovarian carcinoma cell line.",
+        "type": "article",
+        "volume": "90",
+        "xref-list": [
+          {
+            "accession": "PMC443230",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC443230"
+          },
+          {
+            "accession": "10.1172/JCI116046",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1172/JCI116046"
+          },
+          {
+            "accession": "1331173",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/1331173"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Leora",
+            "last-name": "Witkowski",
+            "name": "Witkowski L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jian",
+            "last-name": "Carrot-Zhang",
+            "name": "Carrot-Zhang J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Steffen",
+            "last-name": "Albrecht",
+            "name": "Albrecht S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Somayyeh",
+            "last-name": "Fahiminiya",
+            "name": "Fahiminiya S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Nancy",
+            "last-name": "Hamel",
+            "name": "Hamel N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Eva",
+            "last-name": "Tomiak",
+            "name": "Tomiak E.",
+            "type": "person"
+          },
+          {
+            "first-names": "David",
+            "last-name": "Grynspan",
+            "name": "Grynspan D.",
+            "type": "person"
+          },
+          {
+            "first-names": "Emmanouil",
+            "last-name": "Saloustros",
+            "name": "Saloustros E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Javad",
+            "last-name": "Nadaf",
+            "name": "Nadaf J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara",
+            "last-name": "Rivera",
+            "name": "Rivera B.",
+            "type": "person"
+          },
+          {
+            "first-names": "Catherine",
+            "last-name": "Gilpin",
+            "name": "Gilpin C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Ester",
+            "last-name": "Castellsague",
+            "name": "Castellsague E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rachel",
+            "last-name": "Silva-Smith",
+            "name": "Silva-Smith R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Francois",
+            "last-name": "Plourde",
+            "name": "Plourde F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Mona",
+            "last-name": "Wu",
+            "name": "Wu M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Avi",
+            "last-name": "Saskin",
+            "name": "Saskin A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Madeleine",
+            "last-name": "Arseneault",
+            "name": "Arseneault M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Rouzan G.",
+            "last-name": "Karabakhtsian",
+            "name": "Karabakhtsian R.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Elizabeth A.",
+            "last-name": "Reilly",
+            "name": "Reilly E.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Frederick R.",
+            "last-name": "Ueland",
+            "name": "Ueland F.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Anna",
+            "last-name": "Margiolaki",
+            "name": "Margiolaki A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Kitty",
+            "last-name": "Pavlakis",
+            "name": "Pavlakis K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Sharon M.",
+            "last-name": "Castellino",
+            "name": "Castellino S.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Janez",
+            "last-name": "Lamovec",
+            "name": "Lamovec J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Helen J.",
+            "last-name": "Mackay",
+            "name": "Mackay H.J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Lawrence M.",
+            "last-name": "Roth",
+            "name": "Roth L.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Thomas M.",
+            "last-name": "Ulbright",
+            "name": "Ulbright T.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Tracey A.",
+            "last-name": "Bender",
+            "name": "Bender T.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Vassilis",
+            "last-name": "Georgoulias",
+            "name": "Georgoulias V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Michel",
+            "last-name": "Longy",
+            "name": "Longy M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Andrew",
+            "last-name": "Berchuck",
+            "name": "Berchuck A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Marc",
+            "last-name": "Tischkowitz",
+            "name": "Tischkowitz M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Inga",
+            "last-name": "Nagel",
+            "name": "Nagel I.",
+            "type": "person"
+          },
+          {
+            "first-names": "Reiner",
+            "last-name": "Siebert",
+            "name": "Siebert R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Colin J.R.",
+            "last-name": "Stewart",
+            "name": "Stewart C.J.R.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jocelyne",
+            "last-name": "Arseneau",
+            "name": "Arseneau J.",
+            "type": "person"
+          },
+          {
+            "first-names": "Wilson Glenn",
+            "last-name": "McCluggage",
+            "name": "McCluggage W.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Blaise A.",
+            "last-name": "Clarke",
+            "name": "Clarke B.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "Yasser",
+            "last-name": "Riazalhosseini",
+            "name": "Riazalhosseini Y.",
+            "type": "person"
+          },
+          {
+            "first-names": "Martin",
+            "last-name": "Hasselblatt",
+            "name": "Hasselblatt M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jacek",
+            "last-name": "Majewski",
+            "name": "Majewski J.",
+            "type": "person"
+          },
+          {
+            "first-names": "William David",
+            "last-name": "Foulkes",
+            "name": "Foulkes W.D.",
+            "type": "person"
+          }
+        ],
+        "date": "2014",
+        "first-page": "438",
+        "internal-id": "PubMed=24658002",
+        "journal-name": "Nat. Genet.",
+        "last-page": "443",
+        "title": "Germline and somatic SMARCA4 mutations characterize small cell carcinoma of the ovary, hypercalcemic type.",
+        "type": "article",
+        "volume": "46",
+        "xref-list": [
+          {
+            "accession": "10.1038/ng.2931",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1038/ng.2931"
+          },
+          {
+            "accession": "24658002",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/24658002"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Lisa F.",
+            "last-name": "Gamwell",
+            "name": "Gamwell L.F.",
+            "type": "person"
+          },
+          {
+            "first-names": "Karen",
+            "last-name": "Gambaro",
+            "name": "Gambaro K.",
+            "type": "person"
+          },
+          {
+            "first-names": "Maria",
+            "last-name": "Merziotis",
+            "name": "Merziotis M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Colleen",
+            "last-name": "Crane",
+            "name": "Crane C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Suzanna L.",
+            "last-name": "Arcand",
+            "name": "Arcand S.L.",
+            "type": "person"
+          },
+          {
+            "first-names": "Valerie",
+            "last-name": "Bourada",
+            "name": "Bourada V.",
+            "type": "person"
+          },
+          {
+            "first-names": "Christopher",
+            "last-name": "Davis",
+            "name": "Davis C.",
+            "type": "person"
+          },
+          {
+            "first-names": "Jeremy Andrew",
+            "last-name": "Squire",
+            "name": "Squire J.A.",
+            "type": "person"
+          },
+          {
+            "first-names": "David G.",
+            "last-name": "Huntsman",
+            "name": "Huntsman D.G.",
+            "type": "person"
+          },
+          {
+            "first-names": "Patricia N.",
+            "last-name": "Tonin",
+            "name": "Tonin P.N.",
+            "type": "person"
+          },
+          {
+            "first-names": "Barbara C.",
+            "last-name": "Vanderhyden",
+            "name": "Vanderhyden B.C.",
+            "type": "person"
+          }
+        ],
+        "date": "2013",
+        "first-page": "33.1",
+        "internal-id": "PubMed=23433318",
+        "journal-name": "Orphanet J. Rare Dis.",
+        "last-page": "33.14",
+        "title": "Small cell ovarian carcinoma: genomic stability and responsiveness to therapeutics.",
+        "type": "article",
+        "volume": "8",
+        "xref-list": [
+          {
+            "accession": "PMC3635907",
+            "category": "Reference resources",
+            "database": "PMCID",
+            "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3635907"
+          },
+          {
+            "accession": "10.1186/1750-1172-8-33",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1186/1750-1172-8-33"
+          },
+          {
+            "accession": "23433318",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/23433318"
+          }
+        ]
+      },
+      {
+        "author-list": [
+          {
+            "first-names": "Katherine S.",
+            "last-name": "Upchurch",
+            "name": "Upchurch K.S.",
+            "type": "person"
+          },
+          {
+            "first-names": "Leroy Monroe",
+            "last-name": "Parker",
+            "name": "Parker L.M.",
+            "type": "person"
+          },
+          {
+            "first-names": "Robert Edward",
+            "last-name": "Scully",
+            "name": "Scully R.E.",
+            "type": "person"
+          },
+          {
+            "first-names": "Stephen Martin",
+            "last-name": "Krane",
+            "name": "Krane S.M.",
+            "type": "person"
+          }
+        ],
+        "date": "1986",
+        "first-page": "299",
+        "internal-id": "PubMed=2845729",
+        "journal-name": "J. Bone Miner. Res.",
+        "last-page": "304",
+        "title": "Differential cyclic AMP responses to calcitonin among human ovarian carcinoma cell lines: a calcitonin-responsive line derived from a rare tumor type.",
+        "type": "article",
+        "volume": "1",
+        "xref-list": [
+          {
+            "accession": "10.1002/jbmr.5650010309",
+            "category": "Reference resources",
+            "database": "DOI",
+            "url": "https://doi.org/10.1002/jbmr.5650010309"
+          },
+          {
+            "accession": "2845729",
+            "category": "Reference resources",
+            "database": "PubMed",
+            "url": "https://www.ncbi.nlm.nih.gov/pubmed/2845729"
+          }
+        ]
+      }
+    ]
+  }
+}

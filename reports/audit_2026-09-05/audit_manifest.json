@@ -1,0 +1,504 @@
+{
+  "created_utc": "2026-09-05T16:43:33.121424+00:00",
+  "validation": "passed",
+  "docx_tables": 2,
+  "docx_figures": 4,
+  "docx_build_inputs": "all hashes match",
+  "release_files_checked": 49,
+  "files": [
+    {
+      "path": "app/data.js",
+      "bytes": 3874414,
+      "sha256": "3edf7ca94b1ded0b2ffb3a2a75fb309499902f7479325c067547b6bf51fe2217"
+    },
+    {
+      "path": "app/index.html",
+      "bytes": 23220,
+      "sha256": "6c3351c59c356bfe8517e4831b4f0f287cb1c5f956066cd43e2e8cbd49613f9a"
+    },
+    {
+      "path": "app/ovcan_viewer_standalone.html",
+      "bytes": 3897622,
+      "sha256": "198572c51af9b86308d5f9e0c17c363e0c25d93c7204848bacfe739c6980cff3"
+    },
+    {
+      "path": "docs/manuscript/figures/fig1.pdf",
+      "bytes": 49958,
+      "sha256": "71656aba2e101e8256b900875a495b211e6ce6c1bd69944c949fcb1082692a27"
+    },
+    {
+      "path": "docs/manuscript/figures/fig1.png",
+      "bytes": 418454,
+      "sha256": "d2504f0c7278187147fb548250c0d0c832f7b49b2cf230c2f8a51d8a4b744d58"
+    },
+    {
+      "path": "docs/manuscript/figures/fig2.pdf",
+      "bytes": 619566,
+      "sha256": "7e9154ed443681d9c60408ef39a94342e9ccc592054f056f47a8f9e7f33e21ad"
+    },
+    {
+      "path": "docs/manuscript/figures/fig2.png",
+      "bytes": 1012885,
+      "sha256": "461c3df49a86be70eb2aea2d9fa6d358ddc894c40b0dc5ae1927f17c20058438"
+    },
+    {
+      "path": "docs/manuscript/figures/fig3.pdf",
+      "bytes": 76935,
+      "sha256": "a438e0ac94735492715b920c7c720f6b849cb0f8a2d61666ef82c58719a5303f"
+    },
+    {
+      "path": "docs/manuscript/figures/fig3.png",
+      "bytes": 498486,
+      "sha256": "76382fa670f54ef4e2c9c40e088133c6fb907a4dfa86f1523fff5a6303fe11a0"
+    },
+    {
+      "path": "docs/manuscript/figures/fig4.pdf",
+      "bytes": 65625,
+      "sha256": "ab277b8430a0712131d516a394a607902925d9f0fe6c58cb810c17d50a97c06e"
+    },
+    {
+      "path": "docs/manuscript/figures/fig4.png",
+      "bytes": 420264,
+      "sha256": "09c12d337ea13738ddbbdaa42374c5461b1c685ac2fa440c6c8818f909d31fb3"
+    },
+    {
+      "path": "docs/manuscript/figures/fig5.pdf",
+      "bytes": 74896,
+      "sha256": "8bb72cbb7a9e78600fcc1cf0203c0cdce7db7315d47f8123d9c047d67fdaf844"
+    },
+    {
+      "path": "docs/manuscript/figures/fig5.png",
+      "bytes": 546985,
+      "sha256": "965032c9c544371cf0b0acdb11e6fa666a32c1c9b511cbc2a12e89bb74d4a3ea"
+    },
+    {
+      "path": "docs/manuscript/figures/fig6.pdf",
+      "bytes": 59994,
+      "sha256": "80b59e51da6a12561d44766ff81941183fe0684fffc5ff49f39c6e61abacc321"
+    },
+    {
+      "path": "docs/manuscript/figures/fig6.png",
+      "bytes": 521252,
+      "sha256": "29f17d3d42c26c2469d873e1636d1a718a570d017b0c7c1b69cd5c5cbc54d832"
+    },
+    {
+      "path": "docs/manuscript/figures/figs1.pdf",
+      "bytes": 38530,
+      "sha256": "0af361b6058dd959f2cddb52e28f3150132bd9e510f4e0eab0c2ad6f388d8757"
+    },
+    {
+      "path": "docs/manuscript/figures/figs1.png",
+      "bytes": 244877,
+      "sha256": "3bed4aadc446f928fe9e549224312955e64190b4a6b7ad266bc07222d0d881d1"
+    },
+    {
+      "path": "docs/manuscript/figures/figs2.pdf",
+      "bytes": 40998,
+      "sha256": "9867a096aed4c065a4c240cd4e03539314846153f5ae914450cb2cf288f63145"
+    },
+    {
+      "path": "docs/manuscript/figures/figs2.png",
+      "bytes": 226432,
+      "sha256": "77b6de39043b4a6ac36170a65e47fd1b4677ca4133e11fec1ef865fcd2bda396"
+    },
+    {
+      "path": "docs/manuscript/figures/figs3.pdf",
+      "bytes": 38058,
+      "sha256": "a972fef8be8ba13ba16c87bf1d860329cf7105ee118398a50165511857fad807"
+    },
+    {
+      "path": "docs/manuscript/figures/figs3.png",
+      "bytes": 306947,
+      "sha256": "768406d7b185cd431a86c64206722d5525867d2bca001d82ac71f72ffb1a2f93"
+    },
+    {
+      "path": "docs/manuscript/figures/figs4.pdf",
+      "bytes": 37397,
+      "sha256": "1c5e886c18a4e8ca8da528a9e5c5bfd2154313b5452e4931aaaae30077b9a25d"
+    },
+    {
+      "path": "docs/manuscript/figures/figs4.png",
+      "bytes": 198132,
+      "sha256": "6aa1eba269fc0a378eb3ba64237c4f76e16d3108927390edfb4c0f61e25d69e4"
+    },
+    {
+      "path": "docs/manuscript/figures/figs5.pdf",
+      "bytes": 90858,
+      "sha256": "4e25c8264d0c306739ff53f7fc087f7947816bcf60680f3ea95a875a372b4cc0"
+    },
+    {
+      "path": "docs/manuscript/figures/figs5.png",
+      "bytes": 332469,
+      "sha256": "3453fa9399d7e2457a976b51cd3646ee2a2d8fa06c024aa081ba17abe0f8ffd6"
+    },
+    {
+      "path": "docs/manuscript/figures/figs6.pdf",
+      "bytes": 46147,
+      "sha256": "0c69e8a43b06f348fdf5fd363909f474a3cc77ecdd7e921dd3887d0a5a030078"
+    },
+    {
+      "path": "docs/manuscript/figures/figs6.png",
+      "bytes": 256939,
+      "sha256": "aa3115a61dd2a5dab606194c172cfc748f4bf898a72f185d1fc17e539a8cfb32"
+    },
+    {
+      "path": "docs/manuscript/figures/figs7.pdf",
+      "bytes": 46213,
+      "sha256": "20ed29053fc13fecfa0181672e3339302da8b5889d8b80af500eca8042c0e0eb"
+    },
+    {
+      "path": "docs/manuscript/figures/figs7.png",
+      "bytes": 293037,
+      "sha256": "e539d6e7c35ed3115795c6f8793e4a1c1dbb29e1ab149e9621142a3d8489e392"
+    },
+    {
+      "path": "docs/manuscript/figures/figs8.pdf",
+      "bytes": 50252,
+      "sha256": "d0d639fc7b9df52892b5e5f0958fe285225d0ded9a06cdc1136224c26905dd41"
+    },
+    {
+      "path": "docs/manuscript/figures/figs8.png",
+      "bytes": 445263,
+      "sha256": "1ded6bbe173b5f02fb93a904177f7fe36e3a7604cce49f111e6c03451ad956d0"
+    },
+    {
+      "path": "docs/manuscript/v6/OvCAN_Scientific_Data_draft_v6.docx",
+      "bytes": 2287601,
+      "sha256": "dee5d807b88eb3d38210e88972f97acc896aa419395f7b4335a7a16c4b1cd221"
+    },
+    {
+      "path": "docs/manuscript/v6/OvCAN_Scientific_Data_draft_v6.md",
+      "bytes": 38083,
+      "sha256": "610b6b55b9cd391e0114aaa91dc7e57a5a8df90d928dd1850602d0da4d03eecb"
+    },
+    {
+      "path": "docs/manuscript/v6/author_confirmation.md",
+      "bytes": 12924,
+      "sha256": "227e61240c2be331f40e48e5d09bde3ff9e3713682b7a11048696922476f5161"
+    },
+    {
+      "path": "docs/manuscript/v6/build_docx_v6.py",
+      "bytes": 17161,
+      "sha256": "14068a513dc0132c7ffe144536a224fc3fc110f8d794f1e4fc4f5dc70b181c15"
+    },
+    {
+      "path": "docs/manuscript/v6/build_manifest.json",
+      "bytes": 1094,
+      "sha256": "ed896fd5a264032110a87ab7475b516c4ba20a117902c489e36a37e644ec1ece"
+    },
+    {
+      "path": "docs/manuscript/v6/wes_cluster_retrieval.md",
+      "bytes": 7715,
+      "sha256": "bfccb775632aa04563d1d56a1ba4a8c0efba3e3c1ff2608ba242853e41539acc"
+    },
+    {
+      "path": "metadata/resource_models.csv",
+      "bytes": 11542,
+      "sha256": "e6c41a12fffa12f034f19de848a381972ca5b923fd7677def190eeb332960d2e"
+    },
+    {
+      "path": "release/SHA256SUMS",
+      "bytes": 4938,
+      "sha256": "14ab1527eee88f7aa24e17e5ef72ad19d05a0cde790c319211c882bdb184110c"
+    },
+    {
+      "path": "reports/audit_2026-09-05/AUDIT_REPORT.md",
+      "bytes": 15407,
+      "sha256": "276ca93c841e1dfa66a2f0a7a467f5d75e2e1a95122ff87d78b65fae097f27c3"
+    },
+    {
+      "path": "reports/audit_2026-09-05/genomics_audit.md",
+      "bytes": 20969,
+      "sha256": "3bdf678e6f8109482d0a5f4922056255bc5272bc031f9c4f43ce071a9e13b2f2"
+    },
+    {
+      "path": "reports/audit_2026-09-05/genomics_validation.json",
+      "bytes": 318,
+      "sha256": "e6f6619b842053ccc6d6623ad1a40e9b29876b839d9caae3a10846e75eb08b5e"
+    },
+    {
+      "path": "reports/audit_2026-09-05/manuscript_comment_responses.md",
+      "bytes": 13464,
+      "sha256": "e58ea2d858b329f0319856712efce7d46456493882c5d2e625834ccf8ac95f2f"
+    },
+    {
+      "path": "reports/audit_2026-09-05/manuscript_review.md",
+      "bytes": 11920,
+      "sha256": "67fef0e1415d41978d5f81b8450465bd7aafdcc1ad6040f7a85f5759403a28eb"
+    },
+    {
+      "path": "reports/audit_2026-09-05/release_validation.json",
+      "bytes": 263,
+      "sha256": "6cdfee392f7dbb956126a5f134b1ca08716210a1c48938305bdbec2a6be934e8"
+    },
+    {
+      "path": "reports/audit_2026-09-05/rna_proteomics_audit.md",
+      "bytes": 21599,
+      "sha256": "f232eaad4b509eb94ab11fc2c5fe07f32b315e13269f53908f16e46c6bc7afe4"
+    },
+    {
+      "path": "reports/audit_2026-09-05/viewer_validation.json",
+      "bytes": 372,
+      "sha256": "bdcf3b76f4989fd73139359d71fd489d81c6f68899eb3f31a4b801bde97e47ff"
+    },
+    {
+      "path": "reports/audit_2026-09-05/wes_cluster_models.csv",
+      "bytes": 2984,
+      "sha256": "5fb6a8386786a4709145cf017f742d3d8ac6c20c756ad836b216bc5cdc318312"
+    },
+    {
+      "path": "reports/audit_2026-09-05/wes_cluster_path_hints.csv",
+      "bytes": 81280,
+      "sha256": "039705a61708fc515023b1a33c2520bf7c7b178f2dadf780c724ad1faba60dd9"
+    },
+    {
+      "path": "scripts/00_setup.R",
+      "bytes": 12749,
+      "sha256": "1cc27b82ad0ae7afb77e19b9ecbd43dd42de4b940ddc45c58d71b5bc3fddd703"
+    },
+    {
+      "path": "scripts/00b_figure_theme.R",
+      "bytes": 21754,
+      "sha256": "c53a8835a3ce0fcd8813f95bb278d49e86c8d3c9c595457767d0cc80b8f631ce"
+    },
+    {
+      "path": "scripts/01_rna_load_qc.R",
+      "bytes": 15709,
+      "sha256": "add1b08417a8b06ac069f1768fee51cfb237148383fe6292b200ba3f3fe36988"
+    },
+    {
+      "path": "scripts/02_rna_separation.R",
+      "bytes": 6947,
+      "sha256": "3dd805e286ba9b6e869dbcb54254aee1c9ae62e950e83ddb3946ad5e41aa0d68"
+    },
+    {
+      "path": "scripts/03_rna_de_signatures.R",
+      "bytes": 20037,
+      "sha256": "206bc6ddcc44d76de4e1274342de9efeb154f9e84434d8d31693457a30db50b4"
+    },
+    {
+      "path": "scripts/04_rna_markers_genesets.R",
+      "bytes": 25474,
+      "sha256": "dc9f4a90abc47d82bfc62b16481dc833391a76ed349256972f8db2c6a88d2a82"
+    },
+    {
+      "path": "scripts/05_proteomics_load_qc.R",
+      "bytes": 28576,
+      "sha256": "bf64eecfa841b8f314ab25a33a74e0e263da3f30b9530ab83254a481c00c5884"
+    },
+    {
+      "path": "scripts/06_proteomics_separation.R",
+      "bytes": 13881,
+      "sha256": "804bbdda9e427a923fb210b5b969c0e85173fcaecb83e1e9b592124d740b2cc6"
+    },
+    {
+      "path": "scripts/07_wes_mutations.R",
+      "bytes": 42492,
+      "sha256": "1aa863681cd2aced53499e8b64624928096c2cecf6b60122498d5db31e1a3afc"
+    },
+    {
+      "path": "scripts/08_wes_cnv.R",
+      "bytes": 30798,
+      "sha256": "8528b2f7d594cbdabb7ab3e0a63682e1b3d3ed98825ac22518769b5a3dfb0d89"
+    },
+    {
+      "path": "scripts/09_wes_hrd.R",
+      "bytes": 17352,
+      "sha256": "e47acfa935b7dddc8bb8af821a3eba2c19dbbc54a2ab71435d790cc55e54daa0"
+    },
+    {
+      "path": "scripts/10_authentication.R",
+      "bytes": 49790,
+      "sha256": "f549ae871d2e5830bbb7a9326d69fa1acf516f55c3e2304335a61d8163849942"
+    },
+    {
+      "path": "scripts/11_mucinous_authenticity.R",
+      "bytes": 28183,
+      "sha256": "a5f01e8f66e2af64b996cf56c21fdaa178455777cc130f35a652f95181c22067"
+    },
+    {
+      "path": "scripts/12_rna_protein_concordance.R",
+      "bytes": 32963,
+      "sha256": "27aa2dd7802371ecbc14c69f01a500f14ab3f988d1f5afaf99e03bf51c1d9ac7"
+    },
+    {
+      "path": "scripts/13_adc_atlas.R",
+      "bytes": 24682,
+      "sha256": "8577bb241f48e3d59166c42fa3d2722b53fa23a472a1e9510566309ade4e0f10"
+    },
+    {
+      "path": "scripts/14_hgs_heterogeneity.R",
+      "bytes": 16212,
+      "sha256": "a6b6f9a2dc5d1e0b5a6ab0fda38283850e7a21d9217dab475080cb084e8fe93e"
+    },
+    {
+      "path": "scripts/15_patient_family_map.R",
+      "bytes": 5616,
+      "sha256": "22cd9e535942cd2727911ba543ff17f613fbdb3f1e54a134db5a8c32f21d4ae1"
+    },
+    {
+      "path": "scripts/16_wes_signatures_msi.R",
+      "bytes": 36597,
+      "sha256": "09eccb892e089733bf9c1f9ac033b07f50aaebc97d7e684c6d002c4cf397acec"
+    },
+    {
+      "path": "scripts/17_variance_confounders.R",
+      "bytes": 51848,
+      "sha256": "d97609f0c0f0b7f94d9daffe5313e8530b02a0eb53091433aa5c6146d535b303"
+    },
+    {
+      "path": "scripts/18_external_benchmarking.R",
+      "bytes": 40663,
+      "sha256": "b6538faa59648fb3049274a9c263380eeac38bdafa9c6c9b68b1c0e11f11f4d8"
+    },
+    {
+      "path": "scripts/19_proteomics_dynamic_range.R",
+      "bytes": 47176,
+      "sha256": "e0d39587326c1859c1d094451aa18be4c749ae06096797789f19fb8c57a5eece"
+    },
+    {
+      "path": "scripts/20_supplement_table.R",
+      "bytes": 12412,
+      "sha256": "82905f8b1cdb54adce197cc97e3786fe3d9ac5a4cb663064fbdc17ad7212a0e5"
+    },
+    {
+      "path": "scripts/21_rna_sensitivity.R",
+      "bytes": 23627,
+      "sha256": "5fc50fe68df725070d3bf28b211842f75f3c4c9eb750fa60d709dc61ff2d5810"
+    },
+    {
+      "path": "scripts/22_wes_signature_refit.R",
+      "bytes": 26495,
+      "sha256": "0f211663e79506e69998474a28b6547abbb357fa345a44cdd964bd36372b8a4b"
+    },
+    {
+      "path": "scripts/30_fig1_overview.R",
+      "bytes": 18021,
+      "sha256": "3dda0ab6af2ee0bbc6396bdad5f66c31679e8fae985f5993e8d981a550bd4861"
+    },
+    {
+      "path": "scripts/31_fig4_genomics.R",
+      "bytes": 27261,
+      "sha256": "e927ef8b06093f8de8981d694952b8f864793700a813d7df4fd6bbf5fc8affdb"
+    },
+    {
+      "path": "scripts/32_fig5_rare.R",
+      "bytes": 26766,
+      "sha256": "b5954cf607f10dff97687825c4c4ec906b41cefa9bc134e09737dbcfc0e3f4c1"
+    },
+    {
+      "path": "scripts/33_supp_genomics.R",
+      "bytes": 21708,
+      "sha256": "16926f3e9cbf911a53966edffa73fe604ed4cdf70c2ae98fedf1001a4f214402"
+    },
+    {
+      "path": "scripts/34_fig2_qc.R",
+      "bytes": 33104,
+      "sha256": "e9b61972b3dafc5b0e87bcd3b777f211797bf3ce5a43c37103a6fc14cc339e09"
+    },
+    {
+      "path": "scripts/35_fig3_biology.R",
+      "bytes": 26955,
+      "sha256": "927615c549d01d1137df6fbe229dfd2a1b65676142cc80d66530d28e80b5fdf7"
+    },
+    {
+      "path": "scripts/36_fig6_adc.R",
+      "bytes": 21120,
+      "sha256": "050a4fa45f2f1c6e301625c8e134eb6023bd3a1b47300d04e388a35684bfb5f1"
+    },
+    {
+      "path": "scripts/37_supp_rnaprot.R",
+      "bytes": 43308,
+      "sha256": "1f92a3d099d9d17d443d289faf8fcc52a1737f4dcbe363d9e22997c8845b31f5"
+    },
+    {
+      "path": "scripts/build_matched_rna_reference.py",
+      "bytes": 3834,
+      "sha256": "ce0d4ee1a943f4dd020753a6c627938516e100ae5ab6c4a27a1c01c82974c6ee"
+    },
+    {
+      "path": "scripts/build_release.py",
+      "bytes": 20438,
+      "sha256": "b2e34d19dfc650bae0b9d6d10558395df58e42d06292459ebe66c623f3bd7e86"
+    },
+    {
+      "path": "scripts/build_report.py",
+      "bytes": 11860,
+      "sha256": "59f13c0951139767b7889e21cf62bb53d9d4cbd839230f90262d9b1cc4610f6d"
+    },
+    {
+      "path": "scripts/build_report_full.py",
+      "bytes": 15966,
+      "sha256": "eefcb0417cd2cd99a5ab9c2a88382790ab79208b7b88d926f59b0342b74fc54c"
+    },
+    {
+      "path": "scripts/fetch_external_data.R",
+      "bytes": 15701,
+      "sha256": "20da0f67a76a56a1bf619e555f77431eef5e4198f13c079b0e92991eabdbbc3c"
+    },
+    {
+      "path": "scripts/lib/twobit_faidx.R",
+      "bytes": 813,
+      "sha256": "ed8153c37fc64c529256af0125244cee67ad715ae37be0a318ec47b125ce7c60"
+    },
+    {
+      "path": "scripts/lib/wes_maf_inputs.R",
+      "bytes": 3254,
+      "sha256": "cb89a35a168abc4fdf3a519d3393e91c00cf5c0076da1dea5a1341b3c469b75e"
+    },
+    {
+      "path": "scripts/lib/wes_target_signature_sensitivity.R",
+      "bytes": 6122,
+      "sha256": "c84124638680d8f8fcc38d4e83cb2d1d481c2227f6bd2cd155b2d04984511429"
+    },
+    {
+      "path": "scripts/pin_external_reference_provenance.py",
+      "bytes": 6793,
+      "sha256": "76e35b24d0c5e25b0cfb13ad9e92c7f79403ebdb82d2f7d81a4a746b382ec0f4"
+    },
+    {
+      "path": "scripts/run_all.sh",
+      "bytes": 5477,
+      "sha256": "5d336a12b518b08f1143cc9cdb0eea6183ae973f3fafbdd3093ea1d34160c54d"
+    },
+    {
+      "path": "scripts/sandbox/explore_hypermutation.R",
+      "bytes": 4772,
+      "sha256": "f948aff22496925a7d6f5982988d7bd0e661ec0b38cf2220739c7b7caef34a5d"
+    },
+    {
+      "path": "scripts/sandbox/probe_sbs.R",
+      "bytes": 2111,
+      "sha256": "bfd85f480caaf23b7beae69956c99fcb50db67027ad482b654624793af6eda46"
+    },
+    {
+      "path": "scripts/vendor/README.md",
+      "bytes": 1183,
+      "sha256": "df61a0eba2888cb0bbcef8758d8c678374710f24a1945a9b7d3db5dc7367c4de"
+    },
+    {
+      "path": "scripts/vendor/vcf2maf-1.6.22.pl",
+      "bytes": 79077,
+      "sha256": "139d5f8f836659ae1cecd1c1a4012252702175a9c9acf0f75c0e3a8e8e9bdc83"
+    },
+    {
+      "path": "scripts/vendor/vcf2maf-LICENSE.txt",
+      "bytes": 579,
+      "sha256": "9cedaddf307ae37c338225ce06aedead4d4a60edfd733cdf545873c2bbf3087f"
+    }
+  ],
+  "amendments": [
+    {
+      "recorded_utc": "2026-09-05T16:46:37.497484+00:00",
+      "change": "Added cluster WES retrieval checklist, 322 historical path hints, and verified 23-model alignment inventory after author confirmed cluster access.",
+      "paths": [
+        "docs/manuscript/v6/author_confirmation.md",
+        "docs/manuscript/v6/wes_cluster_retrieval.md",
+        "reports/audit_2026-09-05/AUDIT_REPORT.md",
+        "reports/audit_2026-09-05/wes_cluster_path_hints.csv",
+        "reports/audit_2026-09-05/wes_cluster_models.csv"
+      ],
+      "previous_manifest": "reports/audit_2026-09-05/audit_manifest_before_cluster_note.json"
+    }
+  ]
+}

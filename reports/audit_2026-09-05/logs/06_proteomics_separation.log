@@ -1,0 +1,78 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Multivariate input: 6855 complete-case proteins (of 8427) x 31 lines
+
+Silhouettes, BOTH modalities (subtype = ALL is the overall mean):
+ modality subtype  n mean_sil                                  unit
+      RNA     HGS 15   0.1606 cell line (per-line, NOT per-patient)
+      RNA      CC  7   0.1192 cell line (per-line, NOT per-patient)
+      RNA      EC  2  -0.0100 cell line (per-line, NOT per-patient)
+      RNA      MC  3   0.1587 cell line (per-line, NOT per-patient)
+      RNA    MMMT  2   0.7435 cell line (per-line, NOT per-patient)
+      RNA  SCCOHT  2   0.8194 cell line (per-line, NOT per-patient)
+      RNA     ALL 31   0.2202 cell line (per-line, NOT per-patient)
+  protein     HGS 15   0.1777 cell line (per-line, NOT per-patient)
+  protein      CC  7  -0.0035 cell line (per-line, NOT per-patient)
+  protein      EC  2   0.1278 cell line (per-line, NOT per-patient)
+  protein      MC  3   0.1408 cell line (per-line, NOT per-patient)
+  protein    MMMT  2   0.4095 cell line (per-line, NOT per-patient)
+  protein  SCCOHT  2   0.0284 cell line (per-line, NOT per-patient)
+  protein     ALL 31   0.1353 cell line (per-line, NOT per-patient)
+null device 
+          1 
+null device 
+          1 
+
+=== PROTEOMICS SEPARATION (script 06) ===
+Multivariate input: 6855 complete-case proteins x 31 lines; top 2000 variable used for PCA
+
+PCA variance explained (PC1-5):
+[1] 12.7  9.4  9.1  6.8  6.1
+
+Silhouette by subtype (Euclidean, PC1-10; n=2 groups unreliable):
+  subtype  n    mean_sil
+1     HGS 15  0.17772556
+2      CC  7 -0.00348730
+3      EC  2  0.12775872
+4      MC  3  0.14082106
+5    MMMT  2  0.40948041
+6  SCCOHT  2  0.02840268
+Overall mean silhouette: 0.135
+
+Confounder check — variance in each PC explained by subtype vs plex vs site:
+   PC var_pct r2_subtype r2_plex r2_site adjr2_subtype adjr2_plex adjr2_site
+1 PC1    12.7      0.553   0.134  0.3607         0.464   0.000363     0.3150
+2 PC2     9.4      0.503   0.319  0.1462         0.404   0.214596     0.0852
+3 PC3     9.1      0.629   0.209  0.1889         0.555   0.087142     0.1310
+4 PC4     6.8      0.393   0.240  0.0193         0.272   0.122738    -0.0507
+5 PC5     6.1      0.368   0.332  0.0440         0.242   0.229162    -0.0243
+
+Canonical marker mean log2 relative abundance by subtype:
+      gene    HGS     CC     EC     MC   MMMT SCCOHT
+1   ARID1A 14.549 13.922 14.075 14.384 13.933 14.405
+2   ARID1B 12.641 12.425 12.408 12.756 12.721 12.514
+3    EPCAM 14.412 14.536 13.164 14.362 13.161 13.200
+4    HNF1B 13.920 13.954 13.821 13.986 13.995 13.666
+5     KRT7 16.718 16.800 15.588 16.528 15.515 15.874
+6    MECOM 11.450 11.454 10.719 11.014 11.656 10.843
+7    MUC16 11.822 11.213 11.221 11.462 11.248 11.385
+8   MUC5AC 11.105 10.922 11.157 11.407 11.124 11.107
+9    MUC5B 11.134 10.792 10.949 10.817 10.988 10.865
+10   NAPSA  9.971 10.450  9.951  9.843 11.781  9.932
+11    PAX8 13.524 13.424 13.279 13.324 13.389 13.174
+12 SMARCA2 11.944 11.576 11.784 11.947 11.519 11.437
+13 SMARCA4 14.213 13.709 13.619 14.204 13.905 13.368
+14    TFF1  7.904  7.393  7.445  8.402  8.272  7.410
+15   WFDC2 10.453  9.249  9.751  9.842  9.453  9.746
+16     WT1 12.848 12.637 12.629 12.857 13.007 12.851
+
+--- QC GATE ---
+PLEX exceeds subtype on PC1/PC2: FALSE
+SITE exceeds subtype on PC1/PC2: FALSE (note: subtype/site confounded by design)
+OK: subtype structure is not dominated by TMT plex on the top PCs (consistent with effective PIS normalization).
+
+NB for reporting: prot_pc_confounder.csv is the PC-level view and is NOT reassuring in the
+  way the per-protein medians are (site and plex load substantially on the leading protein PCs).
+  Report the per-protein medians and this table together, not one instead of the other.
+  session record -> /Users/dpcook/Analysis/ovcan_human/output/session_info_06_proteomics_separation.txt
+
+06_proteomics_separation.R complete. Figures in figs/06_* ; tables in output/prot_*.

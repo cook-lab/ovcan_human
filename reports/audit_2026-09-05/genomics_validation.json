@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "variant_models": 23,
+  "coding_candidates": 6194,
+  "legacy_candidates_preserved": 6036,
+  "HGSC_TP53_models": 18,
+  "HGSC_TP53_patients": 11,
+  "independently_validated_arm_calls": 897,
+  "bootstrap_rows": 1886,
+  "reciprocal_DepMap_matches": 5,
+  "Cellosaurus_reference_STR_profiles": 30
+}

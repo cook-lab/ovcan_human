@@ -1,0 +1,14 @@
+metric,value
+TPM_gene_rows_before,39568
+TPM_gene_rows_after,39733
+shared_gene_ids,39433
+new_gene_ids,300
+retired_gene_ids,135
+symbol_rows_before,28901
+symbol_rows_after,35882
+shared_symbols,27259
+new_symbols,8623
+removed_symbols,1642
+median_sample_profile_Spearman,0.99821932884936
+min_sample_profile_Spearman,0.997951057195622
+abs_PC1_score_correlation,0.999964684134859
