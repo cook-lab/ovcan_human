@@ -6,7 +6,7 @@ Use [CLAUDE_TASK.md](CLAUDE_TASK.md) as the copy-pastable task prompt. Manuscrip
 
 ## What the Git checkout contains
 
-The private repository includes code, documentation, current processed results and small source-evidence files. It is not a complete copy of the analysis workstation or cluster. An absent `judy_archive/data/`, BAM/CRAM, FASTQ or large VCF in Git does not mean it is absent on the cluster. The [archived-input inventory](../data/archived_input_inventory.tsv) lists the 906 excluded source-data files and sizes; its paths are relative to the original `judy_archive/data/` directory. Original paths recorded in manifests can refer to files intentionally excluded from Git. See [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) for the checkout and external-input contract. Do not run the full R pipeline merely to test a fresh checkout: it depends on those external inputs and writes derived outputs.
+The public repository includes code, documentation, current processed results and small source-evidence files. It is not a complete copy of the analysis workstation or cluster. An absent `judy_archive/data/`, BAM/CRAM, FASTQ or large VCF in Git does not mean it is absent on the cluster. The [archived-input inventory](../data/archived_input_inventory.tsv) lists the 906 excluded source-data files and sizes; its paths are relative to the original `judy_archive/data/` directory. Original paths recorded in manifests can refer to files intentionally excluded from Git. See [REPRODUCIBILITY.md](../REPRODUCIBILITY.md) for the checkout and external-input contract. Do not run the full R pipeline merely to test a fresh checkout: it depends on those external inputs and writes derived outputs.
 
 Read these maintained inputs first:
 

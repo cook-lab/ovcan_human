@@ -1,4 +1,4 @@
-# Data included in the private repository
+# Data included in the public repository
 
 The repository includes the current processed output tables and compact R objects, the complete validated processed release, metadata, the matched release-93 transcript map, the derived CNVkit target BED, source-command evidence and current manuscript/figures. It deliberately excludes the approximately 10 GB original input archive, duplicate result snapshots, large download caches and temporary rendering files. The local originals were preserved.
 

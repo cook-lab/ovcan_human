@@ -1,6 +1,6 @@
 # Task prompt for Claude Code on the cluster
 
-Copy the following prompt into Claude Code from the private repository checkout. No cluster root needs to be guessed in advance: the evidence table contains the historical roots, and the task begins by checking them.
+Copy the following prompt into Claude Code from the public repository checkout. No cluster root needs to be guessed in advance: the evidence table contains the historical roots, and the task begins by checking them.
 
 ---
 

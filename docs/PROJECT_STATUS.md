@@ -1,6 +1,6 @@
 # Current status and remaining work
 
-The current manuscript is v7. The September 2026 audit corrected the RNA reference, recovered the 23rd variant profile, revised genomic interpretation and patient-level summaries, and rebuilt the data browser and processed release locally. All 14 figures were subsequently redesigned and checked. The private working repository [cook-lab/ovcan_human](https://github.com/cook-lab/ovcan_human) supports collaboration and cluster recovery; public deposition and journal submission remain separate steps.
+The current manuscript is v7. The September 2026 audit corrected the RNA reference, recovered the 23rd variant profile, revised genomic interpretation and patient-level summaries, and rebuilt the data browser and processed release locally. All 14 figures were subsequently redesigned and checked. The public working repository [cook-lab/ovcan_human](https://github.com/cook-lab/ovcan_human) supports collaboration and cluster recovery; public deposition and journal submission remain separate steps.
 
 ## What is already available
 
@@ -41,7 +41,7 @@ These may not be on the WES cluster. Keep their ownership separate from a filesy
 | A01–A06 | Authors, affiliations, prior uses of these exact datasets, contributions, interests, acknowledgements and funding |
 | D01 | Data accessions, reviewer access, licences, access conditions and immutable deposited checksums |
 | D02 | Verify/deploy the corrected hosted browser and archive that version; local rebuild alone is not deployment |
-| D03 | Private working repository created at [cook-lab/ovcan_human](https://github.com/cook-lab/ovcan_human); public code availability and an immutable DOI archive remain pending |
+| D03 | Working code is publicly available at [cook-lab/ovcan_human](https://github.com/cook-lab/ovcan_human) by author choice; code licensing and an immutable DOI archive remain pending |
 
 See [author confirmations](manuscript/v7/author_confirmation.md) for the full questions and known evidence. Do not fill a manuscript TODO from a related publication unless the authors confirm that it describes this dataset.
 

@@ -2,7 +2,7 @@
 
 Analysis, validated data records and a working Scientific Data Data Descriptor for 42 ovarian cancer cell models from 34 patients. The repository contains current processed results, reproducible analysis/figure scripts, the manuscript and an evidence-based checklist for recovering missing WES records from the cluster.
 
-**Current state:** the September 2026 analysis audit and figure redesign are complete locally. Manuscript **v7** is the current draft. WES provenance and technical QC still need cluster records, and several methods, stock-testing and submission details need author confirmation. This private working repository is not a public data deposit or an immutable journal code archive.
+**Current state:** the September 2026 analysis audit and figure redesign are complete locally. Manuscript **v7** is the current draft. WES provenance and technical QC still need cluster records, and several methods, stock-testing and submission details need author confirmation. This working repository is public by author choice; journal data deposition and an immutable code archive remain separate steps.
 
 ## Start here on the cluster
 

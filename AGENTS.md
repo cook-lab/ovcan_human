@@ -15,7 +15,7 @@ Start by locating existing files in the run/project directories supplied by the 
 
 Keep original run directories read-only. Record exact paths, symlink targets, sample/run IDs, sizes and checksums when available. A historical path is not proof that a file still exists. Report permission-denied and broken-symlink cases separately from files not found in searched locations. Do not calculate checksums of multi-terabyte trees merely to build the first inventory.
 
-Write curated recovery findings and small nonsensitive evidence in a new dated directory under `docs/cluster/recovery/`, with original paths and hashes. Put bulk retrievals under `data/cluster_wes_retrieval/` or managed storage; this directory is ignored by Git. Do not commit credentials, signed download URLs, raw sequence/alignment files, clinical identifiers or unreviewed logs. Keep the repository private; changing visibility or public deposition requires explicit author direction.
+Write curated recovery findings and small nonsensitive evidence in a new dated directory under `docs/cluster/recovery/`, with original paths and hashes. Put bulk retrievals under `data/cluster_wes_retrieval/` or managed storage; this directory is ignored by Git. Do not commit credentials, signed download URLs, raw sequence/alignment files, clinical identifiers or unreviewed logs. The author explicitly chose public GitHub visibility. Preserve public visibility unless the author requests a change; deposition of additional data still requires author direction.
 
 Use the acceptance checks in `WES_RECOVERY.md`. Return an inventory, an item-by-item status table and a short account of what remains missing. Never replace a missing result with a pipeline default or an assumed protocol.
 
