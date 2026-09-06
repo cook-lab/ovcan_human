@@ -1,0 +1,27 @@
+{
+  "command": "/usr/local/bin/Rscript scripts/07_wes_mutations.R",
+  "exit_status": 0,
+  "new_population_af_assertion_passed": true,
+  "retained_content_guard_passed": true,
+  "file_comparison": {
+    "wes_csv": {
+      "changed": [],
+      "added": [
+        "output/wes_recovered_provenance_cnv_reference_filters.csv"
+      ],
+      "removed": []
+    },
+    "metadata": {
+      "changed": [],
+      "added": [],
+      "removed": []
+    },
+    "canonical_figures": {
+      "changed": [],
+      "added": [],
+      "removed": []
+    }
+  },
+  "additional_file_context": "wes_recovered_provenance_cnv_reference_filters.csv appeared during the comparison window; script07 has no writer for this path (concurrent provenance work).",
+  "warning_context": "23 unexpanded warnings were reported before successful VAF joining; ComplexHeatmap emitted a vectorisation notice. No assertion failed; no rerun was performed."
+}

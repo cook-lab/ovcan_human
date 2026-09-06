@@ -1,0 +1,3 @@
+bin_group,total_bins,excluded_union,log2_outside_pm5,spread_gt1,zero_depth,gc_outside_0_3_to_0_7,criteria_overlap,interpretation
+target,290475,85769,15625,39975,41206,22738,True,Reconstructed default-rule union; exact retained coordinate set checked against every CNR
+antitarget,42709,1786,1042,541,1035,1012,True,Reconstructed default-rule union; exact retained coordinate set checked against every CNR

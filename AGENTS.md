@@ -4,10 +4,10 @@
 
 1. `README.md`
 2. `docs/PROJECT_STATUS.md`
-3. For cluster work: `docs/cluster/CLAUDE_TASK.md` and `docs/cluster/WES_RECOVERY.md`
+3. For cluster work: `docs/cluster/recovery/2026-09-05/FOLLOWUP.md` first, then `docs/cluster/CLAUDE_TASK.md` and `docs/cluster/WES_RECOVERY.md` as historical search guidance
 4. For analysis changes: `reports/audit_2026-09-05/AUDIT_REPORT.md` and the relevant domain audit
 
-`docs/manuscript/v7/` is the current manuscript. Scripts under `scripts/` are canonical; numeric script order is not dependency order. Use `scripts/run_all.sh` to understand dependencies. Original notebooks and earlier reports are historical evidence.
+`docs/manuscript/v8/` is the current manuscript. Scripts under `scripts/` are canonical; numeric script order is not dependency order. Use `scripts/run_all.sh` to understand dependencies. Original notebooks and earlier reports are historical evidence.
 
 ## Cluster recovery
 
@@ -24,7 +24,7 @@ Use the acceptance checks in `WES_RECOVERY.md`. Return an inventory, an item-by-
 - The resource has 42 models from 34 patients; related sublines are not independent patients. RNA/protein each cover 31 models; 30 are paired; WES covers 23 models from 16 patients; 13 have all three modalities.
 - TOV3121D variants were recovered from its archived annotated VCF. There are 6,194 retained coding candidates across 23 models. The earlier 22-model statement is obsolete.
 - Variant tiers are prioritisation categories for tumour-only calls, not confirmation of somatic origin. Relative CNV profiles do not establish absolute ploidy, LOH or HRD.
-- The five CNV-reference exomes and the Mutect2 variant panel of normals are different resources. Same-kit compatibility of model/reference exomes is author-confirmed; exact kit/design and run provenance still need records.
+- The five CNV-reference exomes and the Mutect2 variant panel of normals are different resources. Same-kit compatibility of model/reference exomes is author-confirmed. The recovered design is SeqCap EZ Exome v3; see the September WES completion report for verified run/QC evidence and remaining targeted requests. MAF PASS includes a converter-added common_variant flag. CNV profiles are supported almost entirely by target bins; segment spans interpolate between targets.
 - RNA quantification uses the matched Ensembl release-93 transcript map. Do not substitute live annotations or the old release-105 map.
 - Protein values are supplied log2 normalised abundance, not simply zero-centred log ratios to the internal standard. Bridge plots use primary-minus-bridge differences.
 - Preserve historical histotype labels in metadata while retaining their interpretive qualifications. Do not infer stock authenticity, MSI, protein loss or drug response from an exploratory plot.

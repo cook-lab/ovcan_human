@@ -56,7 +56,7 @@ python3 app/build_payload.py
 python3 app/build_single.py
 python3 scripts/build_release.py
 python3 docs/manuscript/figures/build_figure_bundle.py
-python3 docs/manuscript/v7/build_docx_v7.py
+python3 docs/manuscript/v8/build_docx_v8.py
 ```
 
 Recheck data counts and units, release checksums, manuscript values and all affected panel references. Render and inspect changed PDF/DOCX pages. Publication, repository visibility, hosted browser deployment and archival DOI creation are separate actions.
@@ -64,3 +64,17 @@ Recheck data counts and units, release checksums, manuscript values and all affe
 ## Repository preparation changes
 
 The Git import preserves quantitative results and original inputs. Three standalone R scripts formerly defaulted to the workstation's absolute home path; their defaults now use the working directory, consistent with the shared setup. `OVCAN_DATA` was added to the shared setup, and the WES feasibility inventory follows that selected source tree. Defaults retain the original local layout. The six malformed historical BAM hints were corrected from archived command tokens; this changes handoff metadata, not WES calls. No scientific computation was re-run for the repository import.
+
+## Recovered WES evidence (v8)
+
+The September handoff is stored outside Git under `data/cluster_wes_retrieval/2026-09-05/ovcan_human_wes_handoff_2026-09-05/`. The compressed handoff is also ignored. Curated summaries are committed; raw logs, provider workbooks and sequencing inputs are not.
+
+After restoring that exact handoff, regenerate evidence tables with:
+
+```bash
+python3 scripts/23_wes_recovered_provenance.py
+python3 scripts/24_wes_recovered_qc.py
+python3 scripts/25_wes_acquisition_records.py
+```
+
+The first script also compares the retained original VCF/MAF/CNV inputs in the archived source-data layout. The acquisition parser uses openpyxl; consult each script's `--help` for input overrides and its documented dependencies. These parsers inspect existing evidence and do not execute recovered workflow commands or launch cluster analyses. They are separate from `run_all.sh` because the raw handoff is an optional provenance input; figure builders read their committed output tables. Check the [completion report](../reports/wes_completion_2026-09-05/WES_COMPLETION.md) for metric definitions and unresolved provenance. Rebuilding Figure 2 still needs the original protein workbooks as described above.

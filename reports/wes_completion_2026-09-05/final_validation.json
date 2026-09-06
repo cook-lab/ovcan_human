@@ -1,0 +1,53 @@
+{
+  "date": "2026-09-05",
+  "manuscript_pages": 19,
+  "all_manuscript_pages_visually_inspected": true,
+  "visual_review_split": {
+    "manuscript_reviewer": "pages1\u201310",
+    "primary_agent": "pages11\u201319 and Figure2/4 PDF renders"
+  },
+  "individual_figures_one_page_without_annotations": 14,
+  "changed_figure_fonts": "embedded Arial TrueType (Quartz)",
+  "docx_source_and_figure_manifest_matches": true,
+  "baseline_release_checksums_passed": 49,
+  "variant_workflow_validation": "script07_validation.json",
+  "validated_candidates": 6194,
+  "candidate_identity_sha256": "4febdd74482a09ef5818be7f6c7ffe2cd53f09e5e750bfcb4d86bacb1967e6b4",
+  "artifacts": [
+    {
+      "path": "docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.md",
+      "bytes": 48140,
+      "sha256": "934380d7f89df1b32ae25d22f5bcdf41578aa94a12ce710050e3df54256c7813"
+    },
+    {
+      "path": "docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.docx",
+      "bytes": 2525824,
+      "sha256": "2ca0b8cb94d8d6c099a43eba2c29455f7d366ace748b649968a9f10b63b17289"
+    },
+    {
+      "path": "docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.pdf",
+      "bytes": 1623351,
+      "sha256": "1d6ae177e5e2fc9505b082afa13aadb84ce72da435defe869ead4483805608ad"
+    },
+    {
+      "path": "docs/manuscript/figures/fig2.pdf",
+      "bytes": 1120718,
+      "sha256": "6b206cf4dae94808acd7ecfd48534f455c34705029d7c44b363da87b20fb89ff"
+    },
+    {
+      "path": "docs/manuscript/figures/fig4.pdf",
+      "bytes": 78032,
+      "sha256": "275fa2479599f2d52db7d07cf03047a65353509380f5898bddeb9bcff902cee9"
+    },
+    {
+      "path": "docs/manuscript/figures/OvCAN_figures_redesigned.pdf",
+      "bytes": 2117792,
+      "sha256": "2e016feddbb96d6ef8bb8dc6f244de090ac671f1b2b9eb6ac14ddb5de5ddd354"
+    },
+    {
+      "path": "docs/manuscript/figures/OvCAN_figure_exports.zip",
+      "bytes": 7034806,
+      "sha256": "0c4c25c5a3153c54a5c6fe4401b9846e84797ec216fce7f8ccf9f82367f88091"
+    }
+  ]
+}

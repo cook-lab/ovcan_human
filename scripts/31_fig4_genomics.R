@@ -29,7 +29,7 @@ pA <- ggplot(wf, aes(stage, n, group = scope, colour = scope)) +
   geom_line(linewidth = .65) + geom_point(size = 2.1) +
   geom_text(aes(label = scales::comma(n)), nudge_y = .12, vjust = -.65, size = 2.6, show.legend = FALSE) +
   scale_colour_manual(values = c("All 23 models" = cook_slate, OV2295 = cook_rust), name = NULL) +
-  scale_x_discrete(labels = c(raw = "All calls", pass = "PASS", coding = "Coding\ncandidates"),
+  scale_x_discrete(labels = c(raw = "Annotated\nrecords", pass = "MAF PASS", coding = "Coding\ncandidates"),
                    expand = expansion(add = .27)) +
   scale_y_log10(breaks = c(100, 1000, 10000, 100000, 1000000),
                labels = c("100", "1,000", "10,000", "100,000", "1,000,000"),

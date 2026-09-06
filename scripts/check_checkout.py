@@ -8,6 +8,7 @@ from pathlib import Path
 import argparse
 import csv
 import hashlib
+import json
 import os
 import sys
 
@@ -34,7 +35,10 @@ def main():
       'reports/audit_2026-09-05/wes_cluster_models.csv',
       'output/wes_input_manifest.csv','output/wes_vcf_header_provenance.csv',
       'output/wes_pipeline_parameters.csv','output/wes_cnvkit_target_intervals.bed',
-      'docs/manuscript/v7/OvCAN_Scientific_Data_draft_v7.md','release/SHA256SUMS']
+      'docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.md','release/SHA256SUMS',
+      'docs/cluster/recovery/2026-09-05/FOLLOWUP.md',
+      'output/wes_qc_model_summary.csv','output/wes_acquisition_records.csv',
+      'output/wes_recovered_provenance.json','output/wes_recovered_provenance_models.csv']
     missing=[p for p in required if not (ROOT/p).is_file()]
     if missing:
         print('FAIL missing committed handoff files:',*missing,sep='\n  ');return 1
@@ -48,6 +52,18 @@ def main():
             ('322 historical path hints',len(hints)==322)]
     for name,ok in checks:
         if not ok:print('FAIL',name);return 1
+    expected_models={r['cell_line'] for r in models}
+    for name in ['wes_qc_model_summary.csv','wes_acquisition_records.csv','wes_recovered_provenance_models.csv']:
+        records=rows(ROOT/'output'/name)
+        if len(records)!=23 or {r['cell_line'] for r in records}!=expected_models:
+            print('FAIL recovered WES model coverage',name);return 1
+    provenance=json.loads((ROOT/'output/wes_recovered_provenance.json').read_text())
+    if (provenance['annotated_records'],provenance['caller_pass_records'],
+        provenance['converter_common_variant_retags_among_pass'],provenance['maf_pass_records']) != (582474,19816,3735,16081):
+        print('FAIL recovered filtering reconciliation');return 1
+    for record in rows(ROOT/'output/wes_qc_model_summary.csv'):
+        if int(record['mosdepth_md_target_denominator_bp']) != 63709951:
+            print('FAIL WES target denominator',record['cell_line']);return 1
     release_count=0
     for line in (ROOT/'release/SHA256SUMS').read_text().splitlines():
         expected,relative=line.split(None,1); p=ROOT/'release'/relative.strip()
@@ -58,7 +74,7 @@ def main():
         p=ROOT/r['evidence_path']
         if not p.is_file() or digest(p)!=r['sha256']:
             print('FAIL copied evidence checksum',r['evidence_path']);return 1
-    print(f'PASS: 42 models / 34 patients; 23 WES aliases; 322 historical path hints; {release_count} release checksums; copied-command checksums.')
+    print(f'PASS: 42 models / 34 patients; 23 WES aliases/acquisition/QC records; recovered filtering and depth denominators; 322 historical path hints; {release_count} release checksums; copied-command checksums.')
     print('This checks the committed handoff, not current cluster availability or full raw-input reproducibility.')
     if args.inputs:
         data=Path(os.environ.get('OVCAN_DATA',str(ROOT/'judy_archive/data'))).expanduser()

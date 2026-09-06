@@ -6,3 +6,10 @@
 *.xlsx binary
 *.rds binary
 *.zip binary
+
+# Preserve byte-level data checksums across platforms. Python's CSV writer uses
+# RFC 4180 CRLF; carriage returns at record ends are not trailing field spaces.
+*.csv -text whitespace=cr-at-eol
+
+# Retain the execution transcript exactly as recorded, including R's spacing.
+reports/wes_completion_2026-09-05/script07_validation.log -whitespace

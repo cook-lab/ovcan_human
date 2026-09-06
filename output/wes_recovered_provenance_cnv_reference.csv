@@ -1,0 +1,2 @@
+role,archived_copies,bytes,sha256,source_path,all_archived_copies_identical,per_normal_coverage_in_returned_bundle
+empirical pooled CNV reference,35,26875054,848c052274264ac544897977648860455ac742d89bc1de5edc7ece1ca185eeda,judy_archive/data/cnvkit wes - new/20251208 - new samples/TOV2295_R_P57_new/reference.cnn,True,False

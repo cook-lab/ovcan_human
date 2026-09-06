@@ -1,0 +1,22 @@
+{
+  "provider_records": 23,
+  "name_and_passage_matches": 22,
+  "candidate_aliases": [
+    "TOV81D"
+  ],
+  "run_counts": {
+    "4316 (2017-08-11)": 18,
+    "4706 (2018-05-25)": 5
+  },
+  "sequencing_type": "Illumina HiSeq 4000 PE100",
+  "capture": "Roche NimbleGen SeqCap EZ Exome v3",
+  "adapter": "Illumina TruSeq LT",
+  "source_workbooks_read_only": true,
+  "excluded_source": "2014 acquisition workbook is not evidence for the current 23 WES specimens",
+  "limitations": [
+    "DNA extraction and detailed library preparation are not specified by these sequencing rows.",
+    "Confirm TOV81D alias and pool composition before submission.",
+    "2018 Library Tab duplicates sequencing table structure; it is not independent library QC.",
+    "Run-cycle totals are not read lengths; PE100 is explicit in Type of Sequencing."
+  ]
+}

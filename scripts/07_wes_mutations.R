@@ -10,28 +10,23 @@
 # =============================================================================
 #
 # *** CRITICAL ASSAY CAVEAT — TUMOR-ONLY WES, NO MATCHED NORMAL ***
-#   These Mutect2 calls were generated WITHOUT a matched normal (the MAF's
-#   n_depth/n_ref_count/n_alt_count columns are empty for every variant).
-#   Tumor-only somatic calling is germline-contaminated: ~224 private germline
-#   variants/sample and ~50-70% FDR after standard filtering, and germline is
-#   HARDEST to separate in ~100%-pure samples like cell lines (Halperin 2017,
-#   10.1186/s12920-017-0296-8; Little 2021 UNMASC, 10.1093/narcan/zcab040).
-#   => Per-gene "mutation frequencies" from these data are NOT reliable somatic
-#      rates. We therefore (a) apply the Mutect2 FILTER column that the archived
-#      analysis evidently ignored [it is the mechanism behind the implausible
-#      "ATM 100% / ATR 75% / BRCA2 majority in HGSC" claims], (b) add a
-#      population-AF germline filter, and (c) restrict the reported landscape to
-#      CANONICAL DRIVERS + report TP53 in HGS as a positive control.
-#   The residual FDR cannot be removed without a matched normal; treat all retained
-#   calls as candidates; canonical TP53 alterations serve as a positive control.
+#   Mutect2 was run with a population germline resource and a variant panel of
+#   normals, without a matched normal. These filters cannot establish somatic
+#   origin, and canonical driver alterations provide positive controls rather
+#   than a measured sample-specific false-discovery rate.
 #
-# WHY re-filtering works here (verified on disk):
-#   Each MAF holds ALL Mutect2 records, not just PASS (e.g. OV2295: 25,914 rows,
-#   only 493 PASS). Mutect2 was run WITH a germline resource + panel-of-normals:
-#   the FILTER field already carries "germline", "panel_of_normals",
-#   "common_variant" flags. Applying FILTER==PASS removes the germline-driven
-#   artefact calls (ATR: 10 calls -> 0 PASS; PTEN 8 -> 0; BRCA2 3 -> 0), while
-#   the real somatic TP53 hit (private, gnomAD AF 1.4e-6) is retained.
+# FILTER PROVENANCE (verified against all 23 annotated VCF/MAF pairs, 2026-09-05):
+#   The 582,474 MAF rows correspond to retained VEP-annotated VCF records; this
+#   is not a count of all pre-annotation Mutect2 records. The VEP command includes
+#   --filter_common. Of 19,816 VCF PASS records, conversion adds common_variant
+#   to 3,735, leaving 16,081 MAF PASS records. Every common_variant flag agrees
+#   with gnomADe AF > 0.0004 in any of AFR/AMR/ASJ/EAS/FIN/NFE/SAS, matching the
+#   vendored vcf2maf 1.6.22 default used to recover TOV3121D. The original
+#   workstation conversion command/version for the other 22 remains unrecorded.
+#   Therefore MAF FILTER==PASS combines caller filters and converter population
+#   filtering. The additional POP_AF_MAX rule below uses the supplied aggregate
+#   gnomAD/1000G/ESP annotations; neither step confirms absence of germline calls.
+#   See output/wes_recovered_provenance_models.csv for per-model reconciliation.
 # =============================================================================
 source("scripts/00_setup.R")
 suppressPackageStartupMessages({
@@ -101,9 +96,16 @@ message(sprintf("Loaded %d raw Mutect2 records across %d lines",
 # Population AF across the annotation columns present in the MAF; NA -> 0.
 af_cols <- c("gnomADe_AF","AF","AA_AF","EA_AF")     # gnomAD exome, 1000G, ESP
 stopifnot("Expected population-AF columns absent" = all(af_cols %in% names(raw)))
-# NA -> 0 (variant absent from that db => not common there). Rare multiallelic
-# "a,b" strings coerce to NA->0 here, but Mutect2's own common_variant/
-# multiallelic FILTER flags already remove those (belt-and-suspenders w/ PASS).
+# Missing annotations contribute zero to this filtering maximum; missingness is
+# not proof that an allele is absent from the population database. Nonmissing
+# values in every MAF PASS row were numeric in the September provenance audit.
+# Fail explicitly if a future input contains an ambiguous multiallelic string,
+# rather than allowing coercion to treat that annotation as a missing value.
+pass_af_values <- unlist(raw[FILTER == "PASS", ..af_cols], use.names = FALSE)
+pass_af_present <- !is.na(pass_af_values) & nzchar(pass_af_values) &
+  !pass_af_values %in% c(".", "NA", "NaN")
+stopifnot("Nonnumeric population AF in a MAF PASS record" =
+  all(is.finite(suppressWarnings(as.numeric(pass_af_values[pass_af_present])))))
 num_or0 <- function(v) { x <- suppressWarnings(as.numeric(v)); ifelse(is.na(x), 0, x) }
 raw[, pop_af_max := do.call(pmax, lapply(.SD, num_or0)), .SDcols = af_cols]
 
@@ -227,7 +229,7 @@ message(sprintf("VAF joined for %.0f%% of records (SNVs; indels differ in rep.)"
 raw[, is_pass         := FILTER == "PASS"]
 raw[, is_common_germ  := pop_af_max > POP_AF_MAX]
 raw[, is_coding_nonsyn:= Variant_Classification %in% NONSYN]
-# Retained somatic candidates: PASS AND not common germline.
+# Retained candidates: MAF PASS AND population AF below the additional cutoff.
 raw[, retained := is_pass & !is_common_germ]
 # Soft germline-like VAF flag (informational only — CANNOT remove germline in
 # ~100%-pure lines, where het germline ~0.5 overlaps subclonal somatic and LOH
@@ -238,7 +240,7 @@ message(sprintf("VAF available for %.0f%% of retained coding candidates",
 
 cat("\n=== Filtering cascade (all records -> retained candidates) ===\n")
 print(data.frame(
-  step = c("raw records","FILTER==PASS","  & not common germline (pop AF>0.001)",
+  step = c("annotated records","MAF FILTER==PASS","  & population AF <=0.001",
            "  & coding non-synonymous"),
   n    = c(nrow(raw), sum(raw$is_pass),
            sum(raw$retained), sum(raw$retained & raw$is_coding_nonsyn))))
@@ -266,7 +268,7 @@ watch_tbl <- map_dfr(ARTEFACT_WATCH, function(g) {
          pct_prefilter    = 100 * ifelse(length(pre)  == 0, 0, pre)  / nrow(maf_map),
          pct_retained     = 100 * ifelse(length(post) == 0, 0, post) / nrow(maf_map))
 })
-cat("\n=== Artefact watch: coding-nonsyn calls, pre-filter vs retained (of 22 lines) ===\n")
+cat(sprintf("\n=== Artefact watch: coding-nonsyn calls, pre-filter vs retained (of %d lines) ===\n", nrow(maf_map)))
 print(as.data.frame(watch_tbl), row.names = FALSE, digits = 3)
 
 # 6. POSITIVE CONTROL — TP53 in HGS -------------------------------------------
@@ -538,7 +540,7 @@ filtered_sha256 <- function(d) {
 }
 FILTERED_EXPECT <- list(
   sha256   = "4febdd74482a09ef5818be7f6c7ffe2cd53f09e5e750bfcb4d86bacb1967e6b4",
-  n_rows   = 6194L,     # 582,474 raw -> 16,081 PASS -> 15,995 rare -> 6,194 coding nonsyn
+  n_rows   = 6194L,     # 582,474 annotated -> 16,081 MAF PASS -> 15,995 rare -> 6,194 coding nonsyn
   n_lines  = 23L,
   med_line = 206)     # per-line median (range 133-1,416; TOV21G is the 1,416)
 got <- list(sha256   = filtered_sha256(filtered_out),
@@ -662,7 +664,7 @@ op <- oncoPrint(mat, alter_fun = alter_fun, col = alter_col,
   column_title_gp = gpar(fontsize = 11, fontface = "bold"))
 
 caveat <- paste0(
-  "TUMOR-ONLY WES (no matched normal): coding candidates after FILTER==PASS + gnomAD/1000G/ESP removal. ",
+  "TUMOR-ONLY WES (no matched normal): coding candidates after MAF FILTER==PASS + additional gnomAD/1000G/ESP filtering. ",
   "Columns are cell LINES grouped by patient family (top track); gene bars count PATIENTS (n=", n_pat_total,
   "), not lines. Tier3 excluded from headline frequencies. n(HGS)=", length(hgs_lines),
   " lines / ", tp53_hgs_p$n_patients, " patients. ",

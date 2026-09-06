@@ -1,5 +1,5 @@
-# Figure 2: RNA library quality, protein coverage, spread and bridge precision.
-# Redesign 2026-09-05. Reads existing results only; statistical outputs are unchanged.
+# Figure 2: RNA/protein quality and recovered WES technical validation.
+# WES values are independently parsed by scripts/24_wes_recovered_qc.py.
 # External legend: reports/figure_redesign_2026-09-05/legends_expression.md
 source("scripts/00_setup.R"); source("scripts/00b_figure_theme.R")
 suppressPackageStartupMessages({library(tidyverse); library(patchwork); library(readxl); library(ggrastr)})
@@ -165,9 +165,41 @@ pF <- ggplot(bridge_long, aes(mean_ab, diff)) +
 
 left <- wrap_plots(rna_row, pC + pD + plot_layout(widths = c(1.02, 1.04)), pE,
   ncol = 1, heights = c(1.1, 1, 0.87))
-fig <- wrap_plots(left, pF, ncol = 2, widths = c(1.76, 1))
-save_fig(fig, file.path(MSFIG, "fig2.pdf"), W2, 6.15)
-save_fig(fig, file.path(MSFIG, "fig2.png"), W2, 6.15)
+expression_qc <- wrap_plots(left, pF, ncol = 2, widths = c(1.76, 1))
+
+# G/H: the original mark-duplicate alignment stage, not interval-restricted
+# recalibrated CRAMs. Coverage fractions are rounded to 0.01 in mosdepth reports.
+wes_qc <- read_csv(file.path(OUT, "wes_qc_model_summary.csv"), show_col_types = FALSE)
+stopifnot(nrow(wes_qc) == 23L, n_distinct(wes_qc$cell_line) == 23L)
+pG <- ggplot(wes_qc, aes(mosdepth_md_mean_target_depth_x,
+                        100 * mosdepth_md_fraction_target_ge_30x)) +
+  geom_point(colour = cook_slate, size = 1.9, alpha = 0.85) +
+  geom_text(data = wes_qc %>% filter(cell_line == "TOV2929D"),
+            aes(label = cell_line), nudge_x = 0.6, nudge_y = 1.6,
+            hjust = 0, size = 2.4, colour = cook_ink) +
+  scale_x_continuous(limits = c(68, 91), breaks = seq(70, 90, 5), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(63, 88), breaks = seq(65, 85, 5), expand = c(0, 0)) +
+  labs(title = "Exome depth (23 models)", tag = "G", x = "Mean target depth (×)",
+       y = "Target bases at ≥30× (%)") + fig_theme()
+
+# Each line is a model; the median is calculated separately at every depth.
+wes_profile <- read_csv(file.path(OUT, "wes_qc_coverage_profile.csv"), show_col_types = FALSE) %>%
+  filter(stage == "md", depth_x <= 150)
+stopifnot(n_distinct(wes_profile$cell_line) == 23L)
+wes_median <- wes_profile %>% group_by(depth_x) %>%
+  summarise(fraction_ge_depth = median(fraction_ge_depth), .groups = "drop")
+pH <- ggplot(wes_profile, aes(depth_x, 100 * fraction_ge_depth)) +
+  geom_line(aes(group = cell_line), colour = cook_slate, alpha = 0.25, linewidth = 0.35) +
+  geom_line(data = wes_median, colour = cook_rust, linewidth = 0.8) +
+  scale_x_continuous(limits = c(0, 150), breaks = c(0, 30, 60, 90, 120, 150), expand = c(0, 0)) +
+  scale_y_continuous(limits = c(0, 100), breaks = seq(0, 100, 25), expand = c(0, 0)) +
+  labs(title = "Exome coverage", tag = "H", x = "Minimum depth (×)",
+       y = "Target bases covered (%)") + fig_theme()
+
+fig <- wrap_plots(expression_qc, pG + pH + plot_layout(widths = c(1, 1)),
+                  ncol = 1, heights = c(6.15, 2.05))
+save_fig(fig, file.path(MSFIG, "fig2.pdf"), W2, 8.2)
+save_fig(fig, file.path(MSFIG, "fig2.png"), W2, 8.2)
 save_fig(rna_row, file.path(ASSETS, "f_rna_qc.png"), 4.6, 2.5)
 save_fig(pF, file.path(ASSETS, "f_prot_bridge.png"), 3.3, 6.0)
 save_fig(pC + pD, file.path(ASSETS, "f_prot_compression.png"), 4.6, 2.5)

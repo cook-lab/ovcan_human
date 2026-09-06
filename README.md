@@ -2,11 +2,11 @@
 
 Analysis, validated data records and a working Scientific Data Data Descriptor for 42 ovarian cancer cell models from 34 patients. The repository contains current processed results, reproducible analysis/figure scripts, the manuscript and an evidence-based checklist for recovering missing WES records from the cluster.
 
-**Current state:** the September 2026 analysis audit and figure redesign are complete locally. Manuscript **v7** is the current draft. WES provenance and technical QC still need cluster records, and several methods, stock-testing and submission details need author confirmation. This working repository is public by author choice; journal data deposition and an immutable code archive remain separate steps.
+**Current state:** the September 2026 analysis audit and figure redesign are complete locally. Manuscript **v8** is the current draft. The cluster handoff has now been validated and integrated into WES methods, 23-model QC and Figures 2/4. Several specific provenance, laboratory-method, stock-testing and submission details still need records; see the [WES completion report](reports/wes_completion_2026-09-05/WES_COMPLETION.md). This working repository is public by author choice; journal data deposition and an immutable code archive remain separate steps.
 
 ## Start here on the cluster
 
-1. Read [the agent guide](AGENTS.md) and [current project status](docs/PROJECT_STATUS.md).
+1. Read the [updated targeted follow-up](docs/cluster/recovery/2026-09-05/FOLLOWUP.md), then [the agent guide](AGENTS.md) and [current project status](docs/PROJECT_STATUS.md).
 2. Give Claude Code [the cluster task prompt](docs/cluster/CLAUDE_TASK.md). Its detailed checklist is [WES recovery](docs/cluster/WES_RECOVERY.md).
 3. Start with the [23-model checklist](reports/audit_2026-09-05/wes_cluster_models.csv), [322 recorded path hints](reports/audit_2026-09-05/wes_cluster_path_hints.csv) and [archived CNV commands](docs/cluster/evidence/cnvkit_commands.txt).
 4. Run the lightweight checkout check from the clone root:
@@ -19,12 +19,13 @@ The initial task is to locate existing records, preserve provenance and report w
 
 ## Current results and manuscript
 
+- [WES completion and remaining paper requirements](reports/wes_completion_2026-09-05/WES_COMPLETION.md)
 - [Analysis audit and corrections](reports/audit_2026-09-05/AUDIT_REPORT.md)
-- [Manuscript v7](docs/manuscript/v7/OvCAN_Scientific_Data_draft_v7.md) · [Word file](docs/manuscript/v7/OvCAN_Scientific_Data_draft_v7.docx)
+- [Manuscript v8](docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.md) · [Word file](docs/manuscript/v8/OvCAN_Scientific_Data_draft_v8.docx)
 - [Redesigned figures and complete legends](docs/manuscript/figures/README.md)
 - [Figure design review](reports/figure_redesign_2026-09-05/FIGURE_REDESIGN.md)
 - [Processed-data release and dictionaries](release/README.md)
-- [Author confirmations](docs/manuscript/v7/author_confirmation.md)
+- [Author confirmations](docs/manuscript/v8/author_confirmation.md)
 - [Reproduction and input restoration](docs/REPRODUCIBILITY.md)
 
 ## Repository layout
@@ -35,7 +36,7 @@ The initial task is to locate existing records, preserve provenance and report w
 | `metadata/` | Model inclusion, assay availability, aliases, passages and patient families |
 | `output/` | Current processed matrices, statistical summaries and provenance; large reconstructable/downloadable objects excluded |
 | `release/` | The validated 49-file processed-data package, including its saved checksums |
-| `docs/manuscript/v7/` | Current draft, author questions and Word builder |
+| `docs/manuscript/v8/` | Current draft, author questions and Word builder |
 | `docs/cluster/` | Prioritised recovery instructions, Claude task and copied source-command evidence |
 | `docs/data/` | Inventory and storage boundary for inputs intentionally omitted from Git |
 | `reports/audit_2026-09-05/` | Audit findings, validation records and historical path clues |

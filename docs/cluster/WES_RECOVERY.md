@@ -1,5 +1,7 @@
 # WES recovery from the original cluster project
 
+> Updated 5 September 2026: the first recovery handoff has been received and independently checked. Start with [the targeted follow-up](recovery/2026-09-05/FOLLOWUP.md); this original checklist is retained as search/provenance context and contains requests now resolved.
+
 This is the working handoff for the cluster instance of Claude Code. It consolidates the September 2026 audit and the manuscript-v7 retrieval list. The task is to **recover existing provenance, scripts and QC, and inventory existing sequencing inputs**. It is not a request to rerun the pipeline or initiate HRD/MSI analysis. The author has said the original cluster analysis is accessible; its paths and contents have not yet been verified from this checkout.
 
 Use [CLAUDE_TASK.md](CLAUDE_TASK.md) as the copy-pastable task prompt. Manuscript items M04/M05 in [author_confirmation.md](../manuscript/v7/author_confirmation.md) describe the publication context. The detailed scientific corrections are in [genomics_audit.md](../../reports/audit_2026-09-05/genomics_audit.md). Earlier inventory prose is historical: statements about only 22 mutation profiles, incompatible capture kits, proven chrX-reference artefacts, or a guaranteed BAM-to-HRD solution have been superseded.

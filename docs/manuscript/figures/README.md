@@ -4,14 +4,14 @@ The September 2026 redesign provides 14 clean scientific figure pages with stand
 
 - [Combined figure PDF](OvCAN_figures_redesigned.pdf): one figure per page, with PDF bookmarks. Pages retain the dimensions of the individual exports.
 - [Individual figure package](OvCAN_figure_exports.zip): each figure as vector PDF and 400 dpi PNG, plus legends and checksums.
-- [Manuscript v7](../v7/OvCAN_Scientific_Data_draft_v7.docx): the four main figures, revised legends and updated panel citations.
+- [Manuscript v8](../v8/OvCAN_Scientific_Data_draft_v8.docx): the four main figures, revised legends and updated panel citations.
 
 Figures 1–4 are the main figures in the current Data Descriptor draft. Figures 5–6 and S1–S8 remain additional analysis figures; this export collection does not change their manuscript status or imply that exploratory analyses are independent validation.
 
 | File | Content |
 | --- | --- |
 | fig1 | Resource overview and assay coverage |
-| fig2 | RNA and protein quality assessment |
+| fig2 | RNA, protein and whole-exome quality assessment |
 | fig3 | Expression patterns and assay agreement |
 | fig4 | Genomic filtering, candidate alterations and external matching |
 | fig5 | Exploratory rare-histotype and mutational features |
