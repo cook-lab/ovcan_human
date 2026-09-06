@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "models": 23,
+  "patients": 16,
+  "point_fits": 276,
+  "bootstrap_fits": 184,
+  "bootstrap_replicates": 36800,
+  "canonical_genome_point_fits_reproduced": 46,
+  "maximum_absolute_legacy_fraction_difference": 4.440892098500626e-16,
+  "checks": [
+    "bootstrap percentile ranges and fractions",
+    "explicit complete reference grid",
+    "source and script hashes",
+    "canonical point-fit reproduction",
+    "nested NNLS residual inequality",
+    "patient descriptive means"
+  ]
+}

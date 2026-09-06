@@ -1,0 +1,1676 @@
+variation_id,vcv,scv,submitter,framework,classification,review_status,last_evaluated,record_status,contributes_to_aggregate,assertion_attributes,conditions,condition_xml
+92828,VCV000092828.45,SCV000579966.6,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2018-01-24,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+92828,VCV000092828.45,SCV004176814.2,"Department Of Pathology & Laboratory Medicine, University Of Pennsylvania",germline,Pathogenic,no assertion criteria provided,2023-12-04,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D016403"" />
+          </Trait>
+        </TraitSet>
+        "
+92828,VCV000092828.45,SCV000284602.4,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2024-06-11,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C1959582"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+92828,VCV000092828.45,SCV001502626.36,CeGaT Center for Human Genetics Tuebingen,germline,Pathogenic,"criteria provided, single submitter",2020-12-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+92828,VCV000092828.45,SCV000490753.1,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2015-05-01,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+92828,VCV000092828.45,SCV004188831.1,"Myriad Genetics, Inc.",germline,Pathogenic,"criteria provided, single submitter",2023-09-29,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""158350"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+92828,VCV000092828.45,SCV007610477.1,3billion,germline,Pathogenic,"criteria provided, single submitter",2025-12-28,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""158350"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+2796934,VCV002796934.1,SCV004393194.1,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Uncertain significance,"criteria provided, single submitter",2023-06-05,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0004135"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12581,VCV000012581.1,SCV000033657.1,OMIM,germline,Pathogenic,no assertion criteria provided,1992-01-01,current,true,{},"BLADDER CANCER, TRANSITIONAL CELL, SOMATIC","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">BLADDER CANCER, TRANSITIONAL CELL, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+45123,VCV000045123.14,SCV000191999.3,OMIM,germline,Pathogenic,no assertion criteria provided,2011-03-10,current,false,{},"RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+45123,VCV000045123.14,SCV000928185.1,Blueprint Genetics,germline,Pathogenic,"criteria provided, single submitter",2019-01-22,current,true,{},Not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV000061937.4,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,"criteria provided, single submitter",2012-09-17,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D002289"" />
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV001552227.2,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV000808492.3,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2022-09-21,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV003837570.1,"Diagnostic Genetics, Severance Hospital, Yonsei University College of Medicine",germline,Likely pathogenic,"criteria provided, single submitter",2023-01-03,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614470"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV004046132.1,"Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},KRAS-related disorders,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">KRAS-related disorders</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45123,VCV000045123.14,SCV004013692.2,3billion,germline,Pathogenic,"criteria provided, single submitter",2025-10-25,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614470"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV000061935.3,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,no assertion criteria provided,2007-12-07,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D002289"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV001571410.1,"Institute of Medical Sciences, Banaras Hindu University",germline,Pathogenic,no assertion criteria provided,2020-10-30,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0153452"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV001550889.2,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV004042812.1,"Key Laboratory of Carcinogenesis and Cancer Invasion, Central South University",germline,Likely pathogenic,no assertion criteria provided,,current,false,{},Lung cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Lung cancer</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV005416700.2,"Juno Genomics, Hangzhou Juno Genomics, Inc",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""108010"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""109800"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""615278"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""613659"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""601626"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""211980"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""609942"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""600268"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""260350"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614470"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""163200"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV001132087.1,"Xiao lab, Department of Pathology, Memorial Sloan Kettering Cancer Center",germline,Pathogenic,no assertion criteria provided,2019-08-31,current,false,{},Multiple myeloma,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Multiple myeloma</ElementValue>
+            </Name>
+            <XRef DB=""Orphanet"" ID=""ORPHA29073"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV004105185.1,"PreventionGenetics, part of Exact Sciences",germline,Likely pathogenic,"criteria provided, single submitter",2022-10-12,current,true,{},KRAS-related condition,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">KRAS-related condition</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV005094258.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV007105397.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2022-10-18,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0016691"" />
+          </Trait>
+        </TraitSet>
+        "
+45122,VCV000045122.18,SCV007105424.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2025-01-16,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0858958"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV007105404.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2023-07-10,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0005212"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV007105435.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier II - Potential,"criteria provided, single submitter",2025-07-02,current,false,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0005072"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV000061933.4,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,"criteria provided, single submitter",2011-09-02,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D002289"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV000033661.5,OMIM,germline,Pathogenic,no assertion criteria provided,2007-06-15,current,false,{},"GASTRIC CANCER, SOMATIC","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">GASTRIC CANCER, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+12584,VCV000012584.64,SCV000191998.4,OMIM,germline,Pathogenic,no assertion criteria provided,2007-06-15,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""included"">JUVENILE MYELOMONOCYTIC LEUKEMIA, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+12584,VCV000012584.64,SCV005094262.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV000154262.1,"Laboratory of Translational Genomics,  National Cancer Institute",germline,not provided,no classification provided,,current,false,{},Neoplasm of ovary,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Neoplasm of ovary</ElementValue>
+            </Name>
+            <XRef DB=""OMIM"" ID=""167000"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV000920660.1,"Gharavi Laboratory, Columbia University",germline,Uncertain significance,flagged submission,2018-09-16,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV001554250.2,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV005049528.1,"Clinical Genomics Laboratory, Washington University in St. Louis",germline,Pathogenic,"criteria provided, single submitter",2024-04-10,current,true,{},Vascular malformation,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Vascular malformation</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV005416211.2,"Juno Genomics, Hangzhou Juno Genomics, Inc",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""615278"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV002158725.5,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-01-13,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN166718"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV001248879.39,CeGaT Center for Human Genetics Tuebingen,germline,Pathogenic,"criteria provided, single submitter",2019-05-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12584,VCV000012584.64,SCV003805571.2,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2025-05-12,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000147396.2,Breast Cancer Information Core (BIC) (BRCA2),germline,Pathogenic,no assertion criteria provided,2002-05-29,current,false,{},"Breast-ovarian cancer, familial 2","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""C2675520"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+      "
+9328,VCV000009328.54,SCV000301287.2,Evidence-based Network for the Interpretation of Germline Mutant Alleles (ENIGMA),germline,Pathogenic,reviewed by expert panel,2016-09-08,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612555"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000863619.1,"Foulkes Cancer Genetics LDI, Lady Davis Institute for Medical Research",germline,Pathogenic,no assertion criteria provided,2016-05-11,current,false,{},Breast and/or ovarian cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast and/or ovarian cancer</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""CN221562"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV005414167.1,"Mayo Clinic Laboratories, Mayo Clinic",germline,Pathogenic,"criteria provided, single submitter",2024-08-30,current,false,{},Not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000186015.10,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2025-01-02,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000489211.3,Counsyl,germline,Pathogenic,no assertion criteria provided,2016-09-16,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612555"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000189901.1,Pathway Genomics,germline,Pathogenic,no assertion criteria provided,2014-07-24,current,false,{},"Breast-ovarian cancer, familial 2","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+            <XRef DB=""OMIM"" ID=""612555"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+      "
+9328,VCV000009328.54,SCV000030136.3,OMIM,germline,Pathogenic,no assertion criteria provided,1998-07-01,current,false,{},"BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+9328,VCV000009328.54,SCV000271336.3,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,"criteria provided, single submitter",2016-02-08,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""Orphanet"" ID=""ORPHA145"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV002503465.1,"AiLife Diagnostics, AiLife Diagnostics",germline,Pathogenic,"criteria provided, single submitter",2021-07-23,current,false,{},Not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000916958.2,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",germline,Pathogenic,"criteria provided, single submitter",2022-06-03,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0677776"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV004213708.2,Baylor Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-03-07,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV005913702.1,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,"criteria provided, single submitter",2017-11-06,current,false,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612555"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000683979.5,"Color Diagnostics, LLC DBA Color Health",germline,Pathogenic,"criteria provided, single submitter",2024-07-28,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV003813739.3,"Revvity Omics, Revvity",germline,Pathogenic,"criteria provided, single submitter",2022-11-29,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV007331338.1,"ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories",germline,Pathogenic,"criteria provided, single submitter",2025-04-21,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C3661900"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000073563.18,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2026-01-13,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0677776"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000054357.6,Sharing Clinical Reports Project (SCRP),germline,Pathogenic,no assertion criteria provided,2013-04-22,current,false,{},"Breast-ovarian cancer, familial 2","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+9328,VCV000009328.54,SCV000587959.1,"Research Molecular Genetics Laboratory, Women's College Hospital, University of Toronto",germline,Pathogenic,no assertion criteria provided,2014-01-31,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""Orphanet"" ID=""ORPHA145"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000588121.1,"Department of Pathology and Molecular Medicine, Queen's University",germline,Pathogenic,"criteria provided, single submitter",2017-04-20,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""Orphanet"" ID=""ORPHA145"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV001451887.1,CZECANCA consortium,germline,Pathogenic,no assertion criteria provided,2019-06-11,current,false,{},Breast and/or ovarian cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast and/or ovarian cancer</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""CN221562"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000592208.2,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0007254"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000210795.14,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2020-02-17,current,false,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000327919.4,"Consortium of Investigators of Modifiers of BRCA1/2 (CIMBA), c/o University of Cambridge",germline,Pathogenic,"criteria provided, single submitter",2015-10-02,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612555"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV002010306.3,"Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden",germline,Pathogenic,"criteria provided, single submitter",2021-11-03,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000219410.8,"CHEO Genetics Diagnostic Laboratory, Children's Hospital of Eastern Ontario",germline,Pathogenic,"criteria provided, single submitter",2023-06-16,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN221562"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV004846036.2,"All of Us Research Program, National Institutes of Health",germline,Pathogenic,"criteria provided, single submitter",2024-09-24,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0700269"" />
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV000296650.5,Quest Diagnostics Nichols Institute San Juan Capistrano,germline,pathogenic,"criteria provided, single submitter",2025-03-12,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+9328,VCV000009328.54,SCV007602304.1,"University Health Network, Familial Cancer Clinic, Princess Margaret Cancer Centre",germline,Pathogenic,"criteria provided, single submitter",,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0700269"" />
+          </Trait>
+        </TraitSet>
+        "
+376585,VCV000376585.17,SCV004932240.1,"Myriad Genetics, Inc.",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-20,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+376585,VCV000376585.17,SCV005094390.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Likely oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+376585,VCV000376585.17,SCV006451512.1,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2025-07-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376585,VCV000376585.17,SCV007105571.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2024-10-22,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0956964"" />
+          </Trait>
+        </TraitSet>
+        "
+376585,VCV000376585.17,SCV000931631.8,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-04-28,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+141881,VCV000141881.15,SCV002011363.3,"Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden",germline,Likely pathogenic,"criteria provided, single submitter",2021-11-03,current,true,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+141881,VCV000141881.15,SCV004206254.1,Baylor Genetics,germline,Pathogenic,"criteria provided, single submitter",2023-07-16,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+141881,VCV000141881.15,SCV004933127.1,"Myriad Genetics, Inc.",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-16,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+141881,VCV000141881.15,SCV000185450.8,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2023-12-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+141881,VCV000141881.15,SCV003211441.4,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Uncertain significance,"criteria provided, single submitter",2025-06-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV006059708.1,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Likely pathogenic,"criteria provided, single submitter",2023-11-10,current,true,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV000629861.7,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Uncertain significance,"criteria provided, single submitter",2025-08-11,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV001791762.1,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2019-12-30,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV007129852.1,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Likely oncogenic,"criteria provided, single submitter",2025-12-29,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV001450490.2,"Institute of Biochemistry, Molecular Biology and Biotechnology, University of Colombo",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+376599,VCV000376599.19,SCV002674361.2,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2022-07-14,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV000033395.1,OMIM,germline,Pathogenic,no assertion criteria provided,1995-01-01,current,false,{},LI-FRAUMENI-LIKE SYNDROME,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">LI-FRAUMENI-LIKE SYNDROME</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+12354,VCV000012354.27,SCV004931268.1,"Myriad Genetics, Inc.",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-16,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV002519888.1,Mendelics,germline,Pathogenic,"criteria provided, single submitter",2022-05-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV002582470.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV002583130.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV004014206.1,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2023-07-13,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV000184623.10,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-09-30,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV004359987.3,"Color Diagnostics, LLC DBA Color Health",germline,Pathogenic,"criteria provided, single submitter",2025-07-07,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV000923850.1,"German Consortium for Hereditary Breast and Ovarian Cancer, University Hospital Cologne",germline,Likely pathogenic,no assertion criteria provided,2018-12-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D010051"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV004048073.1,"Neuberg Centre For Genomic Medicine, NCGM",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV005407746.1,"Molecular Diagnostics Laboratory, Catalan Institute of Oncology",germline,Likely pathogenic,"criteria provided, single submitter",2022-08-02,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12354,VCV000012354.27,SCV000285209.13,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-11-10,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+428895,VCV000428895.10,SCV000581147.6,Ambry Genetics,germline,Uncertain significance,flagged submission,2016-10-12,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+428895,VCV000428895.10,SCV004933436.1,"Myriad Genetics, Inc.",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-15,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+428895,VCV000428895.10,SCV003317129.4,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Likely pathogenic,"criteria provided, single submitter",2023-01-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV000253849.14,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-12-18,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV000923892.1,"German Consortium for Hereditary Breast and Ovarian Cancer, University Hospital Cologne",germline,Likely pathogenic,no assertion criteria provided,2018-12-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D010051"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV001451873.1,CZECANCA consortium,germline,Pathogenic,no assertion criteria provided,2019-06-11,current,false,{},Breast and/or ovarian cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Breast and/or ovarian cancer</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""CN221562"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV001906056.1,"Clinical Genetics Laboratory, Department of Pathology, Netherlands Cancer Institute",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV001959237.1,"Joint Genome Diagnostic Labs from Nijmegen and Maastricht, Radboudumc and MUMC+",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV002582486.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV002583147.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV003806326.1,"Liquid Biopsy and Cancer Interception Group, Pfizer-University of Granada-Junta de Andalucía Centre for Genomics and Oncological Research",germline,Uncertain significance,flagged submission,2022-06-06,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0005061"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV000568761.7,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2022-06-30,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV001186639.4,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-03-25,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV004204268.1,Baylor Genetics,germline,Pathogenic,"criteria provided, single submitter",2022-11-09,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV004932961.1,"Myriad Genetics, Inc.",germline,Pathogenic,"criteria provided, single submitter",2024-02-15,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV005339811.1,"PreventionGenetics, part of Exact Sciences",germline,Pathogenic,no assertion criteria provided,2024-09-12,current,false,{},TP53-related condition,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">TP53-related condition</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV005685074.1,"Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet",germline,Pathogenic,"criteria provided, single submitter",2025-01-10,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV005094433.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV005918340.1,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,"criteria provided, single submitter",2022-05-20,current,true,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV006276323.1,"Molecular Pathology, Peter Maccallum Cancer Centre",germline,Pathogenic,"criteria provided, single submitter",2024-06-21,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0018875"" />
+          </Trait>
+        </TraitSet>
+        "
+216077,VCV000216077.31,SCV007105359.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2023-06-23,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C5669733"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV001554044.1,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0007254"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV002582487.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV002583148.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV001186504.4,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2019-10-10,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV000545307.9,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-08-20,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV004046825.1,"Key Laboratory of Carcinogenesis and Cancer Invasion, Central South University",germline,Likely pathogenic,no assertion criteria provided,,current,false,{},Adrenocortical carcinoma,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Adrenocortical carcinoma</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV004931917.1,"Myriad Genetics, Inc.",germline,Pathogenic,"criteria provided, single submitter",2024-02-15,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+406579,VCV000406579.23,SCV005094434.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000692083.1,"Mayo Clinic Laboratories, Mayo Clinic",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000731790.2,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,"criteria provided, single submitter",2017-07-24,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""Orphanet"" ID=""ORPHA524"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001432233.1,"Institute of Medical Sciences, Banaras Hindu University",germline,Pathogenic,no assertion criteria provided,2019-04-30,current,false,{},Lip and oral cavity carcinoma,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Lip and oral cavity carcinoma</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""C0220641"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV002582493.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,false,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV002583153.1,Genome-Nilou Lab,germline,Pathogenic,"criteria provided, single submitter",2022-06-18,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000186273.10,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-09-19,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005368520.3,"Institute of Human Genetics, University of Leipzig Medical Center",germline,Pathogenic,"criteria provided, single submitter",2024-11-12,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000905051.4,"Color Diagnostics, LLC DBA Color Health",germline,Pathogenic,"criteria provided, single submitter",2024-08-05,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000488375.3,Counsyl,germline,Pathogenic,no assertion criteria provided,2016-03-18,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV006325613.2,"Genetic Services Laboratory, University of Chicago",germline,Pathogenic,"criteria provided, single submitter",2024-07-17,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000189994.1,Pathway Genomics,germline,Pathogenic,no assertion criteria provided,2014-07-24,current,false,{},Li-Fraumeni syndrome 1,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Li-Fraumeni syndrome 1</ElementValue>
+            </Name>
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+      "
+12374,VCV000012374.85,SCV000806241.1,"PreventionGenetics, part of Exact Sciences",germline,Pathogenic,"criteria provided, single submitter",2017-04-17,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000033420.4,OMIM,germline,Pathogenic,no assertion criteria provided,2005-08-01,current,false,{},LI-FRAUMENI SYNDROME 1,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">LI-FRAUMENI SYNDROME 1</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+12374,VCV000012374.85,SCV001478188.1,"Department of Pediatrics, Memorial Sloan Kettering Cancer Center",germline,Pathogenic,"criteria provided, single submitter",2020-12-15,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001551443.1,"Department of Pathology and Laboratory Medicine, Sinai Health System",germline,Pathogenic,no assertion criteria provided,,current,false,{},Li-Fraumeni syndrome 1,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name derived_by=""NCBI"">
+              <ElementValue Type=""Preferred"">Li-Fraumeni syndrome 1</ElementValue>
+            </Name>
+            <XRef DB=""MONDO"" ID=""MONDO:0007903"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001906154.1,"Clinical Genetics Laboratory, Department of Pathology, Netherlands Cancer Institute",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000894156.2,"Fulgent Genetics, Fulgent Genetics",germline,Pathogenic,"criteria provided, single submitter",2022-04-10,current,false,{},,"<TraitSet Type=""TraitChoice"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114550"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""137800"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""259500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""260350"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""260500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""607107"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614740"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""618165"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV004823789.1,"All of Us Research Program, National Institutes of Health",germline,Pathogenic,"criteria provided, single submitter",2023-09-18,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0018875"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV002074556.3,"Women's Health and Genetics/Laboratory Corporation of America, LabCorp",germline,Pathogenic,"criteria provided, single submitter",2022-01-07,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV004206223.2,Baylor Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-03-28,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005419199.1,"Swedish National ChiCaP Initative, Genomic Medicine Sweden",germline,Pathogenic,"criteria provided, single submitter",2024-05-01,current,false,{},TP53-related disorder,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">TP53-related disorder</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001450483.2,"Institute of Biochemistry, Molecular Biology and Biotechnology, University of Colombo",germline,Pathogenic,"criteria provided, single submitter",,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""275355"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001450484.2,"Institute of Biochemistry, Molecular Biology and Biotechnology, University of Colombo",germline,Pathogenic,"criteria provided, single submitter",,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114500"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000297733.3,"Institute of Biochemistry, Molecular Biology and Biotechnology, University of Colombo",germline,Pathogenic,no assertion criteria provided,2016-07-29,current,false,{},Esophageal cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Esophageal cancer</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007105501.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier II - Potential,"criteria provided, single submitter",2024-06-14,current,false,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0005072"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007105574.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2024-11-18,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0957196"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007105584.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2025-02-05,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0015795"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007105618.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2025-06-13,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0956964"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007105627.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2025-08-20,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C5669733"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007104864.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2022-12-30,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0850335"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007449463.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",germline,Pathogenic,"criteria provided, single submitter",2025-09-09,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0018875"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000261917.14,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-12-30,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007599807.1,Dasa,germline,Pathogenic,"criteria provided, single submitter",2026-01-14,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C3661900"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV007665128.1,"Diller/Parad Lab, Dana-Farber/Harvard Cancer Center",germline,Likely Pathogenic,"criteria provided, single submitter",2026-05-29,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000923920.1,"German Consortium for Hereditary Breast and Ovarian Cancer, University Hospital Cologne",germline,Likely pathogenic,no assertion criteria provided,2018-12-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D010051"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001738476.1,"University Health Network, Princess Margaret Cancer Centre",germline,Pathogenic,no assertion criteria provided,2021-03-19,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV000211798.12,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2021-01-04,current,false,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001808819.1,"Genome Diagnostics Laboratory, Amsterdam University Medical Center",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV001959136.1,"Joint Genome Diagnostic Labs from Nijmegen and Maastricht, Radboudumc and MUMC+",germline,Pathogenic,no assertion criteria provided,,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV002758490.1,"Laboratory for Genotyping Development, RIKEN",germline,Pathogenic,no assertion criteria provided,2021-07-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D013274"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV002011128.3,"Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden",germline,Pathogenic,"criteria provided, single submitter",2021-11-03,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV004044216.2,"Myriad Genetics, Inc.",germline,Pathogenic,"criteria provided, single submitter",2023-05-11,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005201131.1,"ClinGen TP53 Variant Curation Expert Panel, ClinGen",germline,Pathogenic,reviewed by expert panel,2024-09-06,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0018875"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005688871.1,"Institute for Biomarker Research, Medical Diagnostic Laboratories, L.L.C.",germline,Pathogenic,"criteria provided, single submitter",2024-12-09,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005094440.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005872480.1,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",germline,Pathogenic,"criteria provided, single submitter",2025-03-04,current,false,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+12374,VCV000012374.85,SCV005685067.2,"Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet",germline,Pathogenic,"criteria provided, single submitter",2025-01-10,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV000924078.1,"German Consortium for Hereditary Breast and Ovarian Cancer, University Hospital Cologne",germline,Likely pathogenic,no assertion criteria provided,2018-12-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D010051"" />
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV001184673.4,Ambry Genetics,germline,Likely pathogenic,"criteria provided, single submitter",2024-01-12,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV005387970.1,GeneDx,germline,Likely pathogenic,"criteria provided, single submitter",2024-05-03,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV007104610.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2023-11-28,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0957196"" />
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV003442488.4,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2024-09-29,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+634768,VCV000634768.14,SCV007597824.1,Dasa,germline,Likely pathogenic,"criteria provided, single submitter",2026-03-11,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C3661900"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV000924093.1,"German Consortium for Hereditary Breast and Ovarian Cancer, University Hospital Cologne",germline,Likely pathogenic,no assertion criteria provided,2018-12-01,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MeSH"" ID=""D010051"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV002589024.1,"BRCAlab, Lund University",germline,Likely pathogenic,no assertion criteria provided,2022-08-26,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV004933949.1,"Myriad Genetics, Inc.",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-13,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV002619508.3,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2023-08-28,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV005419177.1,"Clinical Genetics and Genomics, Karolinska University Hospital",germline,Likely pathogenic,no assertion criteria provided,2024-10-01,current,false,{},TP53-related disorder,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">TP53-related disorder</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV005651063.1,"Fulgent Genetics, Fulgent Genetics",germline,Likely pathogenic,"criteria provided, single submitter",2024-05-30,current,true,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114550"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""137800"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""151623"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""259500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""260350"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""260500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""607107"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614740"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""618165"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV005689584.2,"Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet",germline,Likely pathogenic,"criteria provided, single submitter",2025-02-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV006552675.1,"Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre",germline,Pathogenic,"criteria provided, single submitter",2025-09-10,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""202300"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV005094457.3,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Likely oncogenic,"criteria provided, single submitter",2025-12-29,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV000545321.8,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-10-07,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0085390"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+376625,VCV000376625.51,SCV005890118.12,CeGaT Center for Human Genetics Tuebingen,germline,Pathogenic,"criteria provided, single submitter",2024-12-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+184987,VCV000184987.11,SCV000628562.8,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Benign,"criteria provided, single submitter",2025-11-17,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027831"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+184987,VCV000184987.11,SCV000214969.4,Ambry Genetics,germline,Uncertain significance,"criteria provided, single submitter",2014-05-23,current,true,{},Hereditary cancer-predisposing syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+184987,VCV000184987.11,SCV002560365.1,Genome-Nilou Lab,germline,Uncertain significance,"criteria provided, single submitter",2022-03-15,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""162200"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV000044350.2,OMIM,germline,Pathogenic,no assertion criteria provided,2011-05-01,current,false,{},JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+24850,VCV000024850.30,SCV001571412.1,"Institute of Medical Sciences, Banaras Hindu University",germline,Pathogenic,no assertion criteria provided,2020-10-30,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0153452"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV004931948.1,"Myriad Genetics, Inc.",germline,Pathogenic,"criteria provided, single submitter",2024-02-09,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""175050"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV000214483.7,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2021-08-27,current,true,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C4707243"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV005625037.1,Quest Diagnostics Nichols Institute San Juan Capistrano,germline,pathogenic,"criteria provided, single submitter",2024-03-27,current,true,{},not provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV000582779.5,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2018-04-10,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV005093980.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV000543757.10,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-08-14,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0345893"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+24850,VCV000024850.30,SCV006096722.9,CeGaT Center for Human Genetics Tuebingen,germline,Pathogenic,"criteria provided, single submitter",2025-05-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+224559,VCV000224559.6,SCV000266152.1,"University of Washington Department of Laboratory Medicine, University of Washington",germline,Uncertain significance,flagged submission,2015-11-20,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027672"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+224559,VCV000224559.6,SCV005662748.1,"Fulgent Genetics, Fulgent Genetics",germline,Likely pathogenic,"criteria provided, single submitter",2024-02-01,current,true,{},,"<TraitSet Type=""Disease"" multipleConditionExplanation=""Uncertain"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""210600"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""614564"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+224559,VCV000224559.6,SCV005793640.2,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2025-06-02,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV000062353.3,"Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine",germline,Pathogenic,"criteria provided, single submitter",2011-03-01,current,true,{},Non-Small Cell Lung Cancer,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Non-Small Cell Lung Cancer</ElementValue>
+            </Name>
+            <XRef DB=""OMIM"" ID=""211980"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV007104465.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier II - Potential,"criteria provided, single submitter",2024-03-19,current,false,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",Sialoblastoma,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Sialoblastoma</ElementValue>
+            </Name>
+            <XRef DB=""MedGen"" ID=""C1266145"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV007104497.1,"Institute for Genomic Medicine (IGM) Clinical Laboratory, Nationwide Children's Hospital",somatic_clinical_impact,Tier I - Strong,"criteria provided, single submitter",2025-01-27,current,true,"{""ClinicalImpactAssertionType"": ""diagnostic"", ""ClinicalImpactClinicalSignificance"": ""supports diagnosis""}",,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MONDO"" ID=""MONDO:0957196"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV000827084.9,"Labcorp Genetics (formerly Invitae), Labcorp",germline,Pathogenic,"criteria provided, single submitter",2024-09-03,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0018553"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV001934212.1,"Institute of Medical and Molecular Genetics, Hospital Universitario La Paz",germline,Pathogenic,"criteria provided, single submitter",2021-04-06,current,true,{},Segmental undergrowth associated with mainly venous malformation with capillary component,"<TraitSet Type=""Finding"">
+          <Trait Type=""Finding"">
+            <Name>
+              <ElementValue Type=""Preferred"">Segmental undergrowth associated with mainly venous malformation with capillary component</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV002012071.1,3billion,germline,Pathogenic,"criteria provided, single submitter",2021-10-02,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""602501"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV004176925.1,"Clinical Genomics Laboratory, Washington University in St. Louis",germline,Pathogenic,"criteria provided, single submitter",2023-10-11,current,true,{},PIK3CA-related overgrowth syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">PIK3CA-related overgrowth syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV000056681.4,OMIM,germline,Pathogenic,no assertion criteria provided,2012-06-24,current,false,{},"MEGALENCEPHALY-CAPILLARY MALFORMATION-POLYMICROGYRIA SYNDROME, SOMATIC","<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">MEGALENCEPHALY-CAPILLARY MALFORMATION-POLYMICROGYRIA SYNDROME, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+39705,VCV000039705.70,SCV004697537.2,OMIM,germline,Pathogenic,no assertion criteria provided,2012-06-24,current,false,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""included"">HEMIFACIAL MYOHYPERPLASIA, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      "
+39705,VCV000039705.70,SCV002525571.2,"Seattle Children's Hospital Molecular Genetics Laboratory, Seattle Children's Hospital",germline,Pathogenic,"criteria provided, single submitter",2020-11-30,current,true,{},PIK3CA overgrowth syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">PIK3CA overgrowth syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV005468933.1,Ambry Genetics,germline,Pathogenic,"criteria provided, single submitter",2024-07-23,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0950123"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV002104174.2,"Developmental Brain Disorders Lab, Seattle Children's Hospital",germline,Pathogenic,"criteria provided, single submitter",2022-03-08,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""602501"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV000894305.1,"Fulgent Genetics, Fulgent Genetics",germline,Pathogenic,"criteria provided, single submitter",2018-10-31,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114480"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""114550"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""155500"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""162900"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""167000"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""182000"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""211980"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""602501"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612918"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""613089"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""613659"" Type=""MIM"" />
+          </Trait>
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""615108"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV002505775.2,"Department of Clinical Genetics, Copenhagen University Hospital, Rigshospitalet",germline,Pathogenic,"criteria provided, single submitter",2021-08-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""OMIM"" ID=""612918"" Type=""MIM"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV003932119.1,"Care4Rare-SOLVE, CHEO",germline,Pathogenic,"criteria provided, single submitter",,current,true,{},PIK3CA related overgrowth syndrome,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">PIK3CA related overgrowth syndrome</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV001248957.39,CeGaT Center for Human Genetics Tuebingen,germline,Pathogenic,"criteria provided, single submitter",2018-07-01,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""CN517202"" Type=""CUI"" />
+          </Trait>
+        </TraitSet>
+        "
+39705,VCV000039705.70,SCV005628328.2,GeneDx,germline,Pathogenic,"criteria provided, single submitter",2025-06-24,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "
+666267,VCV000666267.3,SCV000965609.1,"Clinical Laboratory, New York Genome Center",germline,drug response,no assertion criteria provided,2019-05-21,current,true,{},Dabrafenib response;Pancreatic Adenocarcinoma,"<TraitSet Type=""DrugResponse"">
+          <Trait Type=""DrugResponse"">
+            <Name>
+              <ElementValue Type=""Preferred"">Dabrafenib response</ElementValue>
+            </Name>
+            <TraitRelationship Type=""DrugResponseAndDisease"">
+              <Name>
+                <ElementValue Type=""Preferred"">Pancreatic Adenocarcinoma</ElementValue>
+              </Name>
+            </TraitRelationship>
+          </Trait>
+        </TraitSet>
+        "
+666267,VCV000666267.3,SCV005094146.2,"Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital",oncogenicity,Oncogenic,"criteria provided, single submitter",2025-03-04,current,true,{},,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <XRef DB=""MedGen"" ID=""C0027651"" />
+          </Trait>
+        </TraitSet>
+        "
+2443454,VCV002443454.1,SCV003840437.1,GeneDx,germline,Uncertain significance,"criteria provided, single submitter",2022-09-11,current,true,{},Not Provided,"<TraitSet Type=""Disease"">
+          <Trait Type=""Disease"">
+            <Name>
+              <ElementValue Type=""Preferred"">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        "

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="2443454" VariationName="NM_003070.5(SMARCA2):c.750ACA[1] (p.Gln253del)" VariationType="Microsatellite" Accession="VCV002443454" Version="1" RecordType="classified" NumberOfSubmissions="1" NumberOfSubmitters="1" DateLastUpdated="2025-05-19" DateCreated="2023-03-18" MostRecentSubmission="2023-03-18">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="2417190" VariationID="2443454">
+      <GeneList>
+        <Gene Symbol="SMARCA2" FullName="SWI/SNF related BAF chromatin remodeling complex subunit ATPase 2" GeneID="6595" HGNC_ID="HGNC:11098" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>9p24.3</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="9" Accession="NC_000009.12" start="2015347" stop="2193620" display_start="2015347" display_stop="2193620" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="9" Accession="NC_000009.11" start="2015341" stop="2193623" display_start="2015341" display_stop="2193623" Strand="+"/>
+          </Location>
+          <OMIM>600014</OMIM>
+          <Haploinsufficiency last_evaluated="2013-03-27" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=SMARCA2">No evidence available</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2013-03-27" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=SMARCA2">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_003070.5(SMARCA2):c.750ACA[1] (p.Gln253del)</Name>
+      <CanonicalSPDI>NC_000009.12:2039857:CAACAACA:CAACA</CanonicalSPDI>
+      <VariantType>Microsatellite</VariantType>
+      <Location>
+        <CytogeneticLocation>9p24.3</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="9" Accession="NC_000009.12" start="2039858" stop="2039860" display_start="2039858" display_stop="2039860" variantLength="3" positionVCF="2039857" referenceAlleleVCF="GCAA" alternateAlleleVCF="G"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="9" Accession="NC_000009.11" start="2039858" stop="2039860" display_start="2039858" display_stop="2039860" variantLength="3" positionVCF="2039857" referenceAlleleVCF="GCAA" alternateAlleleVCF="G"/>
+      </Location>
+      <ProteinChange>Q253del</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001289396.2" sequenceAccession="NM_001289396" sequenceVersion="2" change="c.750_752ACA[1]">
+            <Expression>NM_001289396.2:c.750_752ACA[1]</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001276325.1" sequenceAccession="NP_001276325" sequenceVersion="1" change="p.Gln253del" singleLetterProteinChange="Q253del">
+            <Expression>NP_001276325.1:p.Gln253del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001820" Type="inframe_indel" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001289397.2" sequenceAccession="NM_001289397" sequenceVersion="2" change="c.750ACA[1]">
+            <Expression>NM_001289397.2:c.750ACA[1]</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001276326.1" sequenceAccession="NP_001276326" sequenceVersion="1" change="p.Gln253del" singleLetterProteinChange="Q253del">
+            <Expression>NP_001276326.1:p.Gln253del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_003070.5" sequenceAccession="NM_003070" sequenceVersion="5" change="c.750ACA[1]" MANESelect="true">
+            <Expression>NM_003070.5:c.750ACA[1]</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_003061.3" sequenceAccession="NP_003061" sequenceVersion="3" change="p.Gln253del" singleLetterProteinChange="Q253del">
+            <Expression>NP_003061.3:p.Gln253del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_139045.4" sequenceAccession="NM_139045" sequenceVersion="4" change="c.750ACA[1]">
+            <Expression>NM_139045.4:c.750ACA[1]</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_620614.2" sequenceAccession="NP_620614" sequenceVersion="2" change="p.Gln253del" singleLetterProteinChange="Q253del">
+            <Expression>NP_620614.2:p.Gln253del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_882" sequenceAccession="LRG_882">
+            <Expression>LRG_882:g.64571ACA[1]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000009.11" sequenceAccession="NC_000009" sequenceVersion="11" change="g.2039860ACA[1]" Assembly="GRCh37">
+            <Expression>NC_000009.11:g.2039860ACA[1]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000009.12" sequenceAccession="NC_000009" sequenceVersion="12" change="g.2039860ACA[1]" Assembly="GRCh38">
+            <Expression>NC_000009.12:g.2039860ACA[1]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_032162.2" sequenceAccession="NG_032162" sequenceVersion="2" change="g.64571ACA[1]">
+            <Expression>NG_032162.2:g.64571ACA[1]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_115850.1" sequenceAccession="NG_115850" sequenceVersion="1" change="g.202ACA[1]">
+            <Expression>NG_115850.1:g.202ACA[1]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_882t1" sequenceAccession="LRG_882t1">
+            <Expression>LRG_882t1:c.750ACA[1]</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_882p1" sequenceAccession="LRG_882p1" change="p.Gln253del">
+            <Expression>LRG_882p1:p.Gln253del</Expression>
+          </ProteinExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA585909144" DB="ClinGen"/>
+        <XRef Type="rs" ID="1563725197" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_003070.5(SMARCA2):c.750ACA[1] (p.Gln253del) AND not provided" Accession="RCV003152061" Version="1">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2022-09-11" SubmissionCount="1">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2022-09-11" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2023-03-18" MostRecentSubmission="2023-03-18">
+        <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+        <Description>Uncertain significance</Description>
+        <Explanation DataSource="ClinVar" Type="public">Uncertain significance (1)</Explanation>
+        <ConditionList>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">RECLASSIFIED - ADRA2C POLYMORPHISM</ElementValue>
+                <XRef Type="Allelic variant" ID="104250.0001" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">RECLASSIFIED - ADRB1 POLYMORPHISM</ElementValue>
+                <XRef Type="Allelic variant" ID="109630.0001" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="7169107" SubmissionDate="2023-03-15" ContributesToAggregateClassification="true" DateLastUpdated="2023-03-18" DateCreated="2023-03-18">
+        <ClinVarSubmissionID localKey="GDXSV:263212" localKeyIsSubmitted="1"/>
+        <ClinVarAccession Accession="SCV003840437" DateUpdated="2023-03-18" DateCreated="2023-03-18" Type="SCV" Version="1" SubmitterName="GeneDx" OrgID="26957" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-09-11">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+          <Comment>In-frame deletion of 1 amino acid in a non-repeat region; In silico analysis supports that this variant does not alter protein structure/function; Has not been previously published as pathogenic or benign to our knowledge</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">GeneDx Variant Classification Process June 2021</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/fc81e176/genedx_variant_classification_process_june_2021.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMARCA2"/>
+          </GeneList>
+          <VariantType>Deletion</VariantType>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">GDX:6288166</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_003070.3:c.753_755del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>GeneDX_Clinvar_Submission_168_20230315054203</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="7169107" TraitType="Disease" MappingType="Name" MappingValue="Not Provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

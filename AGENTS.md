@@ -11,6 +11,8 @@
 
 ## Cluster recovery
 
+For the newer molecular-classification extension, start with `docs/cluster/molecular_extension_2026-09-06/AGENT_TASK.md` and its model/locus tables. It separates initial discovery from proposed MSI/allele-specific CN pilots and records what still requires operator execution authorization. The older recovery checklist remains provenance context.
+
 Start by locating existing files in the run/project directories supplied by the operator. Do not launch a whole-filesystem scan, run the full analysis, submit jobs, change permissions, delete files or copy large sequencing files as part of initial discovery. Inspect existing logs, commands, reports and manifests first. A later explicit operator request can authorise additional work.
 
 Keep original run directories read-only. Record exact paths, symlink targets, sample/run IDs, sizes and checksums when available. A historical path is not proof that a file still exists. Report permission-denied and broken-symlink cases separately from files not found in searched locations. Do not calculate checksums of multi-terabyte trees merely to build the first inventory.

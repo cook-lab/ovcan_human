@@ -1,0 +1,19 @@
+{
+  "queue_rows": 53,
+  "queue_sha256": "b6bd5311845f2604b695c377f1f12dda6c1d5b326f98e4518dc39821926a20d4",
+  "script_sha256": "a21ee951626afb3a16351ac1bff2f9968dc4705daaff01594320f5672700f8eb",
+  "model_evidence_sha256": "9da84de01e120440f87fb50bdd0ef8490cbcd051c6d99aa41009d9a11c8c3a81",
+  "exact_matched_alleles": 23,
+  "no_exact_indexed_match": 30,
+  "source_model_records": 65,
+  "model_records_with_exact_match": 29,
+  "submission_assertion_rows": 226,
+  "condition_assertion_rows": 152,
+  "requests": 130,
+  "all_response_hashes_checked": true,
+  "canonical_calls_modified": false,
+  "exact_grch38_vcf_tuple_matches": 23,
+  "user_authorization": "Explicit 6 September 2026 approval: These data are not particularly sensitive\u2014you can submit the query",
+  "transmitted_fields": "reference accession/genomic position/ref/alt plus public ClinVar identifiers; no project model/read/path fields",
+  "completed_utc": "2026-09-06T16:48:29.461577+00:00"
+}

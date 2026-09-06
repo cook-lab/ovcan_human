@@ -1,0 +1,3 @@
+cell_line,gene,chromosome,source_PID,source_PS,source_PGTs,candidate_ids,record_count,net_length_change_if_same_haplotype,interpretation
+OV2295,ATM,chr11,108345741_AGGAGGTGC_A,108345741,0|1,OV2295|chr11|108345742|108345749|GGAGGTGC|-;OV2295|chr11|108345749|108345750|-|AAAAAAAA,2,0,Caller local-phase evidence only; BAM haplotype and combined transcript consequence require review; do not count as independent gene hits
+TOV2881EP,TP53,chr17,7675143_C_CGGG,7675143,0|1,TOV2881EP|chr17|7675143|7675144|-|GGG;TOV2881EP|chr17|7675145|7675145|C|G,2,3,Caller local-phase evidence only; BAM haplotype and combined transcript consequence require review; do not count as independent gene hits

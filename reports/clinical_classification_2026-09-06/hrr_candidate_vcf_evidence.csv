@@ -1,0 +1,14 @@
+cell_line,gene,protein_label,chromosome,vcf_pos,ref,alt,filter,AD,AD_alt_fraction,caller_AF,TLOD,HGVSc,HGVSp,Existing_variation,CLIN_SIG,source_vcf
+OV3133-R,PALB2,p.C824S,chr16,23629684,A,T,PASS,"23,2",0.08,0.077,6.22,,,rs1966855944,,judy_archive/data/wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf
+OV3133-R,CDK12,p.L123fs,chr17,39462437,AC,A,PASS,"0,37",1.0,0.974,140.05,,,,,judy_archive/data/wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf
+OV3133-R2,CDK12,p.L123fs,chr17,39462437,AC,A,PASS,"0,42",1.0,0.977,150.83,,,,,judy_archive/data/wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf
+OV3133-R2,CDK12,p.P1256del,chr17,39530607,GTCC,G,PASS,"0,79",1.0,0.987,327.90,,,rs761267090,,judy_archive/data/wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf
+OV3291,CDK12,NA,chr17,39520088,G,A,PASS,"0,72",1.0,0.985,253.14,,,rs2146575887&COSV70999640,,judy_archive/data/wes - old/mutect2/OV3291/OV3291_P46.mutect2.filtered_VEP.ann.vcf
+TOV2929D,PALB2,p.N342Y,chr16,23635522,T,A,PASS,"134,23",0.1464968152866242,0.150,42.97,,,rs2142428203,,judy_archive/data/wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf
+TOV2929D,CDK12,p.S325I,chr17,39463045,G,T,PASS,"35,3",0.07894736842105263,0.090,4.72,,,rs2144909136&COSV71002864,,judy_archive/data/wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf
+TOV3133D,BRCA2,p.A22E,chr13,32316525,C,A,PASS,"119,5",0.04032258064516129,0.038,5.10,,,rs2138698612&CM172611,,judy_archive/data/wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf
+TOV3133D,CDK12,p.L123fs,chr17,39462437,AC,A,PASS,"0,36",1.0,0.974,135.09,,,,,judy_archive/data/wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf
+TOV3133D,CDK12,p.P1256del,chr17,39530607,GTCC,G,PASS,"0,102",1.0,0.990,436.84,,,rs761267090,,judy_archive/data/wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf
+TOV3133G,CDK12,p.L123fs,chr17,39462437,AC,A,PASS,"0,37",1.0,0.974,139.53,,,,,judy_archive/data/wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf
+TOV3133G,CDK12,p.P1256del,chr17,39530607,GTCC,G,PASS,"0,79",1.0,0.987,327.34,,,rs761267090,,judy_archive/data/wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf
+TOV81D,BRCA2,p.R2845fs,chr13,32371000,AAG,A,PASS,"75,45",0.375,0.392,121.63,,,rs80359714,,judy_archive/data/wes - old/mutect2/TOV81D_P23/TOV81D_P23.mutect2.filtered_VEP.ann.vcf

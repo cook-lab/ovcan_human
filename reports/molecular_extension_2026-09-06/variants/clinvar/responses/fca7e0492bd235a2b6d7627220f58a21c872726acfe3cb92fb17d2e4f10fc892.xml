@@ -1,0 +1,3274 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="9328" VariationName="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs)" VariationType="Microsatellite" Accession="VCV000009328" Version="54" RecordType="classified" NumberOfSubmissions="29" NumberOfSubmitters="28" DateLastUpdated="2026-08-29" DateCreated="2014-10-19" MostRecentSubmission="2026-06-14">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="24367" VariationID="9328">
+      <GeneList>
+        <Gene Symbol="BRCA2" FullName="BRCA2 DNA repair associated" GeneID="675" HGNC_ID="HGNC:1101" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>13q13.1</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="13" Accession="NC_000013.11" start="32315077" stop="32400268" display_start="32315077" display_stop="32400268" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="13" Accession="NC_000013.10" start="32889616" stop="32973808" display_start="32889616" display_stop="32973808" Strand="+"/>
+          </Location>
+          <OMIM>600185</OMIM>
+          <Haploinsufficiency last_evaluated="2021-07-14" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=BRCA2">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2021-07-14" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=BRCA2">No evidence available</Triplosensitivity>
+          <Property>gene_acmg_incidental_2013</Property>
+          <Property>gene_acmg_incidental_2016</Property>
+          <Property>gene_acmg_incidental_2021</Property>
+          <Property>gene_acmg_incidental_2022</Property>
+        </Gene>
+      </GeneList>
+      <Name>NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs)</Name>
+      <CanonicalSPDI>NC_000013.11:32371000:AGAGAG:AGAG</CanonicalSPDI>
+      <VariantType>Microsatellite</VariantType>
+      <Location>
+        <CytogeneticLocation>13q13.1</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="13" Accession="NC_000013.11" start="32371001" stop="32371002" display_start="32371001" display_stop="32371002" variantLength="2" positionVCF="32371000" referenceAlleleVCF="AAG" alternateAlleleVCF="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="13" Accession="NC_000013.10" start="32945138" stop="32945139" display_start="32945138" display_stop="32945139" variantLength="2" positionVCF="32945137" referenceAlleleVCF="AAG" alternateAlleleVCF="A"/>
+      </Location>
+      <OtherNameList>
+        <Name>8761delAG</Name>
+        <Name>8765delAG</Name>
+      </OtherNameList>
+      <ProteinChange>E2846fs</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="non-coding">
+          <NucleotideExpression sequenceAccessionVersion="U43746.1" sequenceAccession="U43746" sequenceVersion="1" change="n.8765_8766delAG">
+            <Expression>U43746.1:n.8765_8766delAG</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000059.3" sequenceAccession="NM_000059" sequenceVersion="3" change="c.8533_8534del">
+            <Expression>NM_000059.3:c.8533_8534del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000059.3" sequenceAccession="NM_000059" sequenceVersion="3" change="c.8533_8534delAG">
+            <Expression>NM_000059.3:c.8533_8534delAG</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000059.3" sequenceAccession="NM_000059" sequenceVersion="3" change="c.8537_8538delAG">
+            <Expression>NM_000059.3:c.8537_8538delAG</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000013.10" sequenceAccession="NC_000013" sequenceVersion="10" change="g.32945138AG[2]" Assembly="GRCh37">
+            <Expression>NC_000013.10:g.32945138AG[2]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000013.11" sequenceAccession="NC_000013" sequenceVersion="11" change="g.32371001AG[2]" Assembly="GRCh38">
+            <Expression>NC_000013.11:g.32371001AG[2]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_012772.3" sequenceAccession="NG_012772" sequenceVersion="3" change="g.60522AG[2]">
+            <Expression>NG_012772.3:g.60522AG[2]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000059.4" sequenceAccession="NM_000059" sequenceVersion="4" change="c.8537_8538del" MANESelect="true">
+            <Expression>NM_000059.4:c.8537_8538del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_000050.3" sequenceAccession="NP_000050" sequenceVersion="3" change="p.Glu2846fs" singleLetterProteinChange="E2846fs">
+            <Expression>NP_000050.3:p.Glu2846fs</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001589" Type="frameshift variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_293" sequenceAccession="LRG_293">
+            <Expression>LRG_293:g.60522AG[2]</Expression>
+          </NucleotideExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="8761&amp;base_change=del AG" DB="Breast Cancer Information Core (BIC) (BRCA2)"/>
+        <XRef ID="8765&amp;base_change=del AG" DB="Breast Cancer Information Core (BIC) (BRCA2)"/>
+        <XRef ID="CA025697" DB="ClinGen"/>
+        <XRef Type="Allelic variant" ID="600185.0012" DB="OMIM"/>
+        <XRef Type="rs" ID="80359714" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Breast-ovarian cancer, familial, susceptibility to, 2" Accession="RCV000009915" Version="31">
+        <ClassifiedConditionList TraitSetID="2560">
+          <ClassifiedCondition DB="MedGen" ID="C2675520">Breast-ovarian cancer, familial, susceptibility to, 2</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>reviewed by expert panel</ReviewStatus>
+            <Description DateLastEvaluated="2016-09-08" SubmissionCount="7">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Hereditary breast ovarian cancer syndrome" Accession="RCV000045550" Version="38">
+        <ClassifiedConditionList TraitSetID="7920">
+          <ClassifiedCondition DB="MedGen" ID="C0677776">Hereditary breast ovarian cancer syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2026-01-13" SubmissionCount="5">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Hereditary cancer-predisposing syndrome" Accession="RCV000131085" Version="23">
+        <ClassifiedConditionList TraitSetID="13598">
+          <ClassifiedCondition DB="MedGen" ID="C0027672">Hereditary cancer-predisposing syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2025-01-02" SubmissionCount="2">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND not provided" Accession="RCV000160308" Version="26">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2025-04-21" SubmissionCount="7">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Breast and/or ovarian cancer" Accession="RCV000735482" Version="16">
+        <ClassifiedConditionList TraitSetID="20192">
+          <ClassifiedCondition DB="MedGen" ID="CN221562">Breast and/or ovarian cancer</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2023-06-16" SubmissionCount="3">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Malignant tumor of breast" Accession="RCV001353461" Version="10">
+        <ClassifiedConditionList TraitSetID="25616">
+          <ClassifiedCondition DB="MedGen" ID="C0006142">Malignant tumor of breast</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Familial cancer of breast" Accession="RCV003460447" Version="2">
+        <ClassifiedConditionList TraitSetID="774">
+          <ClassifiedCondition DB="MedGen" ID="C0346153">Familial cancer of breast</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2024-03-07" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND BRCA2-related cancer predisposition" Accession="RCV004802929" Version="3">
+        <ClassifiedConditionList TraitSetID="98005">
+          <ClassifiedCondition DB="MedGen" ID="CN377758">BRCA2-related cancer predisposition</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2024-09-24" SubmissionCount="2">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND multiple conditions" Accession="RCV005357104" Version="1">
+        <ClassifiedConditionList TraitSetID="10448">
+          <ClassifiedCondition DB="MedGen" ID="C2675520">Breast-ovarian cancer, familial, susceptibility to, 2</ClassifiedCondition>
+          <ClassifiedCondition DB="MedGen" ID="C0346153">Familial cancer of breast</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2017-11-06" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2016-09-08" NumberOfSubmissions="29" NumberOfSubmitters="28" DateCreated="2014-10-19" MostRecentSubmission="2026-06-14">
+        <ReviewStatus>reviewed by expert panel</ReviewStatus>
+        <Description>Pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (1)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">18489799</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">19656164</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">20104584</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">9634522</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">25085752</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">26976419</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">28888541</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">28918466</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">29086229</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">30720243</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">31853058</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32467295</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">37688579</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">8673090</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">11512557</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">15024741</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">17591843</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">19619314</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21324516</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">23621881</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">29506128</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32341426</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32438681</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">33235458</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">33471991</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">16047344</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">17640379</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">22401979</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">23199084</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">25884701</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">27603373</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">29446198</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">29625052</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">30322717</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32885271</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">33939675</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">9792861</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">15382066</ID>
+        </Citation>
+        <ConditionList>
+          <TraitSet ID="20192" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="32337" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Breast and/or ovarian cancer</ElementValue>
+                <XRef ID="UWMG_7622958" DB="CSER _CC_NCGL, University of Washington"/>
+              </Name>
+              <XRef ID="CN221562" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="13598" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="18746" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Tumor predisposition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary Cancer Syndrome</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary neoplastic syndrome</ElementValue>
+                <XRef ID="MONDO:0015356" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+                <XRef ID="699346009" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplastic Syndromes, Hereditary</ElementValue>
+                <XRef ID="D009386" DB="MeSH"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="19921"/>
+                <XRef ID="19921" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="IARC, 2008">
+                <ID Source="pmc">3075918</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <XRef ID="140162" DB="Orphanet"/>
+              <XRef ID="C0027672" DB="MedGen"/>
+              <XRef ID="D009386" DB="MeSH"/>
+              <XRef ID="MONDO:0015356" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="10448" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="636" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">BRCA2 Hereditary Breast and Ovarian Cancer</ElementValue>
+                <XRef ID="NBK1247" DB="GeneReviews"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Breast-ovarian cancer, familial, susceptibility to, 2</ElementValue>
+                <XRef ID="MONDO:0012933" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">BROVCA2</ElementValue>
+                <XRef Type="MIM" ID="612555" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">BRCA1- and BRCA2-associated hereditary breast and ovarian cancer (HBOC) is characterized by an increased risk for female and male breast cancer, ovarian cancer (including fallopian tube and primary peritoneal cancers), and to a lesser extent other cancers such as prostate cancer, pancreatic cancer, and melanoma primarily in individuals with a BRCA2 pathogenic variant. The risk of developing an associated cancer varies depending on whether HBOC is caused by a BRCA1 or BRCA2 pathogenic variant.</Attribute>
+                <XRef ID="NBK1247" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000552245" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000530120" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528915" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000325401" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000332529" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528916" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000021468" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552304" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000330054" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509450" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000527942" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000512816" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509692" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509980" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000604264" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592961" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000562228" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="27821"/>
+                <XRef ID="27821" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301425</ID>
+                <ID Source="BookShelf">NBK1247</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACS, 2007">
+                <ID Source="PubMed">17392385</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2010">
+                <ID Source="PubMed">20065170</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17508274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACOG, 2009">
+                <ID Source="PubMed">19305347</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23788249</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Phillips et al., 2013">
+                <ID Source="PubMed">23918944</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Domchek et al., 2010">
+                <ID Source="pmc">2948529</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2014">
+                <ID Source="PubMed">24493721</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014 [Archived]">
+                <ID Source="PubMed">24366376</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="CAPS, 2013">
+                <ID Source="pmc">3585492</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2013">
+                <ID Source="PubMed">23188549</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014">
+                <ID Source="PubMed">24366402</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2013">
+                <ID Source="PubMed">24432435</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2015">
+                <ID Source="PubMed">25356965</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2016">
+                <ID Source="PubMed">27854360</ID>
+                <ID Source="DOI">10.1038/gim.2016.190</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2021">
+                <ID Source="PubMed">33410258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2015">
+                <ID Source="PubMed">26324357</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="CAPS, 2020">
+                <ID Source="PubMed">31672839</ID>
+                <ID Source="pmc">7295005</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2022">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/genetics_bop.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology, Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic version 2.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31429903</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479213</ID>
+                <ID Source="BookShelf">NBK545867</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="ACMG ACT, 2019">
+                <URL>https://www.acmg.net/PDFLibrary/Hereditary-Breast-Ovarian-Cancer.pdf</URL>
+                <CitationText>American College of Medical Genetics and Genomics, Genomic Testing (Secondary Findings) ACT Sheet, BRCA1 and BRCA2 Pathogenic Variants (Hereditary Breast and Ovarian Cancer), 2019</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg164</URL>
+                <CitationText>UK NICE Clinical Guideline CG164, Familial breast cancer: classification, care and managing breast cancer and related risks in people with a family history of breast cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE, 2024">
+                <URL>https://www.nice.org.uk/guidance/ng241</URL>
+                <CitationText>UK NICE Guideline NG241, Ovarian cancer: identifying and managing familial and genetic risk, 2024</CitationText>
+              </Citation>
+              <XRef ID="145" DB="Orphanet"/>
+              <XRef ID="C2675520" DB="MedGen"/>
+              <XRef ID="MONDO:0012933" DB="MONDO"/>
+              <XRef Type="MIM" ID="612555" DB="OMIM"/>
+            </Trait>
+            <Trait ID="536" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">hereditary breast carcinoma</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Familial cancer of breast</ElementValue>
+                <XRef ID="254843006" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">BREAST CANCER, FAMILIAL</ElementValue>
+                <XRef Type="MIM" ID="114480" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="607585.0020" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="179617.0001" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast cancer</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000558503" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000562228" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000561700" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000570011" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000569423" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="17142"/>
+                <XRef ID="17142" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301425</ID>
+                <ID Source="BookShelf">NBK1247</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="Stratton and Rahman, 2008">
+                <ID Source="PubMed">18163131</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17508274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014 [Archived]">
+                <ID Source="PubMed">24366376</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014">
+                <ID Source="PubMed">24366402</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2013">
+                <ID Source="PubMed">24432435</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Breast and Gynecologic Cancers">
+                <ID Source="PubMed">26389210</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2023">
+                <URL>https://www.nccn.org/guidelines/guidelines-detail?category=1&amp;id=1419</URL>
+                <CitationText>Breast Cancer, NCCN Guidelines Version 4.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2022">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/genetics_bop.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology, Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic version 2.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="St. Gallen, 2021">
+                <ID Source="PubMed">34242744</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31429903</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479213</ID>
+                <ID Source="BookShelf">NBK545867</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="ACMG ACT, 2019">
+                <URL>https://www.acmg.net/PDFLibrary/Hereditary-Breast-Ovarian-Cancer.pdf</URL>
+                <CitationText>American College of Medical Genetics and Genomics, Genomic Testing (Secondary Findings) ACT Sheet, BRCA1 and BRCA2 Pathogenic Variants (Hereditary Breast and Ovarian Cancer), 2019</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg164</URL>
+                <CitationText>UK NICE Clinical Guideline CG164, Familial breast cancer: classification, care and managing breast cancer and related risks in people with a family history of breast cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2025">
+                <URL>https://www.nice.org.uk/guidance/ng101</URL>
+                <CitationText>UK NICE Guideline NG101, Early and locally advanced breast cancer: diagnosis and management, 2025</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE Clinical Guideline, 2025">
+                <URL>https://www.nice.org.uk/guidance/cg81</URL>
+                <CitationText>Advanced breast cancer: diagnosis and treatment, CG81, 2025</CitationText>
+              </Citation>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">42258614</ID>
+                <ID Source="BookShelf">NBK623002</ID>
+              </Citation>
+              <XRef ID="227535" DB="Orphanet"/>
+              <XRef ID="C0346153" DB="MedGen"/>
+              <XRef ID="MONDO:0016419" DB="MONDO"/>
+              <XRef Type="MIM" ID="114480" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="98005" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="76329" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">BRCA2-related cancer predisposition</ElementValue>
+                <XRef ID="MONDO:0700269" DB="MONDO"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="26409"/>
+                <XRef ID="26409" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <XRef ID="CN377758" DB="MedGen"/>
+              <XRef ID="MONDO:0700269" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="7920" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="16761" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast and ovarian cancer</ElementValue>
+                <XRef ID="UWMG_4506306" DB="CSER _CC_NCGL, University of Washington"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Breast and ovarian cancer</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Hereditary breast ovarian cancer syndrome</ElementValue>
+                <XRef ID="MONDO:0003582" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">BRCA1- and BRCA2-Associated Hereditary Breast and Ovarian Cancer</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast and ovarian cancer syndrome</ElementValue>
+                <XRef ID="D061325" DB="MeSH"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast and/or ovarian cancer syndrome</ElementValue>
+                <XRef ID="145" DB="Orphanet"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast and ovarian cancer syndrome (HBOC)</ElementValue>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">HBOC</ElementValue>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="public definition">BRCA1- and BRCA2-associated hereditary breast and ovarian cancer (HBOC) is characterized by an increased risk for female and male breast cancer, ovarian cancer (including fallopian tube and primary peritoneal cancers), and to a lesser extent other cancers such as prostate cancer, pancreatic cancer, and melanoma primarily in individuals with a BRCA2 pathogenic variant. The risk of developing an associated cancer varies depending on whether HBOC is caused by a BRCA1 or BRCA2 pathogenic variant.</Attribute>
+                <XRef ID="NBK1247" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000558867" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000325401" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000522278" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521908" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000530120" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000501981" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000021468" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000527942" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000562228" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528915" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000502103" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000558503" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000595973" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000325409" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000604264" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521909" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000522559" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521499" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552245" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509978" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592450" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528916" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000330054" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000558910" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509980" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000514601" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552302" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000021517" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="15010"/>
+                <XRef ID="15010" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301425</ID>
+                <ID Source="BookShelf">NBK1247</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACS, 2007">
+                <ID Source="PubMed">17392385</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2010">
+                <ID Source="PubMed">20065170</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2003">
+                <ID Source="PubMed">12692171</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="Stratton and Rahman, 2008">
+                <ID Source="PubMed">18163131</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17508274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACOG, 2009">
+                <ID Source="PubMed">19305347</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23788249</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Phillips et al., 2013">
+                <ID Source="PubMed">23918944</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Domchek et al., 2010">
+                <ID Source="pmc">2948529</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2014">
+                <ID Source="PubMed">24493721</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014 [Archived]">
+                <ID Source="PubMed">24366376</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2013">
+                <ID Source="PubMed">23188549</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014">
+                <ID Source="PubMed">24366402</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2013">
+                <ID Source="PubMed">24432435</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2015">
+                <ID Source="PubMed">25356965</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2016">
+                <ID Source="PubMed">27854360</ID>
+                <ID Source="DOI">10.1038/gim.2016.190</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2021">
+                <ID Source="PubMed">33410258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2015">
+                <ID Source="PubMed">26324357</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2022">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/genetics_bop.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology, Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic version 2.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31429903</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479213</ID>
+                <ID Source="BookShelf">NBK545867</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="ACMG ACT, 2019">
+                <URL>https://www.acmg.net/PDFLibrary/Hereditary-Breast-Ovarian-Cancer.pdf</URL>
+                <CitationText>American College of Medical Genetics and Genomics, Genomic Testing (Secondary Findings) ACT Sheet, BRCA1 and BRCA2 Pathogenic Variants (Hereditary Breast and Ovarian Cancer), 2019</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg164</URL>
+                <CitationText>UK NICE Clinical Guideline CG164, Familial breast cancer: classification, care and managing breast cancer and related risks in people with a family history of breast cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg122</URL>
+                <CitationText>UK NICE Clinical guideline (CG122), Ovarian cancer: recognition and initial management, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="EMQN, 2024">
+                <URL>https://www.nature.com/articles/s41431-023-01507-5</URL>
+                <CitationText>EMQN best practice guidelines for genetic testing in hereditary breast and ovarian cancer</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE, 2024">
+                <URL>https://www.nice.org.uk/guidance/ng241</URL>
+                <CitationText>UK NICE Guideline NG241, Ovarian cancer: identifying and managing familial and genetic risk, 2024</CitationText>
+              </Citation>
+              <XRef ID="145" DB="Orphanet"/>
+              <XRef ID="C0677776" DB="MedGen"/>
+              <XRef ID="D061325" DB="MeSH"/>
+              <XRef ID="MONDO:0003582" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="2560" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="636" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">BRCA2 Hereditary Breast and Ovarian Cancer</ElementValue>
+                <XRef ID="NBK1247" DB="GeneReviews"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Breast-ovarian cancer, familial, susceptibility to, 2</ElementValue>
+                <XRef ID="MONDO:0012933" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">BROVCA2</ElementValue>
+                <XRef Type="MIM" ID="612555" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">BRCA1- and BRCA2-associated hereditary breast and ovarian cancer (HBOC) is characterized by an increased risk for female and male breast cancer, ovarian cancer (including fallopian tube and primary peritoneal cancers), and to a lesser extent other cancers such as prostate cancer, pancreatic cancer, and melanoma primarily in individuals with a BRCA2 pathogenic variant. The risk of developing an associated cancer varies depending on whether HBOC is caused by a BRCA1 or BRCA2 pathogenic variant.</Attribute>
+                <XRef ID="NBK1247" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000552245" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000530120" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528915" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000325401" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000332529" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528916" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000021468" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552304" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000330054" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509450" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000527942" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000512816" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509692" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000509980" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000604264" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592961" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000562228" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="27821"/>
+                <XRef ID="27821" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301425</ID>
+                <ID Source="BookShelf">NBK1247</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACS, 2007">
+                <ID Source="PubMed">17392385</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2010">
+                <ID Source="PubMed">20065170</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17508274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACOG, 2009">
+                <ID Source="PubMed">19305347</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23788249</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Phillips et al., 2013">
+                <ID Source="PubMed">23918944</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Domchek et al., 2010">
+                <ID Source="pmc">2948529</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2014">
+                <ID Source="PubMed">24493721</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014 [Archived]">
+                <ID Source="PubMed">24366376</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="CAPS, 2013">
+                <ID Source="pmc">3585492</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2013">
+                <ID Source="PubMed">23188549</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014">
+                <ID Source="PubMed">24366402</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2013">
+                <ID Source="PubMed">24432435</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2015">
+                <ID Source="PubMed">25356965</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2016">
+                <ID Source="PubMed">27854360</ID>
+                <ID Source="DOI">10.1038/gim.2016.190</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2021">
+                <ID Source="PubMed">33410258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2015">
+                <ID Source="PubMed">26324357</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="CAPS, 2020">
+                <ID Source="PubMed">31672839</ID>
+                <ID Source="pmc">7295005</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2022">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/genetics_bop.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology, Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic version 2.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31429903</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479213</ID>
+                <ID Source="BookShelf">NBK545867</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="ACMG ACT, 2019">
+                <URL>https://www.acmg.net/PDFLibrary/Hereditary-Breast-Ovarian-Cancer.pdf</URL>
+                <CitationText>American College of Medical Genetics and Genomics, Genomic Testing (Secondary Findings) ACT Sheet, BRCA1 and BRCA2 Pathogenic Variants (Hereditary Breast and Ovarian Cancer), 2019</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg164</URL>
+                <CitationText>UK NICE Clinical Guideline CG164, Familial breast cancer: classification, care and managing breast cancer and related risks in people with a family history of breast cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE, 2024">
+                <URL>https://www.nice.org.uk/guidance/ng241</URL>
+                <CitationText>UK NICE Guideline NG241, Ovarian cancer: identifying and managing familial and genetic risk, 2024</CitationText>
+              </Citation>
+              <XRef ID="145" DB="Orphanet"/>
+              <XRef ID="C2675520" DB="MedGen"/>
+              <XRef ID="MONDO:0012933" DB="MONDO"/>
+              <XRef Type="MIM" ID="612555" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="774" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="536" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">hereditary breast carcinoma</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Familial cancer of breast</ElementValue>
+                <XRef ID="254843006" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">BREAST CANCER, FAMILIAL</ElementValue>
+                <XRef Type="MIM" ID="114480" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="607585.0020" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="179617.0001" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary breast cancer</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000558503" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000562228" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000561700" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000570011" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000569423" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="17142"/>
+                <XRef ID="17142" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301425</ID>
+                <ID Source="BookShelf">NBK1247</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="Stratton and Rahman, 2008">
+                <ID Source="PubMed">18163131</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17508274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014 [Archived]">
+                <ID Source="PubMed">24366376</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2014">
+                <ID Source="PubMed">24366402</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2013">
+                <ID Source="PubMed">24432435</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Breast and Gynecologic Cancers">
+                <ID Source="PubMed">26389210</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2023">
+                <URL>https://www.nccn.org/guidelines/guidelines-detail?category=1&amp;id=1419</URL>
+                <CitationText>Breast Cancer, NCCN Guidelines Version 4.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2022">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/genetics_bop.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology, Genetic/Familial High-Risk Assessment: Breast, Ovarian, and Pancreatic version 2.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="St. Gallen, 2021">
+                <ID Source="PubMed">34242744</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31429903</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479213</ID>
+                <ID Source="BookShelf">NBK545867</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="ACMG ACT, 2019">
+                <URL>https://www.acmg.net/PDFLibrary/Hereditary-Breast-Ovarian-Cancer.pdf</URL>
+                <CitationText>American College of Medical Genetics and Genomics, Genomic Testing (Secondary Findings) ACT Sheet, BRCA1 and BRCA2 Pathogenic Variants (Hereditary Breast and Ovarian Cancer), 2019</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/cg164</URL>
+                <CitationText>UK NICE Clinical Guideline CG164, Familial breast cancer: classification, care and managing breast cancer and related risks in people with a family history of breast cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2025">
+                <URL>https://www.nice.org.uk/guidance/ng101</URL>
+                <CitationText>UK NICE Guideline NG101, Early and locally advanced breast cancer: diagnosis and management, 2025</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE Clinical Guideline, 2025">
+                <URL>https://www.nice.org.uk/guidance/cg81</URL>
+                <CitationText>Advanced breast cancer: diagnosis and treatment, CG81, 2025</CitationText>
+              </Citation>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">42258614</ID>
+                <ID Source="BookShelf">NBK623002</ID>
+              </Citation>
+              <XRef ID="227535" DB="Orphanet"/>
+              <XRef ID="C0346153" DB="MedGen"/>
+              <XRef ID="MONDO:0016419" DB="MONDO"/>
+              <XRef Type="MIM" ID="114480" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="25616" Type="Finding" ContributesToAggregateClassification="false">
+            <Trait ID="34847" Type="Finding">
+              <Name>
+                <ElementValue Type="Alternate">Cancer breast</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Malignant tumor of breast</ElementValue>
+                <XRef ID="254837009" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Malignant breast neoplasm</ElementValue>
+                <XRef ID="C9335" DB="NCI"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000604264" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="ASCO, 2010">
+                <ID Source="pmc">2936467</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Breast and Gynecologic Cancers">
+                <ID Source="PubMed">26389210</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2023">
+                <URL>https://www.nccn.org/guidelines/guidelines-detail?category=1&amp;id=1419</URL>
+                <CitationText>Breast Cancer, NCCN Guidelines Version 4.2022</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2018">
+                <ID Source="PubMed">29939840</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="USPSTF, 2019">
+                <ID Source="PubMed">31479144</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2019">
+                <ID Source="PubMed">30452337</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2018">
+                <URL>https://www.nice.org.uk/guidance/dg34</URL>
+                <CitationText>Tumour profiling tests to guide adjuvant chemotherapy decisions in early breast cancer (DG34)</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2023">
+                <URL>https://www.nice.org.uk/guidance/ng12</URL>
+                <CitationText>UK NICE Guideline NG12, Suspected cancer: recognition and referral, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2023">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/breast.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) Breast Cancer, 2023</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2025">
+                <URL>https://www.nice.org.uk/guidance/ng101</URL>
+                <CitationText>UK NICE Guideline NG101, Early and locally advanced breast cancer: diagnosis and management, 2025</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="UK NICE Clinical Guideline, 2025">
+                <URL>https://www.nice.org.uk/guidance/cg81</URL>
+                <CitationText>Advanced breast cancer: diagnosis and treatment, CG81, 2025</CitationText>
+              </Citation>
+              <XRef ID="C0006142" DB="MedGen"/>
+              <XRef ID="MONDO:0007254" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="264294" SubmissionDate="2014-03-28" ContributesToAggregateClassification="false" DateLastUpdated="2015-10-11" DateCreated="2014-04-01">
+        <ClinVarSubmissionID localKey="U43746.1:n.8765_8766delAG|MedGen:C2675520"/>
+        <ClinVarAccession Accession="SCV000147396" DateUpdated="2015-10-11" DateCreated="2014-04-01" Type="SCV" Version="2" SubmitterName="Breast Cancer Information Core (BIC) (BRCA2)" OrgID="504197" OrganizationCategory="locus-specific database (LSDB)"/>
+        <RecordStatus>current</RecordStatus>
+        <ReplacedList>
+          <Replaced Accession="SCV000147394" DateChanged="2017-03-26" Version="1"/>
+        </ReplacedList>
+        <Classification DateLastEvaluated="2002-05-29">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="10"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <GeographicOrigin>Native American</GeographicOrigin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <GeographicOrigin>Western European</GeographicOrigin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="2"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Caucasian</Ethnicity>
+              <GeographicOrigin>Czech Republic</GeographicOrigin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="11"/>
+            </ObservedData>
+            <Citation>
+              <ID Source="PubMed">15024741</ID>
+            </Citation>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Caucasian Non Hispanic</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>French Canadian</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="14"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="23"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European, French Canadian</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="7"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European, Native American</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European, Native American, French Canadian</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European, Near Eastern</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Western European, Portuguese, French Canadian</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="3"/>
+            </ObservedData>
+          </ObservedIn>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Ethnicity>French Canadian</Ethnicity>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <GeneLocation>U43746.1:exon 20</GeneLocation>
+          </Location>
+          <OtherNameList>
+            <Name>8765delAG</Name>
+          </OtherNameList>
+          <XRefList>
+            <XRef DB="dbSNP" ID="80359716" Type="rsNumber"/>
+          </XRefList>
+          <AttributeSet>
+            <Attribute Type="HGVS">U43746.1:n.8765_8766delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+            <XRef DB="MedGen" ID="C2675520" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="582335" SubmissionDate="2016-09-13" ContributesToAggregateClassification="true" DateLastUpdated="2016-09-24" DateCreated="2016-09-24">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8537_8538delAG|OMIM:612555" submittedAssembly="not applicable"/>
+        <ClinVarAccession Accession="SCV000301287" DateUpdated="2016-09-24" DateCreated="2016-09-24" Type="SCV" Version="2" SubmitterName="Evidence-based Network for the Interpretation of Germline Mutant Alleles (ENIGMA)" OrgID="504863" OrganizationCategory="consortium" OrgAbbreviation="ENIGMA"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2016-09-08">
+          <ReviewStatus>reviewed by expert panel</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>Variant allele predicted to encode a truncated non-functional protein.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ENIGMA BRCA1/2 Classification Criteria (2015)</Attribute>
+          <Citation Type="general">
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/c2ffjci6/enigma_rules_2015-03-26.pdf</URL>
+            <CitationText>ENIGMA BRCA1/2 Classification Criteria (2015)</CitationText>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>curation</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="612555" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <StudyDescription>ENIGMA (Evidence-based Network for the Interpretation of Germline Mutant Alleles) is a consortium focused on determining the clinical significance of variants in BRCA1, BRCA2 and other known/suspected breast cancer genes. http://enigmaconsortium.org/</StudyDescription>
+        <SubmissionNameList>
+          <SubmissionName>ENIGMA_2016-09-13</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1688825" SubmissionDate="2018-07-18" ContributesToAggregateClassification="false" DateLastUpdated="2018-12-24" DateCreated="2018-12-24">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8537_8538delAG|MedGen:CN221562" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000863619" DateUpdated="2018-12-24" DateCreated="2018-12-24" Type="SCV" Version="1" SubmitterName="Foulkes Cancer Genetics LDI, Lady Davis Institute for Medical Research" OrgID="500086" OrganizationCategory="laboratory" OrgAbbreviation="WDFlab"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2016-05-11">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Breast and/or ovarian cancer</ElementValue>
+            </Name>
+            <XRef DB="MedGen" ID="CN221562" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <StudyName>The Canadian Open Genetics Repository (COGR)</StudyName>
+        <SubmissionNameList>
+          <SubmissionName>SUB4310295</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="10394502" SubmissionDate="2024-11-08" ContributesToAggregateClassification="false" DateLastUpdated="2024-11-24" DateCreated="2024-11-24">
+        <ClinVarSubmissionID localKey="484120|Not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV005414167" DateUpdated="2024-11-24" DateCreated="2024-11-24" Type="SCV" Version="1" SubmitterName="Mayo Clinic Laboratories, Mayo Clinic" OrgID="500068" OrganizationCategory="laboratory" OrgAbbreviation="MCL"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-08-30">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">11512557</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">19619314</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25085752</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">28888541</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29506128</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32438681</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">33939675</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Comment>PM5_strong, PVS1</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="3"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <GeneLocation>NM_000059.3:exon 20</GeneLocation>
+          </Location>
+          <OtherNameList>
+            <Name>p.Glu2846Glyfs*22</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14852428</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="304530" SubmissionDate="2025-04-14" ContributesToAggregateClassification="false" DateLastUpdated="2025-04-28" DateCreated="2014-08-06">
+        <ClinVarSubmissionID localKey="a80755|MedGen:C0027672" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000186015" DateUpdated="2025-04-28" DateCreated="2014-08-06" Type="SCV" Version="10" SubmitterName="Ambry Genetics" OrgID="61756" OrganizationCategory="laboratory" OrgAbbreviation="Ambry"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-01-02">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">11512557</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16047344</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">18489799</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25884701</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">27603373</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">28918466</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29086229</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29506128</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30322717</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32341426</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32885271</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">33235458</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">33471991</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Comment>The c.8537_8538delAG pathogenic mutation, located in coding exon 19 of the BRCA2 gene, results from a deletion of two nucleotides at nucleotide positions 8537 to 8538, causing a translational frameshift with a predicted alternate stop codon (p.E2846Gfs*22). This mutation has been reported in multiple individuals and families with hereditary breast and ovarian cancer (HBOC) syndrome (Foretova L et al. Hum. Mutat. 2004 Apr;23(4):397-8; Palomba G et al. Cancer, 2005 Sep;104:1172-9; Machackova E et al. BMC Cancer, 2008 May;8:140; Zhang S et al. Gynecol. Oncol. 2011 May;121(2):353-7; Abd-Rabbo D et al. Cancer Prev. Res. 2012 May;5(5):765-77; Belanger MH et al. J Ovarian Res, 2015 Mar;8:1; El Ghorayeb N et al. Medicine (Baltimore), 2016 Sep;95:e4756; Carter NJ et al. Gynecol Oncol, 2018 12;151:481-488; Bernstein-Molho R et al. Breast Cancer Res Treat, 2018 02;167:697-702; Felix GES et al. Fam Cancer, 2018 10;17:471-483; Lowery MA et al. J Natl Cancer Inst, 2018 10;110:1067-1074; De Talhouet S et al. Sci Rep, 2020 04;10:7073; Dorling et al. N Engl J Med. 2021 02;384:428-439), and has also been reported in a family with a history of male breast and prostate cancer (Phelan CM et al. Nat. Genet. 1996 May;13(1):120-2). This mutation has also been reported in patients with pancreatic and gastric cancers (Halpern N et al. Onco Targets Ther, 2020 Nov;13:11637-11644; Lerner-Ellis J et al. J Cancer Res Clin Oncol, 2021 Mar;147:871-879). This alteration is known to be one of the more commonly occurring BRCA2 mutations in several different regions in Europe and North America (Tonin PN et al. Am J Hum Genet, 1998 Nov;63:1341-51; Manning AP et al. Hum Hered, 2001;52:116-20; Palomba G et al. BMC Cancer, 2007 Jul;7:132; Janavicius R. EPMA J. 2010 Sep;1(3):397-412). Of note, this alteration is also designated as 8535delAG, 8765delAG, c.8764_8765delAG and c.8537_8538del2 in published literature. In addition to the clinical data presented in the literature, this alteration is expected to result in loss of function by premature protein truncation or nonsense-mediated mRNA decay. As such, this alteration is interpreted as a disease-causing mutation.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Ambry Variant Classification Scheme 2023</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/i9igeqse/ambry_variant_classification_scheme_2023.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>All AVA3 Novel and Update Variants_103122</SubmissionName>
+          <SubmissionName>FinalClinVarSubmissionFile_20140101to20240315_ava3_1</SubmissionName>
+          <SubmissionName>FinalClinVarSubmissionFile_20240315to20240625</SubmissionName>
+          <SubmissionName>FinalClinVarSubmissionFile_20241211to20250315</SubmissionName>
+          <SubmissionName>NonExomeUpdate_081220AmbryReport</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="952962" SubmissionDate="2025-06-25" ContributesToAggregateClassification="false" DateLastUpdated="2025-06-29" DateCreated="2016-11-05">
+        <ClinVarSubmissionID localKey="51510|OMIM:612555" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000489211" DateUpdated="2025-06-29" DateCreated="2016-11-05" Type="SCV" Version="3" SubmitterName="Counsyl" OrgID="320494" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2016-09-16">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">25085752</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Comment>This submission and the accompanying classification are no longer maintained by the submitter. For more information on current observations and classification, please contact variantquestions@myriad.com.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="612555" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>Counsyl2016</SubmissionName>
+          <SubmissionName>SUB6711559</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="337590" SubmissionDate="2014-08-08" ContributesToAggregateClassification="false" DateLastUpdated="2014-10-19" DateCreated="2014-10-19">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8537_8538delAG|OMIM:612555"/>
+        <ClinVarAccession Accession="SCV000189901" DateUpdated="2014-10-19" DateCreated="2014-10-19" Type="SCV" Version="1" SubmitterName="Pathway Genomics" OrgID="505209" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2014-07-24">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">16047344</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23199084</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17591843</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">18489799</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">19619314</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+            <XRef DB="OMIM" ID="612555" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="30136" SubmissionDate="2016-09-09" ContributesToAggregateClassification="false" DateLastUpdated="2015-04-26" DateCreated="2013-04-04">
+        <ClinVarSubmissionID localKey="600185.0012_BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2" title="BRCA2, 2-BP DEL, 8765AG_BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2"/>
+        <ClinVarAccession Accession="SCV000030136" DateUpdated="2015-04-26" DateCreated="2013-04-04" Type="SCV" Version="3" SubmitterName="OMIM" OrgID="3" OrganizationCategory="resource"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="1998-07-01">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species>human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>literature only</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">Phelan et al. (1996) identified an 8765delAG mutation in the BRCA2 gene in 2 French Canadian patients whose families included 22 females with breast cancer (BROVCA2; 612555) only, with mean age of diagnosis of 49.2 years. Lerer et al. (1998) found the same mutation in 3 Yemenite Jewish families with breast cancer; haplotype analysis indicated that the mutation was derived from a common ancestor.</Attribute>
+              <Citation>
+                <ID Source="PubMed">8673090</ID>
+              </Citation>
+              <Citation>
+                <ID Source="PubMed">9634522</ID>
+              </Citation>
+              <XRef DB="OMIM" ID="612555" Type="MIM"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <Name>BRCA2, 2-BP DEL, 8765AG</Name>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="NonHGVS">2-BP DEL, 8765AG</Name>
+          </OtherNameList>
+          <XRefList>
+            <XRef DB="OMIM" ID="600185.0012" Type="Allelic variant"/>
+          </XRefList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="507654" SubmissionDate="2019-03-21" ContributesToAggregateClassification="false" DateLastUpdated="2017-12-26" DateCreated="2016-05-29">
+        <ClinVarSubmissionID localKey="65326075|Orphanet:ORPHA145" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000271336" DateUpdated="2017-12-26" DateCreated="2016-05-29" Type="SCV" Version="3" SubmitterName="Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine" OrgID="21766" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2016-02-08">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">17591843</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Comment>The p.Glu2846fs variant in BRCA2 is a well-established pathogenic founder varian t for several populations, including French Canadians, Jewish-Yemenites, and Nor thern Sardinian (Tonin 1998, Lerer 1998, Ferla 2007). This variant has been ide ntified in 1/66688 European chromosomes by the Exome Aggregation Consortium (ExA C, http://exac.broadinstitute.org; dbSNP rs80359716). This frequency is low enou gh to be consistent with the frequency of hereditary breast and ovarian cancer ( HBOC) in the general population. This variant is predicted to cause a frameshift , which alters the protein?s amino acid sequence beginning at position 2846 and leads to a premature termination codon 22 amino acids downstream. This alteratio n is then predicted to lead to a truncated or absent protein. Heterozygous loss of BRCA2 function is an established disease mechanism in HBOC. In summary, this variant meets our criteria to be classified as pathogenic for HBOC in an autosom al dominant manner.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">LMM Criteria</Attribute>
+          <Citation>
+            <ID Source="PubMed">24033266</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+              <FamilyData NumFamiliesWithVariant="2"/>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="2"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <GeneLocation>NM_000059.3:EXON 20</GeneLocation>
+          </Location>
+          <OtherNameList>
+            <Name>NM_000059.3:c.8537_8538delAG</Name>
+            <Name>p.Glu2846GlyfsX22</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="Orphanet" ID="ORPHA145"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB5348977</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="4894654" SubmissionDate="2022-04-22" ContributesToAggregateClassification="false" DateLastUpdated="2022-04-23" DateCreated="2022-04-23">
+        <ClinVarSubmissionID localKey=":Chr.13_32945137_AAG_A|Not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV002503465" DateUpdated="2022-04-23" DateCreated="2022-04-23" Type="SCV" Version="1" SubmitterName="AiLife Diagnostics, AiLife Diagnostics" OrgID="507594" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2021-07-23">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">22401979</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30322717</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">27603373</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29625052</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32885271</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29506128</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25085752</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30720243</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <TypePlatform>NGS</TypePlatform>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+            <ObservedData>
+              <Attribute Type="SecondaryFinding">no</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="13" alternateAllele="A" referenceAllele="AAG" start="32945137" stop="32945139" variantLength="3"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB11350707</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1793575" SubmissionDate="2022-07-29" ContributesToAggregateClassification="false" DateLastUpdated="2022-08-08" DateCreated="2019-06-03">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8537_8538delAG|MedGen:C0677776" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000916958" DateUpdated="2022-08-08" DateCreated="2019-06-03" Type="SCV" Version="2" SubmitterName="Women's Health and Genetics/Laboratory Corporation of America, LabCorp" OrgID="500026" OrganizationCategory="laboratory" OrgAbbreviation="WHG-LC"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-06-03">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">18489799</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">22401979</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23621881</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">11512557</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Comment>Variant summary: BRCA2 c.8537_8538delAG (p.Glu2846GlyfsX22) results in a premature termination codon, predicted to cause a truncation of the encoded protein or absence of the protein due to nonsense mediated decay, which are commonly known mechanisms for disease. Truncations downstream of this position have been classified as pathogenic by our laboratory. The variant allele was found at a frequency of 1.2e-05 in 251142 control chromosomes. c.8537_8538delAG has been reported in the literature in many individuals and families affected with Hereditary Breast And Ovarian Cancer Syndrome (example Phelan_1996, Machackova_2008, Ghadirian_2014) including 76 patients from the BIC database. It is commonly reported as a pathogenic variant in French Canadian, Yemenite Jewish, and Northern Sardinian populations (example Lerer_1998, Manning_2001, Palomba_ 2007). These data indicate that the variant is very likely to be associated with disease. Multiple clinical diagnostic laboratories and reputable databases have classified this variant as pathogenic in ClinVar. Based on the evidence outlined above, the variant was classified as pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">LabCorp Variant Classification Summary - May 2015</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/rtxspsnt/labcorp_variant_classification_method_-_may_2015.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0677776" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB11876943</SubmissionName>
+          <SubmissionName>SUB5494893</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7863346" SubmissionDate="2024-06-05" ContributesToAggregateClassification="false" DateLastUpdated="2024-06-17" DateCreated="2023-12-30">
+        <ClinVarSubmissionID localKey="NM_000059.4:c.8537_8538del|OMIM:114480" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV004213708" DateUpdated="2024-06-17" DateCreated="2023-12-30" Type="SCV" Version="2" SubmitterName="Baylor Genetics" OrgID="1006" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-03-07">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.4:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="114480" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>GA_HC_20231102_20240331</SubmissionName>
+          <SubmissionName>SUB13856327</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="11373208" SubmissionDate="2025-03-18" ContributesToAggregateClassification="false" DateLastUpdated="2025-04-28" DateCreated="2025-04-28">
+        <ClinVarSubmissionID localKey="NC_000013.10:g.32945142_32945143del|OMIM:114480;612555" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV005913702" DateUpdated="2025-04-28" DateCreated="2025-04-28" Type="SCV" Version="1" SubmitterName="Department of Pathology and Laboratory Medicine, Sinai Health System" OrgID="506152" OrganizationCategory="laboratory" OrgAbbreviation="PLM-SHS"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2017-11-06">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">18489799</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25085752</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">19656164</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">26976419</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease" multipleConditionExplanation="Uncertain">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="114480" Type="MIM"/>
+          </Trait>
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="612555" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB15183097</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1339522" SubmissionDate="2025-04-29" ContributesToAggregateClassification="false" DateLastUpdated="2025-05-03" DateCreated="2018-02-19">
+        <ClinVarSubmissionID localKey="Db4KrQBSZeoE7-orUyypkb8LfnX9Cazr-4x4INGqHtY|MedGen:C0027672" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000683979" DateUpdated="2025-05-03" DateCreated="2018-02-19" Type="SCV" Version="5" SubmitterName="Color Diagnostics, LLC DBA Color Health" OrgID="505849" OrganizationCategory="laboratory" OrgAbbreviation="Color"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-07-28">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">11512557</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">15024741</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">15382066</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16047344</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29446198</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">31853058</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">33471991</ID>
+          </Citation>
+          <Comment>This variant deletes 2 nucleotides in exon 20 of the BRCA2 gene, creating a frameshift and premature translation stop signal. This variant is also known as 8765delAG in the literature. This variant is expected to result in an absent or non-functional protein product. This variant has been reported as a recurrent mutation in individuals and families affected with breast and ovarian cancer in North American, Europe and the Middle East (PMID: 8673090, 9634522, 15024741, 15382066, 16047344, 29446198, 33471991). A multifactorial analysis has reported a likelihood ratio for pathogenicity greater than 40,000:1 based on health history of 24 probands (PMID: 31853058). Haplotype analyses suggest that this mutation may have arisen independently as founder mutations in the French-Canadian, Yemenite Jewish and Sardinian populations (PMID: 11512557, 17640379). This variant has been identified in 3/251142 chromosomes in the general population by the Genome Aggregation Database (gnomAD). Loss of BRCA2 function is a known mechanism of disease (clinicalgenome.org). Based on the available evidence, this variant is classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <TypePlatform>NGS</TypePlatform>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.4:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>ColorClinVarSubmissionJune2021_SUB9834248</SubmissionName>
+          <SubmissionName>SUB14171678</SubmissionName>
+          <SubmissionName>SUB15288549</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7118799" SubmissionDate="2025-08-19" ContributesToAggregateClassification="false" DateLastUpdated="2025-09-06" DateCreated="2023-03-04">
+        <ClinVarSubmissionID localKey="f6d69977cdec827c67c774e15fcef716b6a91380874c0067a31e6d15c52127f7|not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV003813739" DateUpdated="2025-09-06" DateCreated="2023-03-04" Type="SCV" Version="3" SubmitterName="Revvity Omics, Revvity" OrgID="167595" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-11-29">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB12922107</SubmissionName>
+          <SubmissionName>SUB14173319</SubmissionName>
+          <SubmissionName>SUB15540076</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="13989691" SubmissionDate="2026-01-09" ContributesToAggregateClassification="false" DateLastUpdated="2026-01-24" DateCreated="2026-01-24">
+        <ClinVarSubmissionID localKey="4858970|MedGen:C3661900" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV007331338" DateUpdated="2026-01-24" DateCreated="2026-01-24" Type="SCV" Version="1" SubmitterName="ARUP Laboratories, Molecular Genetics and Genomics, ARUP Laboratories" OrgID="25969" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-04-21">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment Type="public">The BRCA2 c.8537_8538del; p.Glu2846GlyfsTer22 variant (rs80359714, ClinVar Variation ID: 9328), also known as 8535delAG and 8765delAG in the literature, is reported in the literature in several individuals and families affected with breast and/or ovarian cancer (Selected References: Belanger 2015, El Ghorayeb 2016, Phelan 1996, Zhang 2011). Additionally, this variant has been described as a founder variant in French Canadian, Yemenite Jewish, and Northern Sardinian populations (Ferla 2007, Lerer 1998, Manning 2001, Palomba 2007, Pisano 2000, Tonin 1998). This variant is found in non-Finnish European population with an allele frequency of 0.003% (3/113,470 alleles) in the Genome Aggregation Database (v2.1.1). This variant causes a frameshift by deleting two nucleotides, so it is predicted to result in a truncated protein or mRNA subject to nonsense-mediated decay. Based on available information, this variant is considered to be pathogenic. References: Belanger MH et al. A targeted analysis identifies a high frequency of BRCA1 and BRCA2 mutation carriers in women with ovarian cancer from a founder population. J Ovarian Res. 2015 Mar 27;8:1. PMID: 25884701. El Ghorayeb N et al. First case report of an adrenocortical carcinoma caused by a BRCA2 mutation. Medicine (Baltimore). 2016 Sep;95(36):e4756. PMID: 27603373. Ferla R et al. Founder mutations in BRCA1 and BRCA2 genes. Ann Oncol. 2007 Jun;18 Suppl 6:vi93-8. PMID: 17591843. Lerer I et al. The 8765delAG mutation in BRCA2 is common among Jews of Yemenite extraction. Am J Hum Genet. 1998 Jul;63(1):272-4. PMID: 9634522. Manning AP et al. Haplotype analysis of BRCA2 8765delAG mutation carriers in French Canadian and Yemenite Jewish hereditary breast cancer families. Hum Hered. 2001;52(2):116-20. PMID: 11512557. Palomba G et al. Origin and distribution of the BRCA2-8765delAG mutation in breast cancer. BMC Cancer. 2007 Jul 19;7:132. PMID: 17640379. Phelan CM et al. Mutation analysis of the BRCA2 gene in 49 site-specific breast cancer families. Nat Genet. 1996 May;13(1):120-2. PMID: 8673090. Pisano M et al. Identification of a founder BRCA2 mutation in Sardinia. Br J Cancer. 2000 Feb;82(3):553-9. PMID: 10682665. Tonin PN et al. Founder BRCA1 and BRCA2 mutations in French Canadian breast and ovarian cancer families. Am J Hum Genet. 1998 Nov;63(5):1341-51. PMID: 9792861. Zhang S et al. Frequencies of BRCA1 and BRCA2 mutations among 1,342 unselected patients with invasive ovarian cancer. Gynecol Oncol. 2011 May 1;121(2):353-7. PMID: 21324516.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ARUP Molecular Germline Variant Investigation Process 2024</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/xwiqgyug/arup_molecular_germline_variant_investigation_process_arup-info-0022_2024.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C3661900" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB15923449</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="121493" SubmissionDate="2026-02-09" ContributesToAggregateClassification="false" DateLastUpdated="2026-02-23" DateCreated="2013-07-03">
+        <ClinVarSubmissionID localKey="165830|MedGen:C0677776" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000073563" DateUpdated="2026-02-23" DateCreated="2013-07-03" Type="SCV" Version="18" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <ReplacedList>
+          <Replaced Accession="SCV000218615" DateChanged="2015-12-11" Version="1"/>
+        </ReplacedList>
+        <Classification DateLastEvaluated="2026-01-13">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">20104584</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">22401979</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">11512557</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">15382066</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">19619314</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">27603373</ID>
+          </Citation>
+          <Comment Type="public">This sequence change creates a premature translational stop signal (p.Glu2846Glyfs*22) in the BRCA2 gene. It is expected to result in an absent or disrupted protein product. Loss-of-function variants in BRCA2 are known to be pathogenic (PMID: 20104584). This variant is present in population databases (rs80359714, gnomAD 0.003%). This premature translational stop signal has been observed in individual(s) with breast and/or ovarian cancer (PMID: 8673090, 21324516, 22401979). It is commonly reported in individuals of French Canadian, Yemenite Jewish, and Northern Sardinian ancestry (PMID: 9634522, 9792861, 11512557, 15382066, 17640379, 19619314, 27603373). This variant is also known as 8765delAG. For these reasons, this variant has been classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945138_32945139del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0677776" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <Citation Type="general">
+          <ID Source="PubMed">28492532</ID>
+        </Citation>
+        <SubmissionNameList>
+          <SubmissionName>SUB11431369</SubmissionName>
+          <SubmissionName>SUB12507860</SubmissionName>
+          <SubmissionName>SUB14200279</SubmissionName>
+          <SubmissionName>SUB15075354</SubmissionName>
+          <SubmissionName>SUB15990407</SubmissionName>
+          <SubmissionName>SUB8755776</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="89972" SubmissionDate="2015-12-29" ContributesToAggregateClassification="false" DateLastUpdated="2015-10-11" DateCreated="2013-04-04">
+        <ClinVarSubmissionID localKey="SCRP_var_801" title="NM_000059.3:c.8537_8538delAG AND Breast-ovarian cancer, familial 2"/>
+        <ClinVarAccession Accession="SCV000054357" DateUpdated="2015-10-11" DateCreated="2013-04-04" Type="SCV" Version="6" SubmitterName="Sharing Clinical Reports Project (SCRP)" OrgID="500037" OrganizationCategory="consortium" OrgAbbreviation="SCRP"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2013-04-22">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species>human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+              <NumberTested>27</NumberTested>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles">27</Attribute>
+            </ObservedData>
+            <Co-occurrenceSet>
+              <Zygosity>SingleHeterozygote</Zygosity>
+              <AlleleDescSet>
+                <Name>BRCA1:IVS2-6T&gt;C</Name>
+                <Zygosity>SingleHeterozygote</Zygosity>
+                <ClinicalSignificance>
+                  <ReviewStatus>no assertion criteria provided</ReviewStatus>
+                  <Description>Benign</Description>
+                </ClinicalSignificance>
+              </AlleleDescSet>
+              <Count>1</Count>
+            </Co-occurrenceSet>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="nucleotide change">8765DELAG</Name>
+            <Name Type="nucleotide change">8765delAG</Name>
+          </OtherNameList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Breast-ovarian cancer, familial 2</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1140886" SubmissionDate="2017-08-04" ContributesToAggregateClassification="false" DateLastUpdated="2017-04-16" DateCreated="2017-04-16">
+        <ClinVarSubmissionID localKey="290962|Orphanet:ORPHA145" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000587959" DateUpdated="2017-04-16" DateCreated="2017-04-16" Type="SCV" Version="1" SubmitterName="Research Molecular Genetics Laboratory, Women's College Hospital, University of Toronto" OrgID="506247" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2014-01-31">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>research</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name>NM_000059.3:c.8537_8538delAG</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="Orphanet" ID="ORPHA145"/>
+          </Trait>
+        </TraitSet>
+        <StudyName>The Canadian Open Genetics Repository (COGR)</StudyName>
+        <SubmissionNameList>
+          <SubmissionName>RMGL-WCRI-05152017</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1141048" SubmissionDate="2017-08-04" ContributesToAggregateClassification="false" DateLastUpdated="2017-04-16" DateCreated="2017-04-16">
+        <ClinVarSubmissionID localKey="724562|Orphanet:ORPHA145" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000588121" DateUpdated="2017-04-16" DateCreated="2017-04-16" Type="SCV" Version="1" SubmitterName="Department of Pathology and Molecular Medicine, Queen's University" OrgID="506188" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2017-04-20">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name>NM_000059.3:c.8537_8538delAG</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143delAG</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="Orphanet" ID="ORPHA145"/>
+          </Trait>
+        </TraitSet>
+        <StudyName>The Canadian Open Genetics Repository (COGR)</StudyName>
+        <SubmissionNameList>
+          <SubmissionName>QUEENSU-06202017</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="2866972" SubmissionDate="2019-06-13" ContributesToAggregateClassification="false" DateLastUpdated="2020-12-26" DateCreated="2020-12-26">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8533_8534del|MedGen:CN221562" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV001451887" DateUpdated="2020-12-26" DateCreated="2020-12-26" Type="SCV" Version="1" SubmitterName="CZECANCA consortium" OrgID="507065" OrganizationCategory="consortium"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2019-06-11">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Ethnicity>Slavic</Ethnicity>
+              <GeographicOrigin>Czech Republic</GeographicOrigin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="3"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8533_8534del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Breast and/or ovarian cancer</ElementValue>
+            </Name>
+            <XRef DB="MedGen" ID="CN221562" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <Citation Type="general">
+          <ID Source="PubMed">32295079</ID>
+        </Citation>
+        <SubmissionNameList>
+          <SubmissionName>SUB5822876</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1148652" SubmissionDate="2021-03-31" ContributesToAggregateClassification="false" DateLastUpdated="2021-04-13" DateCreated="2017-08-27">
+        <ClinVarSubmissionID localKey="chr13:32945136-32945139:c5639caa21b2554614180d5232c86259-BREAST" localKeyIsSubmitted="1" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000592208" DateUpdated="2021-04-13" DateCreated="2017-08-27" Type="SCV" Version="2" SubmitterName="Department of Pathology and Laboratory Medicine, Sinai Health System" OrgID="506152" OrganizationCategory="laboratory" OrgAbbreviation="PLM-SHS"/>
+        <AdditionalSubmitters>
+          <SubmitterDescription OrgID="506759" SubmitterName="Franklin by Genoox" Type="secondary" OrganizationCategory="other"/>
+        </AdditionalSubmitters>
+        <RecordStatus>current</RecordStatus>
+        <Classification>
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>The BRCA2 p.Glu2846GlyfsX22 variant was identified in 21 of 4958 proband chromosomes (frequency: 0.004) from individuals or families with breast and ovarian cancer (Phelan 1996, Zhang 2011, Machackova 2008, Pruss 2014, Seong M-W 2009, Tung 2016). The variant was also identified in the following databases: dbSNP (ID: rs80359714) as â€šÃ„ÃºWith Pathogenic alleleâ€šÃ„Ã¹, Clinvitae database (classified as pathogenic by ClinVar and Invitae), ARUP Laboratories BRCA Mutations Database (classification), the ClinVar database (classified as pathogenic by Invitae, Ambry genetics, GeneDx, LMMPHPM, QDNISJC, COGR, Pathway Genomics, BIC,OMIM, SCRP), COGR database (classified as pathogenic by a clinical laboratories MESHWCRI, LMM, CHEO, QUEENSU, NYG), the BIC database (76X with clinical importance), and UMD (16X with a causal classification). The variant was also identified in Exome Aggregation Consortium database (August 8, 2016) in the European population in 1 of 121324 chromosomes (freq. 0.000008). The variant occurs outside of the splicing consensus sequence and in silico or computational prediction software programs (SpliceSiteFinder, MaxEntScan, NNSPLICE, GeneSplicer, HumanSpliceFinder) do not predict a difference in splicing. The c.8537_8538del variant is predicted to cause a frameshift, which alters the protein's amino acid sequence beginning at codon 2846 and leads to a premature stop codon 22 codons downstream. This alteration is then predicted to result in a truncated or absent protein and loss of function. Loss of function variants of the BRCA2 gene are an established mechanism of disease in hereditary breast and ovarian cancer and is the type of variant expected to cause the disorder. In summary, based on the above information, this variant meets our laboratoryâ€šÃ„Ã´s criteria to be classified as pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="13"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="13" alternateAllele="A" referenceAllele="AAG" start="32945137" stop="32945139" variantLength="3"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MONDO" ID="MONDO:0007254"/>
+          </Trait>
+        </TraitSet>
+        <StudyName>The Canadian Open Genetics Repository (COGR)</StudyName>
+        <SubmissionNameList>
+          <SubmissionName>SUB9371647</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="376486" SubmissionDate="2021-09-24" ContributesToAggregateClassification="false" DateLastUpdated="2019-04-17" DateCreated="2015-02-24">
+        <ClinVarSubmissionID localKey="GDXSV:153026" localKeyIsSubmitted="1"/>
+        <ClinVarAccession Accession="SCV000210795" DateUpdated="2019-04-17" DateCreated="2015-02-24" Type="SCV" Version="14" SubmitterName="GeneDx" OrgID="26957" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2020-02-17">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>Frameshift variant predicted to result in protein truncation or nonsense mediated decay in a gene for which loss-of-function is a known mechanism of disease; Not observed at a significant frequency in large population cohorts (Lek 2016); Truncating variants in this gene are considered pathogenic by a well-established clinical consortium and/or database; Also known as 8765delAG and 8765_8766delAG; This variant is associated with the following publications: (PMID: 23929434, 8673090, 16168118, 18489799, 21947752, 23302520, 23621881, 10422801, 15024741, 20694749, 26295337, 30014164, 28918466, 29086229, 29506128, 23199084, 25884701, 19656164, 26656232, 17640379, 25452441, 22798144, 21348412, 27836010, 27603373, 27160020, 25085752, 19619314, 15382066, 11512557, 9792861, 9634522, 21324516, 17591843, 16047344, 29560538, 22401979, 30720243, 30322717, 29625052)</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">GeneDx Variant Classification Process June 2021</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/fc81e176/genedx_variant_classification_process_june_2021.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Deletion</VariantType>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">GDX:8901</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>GeneDX_Clinvar_Submission_50_20210924044205</SubmissionName>
+          <SubmissionName>SUB5098196</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="627027" SubmissionDate="2016-10-28" ContributesToAggregateClassification="false" DateLastUpdated="2022-12-11" DateCreated="2016-11-05">
+        <ClinVarSubmissionID localKey="NM_000059.3:c.8537_8538del|OMIM:612555" submittedAssembly="hg18"/>
+        <ClinVarAccession Accession="SCV000327919" DateUpdated="2022-12-11" DateCreated="2016-11-05" Type="SCV" Version="4" SubmitterName="Consortium of Investigators of Modifiers of BRCA1/2 (CIMBA), c/o University of Cambridge" OrgID="505954" OrganizationCategory="consortium" OrgAbbreviation="CIMBA"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2015-10-02">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">CIMBA Mutation Classification guidelines May 2016</Attribute>
+          <Citation Type="general">
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/nhgqiuyb/cimba_mutation_classification_guidelines_may16.pdf</URL>
+            <CitationText>CIMBA_Mutation_Classification_guidelines_May16.pdf</CitationText>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+              <FamilyData NumFamiliesWithVariant="105"/>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="612555" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>CIMBA_20161005</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="3925102" SubmissionDate="2023-07-12" ContributesToAggregateClassification="false" DateLastUpdated="2023-07-16" DateCreated="2021-11-06">
+        <ClinVarSubmissionID localKey="Chr.13_32371000_32371002_AAG_A|not provided"/>
+        <ClinVarAccession Accession="SCV002010306" DateUpdated="2023-07-16" DateCreated="2021-11-06" Type="SCV" Version="3" SubmitterName="Institute for Clinical Genetics, University Hospital TU Dresden, University Hospital TU Dresden" OrgID="505632" OrganizationCategory="clinic" OrgAbbreviation="KGE"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2021-11-03">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh38" Chr="13" alternateAllele="A" referenceAllele="AAG" start="32371000" stop="32371002"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB10612882</SubmissionName>
+          <SubmissionName>SUB13603663</SubmissionName>
+          <SubmissionName>SUB13676335</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="396166" SubmissionDate="2024-01-31" ContributesToAggregateClassification="false" DateLastUpdated="2024-02-04" DateCreated="2015-03-29">
+        <ClinVarSubmissionID localKey="307397|MedGen:CN221562" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000219410" DateUpdated="2024-02-04" DateCreated="2015-03-29" Type="SCV" Version="8" SubmitterName="CHEO Genetics Diagnostic Laboratory, Children's Hospital of Eastern Ontario" OrgID="1050" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-06-16">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="CN221562" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB10844479</SubmissionName>
+          <SubmissionName>SUB12941200</SubmissionName>
+          <SubmissionName>SUB14193745</SubmissionName>
+          <SubmissionName>SUB7083812</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="9032782" SubmissionDate="2024-12-12" ContributesToAggregateClassification="false" DateLastUpdated="2024-12-14" DateCreated="2024-04-20">
+        <ClinVarSubmissionID localKey="1468502|MONDO:700269" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV004846036" DateUpdated="2024-12-14" DateCreated="2024-04-20" Type="SCV" Version="2" SubmitterName="All of Us Research Program, National Institutes of Health" OrgID="509529" OrganizationCategory="consortium"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-09-24">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">9792861</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23621881</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29086229</ID>
+          </Citation>
+          <Comment>This variant deletes 2 nucleotides in exon 20 of the BRCA2 gene, creating a frameshift and premature translation stop signal. This variant is expected to result in an absent or non-functional protein product. To our knowledge, functional studies have not been reported for this variant. This variant has been reported as a recurring pathogenic variant in French Canadian, Sardinian, and Yemenite Jewish populations (PMID: 9792861, 17640379, 23621881, 29086229). This variant has been identified in 3/251142 chromosomes in the general population by the Genome Aggregation Database (gnomAD). Loss of BRCA2 function is a known mechanism of disease (clinicalgenome.org). Based on the available evidence, this variant is classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="ModeOfInheritance">Autosomal dominant inheritance</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+              <NumberTested>143475</NumberTested>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="4"/>
+            </ObservedData>
+            <ObservedData>
+              <Attribute Type="SingleHeterozygote" integerValue="4"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000013.10:g.32945142_32945143del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MONDO" ID="MONDO:0700269"/>
+          </Trait>
+        </TraitSet>
+        <Comment>This study involves interpretation of variants in research participants for the purpose of population health screening. Participant phenotype was not available at the time of variant classification. Additional details can be found in publication PMID: 35346344, PMCID: PMC8962531</Comment>
+        <SubmissionNameList>
+          <SubmissionName>SUB14382316</SubmissionName>
+          <SubmissionName>SUB14926623</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="574221" SubmissionDate="2025-12-02" ContributesToAggregateClassification="false" DateLastUpdated="2025-12-07" DateCreated="2015-10-11">
+        <ClinVarSubmissionID localKey="S6274|not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000296650" DateUpdated="2025-12-07" DateCreated="2015-10-11" Type="SCV" Version="5" SubmitterName="Quest Diagnostics Nichols Institute San Juan Capistrano" OrgID="500110" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-03-12">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">32341426</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32467295</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32885271</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">8673090</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">9634522</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">22401979</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30322717</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">27603373</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29625052</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29506128</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25085752</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30720243</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">29086229</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">28918466</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23621881</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">37688579</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">33471991</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17640379</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21324516</ID>
+          </Citation>
+          <Comment Type="public">The BRCA2 c.8537_8538del (p.Glu2846Glyfs*22) variant alters the translational reading frame of the BRCA2 mRNA and causes the premature termination of BRCA2 protein synthesis. This variant has been reported in the published literature in individuals affected with a personal and/or family history of breast and/or ovarian cancer (PMID: 8673090 (1996), 9634522 (1998), 17640379 (2007), 21324516 (2011), 23621881 (2014), 29625052 (2018), 28918466 (2018), 29086229 (2018), 30322717 (2018), 33471991 (2021), see also LOVD (http://databases.lovd.nl/shared)) and has been described as a founder variant in French Canadian, Sardinian, and Yemenite Jewish populations (PMID: 8673090 (1996), 9634522 (1998), 28918466 (2018)). This variant has also been reported in individuals with pancreatic cancer (PMID: 29506128 (2018), 32885271 (2021)), adrenocortical carcinoma (PMID: 27603373 (2016)) and neuroblastoma (PMID: 37688579 (2024)). Based on the available information, this variant is classified as pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Quest Diagnostics criteria</Attribute>
+          <Citation>
+            <ID Source="PubMed">26467025</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.3:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <Citation Type="general">
+          <ID Source="PubMed">26295337</ID>
+        </Citation>
+        <SubmissionNameList>
+          <SubmissionName>SUB10813355</SubmissionName>
+          <SubmissionName>SUB14108248</SubmissionName>
+          <SubmissionName>SUB15801113</SubmissionName>
+          <SubmissionName>SUB2915479</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="14514877" SubmissionDate="2026-05-07" ContributesToAggregateClassification="false" DateLastUpdated="2026-06-14" DateCreated="2026-06-14">
+        <ClinVarSubmissionID localKey="M27" localKeyIsSubmitted="1" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV007602304" DateUpdated="2026-06-14" DateCreated="2026-06-14" Type="SCV" Version="1" SubmitterName="University Health Network, Familial Cancer Clinic, Princess Margaret Cancer Centre" OrgID="508105" OrganizationCategory="clinic" OrgAbbreviation="UHN-PM"/>
+        <AdditionalSubmitters>
+          <SubmitterDescription OrgID="510310" SubmitterName="CHARM Consortium" Type="behalf" OrganizationCategory="consortium"/>
+        </AdditionalSubmitters>
+        <RecordStatus>current</RecordStatus>
+        <Classification>
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="ModeOfInheritance">Autosomal dominant inheritance</Attribute>
+        </AttributeSet>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+              <NumberTested>1</NumberTested>
+              <Sex>male</Sex>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+            <ObservedData>
+              <Attribute Type="SampleLocalID">C36</Attribute>
+            </ObservedData>
+            <TraitSet Type="Finding">
+              <Trait ClinicalFeaturesAffectedStatus="present" Type="Finding">
+                <XRef DB="HP" ID="HP:0012056"/>
+              </Trait>
+            </TraitSet>
+            <Comment Type="public">Observed in 1 individual with germline variant in CHEK2 and BRCA2</Comment>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRCA2"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000059.4:c.8537_8538del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MONDO" ID="MONDO:0700269"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB16084257</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="264294" TraitType="Disease" MappingType="Name" MappingValue="Breast-ovarian cancer, familial 2" MappingRef="Preferred">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="582335" TraitType="Disease" MappingType="XRef" MappingValue="612555" MappingRef="OMIM">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1688825" TraitType="Disease" MappingType="Name" MappingValue="Breast and/or ovarian cancer" MappingRef="Preferred">
+        <MedGen CUI="CN221562" Name="Breast and/or ovarian cancer"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="10394502" TraitType="Disease" MappingType="Name" MappingValue="Not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="304530" TraitType="Disease" MappingType="XRef" MappingValue="C0027672" MappingRef="MedGen">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="952962" TraitType="Disease" MappingType="XRef" MappingValue="612555" MappingRef="OMIM">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="337590" TraitType="Disease" MappingType="Name" MappingValue="Breast-ovarian cancer, familial 2" MappingRef="Preferred">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="30136" TraitType="Disease" MappingType="Name" MappingValue="BREAST-OVARIAN CANCER, FAMILIAL, SUSCEPTIBILITY TO, 2" MappingRef="Preferred">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="507654" TraitType="Disease" MappingType="XRef" MappingValue="ORPHA145" MappingRef="Orphanet">
+        <MedGen CUI="C0677776" Name="Hereditary breast ovarian cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="4894654" TraitType="Disease" MappingType="Name" MappingValue="Not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1793575" TraitType="Disease" MappingType="XRef" MappingValue="C0677776" MappingRef="MedGen">
+        <MedGen CUI="C0677776" Name="Hereditary breast ovarian cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7863346" TraitType="Disease" MappingType="XRef" MappingValue="114480" MappingRef="OMIM">
+        <MedGen CUI="C0346153" Name="Familial cancer of breast"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="11373208" TraitType="Disease" MappingType="XRef" MappingValue="114480" MappingRef="OMIM">
+        <MedGen CUI="C0346153" Name="Familial cancer of breast"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="11373208" TraitType="Disease" MappingType="XRef" MappingValue="612555" MappingRef="OMIM">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1339522" TraitType="Disease" MappingType="XRef" MappingValue="C0027672" MappingRef="MedGen">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7118799" TraitType="Disease" MappingType="Name" MappingValue="not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="13989691" TraitType="Disease" MappingType="XRef" MappingValue="C3661900" MappingRef="MedGen">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="121493" TraitType="Disease" MappingType="XRef" MappingValue="C0677776" MappingRef="MedGen">
+        <MedGen CUI="C0677776" Name="Hereditary breast ovarian cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="89972" TraitType="Disease" MappingType="Name" MappingValue="Breast-ovarian cancer, familial 2" MappingRef="Preferred">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1140886" TraitType="Disease" MappingType="XRef" MappingValue="ORPHA145" MappingRef="Orphanet">
+        <MedGen CUI="C0677776" Name="Hereditary breast ovarian cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1141048" TraitType="Disease" MappingType="XRef" MappingValue="ORPHA145" MappingRef="Orphanet">
+        <MedGen CUI="C0677776" Name="Hereditary breast ovarian cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="2866972" TraitType="Disease" MappingType="Name" MappingValue="Breast and/or ovarian cancer" MappingRef="Preferred">
+        <MedGen CUI="CN221562" Name="Breast and/or ovarian cancer"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1148652" TraitType="Disease" MappingType="XRef" MappingValue="MONDO:0007254" MappingRef="MONDO">
+        <MedGen CUI="C0006142" Name="Malignant tumor of breast"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="376486" TraitType="Disease" MappingType="Name" MappingValue="Not Provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="627027" TraitType="Disease" MappingType="XRef" MappingValue="612555" MappingRef="OMIM">
+        <MedGen CUI="C2675520" Name="Breast-ovarian cancer, familial, susceptibility to, 2"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="3925102" TraitType="Disease" MappingType="Name" MappingValue="not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="396166" TraitType="Disease" MappingType="XRef" MappingValue="CN221562" MappingRef="MedGen">
+        <MedGen CUI="CN221562" Name="Breast and/or ovarian cancer"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="9032782" TraitType="Disease" MappingType="XRef" MappingValue="MONDO:0700269" MappingRef="MONDO">
+        <MedGen CUI="CN377758" Name="BRCA2-related cancer predisposition"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="574221" TraitType="Disease" MappingType="Name" MappingValue="not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="14514877" TraitType="Finding" MappingType="XRef" MappingValue="HP:0012056" MappingRef="HP">
+        <MedGen CUI="C0151779" Name="Malignant melanoma of skin"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="14514877" TraitType="Disease" MappingType="XRef" MappingValue="MONDO:0700269" MappingRef="MONDO">
+        <MedGen CUI="CN377758" Name="BRCA2-related cancer predisposition"/>
+      </TraitMapping>
+    </TraitMappingList>
+    <DeletedSCVList>
+      <SCV>
+        <Accession Version="1" DateDeleted="2021-11-13">SCV001853342</Accession>
+        <Description>not specified</Description>
+      </SCV>
+    </DeletedSCVList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

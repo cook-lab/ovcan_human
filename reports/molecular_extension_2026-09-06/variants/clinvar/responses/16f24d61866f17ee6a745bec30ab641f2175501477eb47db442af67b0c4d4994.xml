@@ -1,0 +1,1090 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="24850" VariationName="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter)" VariationType="single nucleotide variant" Accession="VCV000024850" Version="30" RecordType="classified" NumberOfSubmissions="9" NumberOfSubmitters="9" DateLastUpdated="2026-07-27" DateCreated="2013-04-04" MostRecentSubmission="2026-07-27">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="36191" VariationID="24850">
+      <GeneList>
+        <Gene Symbol="SMAD4" FullName="SMAD family member 4" GeneID="4089" HGNC_ID="HGNC:6770" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>18q21.2</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="18" Accession="NC_000018.10" start="51030213" stop="51085042" display_start="51030213" display_stop="51085042" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="18" Accession="NC_000018.9" start="48556582" stop="48611411" display_start="48556582" display_stop="48611411" Strand="+"/>
+          </Location>
+          <OMIM>600993</OMIM>
+          <Haploinsufficiency last_evaluated="2020-12-16" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=SMAD4">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2020-12-16" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=SMAD4">No evidence available</Triplosensitivity>
+          <Property>gene_acmg_incidental_2016</Property>
+          <Property>gene_acmg_incidental_2021</Property>
+          <Property>gene_acmg_incidental_2022</Property>
+        </Gene>
+      </GeneList>
+      <Name>NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter)</Name>
+      <CanonicalSPDI>NC_000018.10:51076661:C:T</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>18q21.2</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="18" Accession="NC_000018.10" start="51076662" stop="51076662" display_start="51076662" display_stop="51076662" variantLength="1" positionVCF="51076662" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="18" Accession="NC_000018.9" start="48603032" stop="48603032" display_start="48603032" display_stop="48603032" variantLength="1" positionVCF="48603032" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+      </Location>
+      <ProteinChange>R445*</ProteinChange>
+      <HGVSlist>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000018.10" sequenceAccession="NC_000018" sequenceVersion="10" change="g.51076662C&gt;T" Assembly="GRCh38">
+            <Expression>NC_000018.10:g.51076662C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000018.9" sequenceAccession="NC_000018" sequenceVersion="9" change="g.48603032C&gt;T" Assembly="GRCh37">
+            <Expression>NC_000018.9:g.48603032C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_013013.2" sequenceAccession="NG_013013" sequenceVersion="2" change="g.113623C&gt;T">
+            <Expression>NG_013013.2:g.113623C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_005359.6" sequenceAccession="NM_005359" sequenceVersion="6" change="c.1333C&gt;T" MANESelect="true">
+            <Expression>NM_005359.6:c.1333C&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_005350.1" sequenceAccession="NP_005350" sequenceVersion="1" change="p.Arg445Ter" singleLetterProteinChange="R445*">
+            <Expression>NP_005350.1:p.Arg445Ter</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001587" Type="nonsense" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_318" sequenceAccession="LRG_318">
+            <Expression>LRG_318:g.113623C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_318t1" sequenceAccession="LRG_318t1">
+            <Expression>LRG_318t1:c.1333C&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_318p1" sequenceAccession="LRG_318p1" change="p.Arg445Ter">
+            <Expression>LRG_318p1:p.Arg445Ter</Expression>
+          </ProteinExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA189448" DB="ClinGen"/>
+        <XRef Type="Allelic variant" ID="600993.0014" DB="OMIM"/>
+        <XRef Type="rs" ID="377767360" DB="dbSNP"/>
+      </XRefList>
+      <AlleleFrequencyList>
+        <AlleleFrequency Value="0.00001" Source="Exome Aggregation Consortium (ExAC)"/>
+        <AlleleFrequency Value="0.00000" Source="The Genome Aggregation Database (gnomAD), exomes"/>
+      </AlleleFrequencyList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome" Accession="RCV000023059" Version="12">
+        <ClassifiedConditionList TraitSetID="2354">
+          <ClassifiedCondition DB="MedGen" ID="C1832942">Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2024-02-09" SubmissionCount="2">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND not provided" Accession="RCV000493396" Version="19">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2025-05-01" SubmissionCount="3">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND Gallbladder cancer" Accession="RCV001374448" Version="9">
+        <ClassifiedConditionList TraitSetID="65555">
+          <ClassifiedCondition DB="MedGen" ID="C0153452">Gallbladder cancer</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="2020-10-30" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND Juvenile polyposis syndrome" Accession="RCV001376567" Version="15">
+        <ClassifiedConditionList TraitSetID="65684">
+          <ClassifiedCondition DB="MedGen" ID="C0345893">Juvenile polyposis syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2025-08-14" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND multiple conditions" Accession="RCV002310634" Version="9">
+        <ClassifiedConditionList TraitSetID="81098">
+          <ClassifiedCondition DB="MedGen" ID="C4707243">Familial thoracic aortic aneurysm and aortic dissection</ClassifiedCondition>
+          <ClassifiedCondition DB="MedGen" ID="C0027672">Hereditary cancer-predisposing syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2021-08-27" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_005359.6(SMAD4):c.1333C&gt;T (p.Arg445Ter) AND Neoplasm" Accession="RCV004668739" Version="2">
+        <ClassifiedConditionList TraitSetID="28284">
+          <ClassifiedCondition DB="MedGen" ID="C0027651">Neoplasm</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2025-03-04" SubmissionCount="1">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2025-08-14" NumberOfSubmissions="8" NumberOfSubmitters="8" DateCreated="2013-04-04" MostRecentSubmission="2026-07-27">
+        <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+        <Description>Pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (6)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">10764709</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">16436638</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21465659</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">22810475</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">30851333</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">36158166</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">23239472</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">25931195</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">34393517</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">16152648</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">31949278</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32561076</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">37319387</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">10479724</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">26689913</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">32719554</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">35982159</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">36451132</ID>
+        </Citation>
+        <ConditionList>
+          <TraitSet ID="65684" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="55407" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Juvenile polyposis syndrome</ElementValue>
+                <XRef ID="MONDO:0017380" DB="MONDO"/>
+                <XRef ID="9273005" DB="SNOMED CT"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">PJI</ElementValue>
+                <XRef Type="MIM" ID="174900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">JIP</ElementValue>
+                <XRef Type="MIM" ID="174900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Preferred">JPS</ElementValue>
+                <XRef Type="MIM" ID="174900" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="3065"/>
+                <XRef ID="3065" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">Juvenile polyposis syndrome (JPS) is characterized by predisposition to hamartomatous polyps in the gastrointestinal (GI) tract, specifically in the stomach, small intestine, colon, and rectum. The term "juvenile" refers to the type of polyp rather than to the age of onset of polyps. Most individuals with JPS have some polyps by age 20 years; some may have only four or five polyps over their lifetime, whereas others in the same family may have more than 100. If the polyps are left untreated, they may cause bleeding and anemia. Most juvenile polyps are benign; however, malignant transformation can occur. Risk for GI cancers ranges from 11% to 86%. Most of this increased risk is attributed to colon cancer, but cancers of the stomach, upper GI tract, and pancreas have also been reported. A combined syndrome of JPS and hereditary hemorrhagic telangiectasia (HHT) is present in most individuals with an SMAD4 pathogenic variant.</Attribute>
+                <XRef ID="NBK1469" DB="GeneReviews"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301642</ID>
+                <ID Source="BookShelf">NBK1469</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Genetics of Colorectal Cancer">
+                <ID Source="PubMed">26389505</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <XRef ID="2929" DB="Orphanet"/>
+              <XRef ID="C0345893" DB="MedGen"/>
+              <XRef ID="MONDO:0017380" DB="MONDO"/>
+              <XRef Type="MIM" ID="174900" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="65555" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="51007" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Gallbladder cancer</ElementValue>
+                <XRef ID="MONDO:0005411" DB="MONDO"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="9328"/>
+                <XRef ID="9328" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2024">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/btc.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) Biliary Tract Cancers, 2024</CitationText>
+              </Citation>
+              <XRef ID="C0153452" DB="MedGen"/>
+              <XRef ID="MONDO:0005411" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="81098" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="18746" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+                <XRef ID="699346009" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary Cancer Syndrome</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Tumor predisposition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplastic Syndromes, Hereditary</ElementValue>
+                <XRef ID="D009386" DB="MeSH"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary neoplastic syndrome</ElementValue>
+                <XRef ID="MONDO:0015356" DB="MONDO"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="19921"/>
+                <XRef ID="19921" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="IARC, 2008">
+                <ID Source="pmc">3075918</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <XRef ID="140162" DB="Orphanet"/>
+              <XRef ID="C0027672" DB="MedGen"/>
+              <XRef ID="D009386" DB="MeSH"/>
+              <XRef ID="MONDO:0015356" DB="MONDO"/>
+            </Trait>
+            <Trait ID="16634" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Familial thoracic aortic aneurysm and aortic dissection</ElementValue>
+                <XRef ID="MONDO:0019625" DB="MONDO"/>
+                <XRef ID="91387" DB="Orphanet"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Thoracic aortic aneurysms and dissections</ElementValue>
+                <XRef ID="UWMG_7008129" DB="CSER _CC_NCGL, University of Washington"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">EDS</ElementValue>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Preferred">TAAD</ElementValue>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="2249"/>
+                <XRef ID="2249" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301299</ID>
+                <ID Source="BookShelf">NBK1120</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="CCS, 2014">
+                <ID Source="PubMed">24882528</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ESC, 2014">
+                <ID Source="PubMed">25173340</ID>
+              </Citation>
+              <XRef ID="91387" DB="Orphanet"/>
+              <XRef ID="C4707243" DB="MedGen"/>
+              <XRef ID="MONDO:0019625" DB="MONDO"/>
+              <XRef Type="Phenotypic series" ID="PS607086" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="2354" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="2502" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Juvenile Polyposis Syndrome / Hereditary Hemorrhagic Telangiectasia (JPS/HHT)</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">TELANGIECTASIA, HEREDITARY HEMORRHAGIC, WITH JUVENILE POLYPOSIS COLI</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome</ElementValue>
+                <XRef ID="MONDO:0008278" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">JP/HHT SYNDROME</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">JUVENILE POLYPOSIS WITH HEREDITARY HEMORRHAGIC TELANGIECTASIA</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">POLYPOSIS, GENERALIZED JUVENILE, WITH PULMONARY ARTERIOVENOUS MALFORMATION</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">JPS/HHT</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Preferred">JPHT</ElementValue>
+                <XRef Type="MIM" ID="175050" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">JP/HHT</ElementValue>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="keyword">SMAD4-Related Hereditary Hemorrhagic Telangiectasia</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="24614"/>
+                <XRef ID="24614" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">Juvenile polyposis syndrome (JPS) is characterized by predisposition to hamartomatous polyps in the gastrointestinal (GI) tract, specifically in the stomach, small intestine, colon, and rectum. The term "juvenile" refers to the type of polyp rather than to the age of onset of polyps. Most individuals with JPS have some polyps by age 20 years; some may have only four or five polyps over their lifetime, whereas others in the same family may have more than 100. If the polyps are left untreated, they may cause bleeding and anemia. Most juvenile polyps are benign; however, malignant transformation can occur. Risk for GI cancers ranges from 11% to 86%. Most of this increased risk is attributed to colon cancer, but cancers of the stomach, upper GI tract, and pancreas have also been reported. A combined syndrome of JPS and hereditary hemorrhagic telangiectasia (HHT) is present in most individuals with an SMAD4 pathogenic variant.</Attribute>
+                <XRef ID="NBK1469" DB="GeneReviews"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301525</ID>
+                <ID Source="BookShelf">NBK1351</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301642</ID>
+                <ID Source="BookShelf">NBK1469</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="HHT Foundation Int'l, 2011">
+                <ID Source="PubMed">19553198</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Shovlin et al., 2000">
+                <ID Source="PubMed">10751092</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="HHT Foundation Int'l, 2020">
+                <ID Source="PubMed">32894695</ID>
+              </Citation>
+              <XRef ID="2929" DB="Orphanet"/>
+              <XRef ID="C1832942" DB="MedGen"/>
+              <XRef ID="MONDO:0008278" DB="MONDO"/>
+              <XRef Type="MIM" ID="175050" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+      <OncogenicityClassification DateLastEvaluated="2025-03-04" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2024-08-11" MostRecentSubmission="2025-03-11">
+        <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+        <Description>Oncogenic</Description>
+        <Citation Type="general">
+          <ID Source="PubMed">10764709</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">11553622</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">16152648</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21465659</ID>
+        </Citation>
+        <ConditionList>
+          <TraitSet ID="28284" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="32759" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Neoplasm</ElementValue>
+                <XRef ID="HP:0002664" DB="Human Phenotype Ontology"/>
+                <XRef ID="MONDO:0005070" DB="MONDO"/>
+                <XRef ID="108369006" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">tumor</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplasms</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplasm (disease)</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">neoplasm</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="AMP, 2012">
+                <ID Source="PubMed">22918138</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23619274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2021">
+                <ID Source="PubMed">34131312</ID>
+              </Citation>
+              <XRef ID="C0027651" DB="MedGen"/>
+              <XRef ID="D009369" DB="MeSH"/>
+              <XRef ID="MONDO:0005070" DB="MONDO"/>
+              <XRef Type="primary" ID="HP:0002664" DB="Human Phenotype Ontology"/>
+              <XRef Type="secondary" ID="HP:0003008" DB="Human Phenotype Ontology"/>
+              <XRef Type="secondary" ID="HP:0006741" DB="Human Phenotype Ontology"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </OncogenicityClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="49606" SubmissionDate="2017-11-20" ContributesToAggregateClassification="false" DateLastUpdated="2017-11-23" DateCreated="2013-04-04">
+        <ClinVarSubmissionID localKey="600993.0014_JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME" title="SMAD4, ARG445TER_JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME"/>
+        <ClinVarAccession Accession="SCV000044350" DateUpdated="2017-11-23" DateCreated="2013-04-04" Type="SCV" Version="2" SubmitterName="OMIM" OrgID="3" OrganizationCategory="resource"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2011-05-01">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species>human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>literature only</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">In 3 affected members of a family with a clinical variant of JPHT (175050), Andrabi et al. (2011) identified a heterozygous mutation in exon 10 of the SMAD4 gene, resulting in an arg445-to-ter (R445X) substitution. The clinical features in this family were unusual in that affected members had mitral valve prolapse, mitral valve regurgitation, and aortic dilatation in addition to gastrointestinal hamartomatous polyps; telangiectases were not reported. Andrabi et al. (2011) noted the role of SMAD4 in the TGF-beta-1 signaling pathway, suggesting overlap with other connective tissue disorders such as Marfan syndrome (154700) and Loeys-Dietz syndrome (see, e.g., 609192). The findings indicated that haploinsufficiency of SMAD4 may cause an aortopathy and mitral valve dysfunction.</Attribute>
+              <Citation>
+                <ID Source="PubMed">21465659</ID>
+              </Citation>
+              <XRef DB="OMIM" ID="175050" Type="MIM"/>
+              <XRef DB="OMIM" ID="154700" Type="MIM"/>
+              <XRef DB="OMIM" ID="609192" Type="MIM"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <Name>SMAD4, ARG445TER</Name>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="NonHGVS">ARG445TER</Name>
+          </OtherNameList>
+          <XRefList>
+            <XRef DB="OMIM" ID="600993.0014" Type="Allelic variant"/>
+          </XRefList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="3093984" SubmissionDate="2021-04-09" ContributesToAggregateClassification="false" DateLastUpdated="2021-04-18" DateCreated="2021-04-18">
+        <ClinVarSubmissionID localKey="NM_005359.6:c.1333C&gt;T|MedGen:C0153452" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV001571412" DateUpdated="2021-04-18" DateCreated="2021-04-18" Type="SCV" Version="1" SubmitterName="Institute of Medical Sciences, Banaras Hindu University" OrgID="507417" OrganizationCategory="other" OrgAbbreviation="IMS-BHU"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2020-10-30">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>research</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <GeneLocation>NM_005359.6:exon 11</GeneLocation>
+          </Location>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_005359.6:c.1333C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0153452" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB9100005</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="9143040" SubmissionDate="2024-04-22" ContributesToAggregateClassification="true" DateLastUpdated="2024-05-01" DateCreated="2024-05-01">
+        <ClinVarSubmissionID localKey="100065264|OMIM:175050"/>
+        <ClinVarAccession Accession="SCV004931948" DateUpdated="2024-05-01" DateCreated="2024-05-01" Type="SCV" Version="1" SubmitterName="Myriad Genetics, Inc." OrgID="507240" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-02-09">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>This variant is considered pathogenic. This variant creates a termination codon and is predicted to result in premature protein truncation.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Myriad Autosomal Dominant, Autosomal Recessive and X-Linked Classification Criteria (2023)</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/8ufcwsf2/myriad_genetics_classification_criteria_2023.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="hg19" Chr="18" alternateAllele="T" referenceAllele="C" start="48603032" stop="48603032"/>
+          </Location>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">100065264</Name>
+          </OtherNameList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="175050" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14395420</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="385482" SubmissionDate="2024-05-11" ContributesToAggregateClassification="true" DateLastUpdated="2024-06-09" DateCreated="2015-03-24">
+        <ClinVarSubmissionID localKey="a65730|MedGen:C0027672;C4707243" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000214483" DateUpdated="2024-06-09" DateCreated="2015-03-24" Type="SCV" Version="7" SubmitterName="Ambry Genetics" OrgID="61756" OrganizationCategory="laboratory" OrgAbbreviation="Ambry"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2021-08-27">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>The p.R445* pathogenic mutation (also known as c.1333C&gt;T), located in coding exon 10 of the SMAD4 gene, results from a C to T substitution at nucleotide position 1333. This changes the amino acid from an arginine to a stop codon within coding exon 10. This mutation has been identified in multiple individuals with Juvenile Polyposis Syndrome (JPS) (Woodford-Richens K et al. Gut. 2000 May;46:656-60; Heald B et al. Am. J. Med. Genet. A. 2015 Aug;167A:1758-62; Handra-Luca A et al. Am. J. Med. Genet. A. 2005 Oct;138A:113-7). This mutation has also been reported in a patient with lower grade glioma from a cohort of 4034 cancer cases from The Cancer Genome Atlas (Lu C et al. Nat Commun, 2015 Dec;6:10086). Of note, this alteration is also designated as c.1363C&gt;T in published literature. In addition to the clinical data presented in the literature, this alteration is expected to result in loss of function by premature protein truncation or nonsense-mediated mRNA decay. As such, this alteration is interpreted as a disease-causing mutation.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Ambry Variant Classification Scheme 2023</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/i9igeqse/ambry_variant_classification_scheme_2023.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_005359.5:c.1333C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease" multipleConditionExplanation="Uncertain">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C4707243" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>All AVA3 Novel and Update Variants_103122</SubmissionName>
+          <SubmissionName>FinalClinVarSubmissionFile_20140101to20240315_error_correct_1a</SubmissionName>
+          <SubmissionName>NonExomeUpdate_081220AmbryReport</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="10818049" SubmissionDate="2024-12-30" ContributesToAggregateClassification="true" DateLastUpdated="2025-01-19" DateCreated="2025-01-19">
+        <ClinVarSubmissionID localKey="S16890|not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV005625037" DateUpdated="2025-01-19" DateCreated="2025-01-19" Type="SCV" Version="1" SubmitterName="Quest Diagnostics Nichols Institute San Juan Capistrano" OrgID="500110" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-03-27">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">26689913</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">25931195</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23239472</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21465659</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16152648</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">10764709</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">10479724</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">36451132</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">35982159</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">36158166</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">34393517</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">31949278</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32719554</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">32561076</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">30851333</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">37319387</ID>
+          </Citation>
+          <Comment>The SMAD4 c.1333C&gt;T (p.Arg445*) variant causes the premature termination of SMAD4 protein synthesis. This variant has been reported in the published literature in individuals with juvenile polyposis syndrome (JPS) (PMID: 25931195 (2015), 21465659 (2011), 16152648 (2005), 10764709 (2000)), colorectal cancer (PMID: 37319387 (2023)), and oligoastrocytoma (PMID: 36451132 (2022)). This variant has also been shown to abrogate protein expression (PMID: 32719554 (2020)). The frequency of this variant in the general population, 0.000004 (1/251272 chromosomes (Genome Aggregation Database, http://gnomad.broadinstitute.org)), is consistent with pathogenicity. Based on the available information, this variant is classified as pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Quest Diagnostics criteria</Attribute>
+          <Citation>
+            <ID Source="PubMed">26467025</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_005359.5:c.1333C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14978934</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1134537" SubmissionDate="2019-01-29" ContributesToAggregateClassification="true" DateLastUpdated="2017-07-02" DateCreated="2017-07-02">
+        <ClinVarSubmissionID localKey="GDX:612504|Not Provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000582779" DateUpdated="2017-07-02" DateCreated="2017-07-02" Type="SCV" Version="5" SubmitterName="GeneDx" OrgID="26957" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2018-04-10">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>This variant is denoted SMAD4 c.1333C&gt;T at the cDNA level and p.Arg445Ter (R445X) at the protein level. The substitution creates a nonsense variant, which changes an Arginine to a premature stop codon (CGA&gt;TGA), and is predicted to cause loss of normal protein function through either protein truncation or nonsense-mediated mRNA decay. This variant has been reported in association with juvenile polyposis syndrome (Woodford-Richens 2000, Handra-Luca 2005, Andrabi 2011) and is considered pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">GeneDx Variant Classification (06012015)</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/dhtz9flo/genedx_interprules_final_061215.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="18" alternateAllele="T" referenceAllele="C" start="48603032" stop="48603032" variantLength="1"/>
+          </Location>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_005359.5:c.1333C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB5098196</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="9887136" SubmissionDate="2025-03-04" ContributesToAggregateClassification="true" DateLastUpdated="2025-03-11" DateCreated="2024-08-11">
+        <ClinVarSubmissionID localKey="NM_005359.6:c.1333C&gt;T|MedGen:C0027651|OncogenicityClassification"/>
+        <ClinVarAccession Accession="SCV005093980" DateUpdated="2025-03-11" DateCreated="2024-08-11" Type="SCV" Version="2" SubmitterName="Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital" OrgID="505691" OrganizationCategory="laboratory" OrgAbbreviation="GM4113, RH"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-03-04">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <OncogenicityClassification>Oncogenic</OncogenicityClassification>
+          <Citation>
+            <ID Source="PubMed">11553622</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">10764709</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16152648</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21465659</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ClinGen/CGC/VICC Guidelines for Oncogenicity, 2022</Attribute>
+          <Citation>
+            <ID Source="PubMed">35101336</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_005359.6:c.1333C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027651"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14648557</SubmissionName>
+          <SubmissionName>SUB15152297</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1056676" SubmissionDate="2026-02-05" ContributesToAggregateClassification="true" DateLastUpdated="2026-02-15" DateCreated="2013-04-04">
+        <ClinVarSubmissionID localKey="1107424|MedGen:C0345893" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000543757" DateUpdated="2026-02-15" DateCreated="2013-04-04" Type="SCV" Version="10" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-08-14">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">16152648</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16436638</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">22810475</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">10764709</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">16152648</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21465659</ID>
+          </Citation>
+          <Comment Type="public">This sequence change creates a premature translational stop signal (p.Arg445*) in the SMAD4 gene. It is expected to result in an absent or disrupted protein product. Loss-of-function variants in SMAD4 are known to be pathogenic (PMID: 16152648, 16436638, 22810475). This variant is present in population databases (rs377767360, gnomAD 0.0009%). This premature translational stop signal has been observed in individual(s) with juvenile polyposis syndrome (PMID: 10764709, 16152648, 21465659). Invitae Evidence Modeling of clinical and family history, age, sex, and reported ancestry of multiple individuals with this SMAD4 variant has been performed. This variant is expected to be pathogenic with a positive predictive value of at least 99%. This is a validated machine learning model that incorporates the clinical features of 35,205 individuals referred to our laboratory for SMAD4 testing. ClinVar contains an entry for this variant (Variation ID: 24850). For these reasons, this variant has been classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000018.9:g.48603032C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0345893" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <Citation Type="general">
+          <ID Source="PubMed">28492532</ID>
+        </Citation>
+        <SubmissionNameList>
+          <SubmissionName>SUB11431369</SubmissionName>
+          <SubmissionName>SUB12506961</SubmissionName>
+          <SubmissionName>SUB14200269</SubmissionName>
+          <SubmissionName>SUB15072707</SubmissionName>
+          <SubmissionName>SUB15987645</SubmissionName>
+          <SubmissionName>SUB8755776</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="11718880" SubmissionDate="2026-07-04" ContributesToAggregateClassification="true" DateLastUpdated="2026-07-27" DateCreated="2025-06-22">
+        <ClinVarSubmissionID localKey="211519|MedGen:CN517202" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV006096722" DateUpdated="2026-07-27" DateCreated="2025-06-22" Type="SCV" Version="9" SubmitterName="CeGaT Center for Human Genetics Tuebingen" OrgID="505870" OrganizationCategory="laboratory" OrgAbbreviation="CHGT"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-05-01">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment Type="public">SMAD4: PVS1, PM2, PS4:Supporting</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">CeGaT Center For Human Genetics Tuebingen Variant Classification Criteria Version 2</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/0ynenhfo/cegat_center_for_human_genetics_tuebingen_-_variant_classification_criteria_-_version_2.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="SMAD4"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="18" alternateAllele="T" referenceAllele="C" start="48603032" stop="48603032" variantLength="1"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="CN517202" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB15380712</SubmissionName>
+          <SubmissionName>SUB15436669</SubmissionName>
+          <SubmissionName>SUB15585849</SubmissionName>
+          <SubmissionName>SUB15682521</SubmissionName>
+          <SubmissionName>SUB15821677</SubmissionName>
+          <SubmissionName>SUB15914871</SubmissionName>
+          <SubmissionName>SUB16104672</SubmissionName>
+          <SubmissionName>SUB16224911</SubmissionName>
+          <SubmissionName>SUB16307954</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="49606" TraitType="Disease" MappingType="Name" MappingValue="JUVENILE POLYPOSIS/HEREDITARY HEMORRHAGIC TELANGIECTASIA SYNDROME" MappingRef="Preferred">
+        <MedGen CUI="C1832942" Name="Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="3093984" TraitType="Disease" MappingType="XRef" MappingValue="C0153452" MappingRef="MedGen">
+        <MedGen CUI="C0153452" Name="Gallbladder cancer"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="9143040" TraitType="Disease" MappingType="XRef" MappingValue="175050" MappingRef="OMIM">
+        <MedGen CUI="C1832942" Name="Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="385482" TraitType="Disease" MappingType="XRef" MappingValue="C0027672" MappingRef="MedGen">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="385482" TraitType="Disease" MappingType="XRef" MappingValue="C4707243" MappingRef="MedGen">
+        <MedGen CUI="C4707243" Name="Familial thoracic aortic aneurysm and aortic dissection"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="10818049" TraitType="Disease" MappingType="Name" MappingValue="not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1134537" TraitType="Disease" MappingType="Name" MappingValue="Not Provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="9887136" TraitType="Disease" MappingType="XRef" MappingValue="C0027651" MappingRef="MedGen">
+        <MedGen CUI="C0027651" Name="Neoplasm"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1056676" TraitType="Disease" MappingType="XRef" MappingValue="C0345893" MappingRef="MedGen">
+        <MedGen CUI="C0345893" Name="Juvenile polyposis syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="11718880" TraitType="Disease" MappingType="XRef" MappingValue="CN517202" MappingRef="MedGen">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+    </TraitMappingList>
+    <DeletedSCVList>
+      <SCV>
+        <Accession Version="1" DateDeleted="2021-11-13">SCV000042397</Accession>
+        <Description>not specified</Description>
+      </SCV>
+    </DeletedSCVList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

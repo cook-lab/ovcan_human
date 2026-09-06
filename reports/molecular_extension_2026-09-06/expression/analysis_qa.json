@@ -1,0 +1,28 @@
+{
+  "script_sha256": "f44c83a2f877c5fc3baf17ca016f9bbb813a3e172e8b2bf350dd9deccca1348b",
+  "inputs_sha256": {
+    "metadata/resource_models.csv": "60962a78bbdebdda2f5744eaff679764218e124de45a73bbf218d972f41ef7c7",
+    "output/rna_tpm.csv": "ccd06b0bfd6350618a23d78f0fdaa7859ca06aa6d92aea67943ae0a4e4e55975",
+    "output/rna_gene_annotation.csv": "5fcd6a5a0fa66a49fffe53f89ebc80b03f1a7f5e8664ac345c145a40762ca61a",
+    "output/prot_abundance_matrix.csv": "1f8484522eca3fc80891183204823012d43284e1c6562e262e5eb68c2db8a3c9",
+    "output/prot_qc.csv": "b7ec049ce5ff6735cf49a08dc5529b151a5cd519c3ce46a9a7e726a5a0c30fec",
+    "output/adc_expression.csv": "1a39837580479492d50cce292d96ddd1bfe6ae86558b75f78e51bfbdb5297c43"
+  },
+  "n_genes": 19,
+  "n_model_expression_rows": 798,
+  "all_models": 42,
+  "patients": 34,
+  "all_42_models_retained_per_gene": true,
+  "existing_ADC_agreement_comparisons": 527,
+  "existing_ADC_max_abs_difference": 0.0004991857289002866,
+  "bootstrap_seed": 420906,
+  "bootstrap_replicates": 2000,
+  "paired_before_patient_aggregation": true,
+  "missing_values_imputed": false,
+  "clinical_categories_assigned": false,
+  "canonical_outputs_modified": false,
+  "versions": {
+    "numpy": "2.3.5",
+    "pandas": "2.2.3"
+  }
+}

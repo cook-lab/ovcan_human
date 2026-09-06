@@ -1,0 +1,13 @@
+substrate,reference,n_models,n_patients,n_models_nonzero_point_sbs3,n_models_boot_lower_gt_zero,maximum_selection_fraction,maximum_nnls_cosine_loss_without_sbs3
+baseline,genome_full,23,16,7,0,0.745,0.0006802677860420214
+baseline,genome_restricted,23,16,21,12,1.0,0.01836791442666108
+baseline,target_full,23,16,2,0,0.585,0.0004267105369499813
+baseline,target_restricted,23,16,6,0,0.935,0.0048152887685199985
+rare,genome_full,23,16,4,,,0.0011907465562590591
+rare,genome_restricted,23,16,22,,,0.021379902730588984
+rare,target_full,23,16,1,,,0.0003502303739040258
+rare,target_restricted,23,16,7,,,0.006298577139360995
+rare_read_supported,genome_full,23,16,10,0,0.73,0.002054728818272955
+rare_read_supported,genome_restricted,23,16,21,11,1.0,0.03676483242525197
+rare_read_supported,target_full,23,16,6,0,0.61,0.001031917656917014
+rare_read_supported,target_restricted,23,16,12,1,1.0,0.016645445216062926

@@ -6,6 +6,8 @@ Analysis, validated data records and a working Scientific Data Data Descriptor f
 
 ## Start here on the cluster
 
+For the new molecular-analysis extension, give the agent [this prioritized task](docs/cluster/molecular_extension_2026-09-06/AGENT_TASK.md). It includes model/locus checklists, MSI and allele-specific CN pilot requirements, recipes and return templates. A portable overlay can be prepared with `python3 scripts/49_prepare_molecular_handoff.py` when the local extension files have not yet been published.
+
 1. Read the [updated targeted follow-up](docs/cluster/recovery/2026-09-06/FOLLOWUP.md), then [the agent guide](AGENTS.md) and [current project status](docs/PROJECT_STATUS.md).
 2. Give Claude Code [the cluster task prompt](docs/cluster/CLAUDE_TASK.md). Its detailed checklist is [WES recovery](docs/cluster/WES_RECOVERY.md).
 3. Start with the [23-model checklist](reports/audit_2026-09-05/wes_cluster_models.csv), [322 recorded path hints](reports/audit_2026-09-05/wes_cluster_path_hints.csv) and [archived CNV commands](docs/cluster/evidence/cnvkit_commands.txt).
@@ -19,6 +21,8 @@ The initial task is to locate existing records, preserve provenance and report w
 
 ## Current results and manuscript
 
+- [Expanded molecular characterization](reports/molecular_extension_2026-09-06/README.md): 52-locus relative CN screen, AKT2 and deletion leads, 19-target patient-aware expression, exact variant read review and SBS3 stability; separate from manuscript v9 and the release.
+- [Clinical and molecular annotation exploration](reports/clinical_classification_2026-09-06/README.md): CCNE1 DNA/RNA/protein evidence, curated BRCA2 significance, HRD feasibility and targeted follow-up. These exploratory records are separate from manuscript v9 and the processed release.
 - [Latest WES coverage and CNV correction](reports/wes_cnv_coverage_2026-09-06/COVERAGE_UPDATE.md)
 - [Initial WES completion and remaining paper requirements](reports/wes_completion_2026-09-05/WES_COMPLETION.md)
 - [Analysis audit and corrections](reports/audit_2026-09-05/AUDIT_REPORT.md)

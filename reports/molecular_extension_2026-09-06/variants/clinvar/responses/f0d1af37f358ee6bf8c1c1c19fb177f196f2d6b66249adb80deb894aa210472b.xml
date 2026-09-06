@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="224559" VariationName="NM_001184.4(ATR):c.4957C&gt;T (p.Arg1653Ter)" VariationType="single nucleotide variant" Accession="VCV000224559" Version="6" RecordType="classified" NumberOfSubmissions="3" NumberOfSubmitters="3" DateLastUpdated="2026-04-13" DateCreated="2016-03-20" MostRecentSubmission="2026-02-23">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="226312" VariationID="224559">
+      <GeneList>
+        <Gene Symbol="ATR" FullName="ATR checkpoint kinase" GeneID="545" HGNC_ID="HGNC:882" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>3q23</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="3" Accession="NC_000003.12" start="142449235" stop="142578733" display_start="142449235" display_stop="142578733" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="3" Accession="NC_000003.11" start="142168076" stop="142297667" display_start="142168076" display_stop="142297667" Strand="-"/>
+          </Location>
+          <OMIM>601215</OMIM>
+          <Haploinsufficiency last_evaluated="2020-06-05" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=ATR">Little evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2020-06-05" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=ATR">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_001184.4(ATR):c.4957C&gt;T (p.Arg1653Ter)</Name>
+      <CanonicalSPDI>NC_000003.12:142508004:G:A</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>3q23</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="3" Accession="NC_000003.12" start="142508005" stop="142508005" display_start="142508005" display_stop="142508005" variantLength="1" positionVCF="142508005" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="3" Accession="NC_000003.11" start="142226847" stop="142226847" display_start="142226847" display_stop="142226847" variantLength="1" positionVCF="142226847" referenceAlleleVCF="G" alternateAlleleVCF="A"/>
+      </Location>
+      <ProteinChange>R1653*</ProteinChange>
+      <ProteinChange>R1589*</ProteinChange>
+      <HGVSlist>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000003.11" sequenceAccession="NC_000003" sequenceVersion="11" change="g.142226847G&gt;A" Assembly="GRCh37">
+            <Expression>NC_000003.11:g.142226847G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000003.12" sequenceAccession="NC_000003" sequenceVersion="12" change="g.142508005G&gt;A" Assembly="GRCh38">
+            <Expression>NC_000003.12:g.142508005G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_008951.1" sequenceAccession="NG_008951" sequenceVersion="1" change="g.75822C&gt;T">
+            <Expression>NG_008951.1:g.75822C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001184.4" sequenceAccession="NM_001184" sequenceVersion="4" change="c.4957C&gt;T" MANESelect="true">
+            <Expression>NM_001184.4:c.4957C&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001175.2" sequenceAccession="NP_001175" sequenceVersion="2" change="p.Arg1653Ter" singleLetterProteinChange="R1653*">
+            <Expression>NP_001175.2:p.Arg1653Ter</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001587" Type="nonsense" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001354579.2" sequenceAccession="NM_001354579" sequenceVersion="2" change="c.4765C&gt;T">
+            <Expression>NM_001354579.2:c.4765C&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001341508.1" sequenceAccession="NP_001341508" sequenceVersion="1" change="p.Arg1589Ter" singleLetterProteinChange="R1589*">
+            <Expression>NP_001341508.1:p.Arg1589Ter</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001587" Type="nonsense" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_1403" sequenceAccession="LRG_1403">
+            <Expression>LRG_1403:g.75822C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_1403t1" sequenceAccession="LRG_1403t1">
+            <Expression>LRG_1403t1:c.4957C&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_1403p1" sequenceAccession="LRG_1403p1" change="p.Arg1653Ter">
+            <Expression>LRG_1403p1:p.Arg1653Ter</Expression>
+          </ProteinExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA351206" DB="ClinGen"/>
+        <XRef Type="rs" ID="778813551" DB="dbSNP"/>
+      </XRefList>
+      <AlleleFrequencyList>
+        <AlleleFrequency Value="0.00001" Source="The Genome Aggregation Database (gnomAD), exomes"/>
+        <AlleleFrequency Value="0.00002" Source="Exome Aggregation Consortium (ExAC)"/>
+      </AlleleFrequencyList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_001184.4(ATR):c.4957C&gt;T (p.Arg1653Ter) AND Hereditary cancer-predisposing syndrome" Accession="RCV000210088" Version="4">
+        <ClassifiedConditionList TraitSetID="13598">
+          <ClassifiedCondition DB="MedGen" ID="C0027672">Hereditary cancer-predisposing syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no classifications from unflagged records</ReviewStatus>
+            <Description DateLastEvaluated="2025-04-02" SubmissionCount="1">no classifications from unflagged records</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_001184.4(ATR):c.4957C&gt;T (p.Arg1653Ter) AND multiple conditions" Accession="RCV005025342" Version="1">
+        <ClassifiedConditionList TraitSetID="10146">
+          <ClassifiedCondition DB="MedGen" ID="C3281203">Familial cutaneous telangiectasia and oropharyngeal predisposition cancer syndrome</ClassifiedCondition>
+          <ClassifiedCondition DB="MedGen" ID="C4551474">Seckel syndrome 1</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2024-02-01" SubmissionCount="1">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_001184.4(ATR):c.4957C&gt;T (p.Arg1653Ter) AND not provided" Accession="RCV005090044" Version="2">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2025-06-02" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2025-06-02" NumberOfSubmissions="3" NumberOfSubmitters="3" DateCreated="2016-03-20" MostRecentSubmission="2026-02-23">
+        <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+        <Description>Pathogenic/Likely pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (1); Likely pathogenic (1)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">21228398</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">23144622</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">27084275</ID>
+        </Citation>
+        <DescriptionHistory Dated="2025-06-21">
+          <Description>Conflicting classifications of pathogenicity</Description>
+        </DescriptionHistory>
+        <DescriptionHistory Dated="2025-01-25">
+          <Description>Uncertain significance</Description>
+        </DescriptionHistory>
+        <ConditionList>
+          <TraitSet ID="10146" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="4382" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Seckel syndrome 1</ElementValue>
+                <XRef ID="MONDO:0008869" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">MICROCEPHALIC PRIMORDIAL DWARFISM I</ElementValue>
+                <XRef Type="MIM" ID="210600" DB="OMIM"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">SCKL1</ElementValue>
+                <XRef Type="MIM" ID="210600" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="15143"/>
+                <XRef ID="15143" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <XRef ID="808" DB="Orphanet"/>
+              <XRef ID="C4551474" DB="MedGen"/>
+              <XRef ID="MONDO:0008869" DB="MONDO"/>
+              <XRef Type="MIM" ID="210600" DB="OMIM"/>
+            </Trait>
+            <Trait ID="16875" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Familial cutaneous telangiectasia and oropharyngeal predisposition cancer syndrome</ElementValue>
+                <XRef ID="MONDO:0013806" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">FCTCS</ElementValue>
+                <XRef Type="MIM" ID="614564" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="17413"/>
+                <XRef ID="17413" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <XRef ID="313846" DB="Orphanet"/>
+              <XRef ID="C3281203" DB="MedGen"/>
+              <XRef ID="MONDO:0013806" DB="MONDO"/>
+              <XRef Type="MIM" ID="614564" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="13598" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="18746" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Tumor predisposition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary neoplastic syndrome</ElementValue>
+                <XRef ID="MONDO:0015356" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplastic Syndromes, Hereditary</ElementValue>
+                <XRef ID="D009386" DB="MeSH"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+                <XRef ID="699346009" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary Cancer Syndrome</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="19921"/>
+                <XRef ID="19921" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="IARC, 2008">
+                <ID Source="pmc">3075918</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <XRef ID="140162" DB="Orphanet"/>
+              <XRef ID="C0027672" DB="MedGen"/>
+              <XRef ID="D009386" DB="MeSH"/>
+              <XRef ID="MONDO:0015356" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="498445" SubmissionDate="2016-03-03" ContributesToAggregateClassification="false" DateLastUpdated="2016-03-20" DateCreated="2016-03-20">
+        <ClinVarSubmissionID localKey="c.4957C&gt;T" localKeyIsSubmitted="1" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000266152" DateUpdated="2016-03-20" DateCreated="2016-03-20" Type="SCV" Version="1" SubmitterName="University of Washington Department of Laboratory Medicine, University of Washington" OrgID="506834" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2015-11-20">
+          <ReviewStatus>flagged submission</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Shirts et al. (Genet Med 2016)</Attribute>
+          <Citation>
+            <ID Source="PubMed">26845104</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <Age Type="minimum" age_unit="years">40</Age>
+              <Age Type="maximum" age_unit="years">49</Age>
+              <AffectedStatus>unknown</AffectedStatus>
+              <NumberTested>1</NumberTested>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+            <ObservedData>
+              <Attribute Type="SampleLocalID">908</Attribute>
+            </ObservedData>
+            <TraitSet Type="Finding">
+              <Trait ClinicalFeaturesAffectedStatus="present" Type="Finding">
+                <Name>
+                  <ElementValue Type="Preferred">skin cancer</ElementValue>
+                </Name>
+              </Trait>
+            </TraitSet>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="ATR"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_001184.3:c.4957C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <Comment DataSource="ClinGen" Type="FlaggedComment">Notes: None</Comment>
+        <Comment DataSource="ClinGen" Type="FlaggedComment">Reason: Older claim that does not account for recent evidence</Comment>
+        <SubmissionNameList>
+          <SubmissionName>GIM_BROCA</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="10856804" SubmissionDate="2024-12-20" ContributesToAggregateClassification="true" DateLastUpdated="2025-01-25" DateCreated="2025-01-25">
+        <ClinVarSubmissionID localKey="(v1:FilteredVar)[GRCh37]chr3/142226847:142226847(G:A:)NM_001184.4|OMIM:210600;614564" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV005662748" DateUpdated="2025-01-25" DateCreated="2025-01-25" Type="SCV" Version="1" SubmitterName="Fulgent Genetics, Fulgent Genetics" OrgID="500105" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-02-01">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Likely pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_001184.4:c.4957C&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease" multipleConditionExplanation="Uncertain">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="210600" Type="MIM"/>
+          </Trait>
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="614564" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14944800</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="11079897" SubmissionDate="2026-02-10" ContributesToAggregateClassification="true" DateLastUpdated="2026-02-23" DateCreated="2025-02-25">
+        <ClinVarSubmissionID localKey="1736448|MedGen:CN517202" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV005793640" DateUpdated="2026-02-23" DateCreated="2025-02-25" Type="SCV" Version="2" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-06-02">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">21228398</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">23144622</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">27084275</ID>
+          </Citation>
+          <Comment Type="public">This sequence change creates a premature translational stop signal (p.Arg1653*) in the ATR gene. It is expected to result in an absent or disrupted protein product. Loss-of-function variants in ATR are known to be pathogenic (PMID: 21228398, 23144622). This variant is present in population databases (rs778813551, gnomAD 0.007%). This premature translational stop signal has been observed in individual(s) with prostate cancer (PMID: 27084275). ClinVar contains an entry for this variant (Variation ID: 224559). Algorithms developed to predict the effect of sequence changes on RNA splicing suggest that this variant may disrupt the consensus splice site. For these reasons, this variant has been classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="ATR"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000003.11:g.142226847G&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="CN517202" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB15075354</SubmissionName>
+          <SubmissionName>SUB15998937</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="498445" TraitType="Finding" MappingType="Name" MappingValue="skin cancer" MappingRef="Preferred">
+        <MedGen CUI="C0007114" Name="Malignant neoplasm of skin"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="498445" TraitType="Disease" MappingType="XRef" MappingValue="C0027672" MappingRef="MedGen">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="10856804" TraitType="Disease" MappingType="XRef" MappingValue="210600" MappingRef="OMIM">
+        <MedGen CUI="C4551474" Name="Seckel syndrome 1"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="10856804" TraitType="Disease" MappingType="XRef" MappingValue="614564" MappingRef="OMIM">
+        <MedGen CUI="C3281203" Name="Familial cutaneous telangiectasia and oropharyngeal predisposition cancer syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="11079897" TraitType="Disease" MappingType="XRef" MappingValue="CN517202" MappingRef="MedGen">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

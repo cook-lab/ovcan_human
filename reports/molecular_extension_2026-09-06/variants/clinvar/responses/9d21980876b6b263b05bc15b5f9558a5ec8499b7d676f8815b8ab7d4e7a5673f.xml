@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="184987" VariationName="NM_001042492.3(NF1):c.4043A&gt;G (p.His1348Arg)" VariationType="single nucleotide variant" Accession="VCV000184987" Version="11" RecordType="classified" NumberOfSubmissions="3" NumberOfSubmitters="3" DateLastUpdated="2026-04-13" DateCreated="2015-03-24" MostRecentSubmission="2026-03-07">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="184650" VariationID="184987">
+      <GeneList>
+        <Gene Symbol="NF1" FullName="neurofibromin 1" GeneID="4763" HGNC_ID="HGNC:7765" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>17q11.2</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="17" Accession="NC_000017.11" start="31094977" stop="31377675" display_start="31094977" display_stop="31377675" Strand="+"/>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="17" Accession="NW_025791803.1" start="174151" stop="456538" display_start="174151" display_stop="456538" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="17" Accession="NC_000017.10" start="29421944" stop="29704694" display_start="29421944" display_stop="29704694" Strand="+"/>
+          </Location>
+          <OMIM>613113</OMIM>
+          <Haploinsufficiency last_evaluated="2023-02-12" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=NF1">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2023-02-12" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=NF1">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_001042492.3(NF1):c.4043A&gt;G (p.His1348Arg)</Name>
+      <CanonicalSPDI>NC_000017.11:31249051:A:G</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>17q11.2</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="17" Accession="NC_000017.11" start="31249052" stop="31249052" display_start="31249052" display_stop="31249052" variantLength="1" positionVCF="31249052" referenceAlleleVCF="A" alternateAlleleVCF="G"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="17" Accession="NC_000017.10" start="29576070" stop="29576070" display_start="29576070" display_stop="29576070" variantLength="1" positionVCF="29576070" referenceAlleleVCF="A" alternateAlleleVCF="G"/>
+      </Location>
+      <ProteinChange>H1348R</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_214" sequenceAccession="LRG_214">
+            <Expression>LRG_214:g.159076A&gt;G</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_214t1" sequenceAccession="LRG_214t1">
+            <Expression>LRG_214t1:c.4043A&gt;G</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_214p1" sequenceAccession="LRG_214p1" change="p.His1348Arg">
+            <Expression>LRG_214p1:p.His1348Arg</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_214t2" sequenceAccession="LRG_214t2">
+            <Expression>LRG_214t2:c.4043A&gt;G</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_214p2" sequenceAccession="LRG_214p2" change="p.His1348Arg">
+            <Expression>LRG_214p2:p.His1348Arg</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000017.10" sequenceAccession="NC_000017" sequenceVersion="10" change="g.29576070A&gt;G" Assembly="GRCh37">
+            <Expression>NC_000017.10:g.29576070A&gt;G</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000017.11" sequenceAccession="NC_000017" sequenceVersion="11" change="g.31249052A&gt;G" Assembly="GRCh38">
+            <Expression>NC_000017.11:g.31249052A&gt;G</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_009018.1" sequenceAccession="NG_009018" sequenceVersion="1" change="g.159076A&gt;G">
+            <Expression>NG_009018.1:g.159076A&gt;G</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000267.4" sequenceAccession="NM_000267" sequenceVersion="4" change="c.4043A&gt;G" MANEPlusClinical="true">
+            <Expression>NM_000267.4:c.4043A&gt;G</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_000258.1" sequenceAccession="NP_000258" sequenceVersion="1" change="p.His1348Arg" singleLetterProteinChange="H1348R">
+            <Expression>NP_000258.1:p.His1348Arg</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001042492.3" sequenceAccession="NM_001042492" sequenceVersion="3" change="c.4043A&gt;G" MANESelect="true">
+            <Expression>NM_001042492.3:c.4043A&gt;G</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001035957.1" sequenceAccession="NP_001035957" sequenceVersion="1" change="p.His1348Arg" singleLetterProteinChange="H1348R">
+            <Expression>NP_001035957.1:p.His1348Arg</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA190688" DB="ClinGen"/>
+        <XRef Type="rs" ID="786201844" DB="dbSNP"/>
+      </XRefList>
+      <AlleleFrequencyList>
+        <AlleleFrequency Value="0.00000" Source="The Genome Aggregation Database (gnomAD), exomes"/>
+      </AlleleFrequencyList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_001042492.3(NF1):c.4043A&gt;G (p.His1348Arg) AND Hereditary cancer-predisposing syndrome" Accession="RCV000164337" Version="1">
+        <ClassifiedConditionList TraitSetID="13598">
+          <ClassifiedCondition DB="MedGen" ID="C0027672">Hereditary cancer-predisposing syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2014-05-23" SubmissionCount="1">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_001042492.3(NF1):c.4043A&gt;G (p.His1348Arg) AND Neurofibromatosis, type 1" Accession="RCV000538253" Version="9">
+        <ClassifiedConditionList TraitSetID="96">
+          <ClassifiedCondition DB="MedGen" ID="C0027831">Neurofibromatosis, type 1</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, conflicting classifications</ReviewStatus>
+            <Description DateLastEvaluated="2025-11-17" SubmissionCount="2">Conflicting classifications of pathogenicity</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2025-11-17" NumberOfSubmissions="3" NumberOfSubmitters="3" DateCreated="2015-03-24" MostRecentSubmission="2026-03-07">
+        <ReviewStatus>criteria provided, conflicting classifications</ReviewStatus>
+        <Description>Conflicting classifications of pathogenicity</Description>
+        <Explanation DataSource="ClinVar" Type="public">Uncertain significance (2); Benign (1)</Explanation>
+        <Comment DataSource="ClinVar" Type="public">Uncertain significance(2); Benign(1)</Comment>
+        <DescriptionHistory Dated="2026-03-04">
+          <Description>Uncertain significance</Description>
+        </DescriptionHistory>
+        <ConditionList>
+          <TraitSet ID="13598" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="18746" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Tumor predisposition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary Cancer Syndrome</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary neoplastic syndrome</ElementValue>
+                <XRef ID="MONDO:0015356" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplastic Syndromes, Hereditary</ElementValue>
+                <XRef ID="D009386" DB="MeSH"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+                <XRef ID="699346009" DB="SNOMED CT"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="19921"/>
+                <XRef ID="19921" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="IARC, 2008">
+                <ID Source="pmc">3075918</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <XRef ID="140162" DB="Orphanet"/>
+              <XRef ID="C0027672" DB="MedGen"/>
+              <XRef ID="D009386" DB="MeSH"/>
+              <XRef ID="MONDO:0015356" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="96" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="5630" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">VON RECKLINGHAUSEN DISEASE</ElementValue>
+                <XRef Type="MIM" ID="162200" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">NEUROFIBROMATOSIS, TYPE I, SOMATIC</ElementValue>
+                <XRef Type="Allelic variant" ID="613113.0026" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="613113.0027" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Peripheral type neurofibromatosis</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neurofibromatosis, type I</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Neurofibromatosis, type 1</ElementValue>
+                <XRef ID="92824003" DB="SNOMED CT"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">NF1</ElementValue>
+                <XRef Type="MIM" ID="162200" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="public definition">Neurofibromatosis 1 (NF1) is a multisystem disorder characterized by multiple café au lait macules, intertriginous freckling, multiple cutaneous neurofibromas, and learning disability or behavior problems. About half of people with NF1 have plexiform neurofibromas, but most are internal and not suspected clinically. Plexiform neurofibromas can cause pain, neurologic deficits, and abnormalities of involved or adjacent structures. Less common but potentially more serious manifestations include optic nerve and other central nervous system gliomas, malignant peripheral nerve sheath tumors, scoliosis, tibial dysplasia, vasculopathy, and gastrointestinal, endocrine, or pulmonary disease.</Attribute>
+                <XRef ID="NBK1109" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000333054" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521399" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528529" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528533" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528930" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000529017" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000335545" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000501088" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000514913" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592450" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000500115" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000501087" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000514608" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521505" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552305" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000556576" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000568167" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000500881" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000521546" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000551630" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000556388" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000568134" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000576339" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="7866"/>
+                <XRef ID="7866" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301288</ID>
+                <ID Source="BookShelf">NBK1109</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301471</ID>
+                <ID Source="BookShelf">NBK1294</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2010">
+                <ID Source="PubMed">20065170</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASHG/ACMG, 1995">
+                <ID Source="pmc">1801355</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2007">
+                <ID Source="PubMed">17636453</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2008">
+                <ID Source="pmc">3111019</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ES, 2014">
+                <ID Source="PubMed">24893135</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NANETS, 2010">
+                <ID Source="PubMed">20664475</ID>
+                <ID Source="pmc">3419007</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2015">
+                <ID Source="PubMed">26324357</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASHG/ACMG, 2015">
+                <ID Source="PubMed">26140447</ID>
+                <ID Source="pmc">4570999</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NANETS, 2021">
+                <ID Source="PubMed">33939658</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2020">
+                <ID Source="PubMed">32602153</ID>
+              </Citation>
+              <XRef ID="636" DB="Orphanet"/>
+              <XRef ID="C0027831" DB="MedGen"/>
+              <XRef ID="MONDO:0018975" DB="MONDO"/>
+              <XRef Type="MIM" ID="162200" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="1220780" SubmissionDate="2026-02-06" ContributesToAggregateClassification="true" DateLastUpdated="2026-03-07" DateCreated="2017-12-26">
+        <ClinVarSubmissionID localKey="1917632|MedGen:C0027831" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000628562" DateUpdated="2026-03-07" DateCreated="2017-12-26" Type="SCV" Version="8" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-11-17">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Benign</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="NF1"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000017.10:g.29576070A&gt;G</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027831" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <Citation Type="general">
+          <ID Source="PubMed">28492532</ID>
+        </Citation>
+        <SubmissionNameList>
+          <SubmissionName>SUB12507860</SubmissionName>
+          <SubmissionName>SUB14200279</SubmissionName>
+          <SubmissionName>SUB15075391</SubmissionName>
+          <SubmissionName>SUB15990429</SubmissionName>
+          <SubmissionName>SUB8755776</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="385968" SubmissionDate="2020-11-30" ContributesToAggregateClassification="true" DateLastUpdated="2015-03-24" DateCreated="2015-03-24">
+        <ClinVarSubmissionID localKey="a90480" localKeyIsSubmitted="1" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000214969" DateUpdated="2015-03-24" DateCreated="2015-03-24" Type="SCV" Version="4" SubmitterName="Ambry Genetics" OrgID="61756" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2014-05-23">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+          <Comment>The p.H1348R variant (also known as c.4043A&gt;G), located in coding exon 30 of the NF1 gene, results from an A to G substitution at nucleotide position 4043. The histidine at codon 1348 is replaced by arginine, an amino acid with highly similar properties. This variant was not reported in population based cohorts in the following databases: Database of Single Nucleotide Polymorphisms (dbSNP), NHLBI Exome Sequencing Project (ESP), and 1000 Genomes Project.To date, this alteration has been detected with an allele frequency of approximately 0.02% (greater than 5000 alleles tested) in our clinical cohort (includes this individual).This amino acid position is well conserved in available vertebrate species. In addition, the in silico prediction for this alteration is inconclusive.Since supporting evidence is limited at this time, the clinical significance ofp.H1348Rremains unclear.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Ambry Autosomal Dominant and X-Linked criteria (10/2015)</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/zfkfvckw/mid-7377_ambry_classification_scheme_oct_2015.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+              <NumberTested>1</NumberTested>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="NF1"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_001042492.2:c.4043A&gt;G</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+            </Name>
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>NonExomeUpdate_081220AmbryReport</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="5008905" SubmissionDate="2022-08-15" ContributesToAggregateClassification="true" DateLastUpdated="2022-08-23" DateCreated="2022-08-23">
+        <ClinVarSubmissionID localKey="NM_001042492.3:c.4043A&gt;G|OMIM:162200" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV002560365" DateUpdated="2022-08-23" DateCreated="2022-08-23" Type="SCV" Version="1" SubmitterName="Genome-Nilou Lab" OrgID="507598" OrganizationCategory="laboratory" OrgAbbreviation="Genome Nilou"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-03-15">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>no</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="NF1"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_001042492.3:c.4043A&gt;G</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="162200" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB11932009</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="1220780" TraitType="Disease" MappingType="XRef" MappingValue="C0027831" MappingRef="MedGen">
+        <MedGen CUI="C0027831" Name="Neurofibromatosis, type 1"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="385968" TraitType="Disease" MappingType="Name" MappingValue="Hereditary cancer-predisposing syndrome" MappingRef="Preferred">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="5008905" TraitType="Disease" MappingType="XRef" MappingValue="162200" MappingRef="OMIM">
+        <MedGen CUI="C0027831" Name="Neurofibromatosis, type 1"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

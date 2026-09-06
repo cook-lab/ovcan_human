@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="92828" VariationName="NM_000314.8(PTEN):c.800del (p.Lys267fs)" VariationType="Deletion" Accession="VCV000092828" Version="45" RecordType="classified" NumberOfSubmissions="7" NumberOfSubmitters="7" DateLastUpdated="2026-08-04" DateCreated="2015-03-24" MostRecentSubmission="2026-07-27">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="98735" VariationID="92828">
+      <GeneList>
+        <Gene Symbol="PTEN" FullName="phosphatase and tensin homolog" GeneID="5728" HGNC_ID="HGNC:9588" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>10q23.31</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="10" Accession="NC_000010.11" start="87863625" stop="87971930" display_start="87863625" display_stop="87971930" Strand="+"/>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="10" Accession="NW_013171807.1" start="79449" stop="187719" display_start="79449" display_stop="187719" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="10" Accession="NC_000010.10" start="89623194" stop="89728531" display_start="89623194" display_stop="89728531" Strand="+"/>
+          </Location>
+          <OMIM>601728</OMIM>
+          <Haploinsufficiency last_evaluated="2020-06-24" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=PTEN">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2020-06-24" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=PTEN">No evidence available</Triplosensitivity>
+          <Property>gene_acmg_incidental_2013</Property>
+          <Property>gene_acmg_incidental_2016</Property>
+          <Property>gene_acmg_incidental_2021</Property>
+          <Property>gene_acmg_incidental_2022</Property>
+        </Gene>
+      </GeneList>
+      <Name>NM_000314.8(PTEN):c.800del (p.Lys267fs)</Name>
+      <CanonicalSPDI>NC_000010.11:87958012:AAAAAA:AAAAA</CanonicalSPDI>
+      <VariantType>Deletion</VariantType>
+      <Location>
+        <CytogeneticLocation>10q23.31</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="10" Accession="NC_000010.11" start="87958013" stop="87958013" display_start="87958013" display_stop="87958013" variantLength="1" positionVCF="87958012" referenceAlleleVCF="TA" alternateAlleleVCF="T"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="10" Accession="NC_000010.10" start="89717770" stop="89717770" display_start="89717770" display_stop="89717770" variantLength="1" positionVCF="89717769" referenceAlleleVCF="TA" alternateAlleleVCF="T"/>
+      </Location>
+      <ProteinChange>K267fs</ProteinChange>
+      <ProteinChange>K440fs</ProteinChange>
+      <ProteinChange>K70fs</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_311t1" sequenceAccession="LRG_311t1">
+            <Expression>LRG_311t1:c.800del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000010.10" sequenceAccession="NC_000010" sequenceVersion="10" change="g.89717775del" Assembly="GRCh37">
+            <Expression>NC_000010.10:g.89717775del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000010.11" sequenceAccession="NC_000010" sequenceVersion="11" change="g.87958018del" Assembly="GRCh38">
+            <Expression>NC_000010.11:g.87958018del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_007466.2" sequenceAccession="NG_007466" sequenceVersion="2" change="g.99580del">
+            <Expression>NG_007466.2:g.99580del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000314.8" sequenceAccession="NM_000314" sequenceVersion="8" change="c.800del" MANESelect="true">
+            <Expression>NM_000314.8:c.800del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_000305.3" sequenceAccession="NP_000305" sequenceVersion="3" change="p.Lys267fs" singleLetterProteinChange="K267fs">
+            <Expression>NP_000305.3:p.Lys267fs</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001589" Type="frameshift variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001304717.5" sequenceAccession="NM_001304717" sequenceVersion="5" change="c.1319del">
+            <Expression>NM_001304717.5:c.1319del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001291646.4" sequenceAccession="NP_001291646" sequenceVersion="4" change="p.Lys440fs" singleLetterProteinChange="K440fs">
+            <Expression>NP_001291646.4:p.Lys440fs</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001589" Type="frameshift variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001304718.2" sequenceAccession="NM_001304718" sequenceVersion="2" change="c.209del">
+            <Expression>NM_001304718.2:c.209del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001291647.1" sequenceAccession="NP_001291647" sequenceVersion="1" change="p.Lys70fs" singleLetterProteinChange="K70fs">
+            <Expression>NP_001291647.1:p.Lys70fs</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001589" Type="frameshift variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_311" sequenceAccession="LRG_311">
+            <Expression>LRG_311:g.99580del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA000583" DB="ClinGen"/>
+        <XRef Type="rs" ID="121913289" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_000314.8(PTEN):c.800del (p.Lys267fs) AND not provided" Accession="RCV000078622" Version="39">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2020-12-01" SubmissionCount="2">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000314.8(PTEN):c.800del (p.Lys267fs) AND PTEN hamartoma tumor syndrome" Accession="RCV000231858" Version="5">
+        <ClassifiedConditionList TraitSetID="2131">
+          <ClassifiedCondition DB="MedGen" ID="C1959582">PTEN hamartoma tumor syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2024-06-11" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Hereditary cancer-predisposing syndrome" Accession="RCV000491764" Version="5">
+        <ClassifiedConditionList TraitSetID="13598">
+          <ClassifiedCondition DB="MedGen" ID="C0027672">Hereditary cancer-predisposing syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2018-01-24" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Malignant lymphoma, large B-cell, diffuse" Accession="RCV003448974" Version="2">
+        <ClassifiedConditionList TraitSetID="16843">
+          <ClassifiedCondition DB="MedGen" ID="C0079744">Malignant lymphoma, large B-cell, diffuse</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="2023-12-04" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Cowden syndrome 1" Accession="RCV003453007" Version="2">
+        <ClassifiedConditionList TraitSetID="2119">
+          <ClassifiedCondition DB="MedGen" ID="CN072330">Cowden syndrome 1</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2025-12-28" SubmissionCount="2">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2025-12-28" NumberOfSubmissions="7" NumberOfSubmitters="7" DateCreated="2015-03-24" MostRecentSubmission="2026-07-27">
+        <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+        <Description>Pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (6)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">17526800</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21194675</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21956414</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">9467011</ID>
+        </Citation>
+        <ConditionList>
+          <TraitSet ID="16843" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="14586" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Diffuse large B cell lymphoma</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Malignant lymphoma, large B-cell, diffuse</ElementValue>
+                <XRef ID="46732000" DB="SNOMED CT"/>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="3178"/>
+                <XRef ID="3178" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2024">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/b-cell.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) B-Cell Lymphomas, 2024</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2024">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/ped_b-cell.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®), Pediatric Aggressive Mature B-Cell Lymphomas, 2024</CitationText>
+              </Citation>
+              <XRef ID="544" DB="Orphanet"/>
+              <XRef ID="C0079744" DB="MedGen"/>
+              <XRef ID="D016403" DB="MeSH"/>
+              <XRef ID="MONDO:0018905" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="13598" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="18746" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">Hereditary neoplastic syndrome</ElementValue>
+                <XRef ID="MONDO:0015356" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Hereditary cancer-predisposing syndrome</ElementValue>
+                <XRef ID="699346009" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplastic Syndromes, Hereditary</ElementValue>
+                <XRef ID="D009386" DB="MeSH"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Tumor predisposition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Hereditary Cancer Syndrome</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="19921"/>
+                <XRef ID="19921" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="IARC, 2008">
+                <ID Source="pmc">3075918</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <XRef ID="140162" DB="Orphanet"/>
+              <XRef ID="C0027672" DB="MedGen"/>
+              <XRef ID="D009386" DB="MeSH"/>
+              <XRef ID="MONDO:0015356" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="2119" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="13756" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">PTEN-Related Cowden Syndrome</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Cowden syndrome 1</ElementValue>
+                <XRef ID="MONDO:0008021" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">CWS1</ElementValue>
+                <XRef Type="MIM" ID="158350" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">MHAM</ElementValue>
+                <XRef Type="MIM" ID="158350" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="274">gain of function</Attribute>
+                <XRef ID="GTR000514990" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000520030" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000520869" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000514929" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000522278" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528912" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528914" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000556509" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592450" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000528910" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">PTEN hamartoma tumor syndrome (PHTS) is characterized by skin and mucosal lesions, macrocephaly, gastrointestinal polyps, and a high risk for benign and malignant tumors of the breast, thyroid, and endometrium. There is also an increased risk of renal cell carcinoma, colorectal carcinoma, and melanoma. Some individuals have developmental delay and/or autism spectrum disorder. PHTS includes the following clinical phenotypes: Cowden syndrome (CS), Bannayan-Riley-Ruvalcaba syndrome (BRRS), Proteus-like syndrome, and apparently isolated adult-onset Lhermitte-Duclos disease (LDD). Regardless of clinical phenotype, individuals with a germline PTEN pathogenic variant are thought to have the same cancer risks.</Attribute>
+                <XRef ID="NBK1488" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="16450"/>
+                <XRef ID="16450" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301661</ID>
+                <ID Source="BookShelf">NBK1488</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2008">
+                <ID Source="pmc">3111012</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NSGC, 2004">
+                <ID Source="PubMed">15604628</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ASCO, 2014">
+                <ID Source="PubMed">24493721</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG/NSGC, 2015">
+                <ID Source="PubMed">25394175</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.0, 2021">
+                <ID Source="PubMed">34012068</ID>
+                <ID Source="DOI">10.1038/s41436-021-01172-3</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG SF v3.1, 2022">
+                <ID Source="PubMed">35802134</ID>
+                <ID Source="DOI">10.1016/j.gim.2022.04.006</ID>
+              </Citation>
+              <XRef ID="CN072330" DB="MedGen"/>
+              <XRef ID="MONDO:0008021" DB="MONDO"/>
+              <XRef Type="MIM" ID="158350" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="2131" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="10363" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">PTEN hamartoma tumor syndrome</ElementValue>
+                <XRef ID="MONDO:0017623" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">PTEN Hamartomatous Tumour Syndrome</ElementValue>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">PHTS</ElementValue>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="keyword">Neoplasm</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="12800"/>
+                <XRef ID="12800" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="public definition">PTEN hamartoma tumor syndrome (PHTS) is characterized by skin and mucosal lesions, macrocephaly, gastrointestinal polyps, and a high risk for benign and malignant tumors of the breast, thyroid, and endometrium. There is also an increased risk of renal cell carcinoma, colorectal carcinoma, and melanoma. Some individuals have developmental delay and/or autism spectrum disorder. PHTS includes the following clinical phenotypes: Cowden syndrome (CS), Bannayan-Riley-Ruvalcaba syndrome (BRRS), Proteus-like syndrome, and apparently isolated adult-onset Lhermitte-Duclos disease (LDD). Regardless of clinical phenotype, individuals with a germline PTEN pathogenic variant are thought to have the same cancer risks.</Attribute>
+                <XRef ID="NBK1488" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">PTEN-related disorders</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="273">loss of function</Attribute>
+                <XRef ID="GTR000558503" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552440" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552245" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000552302" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000558905" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000551654" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301661</ID>
+                <ID Source="BookShelf">NBK1488</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACS, 2007">
+                <ID Source="PubMed">17392385</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23788249</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23519317</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="NCCN, 2014">
+                <ID Source="PubMed">25190698</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACG, 2015">
+                <ID Source="PubMed">25645574</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2015">
+                <ID Source="PubMed">25356965</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2016">
+                <ID Source="PubMed">27854360</ID>
+                <ID Source="DOI">10.1038/gim.2016.190</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Skin Cancer">
+                <ID Source="PubMed">26389333</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Genetics of Colorectal Cancer">
+                <ID Source="PubMed">26389505</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Breast and Gynecologic Cancers">
+                <ID Source="PubMed">26389210</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="NCI PDQ, Cancer Genetics Counseling">
+                <ID Source="PubMed">26389258</ID>
+              </Citation>
+              <XRef ID="306498" DB="Orphanet"/>
+              <XRef ID="C1959582" DB="MedGen"/>
+              <XRef ID="D006223" DB="MeSH"/>
+              <XRef ID="MONDO:0017623" DB="MONDO"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="1129721" SubmissionDate="2024-04-24" ContributesToAggregateClassification="true" DateLastUpdated="2024-05-01" DateCreated="2017-06-25">
+        <ClinVarSubmissionID localKey="a4053|MedGen:C0027672" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000579966" DateUpdated="2024-05-01" DateCreated="2017-06-25" Type="SCV" Version="6" SubmitterName="Ambry Genetics" OrgID="61756" OrganizationCategory="laboratory" OrgAbbreviation="Ambry"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2018-01-24">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">17526800</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21194675</ID>
+          </Citation>
+          <Comment>The c.800delA pathogenic mutation, located in coding exon 7 of the PTEN gene, results from a deletion of one nucleotide at nucleotide position 800, causing a translational frameshift with a predicted alternate stop codon (p.K267Rfs*9). This mutation has been reported in an individual meeting clinical diagnostic criteria for Cowden syndrome (Lachlan KL et al. J. Med. Genet. 2007 Sep;44:579-85), as well as in individuals meeting relaxed International Cowden Consortium operational criteria for Cowden syndrome (Tan MH et al. Am. J. Hum. Genet. 2011 Jan;88(1):42-56). In addition to the clinical data presented in the literature, this alteration is expected to result in loss of function by premature protein truncation or nonsense-mediated mRNA decay. As such, this alteration is interpreted as a disease-causing mutation.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Ambry Variant Classification Scheme 2023</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/i9igeqse/ambry_variant_classification_scheme_2023.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000314.4:c.800delA</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027672" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>All AVA3 Novel and Update Variants_103122</SubmissionName>
+          <SubmissionName>FinalClinVarSubmissionFile_20140101to20240315_ava3_1</SubmissionName>
+          <SubmissionName>NonExomeUpdate_081220AmbryReport</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7816450" SubmissionDate="2023-12-13" ContributesToAggregateClassification="false" DateLastUpdated="2025-04-13" DateCreated="2023-12-24">
+        <ClinVarSubmissionID localKey="NM_000314.8:c.800del|MeSH:D016403" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV004176814" DateUpdated="2025-04-13" DateCreated="2023-12-24" Type="SCV" Version="2" SubmitterName="Department Of Pathology &amp; Laboratory Medicine, University Of Pennsylvania" OrgID="509360" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-12-04">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>Post-initial therapy specimen.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Ethnicity>Caucasian</Ethnicity>
+              <GeographicOrigin>United States</GeographicOrigin>
+              <Species TaxonomyId="9606">human</Species>
+              <Age Type="minimum" age_unit="years">50</Age>
+              <Age Type="maximum" age_unit="years">59</Age>
+              <AffectedStatus>yes</AffectedStatus>
+              <Sex>male</Sex>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000314.8:c.800del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MeSH" ID="D016403"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14016546</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="539826" SubmissionDate="2026-02-10" ContributesToAggregateClassification="true" DateLastUpdated="2026-02-23" DateCreated="2016-07-01">
+        <ClinVarSubmissionID localKey="254236|MedGen:C1959582" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000284602" DateUpdated="2026-02-23" DateCreated="2016-07-01" Type="SCV" Version="4" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2024-06-11">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">9467011</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21194675</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">17526800</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">21956414</ID>
+          </Citation>
+          <Comment Type="public">This sequence change creates a premature translational stop signal (p.Lys267Argfs*9) in the PTEN gene. It is expected to result in an absent or disrupted protein product. Loss-of-function variants in PTEN are known to be pathogenic (PMID: 9467011, 21194675). This variant is not present in population databases (gnomAD no frequency). This premature translational stop signal has been observed in individual(s) with clinical features of PTEN-related conditions (PMID: 17526800, 21956414). ClinVar contains an entry for this variant (Variation ID: 92828). For these reasons, this variant has been classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000010.10:g.89717770del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C1959582" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>2016June</SubmissionName>
+          <SubmissionName>SUB15089977</SubmissionName>
+          <SubmissionName>SUB15998937</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="2959202" SubmissionDate="2026-07-04" ContributesToAggregateClassification="true" DateLastUpdated="2026-07-27" DateCreated="2021-03-14">
+        <ClinVarSubmissionID localKey="105688|MedGen:CN517202" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV001502626" DateUpdated="2026-07-27" DateCreated="2021-03-14" Type="SCV" Version="36" SubmitterName="CeGaT Center for Human Genetics Tuebingen" OrgID="505870" OrganizationCategory="laboratory" OrgAbbreviation="CHGT"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2020-12-01">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">CeGaT Center For Human Genetics Tuebingen Variant Classification Criteria Version 2</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/api/2.0/files/0ynenhfo/cegat_center_for_human_genetics_tuebingen_-_variant_classification_criteria_-_version_2.pdf/?format=attachment</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="1"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="10" alternateAllele="T" referenceAllele="TA" start="89717769" stop="89717770" variantLength="2"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="CN517202" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>2021-07</SubmissionName>
+          <SubmissionName>2021-10</SubmissionName>
+          <SubmissionName>2022-01</SubmissionName>
+          <SubmissionName>2022-01-corrected</SubmissionName>
+          <SubmissionName>2022-04</SubmissionName>
+          <SubmissionName>2022-07</SubmissionName>
+          <SubmissionName>2022-08</SubmissionName>
+          <SubmissionName>2022-10.3</SubmissionName>
+          <SubmissionName>2023-01</SubmissionName>
+          <SubmissionName>2023-04</SubmissionName>
+          <SubmissionName>2023-09-add-ACMG-details</SubmissionName>
+          <SubmissionName>2023-10</SubmissionName>
+          <SubmissionName>2024-04</SubmissionName>
+          <SubmissionName>SUB13641132</SubmissionName>
+          <SubmissionName>SUB13985080</SubmissionName>
+          <SubmissionName>SUB14102099</SubmissionName>
+          <SubmissionName>SUB14290090</SubmissionName>
+          <SubmissionName>SUB14426581</SubmissionName>
+          <SubmissionName>SUB14513473</SubmissionName>
+          <SubmissionName>SUB14584463</SubmissionName>
+          <SubmissionName>SUB14636274</SubmissionName>
+          <SubmissionName>SUB14721088</SubmissionName>
+          <SubmissionName>SUB14783021</SubmissionName>
+          <SubmissionName>SUB14928462</SubmissionName>
+          <SubmissionName>SUB15149282</SubmissionName>
+          <SubmissionName>SUB15237316</SubmissionName>
+          <SubmissionName>SUB15302933</SubmissionName>
+          <SubmissionName>SUB15380712</SubmissionName>
+          <SubmissionName>SUB15436669</SubmissionName>
+          <SubmissionName>SUB15585849</SubmissionName>
+          <SubmissionName>SUB15682521</SubmissionName>
+          <SubmissionName>SUB15821677</SubmissionName>
+          <SubmissionName>SUB15914871</SubmissionName>
+          <SubmissionName>SUB16104672</SubmissionName>
+          <SubmissionName>SUB16224911</SubmissionName>
+          <SubmissionName>SUB16307954</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="958258" SubmissionDate="2016-12-21" ContributesToAggregateClassification="true" DateLastUpdated="2015-03-24" DateCreated="2015-03-24">
+        <ClinVarSubmissionID localKey="GDX:51494|Not Provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000490753" DateUpdated="2015-03-24" DateCreated="2015-03-24" Type="SCV" Version="1" SubmitterName="GeneDx" OrgID="26957" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2015-05-01">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>The c.800delA variant in the PTEN gene has been report in association with PTEN-related disorders (Lachlan et al., 2007; Ngeow et al., 2011). The c.800delA deletion in the PTEN gene causes a frameshift starting with codon Lysine 267, changes this amino acid to an Arginine residue and creates a premature Stop codon at position 9 of the new reading frame, denoted p.Lys267ArgfsX9. This variant is predicted to cause loss of normal protein function either through protein truncation or nonsense-mediated mRNA decay. Therefore, we interpret c.800delA to be a pathogenic variant.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">GeneDx Variant Classification (06012015)</Attribute>
+          <Citation Type="general">
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/dhtz9flo/genedx_interprules_final_061215.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="10" alternateAllele="-" referenceAllele="A" start="89717775" stop="89717775" variantLength="1"/>
+          </Location>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000314.4:c.800delA</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7828904" SubmissionDate="2023-12-21" ContributesToAggregateClassification="true" DateLastUpdated="2023-12-24" DateCreated="2023-12-24">
+        <ClinVarSubmissionID localKey="100097096|OMIM:158350"/>
+        <ClinVarAccession Accession="SCV004188831" DateUpdated="2023-12-24" DateCreated="2023-12-24" Type="SCV" Version="1" SubmitterName="Myriad Genetics, Inc." OrgID="507240" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-09-29">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>This variant is considered pathogenic. This variant creates a frameshift predicted to result in premature protein truncation.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Myriad Autosomal Dominant, Autosomal Recessive and X-Linked Classification Criteria (2023)</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/8ufcwsf2/myriad_genetics_classification_criteria_2023.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="hg19" Chr="10" alternateAllele="A" referenceAllele="AA" start="89717774" stop="89717775"/>
+          </Location>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">100097096</Name>
+          </OtherNameList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="158350" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14104645</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="14527056" SubmissionDate="2026-06-02" ContributesToAggregateClassification="true" DateLastUpdated="2026-06-20" DateCreated="2026-06-20">
+        <ClinVarSubmissionID localKey="10-87958012-TA-T|OMIM:158350" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV007610477" DateUpdated="2026-06-20" DateCreated="2026-06-20" Type="SCV" Version="1" SubmitterName="3billion" OrgID="507830" OrganizationCategory="other" OrgAbbreviation="3billion"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-12-28">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">17526800</ID>
+          </Citation>
+          <Comment Type="public">The variant is observed at an extremely low frequency in the gnomAD v4.1.0 dataset (total allele frequency: &lt;0.001%). Predicted Consequence/Location: Frameshift: predicted to result in a loss or disruption of normal protein function through nonsense-mediated decay (NMD) or protein truncation. Multiple pathogenic variants are reported downstream of the variant. The variant has been reported at least twice as pathogenic with clinical assertions and evidence for the classification (ClinVar ID: VCV000092828 /PMID: 17526800). Therefore, this variant is classified as Pathogenic according to the recommendation of ACMG/AMP guideline.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <TypePlatform>genome sequencing</TypePlatform>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="PTEN"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_000314.8:c.800del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="158350" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB16220023</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="1129721" TraitType="Disease" MappingType="XRef" MappingValue="C0027672" MappingRef="MedGen">
+        <MedGen CUI="C0027672" Name="Hereditary cancer-predisposing syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7816450" TraitType="Disease" MappingType="XRef" MappingValue="D016403" MappingRef="MeSH">
+        <MedGen CUI="C0079744" Name="Malignant lymphoma, large B-cell, diffuse"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="539826" TraitType="Disease" MappingType="XRef" MappingValue="C1959582" MappingRef="MedGen">
+        <MedGen CUI="C1959582" Name="PTEN hamartoma tumor syndrome"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="2959202" TraitType="Disease" MappingType="XRef" MappingValue="CN517202" MappingRef="MedGen">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="958258" TraitType="Disease" MappingType="Name" MappingValue="Not Provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7828904" TraitType="Disease" MappingType="XRef" MappingValue="158350" MappingRef="OMIM">
+        <MedGen CUI="CN072330" Name="Cowden syndrome 1"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="14527056" TraitType="Disease" MappingType="XRef" MappingValue="158350" MappingRef="OMIM">
+        <MedGen CUI="CN072330" Name="Cowden syndrome 1"/>
+      </TraitMapping>
+    </TraitMappingList>
+    <DeletedSCVList>
+      <SCV>
+        <Accession Version="3" DateDeleted="2018-03-22">SCV000110478</Accession>
+        <Description>not specified</Description>
+      </SCV>
+      <SCV>
+        <Accession Version="1" DateDeleted="2024-12-20">SCV000504403</Accession>
+        <Description>This record was deleted because the classification was outdated and the DoCM project was retired. Classification of these variants is now being addressed by CIViC (civicdb.org).</Description>
+      </SCV>
+      <SCV>
+        <Accession Version="1" DateDeleted="2024-12-20">SCV000504404</Accession>
+        <Description>This record was deleted because the classification was outdated and the DoCM project was retired. Classification of these variants is now being addressed by CIViC (civicdb.org).</Description>
+      </SCV>
+    </DeletedSCVList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

@@ -1,0 +1,24 @@
+cell_line,genotype-germline-sites,genotype-pon-sites,interval-padding,annotated_records,VCF_PASS,autosomal_biallelic_SNV,autosomal_SNV_with_AD_DP20,AD_DP20_AF03_07,AD_DP20_POPAF_lt2,PASS_AD_DP20_POPAF_lt2,PASS_autosomal_SNV,source_vcf
+OV1369-R2,false,false,0,26332,902,15011,12580,2083,4859,37,751,judy_archive/data/wes - old/mutect2/OV1369_R2/OV1369_R2_P66.mutect2.filtered_VEP.ann.vcf
+OV2085,false,false,0,25019,677,14897,12686,1863,5427,33,578,judy_archive/data/wes - old/mutect2/OV2085/OV2085_P64.mutect2.filtered_VEP.ann.vcf
+OV2295,false,false,0,25914,632,15411,12502,2959,5260,26,515,judy_archive/data/wes - old/mutect2/OV2295/OV2295_P61.mutect2.filtered_VEP.ann.vcf
+OV2295-R2,false,false,0,25038,834,15062,12274,2912,5552,32,705,judy_archive/data/wes - old/mutect2/OV2295_R2/OV2295_R2_P70.mutect2.filtered_VEP.ann.vcf
+OV3133-R,false,false,0,22442,686,13491,11261,2838,5293,39,563,judy_archive/data/wes - old/mutect2/OV3133_R/OV3133_R_P71.mutect2.filtered_VEP.ann.vcf
+OV3133-R2,false,false,0,27303,654,15582,13127,2691,5350,43,527,judy_archive/data/wes - old/mutect2/OV3133_R2/OV3133_R2_P58.mutect2.filtered_VEP.ann.vcf
+OV3291,false,false,0,25299,671,15018,12810,2731,5519,33,562,judy_archive/data/wes - old/mutect2/OV3291/OV3291_P46.mutect2.filtered_VEP.ann.vcf
+TOV1369,false,false,0,20960,969,12698,10246,1973,4674,39,856,judy_archive/data/wes - old/mutect2/TOV1369/TOV1369_P65.mutect2.filtered_VEP.ann.vcf
+TOV2295-R,false,false,0,27940,648,16248,13419,3015,5460,27,541,judy_archive/data/wes - old/mutect2/TOV2295_R_P57/TOV2295_R_P57.mutect2.filtered_VEP.ann.vcf
+TOV2835EP,false,false,0,29323,780,16536,13929,2586,5464,41,632,judy_archive/data/wes - old/mutect2/TOV2835EP_P64/TOV2835EP_P64.mutect2.filtered_VEP.ann.vcf
+TOV2881EP,false,false,0,23317,783,13871,11343,2395,5180,42,684,judy_archive/data/wes - old/mutect2/TOV2881EP_P64/TOV2881EP_P64.mutect2.filtered_VEP.ann.vcf
+TOV2929D,false,false,0,23201,1226,14666,10719,2734,5324,47,1014,judy_archive/data/wes - old/mutect2/TOV2929D_P57/TOV2929D_P57.mutect2.filtered_VEP.ann.vcf
+TOV3121D,false,false,0,25082,547,14328,12020,2563,5233,39,441,judy_archive/data/wes - old/mutect2/TOV3121D_P68/TOV3121D_P68.mutect2.filtered_VEP.ann.vcf.gz
+TOV3121EP,false,false,0,23833,636,14167,11398,2236,5015,27,526,judy_archive/data/wes - old/mutect2/TOV3121EP_P68/TOV3121EP_P68.mutect2.filtered_VEP.ann.vcf
+TOV3133D,false,false,0,26942,655,15794,13439,2741,5550,39,523,judy_archive/data/wes - old/mutect2/TOV3133D/TOV3133D_P66.mutect2.filtered_VEP.ann.vcf
+TOV3133G,false,false,0,23802,672,14312,11582,2868,5179,31,537,judy_archive/data/wes - old/mutect2/TOV3133G/TOV3133G_P65.mutect2.filtered_VEP.ann.vcf
+OV3331,false,false,0,26204,528,14930,12048,2145,4622,29,410,judy_archive/data/wes - old/mutect2/OV3331/OV3331_P54.mutect2.filtered_VEP.ann.vcf
+OV90,false,false,0,23364,856,14210,11907,3973,5517,52,715,judy_archive/data/wes - old/mutect2/OV90_P63/OV90_P63.mutect2.filtered_VEP.ann.vcf
+TOV81D,false,false,0,28980,949,17293,14446,4607,6495,47,725,judy_archive/data/wes - old/mutect2/TOV81D_P23/TOV81D_P23.mutect2.filtered_VEP.ann.vcf
+TOV21G,false,false,0,32953,3723,18257,15867,6126,6527,60,2482,judy_archive/data/wes - old/mutect2/TOV21G_P59/TOV21G_P59.mutect2.filtered_VEP.ann.vcf
+TOV3392D,false,false,0,25746,660,15216,13058,2972,5503,46,536,judy_archive/data/wes - old/mutect2/TOV3392D/TOV3392D_P69.mutect2.filtered_VEP.ann.vcf
+TOV112D,false,false,0,22090,553,13149,10735,1435,4782,31,460,judy_archive/data/wes - old/mutect2/TOV112D/TOV112D_P83.mutect2.filtered_VEP.ann.vcf
+TOV2414,false,false,0,21390,575,13560,11367,3869,5420,53,495,judy_archive/data/wes - old/mutect2/TOV2414/TOV2414_P65.mutect2.filtered_VEP.ann.vcf

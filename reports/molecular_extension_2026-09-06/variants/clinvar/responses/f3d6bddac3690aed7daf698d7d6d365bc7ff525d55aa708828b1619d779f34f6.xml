@@ -1,0 +1,763 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="45123" VariationName="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys)" VariationType="single nucleotide variant" Accession="VCV000045123" Version="14" RecordType="classified" NumberOfSubmissions="8" NumberOfSubmitters="8" DateLastUpdated="2026-06-27" DateCreated="2015-01-31" MostRecentSubmission="2026-06-20">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="54290" VariationID="45123">
+      <GeneList>
+        <Gene Symbol="KRAS" FullName="KRas proto-oncogene, GTPase" GeneID="3845" HGNC_ID="HGNC:6407" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>12p12.1</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="25205246" stop="25250929" display_start="25205246" display_stop="25250929" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="25358179" stop="25403853" display_start="25358179" display_stop="25403853" Strand="-"/>
+          </Location>
+          <OMIM>190070</OMIM>
+          <Haploinsufficiency last_evaluated="2015-10-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=KRAS">No evidence available</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2015-10-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=KRAS">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys)</Name>
+      <CanonicalSPDI>NC_000012.12:25245347:C:A</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>12p12.1</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="25245348" stop="25245348" display_start="25245348" display_stop="25245348" variantLength="1" positionVCF="25245348" referenceAlleleVCF="C" alternateAlleleVCF="A"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="25398282" stop="25398282" display_start="25398282" display_stop="25398282" variantLength="1" positionVCF="25398282" referenceAlleleVCF="C" alternateAlleleVCF="A"/>
+      </Location>
+      <ProteinChange>G13C</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344" sequenceAccession="LRG_344">
+            <Expression>LRG_344:g.10656G&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344t1" sequenceAccession="LRG_344t1">
+            <Expression>LRG_344t1:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_344p1" sequenceAccession="LRG_344p1" change="p.Gly13Cys">
+            <Expression>LRG_344p1:p.Gly13Cys</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344t2" sequenceAccession="LRG_344t2">
+            <Expression>LRG_344t2:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_344p2" sequenceAccession="LRG_344p2" change="p.Gly13Cys">
+            <Expression>LRG_344p2:p.Gly13Cys</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.11" sequenceAccession="NC_000012" sequenceVersion="11" change="g.25398282C&gt;A" Assembly="GRCh37">
+            <Expression>NC_000012.11:g.25398282C&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.12" sequenceAccession="NC_000012" sequenceVersion="12" change="g.25245348C&gt;A" Assembly="GRCh38">
+            <Expression>NC_000012.12:g.25245348C&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_007524.2" sequenceAccession="NG_007524" sequenceVersion="2" change="g.10656G&gt;T">
+            <Expression>NG_007524.2:g.10656G&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001369786.1" sequenceAccession="NM_001369786" sequenceVersion="1" change="c.37G&gt;T">
+            <Expression>NM_001369786.1:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001356715.1" sequenceAccession="NP_001356715" sequenceVersion="1" change="p.Gly13Cys" singleLetterProteinChange="G13C">
+            <Expression>NP_001356715.1:p.Gly13Cys</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001369787.1" sequenceAccession="NM_001369787" sequenceVersion="1" change="c.37G&gt;T">
+            <Expression>NM_001369787.1:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001356716.1" sequenceAccession="NP_001356716" sequenceVersion="1" change="p.Gly13Cys" singleLetterProteinChange="G13C">
+            <Expression>NP_001356716.1:p.Gly13Cys</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_004985.5" sequenceAccession="NM_004985" sequenceVersion="5" change="c.37G&gt;T" MANESelect="true">
+            <Expression>NM_004985.5:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_004976.2" sequenceAccession="NP_004976" sequenceVersion="2" change="p.Gly13Cys" singleLetterProteinChange="G13C">
+            <Expression>NP_004976.2:p.Gly13Cys</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_033360.4" sequenceAccession="NM_033360" sequenceVersion="4" change="c.37G&gt;T" MANEPlusClinical="true">
+            <Expression>NM_033360.4:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_203524.1" sequenceAccession="NP_203524" sequenceVersion="1" change="p.Gly13Cys" singleLetterProteinChange="G13C">
+            <Expression>NP_203524.1:p.Gly13Cys</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_033360.3" sequenceAccession="NM_033360" sequenceVersion="3" change="c.37G&gt;T">
+            <Expression>NM_033360.3:c.37G&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA135570" DB="ClinGen"/>
+        <XRef Type="Allelic variant" ID="190070.0023" DB="OMIM"/>
+        <XRef Type="rs" ID="121913535" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys) AND Non-small cell lung carcinoma" Accession="RCV000038268" Version="7">
+        <ClassifiedConditionList TraitSetID="4069">
+          <ClassifiedCondition DB="MedGen" ID="C0007131">Non-small cell lung carcinoma</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2012-09-17" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys) AND Autoimmune lymphoproliferative syndrome type 4" Accession="RCV000144972" Version="10">
+        <ClassifiedConditionList TraitSetID="3839">
+          <ClassifiedCondition DB="MedGen" ID="C2674723">Autoimmune lymphoproliferative syndrome type 4</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2025-10-25" SubmissionCount="2">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys) AND not provided" Accession="RCV000681039" Version="7">
+        <ClassifiedConditionList TraitSetID="9460">
+          <ClassifiedCondition DB="MedGen" ID="C3661900">not provided</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated="2022-09-21" SubmissionCount="3">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys) AND KRAS-related disorder" Accession="RCV003335071" Version="1">
+        <ClassifiedConditionList TraitSetID="87296">
+          <ClassifiedCondition>KRAS-related disorder</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_004985.5(KRAS):c.37G&gt;T (p.Gly13Cys) AND RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC" Accession="RCV006688385" Version="1">
+        <ClassifiedConditionList TraitSetID="110245">
+          <ClassifiedCondition>RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="2011-03-10" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2025-10-25" NumberOfSubmissions="8" NumberOfSubmitters="8" DateCreated="2015-01-31" MostRecentSubmission="2026-06-20">
+        <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+        <Description>Pathogenic/Likely pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (5); Likely pathogenic (1)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">15696205</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">21079152</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">27577878</ID>
+        </Citation>
+        <DescriptionHistory Dated="2023-03-10">
+          <Description>Pathogenic</Description>
+        </DescriptionHistory>
+        <ConditionList>
+          <TraitSet ID="87296" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="68845" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">KRAS-related disorders</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">KRAS-related condition</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">KRAS-related disorder</ElementValue>
+              </Name>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="3839" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="11277" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">RAS-associated autoimmune leukoproliferative disorder</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">AUTOIMMUNE LYMPHOPROLIFERATIVE SYNDROME, TYPE IV</ElementValue>
+                <XRef Type="MIM" ID="614470" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Autoimmune lymphoproliferative syndrome type 4</ElementValue>
+                <XRef ID="MONDO:0013767" DB="MONDO"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">ALPS4</ElementValue>
+                <XRef Type="MIM" ID="614470" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">RALD1</ElementValue>
+                <XRef Type="MIM" ID="614470" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="17262"/>
+                <XRef ID="17262" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <XRef ID="268114" DB="Orphanet"/>
+              <XRef ID="C2674723" DB="MedGen"/>
+              <XRef ID="MONDO:0013767" DB="MONDO"/>
+              <XRef Type="MIM" ID="614470" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="9460" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="17556" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">not provided</ElementValue>
+                <XRef ID="13DG0619" DB="Genomic Medicine Center of Excellence, King Faisal Specialist Hospital and Research Centre"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">none provided</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">The term 'not provided' is registered in MedGen to support identification of submissions to ClinVar for which no condition was named when assessing the variant. 'not provided' differs from 'not specified', which is used when a variant is asserted to be benign, likely benign, or of uncertain significance for conditions that have not been specified.</Attribute>
+              </AttributeSet>
+              <XRef ID="C3661900" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="110245" Type="Disease" ContributesToAggregateClassification="false">
+            <Trait ID="81971" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC</ElementValue>
+                <XRef Type="Allelic variant" ID="190070.0005" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="190070.0003" DB="OMIM"/>
+                <XRef Type="Allelic variant" ID="190070.0023" DB="OMIM"/>
+              </Name>
+            </Trait>
+          </TraitSet>
+          <TraitSet ID="4069" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="7728" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Non-small cell lung carcinoma</ElementValue>
+                <XRef ID="HP:0030358" DB="Human Phenotype Ontology"/>
+                <XRef ID="MONDO:0005233" DB="MONDO"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Non-small cell lung cancer</ElementValue>
+                <XRef ID="HP:0030358" DB="Human Phenotype Ontology"/>
+                <XRef ID="254637007" DB="SNOMED CT"/>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Preferred">NSCLC</ElementValue>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="disease mechanism" integerValue="283">Other</Attribute>
+                <XRef ID="GTR000571363" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000592350" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000596970" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000569877" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000596971" DB="Genetic Testing Registry (GTR)"/>
+                <XRef ID="GTR000597429" DB="Genetic Testing Registry (GTR)"/>
+              </AttributeSet>
+              <Citation Type="practice guideline" Abbrev="AHRQ, 2013">
+                <URL>https://www.cms.gov/Medicare/Coverage/DeterminationProcess/downloads/id90TA.pdf</URL>
+                <CitationText>Technology Assessment on Genetic Testing or Molecular Pathology Testing of Cancers with Unknown Primary Site to Determine Origin (ARCHIVED)</CitationText>
+              </Citation>
+              <Citation Type="general" Abbrev="FDA, 2014">
+                <ID Source="PubMed">24868098</ID>
+              </Citation>
+              <Citation Type="Suggested Reading" Abbrev="Cooper et al., 2014">
+                <ID Source="PubMed">24673736</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="KCPSG, 2014">
+                <ID Source="PubMed">24627688</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="KCPSG, 2013">
+                <ID Source="PubMed">23667368</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="KCPSG, 2019">
+                <ID Source="PubMed">30813707</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NICE, 2024">
+                <URL>https://www.nice.org.uk/guidance/ng122</URL>
+                <CitationText>UK NICE guideline NG122, Lung cancer: diagnosis and management, 2024</CitationText>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2024">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/nscl.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®), Non-Small Cell Lung Cancer, 2024</CitationText>
+              </Citation>
+              <XRef ID="C0007131" DB="MedGen"/>
+              <XRef ID="D002289" DB="MeSH"/>
+              <XRef ID="MONDO:0005233" DB="MONDO"/>
+              <XRef Type="primary" ID="HP:0030358" DB="Human Phenotype Ontology"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="339824" SubmissionDate="2016-09-02" ContributesToAggregateClassification="false" DateLastUpdated="2026-05-03" DateCreated="2014-11-22">
+        <ClinVarSubmissionID localKey="190070.0023_RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC" title="KRAS, GLY13CYS_RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC"/>
+        <ClinVarAccession Accession="SCV000191999" DateUpdated="2026-05-03" DateCreated="2014-11-22" Type="SCV" Version="3" SubmitterName="OMIM" OrgID="3" OrganizationCategory="resource"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2011-03-10">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species>human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>literature only</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">In hematologic cells derived from a girl with RAS-associated autoimmune leukoproliferative disorder-2 (RALD2; 621582), Niemela et al. (2010) identified a somatic heterozygous c.37G-T transversion in the KRAS gene, resulting in a gly13-to-cys (G13C) substitution. Cells transfected with the mutations showed an increase in active RAS compared to controls, consistent with a gain of function.</Attribute>
+              <Citation>
+                <ID Source="PubMed">21079152</ID>
+              </Citation>
+              <XRef DB="OMIM" ID="621582" Type="MIM"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <Name>KRAS, GLY13CYS</Name>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="NonHGVS">GLY13CYS</Name>
+          </OtherNameList>
+          <XRefList>
+            <XRef DB="OMIM" ID="190070.0023" Type="Allelic variant"/>
+          </XRefList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1816807" SubmissionDate="2019-05-08" ContributesToAggregateClassification="true" DateLastUpdated="2019-07-31" DateCreated="2019-07-31">
+        <ClinVarSubmissionID localKey="NM_004985.4:c.37G&gt;T|Not provided" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000928185" DateUpdated="2019-07-31" DateCreated="2019-07-31" Type="SCV" Version="1" SubmitterName="Blueprint Genetics" OrgID="500188" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2019-01-22">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Blueprint Genetics Variant Classification Scheme</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/8okxtmpf/blueprint_genetics_variant_classification_scheme.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004985.4:c.37G&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <Comment>Patient analyzed with Primary Immunodeficiency Panel</Comment>
+        <SubmissionNameList>
+          <SubmissionName>Blueprint Genetics 4/2019</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="103137" SubmissionDate="2019-03-21" ContributesToAggregateClassification="true" DateLastUpdated="2015-01-31" DateCreated="2013-05-03">
+        <ClinVarSubmissionID localKey="15082474|MeSH:D002289" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000061937" DateUpdated="2015-01-31" DateCreated="2013-05-03" Type="SCV" Version="4" SubmitterName="Laboratory for Molecular Medicine, Mass General Brigham Personalized Medicine" OrgID="21766" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2012-09-17">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">15696205</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">LMM Criteria</Attribute>
+          <Citation>
+            <ID Source="PubMed">24033266</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+              <FamilyData NumFamiliesWithVariant="20"/>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="22"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <GeneLocation>NM_004985.3:EXON 2</GeneLocation>
+          </Location>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000012.11:g.25398282C&gt;A</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MeSH" ID="D002289"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB5348977</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="3053256" SubmissionDate="2022-11-22" ContributesToAggregateClassification="false" DateLastUpdated="2022-11-29" DateCreated="2021-04-13">
+        <ClinVarSubmissionID localKey="chr12:25398281-25398282:93403b8bff10d6150207602eb248c457" localKeyIsSubmitted="1" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV001552227" DateUpdated="2022-11-29" DateCreated="2021-04-13" Type="SCV" Version="2" SubmitterName="Department of Pathology and Laboratory Medicine, Sinai Health System" OrgID="506152" OrganizationCategory="laboratory" OrgAbbreviation="PLM-SHS"/>
+        <AdditionalSubmitters>
+          <SubmitterDescription OrgID="506759" SubmitterName="Franklin by Genoox" Type="secondary" OrganizationCategory="other"/>
+        </AdditionalSubmitters>
+        <RecordStatus>current</RecordStatus>
+        <Classification>
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>unknown</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="VariantAlleles" integerValue="3"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <Location>
+            <SequenceLocation Assembly="GRCh37" Chr="12" alternateAllele="A" referenceAllele="C" start="25398282" stop="25398282" variantLength="1"/>
+          </Location>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">not provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <StudyName>The Canadian Open Genetics Repository (COGR)</StudyName>
+        <SubmissionNameList>
+          <SubmissionName>SUB9371647</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="1576007" SubmissionDate="2022-09-28" ContributesToAggregateClassification="true" DateLastUpdated="2023-03-04" DateCreated="2018-09-22">
+        <ClinVarSubmissionID localKey="GDXSV:241171" localKeyIsSubmitted="1"/>
+        <ClinVarAccession Accession="SCV000808492" DateUpdated="2023-03-04" DateCreated="2018-09-22" Type="SCV" Version="3" SubmitterName="GeneDx" OrgID="26957" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2022-09-21">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>Published functional studies demonstrate that this variant causes increased RAS activation (Niemela et al., 2011); Not observed at significant frequency in large population cohorts (gnomAD); Missense variants in this gene are often considered pathogenic (HGMD); This variant is associated with the following publications: (PMID: 19661383, 22306671, 17517660, 25705018, 25691160, 21063026, 34056834, 22571758, 29493581, 21079152, 17875937, 27577878, 35116442)</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">GeneDx Variant Classification Process June 2021</Attribute>
+          <Citation>
+            <URL>https://submit.ncbi.nlm.nih.gov/ft/byid/fc81e176/genedx_variant_classification_process_june_2021.pdf</URL>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="SubmitterVariantId">GDX:1751852</Name>
+          </OtherNameList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004985.3:c.37G&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">Not Provided</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>GeneDX_Clinvar_Submission_132_20220928054204</SubmissionName>
+          <SubmissionName>SUB4518013</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7164122" SubmissionDate="2023-03-07" ContributesToAggregateClassification="true" DateLastUpdated="2023-03-11" DateCreated="2023-03-11">
+        <ClinVarSubmissionID localKey="NM_004985.3:c.37G&gt;T|OMIM:614470" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV003837570" DateUpdated="2023-03-11" DateCreated="2023-03-11" Type="SCV" Version="1" SubmitterName="Diagnostic Genetics, Severance Hospital, Yonsei University College of Medicine" OrgID="507610" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-01-03">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Likely pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004985.3:c.37G&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="614470" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB12937027</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7569857" SubmissionDate="2023-09-19" ContributesToAggregateClassification="true" DateLastUpdated="2023-10-21" DateCreated="2023-10-21">
+        <ClinVarSubmissionID localKey="NM_033360.3:c.37G&gt;T|KRAS-related disorders" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV004046132" DateUpdated="2023-10-21" DateCreated="2023-10-21" Type="SCV" Version="1" SubmitterName="Rady Children's Institute for Genomic Medicine, Rady Children's Hospital San Diego" OrgID="506081" OrganizationCategory="laboratory" OrgAbbreviation="RCIGM"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification>
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Comment>This variant has been previously reported as a somatic/ mosaic change in patients with RAS-associated autoimmune leukoproliferative disorder (PMID: 27577878, 21079152). Cells transfected with a plasmid-encoding mutant G13C showed an increased amount of active RAS versus wild-type KRAS suggesting a gain-of-function effect (PMID: 21079152). The c.37G&gt;T (p.Gly13Cys) variant is absent from the gnomAD population database and thus is presumed to be rare. The c.37G&gt;T (p.Gly13Cys) variant affects a highly conserved amino acid and is predicted by multiple in silico tools to have a deleterious effect on protein function. Analysis of the parental samples was negative for the variant, indicating this variant likely occurred as a de novo event. Based on the available evidence, the c.37G&gt;T (p.Gly13Cys) variant is classified as Pathogenic.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_033360.3:c.37G&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">KRAS-related disorders</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB13808474</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="7512510" SubmissionDate="2026-06-02" ContributesToAggregateClassification="true" DateLastUpdated="2026-06-20" DateCreated="2023-07-22">
+        <ClinVarSubmissionID localKey="12-25245348-C-A|OMIM:614470" submittedAssembly="GRCh38"/>
+        <ClinVarAccession Accession="SCV004013692" DateUpdated="2026-06-20" DateCreated="2023-07-22" Type="SCV" Version="2" SubmitterName="3billion" OrgID="507830" OrganizationCategory="other" OrgAbbreviation="3billion"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-10-25">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+          <Citation>
+            <ID Source="PubMed">27577878</ID>
+          </Citation>
+          <Comment Type="public">The variant is not observed in the gnomAD v4.1.0 dataset. Predicted Consequence/Location: The variant is located in a mutational hot spot and/or well-established functional domain in which established pathogenic variants have been reported (PMID: 29493581). Missense variant. Missense changes are a common disease-causing mechanism. In silico tool predictions suggest damaging effect of the variant on gene or gene product [REVEL: 0.87 (&gt;=0.6, sensitivity 0.68 and specificity 0.92); 3Cnet: 0.99 (&gt; 0.75, sensitivity 0.96 and precision 0.92)]. The same nucleotide change resulting in the same amino acid change has been previously reported as pathogenic/likely pathogenic with strong evidence (ClinVar ID: VCV000045123 /PMID: 27577878 /3billion dataset). Different missense changes at the same codon (p.Gly13Arg, p.Gly13Asp, p.Gly13Val) have been reported as pathogenic/likely pathogenic with strong evidence (ClinVar ID: VCV000012580, VCV000012593, VCV000045124, VCV001691382 /3billion dataset). Therefore, this variant is classified as Pathogenic according to the recommendation of ACMG/AMP guideline.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ACMG Guidelines, 2015</Attribute>
+          <Citation>
+            <ID Source="PubMed">25741868</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <TypePlatform>exome sequencing</TypePlatform>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004985.5:c.37G&gt;T</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="OMIM" ID="614470" Type="MIM"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB13689199</SubmissionName>
+          <SubmissionName>SUB16220023</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="339824" TraitType="Disease" MappingType="Name" MappingValue="RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC" MappingRef="Preferred">
+        <MedGen CUI="None" Name="RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1816807" TraitType="Disease" MappingType="Name" MappingValue="Not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="103137" TraitType="Disease" MappingType="XRef" MappingValue="D002289" MappingRef="MeSH">
+        <MedGen CUI="C0007131" Name="Non-small cell lung carcinoma"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="3053256" TraitType="Disease" MappingType="Name" MappingValue="not provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1576007" TraitType="Disease" MappingType="Name" MappingValue="Not Provided" MappingRef="Preferred">
+        <MedGen CUI="C3661900" Name="not provided"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7164122" TraitType="Disease" MappingType="XRef" MappingValue="614470" MappingRef="OMIM">
+        <MedGen CUI="C2674723" Name="Autoimmune lymphoproliferative syndrome type 4"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7569857" TraitType="Disease" MappingType="Name" MappingValue="KRAS-related disorders" MappingRef="Preferred">
+        <MedGen CUI="None" Name="KRAS-related disorder"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="7512510" TraitType="Disease" MappingType="XRef" MappingValue="614470" MappingRef="OMIM">
+        <MedGen CUI="C2674723" Name="Autoimmune lymphoproliferative syndrome type 4"/>
+      </TraitMapping>
+    </TraitMappingList>
+    <DeletedSCVList>
+      <SCV>
+        <Accession Version="1" DateDeleted="2024-12-20">SCV000504463</Accession>
+        <Description>This record was deleted because the classification was outdated and the DoCM project was retired. Classification of these variants is now being addressed by CIViC (civicdb.org).</Description>
+      </SCV>
+      <SCV>
+        <Accession Version="1" DateDeleted="2024-12-20">SCV000504464</Accession>
+        <Description>This record was deleted because the classification was outdated and the DoCM project was retired. Classification of these variants is now being addressed by CIViC (civicdb.org).</Description>
+      </SCV>
+    </DeletedSCVList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

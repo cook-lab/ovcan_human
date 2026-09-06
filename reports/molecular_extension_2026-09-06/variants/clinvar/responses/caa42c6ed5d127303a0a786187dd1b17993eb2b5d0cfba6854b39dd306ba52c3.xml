@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="2796934" VariationName="NM_000051.4(ATM):c.7168_7170del (p.Leu2390del)" VariationType="Deletion" Accession="VCV002796934" Version="1" RecordType="classified" NumberOfSubmissions="1" NumberOfSubmitters="1" DateLastUpdated="2026-09-05" DateCreated="2024-02-20" MostRecentSubmission="2024-02-20">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="2951588" VariationID="2796934">
+      <GeneList>
+        <Gene Symbol="ATM" FullName="ATM serine/threonine kinase" GeneID="472" HGNC_ID="HGNC:795" Source="submitted" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11q22.3</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="108223067" stop="108369102" display_start="108223067" display_stop="108369102" Strand="+"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="108093558" stop="108239825" display_start="108093558" display_stop="108239825" Strand="+"/>
+          </Location>
+          <OMIM>607585</OMIM>
+          <Haploinsufficiency last_evaluated="2020-04-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=ATM">Sufficient evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2020-04-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=ATM">No evidence available</Triplosensitivity>
+        </Gene>
+        <Gene Symbol="C11orf65" FullName="chromosome 11 open reading frame 65" GeneID="160140" HGNC_ID="HGNC:28519" Source="calculated" RelationshipType="within multiple genes by overlap">
+          <Location>
+            <CytogeneticLocation>11q22.3</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="108308519" stop="108469881" display_start="108308519" display_stop="108469881" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="108253726" stop="108338257" display_start="108253726" display_stop="108338257" Strand="-"/>
+          </Location>
+        </Gene>
+      </GeneList>
+      <Name>NM_000051.4(ATM):c.7168_7170del (p.Leu2390del)</Name>
+      <CanonicalSPDI>NC_000011.10:108329097:ATTA:A</CanonicalSPDI>
+      <VariantType>Deletion</VariantType>
+      <Location>
+        <CytogeneticLocation>11q22.3</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="11" Accession="NC_000011.10" start="108329098" stop="108329100" display_start="108329098" display_stop="108329100" variantLength="3" positionVCF="108329097" referenceAlleleVCF="CATT" alternateAlleleVCF="C"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="11" Accession="NC_000011.9" start="108199825" stop="108199827" display_start="108199825" display_stop="108199827" variantLength="3" positionVCF="108199824" referenceAlleleVCF="CATT" alternateAlleleVCF="C"/>
+      </Location>
+      <ProteinChange>L2390del</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_135" sequenceAccession="LRG_135">
+            <Expression>LRG_135:g.111268_111270del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_135t1" sequenceAccession="LRG_135t1">
+            <Expression>LRG_135t1:c.7168_7170del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_135p1" sequenceAccession="LRG_135p1" change="p.Leu2390del">
+            <Expression>LRG_135p1:p.Leu2390del</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.10" sequenceAccession="NC_000011" sequenceVersion="10" change="g.108329099_108329101del" Assembly="GRCh38">
+            <Expression>NC_000011.10:g.108329099_108329101del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000011.9" sequenceAccession="NC_000011" sequenceVersion="9" change="g.108199826_108199828del" Assembly="GRCh37">
+            <Expression>NC_000011.9:g.108199826_108199828del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_009830.1" sequenceAccession="NG_009830" sequenceVersion="1" change="g.111268_111270del">
+            <Expression>NG_009830.1:g.111268_111270del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_054724.1" sequenceAccession="NG_054724" sequenceVersion="1" change="g.145733_145735del">
+            <Expression>NG_054724.1:g.145733_145735del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_000051.4" sequenceAccession="NM_000051" sequenceVersion="4" change="c.7168_7170del" MANESelect="true">
+            <Expression>NM_000051.4:c.7168_7170del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_000042.3" sequenceAccession="NP_000042" sequenceVersion="3" change="p.Leu2390del" singleLetterProteinChange="L2390del">
+            <Expression>NP_000042.3:p.Leu2390del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001351834.2" sequenceAccession="NM_001351834" sequenceVersion="2" change="c.7168_7170del">
+            <Expression>NM_001351834.2:c.7168_7170del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001338763.1" sequenceAccession="NP_001338763" sequenceVersion="1" change="p.Leu2390del" singleLetterProteinChange="L2390del">
+            <Expression>NP_001338763.1:p.Leu2390del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001330368.2" sequenceAccession="NM_001330368" sequenceVersion="2" change="c.641-20029_641-20027del">
+            <Expression>NM_001330368.2:c.641-20029_641-20027del</Expression>
+          </NucleotideExpression>
+          <MolecularConsequence ID="SO:0001627" Type="intron variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001351110.2" sequenceAccession="NM_001351110" sequenceVersion="2" change="c.*38+6120_*38+6122del">
+            <Expression>NM_001351110.2:c.*38+6120_*38+6122del</Expression>
+          </NucleotideExpression>
+          <MolecularConsequence ID="SO:0001627" Type="intron variant" DB="SO"/>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA2615860656" DB="ClinGen"/>
+        <XRef Type="rs" ID="2547248217" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_000051.4(ATM):c.7168_7170del (p.Leu2390del) AND Ataxia-telangiectasia syndrome" Accession="RCV003606032" Version="2">
+        <ClassifiedConditionList TraitSetID="770">
+          <ClassifiedCondition DB="MedGen" ID="C0004135">Ataxia-telangiectasia syndrome</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2023-06-05" SubmissionCount="1">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2023-06-05" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2024-02-20" MostRecentSubmission="2024-02-20">
+        <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+        <Description>Uncertain significance</Description>
+        <Explanation DataSource="ClinVar" Type="public">Uncertain significance (1)</Explanation>
+        <ConditionList>
+          <TraitSet ID="770" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="4635" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Ataxia-telangiectasia syndrome</ElementValue>
+                <XRef ID="68504005" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Ataxia-telangiectasia, complementation group D</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">AT, COMPLEMENTATION GROUP C</ElementValue>
+                <XRef ID="208900" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">ATAXIA-TELANGIECTASIA, COMPLEMENTATION GROUP A</ElementValue>
+                <XRef Type="Allelic variant" ID="607585.0001" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">ATAXIA-TELANGIECTASIA, FRESNO VARIANT</ElementValue>
+                <XRef Type="Allelic variant" ID="607585.0014" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Ataxia-telangiectasia</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Ataxia-telangiectasia, complementation group E</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Ataxia telangiectasia (A-T)</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">LOUIS-BAR SYNDROME</ElementValue>
+                <XRef Type="MIM" ID="208900" DB="OMIM"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Cerebello-oculocutaneous telangiectasia</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Immunodeficiency with ataxia telangiectasia</ElementValue>
+              </Name>
+              <Symbol>
+                <ElementValue Type="Alternate">AT1</ElementValue>
+                <XRef Type="MIM" ID="208900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Preferred">AT</ElementValue>
+                <XRef Type="MIM" ID="208900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">A-T</ElementValue>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">ATM</ElementValue>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">ATC</ElementValue>
+                <XRef ID="208900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">ATA</ElementValue>
+                <XRef ID="208900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">ATD</ElementValue>
+                <XRef ID="208900" DB="OMIM"/>
+              </Symbol>
+              <Symbol>
+                <ElementValue Type="Alternate">ATE</ElementValue>
+                <XRef ID="208900" DB="OMIM"/>
+              </Symbol>
+              <AttributeSet>
+                <Attribute Type="public definition">The phenotypic spectrum of ataxia-telangiectasia (A-T), a multisystem disorder, is a continuum ranging from classic A-T at the severe end and variant A-T at the milder end. Nonetheless, distinguishing between classic A-T and variant A-T on this spectrum helps understand differences in disease course, rate of progression, and life expectancy. Classic A-T is characterized by childhood onset of progressive neurologic manifestations (initially cerebellar ataxia, followed typically by extrapyramidal involvement and peripheral sensorimotor neuropathy), immunodeficiency (variably associated with abnormalities of humoral immunity, cellular immunity, or combined immune deficiency), pulmonary disease (resulting from recurrent infections, immune deficiency, aspiration, interstitial lung disease, and neurologic abnormalities), and increased risk of malignancy. Although it is generally accepted that intellectual disability is not common in A-T, disturbances in cerebellar as well as non-cerebellar brain areas and networks may result in cognitive deficits. Increased sensitivity to ionizing radiation (x-ray and gamma ray) can result in severe side effects from such treatments. Life expectancy is significantly reduced due to cancer, pulmonary disease, and infections. Variant A-T has a significantly milder disease course. While cerebellar ataxia can be absent, extrapyramidal movement disorders are common (typically dystonia and dystonic tremor) and most individuals have manifestations of axonal sensorimotor polyneuropathy. In contrast to classic A-T, immune function is generally normal, respiratory infections are not increased, and pulmonary disease is not a major feature. However, risk of developing malignancies is increased, particularly in premenopausal females who have an increased risk of developing breast cancer and hematologic malignancies.</Attribute>
+                <XRef ID="NBK26468" DB="GeneReviews"/>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="keyword">Hereditary cancer syndrome</Attribute>
+              </AttributeSet>
+              <AttributeSet>
+                <Attribute Type="GARD id" integerValue="5862"/>
+                <XRef ID="5862" DB="Office of Rare Diseases"/>
+              </AttributeSet>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301790</ID>
+                <ID Source="BookShelf">NBK26468</ID>
+              </Citation>
+              <Citation Type="review" Abbrev="GeneReviews">
+                <ID Source="PubMed">20301317</ID>
+                <ID Source="BookShelf">NBK1138</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="EFNS, 2010">
+                <ID Source="PubMed">20050888</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="EFNS/ENS, 2014">
+                <ID Source="PubMed">24418350</ID>
+              </Citation>
+              <XRef ID="100" DB="Orphanet"/>
+              <XRef ID="C0004135" DB="MedGen"/>
+              <XRef ID="MONDO:0008840" DB="MONDO"/>
+              <XRef Type="MIM" ID="208900" DB="OMIM"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="8181630" SubmissionDate="2024-02-08" ContributesToAggregateClassification="true" DateLastUpdated="2024-02-20" DateCreated="2024-02-20">
+        <ClinVarSubmissionID localKey="16913862|MedGen:C0004135" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV004393194" DateUpdated="2024-02-20" DateCreated="2024-02-20" Type="SCV" Version="1" SubmitterName="Labcorp Genetics (formerly Invitae), Labcorp" OrgID="500031" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2023-06-05">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <GermlineClassification>Uncertain significance</GermlineClassification>
+          <Comment>In summary, the available evidence is currently insufficient to determine the role of this variant in disease. Therefore, it has been classified as a Variant of Uncertain Significance. Algorithms developed to predict the effect of sequence changes on RNA splicing suggest that this variant may disrupt the consensus splice site. Experimental studies and prediction algorithms are not available or were not evaluated, and the functional significance of this variant is currently unknown. This variant has not been reported in the literature in individuals affected with ATM-related conditions. This variant is not present in population databases (gnomAD no frequency). This variant, c.7168_7170del, results in the deletion of 1 amino acid(s) of the ATM protein (p.Leu2390del), but otherwise preserves the integrity of the reading frame.</Comment>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">Invitae Variant Classification Sherloc (09022015)</Attribute>
+          <Citation>
+            <ID Source="PubMed">28492532</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>germline</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>unknown</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="ATM"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NC_000011.9:g.108199825_108199827del</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0004135" Type="CUI"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14200279</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="8181630" TraitType="Disease" MappingType="XRef" MappingValue="C0004135" MappingRef="MedGen">
+        <MedGen CUI="C0004135" Name="Ataxia-telangiectasia syndrome"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

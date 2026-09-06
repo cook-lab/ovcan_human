@@ -1,0 +1,11 @@
+{
+  "reference_sha256": "c49b10a8bc1b7098588d032f8c25b21b1652bcdc1d8806f6e6b617119912dcbc",
+  "source_bins_sha256": "0957407d6e3df5ddb127c2a584cc2b6fc45083d0fabf55e4d1969d3be5079185",
+  "genes": {
+    "NF1": "ENSG00000196712",
+    "CDKN2A": "ENSG00000147889",
+    "AKT2": "ENSG00000105221"
+  },
+  "model_gene_rows": 69,
+  "scope": "Canonical transcript exons, including UTRs; other isoforms and regulatory regions are not ruled out."
+}

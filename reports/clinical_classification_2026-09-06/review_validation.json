@@ -1,0 +1,25 @@
+{
+  "canonical_files_unchanged_from_ec8c47b": {
+    "output/rna_tpm.csv": true,
+    "output/prot_abundance_matrix.csv": true,
+    "output/wes_mutations_filtered.csv": true,
+    "output/wes_cnv_segments.csv": true,
+    "metadata/resource_models.csv": true,
+    "release/SHA256SUMS": true,
+    "docs/manuscript/v9/OvCAN_Scientific_Data_draft_v9.md": true
+  },
+  "figure_sha256": "e6e4bb5d57a782bf3156deda66ce75f5e7ee10bae15c3a519b4e92b31ee97751",
+  "figure_pages": 1,
+  "all_42_model_labels_in_pdf": true,
+  "pdf_annotations": 0,
+  "font_check": "ArialMT and Arial-BoldMT embedded/subset, verified with pdffonts",
+  "visual_review": "Rendered PDF inspected at 1500px: all rows, labels, ticks, panel headings and legend legible; no overlap or clipping",
+  "independent_review": "RNA/protein values and mappings match independent source-workbook/matrix extraction; 42 models/34 patients and 23 DNA/31 RNA/31 protein availability pass; 36 genes x42 rows unique; no cross-model borrowing; patient reference independently verified",
+  "curated_variant_significance": "Separate exact-allele assertion; no HRD or somatic-origin inference",
+  "validated_model_classifications_assigned": false,
+  "local_document_links_checked": 7,
+  "missing_local_links": [],
+  "hrd_vcf_probe": "23 VCF hashes verified; all 13 selected HRR candidates matched to exact VCF alleles",
+  "syntax_checks": "Python compile for script40 and HRD probe; R parse for scripts09/41 passed",
+  "checkout_check": "42 models/34 patients, 23 WES and target-only CNS hashes, all49 release checksums passed"
+}

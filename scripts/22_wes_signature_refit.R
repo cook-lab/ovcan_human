@@ -1,9 +1,9 @@
 # =============================================================================
 # Script: 22_wes_signature_refit.R
 # Project: OvCAN human ovarian cancer cell-line multi-omic resource
-# Purpose: A PROPER MUTATIONAL-SIGNATURE REFIT with uncertainty, replacing the
-#          cosine-similarity SCREEN in 16_wes_signatures_msi.R as the evidential
-#          basis for the TOV21G MMR-deficiency claim. Phase: revision.
+# Purpose: Mutational-signature refitting and uncertainty, complementing the
+#          cosine screen in 16_wes_signatures_msi.R. Exploratory fits do not
+#          establish MMR deficiency, MSI or HRD in a model.
 # Author:  Cook Lab (analyst: Claude)  |  Date: 2026-07-24
 # =============================================================================
 #
@@ -13,8 +13,8 @@
 #   estimate: it has no refit, no uncertainty, and no reconstruction check, and
 #   SBS1/5/6/15/44 are mutually similar, so TOV21G's cos(MMR-d)=0.877 against a
 #   0.651 clock group is a MODEST separation in cosine space. A refit is what can
-#   actually discriminate, because it asks whether the spectrum is BETTER EXPLAINED
-#   by an MMR-deficiency component than by clock-like signatures alone.
+#   compare attribution under specified reference sets; it does not by itself
+#   discriminate clinical MMR status or eliminate tumour-only confounding.
 #
 #   This script therefore reports, per line:
 #     - sparse exposures from fit_to_signatures_strict() (backward selection)
@@ -27,24 +27,24 @@
 #     - the exact COSMIC release and package versions
 #
 # *** SUBSTRATE CAVEATS — read before interpreting any exposure ***
-#   1. TUMOUR-ONLY, NO MATCHED NORMAL. The substrate is exome-wide Mutect2 PASS
+#   1. TUMOUR-ONLY, NO MATCHED NORMAL. The substrate is exome-wide MAF PASS
 #      variants with population AF <= 0.001 (the same filter as 07/16): 303-2,417
 #      SNVs per line. The retained coding count is not an estimate of residual germline.
 #      Unknown germline contamination can distort any fitted component; neither
 #      its magnitude nor the direction of signature bias is identified here.
 #   2. EXOME SUBSTRATE vs GENOME-DERIVED REFERENCE. COSMIC SBS signatures are
 #      defined on genome-wide trinucleotide frequencies; these spectra come from a
-#      capture panel whose identity is NOT recoverable (see
-#      output/wes_pipeline_parameters.csv). No exome-to-genome context
-#      renormalisation is applied because the capture intervals are unknown.
-#      Relative exposures, within-line rankings, and between-line contrasts can
-#      all be affected by the unmodelled trinucleotide opportunities.
+#      recovered SeqCap EZ Exome v3 design and derived GRCh38 target bins.
+#      The primary historical refit retains genome-reference opportunities; the
+#      helper sourced below deposits target-opportunity sensitivity separately.
+#      Script44 extends SBS3 filter/dictionary/bootstrap sensitivity. Relative
+#      attribution remains sensitive to opportunities, candidate origin and fit design.
 #   3. SMALL COUNTS. 300-2,400 variants is at or below the usual floor for stable
 #      fitting of 60 reference signatures. This is why (a) selection is strict/
 #      backward, (b) a hypothesis-restricted reference set is fitted alongside the
 #      full one, and (c) intervals — not point estimates — are reported.
 #
-# INPUT : output/wes_sbs_context.csv  (96 x 22 SBS matrix written by script 16)
+# INPUT : output/wes_sbs_context.csv  (96 x 23 SBS matrix written by script 16)
 #         output/wes_msi_mmr.csv      (per-line cosine screen + load, for comparison)
 # OUTPUT: output/wes_signature_refit_exposures.csv
 #         output/wes_signature_refit_summary.csv
@@ -73,10 +73,10 @@ MAX_DELTA     <- 0.004     # fit_to_signatures_strict default: cosine cost of dr
 MMR_D_SIGS <- c("SBS6","SBS14","SBS15","SBS20","SBS21","SBS26","SBS44")
 POLE_SIGS  <- c("SBS10a","SBS10b","SBS10c","SBS10d","SBS28")
 CLOCK_SIGS <- c("SBS1","SBS5","SBS40")
-# Hypothesis-restricted reference: the mechanisms actually in play in ovarian
-# carcinoma cell lines plus the two the paper makes claims about. Fitting this
-# alongside the full 60-signature reference shows whether an MMR-d exposure
-# survives when it is not competing with 50 mechanistically irrelevant signatures.
+# Hypothesis-restricted reference retained as a sensitivity prior. The omitted
+# signatures are not established to be irrelevant to these models. Compare with
+# the full 60-signature reference; a restricted-only exposure is not confirmation
+# of a pathway defect. The set excludes alternatives including platinum signatures.
 RESTRICTED_SIGS <- unique(c(CLOCK_SIGS, MMR_D_SIGS, POLE_SIGS,
                             "SBS2","SBS13",   # APOBEC
                             "SBS3",           # HR deficiency
@@ -114,7 +114,7 @@ message("MutationalPatterns ", MP_VER, " | COSMIC ", COSMIC_SOURCE, " / ", COSMI
 # 2. SUBSTRATE — the 96-context matrix written by 16 (identical variant set)
 # =============================================================================
 ctx <- readr::read_csv(SBS_CTX, show_col_types = FALSE)
-mut_mat <- as.matrix(ctx[, -1]); rownames(mut_mat) <- ctx$context      # 96 x 22
+mut_mat <- as.matrix(ctx[, -1]); rownames(mut_mat) <- ctx$context      # 96 x 23
 n_used  <- colSums(mut_mat)
 message(sprintf("SBS-96 matrix: %d contexts x %d lines | variants per spectrum: median %.0f (range %d-%d)",
                 nrow(mut_mat), ncol(mut_mat), median(n_used), min(n_used), max(n_used)))
@@ -158,7 +158,7 @@ print(as.data.frame(tibble(
 # =============================================================================
 # 4. BOOTSTRAP — intervals + selection frequency (the honest stability metric)
 # -----------------------------------------------------------------------------
-# This is the expensive step (200 replicates x 22 lines x 2 reference sets, ~40 min
+# This is the expensive step (200 replicates x 23 lines x 2 reference sets, ~40 min
 # with backward selection over 60 signatures), so the SUMMARY is cached to
 # output/wes_signature_refit_bootstrap.csv. The cache is reused only when the
 # recorded parameters, reference-set sizes and line set all match; otherwise it is
@@ -214,7 +214,7 @@ if (file.exists(BOOT_CACHE) && !FORCE_BOOT) {
     # of them notices a cache that is keyed correctly but INCOMPLETE. That is not
     # hypothetical: the pre-integration cache on disk held only the ever-selected
     # (line, signature) pairs (916 full + 334 restricted = 1,250) rather than the
-    # full grid this code now writes (22x60 + 22x22 = 1,320 + 484 = 1,804), and it
+    # full grid for that historical 22-model run (22x60 + 22x22 = 1,804), and it
     # satisfied every key check. Reusing such a cache is silently destructive,
     # because the join at "5. TIDY EXPOSURE TABLE" treats an absent row as
     # boot_selected_frac = 0 via replace_na() and then DROPS it from
@@ -285,7 +285,7 @@ exposures <- bind_rows(tidy_contrib(full_fit, "full"),
          max_delta = MAX_DELTA, n_boots_requested = N_BOOT, bootstrap_input_sha256 = BOOT_CACHE_SHA) %>%
   left_join(screen %>% select(cell_line, subtype, is_hypermutator), by = "cell_line") %>%
   # keep every signature the fit or the bootstrap ever touched; drop the always-zero
-  # ones so the table is readable rather than 22 x 60 x 2 mostly-zero rows
+  # ones so the table is readable rather than 23 x 60 x 2 mostly-zero rows
   filter(contribution > 0 | replace_na(boot_selected_frac, 0) > 0) %>%
   arrange(reference_set, cell_line, desc(rel_contribution))
 readr::write_csv(exposures, file.path(OUT, "wes_signature_refit_exposures.csv"))
@@ -409,11 +409,11 @@ pC <- refit_summary %>%
 
 fig <- (pA | (pB / pC)) + plot_layout(widths = c(1.15, 1)) +
   plot_annotation(
-    title = "Mutational-signature REFIT with uncertainty (replaces cosine screening as evidence)",
-    subtitle = paste0("Tumour-only exome-wide PASS & popAF<=0.001 SNVs (", min(n_used), "-",
+    title = "Exploratory mutational-signature refit with uncertainty",
+    subtitle = paste0("Tumour-only exome-wide MAF PASS & popAF<=0.001 SNVs (", min(n_used), "-",
                       max(n_used), " per line); COSMIC ", COSMIC_SOURCE, "/", COSMIC_GENOME,
-                      "; MutationalPatterns ", MP_VER, ". No exome-to-genome context ",
-                      "renormalisation (capture intervals unavailable); unknown residual germline can distort fitted components."),
+                      "; MutationalPatterns ", MP_VER, ". Primary fit uses genome opportunities; ",
+                      "recovered-target sensitivity is reported separately. Residual germline can distort fitted components."),
     theme = theme(plot.title = element_text(face = "bold", size = 13),
                   plot.subtitle = element_text(size = 8.2, colour = "grey30")))
 ggsave(file.path(FIGS, "f_wes_signature_refit.pdf"), fig, width = 13.5, height = 8.6)

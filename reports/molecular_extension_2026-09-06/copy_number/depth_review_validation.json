@@ -1,0 +1,23 @@
+{
+  "normal_sha256": {
+    "normals/SRR4039087.sorted.targetcoverage.cnn": "1e12a7b4427c7c1173bdcf4f00ee26d17cb3983ac87522e469770f1fa363f162",
+    "normals/SRR4039088.sorted.targetcoverage.cnn": "d4a99f14b7a9e470cd2873a1bd5cf10fe7d7bfb5e64c838e6063e8e93cfacdad",
+    "normals/SRR4039089.sorted.targetcoverage.cnn": "26317acb4ef31e79c3a39177b56d2ee32e990dbe69f6adbdb57592d0e97b72a3",
+    "normals/SRR4039096.sorted.targetcoverage.cnn": "2bd1229de933bda1c54d7d3438bcc7c44169381c83e2f8dbb488237c5ccc49b2",
+    "normals/SRR4039097.sorted.targetcoverage.cnn": "796281ccf50c05345ddeb3dd2b0b333f5012ed24a6c1512b03ed58e29320dfab"
+  },
+  "source_gene_bins_sha256": "3cc29d613829730adc4f7d32c7f8650ce817e8244233bfd13939f36a62aba520",
+  "genes": [
+    "AKT2",
+    "CCNE1",
+    "CCND1",
+    "ERBB2",
+    "NF1",
+    "CDKN2A",
+    "CDKN2B"
+  ],
+  "rows": 138,
+  "models": 23,
+  "normal_samples": 5,
+  "note": "Same retained target-bin coordinates; normal/model preprocessing may differ. Zero depth is evidence for review, not a validated homozygous deletion."
+}

@@ -1,0 +1,10 @@
+{
+  "pdf_sha256": "f8f89895988f585428f68f82192ebac7d1abcba1afb192e8cba112c58e1e28c0",
+  "pages": 1,
+  "all_23_model_labels_present": true,
+  "annotations": 0,
+  "fonts": "name                                 type              encoding         emb sub uni object ID\n------------------------------------ ----------------- ---------------- --- --- --- ---------\nAAAAAB+ArialMT                       TrueType          MacRoman         yes yes no       6  0\nAAAAAC+ArialMT                       TrueType          WinAnsi          yes yes yes      8  0\nAAAAAD+Arial-BoldMT                  TrueType          MacRoman         yes yes no       9  0\n",
+  "rendered_review": "Poppler PNG inspected; compact labels; no overlapping text, cut labels or annotations; AKT2 panels aligned independently to avoid empty left margin",
+  "script_sha256": "f1e8e9ff4a85f80ca8b40643bf5bf6274784bd08c8f7d2cab8cb264747ccb900",
+  "input_sha256": "3c6e820e8cdf6ac231b276d1a431e85911f1fdee199655a7b9519e19885924ce"
+}

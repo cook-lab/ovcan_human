@@ -1,0 +1,22 @@
+{
+  "local_markdown_links_checked": 52,
+  "broken_local_links": 0,
+  "canonical_files_byte_identical_to_HEAD": {
+    "metadata/resource_models.csv": "60962a78bbdebdda2f5744eaff679764218e124de45a73bbf218d972f41ef7c7",
+    "output/rna_tpm.csv": "ccd06b0bfd6350618a23d78f0fdaa7859ca06aa6d92aea67943ae0a4e4e55975",
+    "output/rna_gene_annotation.csv": "5fcd6a5a0fa66a49fffe53f89ebc80b03f1a7f5e8664ac345c145a40762ca61a",
+    "output/prot_abundance_matrix.csv": "1f8484522eca3fc80891183204823012d43284e1c6562e262e5eb68c2db8a3c9",
+    "output/prot_qc.csv": "b7ec049ce5ff6735cf49a08dc5529b151a5cd519c3ce46a9a7e726a5a0c30fec",
+    "output/wes_cnv_segments.csv": "74bfb808aae1ac518c80a673594014ec828b7ddc77bae1dae99eb830b9234d5e",
+    "docs/manuscript/v9/OvCAN_Scientific_Data_draft_v9.md": "c94ef8a01c65a67b973ae98462fc172ddd7d09223daa0aff962d5033744754a4",
+    "docs/manuscript/v9/OvCAN_Scientific_Data_draft_v9.docx": "27550634feeb2d36f7aa28e93d541443e7a66058285b33a325b281f4cafa7925"
+  },
+  "checkout_check": "passed: 49 release checksums plus model/CNV provenance invariants",
+  "scope": "four exploratory modules; manuscripts/releases not rebuilt",
+  "user_working_v7_docx": "not modified by this task; excluded from handoff",
+  "scripts_python_compiled": true,
+  "scripts_R_parsed": true,
+  "raw_data_in_handoff": false,
+  "external_variant_queue": "Author-approved lookup complete: 53 queried, 23 exact alleles / 29 model records; 30 no exact indexed match",
+  "cluster_jobs_submitted": false
+}

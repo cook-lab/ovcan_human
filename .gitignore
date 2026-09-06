@@ -51,10 +51,13 @@ renv/cache/
 /reports/figure_redesign_2026-09-05/qa_supp_expression/
 /reports/**/*.png
 /reports/**/*.pdf
+!/reports/molecular_extension_2026-09-06/signatures/sbs3_sensitivity.pdf
 /reports/**/*.docx
 /reports/**/*.html
 /logs/
 /tmp/
+/reports/molecular_extension_2026-09-06/signatures/cache/
+/output/cluster_handoff/*.tar.gz
 /figs/
 /Rplots.pdf
 

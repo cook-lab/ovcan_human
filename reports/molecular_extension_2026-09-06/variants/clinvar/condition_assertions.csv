@@ -1,0 +1,1065 @@
+variation_id,vcv,rcv,title,conditions,classifications_xml
+92828,VCV000092828.45,RCV000078622.39,NM_000314.8(PTEN):c.800del (p.Lys267fs) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2020-12-01"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+92828,VCV000092828.45,RCV000231858.5,NM_000314.8(PTEN):c.800del (p.Lys267fs) AND PTEN hamartoma tumor syndrome,PTEN hamartoma tumor syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-06-11"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+92828,VCV000092828.45,RCV000491764.5,NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2018-01-24"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+92828,VCV000092828.45,RCV003448974.2,"NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Malignant lymphoma, large B-cell, diffuse","Malignant lymphoma, large B-cell, diffuse","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2023-12-04"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+92828,VCV000092828.45,RCV003453007.2,NM_000314.8(PTEN):c.800del (p.Lys267fs) AND Cowden syndrome 1,Cowden syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-12-28"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+2796934,VCV002796934.1,RCV003606032.2,NM_000051.4(ATM):c.7168_7170del (p.Leu2390del) AND Ataxia-telangiectasia syndrome,Ataxia-telangiectasia syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-06-05"" SubmissionCount=""1"">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12581,VCV000012581.1,RCV000013410.4,"NM_033360.4(KRAS):c.175G>A (p.Ala59Thr) AND Bladder cancer, transitional cell, somatic","Bladder cancer, transitional cell, somatic","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""1992-01-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45123,VCV000045123.14,RCV000038268.7,NM_004985.5(KRAS):c.37G>T (p.Gly13Cys) AND Non-small cell lung carcinoma,Non-small cell lung carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2012-09-17"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45123,VCV000045123.14,RCV000144972.10,NM_004985.5(KRAS):c.37G>T (p.Gly13Cys) AND Autoimmune lymphoproliferative syndrome type 4,Autoimmune lymphoproliferative syndrome type 4,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-10-25"" SubmissionCount=""2"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45123,VCV000045123.14,RCV000681039.7,NM_004985.5(KRAS):c.37G>T (p.Gly13Cys) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2022-09-21"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45123,VCV000045123.14,RCV003335071.1,NM_004985.5(KRAS):c.37G>T (p.Gly13Cys) AND KRAS-related disorder,KRAS-related disorder,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45123,VCV000045123.14,RCV006688385.1,"NM_004985.5(KRAS):c.37G>T (p.Gly13Cys) AND RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC","RAS-ASSOCIATED AUTOIMMUNE LEUKOPROLIFERATIVE DISORDER 2, SOMATIC","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2011-03-10"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV000038266.8,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Non-small cell lung carcinoma,Non-small cell lung carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2007-12-07"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV000984117.2,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Multiple myeloma,Multiple myeloma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2019-08-31"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV001355876.3,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV001374446.2,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Gallbladder cancer,Gallbladder cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2020-10-30"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV004668758.2,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV004549454.2,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND KRAS-related disorder,KRAS-related disorder,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-10-12"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV004795958.2,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND multiple conditions,Acute myeloid leukemia;Autoimmune lymphoproliferative syndrome type 4;Cardiofaciocutaneous syndrome 2;Cerebral arteriovenous malformation;Familial cancer of breast;Familial pancreatic carcinoma;Gastric cancer;Linear nevus sebaceous syndrome;Lung cancer;Malignant tumor of urinary bladder;Noonan syndrome 3;Toriello-Lacassie-Droste syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV003996396.1,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Lung cancer,Lung cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV006253744.1,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND High-grade astrocytoma with piloid features,High-grade astrocytoma with piloid features,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-01-16"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+45122,VCV000045122.18,RCV006253743.1,NM_004985.5(KRAS):c.35G>C (p.Gly12Ala) AND Pilocytic astrocytoma,Pilocytic astrocytoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2022-10-18"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV000013414.10,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Gastric cancer,Gastric cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2007-06-15"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV000038264.9,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Non-small cell lung carcinoma,Non-small cell lung carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2011-09-02"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV000119790.4,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""1"">not provided</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV000144971.8,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Juvenile myelomonocytic leukemia,Juvenile myelomonocytic leukemia,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2007-06-15"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV000782191.41,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-05-12"" SubmissionCount=""4"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV001851824.8,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND RASopathy,RASopathy,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-01-13"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV004562205.1,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Vascular malformation,Vascular malformation,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-04-10"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV004668726.2,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV004795403.2,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Cardiofaciocutaneous syndrome 2,Cardiofaciocutaneous syndrome 2,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV006253532.1,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Rhabdomyosarcoma,Rhabdomyosarcoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2023-07-10"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12584,VCV000012584.64,RCV006253531.1,NM_004985.5(KRAS):c.34G>A (p.Gly12Ser) AND Neuroblastoma,Neuroblastoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-07-02"" SubmissionCount=""1"">Tier II - Potential</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV000009915.31,"NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Breast-ovarian cancer, familial, susceptibility to, 2","Breast-ovarian cancer, familial, susceptibility to, 2","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>reviewed by expert panel</ReviewStatus>
+            <Description DateLastEvaluated=""2016-09-08"" SubmissionCount=""7"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV000045550.38,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Hereditary breast ovarian cancer syndrome,Hereditary breast ovarian cancer syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2026-01-13"" SubmissionCount=""5"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV000131085.23,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-01-02"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV000160308.26,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-04-21"" SubmissionCount=""7"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV000735482.16,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Breast and/or ovarian cancer,Breast and/or ovarian cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-06-16"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV001353461.10,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Malignant tumor of breast,Malignant tumor of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV003460447.2,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND Familial cancer of breast,Familial cancer of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-03-07"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV004802929.3,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND BRCA2-related cancer predisposition,BRCA2-related cancer predisposition,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-09-24"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+9328,VCV000009328.54,RCV005357104.1,NM_000059.4(BRCA2):c.8537_8538del (p.Glu2846fs) AND multiple conditions,"Breast-ovarian cancer, familial, susceptibility to, 2;Familial cancer of breast","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2017-11-06"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376585,VCV000376585.17,RCV000792342.12,NM_000546.6(TP53):c.841G>T (p.Asp281Tyr) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-04-28"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376585,VCV000376585.17,RCV004022209.1,NM_000546.6(TP53):c.841G>T (p.Asp281Tyr) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-20"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376585,VCV000376585.17,RCV004668952.2,NM_000546.6(TP53):c.841G>T (p.Asp281Tyr) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Likely oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+376585,VCV000376585.17,RCV005762013.1,NM_000546.6(TP53):c.841G>T (p.Asp281Tyr) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-07-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376585,VCV000376585.17,RCV006254028.1,NM_000546.6(TP53):c.841G>T (p.Asp281Tyr) AND Medulloblastoma SHH activated and TP53 mutant,Medulloblastoma SHH activated and TP53 mutant,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2024-10-22"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+141881,VCV000141881.15,RCV000130578.12,NM_000546.6(TP53):c.745A>T (p.Arg249Trp) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-12-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+141881,VCV000141881.15,RCV002514731.12,NM_000546.6(TP53):c.745A>T (p.Arg249Trp) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-06-04"" SubmissionCount=""1"">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+141881,VCV000141881.15,RCV003237740.9,NM_000546.6(TP53):c.745A>T (p.Arg249Trp) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2021-11-03"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+141881,VCV000141881.15,RCV003460931.1,"NM_000546.6(TP53):c.745A>T (p.Arg249Trp) AND Adrenocortical carcinoma, hereditary","Adrenocortical carcinoma, hereditary","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-07-16"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+141881,VCV000141881.15,RCV004019741.1,NM_000546.6(TP53):c.745A>T (p.Arg249Trp) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-16"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV000538079.10,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-08-11"" SubmissionCount=""1"">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV001567979.5,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2019-12-30"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV001270273.4,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND Familial cancer of breast,Familial cancer of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV006273738.1,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-12-29"" SubmissionCount=""1"">Likely oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV002379286.4,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2023-11-10"" SubmissionCount=""2"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376599,VCV000376599.19,RCV005900739.1,NM_000546.6(TP53):c.730G>T (p.Gly244Cys) AND Ovarian serous cystadenocarcinoma,Ovarian serous cystadenocarcinoma,"<RCVClassifications>
+          <NoClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""1"">evidence_only</Description>
+          </NoClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV000013148.26,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Li-fraumeni-like syndrome,Li-fraumeni-like syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""1995-01-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV000129809.13,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-07-07"" SubmissionCount=""4"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV000231770.19,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-11-10"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV000785282.5,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2018-12-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV002247332.4,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Familial cancer of breast,Familial cancer of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-05-04"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV002288484.6,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-16"" SubmissionCount=""3"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12354,VCV000012354.27,RCV003314552.3,NM_000546.6(TP53):c.725G>A (p.Cys242Tyr) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-07-13"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+428895,VCV000428895.10,RCV000492567.4,NM_000546.6(TP53):c.643A>C (p.Ser215Arg) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no classifications from unflagged records</ReviewStatus>
+            <Description DateLastEvaluated=""2026-05-18"" SubmissionCount=""1"">no classifications from unflagged records</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+428895,VCV000428895.10,RCV002523445.5,NM_000546.6(TP53):c.643A>C (p.Ser215Arg) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-01-04"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+428895,VCV000428895.10,RCV004023282.1,NM_000546.6(TP53):c.643A>C (p.Ser215Arg) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-15"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV000198789.19,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-12-18"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV000421097.7,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Lung adenocarcinoma,Lung adenocarcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no classifications from unflagged records</ReviewStatus>
+            <Description DateLastEvaluated=""2024-11-12"" SubmissionCount=""1"">no classifications from unflagged records</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV000487386.8,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-06-30"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV000785324.4,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2018-12-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV001024600.8,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-03-25"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV001271054.3,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Breast and/or ovarian cancer,Breast and/or ovarian cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2019-06-11"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV002288812.5,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-15"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV003474953.1,"NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Adrenocortical carcinoma, hereditary","Adrenocortical carcinoma, hereditary","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-11-09"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV004668846.2,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV004725053.1,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND TP53-related disorder,TP53-related disorder,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2024-09-12"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV005361139.1,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND multiple conditions,Familial cancer of breast;Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-05-20"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+216077,VCV000216077.31,RCV006253879.1,NM_000546.6(TP53):c.584T>C (p.Ile195Thr) AND Astrocytoma IDH-mutant,Astrocytoma IDH-mutant,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2023-06-23"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV000472712.13,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-08-20"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV001024481.6,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2022-06-18"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV001358339.4,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Malignant tumor of breast,Malignant tumor of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV002289596.3,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-15"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV004000747.1,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Adrenal cortex carcinoma,Adrenal cortex carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+406579,VCV000406579.23,RCV004668979.2,NM_000546.6(TP53):c.574C>T (p.Gln192Ter) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000013173.44,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2026-05-29"" SubmissionCount=""9"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000131301.25,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2024-12-09"" SubmissionCount=""4"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000204931.36,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>reviewed by expert panel</ReviewStatus>
+            <Description DateLastEvaluated=""2024-09-06"" SubmissionCount=""7"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000239398.11,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Malignant tumor of esophagus,Malignant tumor of esophagus,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2016-07-29"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000213054.32,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2026-01-14"" SubmissionCount=""10"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000421746.12,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV000785352.10,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2018-12-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV001255668.9,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Lip and oral cavity carcinoma,Lip and oral cavity carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2019-04-30"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV001270268.10,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Squamous cell carcinoma of the head and neck,Squamous cell carcinoma of the head and neck,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV001527463.11,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Familial cancer of breast,Familial cancer of breast,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2021-03-19"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV001270269.10,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Colorectal cancer,Colorectal cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV003162247.8,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Gastric cancer,Gastric cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2021-07-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV002476956.8,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND multiple conditions,"Adrenocortical carcinoma, hereditary;Basal cell carcinoma, susceptibility to, 7;Bone marrow failure syndrome 5;Bone osteosarcoma;Carcinoma of pancreas;Choroid plexus papilloma;Colorectal cancer;Familial cancer of breast;Glioma susceptibility 1;Hepatocellular carcinoma;Li-Fraumeni syndrome 1;Nasopharyngeal carcinoma","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-04-10"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV004797760.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND TP53-related disorder,TP53-related disorder,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-05-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV003466854.2,"NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Adrenocortical carcinoma, hereditary","Adrenocortical carcinoma, hereditary","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-03-28"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253504.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Medulloblastoma SHH activated and TP53 mutant,Medulloblastoma SHH activated and TP53 mutant,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-06-13"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253502.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Astrocytoma IDH-mutant,Astrocytoma IDH-mutant,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-08-20"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253503.1,"NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Diffuse midline glioma, H3 K27M-mutant","Diffuse midline glioma, H3 K27M-mutant","<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2024-11-18"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253505.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND IDH-wildtype glioblastoma,IDH-wildtype glioblastoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2022-12-30"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253506.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Undifferentiated embryonal sarcoma of the liver,Undifferentiated embryonal sarcoma of the liver,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-02-05"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+12374,VCV000012374.85,RCV006253501.1,NM_000546.6(TP53):c.524G>A (p.Arg175His) AND Neuroblastoma,Neuroblastoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2024-06-14"" SubmissionCount=""1"">Tier II - Potential</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+634768,VCV000634768.14,RCV000785506.2,NM_000546.6(TP53):c.467G>C (p.Arg156Pro) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2018-12-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+634768,VCV000634768.14,RCV001022886.3,NM_000546.6(TP53):c.467G>C (p.Arg156Pro) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-01-12"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+634768,VCV000634768.14,RCV002536879.5,NM_000546.6(TP53):c.467G>C (p.Arg156Pro) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-09-29"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+634768,VCV000634768.14,RCV004777866.2,NM_000546.6(TP53):c.467G>C (p.Arg156Pro) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2026-03-11"" SubmissionCount=""2"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+634768,VCV000634768.14,RCV006254152.1,"NM_000546.6(TP53):c.467G>C (p.Arg156Pro) AND Diffuse midline glioma, H3 K27M-mutant","Diffuse midline glioma, H3 K27M-mutant","<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2023-11-28"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV000471183.10,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Li-Fraumeni syndrome,Li-Fraumeni syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-10-07"" SubmissionCount=""2"">Pathogenic/Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV000785521.3,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Ovarian neoplasm,Ovarian neoplasm,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2018-12-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV002356517.5,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2023-08-28"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV004022224.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Li-Fraumeni syndrome 1,Li-Fraumeni syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-13"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV004668957.3,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-12-29"" SubmissionCount=""1"">Likely oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV004797608.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND TP53-related disorder,TP53-related disorder,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2024-10-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005018717.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND multiple conditions,"Adrenocortical carcinoma, hereditary;Basal cell carcinoma, susceptibility to, 7;Bone marrow failure syndrome 5;Bone osteosarcoma;Choroid plexus papilloma;Colorectal cancer;Familial cancer of breast;Familial pancreatic carcinoma;Glioma susceptibility 1;Hepatocellular carcinoma;Li-Fraumeni syndrome 1;Nasopharyngeal carcinoma","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-05-30"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005860074.1,"NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Adrenocortical carcinoma, hereditary","Adrenocortical carcinoma, hereditary","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-09-10"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005900752.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Colon adenocarcinoma,Colon adenocarcinoma,"<RCVClassifications>
+          <NoClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""1"">evidence_only</Description>
+          </NoClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005900753.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Sarcoma,Sarcoma,"<RCVClassifications>
+          <NoClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""1"">evidence_only</Description>
+          </NoClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005900754.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Ovarian serous cystadenocarcinoma,Ovarian serous cystadenocarcinoma,"<RCVClassifications>
+          <NoClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""2"">evidence_only</Description>
+          </NoClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005900755.1,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND Lung cancer,Lung cancer,"<RCVClassifications>
+          <NoClassification>
+            <ReviewStatus>no classification provided</ReviewStatus>
+            <Description SubmissionCount=""1"">evidence_only</Description>
+          </NoClassification>
+        </RCVClassifications>
+      "
+376625,VCV000376625.51,RCV005243222.12,NM_000546.6(TP53):c.395A>G (p.Lys132Arg) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-12-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+184987,VCV000184987.11,RCV000164337.1,NM_001042492.3(NF1):c.4043A>G (p.His1348Arg) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2014-05-23"" SubmissionCount=""1"">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+184987,VCV000184987.11,RCV000538253.9,"NM_001042492.3(NF1):c.4043A>G (p.His1348Arg) AND Neurofibromatosis, type 1","Neurofibromatosis, type 1","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, conflicting classifications</ReviewStatus>
+            <Description DateLastEvaluated=""2025-11-17"" SubmissionCount=""2"">Conflicting classifications of pathogenicity</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV000023059.12,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome,Juvenile polyposis/hereditary hemorrhagic telangiectasia syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-09"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV000493396.19,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-05-01"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV001374448.9,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND Gallbladder cancer,Gallbladder cancer,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2020-10-30"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV001376567.15,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND Juvenile polyposis syndrome,Juvenile polyposis syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-08-14"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV002310634.9,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND multiple conditions,Familial thoracic aortic aneurysm and aortic dissection;Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2021-08-27"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+24850,VCV000024850.30,RCV004668739.2,NM_005359.6(SMAD4):c.1333C>T (p.Arg445Ter) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+224559,VCV000224559.6,RCV000210088.4,NM_001184.4(ATR):c.4957C>T (p.Arg1653Ter) AND Hereditary cancer-predisposing syndrome,Hereditary cancer-predisposing syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no classifications from unflagged records</ReviewStatus>
+            <Description DateLastEvaluated=""2025-04-02"" SubmissionCount=""1"">no classifications from unflagged records</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+224559,VCV000224559.6,RCV005025342.1,NM_001184.4(ATR):c.4957C>T (p.Arg1653Ter) AND multiple conditions,Familial cutaneous telangiectasia and oropharyngeal predisposition cancer syndrome;Seckel syndrome 1,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-02-01"" SubmissionCount=""1"">Likely pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+224559,VCV000224559.6,RCV005090044.2,NM_001184.4(ATR):c.4957C>T (p.Arg1653Ter) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-06-02"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV000032909.16,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Megalencephaly-capillary malformation-polymicrogyria syndrome,Megalencephaly-capillary malformation-polymicrogyria syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2022-03-08"" SubmissionCount=""3"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV000038675.9,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Non-small cell lung carcinoma,Non-small cell lung carcinoma,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2011-03-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV000698423.16,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Cowden syndrome,Cowden syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-09-03"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV000763508.6,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND multiple conditions,CLAPO syndrome;CLOVES syndrome;Carcinoma of colon;Congenital macrodactylia;Cowden syndrome 5;Epidermal nevus;Familial cancer of breast;Hepatocellular carcinoma;Lung carcinoma;Megalencephaly-capillary malformation-polymicrogyria syndrome;Neoplasm of stomach;Ovarian neoplasm;Seborrheic keratosis,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2018-10-31"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV001092441.42,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2025-06-24"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV001705625.5,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Segmental undergrowth associated with mainly venous malformation with capillary component,Segmental undergrowth associated with mainly venous malformation with capillary component,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2021-04-06"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV002226661.5,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND CLOVES syndrome,CLOVES syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2021-08-01"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV003233079.6,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND PIK3CA related overgrowth syndrome,PIK3CA related overgrowth syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, multiple submitters, no conflicts</ReviewStatus>
+            <Description DateLastEvaluated=""2023-10-11"" SubmissionCount=""2"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV003882732.2,"NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND HEMIFACIAL MYOHYPERPLASIA, SOMATIC","HEMIFACIAL MYOHYPERPLASIA, SOMATIC","<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2012-06-24"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV004698336.1,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND PIK3CA overgrowth syndrome,PIK3CA overgrowth syndrome,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2020-11-30"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV004955262.1,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Inborn genetic diseases,Inborn genetic diseases,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2024-07-23"" SubmissionCount=""1"">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV006253703.1,NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Sialoblastoma,Sialoblastoma,"<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2024-03-19"" SubmissionCount=""1"">Tier II - Potential</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+39705,VCV000039705.70,RCV006253702.1,"NM_006218.4(PIK3CA):c.3139C>T (p.His1047Tyr) AND Diffuse midline glioma, H3 K27M-mutant","Diffuse midline glioma, H3 K27M-mutant","<RCVClassifications>
+          <SomaticClinicalImpact>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description ClinicalImpactAssertionType=""diagnostic"" ClinicalImpactClinicalSignificance=""supports diagnosis"" DateLastEvaluated=""2025-01-27"" SubmissionCount=""1"">Tier I - Strong</Description>
+          </SomaticClinicalImpact>
+        </RCVClassifications>
+      "
+666267,VCV000666267.3,RCV000824811.1,NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del) AND Dabrafenib response,Dabrafenib response,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated=""2019-05-21"" SubmissionCount=""1"">drug response</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "
+666267,VCV000666267.3,RCV004669148.2,NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del) AND Neoplasm,Neoplasm,"<RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2025-03-04"" SubmissionCount=""1"">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      "
+2443454,VCV002443454.1,RCV003152061.1,NM_003070.5(SMARCA2):c.750ACA[1] (p.Gln253del) AND not provided,not provided,"<RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated=""2022-09-11"" SubmissionCount=""1"">Uncertain significance</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      "

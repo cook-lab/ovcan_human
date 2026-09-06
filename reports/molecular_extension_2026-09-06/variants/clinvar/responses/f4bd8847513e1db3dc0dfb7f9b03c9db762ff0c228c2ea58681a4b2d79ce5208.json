@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"1","retmax":"1","retstart":"0","idlist":["2443454"],"translationset":[],"translationstack":[{"term":"\"NC_000009.12:2039857:CAACAACA:CAACA\"[Canonical SPDI]","field":"Canonical SPDI","count":"1","explode":"N"},"GROUP"],"querytranslation":"\"NC_000009.12:2039857:CAACAACA:CAACA\"[Canonical SPDI]"}}

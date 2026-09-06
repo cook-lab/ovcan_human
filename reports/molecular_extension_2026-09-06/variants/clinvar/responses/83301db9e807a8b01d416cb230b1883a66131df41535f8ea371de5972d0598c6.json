@@ -1,0 +1,1 @@
+{"header":{"type":"esearch","version":"0.3"},"esearchresult":{"count":"1","retmax":"1","retstart":"0","idlist":["634768"],"translationset":[],"translationstack":[{"term":"\"NC_000017.11:7675144:C:G\"[Canonical SPDI]","field":"Canonical SPDI","count":"1","explode":"N"},"GROUP"],"querytranslation":"\"NC_000017.11:7675144:C:G\"[Canonical SPDI]"}}

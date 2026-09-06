@@ -1,34 +1,35 @@
-# Genomic HRD — feasibility assessment (WES)
+# Genomic-scar HRD — feasibility assessment (WES)
 
-**Date:** 2026-07-23  |  **Script:** `scripts/09_wes_hrd.R`  |  **Project:** OvCAN human ovarian cancer cell-line resource
+**Assessment revised:** 2026-09-06. Original archive inventory: 2026-07-23; script `scripts/09_wes_hrd.R`.
 
-## Verdict: **NOT FEASIBLE FROM ARCHIVED DATA**
+## Current gate: **NO VALIDATED ALLELE-SPECIFIC SOLUTION FOR DIRECT SCAR SCORING**
 
-Genuine genomic HRD (the genomic-scar score = HRD-LOH + telomeric allelic imbalance + large-scale state transitions) **cannot be computed from the archived WES data**, because the copy-number calls are **total copy number only — there is no allele-specific / B-allele-frequency information**. We therefore report **no HRD score** rather than a fabricated one.
+No composite genomic-scar score is produced. Current CNV profiles contain relative total-copy ratios, without a validated major/minor copy-number and ploidy solution. Those profiles cannot directly supply LOH/TAI/LST-based scarHRD input. This is not a claim that WES-based HRD analysis is inherently impossible or that the VCFs lack allele counts.
 
-## What genomic HRD requires
-- The composite HRD-scar score combines LOH, TAI, and LST; LOH and TAI require allele-specific information, so an LST-like count from total-copy profiles cannot substitute for the composite score.
-- `scarHRD` (Sztupinszki 2018, npj Breast Cancer; HRD-sum r=0.87 vs SNP array, robust at 30x) consumes **per-segment allele-specific copy number** (major `A_cn` + minor `B_cn`), normally produced by **Sequenza** or **ASCAT** from a BAF-bearing SNP VCF.
-- **Total copy number / log2 (plain CNVkit) is insufficient:** LOH is invisible in total CN. HRDetect (Davies 2017) and CHORD (Nguyen 2020) are **WGS-only** (SV-signature based) and do not apply to exomes.
+The [September HRD review](../reports/clinical_classification_2026-09-06/HRD_FEASIBILITY.md) supersedes the earlier blanket feasibility verdict. It verifies AD/AF in all 23 VCFs, audits germline-site ascertainment, identifies an exact pathogenic BRCA2 allele, and separates genotype, scars, mutational signatures and current function. The [targeted next-step request](../docs/cluster/CLINICAL_CLASSIFICATION_NEXT_STEPS.md) defines the proposed cluster work.
 
-## Evidence from the archived files (this script)
-- Allele-specific columns (`baf`/`cn1`/`cn2`/`A_cn`/`B_cn`) in CNVkit `.cnr`/`.cns`/`.call.cns`: **NONE**.
-- `.call.cns` columns are total-CN only: `chromosome`, `start`, `end`, `gene`, `log2`, `cn`, `depth`, `p_ttest`, `probes`, `weight` (has `cn`/`log2`, no allele split).
-- CNVkit `batch` calls passing a SNP `--vcf` (the BAF input that would enable allele-specific segmentation): **0 of 23** — none. CNVkit was run with `--diagram --scatter` but **no `--vcf`**.
-- Tumor `recal.bam`s archived (needed to re-run Sequenza/ASCAT): **0**. The only archived BAM is a single *public normal* (SRR4039087.bam; PRJNA339046). The tumors' recal BAMs live on HPC scratch (`/scratch/asmab/...`), not in the archive.
+## What the current evidence supports
 
-## scarHRD tooling note (secondary)
-- `scarHRD` installed in this environment: **FALSE**.
-- Its dependency **`copynumber`** is installed locally (Bioconductor 3.21): **FALSE**.
-- Install attempt outcome: `not attempted: software installation cannot resolve the missing allele-specific input`.
-- This is a *secondary* obstacle only; even with scarHRD installed, the **data blocker above is dispositive**.
+- scarHRD needs allele-specific segments and ploidy. Total-copy transitions or FGA alone are insufficient; neither equals the composite scar score.
+- The original CNVkit column scan below is historical. Current target-only CNS files and their source CNR hashes are in `output/wes_cnv_target_only/manifest.csv`; the old antitarget-containing profiles are superseded.
+- Existing VCF FORMAT AD/AF can support variant-level review. All 23 caller headers nevertheless record `--genotype-germline-sites false`, `--genotype-pon-sites false`, and zero interval padding. PASS-only filtering removes most retained common SNPs. Neither the coding MAF nor the present VCF is an automatically eligible germline SNP dataset for PureCN.
+- PureCN supports tumour-only exome and cell-line allele-specific inference, including CNVkit inputs, once an appropriate SNP set is supplied. Standard Sequenza/FACETS workflows use matched tumour-normal allelic evidence; unrelated reference exomes are not patient-matched normals.
+- Standard HRDetect and CHORD models require mutation/SV features not supplied here. A separately trained WES HRDetect model was evaluated in the original study; it is incorrect to call every HRDetect application WGS-only. No HRDetect/CHORD result is generated here.
 
-## Recommended path to a genuine genomic HRD score
-1. Recover the tumors' recalibrated BAMs (nf-core/Sarek `recal.bam`, HPC scratch) — the CNV/SNV inputs.
-2. Generate **allele-specific CN** per line with **Sequenza** (or ASCAT/FACETS): call heterozygous SNP BAFs (a population SNP panel suffices for tumor-only; a matched normal is better) + depth ratio, fit cellularity/ploidy, emit segments with `A_cn`/`B_cn`.
-3. Run **`scarHRD`** on the Sequenza segments to obtain HRD-LOH + TAI + LST and the HRD-sum.
-4. Interpretation caveat (Takamatsu 2024, *Sci Data*): in cell lines, HRD scars **persist** and do **not** predict in-vitro platinum/PARP sensitivity — report HRD as a genomic-scar descriptor, not a drug-response predictor.
+## Historical original-archive scan (scope limited to this script)
 
-## Note on the dropped expression 'HRD'
-The Peng et al. 2014 expression signature previously labelled 'HRD' is a **transcriptional state, not a genomic scar** (published transcriptomic HRD signatures barely overlap and none is guideline-endorsed). It is **dropped**; 'HRD' in this resource must mean the genomic-scar score above.
+- Allele-specific columns in scanned original CNVkit files: NONE.
+- Original `.call.cns` columns: `chromosome`, `start`, `end`, `gene`, `log2`, `cn`, `depth`, `p_ttest`, `probes`, `weight`. The `cn` column alone does not establish ploidy or an allele split.
+- Recorded original batch calls with a SNP `--vcf`: 0 of 23.
+- Files ending `recal.bam` in the original DATA tree: 0; any BAM: 1. This does not establish current cluster availability or identity of later CRAM files.
+- Upstream parameters generated by this historical parser are not the authoritative September provenance assessment; consult scripts 23-26 and the dated WES completion/coverage reports.
 
+## Tooling and proposed path
+
+- scarHRD installed at this scan: FALSE; copynumber available: FALSE.
+- Installation: not attempted: allele-specific input preparation/fitting is a separate analysis.
+- First retrieve existing germline-inclusive allele counts and normal SNP mapping-bias evidence. If absent, obtain verified alignment/reference identities and authorize a bounded input-generation and PureCN pilot separately. Five-normal coverage pairs are already recovered; do not request those again.
+- Compare plausible purity/ploidy solutions, inspect BAF/log-ratio fits and gene-locus allelic states, and retain unresolved fits as unassessed. Only accepted allele-specific segments can proceed to exploratory LOH/TAI/LST scoring. Do not transfer a commercial clinical cutoff to cell-line scar sums without validation.
+- Genomic scars can persist after restoration of repair. They are not direct measurements of current HR function or guaranteed drug response. RAD51-foci assays and measured drug sensitivity address different dimensions; expression abundance is not their substitute.
+
+The previously dropped expression signature remains excluded from the genomic-scar output. HRD is a broader biological concept: an expression association, a genomic scar and a functional assay should be named and validated according to what each measures.

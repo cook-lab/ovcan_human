@@ -1,0 +1,12 @@
+{
+  "offline_replay_byte_identical_tables": 5,
+  "sha256": {
+    "model_annotations.csv": "558a27bfec6d3437611787f4a5dcaa789dcc360584aed5828d66bd6ac1ff9d04",
+    "submission_assertions.csv": "27695f5320d2b3bd3c23c87f014769137dbd88bcca82a5467b7c62d7407ab7b2",
+    "condition_assertions.csv": "84b750a11a33bb97a6ea4b1f15ee585d9537d50913757c81f03bcb88976ad6ee",
+    "allele_lookup.csv": "dbef0b492851e1d69c54e61d8a6f4318f74e3a5d5866b543b4bcdf72fd2f3c54",
+    "matched_allele_annotations.csv": "4b4d1f480cf52c87950d595d6aed3e552e83f7d2d7fb872d63c34c25cf76d0e3"
+  },
+  "queue_status": "completed with explicit author approval",
+  "public_api_requests_used_in_replay": 0
+}

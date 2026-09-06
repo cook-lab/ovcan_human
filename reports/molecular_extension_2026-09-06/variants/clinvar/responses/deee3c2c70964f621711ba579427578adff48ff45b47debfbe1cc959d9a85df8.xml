@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="12581" VariationName="NM_033360.4(KRAS):c.175G&gt;A (p.Ala59Thr)" VariationType="single nucleotide variant" Accession="VCV000012581" Version="1" RecordType="classified" NumberOfSubmissions="1" NumberOfSubmitters="1" DateLastUpdated="2024-12-28" DateCreated="2013-04-04" MostRecentSubmission="2013-04-04">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="27620" VariationID="12581">
+      <GeneList>
+        <Gene Symbol="KRAS" FullName="KRAS proto-oncogene, GTPase" GeneID="3845" HGNC_ID="HGNC:6407" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>12p12.1</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="25205246" stop="25250929" display_start="25205246" display_stop="25250929" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="25358179" stop="25403853" display_start="25358179" display_stop="25403853" Strand="-"/>
+          </Location>
+          <OMIM>190070</OMIM>
+          <Haploinsufficiency last_evaluated="2015-10-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=KRAS">No evidence available</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2015-10-08" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=KRAS">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_033360.4(KRAS):c.175G&gt;A (p.Ala59Thr)</Name>
+      <CanonicalSPDI>NC_000012.12:25227348:C:T</CanonicalSPDI>
+      <VariantType>single nucleotide variant</VariantType>
+      <Location>
+        <CytogeneticLocation>12p12.1</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="12" Accession="NC_000012.12" start="25227349" stop="25227349" display_start="25227349" display_stop="25227349" variantLength="1" positionVCF="25227349" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="12" Accession="NC_000012.11" start="25380283" stop="25380283" display_start="25380283" display_stop="25380283" variantLength="1" positionVCF="25380283" referenceAlleleVCF="C" alternateAlleleVCF="T"/>
+      </Location>
+      <ProteinChange>A59T</ProteinChange>
+      <HGVSlist>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344" sequenceAccession="LRG_344" change="g.28655G&gt;A">
+            <Expression>LRG_344:g.28655G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344t1" sequenceAccession="LRG_344t1" change="c.175G&gt;A">
+            <Expression>LRG_344t1:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_344p1" sequenceAccession="LRG_344p1" change="p.Ala59Thr">
+            <Expression>LRG_344p1:p.Ala59Thr</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_344t2" sequenceAccession="LRG_344t2" change="c.175G&gt;A">
+            <Expression>LRG_344t2:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="LRG_344p2" sequenceAccession="LRG_344p2" change="p.Ala59Thr">
+            <Expression>LRG_344p2:p.Ala59Thr</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Type="protein">
+          <ProteinExpression sequenceAccessionVersion="P01116" sequenceAccession="P01116" change="p.Ala59Thr">
+            <Expression>P01116:p.Ala59Thr</Expression>
+          </ProteinExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.11" sequenceAccession="NC_000012" sequenceVersion="11" change="g.25380283C&gt;T" Assembly="GRCh37">
+            <Expression>NC_000012.11:g.25380283C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000012.12" sequenceAccession="NC_000012" sequenceVersion="12" change="g.25227349C&gt;T" Assembly="GRCh38">
+            <Expression>NC_000012.12:g.25227349C&gt;T</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_007524.2" sequenceAccession="NG_007524" sequenceVersion="2" change="g.28655G&gt;A">
+            <Expression>NG_007524.2:g.28655G&gt;A</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001369786.1" sequenceAccession="NM_001369786" sequenceVersion="1" change="c.175G&gt;A">
+            <Expression>NM_001369786.1:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001356715.1" sequenceAccession="NP_001356715" sequenceVersion="1" change="p.Ala59Thr" singleLetterProteinChange="A59T">
+            <Expression>NP_001356715.1:p.Ala59Thr</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001369787.1" sequenceAccession="NM_001369787" sequenceVersion="1" change="c.175G&gt;A">
+            <Expression>NM_001369787.1:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001356716.1" sequenceAccession="NP_001356716" sequenceVersion="1" change="p.Ala59Thr" singleLetterProteinChange="A59T">
+            <Expression>NP_001356716.1:p.Ala59Thr</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_004985.5" sequenceAccession="NM_004985" sequenceVersion="5" change="c.175G&gt;A" MANESelect="true">
+            <Expression>NM_004985.5:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_004976.2" sequenceAccession="NP_004976" sequenceVersion="2" change="p.Ala59Thr" singleLetterProteinChange="A59T">
+            <Expression>NP_004976.2:p.Ala59Thr</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_033360.4" sequenceAccession="NM_033360" sequenceVersion="4" change="c.175G&gt;A" MANEPlusClinical="true">
+            <Expression>NM_033360.4:c.175G&gt;A</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_203524.1" sequenceAccession="NP_203524" sequenceVersion="1" change="p.Ala59Thr" singleLetterProteinChange="A59T">
+            <Expression>NP_203524.1:p.Ala59Thr</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001583" Type="missense variant" DB="SO"/>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA122536" DB="ClinGen"/>
+        <XRef ID="P01116#VAR_016030" DB="UniProtKB"/>
+        <XRef Type="Allelic variant" ID="190070.0004" DB="OMIM"/>
+        <XRef Type="rs" ID="121913528" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_033360.4(KRAS):c.175G&gt;A (p.Ala59Thr) AND Bladder cancer, transitional cell, somatic" Accession="RCV000013410" Version="4">
+        <ClassifiedConditionList TraitSetID="3415">
+          <ClassifiedCondition DB="MedGen" ID="C4016403">Bladder cancer, transitional cell, somatic</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="1992-01-01" SubmissionCount="1">Pathogenic</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="1992-01-01" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2013-04-04" MostRecentSubmission="2013-04-04">
+        <ReviewStatus>no assertion criteria provided</ReviewStatus>
+        <Description>Pathogenic</Description>
+        <Explanation DataSource="ClinVar" Type="public">Pathogenic (1)</Explanation>
+        <Citation Type="general">
+          <ID Source="PubMed">1553789</ID>
+        </Citation>
+        <DescriptionHistory Dated="2024-12-21">
+          <Description>Pathogenic/Likely pathogenic</Description>
+        </DescriptionHistory>
+        <DescriptionHistory Dated="2017-03-07">
+          <Description>Pathogenic</Description>
+        </DescriptionHistory>
+        <ConditionList>
+          <TraitSet ID="3415" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="11029" Type="Disease">
+              <Name>
+                <ElementValue Type="Preferred">Bladder cancer, transitional cell, somatic</ElementValue>
+              </Name>
+              <Citation Type="practice guideline" Abbrev="NCCN, 2024">
+                <URL>https://www.nccn.org/professionals/physician_gls/pdf/bladder.pdf</URL>
+                <CitationText>NCCN Clinical Practice Guidelines in Oncology (NCCN Guidelines®) Bladder Cancer, 2024</CitationText>
+              </Citation>
+              <XRef ID="C4016403" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="33657" SubmissionDate="2013-02-06" DateLastUpdated="2013-04-04" DateCreated="2013-04-04" ContributesToAggregateClassification="true">
+        <ClinVarSubmissionID localKey="190070.0004_BLADDER CANCER, TRANSITIONAL CELL, SOMATIC" title="KRAS, ALA59THR_BLADDER CANCER, TRANSITIONAL CELL, SOMATIC"/>
+        <ClinVarAccession Accession="SCV000033657" DateUpdated="2013-04-04" DateCreated="2013-04-04" Type="SCV" Version="1" SubmitterName="OMIM" OrgID="3" OrganizationCategory="resource"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="1992-01-01">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>Pathogenic</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species>human</Species>
+              <AffectedStatus>not provided</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>literature only</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">In a human transitional cell bladder carcinoma cell line (109800), Grimmond et al. (1992) identified a heterozygous G-to-A transition in the KRAS2 gene, resulting in an ala59-to-thr (A59T) substitution. The mutation was present in paraffin-embedded tissue from the primary tumor of the patient.</Attribute>
+              <Citation>
+                <ID Source="PubMed">1553789</ID>
+              </Citation>
+              <XRef DB="OMIM" ID="109800" Type="MIM"/>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="KRAS"/>
+          </GeneList>
+          <Name>KRAS, ALA59THR</Name>
+          <VariantType>Variation</VariantType>
+          <OtherNameList>
+            <Name Type="NonHGVS">ALA59THR</Name>
+          </OtherNameList>
+          <XRefList>
+            <XRef DB="OMIM" ID="190070.0004" Type="Allelic variant"/>
+          </XRefList>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <Name>
+              <ElementValue Type="Preferred">BLADDER CANCER, TRANSITIONAL CELL, SOMATIC</ElementValue>
+            </Name>
+          </Trait>
+        </TraitSet>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="33657" TraitType="Disease" MappingType="Name" MappingValue="BLADDER CANCER, TRANSITIONAL CELL, SOMATIC" MappingRef="Preferred">
+        <MedGen CUI="C4016403" Name="Bladder cancer, transitional cell, somatic"/>
+      </TraitMapping>
+    </TraitMappingList>
+    <DeletedSCVList>
+      <SCV>
+        <Accession Version="1" DateDeleted="2024-12-20">SCV000504834</Accession>
+        <Description>This record was deleted because the classification was outdated and the DoCM project was retired. Classification of these variants is now being addressed by CIViC (civicdb.org).</Description>
+      </SCV>
+    </DeletedSCVList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

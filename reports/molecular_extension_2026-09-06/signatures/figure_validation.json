@@ -1,0 +1,19 @@
+{
+  "status": "passed",
+  "pdf_pages": 1,
+  "size_inches": [
+    7.2,
+    6.0
+  ],
+  "fonts": "embedded Arial and Arial Bold",
+  "render": "Poppler PDF render inspected at1600px; equal comparison widths; no clipping/overlap",
+  "source_and_artifact_sha256": {
+    "scripts/44b_fig_sbs3_sensitivity.R": "3014206f6802111cda25bb0b12c71d859a77f6f116397098f168a752c79ff74e",
+    "scripts/00b_figure_theme.R": "55c8c17a86c2b80cbc660ad6c894ac77c9873cdf30593b172b082fcba242ab2e",
+    "reports/molecular_extension_2026-09-06/signatures/sbs3_sensitivity_summary.csv": "785ba5fc2312430159c5de7a869d9a91dd8160bc7014df339eda410feddee500",
+    "reports/molecular_extension_2026-09-06/signatures/substrate_burden.csv": "775ac52f92e2b2c991e8880b4af1a0f34e356b808000f7f523ad15755f1d70b5",
+    "reports/molecular_extension_2026-09-06/signatures/sbs3_sensitivity.pdf": "5ec038cc666b5314606808451aa0b6d14bb8125abc641e0d9c8369fc5903f002",
+    "reports/molecular_extension_2026-09-06/signatures/sbs3_sensitivity.png": "27783c246f04c6570a2d828e3b7343379117108f250a974fb0a7f431763dc1cb",
+    "reports/molecular_extension_2026-09-06/signatures/FIGURE_LEGEND.md": "ff61a8f96fdec558b773af6a46a5e198504bad1092b5e00f384102b230c8769b"
+  }
+}

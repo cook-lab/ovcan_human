@@ -1,0 +1,1042 @@
+{
+  "e80393db7dbb4e09f19ad23dba94da0935064a27020525fb9428cfa35dbe66e1": {
+    "url": "https://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/000/001/405/GCF_000001405.40_GRCh38.p14/GCF_000001405.40_GRCh38.p14_assembly_report.txt",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:36.869934+00:00",
+    "bytes": 80454,
+    "sha256": "64318ddff470b69b261a667d813210044f60d4ce654253a547db80ff73638d38",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e80393db7dbb4e09f19ad23dba94da0935064a27020525fb9428cfa35dbe66e1.txt"
+  },
+  "e7a8be1e8b2a3f2459a332e6d27813a8c2728ebac969a3c8a2f205310198c59d": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000001.11:26731444:G:GC/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:38.643698+00:00",
+    "bytes": 112,
+    "sha256": "87f3e71e614df6d4068ec3ea0e440b5f1b852856e81e7cd1357f3f53a8f78ef6",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e7a8be1e8b2a3f2459a332e6d27813a8c2728ebac969a3c8a2f205310198c59d.json"
+  },
+  "79e08597a685c1fbf778b2ee6aaf2c8b23de58b187833614656532c026b80cf8": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000001.11%3A26731445%3ACCCCCC%3ACCCCCCC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:38.902901+00:00",
+    "bytes": 425,
+    "sha256": "2ee2209218951cd82c0b59c35722089a814277eed50b25595e9b8e764d80413b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/79e08597a685c1fbf778b2ee6aaf2c8b23de58b187833614656532c026b80cf8.json"
+  },
+  "9a5aa826ebb8305b67e12a304eb750da494e14353f1e2c5acd81ccbdf730e332": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000001.11:26760954:A:C/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:39.282996+00:00",
+    "bytes": 101,
+    "sha256": "b944e4f7befe11e7f455cb21116655d00226135c649534c1c2a59594e91c734f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9a5aa826ebb8305b67e12a304eb750da494e14353f1e2c5acd81ccbdf730e332.json"
+  },
+  "14ff5101b24f270d6ee644874effe3f084b469c16f70f71a830d0d6cb4323e89": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000001.11%3A26760954%3AA%3AC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:39.674079+00:00",
+    "bytes": 403,
+    "sha256": "d980871aeb65305f21d2e8879517ead4255e10119351603c95d31070a0422a44",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/14ff5101b24f270d6ee644874effe3f084b469c16f70f71a830d0d6cb4323e89.json"
+  },
+  "ec06db37abcad748afce25b11f7664d7e316ee85196baf50610e861de32c8c6e": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000001.11:26762166:AC:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:40.153661+00:00",
+    "bytes": 108,
+    "sha256": "d5f0942a21d13daad0ab051adc400a3e4435eeddfd7bdf73473a317f2ed1e799",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/ec06db37abcad748afce25b11f7664d7e316ee85196baf50610e861de32c8c6e.json"
+  },
+  "b8139bbba7c923efcba8cc2a932d70bca7e90c7f8737ef6024ed814e6f6472f6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000001.11%3A26762167%3ACCCCC%3ACCCC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:40.627101+00:00",
+    "bytes": 417,
+    "sha256": "5a5c9151632a5a31bca7f19dab5687b9cbf73ecd94ddf27012b248b84f3950d3",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/b8139bbba7c923efcba8cc2a932d70bca7e90c7f8737ef6024ed814e6f6472f6.json"
+  },
+  "f900401a23b8b40d1e2f7025ac31a7f8c5fe1a68a63b39c1950587976c70658b": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000010.11:87958011:TA:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:42.783285+00:00",
+    "bytes": 110,
+    "sha256": "2fb38c12b7fe70fccc9f59dfe7df3855b6be07c5189389212deb984b04f60264",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f900401a23b8b40d1e2f7025ac31a7f8c5fe1a68a63b39c1950587976c70658b.json"
+  },
+  "46e6a2eb864da614c3ba3b298c128a38df810d3c3e2cf2e64001fe7e5c5ed228": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000010.11%3A87958012%3AAAAAAA%3AAAAAA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:43.099551+00:00",
+    "bytes": 365,
+    "sha256": "ae5d64a27d764d3d082065c0308a205b428d7475a7e3e6c059b73d19e1bf4bc0",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/46e6a2eb864da614c3ba3b298c128a38df810d3c3e2cf2e64001fe7e5c5ed228.json"
+  },
+  "cda9ed9a5207888f0418296bab64dfd7fcf2c8b929466622681bb6fdf5b1dfcd": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000092828",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:43.835695+00:00",
+    "bytes": 49011,
+    "sha256": "f337671447636eae18ce23db261f46264aae9e650e2878396a1287c3a790cba3",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/cda9ed9a5207888f0418296bab64dfd7fcf2c8b929466622681bb6fdf5b1dfcd.xml"
+  },
+  "684129c4875db6a50560c8601f4e96a8b5984f8407f407b76591519d6f01ae0d": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000011.10:108329096:CATT:C/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:46.944685+00:00",
+    "bytes": 105,
+    "sha256": "f9fce6e44c94e8edb0fbd3e81797c57cd8616ef00ca7976b9963d7d4f8f834d8",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/684129c4875db6a50560c8601f4e96a8b5984f8407f407b76591519d6f01ae0d.json"
+  },
+  "389cc9854fd125efbd10fda1ad16736f2e11aeb636373a4630249b2267c5d09e": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000011.10%3A108329097%3AATTA%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:47.122137+00:00",
+    "bytes": 357,
+    "sha256": "6c6258e6a62fdf641fbcf4be913afd1471aaab1ff9782083b7d8785b922a5b75",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/389cc9854fd125efbd10fda1ad16736f2e11aeb636373a4630249b2267c5d09e.json"
+  },
+  "caa42c6ed5d127303a0a786187dd1b17993eb2b5d0cfba6854b39dd306ba52c3": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV002796934",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:47.818638+00:00",
+    "bytes": 19047,
+    "sha256": "d5ad8f99f078162d206699aeabaf3a88f02a0c5bec43d242462a02a16387c641",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/caa42c6ed5d127303a0a786187dd1b17993eb2b5d0cfba6854b39dd306ba52c3.xml"
+  },
+  "da4746f9f2f13b14ce2a591eeb652d3fbcc69759a49723ec039188e5e54c6db2": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000011.10:108345740:AGGAGGTGC:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:49.619721+00:00",
+    "bytes": 108,
+    "sha256": "eac5143a11f664dfc80ebdbec961112af4e66818eb0685821d7dadc5fe125cd4",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/da4746f9f2f13b14ce2a591eeb652d3fbcc69759a49723ec039188e5e54c6db2.json"
+  },
+  "15b263cb1c03fd40cabb6ccf431ea0356ff35c46b5648644258b471594594493": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000011.10%3A108345741%3AGGAGGTGC%3A%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:49.770191+00:00",
+    "bytes": 417,
+    "sha256": "3c4006184edb335fa81d388e1a50d54aea12415471ea350579fe732df1309a70",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/15b263cb1c03fd40cabb6ccf431ea0356ff35c46b5648644258b471594594493.json"
+  },
+  "9cf34079b561c85811dc01b2d1dc74833675073511821fcc7d192f058a749f7c": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000011.10:108345748:C:CAAAAAAAA/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:52.014030+00:00",
+    "bytes": 122,
+    "sha256": "e29b3f476f1390c6764761e999cc17af2969a7ac5218943b40a446d69f7f0ba7",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9cf34079b561c85811dc01b2d1dc74833675073511821fcc7d192f058a749f7c.json"
+  },
+  "56a973355943977ffff565cd629cf3bfdef3e56af3037c4b828daed3f920b318": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000011.10%3A108345749%3AAAAAAAA%3AAAAAAAAAAAAAAAA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:52.188927+00:00",
+    "bytes": 445,
+    "sha256": "a53b996121d2ceb00c2575e21291ab686a28c87871e50d88dacc159a8f2e53ee",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/56a973355943977ffff565cd629cf3bfdef3e56af3037c4b828daed3f920b318.json"
+  },
+  "dac8f058de13de3871c4b6c8c7277e5370a0e6e82c6f9f4077976254a50d2206": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000012.12:25227348:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:53.587698+00:00",
+    "bytes": 101,
+    "sha256": "fe0c042548d9f8ced4e06e68fb9eee3fb55ee778ecb7e38406aabd5ff6cacc5b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/dac8f058de13de3871c4b6c8c7277e5370a0e6e82c6f9f4077976254a50d2206.json"
+  },
+  "f85ea35f9d9022c2f5862dd3ecd98b6ca9bb33c35a731a3166e81655f1806f54": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000012.12%3A25227348%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:53.764803+00:00",
+    "bytes": 347,
+    "sha256": "61f6afee49cd38f92fcbd4e68e34e4f985ca201c1fd42d8fcf49933218740f53",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f85ea35f9d9022c2f5862dd3ecd98b6ca9bb33c35a731a3166e81655f1806f54.json"
+  },
+  "deee3c2c70964f621711ba579427578adff48ff45b47debfbe1cc959d9a85df8": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000012581",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:54.523362+00:00",
+    "bytes": 13598,
+    "sha256": "28b037a99252d0656013633417a32bf1c793356e201bbace86ae1513bc1a3826",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/deee3c2c70964f621711ba579427578adff48ff45b47debfbe1cc959d9a85df8.xml"
+  },
+  "d8b97de76fb82bd41ce4e898b163484f1f47204db1a1572b2ad56260e484a62a": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000012.12:25245347:C:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:55.515019+00:00",
+    "bytes": 101,
+    "sha256": "2eabbee5bf1b4c1993b09b1891efa7cf122c639ad36a0a9564ba1ed1f4db98ec",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/d8b97de76fb82bd41ce4e898b163484f1f47204db1a1572b2ad56260e484a62a.json"
+  },
+  "3d1c80403b6bce83a2b7da66d32ffa9595339e81f6f2017474d7aba2948f00e1": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000012.12%3A25245347%3AC%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:55.787481+00:00",
+    "bytes": 347,
+    "sha256": "7a0536616602fb43b6fde3703f59b45b3e7f17a0a10c8a08086d4e9d2f40811d",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3d1c80403b6bce83a2b7da66d32ffa9595339e81f6f2017474d7aba2948f00e1.json"
+  },
+  "f3d6bddac3690aed7daf698d7d6d365bc7ff525d55aa708828b1619d779f34f6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000045123",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:56.405431+00:00",
+    "bytes": 43513,
+    "sha256": "910ce0e8870c5c079ca1a2454e8a8bb2e946158b8e0352d3e65948e209b28782",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f3d6bddac3690aed7daf698d7d6d365bc7ff525d55aa708828b1619d779f34f6.xml"
+  },
+  "ddd6b1719edd5f15e9b66f8def0874bdbdf23dd0e5277c4c5bb21555cc19e5a1": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000012.12:25245349:C:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:56.605785+00:00",
+    "bytes": 101,
+    "sha256": "cdbef8e737f06b12be8d3c00060742e7f459ab4123208d13f16f1fd32422154c",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/ddd6b1719edd5f15e9b66f8def0874bdbdf23dd0e5277c4c5bb21555cc19e5a1.json"
+  },
+  "c1b1445328d3e53e2a18c972171c8e25eac09c665b71b40035f9ca21949250c2": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000012.12%3A25245349%3AC%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:57.027435+00:00",
+    "bytes": 347,
+    "sha256": "cfaf96cc60f545cf7c24d15a9f9ebacb0e1d8a144b8acbd0aa63c0541d24b154",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c1b1445328d3e53e2a18c972171c8e25eac09c665b71b40035f9ca21949250c2.json"
+  },
+  "02c8f7627ddd5771d058cf0af3e5bae37aa02888d64aa786c401f28d49917e01": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000045122",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:57.825735+00:00",
+    "bytes": 97127,
+    "sha256": "6e2a6dde7452c72aa7560c78b76491a89a925ab53338b06a46cd0c1f611612fa",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/02c8f7627ddd5771d058cf0af3e5bae37aa02888d64aa786c401f28d49917e01.xml"
+  },
+  "e8e94b8218352183df2ed0dd47e51df16b0fdd7595233f039bc7de465ccd6b07": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000012.12:25245350:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:57.995598+00:00",
+    "bytes": 101,
+    "sha256": "86c7dcf703ff0111b0564b54ff93975b3f85790a17f39bdc01fab32fa4b1348e",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e8e94b8218352183df2ed0dd47e51df16b0fdd7595233f039bc7de465ccd6b07.json"
+  },
+  "38026b3b017d1ffcc6e591c8053d0a266e796c528da5a6e6a65917520413caa6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000012.12%3A25245350%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:58.483545+00:00",
+    "bytes": 347,
+    "sha256": "593bed69f5b3d2f942071e0047b8e538ac861c1831cf3ad9af04d8a9f6ceec26",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/38026b3b017d1ffcc6e591c8053d0a266e796c528da5a6e6a65917520413caa6.json"
+  },
+  "0e3ea348d808f5182d05224685a989773f3fa972b15d8910441e014598951d83": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000012584",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:42:59.257310+00:00",
+    "bytes": 87652,
+    "sha256": "653e3dbd70dc07759be6fb7933d5edfccf8b08eadd880aa0bd95c0202124b8ca",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0e3ea348d808f5182d05224685a989773f3fa972b15d8910441e014598951d83.xml"
+  },
+  "d7ea6b142dc2537e15ff72eb9659a95c17bd5fbdd5fb08c3e7bebedf120793a8": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000013.11:32316524:C:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:00.399813+00:00",
+    "bytes": 101,
+    "sha256": "d15af4ad9e01fb2312cf708cf72d4e2fcfbc945d0e85ac996727c277defe088f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/d7ea6b142dc2537e15ff72eb9659a95c17bd5fbdd5fb08c3e7bebedf120793a8.json"
+  },
+  "03f7c6e823ebc409cbab4ad89c099ee516ec3f0e3affde521b8a9c4c1cd0f7a6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000013.11%3A32316524%3AC%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:00.592870+00:00",
+    "bytes": 403,
+    "sha256": "2908820a2d7759d6fa713136c45c91cc09160348966c3a6c99c491e1e6928dfe",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/03f7c6e823ebc409cbab4ad89c099ee516ec3f0e3affde521b8a9c4c1cd0f7a6.json"
+  },
+  "cc4eb6e4323409dbedc32f44fc24192b084e8790db3bf9b1a9d9ade265321953": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000013.11:32370999:AAG:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:01.975163+00:00",
+    "bytes": 109,
+    "sha256": "881aea84ce5dcbcb2a60ed3e83cbd17553a80f26ed011e5e9a6757dcd1119f5f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/cc4eb6e4323409dbedc32f44fc24192b084e8790db3bf9b1a9d9ade265321953.json"
+  },
+  "4d2ce6d3af4fd938e2dbad40576034f657c747223d2c1753f5ce0dc26ef3e936": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000013.11%3A32371000%3AAGAGAG%3AAGAG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:02.155915+00:00",
+    "bytes": 362,
+    "sha256": "821de842d360cbaca9c8a211c842c17ba19ed459c662ce35b5178e9c4ca98609",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/4d2ce6d3af4fd938e2dbad40576034f657c747223d2c1753f5ce0dc26ef3e936.json"
+  },
+  "fca7e0492bd235a2b6d7627220f58a21c872726acfe3cb92fb17d2e4f10fc892": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000009328",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:03.824472+00:00",
+    "bytes": 174301,
+    "sha256": "801611ee6604078e39ecd900c9bff291a85e23de6a4217f7d3bacf6d5574c6bb",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/fca7e0492bd235a2b6d7627220f58a21c872726acfe3cb92fb17d2e4f10fc892.xml"
+  },
+  "b9d7cbb90bef8950bdeb75f1dbf1170e72f6ed874cd8769ee7788c394baad205": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000016.10:764926:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:05.261090+00:00",
+    "bytes": 99,
+    "sha256": "64a805dff3ea42067a9111798c1b1df9095a18cff1a246f20d19f158f821b3dd",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/b9d7cbb90bef8950bdeb75f1dbf1170e72f6ed874cd8769ee7788c394baad205.json"
+  },
+  "e97ddf43ba92c7d18c9129c07a278058f1922620a4112240bfcdfa47203282b7": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000016.10%3A764926%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:05.423507+00:00",
+    "bytes": 399,
+    "sha256": "41c619231c286ce8e8a1a323f149cd98b733ac23dd3fe3d0db53d0e22bb23581",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e97ddf43ba92c7d18c9129c07a278058f1922620a4112240bfcdfa47203282b7.json"
+  },
+  "3ceba3e112c183d09215bdcd0f48bbc358bf4ae60795413c3d730c642d41d1fc": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000016.10:766424:G:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:05.903568+00:00",
+    "bytes": 99,
+    "sha256": "c65d4397f7c9a318953e4158b10bf36be0ed1e9dc9cf021d27f732691c0c0296",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3ceba3e112c183d09215bdcd0f48bbc358bf4ae60795413c3d730c642d41d1fc.json"
+  },
+  "c9c749a8c0967abf83a4bb2c3db665456dbc4c5fc53068e6236c9097a839eaca": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000016.10%3A766424%3AG%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:06.357504+00:00",
+    "bytes": 399,
+    "sha256": "6e99ab0cb29a8750a44d805fdd46aebe7891695704b6e2c46a242aae4f05e4ec",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c9c749a8c0967abf83a4bb2c3db665456dbc4c5fc53068e6236c9097a839eaca.json"
+  },
+  "2bcb9cc48310c8f1049ffb16e444562cc5f989defb954eff0f34ed0806642079": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000016.10:23629683:A:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:08.337735+00:00",
+    "bytes": 101,
+    "sha256": "8a53d503f3c15d79cfed7b61db0d50495ab8a5e491d527c176b34d6d1ec71b02",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/2bcb9cc48310c8f1049ffb16e444562cc5f989defb954eff0f34ed0806642079.json"
+  },
+  "335e4efa25f6a11fc32cb339484abddb36630c535f63873a5aab362c00206ff3": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000016.10%3A23629683%3AA%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:08.528483+00:00",
+    "bytes": 403,
+    "sha256": "e4429eafa7ff4db258ce8177542cc0d9da00998cfdf7c6e5166a48e1e4404556",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/335e4efa25f6a11fc32cb339484abddb36630c535f63873a5aab362c00206ff3.json"
+  },
+  "1b6fbe7236648d0452b238003e472d898c93e316c0e93883690be1600b811239": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000016.10:23635521:T:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:09.953020+00:00",
+    "bytes": 101,
+    "sha256": "1fd85d8451ce8129f18cf340fecf1b7813b493af88aa95ef5a51df432c60af38",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/1b6fbe7236648d0452b238003e472d898c93e316c0e93883690be1600b811239.json"
+  },
+  "37af6b35967b1d6e1edb6f0e484d55358a9a795658012004649c288dee086365": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000016.10%3A23635521%3AT%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:10.153593+00:00",
+    "bytes": 403,
+    "sha256": "0d9611bcb111199b7366c8d4bd394833cad12a90eee19bd8f2acaaaa2c6ae0a1",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/37af6b35967b1d6e1edb6f0e484d55358a9a795658012004649c288dee086365.json"
+  },
+  "9e7ae180ab47f0f2bfc57e4dda656656f4c71fd93a8990548b26f7c791b239eb": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7673778:C:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:13.507463+00:00",
+    "bytes": 100,
+    "sha256": "86def293ce8936b9d5a2f50f76827d4309109c845ec9bb820cef067ca4d123e1",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9e7ae180ab47f0f2bfc57e4dda656656f4c71fd93a8990548b26f7c791b239eb.json"
+  },
+  "17ad1cb05653d10fea5e15440f843c9cdb36bd2a4da31ab141dcf2e7fee12a70": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7673778%3AC%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:13.692583+00:00",
+    "bytes": 346,
+    "sha256": "8d853a22444802156914cbc2a7045f8b327eba9778d61084f2dc0452f03ef67a",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/17ad1cb05653d10fea5e15440f843c9cdb36bd2a4da31ab141dcf2e7fee12a70.json"
+  },
+  "0984d95d23fe3780079b54cb9ead234c850a843a11c81cecaf48ac823b48479d": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000376585",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:14.580839+00:00",
+    "bytes": 60079,
+    "sha256": "f07d5031375d4b1c3e380fab9411e88052419d499a8c6eae6eb2964309e6dee0",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0984d95d23fe3780079b54cb9ead234c850a843a11c81cecaf48ac823b48479d.xml"
+  },
+  "83241a4302ecf4046645f31ea56d8a33dc8bd95059862e75ee9547470ad5788f": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674217:T:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:16.128815+00:00",
+    "bytes": 100,
+    "sha256": "7f70d2d68a8e73396fe3522e3dac51a9aaaca4587b169ab296b1afb7754047b1",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/83241a4302ecf4046645f31ea56d8a33dc8bd95059862e75ee9547470ad5788f.json"
+  },
+  "044b17211f1881fa3884920f71022c8ec78f3e69fe630715c860af6b56d45ff3": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674217%3AT%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:16.320955+00:00",
+    "bytes": 346,
+    "sha256": "523dbacb571d925f61b7d6c487b1c9d460299347a5e3cf2f1ac644a86f477d97",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/044b17211f1881fa3884920f71022c8ec78f3e69fe630715c860af6b56d45ff3.json"
+  },
+  "a8b90527fbd6c675c8a20427c78994a1db6c99fab43d8789bf7eb05525a6a659": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000141881",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:17.250568+00:00",
+    "bytes": 54303,
+    "sha256": "65d835340d169e3b44635a5085587a5de5b4b9de812b742d01d65ed8937bafd3",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/a8b90527fbd6c675c8a20427c78994a1db6c99fab43d8789bf7eb05525a6a659.xml"
+  },
+  "48abc84a218849e35ee53aa35da63daa3e83147f1d5b36d81dea8527b023bec3": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674232:C:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:20.087970+00:00",
+    "bytes": 100,
+    "sha256": "ff9ada0053f1072210a1528f376aa6dc027a694ded4403a9584f0fdf7801aeeb",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/48abc84a218849e35ee53aa35da63daa3e83147f1d5b36d81dea8527b023bec3.json"
+  },
+  "701c5df79d5a48affcc44407d287796026830a518e0f3381adcc8e30ee7a3ca6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674232%3AC%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:20.322948+00:00",
+    "bytes": 346,
+    "sha256": "6101fe59a6aca404429f4faffec65e4afcace1eef4f28b0eea2bd0612d0cfbc2",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/701c5df79d5a48affcc44407d287796026830a518e0f3381adcc8e30ee7a3ca6.json"
+  },
+  "161dd7b9873e149626e63d3aa22510998b6df6c4f7c69771a6f4a5ae436b9662": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000376599",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:21.011826+00:00",
+    "bytes": 64667,
+    "sha256": "dbbf1b1caa1304a36fa647445bcd2372b95786ee07e5dd0dde7734d61d321b86",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/161dd7b9873e149626e63d3aa22510998b6df6c4f7c69771a6f4a5ae436b9662.xml"
+  },
+  "4080d85a18a2f643309f2b275e458fbc53387d341dd5fd21b36804eecdd5e6d2": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674237:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:22.471608+00:00",
+    "bytes": 100,
+    "sha256": "d7f55c73e2ad640fe7e78513e2d7c59b9328da10f73b4e33c253ef52a9dfa508",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/4080d85a18a2f643309f2b275e458fbc53387d341dd5fd21b36804eecdd5e6d2.json"
+  },
+  "8f4a93f97a65a20c8508df609a93ff10b305b41117fc947bf105c078a4c72f9c": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674237%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:22.654632+00:00",
+    "bytes": 345,
+    "sha256": "70cea4223b29a02f8a3914128f084dd7a276849ccdd4a08670df563fe7a00b6d",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/8f4a93f97a65a20c8508df609a93ff10b305b41117fc947bf105c078a4c72f9c.json"
+  },
+  "9888fe441b2b772df41b913b7f7c3dcba986a57b3374f8b7dfc2c48567f653ad": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000012354",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:23.510559+00:00",
+    "bytes": 93611,
+    "sha256": "21c4b3029f7cf64858790036cd68741468de5679bd6babfc6390b214cc8160d4",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9888fe441b2b772df41b913b7f7c3dcba986a57b3374f8b7dfc2c48567f653ad.xml"
+  },
+  "415c5726634f54ec10b83352921268cc72ff02b716460d7f6440e79915f95b8b": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674887:T:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:25.041921+00:00",
+    "bytes": 100,
+    "sha256": "46db9675ed76de8b2b4b56e820a64bd77810ee91e25cf0e29b00fbf2d3b7d582",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/415c5726634f54ec10b83352921268cc72ff02b716460d7f6440e79915f95b8b.json"
+  },
+  "0d80ecacee808bcfcaa6465a4f72d23becafd638ccd3334b83458fa28c635da1": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674887%3AT%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:25.248056+00:00",
+    "bytes": 346,
+    "sha256": "822947ed242f6e0395a9120a1a10a9018c0f92074ed9f8b6e16c48aa1dbd6f9b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0d80ecacee808bcfcaa6465a4f72d23becafd638ccd3334b83458fa28c635da1.json"
+  },
+  "0a387dee49584fc3a258453fd03e03c38b092c5d802f27db80db7b859b1bdaf7": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000428895",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:26.089757+00:00",
+    "bytes": 39735,
+    "sha256": "5c64b58eab8f526eec90b7b98917db9184ccec183443bcb9318ffabd46eed8df",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0a387dee49584fc3a258453fd03e03c38b092c5d802f27db80db7b859b1bdaf7.xml"
+  },
+  "bf8d23b6768ebf2f07a3d4cc39b6c9db87250b1cdf16438d59e644b7e18666e9": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674888:AT:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:27.558391+00:00",
+    "bytes": 99,
+    "sha256": "2eb43c50baacf3ebda54ce4c6422689e45cd2baab5a40da1b2bdc07fee1cbe76",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/bf8d23b6768ebf2f07a3d4cc39b6c9db87250b1cdf16438d59e644b7e18666e9.json"
+  },
+  "9f7d41d1c5b00789f7ac6c8d78097de07ce74b1a985d8328c1009ac4c1b85cd6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674889%3AT%3A%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:27.821119+00:00",
+    "bytes": 399,
+    "sha256": "92676db5e2fc2137f67127346448c1c1f97aa0d1fddd29c14261f68e9f5d7511",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9f7d41d1c5b00789f7ac6c8d78097de07ce74b1a985d8328c1009ac4c1b85cd6.json"
+  },
+  "705e3e5f2aeb5167bc52146388eacfaa41a5d9c5b7a8dd65acd09c4bc4b3987a": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674899:TG:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:29.445779+00:00",
+    "bytes": 99,
+    "sha256": "4db01d3156b461107b94d00c2a842b57b2a9f769c927701768eea772c2589eb4",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/705e3e5f2aeb5167bc52146388eacfaa41a5d9c5b7a8dd65acd09c4bc4b3987a.json"
+  },
+  "c5da6e26d31d8815a66b74eb7848de841d476e6d555756437df9aaaedaa2f7eb": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674900%3AG%3A%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:29.637097+00:00",
+    "bytes": 399,
+    "sha256": "28734a6ae6d07b06e49aa89086ff777d4a9415c188bac87fe575ca4dfd9971aa",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c5da6e26d31d8815a66b74eb7848de841d476e6d555756437df9aaaedaa2f7eb.json"
+  },
+  "042a0fd6df6df44e68fee059b6ecc028944ad6b3727fb0d5494dc2af2a0d8e53": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674946:A:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:31.337402+00:00",
+    "bytes": 100,
+    "sha256": "c10d63528d64a02d86a658579ecad1462816e742bd4d5d0353cd60d2273017f0",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/042a0fd6df6df44e68fee059b6ecc028944ad6b3727fb0d5494dc2af2a0d8e53.json"
+  },
+  "8c2a86616415c8d11ca67555df193aded460f5ce7b6552667cefeb2ac867c251": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674946%3AA%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:31.535881+00:00",
+    "bytes": 346,
+    "sha256": "b58563a8ccf60560d2a9d818acddcce1b980e981df22621c90dbfb777038d1c3",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/8c2a86616415c8d11ca67555df193aded460f5ce7b6552667cefeb2ac867c251.json"
+  },
+  "b5c7a6c95d3de2ac3a8e6f7b563de3aef2fa6c91ce14659bbf1f2b6290f22a98": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000216077",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:32.477374+00:00",
+    "bytes": 118986,
+    "sha256": "e2ff52dd8088250872b3608d84ccd284b969f2a8eae972854f0274a4e07619b5",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/b5c7a6c95d3de2ac3a8e6f7b563de3aef2fa6c91ce14659bbf1f2b6290f22a98.xml"
+  },
+  "0c735490ea4b5bb56929487821c17aab12eadeb420e50373a81fde229c47899e": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7674956:G:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:33.957205+00:00",
+    "bytes": 100,
+    "sha256": "11526651752e593bbb7c42d64fbe09e85fef3fd27432b5389cfb112aad46442e",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0c735490ea4b5bb56929487821c17aab12eadeb420e50373a81fde229c47899e.json"
+  },
+  "47557e398889c804a0e5cf60acc8c4b8fa1716d75c574af5928aa5927efbd350": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7674956%3AG%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:34.113263+00:00",
+    "bytes": 346,
+    "sha256": "0b0030b68d18e2474a226a4595302a3b88d952bb527bb93aefff8053d0b812de",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/47557e398889c804a0e5cf60acc8c4b8fa1716d75c574af5928aa5927efbd350.json"
+  },
+  "5b0bd7840be7b620b937f18b020828c88768aa4a22df4afaabf2080937958227": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000406579",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:35.060335+00:00",
+    "bytes": 60271,
+    "sha256": "f7d88514099bdf6d58b19789c0d8cf19b2e93e18bb62f07cef0edd5780c872d8",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/5b0bd7840be7b620b937f18b020828c88768aa4a22df4afaabf2080937958227.xml"
+  },
+  "6c79432107106384aad68cbc10bf9ae36217b300535196775f4ba78a76ee24e3": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7675087:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:36.576110+00:00",
+    "bytes": 100,
+    "sha256": "5099b77b582208991d63a2fb9c8fc6f653e1976c63d68f9a451bcb40bb23637f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/6c79432107106384aad68cbc10bf9ae36217b300535196775f4ba78a76ee24e3.json"
+  },
+  "957b28e85e62591e9cb7fd8ddc5f633ee755da6305a8d74bb2550c086bcee75d": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7675087%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:36.768731+00:00",
+    "bytes": 345,
+    "sha256": "7365ba401137dbc676ad1a46befe6424d3081131cbed8c55e13d10d63ff30891",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/957b28e85e62591e9cb7fd8ddc5f633ee755da6305a8d74bb2550c086bcee75d.json"
+  },
+  "860ffb38f54a65bbb899116d335453236d152ef3596f06fe207fb4601261cc90": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000012374",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:38.730321+00:00",
+    "bytes": 273269,
+    "sha256": "cb296d00f04f387d50dd291a7de7dc2e8a5d8c29f0103566b1f90a31fd8ac844",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/860ffb38f54a65bbb899116d335453236d152ef3596f06fe207fb4601261cc90.xml"
+  },
+  "097cf15a7beec729ea9799a703c71e83d955eafc5c68b6607779e0371a7630b9": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7675142:C:CGGG/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:40.246499+00:00",
+    "bytes": 103,
+    "sha256": "c81dd3d0c0e883d961acdc39bcb3267ffc993c7f2fae95e39a06c6623f064592",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/097cf15a7beec729ea9799a703c71e83d955eafc5c68b6607779e0371a7630b9.json"
+  },
+  "2c1d7e38ad627a742250b2631a6c97763fd3cdab6d355f3616efd5f19da65880": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7675143%3AG%3AGGGG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:40.433676+00:00",
+    "bytes": 407,
+    "sha256": "cf5f1a67c123fa48e42d32cd044564c3b3518e550b19552388be735a226d5911",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/2c1d7e38ad627a742250b2631a6c97763fd3cdab6d355f3616efd5f19da65880.json"
+  },
+  "35ec6f3a26ba73f72a6b53303c26e09caf12971a886e1955ab78e82b9f8bd8ac": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7675144:C:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:42.222029+00:00",
+    "bytes": 100,
+    "sha256": "8665b380fe1ceb39df3d8c83baae9cfe46d0180258cf859048a89eead04b18d3",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/35ec6f3a26ba73f72a6b53303c26e09caf12971a886e1955ab78e82b9f8bd8ac.json"
+  },
+  "83301db9e807a8b01d416cb230b1883a66131df41535f8ea371de5972d0598c6": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7675144%3AC%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:42.508412+00:00",
+    "bytes": 346,
+    "sha256": "b8a275e81be1822287ba2cffc24be9e66162c8fc56b8ab570489c34eddaff9d4",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/83301db9e807a8b01d416cb230b1883a66131df41535f8ea371de5972d0598c6.json"
+  },
+  "b386dead617afe0b92fdd1e06b37fc5b8991342eb7867361761590872200ff00": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000634768",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:43.212247+00:00",
+    "bytes": 52165,
+    "sha256": "494150f61128e3f26da0911213aeeb40127a955705868c44c0298c56bfd0b52d",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/b386dead617afe0b92fdd1e06b37fc5b8991342eb7867361761590872200ff00.xml"
+  },
+  "f8ea40ddb130acf3d36e1618a611b3c1765baf84764e0648fa3c0d6f2553b4eb": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:7675216:T:C/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:44.764862+00:00",
+    "bytes": 100,
+    "sha256": "db2426f96da370a73183960a4571978dc45ac2ee64b4a8265a58e2482f8ed596",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f8ea40ddb130acf3d36e1618a611b3c1765baf84764e0648fa3c0d6f2553b4eb.json"
+  },
+  "c1caef40d843d347a1e4dad88110355d8b79f0cc130fee302f5ff58486c29034": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A7675216%3AT%3AC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:44.965405+00:00",
+    "bytes": 346,
+    "sha256": "98fa5cf2a80d8905c4cf2ba9b12a06387a77ceab997e9f6d12f289e73e66d9ab",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c1caef40d843d347a1e4dad88110355d8b79f0cc130fee302f5ff58486c29034.json"
+  },
+  "3336f0332e164af00c1a8c5310b40a7eca0b6f8e6639b05ccd455fbe5c009acf": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000376625",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:45.670878+00:00",
+    "bytes": 144292,
+    "sha256": "785f5db326fe48adae3412308deb7c4adb858579ce109727cdfe0614d20c8a5c",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3336f0332e164af00c1a8c5310b40a7eca0b6f8e6639b05ccd455fbe5c009acf.xml"
+  },
+  "a06e4888b9767e8e7b1d9ab04accd9cc78cb10ebc653b98c1a63b92ce26f4c94": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:31249051:A:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:46.012025+00:00",
+    "bytes": 101,
+    "sha256": "a038a49892922d5becca0bee8a6ffd70abee7e99ad5dbea6ac63e64d095d60c2",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/a06e4888b9767e8e7b1d9ab04accd9cc78cb10ebc653b98c1a63b92ce26f4c94.json"
+  },
+  "adbadae43546552ecd33eff3f54784a4c7762fdf7d742c437966f1e8e4e334b5": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A31249051%3AA%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:46.253115+00:00",
+    "bytes": 348,
+    "sha256": "d430d2598349ecda7bf6e5114aaef7fc82e6ae60cc846bb6cdda072580351b67",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/adbadae43546552ecd33eff3f54784a4c7762fdf7d742c437966f1e8e4e334b5.json"
+  },
+  "9d21980876b6b263b05bc15b5f9558a5ec8499b7d676f8815b8ab7d4e7a5673f": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000184987",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:47.061888+00:00",
+    "bytes": 26594,
+    "sha256": "748fed6b7178c592ba1b0481c3d699a9969c4533ee887fcbd7e523d28083bec6",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9d21980876b6b263b05bc15b5f9558a5ec8499b7d676f8815b8ab7d4e7a5673f.xml"
+  },
+  "0e19235effbe8019a4fad491fd92b07b6d2da1df282da3585ac559c82f9c9cd8": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:39462436:AC:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:48.892660+00:00",
+    "bytes": 100,
+    "sha256": "ba71eb32781e6d3d105ece8e85bd46bfcc8e81ccf06139f267c6f5118a49f28c",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0e19235effbe8019a4fad491fd92b07b6d2da1df282da3585ac559c82f9c9cd8.json"
+  },
+  "fb36d2e14726be0642f6f0a8592cc4d2f5813fdaaf97944f9ba2e25584014a84": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A39462437%3AC%3A%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:49.159728+00:00",
+    "bytes": 401,
+    "sha256": "d3e9ce85eed26bcb9e51efc0a132e938b5aea38feb673ad4eeb168c5e6d5c00b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/fb36d2e14726be0642f6f0a8592cc4d2f5813fdaaf97944f9ba2e25584014a84.json"
+  },
+  "0d502137e23d4d60623d32f25db1f483afbf8a3a923ec35c39ead9f2c73fc44b": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:39463044:G:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:50.748567+00:00",
+    "bytes": 101,
+    "sha256": "45e60d60c0880788dd179d7c5de40dfafdf00171bc4d0c5d8ad07b323436cc32",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0d502137e23d4d60623d32f25db1f483afbf8a3a923ec35c39ead9f2c73fc44b.json"
+  },
+  "0952e4c5cc4f4ec27990a25ef6af7353aedc150593591501becbce813858966b": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A39463044%3AG%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:50.949788+00:00",
+    "bytes": 403,
+    "sha256": "77fafe2838a61beca08837e6922565817d87a431f056647ab8ad0e29aa3bed53",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0952e4c5cc4f4ec27990a25ef6af7353aedc150593591501becbce813858966b.json"
+  },
+  "af18ebe61122edc6c0a8afffdad0c1db472ab557b9245fef8fe2aa191e0e0228": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:39520087:G:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:51.463963+00:00",
+    "bytes": 101,
+    "sha256": "c3b02e51a3c97a32d78a877dd2ec62f59c131737270c2d61f64b458b0d3faae8",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/af18ebe61122edc6c0a8afffdad0c1db472ab557b9245fef8fe2aa191e0e0228.json"
+  },
+  "3109a09e883e384148474c0ebb6d2340524ac02781d785552e4fd5464eda0678": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A39520087%3AG%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:51.866439+00:00",
+    "bytes": 403,
+    "sha256": "a195056ab7ed69a7c7f9cf5b7b9f38a546b2575631bd4bff1498961f8b08b33b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3109a09e883e384148474c0ebb6d2340524ac02781d785552e4fd5464eda0678.json"
+  },
+  "bf9c50cb5070e657216a1fad4c4423efb597d63db06c4d8cc5497ab5e9edcadf": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000017.11:39530606:GTCC:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:53.450071+00:00",
+    "bytes": 112,
+    "sha256": "5aafe5169837a019c602a4190f685ce8dee981f57f402a857157ec66ec3faf17",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/bf9c50cb5070e657216a1fad4c4423efb597d63db06c4d8cc5497ab5e9edcadf.json"
+  },
+  "46e3814636adecd7a3f4396c58cec90cb6da93832d10c3ffa97b457ec54d337b": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000017.11%3A39530607%3ATCCTCCTC%3ATCCTC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:53.628663+00:00",
+    "bytes": 425,
+    "sha256": "920f09be5b81283ed231a9d8d38793ba56844529da1dfd541f4eb9e411f85156",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/46e3814636adecd7a3f4396c58cec90cb6da93832d10c3ffa97b457ec54d337b.json"
+  },
+  "0064b6c17c312575aaf2ef3055b21461002ff62d21741d46005dbe5aa9ac197c": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000018.10:51058450:AT:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:54.462165+00:00",
+    "bytes": 102,
+    "sha256": "be1e3d7c1bffa2048c3b38b3dd7f9118c48ce9f0db6eded24170b9f0039e84bf",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/0064b6c17c312575aaf2ef3055b21461002ff62d21741d46005dbe5aa9ac197c.json"
+  },
+  "3a4b0988099799c1c7c5ced4e5eade7a41178cc898e5bbf8f6fbb610f0a84b59": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000018.10%3A51058451%3ATT%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:54.640260+00:00",
+    "bytes": 405,
+    "sha256": "c81c77792a6846ae4f747a4c4a48d319458f13c49e43daeb22f2ca601c929f89",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3a4b0988099799c1c7c5ced4e5eade7a41178cc898e5bbf8f6fbb610f0a84b59.json"
+  },
+  "7555dee8d5e1d6328722d086727eb3c6f73f11eed087bab02d8354c8153a8d4d": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000018.10:51076661:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:55.450849+00:00",
+    "bytes": 101,
+    "sha256": "3e2530612a6b144dfea810ae854591eae078c2f1045ad144a644b898a21b1b01",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/7555dee8d5e1d6328722d086727eb3c6f73f11eed087bab02d8354c8153a8d4d.json"
+  },
+  "3f1c1541788ca8b68dbdcdfe1ff4bc8ead37ddc7238f4f1c71534a3cc0de080b": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000018.10%3A51076661%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:55.719822+00:00",
+    "bytes": 347,
+    "sha256": "67fcbeb48f8b1f9d468cace9c8bdb080196678908e9ff3779812b9274afac647",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3f1c1541788ca8b68dbdcdfe1ff4bc8ead37ddc7238f4f1c71534a3cc0de080b.json"
+  },
+  "16f24d61866f17ee6a745bec30ab641f2175501477eb47db442af67b0c4d4994": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000024850",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:56.501804+00:00",
+    "bytes": 59618,
+    "sha256": "5e2582474e0292b7d1201f6d425e4a984a125a26652ffe745de249938ebe3d2b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/16f24d61866f17ee6a745bec30ab641f2175501477eb47db442af67b0c4d4994.xml"
+  },
+  "99fd1e57642af90528f931b6f4ab7e11b9a47d3e416f92f7cd5b5a2a758534c6": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000019.10:11003129:GC:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:59.645375+00:00",
+    "bytes": 100,
+    "sha256": "1a24b48b92cb9f5ed07c28a058582cd0fc883ed6181243c58b25f22d02749faa",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/99fd1e57642af90528f931b6f4ab7e11b9a47d3e416f92f7cd5b5a2a758534c6.json"
+  },
+  "243a088db5b272f33f5dcd1d0b5ee6f7ee3285c285265e5b7958ad10132cbb59": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000019.10%3A11003130%3AC%3A%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:43:59.827797+00:00",
+    "bytes": 401,
+    "sha256": "99af9c8a00d3bb82fdb033d59d4b63d0dbdcb9986798c82c7e1157bc48476767",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/243a088db5b272f33f5dcd1d0b5ee6f7ee3285c285265e5b7958ad10132cbb59.json"
+  },
+  "fdef064cc9b9983d41f1458c2c2a7e4007f8ae1611d512803156ec2608fac906": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000003.12:41224525:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:03.399030+00:00",
+    "bytes": 101,
+    "sha256": "74fe9b16d158ffb072fc3889cfe3032b2300773293f76e12f6719a7f44f46c5a",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/fdef064cc9b9983d41f1458c2c2a7e4007f8ae1611d512803156ec2608fac906.json"
+  },
+  "55ed12b45fd48a9c284fa948d34e84a0ef55c54918b16c3aba23976b6feb048d": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000003.12%3A41224525%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:03.549055+00:00",
+    "bytes": 403,
+    "sha256": "c81989bca3f559c49dad12389131c681450334114741ab1f05d1c060eca0f409",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/55ed12b45fd48a9c284fa948d34e84a0ef55c54918b16c3aba23976b6feb048d.json"
+  },
+  "442d62a7710beada11abf22860340310218e4c1cc2aee2153b55162d1ad8214f": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000003.12:41224620:T:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:06.987940+00:00",
+    "bytes": 101,
+    "sha256": "c1c833f6e2074972f241d0a37f8110251c913978695fbf9400f533665caed420",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/442d62a7710beada11abf22860340310218e4c1cc2aee2153b55162d1ad8214f.json"
+  },
+  "7a672aff2265b3da53d3c43ce3860bbc43aa17877c0532d31bc87b4191c45060": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000003.12%3A41224620%3AT%3AG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:07.164092+00:00",
+    "bytes": 403,
+    "sha256": "7132072fcdb06002c64b8b07faa68996ed612f051903cf8ad12ac2d0e565eb3e",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/7a672aff2265b3da53d3c43ce3860bbc43aa17877c0532d31bc87b4191c45060.json"
+  },
+  "3a914dc635768ebcbf362793b1ac49f5417658ccec20e9c3a8f1261993e910d7": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000003.12:142508004:G:A/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:08.032837+00:00",
+    "bytes": 102,
+    "sha256": "3b0e1f1548e1faef71f470226612daa5c1383fa0aa9219516922a5fbd5569392",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3a914dc635768ebcbf362793b1ac49f5417658ccec20e9c3a8f1261993e910d7.json"
+  },
+  "d2eb4bc174f05268566e9be4809108752913e6ba4b3379f95715c518221f1d06": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000003.12%3A142508004%3AG%3AA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:08.223797+00:00",
+    "bytes": 350,
+    "sha256": "47a6ff0cd2a98d33b560b577c9d20baf55bb41fc28d4c728590c57dc73207ad4",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/d2eb4bc174f05268566e9be4809108752913e6ba4b3379f95715c518221f1d06.json"
+  },
+  "f0d1af37f358ee6bf8c1c1c19fb177f196f2d6b66249adb80deb894aa210472b": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000224559",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:08.900807+00:00",
+    "bytes": 24668,
+    "sha256": "98bc2daf5bce2e0c6ad9176ff6da2db969d6112504bda383309347487f28c160",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f0d1af37f358ee6bf8c1c1c19fb177f196f2d6b66249adb80deb894aa210472b.xml"
+  },
+  "27b74a55510a7d58292d0487e017f360052cdd461b7f8861e1bfa8ffb3918bdf": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000003.12:179234295:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:09.278178+00:00",
+    "bytes": 102,
+    "sha256": "36cf59073dee8c78bbcfa937fa9020cd57f29148770427ba83c24c564a95e774",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/27b74a55510a7d58292d0487e017f360052cdd461b7f8861e1bfa8ffb3918bdf.json"
+  },
+  "e6effd213cc516e6384a754323f1c41fc7447eac59e1b458e7ca7d8518a8257b": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000003.12%3A179234295%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:09.606826+00:00",
+    "bytes": 349,
+    "sha256": "647d101a47f371e09fddbb04435d3725d64de0759f4101c36fc1e2fe53b836e6",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e6effd213cc516e6384a754323f1c41fc7447eac59e1b458e7ca7d8518a8257b.json"
+  },
+  "28aaab917ba3f931f4a3027eeb2327a584e3b04ac3e418275b766aafe1a3a9eb": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000039705",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:10.291397+00:00",
+    "bytes": 164727,
+    "sha256": "08d9a9b66b5c3f9f562138048064cdeb0b0c25ff264dff45ba1bdbcafc36c09a",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/28aaab917ba3f931f4a3027eeb2327a584e3b04ac3e418275b766aafe1a3a9eb.xml"
+  },
+  "9773b148aa4391526f179f33740eaf1fb643aa016673c4fbd4e6ccafd6ae6894": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000006.12:151808055:G:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:13.291029+00:00",
+    "bytes": 102,
+    "sha256": "0e5f196fe2e3f89db0d0365a14fce05c9d60472b4059ef7d7b96440f4aa5a005",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9773b148aa4391526f179f33740eaf1fb643aa016673c4fbd4e6ccafd6ae6894.json"
+  },
+  "68140eb4e2880c991a6790e7ccac14eb52b4713767e9499c0b024153246f48b3": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000006.12%3A151808055%3AG%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:13.467587+00:00",
+    "bytes": 405,
+    "sha256": "8f651021c3f8c6ff79d1472dd0ad6e8bad60d762a6152fc961221fc068420349",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/68140eb4e2880c991a6790e7ccac14eb52b4713767e9499c0b024153246f48b3.json"
+  },
+  "d025c655c60491da482a0917bc4300e85c41b257739ae71a269f8f5572024c93": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000006.12:157196283:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:15.506992+00:00",
+    "bytes": 102,
+    "sha256": "f12c35215d70c601131df0059577b0bcbb24a6f30f33b74eee0f609792a3938b",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/d025c655c60491da482a0917bc4300e85c41b257739ae71a269f8f5572024c93.json"
+  },
+  "6742250048d6a20a42c6215bf305e06a0ae2e8e24414b6c85c6b29805a525be7": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000006.12%3A157196283%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:15.661351+00:00",
+    "bytes": 405,
+    "sha256": "15a63f417bfe0403fd52cb1d78df0d41446d3f6695c4d8f620c1d6fa479f52b7",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/6742250048d6a20a42c6215bf305e06a0ae2e8e24414b6c85c6b29805a525be7.json"
+  },
+  "dfd4d3fa2353901924cf86112a1d9967d1dee69950b24bffbd0bc9e048eb2502": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000006.12:157207064:T:TG/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:17.471396+00:00",
+    "bytes": 109,
+    "sha256": "c974774da760fb9dd5f5612d38bd5ca18e69ae26f3577bc72b2a4aa60c029611",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/dfd4d3fa2353901924cf86112a1d9967d1dee69950b24bffbd0bc9e048eb2502.json"
+  },
+  "c5e6eb89b8af9c1f8d5f77ac075b8839f0e6d6d91254c215f2d16092a7e8960a": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000006.12%3A157207065%3AGGGG%3AGGGGG%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:17.615766+00:00",
+    "bytes": 419,
+    "sha256": "0c590f569f285f294a8583c5c52cb4b80ea3549afdb02209a75286cef66c7672",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c5e6eb89b8af9c1f8d5f77ac075b8839f0e6d6d91254c215f2d16092a7e8960a.json"
+  },
+  "3b8749f8046136c0bb9c6d7e2a0eb1ba51c7b2e01a0ab5c2665eae3798e1ca67": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000007.14:140778035:GTAGGTGCTGTCACAT:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:20.851291+00:00",
+    "bytes": 117,
+    "sha256": "662296bae69fb0d01a36c2efce3b7f7c245a3db1066eb7170f953e433e27d7cb",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/3b8749f8046136c0bb9c6d7e2a0eb1ba51c7b2e01a0ab5c2665eae3798e1ca67.json"
+  },
+  "e279f5389f943d8ab0c7b9476ea7e8fc42c83278d027e4d1025e18c64e5b5ab3": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000007.14%3A140778036%3ATAGGTGCTGTCACATT%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:21.139332+00:00",
+    "bytes": 380,
+    "sha256": "eaa0266743d2d6b9a875384548d558bb24b3b071fffcfd6bfaf6408969c9b5e6",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/e279f5389f943d8ab0c7b9476ea7e8fc42c83278d027e4d1025e18c64e5b5ab3.json"
+  },
+  "9023fd89c93795f827c7df05dfaa98a12cad248d9e836e37e1773a558abf7340": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV000666267",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:21.715957+00:00",
+    "bytes": 26973,
+    "sha256": "1b82ed1a73d1eddd3c2e796e488ba3e5008508adef2ce445dfc3a1ab816339ba",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/9023fd89c93795f827c7df05dfaa98a12cad248d9e836e37e1773a558abf7340.xml"
+  },
+  "7c331fe96e963c6f8e5aab7ab0f109b9f2cef33fe20b7a47f3be5b760da9bc26": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000008.11:127738335:G:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:22.774655+00:00",
+    "bytes": 102,
+    "sha256": "e8853547c44c2eb5bc2170be733a0e510722a6d7b05420276930fcbfcf9ed4c7",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/7c331fe96e963c6f8e5aab7ab0f109b9f2cef33fe20b7a47f3be5b760da9bc26.json"
+  },
+  "1f10355fa08e91af9b8a63ed4ea2c9043d534e1e283fdde014dc5c46339acc33": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000008.11%3A127738335%3AG%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:23.017902+00:00",
+    "bytes": 405,
+    "sha256": "495c0b0dedbaf90cdf8387f77bdb97a21426092ddf16338774fd6ae5b4c562e8",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/1f10355fa08e91af9b8a63ed4ea2c9043d534e1e283fdde014dc5c46339acc33.json"
+  },
+  "997ec764e0099ed5450f97b5b956ed08e38db1ad37fc26d636e9d2bc152c5719": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000008.11:127738360:G:C/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:23.421422+00:00",
+    "bytes": 102,
+    "sha256": "d08d80cb94682037cbe3266714171130de0414586694e2c97f6b76994b1702cd",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/997ec764e0099ed5450f97b5b956ed08e38db1ad37fc26d636e9d2bc152c5719.json"
+  },
+  "7ceb5c03dabf1192c5a8deb429819464fb27a94f4a7c5c8902db0d3ee43ae113": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000008.11%3A127738360%3AG%3AC%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:23.904050+00:00",
+    "bytes": 405,
+    "sha256": "afa223bb07f6435bbb109447241baff866a2fc2c3c4452c065f69e304c29fc20",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/7ceb5c03dabf1192c5a8deb429819464fb27a94f4a7c5c8902db0d3ee43ae113.json"
+  },
+  "68d6e1f3386627b19befa50da6b585744f1ad2bdf50f7e073e0c8726dad01c78": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000009.12:2029031:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:24.957786+00:00",
+    "bytes": 100,
+    "sha256": "43601c01f8a2bb62836798e60994ac6c691aeb13e00e45bd7de14fd0284ba7b6",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/68d6e1f3386627b19befa50da6b585744f1ad2bdf50f7e073e0c8726dad01c78.json"
+  },
+  "1bc01372db8fe2345d183a393f55b021a0cf5de18f68cf9b05948c10032dd085": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000009.12%3A2029031%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:25.108094+00:00",
+    "bytes": 401,
+    "sha256": "37d1f169f8d0ea05f590314adcf25d5da3710a270b4ace10a7cba495329406dd",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/1bc01372db8fe2345d183a393f55b021a0cf5de18f68cf9b05948c10032dd085.json"
+  },
+  "069f9a5d50f712209765612c66753c1be993fe8692bda7922893c11934e74836": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000009.12:2039856:GCAA:G/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:26.205556+00:00",
+    "bytes": 111,
+    "sha256": "567bb6b39c3315a237f39c2886591242bec23a4fb7d3cf7b8c81f35ff6a2907f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/069f9a5d50f712209765612c66753c1be993fe8692bda7922893c11934e74836.json"
+  },
+  "f4bd8847513e1db3dc0dfb7f9b03c9db762ff0c228c2ea58681a4b2d79ce5208": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000009.12%3A2039857%3ACAACAACA%3ACAACA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:26.504431+00:00",
+    "bytes": 369,
+    "sha256": "2cb4bd99104b1c0f38ab6fc0cc305f84307f18abd096ac4b9da849e8ff8b201f",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/f4bd8847513e1db3dc0dfb7f9b03c9db762ff0c228c2ea58681a4b2d79ce5208.json"
+  },
+  "5267bf3ee22f1bd5bf4fa172e90e13c8fc6342de9096647f7adf81ecfad6c969": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=clinvar&rettype=vcv&id=VCV002443454",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:27.193804+00:00",
+    "bytes": 13244,
+    "sha256": "d9690563ef24ccd837f60e83b09aeb16ed64dc298afc475249b4a691b85f7ebc",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/5267bf3ee22f1bd5bf4fa172e90e13c8fc6342de9096647f7adf81ecfad6c969.xml"
+  },
+  "134f3994992ddad449e7c39fb44ab32549e8cdacf735574870921142bef8604b": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000009.12:2086922:CCAGAAGGATCCTCTTGACTGGGACCCCGCTG:C/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:27.432804+00:00",
+    "bytes": 139,
+    "sha256": "02d2d78d88b1c5136c1d057af518156eb1b46f04d8a6b2291b37c32de5110a0c",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/134f3994992ddad449e7c39fb44ab32549e8cdacf735574870921142bef8604b.json"
+  },
+  "c5e5e287ed41d2ab0307ff42ad5771f2150182fbf4d8dc812c40831cd3019ff8": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000009.12%3A2086923%3ACAGAAGGATCCTCTTGACTGGGACCCCGCTGCAGAA%3ACAGAA%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:27.956881+00:00",
+    "bytes": 479,
+    "sha256": "baaef2c2a72a3a052539debc05adbf1a33a1e67be065416cc25b328679cb634a",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c5e5e287ed41d2ab0307ff42ad5771f2150182fbf4d8dc812c40831cd3019ff8.json"
+  },
+  "12f4c088021b5e8313b740f6074647448828c24e55744ab52e51d6e84c6f43d5": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000009.12:5457315:C:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:28.351961+00:00",
+    "bytes": 100,
+    "sha256": "ea1edb0a273f0f75ec984dd764294b66991160a8fac46c3155733983735378c9",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/12f4c088021b5e8313b740f6074647448828c24e55744ab52e51d6e84c6f43d5.json"
+  },
+  "71dd796aa4ae9c2779d80c7032c867adeb9356a8fdfc1b64cf4491dabb6105cc": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000009.12%3A5457315%3AC%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:28.655419+00:00",
+    "bytes": 401,
+    "sha256": "d91abfd8b66ac842552c6956306599a73c43a810c3706989ee25d9bd05c2877d",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/71dd796aa4ae9c2779d80c7032c867adeb9356a8fdfc1b64cf4491dabb6105cc.json"
+  },
+  "dbf5c4a5255b462083ea3ff35a8cda49377ae90f35ace353d0b7ee689bf4a84e": {
+    "url": "https://api.ncbi.nlm.nih.gov/variation/v0/spdi/NC_000009.12:21971101:G:T/canonical_representative",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:30.892431+00:00",
+    "bytes": 101,
+    "sha256": "a68cf60f81c776df2da22f824417c489bb5358b27603768185f3bf29ae378931",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/dbf5c4a5255b462083ea3ff35a8cda49377ae90f35ace353d0b7ee689bf4a84e.json"
+  },
+  "c117915aec8e43560c6b037f22ef397b6e0e52bb1924ee184d047e36c337000e": {
+    "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?db=clinvar&term=%22NC_000009.12%3A21971101%3AG%3AT%22%5BCanonical+SPDI%5D&retmode=json&retmax=100",
+    "http_status": 200,
+    "retrieved_utc": "2026-09-06T16:44:31.104365+00:00",
+    "bytes": 403,
+    "sha256": "776f962bd1d24cc9949bc42a502703a9f5d5f6574313e7b4ec344bfc5ca14c09",
+    "response_file": "reports/molecular_extension_2026-09-06/variants/clinvar/responses/c117915aec8e43560c6b037f22ef397b6e0e52bb1924ee184d047e36c337000e.json"
+  }
+}

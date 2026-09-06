@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+                        
+<ClinVarResult-Set><VariationArchive VariationID="666267" VariationName="NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del)" VariationType="Deletion" Accession="VCV000666267" Version="3" RecordType="classified" NumberOfSubmissions="2" NumberOfSubmitters="2" DateLastUpdated="2025-03-16" DateCreated="2019-08-26" MostRecentSubmission="2025-03-11">
+  <RecordStatus>current</RecordStatus>
+  <Species>Homo sapiens</Species>
+  <ClassifiedRecord>
+    <SimpleAllele AlleleID="653824" VariationID="666267">
+      <GeneList>
+        <Gene Symbol="BRAF" FullName="B-Raf proto-oncogene, serine/threonine kinase" GeneID="673" HGNC_ID="HGNC:1097" Source="submitted" RelationshipType="within single gene">
+          <Location>
+            <CytogeneticLocation>7q34</CytogeneticLocation>
+            <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" AssemblyStatus="current" Chr="7" Accession="NC_000007.14" start="140713328" stop="140924929" display_start="140713328" display_stop="140924929" Strand="-"/>
+            <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="7" Accession="NC_000007.13" start="140433811" stop="140624563" display_start="140433811" display_stop="140624563" Strand="-"/>
+          </Location>
+          <OMIM>164757</OMIM>
+          <Haploinsufficiency last_evaluated="2014-08-04" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=BRAF">Little evidence for dosage pathogenicity</Haploinsufficiency>
+          <Triplosensitivity last_evaluated="2014-08-04" ClinGen="https://www.ncbi.nlm.nih.gov/projects/dbvar/ISCA/isca_gene.cgi?sym=BRAF">No evidence available</Triplosensitivity>
+        </Gene>
+      </GeneList>
+      <Name>NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del)</Name>
+      <CanonicalSPDI>NC_000007.14:140778036:TAGGTGCTGTCACATT:T</CanonicalSPDI>
+      <VariantType>Deletion</VariantType>
+      <Location>
+        <CytogeneticLocation>7q34</CytogeneticLocation>
+        <SequenceLocation Assembly="GRCh38" AssemblyAccessionVersion="GCF_000001405.38" forDisplay="true" AssemblyStatus="current" Chr="7" Accession="NC_000007.14" start="140778037" stop="140778051" display_start="140778037" display_stop="140778051" variantLength="15" positionVCF="140778036" referenceAlleleVCF="GTAGGTGCTGTCACAT" alternateAlleleVCF="G"/>
+        <SequenceLocation Assembly="GRCh37" AssemblyAccessionVersion="GCF_000001405.25" AssemblyStatus="previous" Chr="7" Accession="NC_000007.13" start="140477837" stop="140477851" display_start="140477837" display_stop="140477851" variantLength="15" positionVCF="140477836" referenceAlleleVCF="GTAGGTGCTGTCACAT" alternateAlleleVCF="G"/>
+      </Location>
+      <HGVSlist>
+        <HGVS Assembly="GRCh37" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000007.13" sequenceAccession="NC_000007" sequenceVersion="13" change="g.140477838_140477852del" Assembly="GRCh37">
+            <Expression>NC_000007.13:g.140477838_140477852del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Assembly="GRCh38" Type="genomic, top-level">
+          <NucleotideExpression sequenceAccessionVersion="NC_000007.14" sequenceAccession="NC_000007" sequenceVersion="14" change="g.140778038_140778052del" Assembly="GRCh38">
+            <Expression>NC_000007.14:g.140778038_140778052del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="NG_007873.3" sequenceAccession="NG_007873" sequenceVersion="3" change="g.151714_151728del">
+            <Expression>NG_007873.3:g.151714_151728del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001354609.2" sequenceAccession="NM_001354609" sequenceVersion="2" change="c.1457_1471del">
+            <Expression>NM_001354609.2:c.1457_1471del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001341538.1" sequenceAccession="NP_001341538" sequenceVersion="1" change="p.Asn486_Pro490del">
+            <Expression>NP_001341538.1:p.Asn486_Pro490del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001374244.1" sequenceAccession="NM_001374244" sequenceVersion="1" change="c.1577_1591del">
+            <Expression>NM_001374244.1:c.1577_1591del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001361173.1" sequenceAccession="NP_001361173" sequenceVersion="1" change="p.Asn526_Pro530del">
+            <Expression>NP_001361173.1:p.Asn526_Pro530del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001374258.1" sequenceAccession="NM_001374258" sequenceVersion="1" change="c.1577_1591del" MANEPlusClinical="true">
+            <Expression>NM_001374258.1:c.1577_1591del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001361187.1" sequenceAccession="NP_001361187" sequenceVersion="1" change="p.Asn526_Pro530del">
+            <Expression>NP_001361187.1:p.Asn526_Pro530del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378467.1" sequenceAccession="NM_001378467" sequenceVersion="1" change="c.1466_1480del">
+            <Expression>NM_001378467.1:c.1466_1480del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365396.1" sequenceAccession="NP_001365396" sequenceVersion="1" change="p.Asn489_Pro493del">
+            <Expression>NP_001365396.1:p.Asn489_Pro493del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378468.1" sequenceAccession="NM_001378468" sequenceVersion="1" change="c.1457_1471del">
+            <Expression>NM_001378468.1:c.1457_1471del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365397.1" sequenceAccession="NP_001365397" sequenceVersion="1" change="p.Asn486_Pro490del">
+            <Expression>NP_001365397.1:p.Asn486_Pro490del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378469.1" sequenceAccession="NM_001378469" sequenceVersion="1" change="c.1391_1405del">
+            <Expression>NM_001378469.1:c.1391_1405del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365398.1" sequenceAccession="NP_001365398" sequenceVersion="1" change="p.Asn464_Pro468del">
+            <Expression>NP_001365398.1:p.Asn464_Pro468del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378470.1" sequenceAccession="NM_001378470" sequenceVersion="1" change="c.1355_1369del">
+            <Expression>NM_001378470.1:c.1355_1369del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365399.1" sequenceAccession="NP_001365399" sequenceVersion="1" change="p.Asn452_Pro456del">
+            <Expression>NP_001365399.1:p.Asn452_Pro456del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378471.1" sequenceAccession="NM_001378471" sequenceVersion="1" change="c.1346_1360del">
+            <Expression>NM_001378471.1:c.1346_1360del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365400.1" sequenceAccession="NP_001365400" sequenceVersion="1" change="p.Asn449_Pro453del">
+            <Expression>NP_001365400.1:p.Asn449_Pro453del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378472.1" sequenceAccession="NM_001378472" sequenceVersion="1" change="c.1301_1315del">
+            <Expression>NM_001378472.1:c.1301_1315del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365401.1" sequenceAccession="NP_001365401" sequenceVersion="1" change="p.Asn434_Pro438del">
+            <Expression>NP_001365401.1:p.Asn434_Pro438del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378473.1" sequenceAccession="NM_001378473" sequenceVersion="1" change="c.1301_1315del">
+            <Expression>NM_001378473.1:c.1301_1315del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365402.1" sequenceAccession="NP_001365402" sequenceVersion="1" change="p.Asn434_Pro438del">
+            <Expression>NP_001365402.1:p.Asn434_Pro438del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378474.1" sequenceAccession="NM_001378474" sequenceVersion="1" change="c.1457_1471del">
+            <Expression>NM_001378474.1:c.1457_1471del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365403.1" sequenceAccession="NP_001365403" sequenceVersion="1" change="p.Asn486_Pro490del">
+            <Expression>NP_001365403.1:p.Asn486_Pro490del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_001378475.1" sequenceAccession="NM_001378475" sequenceVersion="1" change="c.1193_1207del">
+            <Expression>NM_001378475.1:c.1193_1207del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_001365404.1" sequenceAccession="NP_001365404" sequenceVersion="1" change="p.Asn398_Pro402del">
+            <Expression>NP_001365404.1:p.Asn398_Pro402del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_004333.6" sequenceAccession="NM_004333" sequenceVersion="6" change="c.1457_1471del" MANESelect="true">
+            <Expression>NM_004333.6:c.1457_1471del</Expression>
+          </NucleotideExpression>
+          <ProteinExpression sequenceAccessionVersion="NP_004324.2" sequenceAccession="NP_004324" sequenceVersion="2" change="p.Asn486_Pro490del">
+            <Expression>NP_004324.2:p.Asn486_Pro490del</Expression>
+          </ProteinExpression>
+          <MolecularConsequence ID="SO:0001822" Type="inframe_deletion" DB="SO"/>
+        </HGVS>
+        <HGVS Type="genomic">
+          <NucleotideExpression sequenceAccessionVersion="LRG_299" sequenceAccession="LRG_299">
+            <Expression>LRG_299:g.151714_151728del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="LRG_299t1" sequenceAccession="LRG_299t1">
+            <Expression>LRG_299t1:c.1457_1471del</Expression>
+          </NucleotideExpression>
+        </HGVS>
+        <HGVS Type="coding">
+          <NucleotideExpression sequenceAccessionVersion="NM_004333.6" sequenceAccession="NM_004333" sequenceVersion="6" change="c.1457_1471delATGTGACAGCACCTA" MANESelect="true">
+            <Expression>NM_004333.6:c.1457_1471delATGTGACAGCACCTA</Expression>
+          </NucleotideExpression>
+        </HGVS>
+      </HGVSlist>
+      <XRefList>
+        <XRef ID="CA645556774" DB="ClinGen"/>
+        <XRef Type="rs" ID="1586126439" DB="dbSNP"/>
+      </XRefList>
+    </SimpleAllele>
+    <RCVList>
+      <RCVAccession Title="NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del) AND Dabrafenib response" Accession="RCV000824811" Version="1">
+        <ClassifiedConditionList TraitSetID="33962">
+          <ClassifiedCondition DB="MedGen" ID="CN239586">Dabrafenib response</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <GermlineClassification>
+            <ReviewStatus>no assertion criteria provided</ReviewStatus>
+            <Description DateLastEvaluated="2019-05-21" SubmissionCount="1">drug response</Description>
+          </GermlineClassification>
+        </RCVClassifications>
+      </RCVAccession>
+      <RCVAccession Title="NM_004333.6(BRAF):c.1457_1471del (p.Asn486_Pro490del) AND Neoplasm" Accession="RCV004669148" Version="2">
+        <ClassifiedConditionList TraitSetID="28284">
+          <ClassifiedCondition DB="MedGen" ID="C0027651">Neoplasm</ClassifiedCondition>
+        </ClassifiedConditionList>
+        <RCVClassifications>
+          <OncogenicityClassification>
+            <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+            <Description DateLastEvaluated="2025-03-04" SubmissionCount="1">Oncogenic</Description>
+          </OncogenicityClassification>
+        </RCVClassifications>
+      </RCVAccession>
+    </RCVList>
+    <Classifications>
+      <GermlineClassification DateLastEvaluated="2019-05-21" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2019-08-26" MostRecentSubmission="2019-08-26">
+        <ReviewStatus>no assertion criteria provided</ReviewStatus>
+        <Description>drug response</Description>
+        <Explanation DataSource="ClinVar" Type="public">drug response (1)</Explanation>
+        <ConditionList>
+          <TraitSet ID="33962" Type="DrugResponse" ContributesToAggregateClassification="true">
+            <Trait ID="36737" Type="DrugResponse">
+              <Name>
+                <ElementValue Type="Preferred">Dabrafenib response</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Tafinlar response</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="public definition">Dabrafenib is a kinase inhibitor used in the treatment of individuals with unresectable or metastatic melanoma, metastatic non-small cell lung cancer (NSCLC), locally advanced or metastatic anaplastic thyroid cancer (ATC), pediatric low-grade glioma (LGG), and other unresectable or metastatic solid tumors with specific BRAF variants. Dabrafenib can be used as a single agent to treat melanoma with the BRAF valine 600 to glutamic acid (V600E) variant or in combination with the MEK inhibitor trametinib to treat multiple tumor types with BRAF V600E or V600K variants.The BRAF protein is an intracellular kinase in the mitogen-activated protein kinases (MAPK) pathway. Functionally, BRAF regulates essential cell processes such as cell growth, division, differentiation, and apoptosis. The gene BRAF is also a proto-oncogene—when mutated, it transforms normal cells into cancerous cells. Variation in the kinase domain of BRAF is associated with various cancers. The most common BRAF variant, V600E, constitutively activates the kinase and causes cell proliferation in the absence of growth factors that would usually be needed. The V600E variant is detected in approximately 50% of melanomas, 25% of ATC, 2% of NSCLC, and 20% of pediatric LGGs. The FDA-approved label for dabrafenib states that the presence of BRAF mutation in tumor specimens (V600E for dabrafenib monotherapy; V600E or V600K for dabrafenib plus trametinib) should be confirmed using an FDA-approved test before starting treatment with dabrafenib. Dabrafenib is not indicated for the treatment of individuals with wild-type BRAF tumors, or the treatment of colorectal cancer due to intrinsic resistance to BRAF inhibitor monotherapy. The label also states that individuals with glucose-6-phosphate dehydrogenase (G6PD) deficiency should be monitored for signs of hemolytic anemia while taking dabrafenib (1). However, it is important to note that an independent literature review by the Clinical Pharmacogenetics Implementation Consortium found no publications to support or refute this risk and thus issued no guidance for G6PD deficiency and dabrafenib therapy.</Attribute>
+                <XRef ID="NBK447415" DB="Medical Genetics Summaries"/>
+              </AttributeSet>
+              <Citation Type="practice guideline" Abbrev="DailyMed Drug Label, 2023">
+                <URL>https://dailymed.nlm.nih.gov/dailymed/drugInfo.cfm?setid=fee1e6b1-e1a5-4254-9f2e-a70e0f8dbdea</URL>
+                <CitationText>DailyMed Drug Label, TAFINLAR, 2023</CitationText>
+              </Citation>
+              <Citation Type="review" Abbrev="Medical Genetics Summaries">
+                <ID Source="BookShelf">NBK447415</ID>
+              </Citation>
+              <Citation Type="practice guideline" Abbrev="CPIC, 2022">
+                <URL>https://cpicpgx.org/guidelines/cpic-guideline-for-g6pd/</URL>
+                <CitationText>Gammal et al, Expanded Clinical Pharmacogenetics Implementation Consortium Guideline for Medication Use in the Context of G6PD Genotype. 2 Sept 2022. Clin Pharmacol Ther.</CitationText>
+              </Citation>
+              <XRef ID="CN239586" DB="MedGen"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </GermlineClassification>
+      <OncogenicityClassification DateLastEvaluated="2025-03-04" NumberOfSubmissions="1" NumberOfSubmitters="1" DateCreated="2024-08-11" MostRecentSubmission="2025-03-11">
+        <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+        <Description>Oncogenic</Description>
+        <Citation Type="general">
+          <ID Source="PubMed">26732095</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">31519698</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">36759117</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">38333370</ID>
+        </Citation>
+        <Citation Type="general">
+          <ID Source="PubMed">38479107</ID>
+        </Citation>
+        <ConditionList>
+          <TraitSet ID="28284" Type="Disease" ContributesToAggregateClassification="true">
+            <Trait ID="32759" Type="Disease">
+              <Name>
+                <ElementValue Type="Alternate">tumor</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Preferred">Neoplasm</ElementValue>
+                <XRef ID="HP:0002664" DB="Human Phenotype Ontology"/>
+                <XRef ID="MONDO:0005070" DB="MONDO"/>
+                <XRef ID="108369006" DB="SNOMED CT"/>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplasms</ElementValue>
+              </Name>
+              <Name>
+                <ElementValue Type="Alternate">Neoplasm (disease)</ElementValue>
+              </Name>
+              <AttributeSet>
+                <Attribute Type="keyword">neoplasm</Attribute>
+              </AttributeSet>
+              <Citation Type="general" Abbrev="AMP, 2012">
+                <ID Source="PubMed">22918138</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2013">
+                <ID Source="PubMed">23619274</ID>
+              </Citation>
+              <Citation Type="general" Abbrev="ACMG, 2021">
+                <ID Source="PubMed">34131312</ID>
+              </Citation>
+              <XRef ID="C0027651" DB="MedGen"/>
+              <XRef ID="D009369" DB="MeSH"/>
+              <XRef ID="MONDO:0005070" DB="MONDO"/>
+              <XRef Type="primary" ID="HP:0002664" DB="Human Phenotype Ontology"/>
+              <XRef Type="secondary" ID="HP:0003008" DB="Human Phenotype Ontology"/>
+              <XRef Type="secondary" ID="HP:0006741" DB="Human Phenotype Ontology"/>
+            </Trait>
+          </TraitSet>
+        </ConditionList>
+      </OncogenicityClassification>
+    </Classifications>
+    <ClinicalAssertionList>
+      <ClinicalAssertion ID="1893254" SubmissionDate="2019-08-09" ContributesToAggregateClassification="true" DateLastUpdated="2019-08-26" DateCreated="2019-08-26">
+        <ClinVarSubmissionID localKey="NM_004333.4:c.1457_1471delATGTGACAGCACCTA|Dabrafenib response" submittedAssembly="GRCh37"/>
+        <ClinVarAccession Accession="SCV000965609" DateUpdated="2019-08-26" DateCreated="2019-08-26" Type="SCV" Version="1" SubmitterName="Clinical Laboratory, New York Genome Center" OrgID="507135" OrganizationCategory="laboratory"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2019-05-21">
+          <ReviewStatus>no assertion criteria provided</ReviewStatus>
+          <GermlineClassification>drug response</GermlineClassification>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>provider interpretation</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRAF"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <XRefList>
+            <XRef DB="COSMIC" ID="26503"/>
+          </XRefList>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004333.4:c.1457_1471delATGTGACAGCACCTA</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="DrugResponse">
+          <Trait Type="DrugResponse">
+            <Name>
+              <ElementValue Type="Preferred">Dabrafenib response</ElementValue>
+            </Name>
+            <TraitRelationship Type="DrugResponseAndDisease">
+              <Name>
+                <ElementValue Type="Preferred">Pancreatic Adenocarcinoma</ElementValue>
+              </Name>
+            </TraitRelationship>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB6162041</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+      <ClinicalAssertion ID="9887302" SubmissionDate="2025-03-04" ContributesToAggregateClassification="true" DateLastUpdated="2025-03-11" DateCreated="2024-08-11">
+        <ClinVarSubmissionID localKey="NM_004333.6:c.1457_1471delATGTGACAGCACCTA|MedGen:C0027651|OncogenicityClassification"/>
+        <ClinVarAccession Accession="SCV005094146" DateUpdated="2025-03-11" DateCreated="2024-08-11" Type="SCV" Version="2" SubmitterName="Center for Genomic Medicine, Rigshospitalet, Copenhagen University Hospital" OrgID="505691" OrganizationCategory="laboratory" OrgAbbreviation="GM4113, RH"/>
+        <RecordStatus>current</RecordStatus>
+        <Classification DateLastEvaluated="2025-03-04">
+          <ReviewStatus>criteria provided, single submitter</ReviewStatus>
+          <OncogenicityClassification>Oncogenic</OncogenicityClassification>
+          <Citation>
+            <ID Source="PubMed">26732095</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">38333370</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">36759117</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">31519698</ID>
+          </Citation>
+          <Citation>
+            <ID Source="PubMed">38479107</ID>
+          </Citation>
+        </Classification>
+        <Assertion>variation to disease</Assertion>
+        <AttributeSet>
+          <Attribute Type="AssertionMethod">ClinGen/CGC/VICC Guidelines for Oncogenicity, 2022</Attribute>
+          <Citation>
+            <ID Source="PubMed">35101336</ID>
+          </Citation>
+        </AttributeSet>
+        <ObservedInList>
+          <ObservedIn>
+            <Sample>
+              <Origin>somatic</Origin>
+              <Species TaxonomyId="9606">human</Species>
+              <AffectedStatus>yes</AffectedStatus>
+            </Sample>
+            <Method>
+              <MethodType>clinical testing</MethodType>
+            </Method>
+            <ObservedData>
+              <Attribute Type="Description">not provided</Attribute>
+            </ObservedData>
+          </ObservedIn>
+        </ObservedInList>
+        <SimpleAllele>
+          <GeneList>
+            <Gene Symbol="BRAF"/>
+          </GeneList>
+          <VariantType>Variation</VariantType>
+          <AttributeSet>
+            <Attribute Type="HGVS">NM_004333.6:c.1457_1471delATGTGACAGCACCTA</Attribute>
+          </AttributeSet>
+        </SimpleAllele>
+        <TraitSet Type="Disease">
+          <Trait Type="Disease">
+            <XRef DB="MedGen" ID="C0027651"/>
+          </Trait>
+        </TraitSet>
+        <SubmissionNameList>
+          <SubmissionName>SUB14648556</SubmissionName>
+          <SubmissionName>SUB15152296</SubmissionName>
+        </SubmissionNameList>
+      </ClinicalAssertion>
+    </ClinicalAssertionList>
+    <TraitMappingList>
+      <TraitMapping ClinicalAssertionID="9887302" TraitType="Disease" MappingType="XRef" MappingValue="C0027651" MappingRef="MedGen">
+        <MedGen CUI="C0027651" Name="Neoplasm"/>
+      </TraitMapping>
+      <TraitMapping ClinicalAssertionID="1893254" TraitType="DrugResponse" MappingType="Name" MappingValue="Dabrafenib response" MappingRef="Preferred">
+        <MedGen CUI="CN239586" Name="Dabrafenib response"/>
+      </TraitMapping>
+    </TraitMappingList>
+  </ClassifiedRecord>
+</VariationArchive>
+</ClinVarResult-Set>

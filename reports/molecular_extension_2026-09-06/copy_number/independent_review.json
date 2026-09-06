@@ -1,0 +1,151 @@
+{
+  "review_date": "2026-09-06",
+  "reviewer": "independent RNA/proteomics audit subagent",
+  "corrections": [
+    "Neutral other_locus_screen grouping",
+    "Separate WES availability and screen eligibility denominators",
+    "Row-level relative_screen_eligible field"
+  ],
+  "script46_sha256": "cc515be50d6e24d19d1846d2f13002fdd66c1cd4dd9daec451b466e77dea7594",
+  "scientific_columns_compared": [
+    "cell_line",
+    "patient_id",
+    "histotype_code",
+    "rna_passage",
+    "wes_passage",
+    "tmt_plex",
+    "gene",
+    "ensembl_gene_id",
+    "arm",
+    "segment_gene_covered_fraction",
+    "gene_segment_log2",
+    "gene_segment_min_log2",
+    "gene_segment_max_log2",
+    "n_segments_overlapping_gene",
+    "target_bins",
+    "positive_target_bins",
+    "zero_depth_target_bins",
+    "target_overlap_bp",
+    "target_bin_median_log2",
+    "target_bin_min_log2",
+    "target_bin_max_log2",
+    "target_bin_iqr_log2",
+    "gene_target_length_weighted_mean_depth",
+    "arm_median_log2",
+    "segment_minus_arm_log2",
+    "target_median_minus_arm_log2",
+    "segment_minus_target_median_log2",
+    "supported_relative_gain_screen",
+    "supported_relative_loss_screen",
+    "segment_bin_disagreement_flag",
+    "target_only_extreme_flag",
+    "zero_depth_followup_flag",
+    "status",
+    "rna_tpm",
+    "protein_log2_normalised",
+    "protein_isodoping",
+    "rna_tpm_rank_desc",
+    "rna_tpm_n_models",
+    "protein_log2_normalised_rank_desc",
+    "protein_log2_normalised_n_models",
+    "wes_measured"
+  ],
+  "prechange_scientific_content_sha256": "78d00232f05da1ccb6b00962d3b1967c11cb6a2868ce6699edf04b7d8b6c8967",
+  "postchange_scientific_content_sha256": "78d00232f05da1ccb6b00962d3b1967c11cb6a2868ce6699edf04b7d8b6c8967",
+  "scientific_values_and_existing_flags_unchanged": true,
+  "counts": {
+    "models": 42,
+    "patients": 34,
+    "genes": 52,
+    "model_gene_rows": 2184,
+    "wes_model_gene_rows": 1196,
+    "eligible_model_gene_rows": 1074,
+    "ineligible_wes_model_gene_rows": 122,
+    "gain_rows": 41,
+    "loss_rows": 15
+  },
+  "denominator_groups_independently_checked": 728,
+  "missing_WES_eligibility_stays_missing": true,
+  "source_checks": {
+    "original_CNR_model_gene_combinations": 8,
+    "original_CNR_target_rows": 449,
+    "raw_depth_and_log2_agreement": true,
+    "chromosome_aware_exon_membership_agreement": true,
+    "normal_source_files": 5,
+    "normal_gene_bin_records_per_file": 119,
+    "normal_records": 595,
+    "normal_max_abs_depth_difference": 0,
+    "AKT2_OV3331_expression_direct_matrix_agreement": true,
+    "AKT2_RNA_rank": 1,
+    "AKT2_protein_rank": 2,
+    "RNA_and_protein_rank_denominators": 31
+  },
+  "artifacts": {
+    "reports/molecular_extension_2026-09-06/copy_number/gene_model_evidence.csv": {
+      "before_sha256": "f203c3efae4390775333cbac99e8f780a705334d6d7dc84c15336ab3cb85efbd",
+      "after_sha256": "3c6e820e8cdf6ac231b276d1a431e85911f1fdee199655a7b9519e19885924ce",
+      "changed": true
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/within_patient_contrasts.csv": {
+      "before_sha256": "8ba8c08a70f8a6e058fad11c53672d1cd0dcf1c2219c3bfe11283adf52dce06d",
+      "after_sha256": "8ba8c08a70f8a6e058fad11c53672d1cd0dcf1c2219c3bfe11283adf52dce06d",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/selected_loci_depth_summary.csv": {
+      "before_sha256": "1e4b8f450439d5d69dcc361adde2749ccafca105989972d6b05b9d2024feaf4f",
+      "after_sha256": "1e4b8f450439d5d69dcc361adde2749ccafca105989972d6b05b9d2024feaf4f",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/supported_relative_events.csv": {
+      "before_sha256": "483a9ca4154b24201797e8725ab9e9f5ff6d56a6e07e721950d8d30404766c24",
+      "after_sha256": "9282f206cc95cbbcd1605e3f74c78f8d2abc4664364180d9a12e035b66f666eb",
+      "changed": true
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/gene_loci.csv": {
+      "before_sha256": "d2ba66c67db0692292d3cad9ef75aef760eaf93d26b4f69bb9b10cab0f570b38",
+      "after_sha256": "f87f40d85e3ab1dd2229be0f26fd66fa4df8ddc010d7485a4409ebde606840cd",
+      "changed": true
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/canonical_exon_bin_evidence.csv": {
+      "before_sha256": "ce1b902f50523d07fb42b58f273611f075e92831e19d7c9c2f266bcdb30267e7",
+      "after_sha256": "ce1b902f50523d07fb42b58f273611f075e92831e19d7c9c2f266bcdb30267e7",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/canonical_exon_depth_summary.csv": {
+      "before_sha256": "662a9c37d14e2d6c9a1833ef5e4166aa2420ba4b7fe67468eae1ee318042fa10",
+      "after_sha256": "662a9c37d14e2d6c9a1833ef5e4166aa2420ba4b7fe67468eae1ee318042fa10",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/gene_target_bins.csv": {
+      "before_sha256": "3cc29d613829730adc4f7d32c7f8650ce817e8244233bfd13939f36a62aba520",
+      "after_sha256": "3cc29d613829730adc4f7d32c7f8650ce817e8244233bfd13939f36a62aba520",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/selected_loci_model_normal_bins.csv": {
+      "before_sha256": "0957407d6e3df5ddb127c2a584cc2b6fc45083d0fabf55e4d1969d3be5079185",
+      "after_sha256": "0957407d6e3df5ddb127c2a584cc2b6fc45083d0fabf55e4d1969d3be5079185",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/selected_loci_normal_bin_depth.csv": {
+      "before_sha256": "63c383d8e5e349c8adc2ac1b0a377351da2857e08ae859b3aee17577add82bb4",
+      "after_sha256": "63c383d8e5e349c8adc2ac1b0a377351da2857e08ae859b3aee17577add82bb4",
+      "changed": false
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/locus_review_queue.csv": {
+      "before_sha256": "622b955a137a0fd21b4289faebab399f1efce42fe4974d274b180208c1db7742",
+      "after_sha256": "2747b1c1931196b23e1b4013c61427f4acc88c7c552619c3659c3c5446337ce6",
+      "changed": true
+    },
+    "reports/molecular_extension_2026-09-06/copy_number/patient_event_counts.csv": {
+      "before_sha256": "a89d2c8d0c5a75d485353c21f118680a6accc189424c0fb2bba294e45cde6705",
+      "after_sha256": "e6a8b15bf0d4d6b8840cd51aff16cdfc0bda3651b47a196a491d6a28659c5f94",
+      "changed": true
+    }
+  },
+  "source_gene_target_bins_unchanged": true,
+  "no_reference_fetch": true,
+  "no_alignment_analysis": true,
+  "script47_or_47b_rerun": false,
+  "script48_modified": false,
+  "canonical_scientific_files_modified": false
+}
