@@ -27,6 +27,7 @@ renv/cache/
 !/judy_archive/notebooks/*.Rmd
 /data/cluster_wes_retrieval/
 /data/ovcan_human_wes_handoff_*.tar.gz
+/data/ovcan_human_recovery_docs_*.patch
 ~$*.docx
 /data/external/
 /data/reference/*.fa

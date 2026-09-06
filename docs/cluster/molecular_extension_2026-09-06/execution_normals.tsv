@@ -1,0 +1,6 @@
+reference_id	source_bam	source_bytes	processing	role
+SRR4039087	/project/6090753/active/ovcan_gq_analysis/cnvkit/normal_samples/SRR4039087/SRR4039087.sorted.bam	8200673875	bwa-mem2; not duplicate-marked; no BQSR	capture-matched unmatched reference; optional mapping-bias sensitivity after duplicate marking
+SRR4039088	/project/6090753/active/ovcan_gq_analysis/cnvkit/normal_samples/SRR4039088/SRR4039088.sorted.bam	7083620268	bwa-mem2; not duplicate-marked; no BQSR	capture-matched unmatched reference; optional mapping-bias sensitivity after duplicate marking
+SRR4039089	/project/6090753/active/ovcan_gq_analysis/cnvkit/normal_samples/SRR4039089/SRR4039089.sorted.bam	5628716816	bwa-mem2; not duplicate-marked; no BQSR	capture-matched unmatched reference; optional mapping-bias sensitivity after duplicate marking
+SRR4039096	/project/6090753/active/ovcan_gq_analysis/cnvkit/normal_samples/SRR4039096/SRR4039096.sorted.bam	8084717920	bwa-mem2; not duplicate-marked; no BQSR	capture-matched unmatched reference; optional mapping-bias sensitivity after duplicate marking
+SRR4039097	/project/6090753/active/ovcan_gq_analysis/cnvkit/normal_samples/SRR4039097/SRR4039097.sorted.bam	7386900580	bwa-mem2; not duplicate-marked; no BQSR	capture-matched unmatched reference; optional mapping-bias sensitivity after duplicate marking

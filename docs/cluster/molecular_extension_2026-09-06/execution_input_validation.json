@@ -1,0 +1,34 @@
+{
+  "received_files_verified": 23,
+  "inventory_rows": 204,
+  "wes_models": 23,
+  "patients": 16,
+  "cnr_manifest_matches": 23,
+  "cns_local_hash_matches": 23,
+  "reference_normals": 5,
+  "variant_requests": 30,
+  "variant_models": 14,
+  "locus_requests": 25,
+  "msi_pilot_models": 4,
+  "ascn_pilot_models": 5,
+  "cluster_execution": false,
+  "source_hashes": {
+    "docs/cluster/recovery/2026-09-06-molecular_extension/received_files.json": "9c84e078b876e05b7d8b83d9392ffe02ec32ce2ca9a645d89bb7296e1f76f0c3",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/input_inventory.tsv": "34569d685dd27cb4b36e9dfb8afe8bbb586c1141ea6a149014f23aa8a37f69fa",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/target_only_cnr_check.tsv": "802cbe216efed08508f2d98cc582e56728dde771aa8563c4051e99d29b025c2d",
+    "docs/cluster/molecular_extension_2026-09-06/models.tsv": "a881c1270e64199467b1ccadae418675b752015e4640b1092297ee5b4de1d6e3",
+    "docs/cluster/molecular_extension_2026-09-06/locus_review_requests.tsv": "16b25f307e9a49eed1041273c9e81f70c201402cf2e676e0a2b84bd645306175",
+    "reports/molecular_extension_2026-09-06/variants/variant_read_evidence.csv": "9da84de01e120440f87fb50bdd0ef8490cbcd051c6d99aa41009d9a11c8c3a81",
+    "reports/molecular_extension_2026-09-06/variants/bam_review_candidates.csv": "f72c2eef6106a06e9c1e72a17b1af88384d4c597bd930fc90e6d429d205c462f"
+  },
+  "output_hashes": {
+    "docs/cluster/molecular_extension_2026-09-06/execution_ascn_pilot_models.txt": "602eff470250ca59e3a8ac82d9ebb140cdccf55b220cdba27713b10704f5cb71",
+    "docs/cluster/molecular_extension_2026-09-06/execution_locus_regions.bed": "1eebe8ecbdaebb5fa62d8bc12c992d5a7d22630c62ca6d5ab777ec21de70affc",
+    "docs/cluster/molecular_extension_2026-09-06/execution_models.tsv": "90432356999a8049b3b6052f29433cba1e95a7be91d1fd7b55bc7f058ad5ce68",
+    "docs/cluster/molecular_extension_2026-09-06/execution_msi_pilot_models.txt": "ca4033da54ebbe1b0ba6fb15e481b07983b14ee72346e64c1ef828e46221200c",
+    "docs/cluster/molecular_extension_2026-09-06/execution_normals.tsv": "7cf914611a896a64a332a45365107c9b346367e9b2ad3bc05739e1d4426b10d5",
+    "docs/cluster/molecular_extension_2026-09-06/execution_task_status.tsv": "8ed022d1ecf5b0bb4c45edc6e00698478357925145e4e050adecc6d9c491e51c",
+    "docs/cluster/molecular_extension_2026-09-06/execution_variant_regions.bed": "f8dd411bd8b4de67d94577b90b65e398cee52081878f2588941fa1e0386250ac",
+    "docs/cluster/molecular_extension_2026-09-06/execution_variant_requests.tsv": "7296b6d67930a8520f9c2c6647333d275c45a403f6cdb20b70e32e0841bdb382"
+  }
+}

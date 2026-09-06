@@ -4,7 +4,7 @@
 
 1. `README.md`
 2. `docs/PROJECT_STATUS.md`
-3. For cluster work: `docs/cluster/recovery/2026-09-06/FOLLOWUP.md` first, then `docs/cluster/CLAUDE_TASK.md` and `docs/cluster/WES_RECOVERY.md` as historical search guidance
+3. For new molecular-analysis execution: `docs/cluster/molecular_extension_2026-09-06/EXECUTION_PLAN.md` and `RECIPES.md`. For provenance recovery: `docs/cluster/recovery/2026-09-06/FOLLOWUP.md` first, then `docs/cluster/CLAUDE_TASK.md` and `docs/cluster/WES_RECOVERY.md` as historical search guidance
 4. For analysis changes: `reports/audit_2026-09-05/AUDIT_REPORT.md` and the relevant domain audit
 
 `docs/manuscript/v9/` is the current manuscript. Scripts under `scripts/` are canonical; numeric script order is not dependency order. Use `scripts/run_all.sh` to understand dependencies. Original notebooks and earlier reports are historical evidence.

@@ -1,0 +1,32 @@
+{
+  "source_patch": "data/ovcan_human_recovery_docs_ab00837.patch",
+  "source_patch_sha256": "20566dcea61382ad76157aa24e22ef00e03715121a2dd168c962744815321cc1",
+  "cluster_commit": "ab00837bb5d63cf7789cab835cc3054c43a95b3e",
+  "received_date": "2026-09-06",
+  "verification": "All 23 extracted files match the Git blob object IDs in the incoming patch; preserved unchanged.",
+  "files": {
+    "docs/cluster/recovery/2026-09-05/HANDOFF_FOR_ANALYSIS_AGENT.md": "61bf7855224149ae3ed05d5a2676a8d4d30e02ece531461ca3450add9a7878c2",
+    "docs/cluster/recovery/2026-09-05/RECOVERY_REPORT.md": "40960142a8ceb5a5b87ba69edb02db1a39b01024ec356fab717a5363a318b28e",
+    "docs/cluster/recovery/2026-09-05/additional_wes_models.tsv": "8482bfd4caba8908bd19f9d72147bae271d79b4e180c7e2e6f6d7621c8944719",
+    "docs/cluster/recovery/2026-09-05/build_recovery_tables.py": "79a055d5faf446d3ed423b5dcddee66b0bf1857219b741625efbe507fdb6080f",
+    "docs/cluster/recovery/2026-09-05/file_inventory.tsv": "1d2f67455e57d0feac01e8b4a633f57eaea53f0e299d83fbfe3aa7b469fccd37",
+    "docs/cluster/recovery/2026-09-05/model_status.tsv": "ce7b8c72052cdfc90e918ca04765e3b101b333b9c04adad1900960c5e82af33d",
+    "docs/cluster/recovery/2026-09-05/qc_metrics.tsv": "085f494b937b7575c1b14d8b78f57b9365cff63cd8e093e08c7f3d6d2cda601c",
+    "docs/cluster/recovery/2026-09-05/run_reference_manifest.tsv": "0c03a6abc093e32917aedd2b119e2102880d40d840d562501d39eccb210ff4a9",
+    "docs/cluster/recovery/2026-09-05/vcf_hash_check.tsv": "24f347977ea6826b34dd44aad9d26f91f24789b97e2fa9fc07bef02a5412be05",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/INITIAL_RETURN.md": "93bf36f9b607c4e1fdef021a2b774366b35369b730bfbf4e08c23ce26d7b25a6",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/QUESTIONS_FOR_AUTHOR.md": "501efc7cbb96b39986ddaaf960057f733515f81c3b31f814fc55495fbabdd364",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/input_inventory.tsv": "34569d685dd27cb4b36e9dfb8afe8bbb586c1141ea6a149014f23aa8a37f69fa",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/proposed_commands/mex02_03_locus_review.sbatch": "7d7513156402ed0cf77daee12906604037a99a50c2be2daabec2080d4ee6543e",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/proposed_commands/mex04_msisensor2_pilot.sbatch": "b33c058168d5ba6ba7273f92dc7c29f3f5f038705cc9182def983fe9d361be57",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/proposed_commands/mex05_mutect2_germline_sites.sbatch": "5fa068be5f6d258efb626e4ec075895ffd599d804f6b0c7dd2bf6360e08bc052",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/proposed_commands/mex05b_normals_mutect2_for_mappingbias.sbatch": "d2c4e24227710c7351b3d8410fa6dc653424cfc7768555cceb0ad046862cc7e7",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/proposed_commands/mex06_purecn_pilot.sbatch": "b3b2bed159e35b763d9e1a2820f2d366d61717e4a9e72210a4dc041b01b4781c",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/target_only_cnr_check.tsv": "802cbe216efed08508f2d98cc582e56728dde771aa8563c4051e99d29b025c2d",
+    "docs/cluster/recovery/2026-09-06-molecular_extension/task_status.tsv": "da04143730a36526d0799b9aced3d9fb69aa6a512da04bcd8a4d1f98638e5db0",
+    "docs/cluster/recovery/2026-09-06/FOLLOWUP_INVENTORY.md": "0c2834167b73f5c4136e2825cb4ba44f346cc4245cd3e9bbbd8f01cf95feca03",
+    "docs/cluster/recovery/2026-09-06/cnv_coverage_bundle_SHA256SUMS.txt": "9ee4b430ccfe72eb1ccb6b8b6b22d9ddd3de7ac6e22e9349b39793fa37f3d4ca",
+    "docs/cluster/recovery/2026-09-06/followup_inventory.tsv": "b693fdbdc4378cbb5c9585ea0687f8bb31c7bf7528b06ba3fcef38e62e274e14",
+    "docs/cluster/recovery/2026-09-06/followup_inventory_reference_hashes.tsv": "40df4c29b108a1751bd9787ba8e2e0235d049d81c052ec29a754fe6b0e06d26e"
+  }
+}

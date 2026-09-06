@@ -10,6 +10,8 @@ import io
 import json
 import os
 from pathlib import Path
+import subprocess
+import sys
 import tarfile
 
 ROOT = Path(os.environ.get("OVCAN_PROJ", Path.cwd())).resolve()
@@ -33,13 +35,20 @@ def main():
     DOC.mkdir(parents=True, exist_ok=True)
     models = {r["cell_line"]: r for r in read("metadata/resource_models.csv")}
     hints = {r["cell_line"]: r for r in read("reports/audit_2026-09-05/wes_cluster_models.csv")}
+    received_inventory = ROOT / "docs/cluster/recovery/2026-09-06-molecular_extension/input_inventory.tsv"
+    observed = set()
+    if received_inventory.exists():
+        with received_inventory.open(newline="") as handle:
+            observed = {r["cell_line"] for r in csv.DictReader(handle, delimiter="\t")
+                        if r["input_role"].startswith("duplicate-marked genome-wide CRAM") and r["status"] == "verified"}
     rows = []
     for r in read("output/wes_cnv_target_only/manifest.csv"):
         m = models[r["cell_line"]]
         rows.append(dict(cell_line=r["cell_line"], patient_id=m["patient_id"], histotype=m["histotype_code"],
             wes_passage=m["wes_passage"], rna_passage=m["rna_passage"], cnv_sample_id=r["sample_id"],
             historical_bam_hint=hints[r["cell_line"]]["historical_bam_path"],
-            current_alignment_status="unverified: resolve on cluster",source_cnr=r["source_cnr"],
+            current_alignment_status=("cluster-observed 2026-09-06; see execution_models.tsv; recheck before running"
+                                      if r["cell_line"] in observed else "unverified: resolve on cluster"),source_cnr=r["source_cnr"],
             source_cnr_sha256=r["source_cnr_sha256"],target_only_cnr_sha256=r["target_cnr_sha256"],
             target_only_cnr_scratch_path=r["target_cnr_scratch_path"],corrected_cns=r["cns_path"],
             corrected_cns_sha256=r["cns_sha256"]))
@@ -76,6 +85,8 @@ def main():
     tsv(DOC/"task_status.template.tsv",[{"task_id":f"MEX{i:02d}","status":"not_searched"} for i in range(1,12)],
         ["task_id","status","models_assessed","evidence_files","missing_inputs","proposed_command_file",
          "estimated_resources","operator_authorization","qc_result","next_action"])
+    if received_inventory.exists():
+        subprocess.run([sys.executable, str(ROOT / "scripts/51_prepare_cluster_execution_inputs.py")], check=True)
     # The archive overlays an existing repository clone; existing public files
     # remain there, while all locally added report modules/docs/scripts travel.
     files=set()
@@ -87,8 +98,16 @@ def main():
             if p.suffix.lower() in {".md",".csv",".tsv",".json",".bed",".py",".R".lower(),".xml",".txt"}:
                 files.add(p)
     for p in (ROOT/"scripts").iterdir():
-        if p.name[:2].isdigit() and 40<=int(p.name[:2])<=50 and p.is_file():
+        if p.name[:2].isdigit() and 40<=int(p.name[:2])<=51 and p.is_file():
             files.add(p)
+    if received_inventory.exists():
+        recovered = ROOT / "docs/cluster/recovery/2026-09-06-molecular_extension"
+        received_manifest = json.loads((recovered / "received_files.json").read_text())
+        files.update(ROOT / relative for relative in received_manifest["files"])
+        files.update([recovered / "received_files.json", recovered / "LOCAL_REVIEW.md",
+                      recovered / "proposed_commands/README.md",
+                      ROOT / "docs/cluster/recovery/2026-09-05/README.md",
+                      ROOT / "docs/cluster/recovery/2026-09-06/FOLLOWUP.md"])
     files.update(ROOT/p for p in ["docs/cluster/CLINICAL_CLASSIFICATION_NEXT_STEPS.md",
         "README.md","docs/PROJECT_STATUS.md","docs/REPRODUCIBILITY.md","AGENTS.md",".gitignore",
         "scripts/09_wes_hrd.R","scripts/22_wes_signature_refit.R","output/wes_hrd_feasibility.md"])
@@ -101,10 +120,11 @@ def main():
     target=dest/"ovcan_molecular_extension_tasks_2026-09-06.tar.gz"
     note=("OvCAN molecular-extension overlay, prepared 6 September 2026.\n\n"
           "Extract into a working clone of cook-lab/ovcan_human (base ec8c47b or later).\n"
-          "Entry point: docs/cluster/molecular_extension_2026-09-06/AGENT_TASK.md\n"
+          "Entry point: docs/cluster/molecular_extension_2026-09-06/EXECUTION_PLAN.md\n"
           "This overlay contains small reports, candidate loci, templates and scripts.\n"
           "It contains no raw alignments, sequence files or whole-exome VCFs.\n"
           "Model-linked processed findings remain research annotations. No jobs run automatically.\n"
+          "Incoming proposed_commands are historical and unexecuted; revise them per RECIPES.md before use.\n"
           "The author-approved 53-allele NCBI query is complete. Reuse the saved ClinVar snapshot.\n"
           "PDF previews are available on the workstation and are omitted from this task overlay.\n"
           "molecular_handoff_sha256.json verifies every included repository file.\n")

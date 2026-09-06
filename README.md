@@ -6,7 +6,9 @@ Analysis, validated data records and a working Scientific Data Data Descriptor f
 
 ## Start here on the cluster
 
-For the new molecular-analysis extension, give the agent [this prioritized task](docs/cluster/molecular_extension_2026-09-06/AGENT_TASK.md). It includes model/locus checklists, MSI and allele-specific CN pilot requirements, recipes and return templates. A portable overlay can be prepared with `python3 scripts/49_prepare_molecular_handoff.py` when the local extension files have not yet been published.
+For the new molecular-analysis extension, give the agent [the reviewed execution plan](docs/cluster/molecular_extension_2026-09-06/EXECUTION_PLAN.md). The new cluster inventory resolves alignment availability; the plan corrects the proposed scripts and supplies explicit model paths, 30 variant-review requests, MSI/allele-specific CN pilot gates and conditional HRD-scar work. A portable overlay can be prepared with `python3 scripts/49_prepare_molecular_handoff.py` when the local extension files have not yet been published.
+
+For remaining provenance retrieval only:
 
 1. Read the [updated targeted follow-up](docs/cluster/recovery/2026-09-06/FOLLOWUP.md), then [the agent guide](AGENTS.md) and [current project status](docs/PROJECT_STATUS.md).
 2. Give Claude Code [the cluster task prompt](docs/cluster/CLAUDE_TASK.md). Its detailed checklist is [WES recovery](docs/cluster/WES_RECOVERY.md).

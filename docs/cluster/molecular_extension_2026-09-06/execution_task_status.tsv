@@ -1,0 +1,13 @@
+task_id	planning_status	scope	next_action	acceptance_or_limit
+MEX01	inventory_received_preflight_pending	23 models / 16 patients	Recheck md/recal/index/RG/reference and executable completeness; no broad search	All23 source/target CNR hashes agree; all23 CNS hashes checked locally
+MEX02	script_revision_required	30 candidate records / 14 models	Complete md slices plus fragment/haplotype review; original25 plus5 CDK12 loss candidates	Return candidate-level read and combined-haplotype evidence
+MEX03	script_revision_required	25 model-locus pairs	Exon/target depth with zeros and duplicate/interval denominator controls	No absolute whole-gene deletion inferred from a broad segment
+MEX04	pilot_after_preflight	4 pilot; 19 remaining conditional	Complete md BAM; hg38 model hashes and site QC; scale only after pilot review	No calibrated MSI status; unavailable/low-yield remains indeterminate
+MEX05	regeneration_after_preflight	5 pilot models	OV3331 fixed-SNP md/recal comparison then germline-inclusive Mutect2 on complete md	Retain full filtered VCF; sample identity, SNP yield and BAF QC
+MEX05b	optional_sensitivity	5 unmatched public normals	Derived duplicate marking before SNP panel; explicit AD/missingness QC	Small processing-mismatched panel; no empirical site dispersion claim
+MEX06	gated_on_MEX05_QC	5 pilot; 18 remaining conditional	Correct CNR/VCF import; beta/homozygous settings; controlled grid and PSCBS sensitivity	Native-bin evidence, plausible competing fits, stable conclusions
+MEX07	gated_on_MEX06_QC	Only accepted model fits	Pinned scarHRD; autosomal total/minor CN, gaps/centromeres and alternative-fit sensitivity	Continuous LOH/TAI/LST only; failed/ambiguous is not zero
+MEX08	partially_complete_gated_followup	Selected repair/driver alleles	Reuse exact ClinVar snapshot; read/allele-specific second-hit evidence from MEX02/06	Clinical assertion, allele origin, biallelic state and function kept separate
+MEX09	deferred_optional	Models with credible callability/somatic evidence	Quality-aware coding callable territory; denominator before any TMB	mosdepth >=20x alone is not a validated somatic callable denominator
+MEX10	needs_location	RNA stocks matching relevant models	Operator-supplied RNA roots; recover existing alignments/junctions/FASTQs first	No RNA source absence inferred from WES-root search
+MEX11	needs_location	Proteomics processing and stock records	Operator-supplied roots; existing PSM/reporter/configuration/aliquot metadata	No protein-loss/response inference from exploratory expression

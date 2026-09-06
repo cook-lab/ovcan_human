@@ -1,8 +1,8 @@
 {
   "archive": "output/cluster_handoff/ovcan_molecular_extension_tasks_2026-09-06.tar.gz",
-  "archive_sha256": "5ece95d30ceea4b5b32a1dbf83f1594574c18decab4798df639a7d67175803d7",
-  "archive_bytes": 3061567,
-  "repository_files": 258,
+  "archive_sha256": "28835c1396213c935cf838ece37f3588d3f08d2a4eb4f845b9aa79730a3fe8d4",
+  "archive_bytes": 3317596,
+  "repository_files": 297,
   "models": 23,
   "patients": 16,
   "locus_requests": 25,
