@@ -1,0 +1,48 @@
+{
+  "versions": {
+    "CNVkit": "0.9.10",
+    "numpy": "1.26.4",
+    "pandas": "2.2.3",
+    "scipy": "1.13.1",
+    "biopython": "1.83",
+    "pysam": "0.22.1",
+    "pyfaidx": "0.8.1.1"
+  },
+  "source_files": {
+    "cnvlib.segmentation": {
+      "path": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10/lib/python3.12/site-packages/cnvlib/segmentation/__init__.py",
+      "sha256": "3d69e1d5f0a60e33464be95544ad16ed428a41e19661c309a6436f7850eeeb86"
+    },
+    "cnvlib.segmentation.cbs": {
+      "path": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10/lib/python3.12/site-packages/cnvlib/segmentation/cbs.py",
+      "sha256": "7af7f5560bea861723a09f83a27a8b2f478912c452875f05d9a69a89f5ab2ded"
+    },
+    "cnvlib.smoothing": {
+      "path": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10/lib/python3.12/site-packages/cnvlib/smoothing.py",
+      "sha256": "bb194648280cfdca15a3d6665fc819cbfe873147aae91c08894a8ddbc5ace4ad"
+    },
+    "skgenome.gary": {
+      "path": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10/lib/python3.12/site-packages/skgenome/gary.py",
+      "sha256": "88fb371dfd6adbb20749eb45c62dfe91f74bcbd7211e0cc00189460ce294622e"
+    }
+  },
+  "python": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10/bin/python",
+  "rscript": "/usr/local/bin/Rscript",
+  "r_versions": "R=4.5.2\nDNAcopy=1.82.0",
+  "parameters": {
+    "method": "cbs",
+    "threshold": 0.0001,
+    "skip_low": true,
+    "skip_outliers": 10,
+    "min_weight": 0,
+    "processes": 1,
+    "smooth_cbs": false
+  },
+  "segmentation_script_sha256": "71a6718bc305a926970c4428f8bd5c59bc1dc08c7d1df7e6e128fda0c7f74b59",
+  "original_input_manifest": "output/wes_recovered_provenance_cnv_support.csv",
+  "original_input_manifest_sha256": "37c31d87e01b0b697d27178c1a82e6e772611b53f15afa21d2814a0a31720ffe",
+  "source_data_override": null,
+  "subset_rule": "gene != Antitarget; target rows retained verbatim; native CNVkit applies low-depth, outlier and weight filters",
+  "interpretation": "Relative target-supported segments; native CBS is rerun. No alignment, reference normalization, absolute CN calling or baseline source is changed.",
+  "validation_scope_note": "The 23 target-only outputs were initially gated on OV2295/TOV2835EP replays. A later OV1369-R2 control also passed exactly; the current builder requires all three. The native worker, target filtering and segmentation parameters are unchanged."
+}

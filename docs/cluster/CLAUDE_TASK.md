@@ -1,6 +1,6 @@
 # Task prompt for Claude Code on the cluster
 
-> Updated 5 September 2026: the first recovery handoff has been received and independently checked. Start with [the targeted follow-up](recovery/2026-09-05/FOLLOWUP.md); this original checklist is retained as search/provenance context and contains requests now resolved.
+> Updated 6 September 2026: both the initial handoff and the CNV coverage archive have been received and independently checked. Start with [the targeted follow-up](recovery/2026-09-06/FOLLOWUP.md); this original checklist is retained as search/provenance context and contains requests now resolved.
 
 Copy the following prompt into Claude Code from the public repository checkout. No cluster root needs to be guessed in advance: the evidence table contains the historical roots, and the task begins by checking them.
 

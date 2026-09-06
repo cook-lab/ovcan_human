@@ -2,7 +2,7 @@
 # Script: 08_wes_cnv.R
 # Project: OvCAN human ovarian cancer cell-line multi-omic resource
 # Purpose: Genome-wide copy-number landscape for the 23 generated WES lines from
-#          the CNVkit ("new") segment calls. Per-sample median-centre the log2
+#          target-only CNVkit reconstruction. Per-sample median-centre the log2
 #          segment means, build a binned genome heatmap highlighting canonical
 #          HGSC events, and compute CN QC (n segments, fraction genome altered).
 #          Phase 3 (WES), step 2 of 3.
@@ -23,8 +23,8 @@
 #    `--drop-low-coverage`. One pooled normal reference (byte-identical across all
 #    23 tumors), built from 5 PUBLIC healthy exomes (SRR4039087-97, PRJNA339046,
 #    a skin-cancer study). The author confirms the same capture kit was used
-#    for model and public-reference exomes (v5 comment31). The kit name, design
-#    version, and original target BED remain to be documented for deposition.
+#    for model and public-reference exomes (v5 comment31). Provider records
+#    identify SeqCap EZ Exome v3; the original and lifted target BEDs are recovered.
 #    These are unmatched normals; relative ratios and median centring do not
 #    establish absolute ploidy or a diploid tumour baseline.
 #  - CHR X ARTIFACT: the public normals' sex composition and CNVkit sex-reference configuration
@@ -36,8 +36,11 @@
 #    HGSC lines here have autosome FGA > 0.7) the median may sit on an altered state, so the
 #    neutral baseline and gain/loss fractions can be biased. Flagged
 #    per-line below (fga_auto_0.2 > 0.7).
-#  - We use the segment .cns (log2), NOT .call.cns (integer cn), matching the
-#    archived Figure 3c approach. chrY and alt/random/Un contigs are dropped.
+#  - The September coverage audit identified four positive-depth antitarget bins
+#    that overlap capture targets and carry extreme ratios. Script 29 removes
+#    all antitarget rows and reruns native CNVkit 0.9.10 CBS on the unchanged
+#    archived target ratios. Use its .cns log2 profiles, not integer .call.cns.
+#    Original inputs remain unchanged. chrY and alt/random/Un contigs are dropped.
 #  - No allele-specific / BAF output exists (no `--vcf` was passed) — relevant to
 #    the HRD feasibility question handled in 09_wes_hrd.R.
 # =============================================================================
@@ -48,8 +51,8 @@ suppressPackageStartupMessages({
 })
 set.seed(SEED)
 
-CNV_DIR <- file.path(DATA, "cnvkit wes - new")
-stopifnot("CNVkit dir not found" = dir.exists(CNV_DIR))
+CNV_MANIFEST <- file.path(OUT, "wes_cnv_target_only", "manifest.csv")
+stopifnot("Run scripts/29_wes_cnv_target_only.py before script 08" = file.exists(CNV_MANIFEST))
 
 MAIN_CHR   <- paste0("chr", c(1:22, "X"))     # loaded (for the chrX diagnostic); chrY/alt dropped
 AUTOSOMES  <- paste0("chr", 1:22)             # headline analysis is autosome-restricted (chrX = artifact)
@@ -123,21 +126,16 @@ fam <- readr::read_csv(file.path(META, "line_family_map.csv"), show_col_types = 
 famm <- as.data.table(fam %>% transmute(cell_line, patient_id, family, n_lines_in_family,
                                         is_multiline_family, patient_representative))
 
-# 2. Locate the 23 segment .cns (dedup the redundant CC/EC/HGS copies) --------
-cns_all <- list.files(CNV_DIR, pattern = "\\.cns$", recursive = TRUE, full.names = TRUE)
-cns_all <- cns_all[!grepl("\\.(call|bintest)\\.cns$", cns_all)]
-cns_tbl <- tibble(path = cns_all, key = canon_key(basename(dirname(path)))) %>%
-  left_join(wes, by = "key")
-stopifnot("Unmapped .cns dir" = !anyNA(cns_tbl$cell_line))
-# QC: confirm duplicate copies per key are byte-identical, then keep one.
-dup_qc <- cns_tbl %>% group_by(key) %>%
-  summarise(n_copies = n(),
-            identical = n_distinct(tools::md5sum(path)) == 1, .groups = "drop")
-message(sprintf("Segment .cns found: %d files -> %d unique lines; redundant copies byte-identical: %s",
-                nrow(cns_tbl), n_distinct(cns_tbl$key),
-                all(dup_qc$identical[dup_qc$n_copies > 1])))
-cns_tbl <- cns_tbl %>% group_by(key) %>% dplyr::slice(1) %>% ungroup()
-stopifnot("Expected 23 unique CNV lines" = nrow(cns_tbl) == 23)
+# 2. Read the hash-pinned target-only segment manifest -----------------------
+cns_tbl <- readr::read_csv(CNV_MANIFEST, show_col_types = FALSE) %>%
+  transmute(cell_line, path = file.path(PROJ, cns_path), cns_sha256) %>%
+  left_join(wes, by = "cell_line")
+stopifnot("Expected all 23 unique CNV lines" = nrow(cns_tbl) == 23L &&
+            !anyDuplicated(cns_tbl$cell_line) && setequal(cns_tbl$cell_line, wes$cell_line),
+          "Missing target-only CNS file" = all(file.exists(cns_tbl$path)))
+actual_hash <- vapply(cns_tbl$path, function(p) digest::digest(file = p, algo = "sha256"), character(1))
+stopifnot("Target-only CNS hash differs from script 29 manifest" = all(actual_hash == cns_tbl$cns_sha256))
+message("Loaded 23 hash-verified target-only CNVkit segment files from script 29")
 # Attach patient/family; order rows subtype -> patient -> line so families are adjacent.
 cns_tbl <- cns_tbl %>% left_join(famm, by = "cell_line") %>%
   mutate(subtype = factor(subtype, levels = c("HGS","CC","EC","LGS","MC"))) %>%
@@ -232,15 +230,14 @@ print(as.data.frame(cnv_qc[, .(cell_line, subtype, patient_id,
 # Subtype medians at PATIENT level.
 # NB (review revision): a patient's value is the MEAN of that patient's lines, so a
 # "patient-level median" over a 2-patient subtype is a median of two means. For
-# clear cell specifically the two patient values are 0.671 and 0.071, so the
-# reported CC figure is their mean (0.371) — a midpoint between two very different
-# genomes, not a typical clear-cell FGA. n_patients is printed alongside for this
+# clear cell specifically, this is the midpoint of two different patient values,
+# not an estimate of a typical clear-cell FGA. n_patients is printed alongside for this
 # reason; rare-subtype rows are 1-2 patients and must be read as such.
 pat_fga <- cnv_qc[, .(fga_auto_0.2 = mean(fga_auto_0.2), n_lines_for_patient = .N),
                   by = .(patient_id, subtype)]
 # Label self-consistency (review revision): the subtype column is the LABELLED
 # histotype from samples.csv. For n<=2 subtypes we print the constituent lines so a
-# reader cannot mistake e.g. "EC 0.226 (n=1)" for a histotype estimate — that row is
+# reader cannot mistake e.g. "EC (n=1)" for a histotype estimate — that row is
 # TOV112D, the line scripts 10/31 reclassify AWAY from endometrioid (TP53-mut +
 # SMARCA4 truncation -> dedifferentiated carcinoma, Karnezis 2021). Same for LGS
 # (TOV81D) and MC (TOV2414).
@@ -472,7 +469,7 @@ cap <- paste0("CNVkit copy number (segment log2, per-sample AUTOSOME-median-cent
               "chrX AND chrY dropped - chrX reference-sex effect cannot be excluded). ",
               "Rows grouped by patient family (left track); the four 3133 lines are ONE patient. ",
               "Reference = 5 UNMATCHED PUBLIC exomes (PRJNA339046) - same capture kit (author-confirmed); ",
-              "kit name/design version pending. Median centring may bias the baseline in highly altered genomes. ",
+              "SeqCap EZ Exome v3; target-only resegmentation. Median centring may bias the baseline in highly altered genomes. ",
               "n=", nrow(mat), " lines / ", n_distinct(cns_tbl$patient_id), " patients.")
 
 render_cnv <- function(open_dev) {

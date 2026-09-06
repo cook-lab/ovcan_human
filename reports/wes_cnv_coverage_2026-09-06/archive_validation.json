@@ -1,0 +1,27 @@
+{
+  "archive_name": "ovcan_human_wes_cnv_coverage_2026-09-06.tar.gz",
+  "archive_sha256": "c5d79958ae05115c975d63e3858fae7cd372b37c593295e0e2472bbf38c6706a",
+  "archive_bytes": 303052628,
+  "files": 109,
+  "uncompressed_bytes": 720357819,
+  "manifest_entries_verified": 108,
+  "mismatches": [
+    {
+      "relative_path": "SHA256SUMS",
+      "bytes": 11276,
+      "declared_sha256": "ff7f82eedec9b83d9060d33dd530ad7673c78a1603b7369fdaa341393d4a2ce3",
+      "sha256": "9ee4b430ccfe72eb1ccb6b8b6b22d9ddd3de7ac6e22e9349b39793fa37f3d4ca",
+      "manifest_match": false,
+      "status": "manifest_self_hash_mismatch"
+    }
+  ],
+  "folder_counts": {
+    "[root]": 5,
+    "models": 46,
+    "normals": 12,
+    "plots": 46
+  },
+  "has_readme_or_handoff": false,
+  "original_files_modified": false,
+  "extraction": "All tar members checked as relative paths without parent traversal and regular files/directories; tarfile data filter used."
+}

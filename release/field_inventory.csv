@@ -120,16 +120,16 @@ processed/wes_driver_tiers.csv,Tumor_Seq_Allele2,51,0,See file-level definition 
 processed/wes_driver_tiers.csv,hgvsp_canonical,51,1,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
 processed/wes_driver_tiers.csv,hgvsp_reconstructed,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
 processed/wes_driver_tiers.csv,interpretation,51,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
-processed/wes_cnv_segments.csv,cell_line,5428,0,"Stable model identifier joining matrices, metadata, and annotations."
-processed/wes_cnv_segments.csv,subtype,5428,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
-processed/wes_cnv_segments.csv,chromosome,5428,0,GRCh38 chromosome for a copy-number segment.
-processed/wes_cnv_segments.csv,start,5428,0,Zero-based inclusive segment start coordinate.
-processed/wes_cnv_segments.csv,end,5428,0,Zero-based exclusive segment end coordinate.
-processed/wes_cnv_segments.csv,probes,5428,0,Number of CNVkit bins supporting a segment.
-processed/wes_cnv_segments.csv,weight,5428,0,Archived CNVkit segment weight.
-processed/wes_cnv_segments.csv,log2_raw,5428,0,Archived CNVkit segment log2 ratio before project recentring.
-processed/wes_cnv_segments.csv,log2c,5428,0,Legacy all-chromosome probe-weighted median-centred log2 ratio.
-processed/wes_cnv_segments.csv,log2c_auto,5428,0,Preferred autosomal probe-weighted median-centred log2 ratio.
+processed/wes_cnv_segments.csv,cell_line,5808,0,"Stable model identifier joining matrices, metadata, and annotations."
+processed/wes_cnv_segments.csv,subtype,5808,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
+processed/wes_cnv_segments.csv,chromosome,5808,0,GRCh38 chromosome for a copy-number segment.
+processed/wes_cnv_segments.csv,start,5808,0,Zero-based inclusive segment start coordinate.
+processed/wes_cnv_segments.csv,end,5808,0,Zero-based exclusive segment end coordinate.
+processed/wes_cnv_segments.csv,probes,5808,0,Number of bins used for CNVkit segment estimation.
+processed/wes_cnv_segments.csv,weight,5808,0,Sum of CNVkit bin weights overlapping the target-only segment; can include breakpoint-filtered bins.
+processed/wes_cnv_segments.csv,log2_raw,5808,0,Target-only CNVkit CBS segment log2 ratio before project recentring (script 29).
+processed/wes_cnv_segments.csv,log2c,5808,0,Legacy all-chromosome probe-weighted median-centred log2 ratio.
+processed/wes_cnv_segments.csv,log2c_auto,5808,0,Preferred autosomal probe-weighted median-centred log2 ratio.
 processed/wes_cnv_fga.csv,cell_line,23,0,"Stable model identifier joining matrices, metadata, and annotations."
 processed/wes_cnv_fga.csv,subtype,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.
 processed/wes_cnv_fga.csv,n_segments,23,0,See file-level definition and the generating script in file_catalog.csv; source field retained without reinterpretation.

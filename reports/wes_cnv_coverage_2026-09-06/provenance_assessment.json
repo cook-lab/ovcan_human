@@ -1,0 +1,71 @@
+{
+  "script": "scripts/27_cnv_coverage_provenance.py",
+  "bundle": "data/cluster_wes_retrieval/2026-09-06/ovcan_human_wes_cnv_coverage_2026-09-06",
+  "input_payload_files": 108,
+  "input_total_files": 109,
+  "identity_categories": {
+    "previous_returned_command": 4,
+    "archived_model_CNN": 46,
+    "normal_CNN_historical_inventory": 10,
+    "archived_target_BED": 1,
+    "archived_reference": 1
+  },
+  "all_compared_identities_match": true,
+  "normal_historical_inventory_links": 230,
+  "commands_unchanged": true,
+  "new_execution_logs_or_version_records": false,
+  "current_wrapper_array": "1-27",
+  "current_wrapper_selected_command_lines": 6,
+  "models": 23,
+  "distinct_positive_antitarget_coordinates": 4,
+  "positive_antitarget_records": 92,
+  "positive_antitarget_records_overlapping_targets": 92,
+  "antitarget_segment_context_rows": 94,
+  "distinct_overlapping_segments": 71,
+  "distinct_contributed_segments": 69,
+  "all_CNS_weighted_means_reconstructed": 5670,
+  "max_absolute_CNS_mean_reconstruction_error": 4.997559633013182e-06,
+  "autosomal_segment_labels_changed_at_fixed_center": 2,
+  "cnr_antitarget_log2": {
+    "min": 12.4774,
+    "median": 17.5426,
+    "max": 19.7489
+  },
+  "cnr_antitarget_weight": {
+    "min": 0.690208,
+    "median": 0.84565,
+    "max": 0.979031
+  },
+  "target_bin_weight_medians": {
+    "min": 0.807491,
+    "median": 0.8220585,
+    "max": 0.850967
+  },
+  "affected_segment_log2": {
+    "min": -0.775231,
+    "median": 0.147682,
+    "max": 1.3913
+  },
+  "affected_segment_probes": {
+    "min": 74,
+    "median": 5722,
+    "max": 10133
+  },
+  "antitarget_fraction_contributing_weight": {
+    "min": 0.0,
+    "median": 0.00043654319903146347,
+    "max": 0.017950372620060866
+  },
+  "raw_weighted_mean_change_removing_antitargets": {
+    "min": -0.3085220768090419,
+    "median": -0.007112893252742544,
+    "max": 0.0
+  },
+  "archived_segment_minus_target_only_raw_mean": {
+    "min": 8.475270020513737e-09,
+    "median": 0.00711292872026624,
+    "max": 0.3085216407109698
+  },
+  "scientific_outputs_changed": false,
+  "diagnostic_limit": "Fixed-membership means partition ordered positive-depth CNR rows by CNS probe counts and reproduce all archived means within printed precision. Removing antitarget contributions here does not rerun CBS or establish alternative breakpoints/copy-number calls."
+}

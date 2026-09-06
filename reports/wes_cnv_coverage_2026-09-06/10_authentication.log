@@ -1,0 +1,214 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+Optional not yet installed (Phase 3/5): GenVisR, scarHRD
+Generated lines: 42 (RNA 31, protein 31, WES-CNV 23, WES-mut 23)
+Protein matrix: 8427 proteins x 31 lines (8.8% NA) | 70 zero-plex rows retained (carry no measurement)
+
+=== SWI/SNF panel: key lines (TOV112D, COV434, BIN67) ===
+ cell_line subtype SMARCA4_rna_rank SMARCA4_prot_z                 SMARCA4_wes
+   TOV112D      EC                2          -1.19 truncating (L639fs) [Tier1]
+     BIN67  SCCOHT               23          -1.96                        <NA>
+    COV434  SCCOHT                3          -1.65                        <NA>
+ SMARCA2_rna_rank SMARCA2_prot_z           SMARCA2_wes swisnf_deficient
+                4          -0.81 no retained candidate             TRUE
+                1          -0.65                  <NA>             TRUE
+                2          -1.06                  <NA>             TRUE
+                                                                       swisnf_evidence
+ SMARCA4 loss[WES-trunc(Tier1-2)+prot z=-1.2 (rank 4/31)]; SMARCA2 loss[RNA rank=4/31]
+                    SMARCA4 loss[prot z=-2.0 (rank 2/31)]; SMARCA2 loss[RNA rank=1/31]
+                    SMARCA4 loss[prot z=-1.6 (rank 3/31)]; SMARCA2 loss[RNA rank=2/31]
+
+=== All SWI/SNF-deficient lines (any layer) ===
+ cell_line subtype
+    OV2085     HGS
+    TOV21G      CC
+   VOA4841      CC
+   TOV112D      EC
+     BIN67  SCCOHT
+    COV434  SCCOHT
+                                                                       swisnf_evidence
+                                                           SMARCA2 loss[RNA rank=3/31]
+                                                       ARID1A truncating(WES, Tier1-2)
+                                                 SMARCA4 loss[prot z=-2.0 (rank 1/31)]
+ SMARCA4 loss[WES-trunc(Tier1-2)+prot z=-1.2 (rank 4/31)]; SMARCA2 loss[RNA rank=4/31]
+                    SMARCA4 loss[prot z=-2.0 (rank 2/31)]; SMARCA2 loss[RNA rank=1/31]
+                    SMARCA4 loss[prot z=-1.6 (rank 3/31)]; SMARCA2 loss[RNA rank=2/31]
+
+=== Tier-3-ONLY truncating SWI/SNF calls: recorded but NOT admitted as evidence ===
+ cell_line subtype swisnf_tier3_only_calls swisnf_deficient
+    OV2295     HGS                 SMARCA2            FALSE
+
+=== SWI/SNF ranked values for a figure (SMARCA4/SMARCA2; rank 1 = LOWEST) ===
+  SMARCA4 RNA (n=31): lowest 4 = VOA4841, TOV112D, COV434, VOA10816 | BIN67 rank 23 (6.58, z=0.62); margin to next = 0.035
+  SMARCA4 protein (n=31): lowest 4 = VOA4841, BIN67, COV434, TOV112D | BIN67 rank 2 (13.32, z=-1.96); margin to next = 0.105
+  SMARCA2 RNA (n=31): lowest 4 = BIN67, COV434, OV2085, TOV112D | BIN67 rank 1 (0.04, z=-1.73); margin to next = 0.112
+  SMARCA2 protein (n=31): lowest 4 = OV2085, OV90, VOA10816, VOA12539 | BIN67 rank 9 (11.52, z=-0.65); margin to next = 0.053
+Wrote output/auth_swisnf_long.csv (248 line x gene x assay rows) — SWI/SNF figure input
+Warning message:
+Vectorized input to `element_text()` is not officially supported.
+ℹ Results may be unexpected or may change in future versions of ggplot2.
+
+=== C2: lines whose CNV-instability category changes when chrX is excluded ===
+ cell_line FGA_withX_legacy  FGA cnv_instability_withX_legacy cnv_instability
+      OV90            0.318 0.28                         high    intermediate
+
+=== STR status ===
+
+no Cellosaurus record and current-stock STR documentation unconfirmed
+                                                                   12
+              reference profile in Cellosaurus CVCL_2010 (16 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_3612 (18 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_3613 (18 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_3768 (16 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_4064 (16 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_4375 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T12 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T13 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T14 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T15 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T16 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T17 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T18 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T19 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T20 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T21 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T22 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T24 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_9T25 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SI (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SJ (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SK (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SL (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SN (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SP (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SQ (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SR (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A1SS (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_A453 (10 markers)
+                                                                    1
+              reference profile in Cellosaurus CVCL_S987 (16 markers)
+                                                                    1
+
+=== Per-line authentication: consistency tally ===
+# A tibble: 4 × 2
+  expression_consistent n_expr
+  <chr>                  <int>
+1 consistent                26
+2 discordant                 1
+3 not assessed              13
+4 partial                    2
+# A tibble: 4 × 2
+  genomics_consistent n_geno
+  <chr>                <int>
+1 consistent              20
+2 discordant               1
+3 not assessed            19
+4 partial                  2
+
+=== 'expression_consistent' BY EVIDENCE TYPE — quote this, not the bare count ===
+ labeled_subtype
+             HGS
+              CC
+              MC
+            MMMT
+          SCCOHT
+                                                  expression_basis  n
+ absence of a competing CC/MC program (NOT a positive serous call) 15
+             positive lineage program (specific markers expressed)  5
+             positive lineage program (specific markers expressed)  3
+ absence of a competing CC/MC program (NOT a positive serous call)  1
+   SWI/SNF loss — same evidence as the reclassification (circular)  2
+  total 'consistent' = 26, of which:
+    2  SWI/SNF loss — same evidence as the reclassification (circular)
+    16  absence of a competing CC/MC program (NOT a positive serous call)
+    8  positive lineage program (specific markers expressed)
+  => only the 'positive lineage program' rows are positive authentication; the
+      HGS/MMMT rows are absence-of-competing-program and the SCCOHT rows reuse the
+      reclassification evidence. Do not report a single number without this split.
+
+=== Tier-3-only driver calls that must NOT be quoted as somatic ===
+ cell_line labeled_subtype                 key_drivers_tier12 key_drivers_tier3
+    OV2295             HGS                               TP53           SMARCA2
+ OV2295-R2             HGS                               TP53            ARID1A
+      OV90             HGS                         BRAF, TP53            CDKN2A
+   TOV1369             HGS                               TP53               NF1
+  TOV2929D             HGS                               TP53    CDK12, SMARCA2
+  TOV3133D             HGS                        CDK12, TP53             BRCA2
+    TOV81D             LGS                               <NA>             BRCA2
+    TOV21G              CC ARID1A, ARID1B, KRAS, PIK3CA, PTEN   CTNNB1, SMARCA2
+
+=== Lines with flags (discordances / conflicts surfaced) ===
+ cell_line labeled_subtype expression_consistent genomics_consistent
+    OV2085             HGS            consistent          consistent
+    OV3331             HGS            consistent          consistent
+      OV90             HGS            consistent             partial
+    TOV21G              CC            consistent          consistent
+   VOA4841              CC               partial        not assessed
+   TOV112D              EC          not assessed          discordant
+   VOA4395              EC          not assessed        not assessed
+   TOV2414              MC            consistent          consistent
+   VOA8762              MC            consistent        not assessed
+   VOA8771              MC            consistent        not assessed
+   VOA5436            MMMT            discordant        not assessed
+     BIN67          SCCOHT            consistent        not assessed
+    COV434          SCCOHT            consistent        not assessed
+                                                                 provisional_molecular_call
+                                                                           HGS (concordant)
+                                                      HGS (supported over 'Adenocarcinoma')
+ HGS-family carcinoma; serous identity NOT confirmed by expression (Adeno label unresolved)
+                                                                            CC (concordant)
+                                                            CC (partial expression support)
+                 dedifferentiated carcinoma (candidate SMARCA4 loss; historical label 'EC')
+                                                               EC (as labeled; STR pending)
+                                                                            MC (concordant)
+                                                                  MC (expression-supported)
+                                                                  MC (expression-supported)
+                                                             MMMT (as labeled; STR pending)
+                                             SCCOHT (low SMARCA4 protein + low SMARCA2 RNA)
+                      SCCOHT (candidate SMARCA4/SMARCA2 loss; historical label 'granulosa')
+                                                                                                                                                                                                                                                                    flags
+                                                                                                                                                                                                           secondary SWI/SNF subunit variant: SMARCA2 loss[RNA rank=3/31]
+                                                                                                                                                                   label conflict in source metadata; Adeno-vs-HGS label conflict: TP53-mut + high CNV support HGS-family
+ label conflict in source metadata; Adeno-vs-HGS label conflict: TP53-mut + high CNV support HGS-family; serous/Mullerian markers very low (PAX8/WT1/SOX17 z=-1.25) — serous identity NOT confirmed by expression (culture erosion vs atypia); HGS call rests on genomics
+                                                                                                                                                                                                    ARID1A truncating mutation = canonical clear-cell driver (supportive)
+                                                                                                                                                                                           atypical SWI/SNF signal for CC: SMARCA4 loss[prot z=-2.0 (rank 1/31)] — verify
+                                                                                                                               label conflict in source metadata; TP53-mut + SWI/SNF (SMARCA4/SMARCA2) loss -> dedifferentiated carcinoma, NOT typical EC (Karnezis 2021)
+                                                                                                                                                                                                      becomes sole EC (n=1) if TOV112D reclassified; no WES — STR pending
+                                                                                                                                                                                         ovarian mucinous — published derivation (Sauriol 2020: KRAS G12A); see script 11
+                                                                                                                                                                                       ovarian-vs-GI origin unresolved (no external provenance) — see script 11 + STR/IHC
+                                                                                                                                                                                       ovarian-vs-GI origin unresolved (no external provenance) — see script 11 + STR/IHC
+                                                                                                                                                                                     expression resembles clear-cell program (HNF1B/NAPSA z=2.0) (review vs labeled MMMT)
+                                                                                                                                                                                 SWI/SNF-deficient (SMARCA4 protein/WES +/- SMARCA2 mRNA) supports SCCOHT (Karnezis 2021)
+                                                                                                                                                                                 SWI/SNF-deficient (SMARCA4 protein/WES +/- SMARCA2 mRNA) supports SCCOHT (Karnezis 2021)
+
+Outputs: output/auth_swisnf_panel.csv, output/auth_perline_table.csv
+Figures: figs/10_swisnf_panel.pdf, figs/10_histotype_consistency.pdf
+
+10_authentication.R complete.

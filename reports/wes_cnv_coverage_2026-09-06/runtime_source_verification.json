@@ -1,0 +1,80 @@
+{
+  "cnvkit_version": "0.9.10",
+  "scope": "Native CBS segmentation; no patches to installed CNVkit source. HMM methods not validated.",
+  "R_version": "4.5.2",
+  "DNAcopy_version": "1.82.0",
+  "historical_DNAcopy_version": "not recovered; baseline replay must validate numerical reproduction",
+  "source_matches": [
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/segmentation/cbs.py",
+      "sha256": "7af7f5560bea861723a09f83a27a8b2f478912c452875f05d9a69a89f5ab2ded",
+      "official_sha256": "7af7f5560bea861723a09f83a27a8b2f478912c452875f05d9a69a89f5ab2ded",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/segmentation/cbs.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/segmentation/__init__.py",
+      "sha256": "3d69e1d5f0a60e33464be95544ad16ed428a41e19661c309a6436f7850eeeb86",
+      "official_sha256": "3d69e1d5f0a60e33464be95544ad16ed428a41e19661c309a6436f7850eeeb86",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/segmentation/__init__.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/cnary.py",
+      "sha256": "182ee629e94d4b2970367b7b5dc5cee1abe82a269866e02dd05c07188a61c5bf",
+      "official_sha256": "182ee629e94d4b2970367b7b5dc5cee1abe82a269866e02dd05c07188a61c5bf",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/cnary.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/params.py",
+      "sha256": "0dede81b095f2a15a2d126b61af6f8ec5c83cd11808e412591d2267ea0ac3274",
+      "official_sha256": "0dede81b095f2a15a2d126b61af6f8ec5c83cd11808e412591d2267ea0ac3274",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/params.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/smoothing.py",
+      "sha256": "bb194648280cfdca15a3d6665fc819cbfe873147aae91c08894a8ddbc5ace4ad",
+      "official_sha256": "bb194648280cfdca15a3d6665fc819cbfe873147aae91c08894a8ddbc5ace4ad",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/smoothing.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/skgenome/gary.py",
+      "sha256": "88fb371dfd6adbb20749eb45c62dfe91f74bcbd7211e0cc00189460ce294622e",
+      "official_sha256": "88fb371dfd6adbb20749eb45c62dfe91f74bcbd7211e0cc00189460ce294622e",
+      "exact_match": true,
+      "installed_relative_path": "skgenome/gary.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/batch.py",
+      "sha256": "ca146b1c7e0e012b3980e8db9a6f84de29cb11c53f49d1c915137d75bd0628e8",
+      "official_sha256": "ca146b1c7e0e012b3980e8db9a6f84de29cb11c53f49d1c915137d75bd0628e8",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/batch.py"
+    },
+    {
+      "official_source_url": "https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/commands.py",
+      "sha256": "b81746cc70a4c9a0df3c6f4fb4f07d24fe750d122e95b6020e0361709415639d",
+      "official_sha256": "b81746cc70a4c9a0df3c6f4fb4f07d24fe750d122e95b6020e0361709415639d",
+      "exact_match": true,
+      "installed_relative_path": "cnvlib/commands.py"
+    }
+  ],
+  "runtime_metadata": {
+    "prepared_runtime": "/Users/dpcook/Analysis/ovcan_human/tmp/cnvkit_runtime_0.9.10",
+    "Rscript": "/usr/local/bin/Rscript",
+    "platform": "macOS arm64",
+    "Python_version": "3.12.14"
+  },
+  "requirements_lock": "scripts/requirements-cnvkit-0.9.10.txt",
+  "validation": {
+    "cnvkit_version": "0.9.10",
+    "segment_help": "passed",
+    "pip_check": "No broken requirements found",
+    "DNAcopy_no_restore_no_environ_load": "passed",
+    "official_core_source_files_exact": 8,
+    "baseline_replay": "owned by script 29; see its separate validation output"
+  }
+}

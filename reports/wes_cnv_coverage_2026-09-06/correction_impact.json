@@ -1,0 +1,53 @@
+{
+  "baseline_commit": "854def3653918034055ac0e8e94907c852da2484",
+  "models": 23,
+  "patients": 16,
+  "hgs_patients": 11,
+  "hgs_patient_median_fga_archived": 0.6223170768372762,
+  "hgs_patient_median_fga_target_only": 0.6241262799136555,
+  "maximum_absolute_model_fga_delta": 0.2177048468631847,
+  "model_arm_call_changes": 23,
+  "arm_frequency_rows_changed": 15,
+  "patient_sensitivity_rows_changed": 13,
+  "authentication_class_changes": 0,
+  "hgsc_point_locus_hit_changes": 2,
+  "main_chromosome_segments_archived": 5428,
+  "main_chromosome_segments_target_only": 5808,
+  "sources": [
+    {
+      "file": "wes_cnv_fga.csv",
+      "archived_sha256": "13d5fbf2574be85e20b46940e7519913f1952a0ee76530b13596fa62a4e64e40",
+      "current_sha256": "49f46d9ff9ff8416b499a3badb77785d6ae20fa5f877556a36f163be804ad995"
+    },
+    {
+      "file": "wes_cnv_arm_calls.csv",
+      "archived_sha256": "cc9437f44bfe4d874e1237f3282dbab0e486d0ee1283dcd53b13f1302b3f59d3",
+      "current_sha256": "0dab5853e85ac9a077798ab95335ddf6b1540358b16469804c4d9fce5152d61a"
+    },
+    {
+      "file": "wes_cnv_arm_freq_patient.csv",
+      "archived_sha256": "71a58ab2135621156e567a1c874907ffe49df4f3e6c14cd2c987eb8685de3c5e",
+      "current_sha256": "1dff50e0d30eb7f82a0f89f3e06255c75fb0b126c9c5f83f54e767b6385d40b0"
+    },
+    {
+      "file": "wes_cnv_arm_freq_sensitivity.csv",
+      "archived_sha256": "14bcc655223115897e7d88691d8138e685728a616c37aac294ae670637ce7b13",
+      "current_sha256": "7bce979c62495458b7f797ea9d96a123f08a869e222462221bfefb0da6ac9711"
+    },
+    {
+      "file": "auth_perline_table.csv",
+      "archived_sha256": "846d36d35c460df91e975c60f51d6d4ede2f6a2b8c93a9b67aa878b3ca6c7228",
+      "current_sha256": "4ca3f278a8017dda84e1e23f6f7654b255bcabf0d09b465ea361f870dda74ad5"
+    },
+    {
+      "file": "supplement_per_line.csv",
+      "archived_sha256": "60296c824340cf731b9f2fa3da63d5188f46126890866550e93baaa6223fbb0b",
+      "current_sha256": "f6bb181acbbcf3d8e26ae6fcc1e9cc1e531d18284825072044f7aabff06ccdd7"
+    },
+    {
+      "file": "wes_cnv_segments.csv",
+      "archived_sha256": "ce30e2decceeb35a019124495d60e47be1a2f9cfe23e61823395786f395c02a6",
+      "current_sha256": "74bfb808aae1ac518c80a673594014ec828b7ddc77bae1dae99eb830b9234d5e"
+    }
+  ]
+}

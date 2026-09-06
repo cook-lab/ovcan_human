@@ -1,0 +1,27 @@
+[
+  {
+    "path": "output/wes_mutations_filtered.csv",
+    "sha256": "239e3399905f1b970db0bf6fc1a0002c9638fefa07f6451f8daf6ebcf6b85310",
+    "unchanged_from_854def3": true
+  },
+  {
+    "path": "output/rna_tpm.csv",
+    "sha256": "ccd06b0bfd6350618a23d78f0fdaa7859ca06aa6d92aea67943ae0a4e4e55975",
+    "unchanged_from_854def3": true
+  },
+  {
+    "path": "output/rna_counts.csv",
+    "sha256": "4e2d31ec3366e6299d1646289da16374f92600a15c9c51d66424aa8328a330f0",
+    "unchanged_from_854def3": true
+  },
+  {
+    "path": "output/prot_abundance_matrix.csv",
+    "sha256": "1f8484522eca3fc80891183204823012d43284e1c6562e262e5eb68c2db8a3c9",
+    "unchanged_from_854def3": true
+  },
+  {
+    "path": "output/wes_qc_model_summary.csv",
+    "sha256": "8c43efbad9b7de63f1d522bb05ebbc45511528e79a708d505ba6fa8f1bbe4971",
+    "unchanged_from_854def3": true
+  }
+]

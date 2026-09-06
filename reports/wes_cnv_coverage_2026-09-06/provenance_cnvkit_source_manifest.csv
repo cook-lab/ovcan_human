@@ -1,0 +1,7 @@
+source_url,retrieved_utc_date,local_scratch_path,bytes,sha256
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/batch.py,2026-09-06,tmp/cnvkit_0910_provenance_source/batch.py,10697,ca146b1c7e0e012b3980e8db9a6f84de29cb11c53f49d1c915137d75bd0628e8
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/commands.py,2026-09-06,tmp/cnvkit_0910_provenance_source/commands.py,93400,b81746cc70a4c9a0df3c6f4fb4f07d24fe750d122e95b6020e0361709415639d
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/fix.py,2026-09-06,tmp/cnvkit_0910_provenance_source/fix.py,15523,d589945e67eb0395ce314993c3515db2e93441b50d7328161c15bf7a3f770f8b
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/segmentation/__init__.py,2026-09-06,tmp/cnvkit_0910_provenance_source/segmentation/__init__.py,12044,3d69e1d5f0a60e33464be95544ad16ed428a41e19661c309a6436f7850eeeb86
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/segmentation/cbs.py,2026-09-06,tmp/cnvkit_0910_provenance_source/segmentation/cbs.py,1598,7af7f5560bea861723a09f83a27a8b2f478912c452875f05d9a69a89f5ab2ded
+https://raw.githubusercontent.com/etal/cnvkit/v0.9.10/cnvlib/segmetrics.py,2026-09-06,tmp/cnvkit_0910_provenance_source/segmetrics.py,8011,4fc8ed1b77c08219777f04be3552911842ad320b5cb1c150dd0ad30bb18ce5b6

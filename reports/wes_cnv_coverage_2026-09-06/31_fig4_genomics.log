@@ -1,0 +1,3 @@
+00_setup.R loaded | R 4.5.2 | project: /Users/dpcook/Analysis/ovcan_human | versions -> output/package_versions.csv
+00b_figure_theme.R loaded | font: Arial | PDF device: Quartz | diverging palette: slate-white-rust | captions external
+Figure 4 complete: 23 WES models, 16 mutation patients, 11 HGSC CNV patients.

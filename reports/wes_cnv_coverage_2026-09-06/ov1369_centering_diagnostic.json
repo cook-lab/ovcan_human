@@ -1,0 +1,36 @@
+{
+  "script": "scripts/29c_cnv_centering_sensitivity.py",
+  "model": "OV1369-R2",
+  "archived_center": -0.18947446748229216,
+  "target_only_center": -0.11787364130434794,
+  "center_difference": 0.07160082617794422,
+  "independent_fga_target_only": 0.8591733609961716,
+  "loss_threshold_crossings": 24,
+  "crossing_bp": 515183907,
+  "autosomal_span_difference_bp": -88915369,
+  "sources": [
+    {
+      "path": "judy_archive/data/cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.cns",
+      "sha256": "8db5ae3d3f19553a5bf3a4368965a47ae1a67264112c849a60c0da91ae63cfda"
+    },
+    {
+      "path": "output/wes_cnv_target_only/OV1369-R2.cns",
+      "sha256": "7869856ed9acf9b50650c8716462dc2b8a1609c79b3612ce8951cd415da24284"
+    },
+    {
+      "path": "judy_archive/data/cnvkit wes - new/All samples/OV1369_R2_P66_new/OV1369_R2_P66.cnr",
+      "sha256": "6592582eb3f33b934fa34b3cc207b78f40d906e05d4b5956895170b814937883"
+    },
+    {
+      "path": "reports/wes_cnv_coverage_2026-09-06/provenance_archived_centering_baseline.csv",
+      "sha256": "7babccf7b3c2d681f0ab79fa16c4ce2eb608800eb631a4993b668f25e289ad7f"
+    }
+  ],
+  "formula": "FGA=sum(end-start for autosomal segments where abs(log2-center)>0.20)/sum(end-start); retain segment sums as in script08, not a base-resolution truth claim",
+  "bin_center_check": {
+    "positive_autosomal_target_bins": 195544,
+    "unweighted_median": -0.013716450000000002,
+    "CNR_weighted_median": -0.02015515817200833,
+    "calculation": "Base R median and matrixStats::weightedMedian(log2, weight), after gene != Antitarget, depth > 0, chromosome chr1..chr22"
+  }
+}

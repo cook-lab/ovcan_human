@@ -1,0 +1,16 @@
+arm,n_lines_gain_archived,n_lines_loss_archived,n_patients_gain_archived,n_patients_loss_archived,n_lines_gain_target_only,n_lines_loss_target_only,n_patients_gain_target_only,n_patients_loss_target_only
+4q,0,13,0,9,0,14,0,9
+15q,0,10,0,8,0,11,0,8
+3p,0,10,0,8,0,11,0,8
+19q,8,3,6,2,7,3,5,2
+7p,7,4,6,3,6,3,5,2
+18p,3,7,3,5,3,6,3,5
+21q,3,6,3,5,4,5,3,5
+6p,7,2,5,2,8,2,5,2
+6q,3,5,3,5,3,6,3,6
+9q,2,7,2,5,1,7,1,5
+10q,3,5,3,4,3,4,3,3
+12q,4,2,4,2,4,3,4,3
+1p,4,0,3,0,4,1,3,1
+14q,8,3,3,2,7,3,3,2
+5q,2,4,2,2,2,5,2,3

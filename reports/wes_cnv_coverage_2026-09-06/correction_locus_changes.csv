@@ -1,0 +1,3 @@
+cell_line,locus,chromosome,position,direction,archived_hit,target_only_hit
+OV1369-R2,TP53,chr17,7700000,loss,False,True
+TOV2835EP,PTEN,chr10,87900000,loss,True,False

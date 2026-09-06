@@ -63,6 +63,8 @@ if [ "$FIGURES_ONLY" -eq 0 ]; then
   run 01_rna_load_qc.R          # -> rna_*, tx2gene_matched.csv
   run 05_proteomics_load_qc.R   # -> prot_*
   run 07_wes_mutations.R        # -> wes_mutations_filtered.csv, wes_driver_tiers.csv
+  # Requires CNVkit 0.9.10 and R/DNAcopy; see docs/REPRODUCIBILITY.md.
+  "${OVCAN_CNV_PYTHON:-python3}" scripts/29_wes_cnv_target_only.py
   run 08_wes_cnv.R              # -> wes_cnv_*
   run 09_wes_hrd.R              # -> wes_hrd_feasibility.md, wes_pipeline_parameters.csv
   run 15_patient_family_map.R   # -> metadata/line_family_map.csv

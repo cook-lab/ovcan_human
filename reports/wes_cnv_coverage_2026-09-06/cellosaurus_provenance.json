@@ -1,0 +1,1038 @@
+{
+  "audit_date": "2026-09-06",
+  "scope": "read-only local historical Cellosaurus provenance recovery; no API refresh or scientific recomputation",
+  "status": "closed_analysis_team_provenance_limitation_documented",
+  "cached_search_responses": 42,
+  "cached_direct_accession_responses": 2,
+  "query_list_files": 1,
+  "total_cached_json_bytes": 1102054,
+  "all45_cache_and_query_hashes_match_2026_09_05_manifest": true,
+  "snapshot_manifest_fingerprint_sha256": "66c35d5eeed63fc4ec5dcde49e7f54718135283b9145eda909db0b63f5bb0f2e",
+  "fingerprint_definition": "SHA256 of sorted lines formatted as sha256 + two spaces + repository-relative path + newline, covering44 JSON bodies and names.txt",
+  "database_release": null,
+  "original_http_retrieval_timestamp": null,
+  "original_http_response_headers_retained": false,
+  "documented_snapshot_date": "2026-07-23",
+  "documented_date_status": "historical project documentation only; not verifiedHTTP retrieval time",
+  "documentary_evidence": [
+    "reports/review_code.md:333",
+    "scripts/18_external_benchmarking.R:32",
+    "scripts/fetch_external_data.R:6-8 (retrospective script dated2026-07-24)"
+  ],
+  "available_response_body_keys": {
+    "cell-line-list": 44,
+    "publication-list": 32
+  },
+  "entry_instances": 37,
+  "distinct_entry_accessions": 30,
+  "distinct_entry_last_updated_dates": [
+    "2025-04-10",
+    "2026-03-31"
+  ],
+  "matched_model_accessions": 30,
+  "unmatched_model_queries": 12,
+  "matched_accessions_and_reference_STR_marker_counts_agree_with_current_status_and_metadata": true,
+  "matched_model_records": [
+    {
+      "cell_line": "OV1369-R2",
+      "accession": "CVCL_9T12",
+      "entry_version": "14",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV1946",
+      "accession": "CVCL_4375",
+      "entry_version": "21",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV2085",
+      "accession": "CVCL_A1SI",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV2295",
+      "accession": "CVCL_9T13",
+      "entry_version": "14",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV2295-R2",
+      "accession": "CVCL_9T14",
+      "entry_version": "14",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV3133-R",
+      "accession": "CVCL_9T15",
+      "entry_version": "15",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV3133-R2",
+      "accession": "CVCL_9T16",
+      "entry_version": "15",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV3291",
+      "accession": "CVCL_A1SP",
+      "entry_version": "9",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV4453",
+      "accession": "CVCL_9T20",
+      "entry_version": "17",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV4485",
+      "accession": "CVCL_9T21",
+      "entry_version": "17",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV866-2",
+      "accession": "CVCL_9T22",
+      "entry_version": "14",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV1369",
+      "accession": "CVCL_9T17",
+      "entry_version": "14",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV2295-R",
+      "accession": "CVCL_9T18",
+      "entry_version": "12",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV2835EP",
+      "accession": "CVCL_A1SJ",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV2881EP",
+      "accession": "CVCL_A1SK",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV2929D",
+      "accession": "CVCL_A1SL",
+      "entry_version": "7",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV3041G",
+      "accession": "CVCL_9T24",
+      "entry_version": "9",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV3121EP",
+      "accession": "CVCL_A1SN",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV3133D",
+      "accession": "CVCL_9T19",
+      "entry_version": "13",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV3133G",
+      "accession": "CVCL_4064",
+      "entry_version": "19",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 16
+    },
+    {
+      "cell_line": "TOV3291G",
+      "accession": "CVCL_9T25",
+      "entry_version": "15",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV3331",
+      "accession": "CVCL_A1SQ",
+      "entry_version": "7",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "OV90",
+      "accession": "CVCL_3768",
+      "entry_version": "48",
+      "entry_last_updated": "2026-03-31",
+      "reference_str_markers": 16
+    },
+    {
+      "cell_line": "TOV81D",
+      "accession": "CVCL_A453",
+      "entry_version": "13",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV21G",
+      "accession": "CVCL_3613",
+      "entry_version": "44",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 18
+    },
+    {
+      "cell_line": "TOV3392D",
+      "accession": "CVCL_A1SS",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "TOV112D",
+      "accession": "CVCL_3612",
+      "entry_version": "46",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 18
+    },
+    {
+      "cell_line": "TOV2414",
+      "accession": "CVCL_A1SR",
+      "entry_version": "8",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 10
+    },
+    {
+      "cell_line": "BIN67",
+      "accession": "CVCL_S987",
+      "entry_version": "22",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 16
+    },
+    {
+      "cell_line": "COV434",
+      "accession": "CVCL_2010",
+      "entry_version": "34",
+      "entry_last_updated": "2025-04-10",
+      "reference_str_markers": 16
+    }
+  ],
+  "files": [
+    {
+      "path": "output/external/cellosaurus/cvcl_2010.json",
+      "bytes": 73746,
+      "md5": "39b5810ce90ffcc833c0fa2d337e2fcd",
+      "sha256": "37c9fdab200baeada6f98610e949ff0cc8706a6317ef9a13dada96bf3c5034ef",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/cell-line/CVCL_2010?format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_2010",
+          "entry_version": "34",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/cvcl_a1sr.json",
+      "bytes": 10748,
+      "md5": "9c54703c649a752fbfff34e1bd5feff7",
+      "sha256": "5570ab1d3479b3058597f3b9f5f1fce58279098c02535cd2964136c04408da0d",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/cell-line/CVCL_A1SR?format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SR",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/names.txt",
+      "bytes": 345,
+      "md5": "a0ea162fe396d344b41b592878cdb9eb",
+      "sha256": "faf5eac42402c7b4d4df1af8eb52239b4c8cb02d7117f4f981dd474cefdddb66",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": null,
+      "source_url_evidence": "query name list",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_BIN67.json",
+      "bytes": 27552,
+      "md5": "eafcca42db790ed77a2339f6f8973858",
+      "sha256": "bb406bbdb1ef04aa6a5b5c7c0918e03fe3c9861c14bc2f8a448979c68d5b263f",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=BIN67&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_S987",
+          "entry_version": "22",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2014-02-03"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_COV434.json",
+      "bytes": 178236,
+      "md5": "47b6101b92f8eb3bd1ad324ee567dfb9",
+      "sha256": "bcbfa604aa3997ad923ef71504dbb053ce9e60895ca25012c4fb0a90bd7f258c",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=COV434&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_2010",
+          "entry_version": "34",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        },
+        {
+          "accession": "CVCL_3612",
+          "entry_version": "46",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV1369-R2.json",
+      "bytes": 15342,
+      "md5": "7e30b5d5bc8dd40022c723991f8e2d64",
+      "sha256": "c63ff8a736b0696b4a5859fa98dc81d1f795674cc6e74338f235ea3fd1c17f34",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV1369-R2&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T12",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV1946.json",
+      "bytes": 20941,
+      "md5": "c647a86ebd837b31ffcd54cda1ff762d",
+      "sha256": "8a5318e3ea6213534f9d43cf881c8e1b94f56f473f286afd14d6d7edba816152",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV1946&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_4375",
+          "entry_version": "21",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV2085.json",
+      "bytes": 10371,
+      "md5": "b077739f150b1012e25ca5ae22278030",
+      "sha256": "3c9a6fec768b043797be51381f7ba26d0356bf574ae4cf156eb159e290257549",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV2085&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SI",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV2295-R2.json",
+      "bytes": 23634,
+      "md5": "e13da5de486042961fac8b8187819540",
+      "sha256": "6c7beb9133166896ec9ba7d64b090b84900389821bf2fea6b33b3c950bfdac34",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV2295-R2&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T14",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        },
+        {
+          "accession": "CVCL_9T13",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV2295.json",
+      "bytes": 23634,
+      "md5": "b5c9ff748c777f5af71702a82063d0c2",
+      "sha256": "58d95ef24efa51ead050d7afe61d75cee480a53361a1b5749c2504b6a6653d77",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV2295&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T13",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        },
+        {
+          "accession": "CVCL_9T14",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV3133-R.json",
+      "bytes": 24339,
+      "md5": "8817304c04450c0fd521821393936d09",
+      "sha256": "8920e6a49c7cb84c766cc86697a397afd370839253fee10880fa4a8d80869207",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV3133-R&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T15",
+          "entry_version": "15",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        },
+        {
+          "accession": "CVCL_9T16",
+          "entry_version": "15",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV3133-R2.json",
+      "bytes": 24339,
+      "md5": "6ce7c343ed37d0843f4d3f8179ca30df",
+      "sha256": "d2e072eaebfa9935db30af6757ddf5a58c8c8a744d84554de9b08385f1dd4c42",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV3133-R2&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T16",
+          "entry_version": "15",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        },
+        {
+          "accession": "CVCL_9T15",
+          "entry_version": "15",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV3291.json",
+      "bytes": 11702,
+      "md5": "47fbfc95711d7e004fcd8d42285f1c1f",
+      "sha256": "bef21682b0056fc3d72c7e5a04b30ac311f1f1b08b2e4320d5bedf0d29978d0e",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV3291&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SP",
+          "entry_version": "9",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV3331.json",
+      "bytes": 10228,
+      "md5": "f4041419aaf990fad07122da0f7d96d9",
+      "sha256": "98889538cc1b9443ed1afbd88d32ceb80833ce7e767111af8a7e1345e68ffaff",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV3331&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SQ",
+          "entry_version": "7",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV4453.json",
+      "bytes": 13145,
+      "md5": "1d6143f8f2a29cf768e4fa43482e5f73",
+      "sha256": "c5ca9271855b6ea2a70163cf755457796b77a168d1c5a69cd5ef94528136b0ab",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV4453&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T20",
+          "entry_version": "17",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV4485.json",
+      "bytes": 11641,
+      "md5": "40f97a42ae6541f555448f0299797557",
+      "sha256": "7afdcf9c429c74948371e0301640c85c8fa403c29f873077d1eab63c49985457",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV4485&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T21",
+          "entry_version": "17",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV866-2.json",
+      "bytes": 9945,
+      "md5": "df2480e01e68791ef5de070864e0e2ca",
+      "sha256": "9b6b2eb3f8f5233733dc1e33bdf5f19cbf6c107739afafbf439667758c3a30e6",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV866-2&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T22",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_OV90.json",
+      "bytes": 154888,
+      "md5": "ffa8fa71bcdb5c81ba5be0ddbc13a65f",
+      "sha256": "c1e3516fb002840a0d2f6d000cfcd1476a9a46a8422833f8d0e2f5137994ab10",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=OV90&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_3768",
+          "entry_version": "48",
+          "entry_last_updated": "2026-03-31",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV112D.json",
+      "bytes": 151462,
+      "md5": "efd93d801ce6f5bbf4ef9513d44c3c80",
+      "sha256": "567d916d47e3bc7a82e20f302a190b96bed4651ff50046ef5ba340a257caa702",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV112D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_3612",
+          "entry_version": "46",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV1369.json",
+      "bytes": 21332,
+      "md5": "e4396bcaab0294210fa71121696a7d5a",
+      "sha256": "8ca8230257acafc3eface552b7a83b5369ff20928cd98695ae5b337bcdbf0b9c",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV1369&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T17",
+          "entry_version": "14",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV21G.json",
+      "bytes": 145111,
+      "md5": "f0c1923e3a4cb73c1ef0c3b12d0722c8",
+      "sha256": "b8f1b24393ea1cea34f31e909fe83bd231caae58b1ed3078aa7007c3aa40e151",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV21G&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_3613",
+          "entry_version": "44",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV2295-R.json",
+      "bytes": 11010,
+      "md5": "45507eb91a58337c84986b9532d83a3c",
+      "sha256": "6c401fbb9a4453fc888ee32f7d666d310ae14567be023f583d37b401140c5596",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV2295-R&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T18",
+          "entry_version": "12",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV2414.json",
+      "bytes": 10748,
+      "md5": "9c54703c649a752fbfff34e1bd5feff7",
+      "sha256": "5570ab1d3479b3058597f3b9f5f1fce58279098c02535cd2964136c04408da0d",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV2414&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SR",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV2835EP.json",
+      "bytes": 10373,
+      "md5": "b2daa8167c4b2543e59bd37486668587",
+      "sha256": "58907e038b40cd50efaceeaedc5d5fe42c7b66349626562659da1cc59179bfb6",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV2835EP&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SJ",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV2881EP.json",
+      "bytes": 11119,
+      "md5": "1428f32d143a417b65c5fd80af427770",
+      "sha256": "4722eb6e91d7b7450b35500aa3e80a2bae232d4680376b3e4358dcb26660c405",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV2881EP&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SK",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV2929D.json",
+      "bytes": 9731,
+      "md5": "a62f09f209b6f82a45f0c84f97a01dca",
+      "sha256": "05c0acb6438c1fd99c1945e3545d3674821fa515a358d0f91edf56a42e45283d",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV2929D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SL",
+          "entry_version": "7",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3041G.json",
+      "bytes": 8538,
+      "md5": "096419fcf2d5a495d8ebefcf0b74abf3",
+      "sha256": "503c5094faa36c573dc186f21c32790867e8b17b3a6fe5eb03fb9fdc4563c494",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3041G&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T24",
+          "entry_version": "9",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3121D.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3121D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3121EP.json",
+      "bytes": 10610,
+      "md5": "674356f960a1e4cea3031e2cb68c2c34",
+      "sha256": "58cae30ae9e321f25b970c4802f0a969b31010cd1e445679be916121a7ea0cb9",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3121EP&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SN",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3133D.json",
+      "bytes": 11179,
+      "md5": "66a88c18ba17e2893f37ad25555b2d4f",
+      "sha256": "3fe53ddd0c9d98cbaf382d4b2371c6ca310d58b6a791d671d6db0dbff91a6084",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3133D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T19",
+          "entry_version": "13",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3133G.json",
+      "bytes": 23068,
+      "md5": "fa07153a3d96df51ff600720ffb3ac9a",
+      "sha256": "700da1f278eabdf700f0ce4dffcb1516f916c286091a549ba5dd20d823f99581",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3133G&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_4064",
+          "entry_version": "19",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-04-04"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3291G.json",
+      "bytes": 11158,
+      "md5": "722a4ccdbcf7dc3af376284d88127021",
+      "sha256": "2644c8e44d02b6b9975e7a5ff18f6dae96595ddbd0cb9503b9af992e5737ec92",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3291G&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_9T25",
+          "entry_version": "15",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2016-02-23"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV3392D.json",
+      "bytes": 10766,
+      "md5": "0d56ad329c0b86613e89ae7b9b4bc424",
+      "sha256": "00b169460a6a02d5ffaf5161ba20bf495c8aa99f79a0d1d0d002a0241b881a50",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV3392D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A1SS",
+          "entry_version": "8",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2021-01-12"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_TOV81D.json",
+      "bytes": 10806,
+      "md5": "3849a5f7a5a4523f33ef11bf169e1ba3",
+      "sha256": "2fa11a256810960124e055a80f70c29973e9cec33d1ac3fbf5b2485f7be69c83",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=TOV81D&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": [
+        {
+          "accession": "CVCL_A453",
+          "entry_version": "13",
+          "entry_last_updated": "2025-04-10",
+          "entry_created": "2012-06-06"
+        }
+      ]
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA10816.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA10816&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA12539.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA12539&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA14993.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA14993&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA295.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA295&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA4395.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA4395&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA4841.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA4841&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA5217.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA5217&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA5436.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA5436&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA6861.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA6861&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA8762.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA8762&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    },
+    {
+      "path": "output/external/cellosaurus/search_VOA8771.json",
+      "bytes": 51,
+      "md5": "c53086b6f4a811b35c35556e57ecaedb",
+      "sha256": "42fb4cb28635b03fbdf66fec2f9237fc241e7fff5811fdf1bf9aa6d30d597cfa",
+      "matches_2026_09_05_manifest": true,
+      "documented_source_url": "https://api.cellosaurus.org/search/cell-line?q=VOA8771&format=json",
+      "source_url_evidence": "retrieval-script endpoint/template and cached filename; not retained original HTTP headers",
+      "entry_metadata": []
+    }
+  ],
+  "supporting_evidence": [
+    {
+      "path": "scripts/18_external_benchmarking.R",
+      "sha256": "b6538faa59648fb3049274a9c263380eeac38bdafa9c6c9b68b1c0e11f11f4d8",
+      "relevant_lines": [
+        32,
+        41,
+        89,
+        526,
+        538,
+        541,
+        547,
+        551,
+        561,
+        588,
+        593
+      ],
+      "role": "dated offline parser and exact normalised name match"
+    },
+    {
+      "path": "scripts/fetch_external_data.R",
+      "sha256": "24f5e85f36e107bf2fd246b682e2e86baaae7370b9133710a5160324a5041b67",
+      "relevant_lines": [
+        6,
+        8,
+        32,
+        63,
+        64,
+        189,
+        199,
+        206
+      ],
+      "role": "retrospectively added retrieval recipe; body-only download"
+    },
+    {
+      "path": "reports/review_code.md",
+      "sha256": "f41ddb05a9e09fe11bceea6e4f8f60b81ce6e3e83addc459857f14a9cf8014f6",
+      "relevant_lines": [
+        221,
+        333
+      ],
+      "role": "manual-origin critique and documented23July snapshot date"
+    },
+    {
+      "path": "scripts/pin_external_reference_provenance.py",
+      "sha256": "76e35b24d0c5e25b0cfb13ad9e92c7f79403ebdb82d2f7d81a4a746b382ec0f4",
+      "relevant_lines": [
+        1,
+        76,
+        97,
+        119
+      ],
+      "role": "September5 frozen-input provenance builder"
+    },
+    {
+      "path": "output/external_reference_provenance.csv",
+      "sha256": "5a1aa1b40b39333d354b318a27185d4416ef7585498f8e1258356b6c336954e5",
+      "relevant_lines": [
+        12
+      ],
+      "role": "existing file/entry metadata manifest"
+    },
+    {
+      "path": "output/cellosaurus_str_status.csv",
+      "sha256": "52c6cbf109edc49ad45ac2f74cd01afabc6355e275b5c615283f158eee114d0b",
+      "relevant_lines": [
+        1
+      ],
+      "role": "derived42-model status table"
+    },
+    {
+      "path": "metadata/resource_models.csv",
+      "sha256": "60962a78bbdebdda2f5744eaff679764218e124de45a73bbf218d972f41ef7c7",
+      "relevant_lines": [
+        1
+      ],
+      "role": "current42-model accession metadata"
+    }
+  ],
+  "original_date_recovery_result": "No original HTTP headers, request logs, query timestamps or database-wide release identifier found in cached records, retrieval/parsing scripts, existing provenance manifests or relevant project history. Filesystem dates and per-entry update dates were not promoted to retrieval dates. Git records import on2026-09-05, not original acquisition.",
+  "new_api_lookup_performed": false,
+  "new_api_lookup_reason": "A current API query cannot recover missing historical request metadata; keeping the analysed frozen snapshot intact avoids falsely replacing historical provenance with present-day metadata.",
+  "M06_owner": "analysis team",
+  "M06_recommended_disposition": "Remove from author confirmation requests. Exact analysed bytes and per-record metadata are pinned; original database release/retrieval timestamp are unavailable and explicitly documented.",
+  "M09_unchanged": "Current-stock STR and mycoplasma evidence remains a separate laboratory/author documentation task; reference STR records are not study-stock authentication."
+}

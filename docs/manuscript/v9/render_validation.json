@@ -1,0 +1,15 @@
+{
+  "docx_sha256": "27550634feeb2d36f7aa28e93d541443e7a66058285b33a325b281f4cafa7925",
+  "pdf_sha256": "a8588ed1623e44712b49950d35ff0d814ece43f71776dee540ba05ee08209770",
+  "pages": 20,
+  "visual_qa": {
+    "pages_1_10": "manuscript review agent: pass; highlighted protocols and WES methods inspected",
+    "pages_11_20": "primary agent: pass; tables, references, legends and four figures inspected"
+  },
+  "changed_figures": [
+    "fig4",
+    "figs5"
+  ],
+  "figure_qa": "Actual PDFs rendered and inspected; Arial embedded; no annotation objects; S5 FGA axis accommodates maximum value",
+  "other_figure_pdfs_byte_unchanged": 12
+}

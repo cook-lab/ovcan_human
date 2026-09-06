@@ -33,8 +33,8 @@
       "png": "fig4.png",
       "width_in": 7.199999999999999,
       "height_in": 8.2,
-      "pdf_sha256": "275fa2479599f2d52db7d07cf03047a65353509380f5898bddeb9bcff902cee9",
-      "png_sha256": "e1ceb63c638613a6655f999045015a3cbec01ff149fe7789a6c8a5a7ea187ffe"
+      "pdf_sha256": "16cab38b3113386a3fc3e844e259e198989d7ccf71d5a15222e071ac82b666ef",
+      "png_sha256": "d30d621be862afeac686a74f95e6f7df2e63194403ce20a1383fa3b2bb03001b"
     },
     {
       "figure": "Figure 5",
@@ -96,8 +96,8 @@
       "png": "figs5.png",
       "width_in": 7.199999999999999,
       "height_in": 4.199999999999999,
-      "pdf_sha256": "8dbf1be31f39e7cb0f994f86ead7f96be7db75192663edc252a305e170cee529",
-      "png_sha256": "1e402551e4ff5b59866c5bb104295c84cd2aba45dc2ac8f30b4051e369fdff42"
+      "pdf_sha256": "7d0a76206a5308343097876f0f268591836356b12c48bfe22bc74af595a515b6",
+      "png_sha256": "3c877bd7a82192976cdbf4935a566e7d925c400da0840b674af83bbaa36aa5ba"
     },
     {
       "figure": "Supplementary Figure 6",
@@ -129,10 +129,10 @@
   ],
   "combined_pdf": {
     "path": "OvCAN_figures_redesigned.pdf",
-    "sha256": "2e016feddbb96d6ef8bb8dc6f244de090ac671f1b2b9eb6ac14ddb5de5ddd354"
+    "sha256": "be1b290a60946fa6261bd06dff2dca470c44b2545d3826f6f82af7895995b3cd"
   },
   "legends": {
     "path": "figure_legends.md",
-    "sha256": "a428ce32bcdc441226351538d29a6670137e1c6f8348ce60da6a5baa9b399129"
+    "sha256": "6108b66778541c756b5d008d438a15a437897c7d3dd1bb776b9d5cee0d0f1f18"
   }
 }

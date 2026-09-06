@@ -1,0 +1,2 @@
+PASS: 42 models / 34 patients; 23 WES aliases/acquisition/QC records and target-only CNV hashes; recovered filtering and depth denominators; 322 historical path hints; 49 release checksums; copied-command checksums.
+This checks the committed handoff, not current cluster availability or full raw-input reproducibility.

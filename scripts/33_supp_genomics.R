@@ -52,7 +52,7 @@ la <- rowAnnotation(Patient=fg,col=list(Patient=fp),simple_anno_size=unit(2.7,"m
  annotation_legend_param=list(Patient=list(title="Patient family",nrow=1,at=names(fp),labels=names(fp),
    title_gp=legtitle,labels_gp=legtext,grid_height=unit(3,"mm"),grid_width=unit(3,"mm"))))
 ra <- rowAnnotation(FGA=anno_barplot(meta$fga,baseline=0,bar_width=.75,
- gp=gpar(fill=cook_slate,col=NA),border=FALSE,ylim=c(0,.85),
+ gp=gpar(fill=cook_slate,col=NA),border=FALSE,ylim=c(0,max(.85,ceiling(max(meta$fga)*20)/20)),
  axis_param=list(side="bottom",at=c(0,.4,.8),labels_rot=0,gp=legtext),width=unit(15,"mm")),
  annotation_name_gp=legtitle,annotation_name_rot=0,annotation_name_side="top")
 ht <- Heatmap(m,name="Log2 copy ratio",show_heatmap_legend=FALSE,col=cook_div_colfun(1.5),na_col=cook_grey,
@@ -78,6 +78,7 @@ for (out in list(c(file.path(MSFIG,"figs5.pdf"),"pdf"),c(file.path(MSFIG,"figs5.
  else ragg::agg_png(out[1],width=W2,height=4.2,units="in",res=400)
  draw_s5();dev.off()
 }
+if ("--s5-only" %in% commandArgs(trailingOnly=TRUE)) quit(save="no")
 
 # S6: probability matrix, margin plot and compact numbered exploratory clusters.
 cons <- read_out("consensusov_calls.csv")

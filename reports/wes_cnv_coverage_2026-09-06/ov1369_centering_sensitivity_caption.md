@@ -1,0 +1,9 @@
+# OV1369-R2 centering sensitivity
+
+The fraction of represented autosomal segment spans with `abs(log2 ratio - center) > 0.20` is shown as the subtracted center varies. Slate and rust denote archived hybrid-bin and corrected target-only segment profiles, respectively. Their span denominators are 2,741.891 and 2,652.975 Mb; gaps between represented segments are excluded. These are relative segment-span summaries, not coverage at every genomic base or newly acquired biological alterations.
+
+Filled circles mark each profile's declared segment/probe-weighted median: archived −0.189474 (FGA 0.641469) and target-only −0.117874 (FGA 0.859173). The pale band and open diamonds mark two alternative centers estimated from the same 195,544 positive-depth autosomal target CNR bins. The left diamond uses the CNR-weighted median, −0.020155 (target-only FGA 0.938344); the right uses the unweighted median, −0.013716 (FGA 0.911403). Curves evaluate the existing segment profiles without additional fitting or resegmentation.
+
+The neighboring curves show that the large reported FGA change is chiefly caused by the center moving across a steep part of the sensitivity function. The plot does not establish a biologically neutral baseline or absolute ploidy. The declared convention is retained with explicit sensitivity reporting.
+
+Reproduce with `Rscript --vanilla scripts/39_cnv_centering_sensitivity.R`; `OVCAN_DATA` can point to restored archived inputs. The script verifies source hashes and checks all four archived/corrected-center combinations and the target-bin alternatives against script 29c. [Tracked plot data](ov1369_centering_curve.csv) and [independent numerical diagnostics](ov1369_centering_diagnostic.json) accompany the locally rendered PDF/PNG. This is a report diagnostic, not a numbered publication figure.

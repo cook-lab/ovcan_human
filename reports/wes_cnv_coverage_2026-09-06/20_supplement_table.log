@@ -1,0 +1,42 @@
+Wrote /Users/dpcook/Analysis/ovcan_human/output/supplement_per_line.csv : 42 lines x 57 columns
+  coverage: RNA 31 | protein 31 | WES-MAF 23 | tri-omic 13
+  STR documented (Cellosaurus): 30/42 | no public STR: 12
+  hypermutator/MSI: TOV21G
+  high-FGA (median-centering caution): OV1369-R2, TOV3121D, TOV2929D
+
+=== Tier-qualified driver calls (C3): lines with Tier-3-only genes ===
+ cell_line subtype                                         key_drivers
+   TOV1369     HGS                                           NF1, TP53
+    OV2295     HGS                                       SMARCA2, TP53
+ OV2295-R2     HGS                                        ARID1A, TP53
+  TOV3133D     HGS                                  BRCA2, CDK12, TP53
+      OV90     HGS                                  BRAF, CDKN2A, TP53
+  TOV2929D     HGS                                CDK12, SMARCA2, TP53
+    TOV81D     LGS                                               BRCA2
+    TOV21G      CC ARID1A, ARID1B, CTNNB1, KRAS, PIK3CA, PTEN, SMARCA2
+                     drivers_tier12   drivers_tier3
+                               TP53             NF1
+                               TP53         SMARCA2
+                               TP53          ARID1A
+                        CDK12, TP53           BRCA2
+                         BRAF, TP53          CDKN2A
+                               TP53  CDK12, SMARCA2
+                               <NA>           BRCA2
+ ARID1A, ARID1B, KRAS, PIK3CA, PTEN CTNNB1, SMARCA2
+                                           drivers_annotated
+                                               NF1(T3), TP53
+                                           SMARCA2(T3), TP53
+                                            ARID1A(T3), TP53
+                                      BRCA2(T3), CDK12, TP53
+                                      BRAF, CDKN2A(T3), TP53
+                                CDK12(T3), SMARCA2(T3), TP53
+                                                   BRCA2(T3)
+ ARID1A, ARID1B, CTNNB1(T3), KRAS, PIK3CA, PTEN, SMARCA2(T3)
+  8 lines carry a Tier-3-only driver gene (10 such (line, gene) pairs).
+  BRCA1/2-bearing lines — Tier1-2 column must be BRCA-free for the paper's
+  'defensible somatic BRCA1/2 = 0' statement to hold:
+ cell_line        key_drivers drivers_tier12 drivers_tier3
+  TOV3133D BRCA2, CDK12, TP53    CDK12, TP53         BRCA2
+    TOV81D              BRCA2           <NA>         BRCA2
+  driver_context (hypermutator passenger risk) carried for: TOV21G
+  genomics_consistent tally: consistent 20 / discordant 1 / not assessed 19 / partial 2
